@@ -8,3 +8,8 @@
 - **Ảnh hưởng** — Chọn snapshot để resume, restart, downgrade, assignment A/B và test migration từ build đang dùng tag.
 
 Các mục cần thiết bị hoặc SDK nằm ở Feature Gate và Testability của QA log.
+
+## Quy ước Locked Rope / Sunlight Rope
+
+- **Đề xuất** — Dùng Locked Rope cho cả hai điều kiện: đủ số Container hoặc đủ số Container của một Type ID. Dùng Ice Rope cho visual dạng băng. Giữ Sunlight Rope chờ định nghĩa riêng nếu team cần tên đó.
+- **Cần chốt** — Team gọi chung các Rope có điều kiện hay dùng tên Sunlight Rope riêng? Nếu tách, cần chốt mechanic hoặc visual nào mang tên đó.
