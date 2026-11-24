@@ -1,0 +1,77 @@
+{
+  "party": {
+    "animations": {
+      "celebrate": 2.60000014305115,
+      "idle": 4.80000019073486
+    },
+    "fitted_body_bounds": [
+      716,
+      478,
+      617,
+      580
+    ],
+    "native_body_bounds": [
+      775,
+      562,
+      431,
+      406
+    ],
+    "offset": [
+      -48.7517395019531,
+      -4.3016242980957
+    ],
+    "scale": 1.4338747099768,
+    "skin": "庆祝",
+    "spine_version": "4.2.43"
+  },
+  "proud": {
+    "animations": {
+      "glasses_peek_left": 2.40000009536743,
+      "glasses_peek_right": 2.40000009536743,
+      "idle": 4.0
+    },
+    "fitted_body_bounds": [
+      715,
+      474,
+      619,
+      588
+    ],
+    "native_body_bounds": [
+      622,
+      357,
+      851,
+      809
+    ],
+    "offset": [
+      16.7027015686035,
+      -5.08343124389648
+    ],
+    "scale": 0.7262044653349,
+    "skin": "default",
+    "spine_version": "4.2.43"
+  },
+  "smile": {
+    "animations": {
+      "idle": 3.20000028610229
+    },
+    "fitted_body_bounds": [
+      719,
+      473,
+      611,
+      590
+    ],
+    "native_body_bounds": [
+      543,
+      288,
+      961,
+      929
+    ],
+    "offset": [
+      -0.635091483592987,
+      -10.1614637374878
+    ],
+    "scale": 0.635091496232508,
+    "skin": "default",
+    "spine_version": "4.2.43"
+  }
+}

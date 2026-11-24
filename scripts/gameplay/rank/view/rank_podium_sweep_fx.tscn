@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://bpdje03cjt3yb" path="res://scripts/gameplay/rank/view/rank_podium_sweep_fx.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/source_fx/podium_sweep.tscn" id="2"]
+
+[node name="RankPodiumSweepFx" type="Control" unique_id=199658829]
+visible = false
+z_index = 10
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Mask" type="TextureRect" parent="." unique_id=42821652]
+clip_children = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+
+[node name="Range" type="Control" parent="Mask" unique_id=2100129365]
+clip_contents = true
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="Glow" type="Sprite2D" parent="Mask/Range" unique_id=1362723280]
+modulate = Color(1, 1, 1, 0)
+
+[node name="Source" parent="." unique_id=749635384 instance=ExtResource("2")]
+layout_mode = 0
+mouse_filter = 2
+
+[editable path="Source"]

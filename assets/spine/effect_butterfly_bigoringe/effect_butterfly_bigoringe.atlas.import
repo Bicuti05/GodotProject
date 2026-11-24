@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://dq6117gkh05kd"
+path="res://.godot/imported/effect_butterfly_bigoringe.atlas-788f356b57488abdeea6cf0f6fc98fc7.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_butterfly_bigoringe/effect_butterfly_bigoringe.atlas"
+dest_files=["res://.godot/imported/effect_butterfly_bigoringe.atlas-788f356b57488abdeea6cf0f6fc98fc7.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

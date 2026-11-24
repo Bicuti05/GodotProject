@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://bdrvjmkpigfm5"
+path="res://.godot/imported/ranking_titles.atlas-0c5fbfed22ce59db065d9d82dc675363.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/rank_encourage/ranking_titles.atlas"
+dest_files=["res://.godot/imported/ranking_titles.atlas-0c5fbfed22ce59db065d9d82dc675363.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

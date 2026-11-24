@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://scepdpj2wtpj"
+path="res://.godot/imported/Horn_Flag.atlas-d0a0e829d8d62f23831b651e207a5c2f.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/long_link_horn_flag/Horn_Flag.atlas"
+dest_files=["res://.godot/imported/Horn_Flag.atlas-d0a0e829d8d62f23831b651e207a5c2f.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

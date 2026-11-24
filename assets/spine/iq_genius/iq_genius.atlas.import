@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://co8oge8upftae"
+path="res://.godot/imported/iq_genius.atlas-ff76a74f594bed077fe76952ee443adb.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/iq_genius/iq_genius.atlas"
+dest_files=["res://.godot/imported/iq_genius.atlas-ff76a74f594bed077fe76952ee443adb.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

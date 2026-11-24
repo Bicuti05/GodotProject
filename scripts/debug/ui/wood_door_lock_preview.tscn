@@ -1,0 +1,228 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" uid="uid://jlrnoy5x81lf" path="res://scripts/debug/ui/wood_door_lock_preview.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b787wwwriv2cp" path="res://assets/sprites/juice_sort/flower_purple.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cqerm84q44spm" path="res://assets/sprites/juice_sort/pot_purple.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://br70algr2mdo2" path="res://assets/sprites/juice_sort/bonsai_purple.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://doed755ucru5m" path="res://assets/sprites/juice_sort/flower_blue.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://8gnljwo6sbom" path="res://assets/sprites/juice_sort/flower_cyan.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bxrrp0d7ohno1" path="res://assets/sprites/juice_sort/flower_pink.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cq5xwc2rn1twy" path="res://assets/sprites/juice_sort/flower_lavender.png" id="8"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/juice_sort/view/juice_lock_overlay.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/juice_sort/view/wood_door_lock.tscn" id="10"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="11"]
+
+[node name="WoodDoorLockPreview" type="CanvasLayer" unique_id=1946864535]
+process_mode = 3
+layer = 213
+visible = false
+script = ExtResource("1")
+flower_texture = ExtResource("2")
+collection_pot_texture = ExtResource("3")
+collection_filled_texture = ExtResource("4")
+
+[node name="Root" type="Control" parent="." unique_id=315072914]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Backdrop" type="ColorRect" parent="Root" unique_id=98617584]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.961, 0.933, 0.863, 1)
+
+[node name="Stage" type="Control" parent="Root" unique_id=1855242395]
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="Flowers" type="Control" parent="Root/Stage" unique_id=1350035897]
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="Flower0" type="TextureRect" parent="Root/Stage/Flowers" unique_id=372038178]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flower1" type="TextureRect" parent="Root/Stage/Flowers" unique_id=1347678779]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flower2" type="TextureRect" parent="Root/Stage/Flowers" unique_id=274853661]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flower3" type="TextureRect" parent="Root/Stage/Flowers" unique_id=1937406766]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flower4" type="TextureRect" parent="Root/Stage/Flowers" unique_id=514594929]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Overlay" parent="Root/Stage" unique_id=1022186007 instance=ExtResource("9")]
+anchors_preset = 0
+
+[node name="Effects" parent="Root/Stage" unique_id=453415554 instance=ExtResource("10")]
+anchors_preset = 0
+
+[node name="Collection" type="Control" parent="Root/Stage" unique_id=1749491611]
+visible = false
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="Caption" type="Label" parent="Root/Stage/Collection" unique_id=1211971841]
+layout_mode = 0
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 28
+text = "对应花色收集"
+horizontal_alignment = 1
+
+[node name="Flowers" type="Control" parent="Root/Stage/Collection" unique_id=67748593]
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="Flower0" type="TextureRect" parent="Root/Stage/Collection/Flowers" unique_id=1623673665]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flower1" type="TextureRect" parent="Root/Stage/Collection/Flowers" unique_id=1540745351]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flower2" type="TextureRect" parent="Root/Stage/Collection/Flowers" unique_id=1068335227]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flower3" type="TextureRect" parent="Root/Stage/Collection/Flowers" unique_id=1026402247]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flower4" type="TextureRect" parent="Root/Stage/Collection/Flowers" unique_id=2058130206]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Pot" type="TextureRect" parent="Root/Stage/Collection" unique_id=300679951]
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+
+[node name="DoorCaption" type="Label" parent="Root/Stage" unique_id=993619723]
+visible = false
+layout_mode = 0
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 28
+text = "紫色条件木门"
+horizontal_alignment = 1
+
+[node name="Toolbar" type="PanelContainer" parent="Root" unique_id=595507862]
+custom_minimum_size = Vector2(0, 224)
+layout_mode = 0
+
+[node name="Rows" type="VBoxContainer" parent="Root/Toolbar" unique_id=1408038870]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Root/Toolbar/Rows" unique_id=652260904]
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "关卡锁替换控制"
+horizontal_alignment = 1
+
+[node name="Status" type="Label" parent="Root/Toolbar/Rows" unique_id=707338929]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "默认木门；1/3 临时覆盖当前及后续关卡，返回游戏后保留选择。"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Buttons" type="HBoxContainer" parent="Root/Toolbar/Rows" unique_id=270858403]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="DefaultWood" type="Button" parent="Root/Toolbar/Rows/Buttons" unique_id=1282605526]
+custom_minimum_size = Vector2(110, 76)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "清除进程内表现覆盖，恢复所有流量域默认使用的木门"
+theme_override_font_sizes/font_size = 26
+toggle_mode = true
+button_pressed = true
+text = "恢复默认木门"
+
+[node name="Original" type="Button" parent="Root/Toolbar/Rows/Buttons" unique_id=1622805822]
+custom_minimum_size = Vector2(110, 76)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "立即恢复当前及后续关卡的原版藤蔓遮罩和解锁效果"
+theme_override_font_sizes/font_size = 28
+toggle_mode = true
+text = "1＝原版"
+
+[node name="Shatter" type="Button" parent="Root/Toolbar/Rows/Buttons" unique_id=787178316]
+custom_minimum_size = Vector2(110, 76)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "立即替换当前及后续关卡的颜色锁、数字锁；沿用原版解锁条件，原开锁后闭合木门直接碎裂，不播放开门"
+theme_override_font_sizes/font_size = 28
+toggle_mode = true
+text = "3＝破碎"
+
+[node name="Replay" type="Button" parent="Root/Toolbar/Rows/Buttons" unique_id=973691951]
+custom_minimum_size = Vector2(110, 76)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "重播示意"
+
+[node name="Close" type="Button" parent="Root/Toolbar/Rows/Buttons" unique_id=1609092190]
+custom_minimum_size = Vector2(110, 76)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "返回游戏"
+
+[connection signal="finished" from="Root/Stage/Effects" to="Root/Stage/Effects" method="stop"]
+[connection signal="pressed" from="Root/Toolbar/Rows/Buttons/DefaultWood" to="." method="_on_default_pressed"]
+[connection signal="pressed" from="Root/Toolbar/Rows/Buttons/Original" to="." method="_on_original_pressed"]
+[connection signal="pressed" from="Root/Toolbar/Rows/Buttons/Shatter" to="." method="_on_shatter_pressed"]
+[connection signal="pressed" from="Root/Toolbar/Rows/Buttons/Replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="Root/Toolbar/Rows/Buttons/Close" to="." method="_on_close_pressed"]

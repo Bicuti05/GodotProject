@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://blvjq3inos0fu" path="res://scripts/gameplay/outer_loop/view/outer_loop_backdrop.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bibnn6d3os888" path="res://assets/sprites/common_homepage_bg.png" id="2"]
+
+[node name="HexBackdrop" type="Node" unique_id=292552399]
+script = ExtResource("1")
+default_bg = ExtResource("2")

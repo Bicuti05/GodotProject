@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://ch1c4dn7ddn56" path="res://scripts/gameplay/rank/view/rank_danmaku_layer.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dl6fxal11wxp" path="res://scripts/gameplay/rank/view/rank_avatar_pool.tscn" id="2"]
+
+[node name="RankDanmakuLayer" type="Control" unique_id=1267593300]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="AvatarPool" parent="." unique_id=579778088 instance=ExtResource("2")]

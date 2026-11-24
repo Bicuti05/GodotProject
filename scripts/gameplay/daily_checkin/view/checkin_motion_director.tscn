@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://c4i7b8cnv2ako" path="res://scripts/gameplay/daily_checkin/view/checkin_motion_director.gd" id="1"]
+
+[node name="checkin_motion_director" type="Node" unique_id=2020521065]
+script = ExtResource("1")

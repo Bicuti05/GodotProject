@@ -1,0 +1,783 @@
+[gd_resource type="Resource" script_class="JuiceSkinDefinition" load_steps=231 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/spine/effect_flowerpot_big/effect_flowerpot_big.tscn" id="1"]
+[ext_resource type="Script" uid="uid://bvihsiljxxdnt" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_animation_assets.gd" id="2"]
+[ext_resource type="Script" uid="uid://5qb68r4s3se7" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_visual.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://caq7gsnma5i3p" path="res://assets/sprites/juice_sort/bonsai_red.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b3847gr0mvgn4" path="res://assets/sprites/juice_sort/flower_red.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cvta6lms3jnub" path="res://assets/sprites/juice_sort/pot_red.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bf44hm07717xa" path="res://assets/sprites/juice_sort/rope_red_bottom.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c4jk2kia0gs3s" path="res://assets/sprites/juice_sort/rope_red_mid.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cp8s4wf4nd3mp" path="res://assets/sprites/juice_sort/rope_red_top.png" id="9"]
+[ext_resource type="Script" uid="uid://imkgjn0btuot" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_color_assets.gd" id="10"]
+[ext_resource type="Texture2D" uid="uid://br70algr2mdo2" path="res://assets/sprites/juice_sort/bonsai_purple.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://b787wwwriv2cp" path="res://assets/sprites/juice_sort/flower_purple.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cqerm84q44spm" path="res://assets/sprites/juice_sort/pot_purple.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bohlprtv1x2ao" path="res://assets/sprites/juice_sort/rope_purple_bottom.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://xi2hxacp4622" path="res://assets/sprites/juice_sort/rope_purple_mid.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://csuw5h7k0vyyj" path="res://assets/sprites/juice_sort/rope_purple_top.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://bhnbxa2qm5wub" path="res://assets/sprites/juice_sort/bonsai_pink.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://bxrrp0d7ohno1" path="res://assets/sprites/juice_sort/flower_pink.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://b16vfgebf6xyq" path="res://assets/sprites/juice_sort/pot_pink.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cdbbieemvnq32" path="res://assets/sprites/juice_sort/rope_pink_bottom.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://4arn15ys3jrj" path="res://assets/sprites/juice_sort/rope_pink_mid.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://bl5xjue5y13fs" path="res://assets/sprites/juice_sort/rope_pink_top.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://diq0yqxs2u1fr" path="res://assets/sprites/juice_sort/bonsai_cyan.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://8gnljwo6sbom" path="res://assets/sprites/juice_sort/flower_cyan.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://b52054s8bm5i8" path="res://assets/sprites/juice_sort/pot_cyan.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://b35sn8mdw8a44" path="res://assets/sprites/juice_sort/rope_cyan_bottom.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://8jd4hl1xpdlg" path="res://assets/sprites/juice_sort/rope_cyan_mid.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://b14wg1sio1tu" path="res://assets/sprites/juice_sort/rope_cyan_top.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://t1halsujh7mk" path="res://assets/sprites/juice_sort/bonsai_yellow.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://bwkluieqkjy07" path="res://assets/sprites/juice_sort/flower_yellow.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://qxhkl0esnswp" path="res://assets/sprites/juice_sort/pot_yellow.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://mwetdm3rwc25" path="res://assets/sprites/juice_sort/rope_yellow_bottom.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://3wxcl7vhmotp" path="res://assets/sprites/juice_sort/rope_yellow_mid.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://b4kgx5om6rou8" path="res://assets/sprites/juice_sort/rope_yellow_top.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://crw58fcp0f2xf" path="res://assets/sprites/juice_sort/bonsai_green.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://5lvrtw1j64ch" path="res://assets/sprites/juice_sort/flower_green.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://dqe7ufksffyl" path="res://assets/sprites/juice_sort/pot_green.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://dmqthvau3d5i3" path="res://assets/sprites/juice_sort/rope_green_bottom.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://cpmrpneheu7hd" path="res://assets/sprites/juice_sort/rope_green_mid.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://b44tkf7qg5f3r" path="res://assets/sprites/juice_sort/rope_green_top.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://lgpkj4xiavev" path="res://assets/sprites/juice_sort/bonsai_blue.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://doed755ucru5m" path="res://assets/sprites/juice_sort/flower_blue.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://cmxp8riu2gh6h" path="res://assets/sprites/juice_sort/pot_blue.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://cfqjcu4xcja0j" path="res://assets/sprites/juice_sort/rope_blue_bottom.png" id="44"]
+[ext_resource type="Texture2D" uid="uid://swvbw0okrgmj" path="res://assets/sprites/juice_sort/rope_blue_mid.png" id="45"]
+[ext_resource type="Texture2D" uid="uid://ndwwlg5adskg" path="res://assets/sprites/juice_sort/rope_blue_top.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://doenm22i0q1yo" path="res://assets/sprites/juice_sort/bonsai_teal.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://dhf317wn81yc2" path="res://assets/sprites/juice_sort/flower_teal.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://bpu50l5k8xrdj" path="res://assets/sprites/juice_sort/pot_teal.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://bah8bmqso1mcy" path="res://assets/sprites/juice_sort/rope_teal_bottom.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://cs655m46ibn4" path="res://assets/sprites/juice_sort/rope_teal_mid.png" id="51"]
+[ext_resource type="Texture2D" uid="uid://bko2mw8b0vj5y" path="res://assets/sprites/juice_sort/rope_teal_top.png" id="52"]
+[ext_resource type="Texture2D" uid="uid://bivx0yjmxo575" path="res://assets/sprites/juice_sort/bonsai_orange.png" id="53"]
+[ext_resource type="Texture2D" uid="uid://dfuprnwsyiyjj" path="res://assets/sprites/juice_sort/flower_orange.png" id="54"]
+[ext_resource type="Texture2D" uid="uid://bk47o0lpe501d" path="res://assets/sprites/juice_sort/pot_orange.png" id="55"]
+[ext_resource type="Texture2D" uid="uid://5ebo6ubmrc5g" path="res://assets/sprites/juice_sort/rope_orange_bottom.png" id="56"]
+[ext_resource type="Texture2D" uid="uid://c1iv51jeabthg" path="res://assets/sprites/juice_sort/rope_orange_mid.png" id="57"]
+[ext_resource type="Texture2D" uid="uid://d1y2xlrgq8d42" path="res://assets/sprites/juice_sort/rope_orange_top.png" id="58"]
+[ext_resource type="Texture2D" uid="uid://b4nxsd2hy5mbn" path="res://assets/sprites/juice_sort/bonsai_lavender.png" id="59"]
+[ext_resource type="Texture2D" uid="uid://cq5xwc2rn1twy" path="res://assets/sprites/juice_sort/flower_lavender.png" id="60"]
+[ext_resource type="Texture2D" uid="uid://c63nhkk3hleab" path="res://assets/sprites/juice_sort/pot_lavender.png" id="61"]
+[ext_resource type="Texture2D" uid="uid://xcykwcuakiiw" path="res://assets/sprites/juice_sort/rope_lavender_bottom.png" id="62"]
+[ext_resource type="Texture2D" uid="uid://ctnrpd7v87esu" path="res://assets/sprites/juice_sort/rope_lavender_mid.png" id="63"]
+[ext_resource type="Texture2D" uid="uid://r0omrlmwkmaw" path="res://assets/sprites/juice_sort/rope_lavender_top.png" id="64"]
+[ext_resource type="PackedScene" path="res://assets/spine/effect_butterfly_oringe/effect_butterfly_oringe.tscn" id="65"]
+[ext_resource type="PackedScene" path="res://assets/spine/effect_butterfly_bigoringe/effect_butterfly_bigoringe.tscn" id="66"]
+[ext_resource type="PackedScene" path="res://assets/spine/effect_butterfly_caise/effect_butterfly_caise.tscn" id="67"]
+[ext_resource type="PackedScene" path="res://assets/spine/effect_butterfly_green/effect_butterfly_green.tscn" id="68"]
+[ext_resource type="PackedScene" path="res://assets/spine/effect_butterfly_red/effect_butterfly_red.tscn" id="69"]
+[ext_resource type="Texture2D" uid="uid://dw1vsbf273f1e" path="res://assets/effect/texture/glow/ef_glow_001.png" id="70"]
+[ext_resource type="Texture2D" uid="uid://de5s8mysclhd" path="res://assets/effect/texture/point/ef_point_001.png" id="71"]
+[ext_resource type="Texture2D" uid="uid://bfalivc8q1xt" path="res://assets/effect/texture/ice/ice_shard_silhouette.png" id="72"]
+[ext_resource type="Texture2D" uid="uid://bf332b0ab1be" path="res://assets/effect/texture/ice/ice_crystal_glint.png" id="73"]
+[ext_resource type="Texture2D" uid="uid://cteot2iuelmuy" path="res://assets/sprites/juice_sort/group_halo/group_highlight_star.png" id="74"]
+[ext_resource type="Texture2D" uid="uid://l7r8ey7sife0" path="res://assets/effect/texture/glow/ef_glow_002.png" id="75"]
+[ext_resource type="Texture2D" uid="uid://ded1kvn5wgo74" path="res://assets/effect/texture/glow/ef_ring_001.png" id="76"]
+[ext_resource type="Texture2D" uid="uid://cfpe44pu5tgxp" path="res://assets/effect/texture/point/ef_point_009.png" id="77"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="78"]
+[ext_resource type="Texture2D" uid="uid://b7ywmkn4cpoi1" path="res://assets/effect/texture/progress_bling/normal_red.png" id="79"]
+[ext_resource type="Texture2D" uid="uid://c2w1orpkjxutm" path="res://assets/effect/texture/progress_bling/normal_purple.png" id="80"]
+[ext_resource type="Texture2D" uid="uid://cd1iamswniaue" path="res://assets/effect/texture/progress_bling/normal_pink.png" id="81"]
+[ext_resource type="Texture2D" uid="uid://2p6emlkrp0t7" path="res://assets/effect/texture/progress_bling/normal_cyan.png" id="82"]
+[ext_resource type="Texture2D" uid="uid://bxhjyue2mr2ma" path="res://assets/effect/texture/progress_bling/normal_yellow.png" id="83"]
+[ext_resource type="Texture2D" uid="uid://byd0ytowdwiq5" path="res://assets/effect/texture/progress_bling/normal_green.png" id="84"]
+[ext_resource type="Texture2D" uid="uid://cpt3fv17kto8m" path="res://assets/effect/texture/progress_bling/normal_blue.png" id="85"]
+[ext_resource type="Texture2D" uid="uid://0y4l64yuv3os" path="res://assets/effect/texture/progress_bling/normal_teal.png" id="86"]
+[ext_resource type="Texture2D" uid="uid://p02e3ii4m8y4" path="res://assets/effect/texture/progress_bling/normal_orange.png" id="87"]
+[ext_resource type="Texture2D" uid="uid://dsesdi8v7iioc" path="res://assets/effect/texture/progress_bling/normal_lavender.png" id="88"]
+[ext_resource type="Texture2D" uid="uid://e6nf23bhjowj" path="res://assets/effect/texture/progress_bling/normal_violet.png" id="89"]
+[ext_resource type="Texture2D" uid="uid://0svciskkkji3" path="res://assets/effect/texture/progress_bling/normal_lime.png" id="90"]
+[ext_resource type="Texture2D" uid="uid://ct4n6ic4mfcic" path="res://assets/effect/texture/progress_bling/ripple_elements/particle_dot.png" id="91"]
+[ext_resource type="Texture2D" uid="uid://c7a1qois6f7tk" path="res://assets/effect/texture/progress_bling/excellent_target_effect_color.png" id="92"]
+[ext_resource type="Texture2D" uid="uid://23poiuhre2xj" path="res://assets/effect/texture/progress_bling/ripple_elements/particle_flower.png" id="93"]
+[ext_resource type="Texture2D" uid="uid://ddutkbticg73a" path="res://assets/effect/texture/progress_bling/ripple_elements/particle_star.png" id="94"]
+[ext_resource type="Texture2D" uid="uid://cdoeu7w1vb2sy" path="res://assets/sprites/juice_sort/rank_collectible/link_snow_01.png" id="95"]
+[ext_resource type="Texture2D" uid="uid://b6gwi4e7m6a4u" path="res://assets/sprites/juice_sort/rank_collectible/link_snow_02.png" id="96"]
+[ext_resource type="Texture2D" uid="uid://bssvvvi0inp4w" path="res://assets/effect/texture/point/ef_point_008.png" id="97"]
+[ext_resource type="Script" uid="uid://bwunoc4klc2c2" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_effect_assets.gd" id="98"]
+[ext_resource type="Texture2D" uid="uid://bncd14jkqpr4p" path="res://assets/effect/texture/point/ef_point_009a.png" id="99"]
+[ext_resource type="Texture2D" uid="uid://dtlaojhr0lc63" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_CBC_flower.png" id="100"]
+[ext_resource type="Texture2D" uid="uid://cojnv7m8bqjnf" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_CSC_flower.png" id="101"]
+[ext_resource type="Texture2D" uid="uid://duqc6jyo17vee" path="res://assets/sprites/juice_sort/new_guide/Icon_flower.png" id="102"]
+[ext_resource type="Texture2D" uid="uid://8ocgv18h0u7t" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_UER_flower.png" id="103"]
+[ext_resource type="Texture2D" uid="uid://d2tebubb5mi67" path="res://assets/sprites/juice_sort/gp_flower_question.png" id="104"]
+[ext_resource type="Texture2D" uid="uid://sg5bstmg3nkg" path="res://assets/sprites/juice_sort/pot_park.png" id="105"]
+[ext_resource type="Texture2D" uid="uid://noexslh38qdm" path="res://assets/sprites/juice_sort/rope_park_bottom.png" id="106"]
+[ext_resource type="Texture2D" uid="uid://c1wnrjeqry70g" path="res://assets/sprites/juice_sort/rope_park_mid.png" id="107"]
+[ext_resource type="Texture2D" uid="uid://bx0i7e0rsf2px" path="res://assets/sprites/juice_sort/rope_park_top.png" id="108"]
+[ext_resource type="Texture2D" uid="uid://ctmts1xool6xm" path="res://assets/sprites/juice_sort/rank_collectible/gift_empty.png" id="109"]
+[ext_resource type="Texture2D" uid="uid://dx2fw31cckgxp" path="res://assets/sprites/juice_sort/rank_collectible/elk.png" id="110"]
+[ext_resource type="Texture2D" uid="uid://b6c085ys4kyc1" path="res://assets/sprites/juice_sort/rank_collectible/tree.png" id="111"]
+[ext_resource type="Texture2D" uid="uid://gorgixke8je" path="res://assets/sprites/juice_sort/rank_collectible/snow.png" id="112"]
+[ext_resource type="Texture2D" uid="uid://cpwjsnqkgg3mg" path="res://assets/sprites/juice_sort/rank_collectible/gingerbread.png" id="113"]
+[ext_resource type="Texture2D" uid="uid://bb1iisi6an67p" path="res://assets/sprites/juice_sort/rank_collectible/bell.png" id="114"]
+[ext_resource type="Texture2D" uid="uid://cp34af1fgiyhc" path="res://assets/sprites/juice_sort/rank_collectible/ribbon_bottom.png" id="115"]
+[ext_resource type="Texture2D" uid="uid://drdvsb4gox5nt" path="res://assets/sprites/juice_sort/rank_collectible/ribbon_mid.png" id="116"]
+[ext_resource type="Texture2D" uid="uid://dc06onxw235bk" path="res://assets/sprites/juice_sort/rank_collectible/ribbon_top.png" id="117"]
+[ext_resource type="Texture2D" uid="uid://iqigrnid88kl" path="res://assets/sprites/juice_sort/rank_collectible/gift_elk.png" id="118"]
+[ext_resource type="Texture2D" uid="uid://clg41ranmab1w" path="res://assets/sprites/juice_sort/rank_collectible/gift_tree.png" id="119"]
+[ext_resource type="Texture2D" uid="uid://b6kunx2v7h55d" path="res://assets/sprites/juice_sort/rank_collectible/gift_snow.png" id="120"]
+[ext_resource type="Texture2D" uid="uid://dj6gddph5tlre" path="res://assets/sprites/juice_sort/rank_collectible/gift_gingerbread.png" id="121"]
+[ext_resource type="Texture2D" uid="uid://bjot2f6ffpi46" path="res://assets/sprites/juice_sort/rank_collectible/gift_bell.png" id="122"]
+[ext_resource type="Script" uid="uid://co4lq1wqsxdse" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_definition.gd" id="123"]
+[ext_resource type="Texture2D" uid="uid://d02cxje123cue" path="res://assets/sprites/juice_sort/quota_slot_empty.png" id="124"]
+
+[sub_resource type="Resource" id="animation"]
+script = ExtResource("2")
+scene = ExtResource("1")
+color_keys = PackedStringArray("red", "purple", "pink", "lightblue", "yellow", "green", "blue", "cyan", "orange", "lightpurple")
+slot_prefixes = null
+
+[sub_resource type="Resource" id="completed_container_red"]
+script = ExtResource("3")
+texture = ExtResource("4")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(28, 9, 202, 241)
+
+[sub_resource type="Resource" id="element_red"]
+script = ExtResource("3")
+texture = ExtResource("5")
+content_rect = Rect2(33, 27, 134, 137)
+visual_center = Vector2(0.5, 0.54)
+
+[sub_resource type="Resource" id="empty_container_red"]
+script = ExtResource("3")
+texture = ExtResource("6")
+
+[sub_resource type="Resource" id="lock_red"]
+script = ExtResource("3")
+texture = ExtResource("5")
+
+[sub_resource type="Resource" id="rope_bottom_red"]
+script = ExtResource("3")
+texture = ExtResource("7")
+
+[sub_resource type="Resource" id="rope_mid_red"]
+script = ExtResource("3")
+texture = ExtResource("8")
+
+[sub_resource type="Resource" id="rope_top_red"]
+script = ExtResource("3")
+texture = ExtResource("9")
+
+[sub_resource type="Resource" id="color_red"]
+script = ExtResource("10")
+color_key = &"red"
+element = SubResource("element_red")
+empty_container = SubResource("empty_container_red")
+completed_container = SubResource("completed_container_red")
+target_icon = SubResource("completed_container_red")
+lock_icon = SubResource("lock_red")
+rope_top = SubResource("rope_top_red")
+rope_mid = SubResource("rope_mid_red")
+rope_bottom = SubResource("rope_bottom_red")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_purple"]
+script = ExtResource("3")
+texture = ExtResource("11")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(34, 3, 188, 247)
+
+[sub_resource type="Resource" id="element_purple"]
+script = ExtResource("3")
+texture = ExtResource("12")
+content_rect = Rect2(28, 26, 144, 137)
+visual_center = Vector2(0.4925, 0.4725)
+
+[sub_resource type="Resource" id="empty_container_purple"]
+script = ExtResource("3")
+texture = ExtResource("13")
+
+[sub_resource type="Resource" id="lock_purple"]
+script = ExtResource("3")
+texture = ExtResource("12")
+
+[sub_resource type="Resource" id="rope_bottom_purple"]
+script = ExtResource("3")
+texture = ExtResource("14")
+
+[sub_resource type="Resource" id="rope_mid_purple"]
+script = ExtResource("3")
+texture = ExtResource("15")
+
+[sub_resource type="Resource" id="rope_top_purple"]
+script = ExtResource("3")
+texture = ExtResource("16")
+
+[sub_resource type="Resource" id="color_purple"]
+script = ExtResource("10")
+color_key = &"purple"
+element = SubResource("element_purple")
+empty_container = SubResource("empty_container_purple")
+completed_container = SubResource("completed_container_purple")
+target_icon = SubResource("completed_container_purple")
+lock_icon = SubResource("lock_purple")
+rope_top = SubResource("rope_top_purple")
+rope_mid = SubResource("rope_mid_purple")
+rope_bottom = SubResource("rope_bottom_purple")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_pink"]
+script = ExtResource("3")
+texture = ExtResource("17")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(33, 8, 193, 242)
+
+[sub_resource type="Resource" id="element_pink"]
+script = ExtResource("3")
+texture = ExtResource("18")
+content_rect = Rect2(28, 27, 144, 137)
+visual_center = Vector2(0.5, 0.4925)
+
+[sub_resource type="Resource" id="empty_container_pink"]
+script = ExtResource("3")
+texture = ExtResource("19")
+
+[sub_resource type="Resource" id="lock_pink"]
+script = ExtResource("3")
+texture = ExtResource("18")
+
+[sub_resource type="Resource" id="rope_bottom_pink"]
+script = ExtResource("3")
+texture = ExtResource("20")
+
+[sub_resource type="Resource" id="rope_mid_pink"]
+script = ExtResource("3")
+texture = ExtResource("21")
+
+[sub_resource type="Resource" id="rope_top_pink"]
+script = ExtResource("3")
+texture = ExtResource("22")
+
+[sub_resource type="Resource" id="color_pink"]
+script = ExtResource("10")
+color_key = &"pink"
+element = SubResource("element_pink")
+empty_container = SubResource("empty_container_pink")
+completed_container = SubResource("completed_container_pink")
+target_icon = SubResource("completed_container_pink")
+lock_icon = SubResource("lock_pink")
+rope_top = SubResource("rope_top_pink")
+rope_mid = SubResource("rope_mid_pink")
+rope_bottom = SubResource("rope_bottom_pink")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_cyan"]
+script = ExtResource("3")
+texture = ExtResource("23")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(31, 2, 192, 248)
+
+[sub_resource type="Resource" id="element_cyan"]
+script = ExtResource("3")
+texture = ExtResource("24")
+content_rect = Rect2(31, 31, 137, 137)
+visual_center = Vector2(0.5, 0.49)
+
+[sub_resource type="Resource" id="empty_container_cyan"]
+script = ExtResource("3")
+texture = ExtResource("25")
+
+[sub_resource type="Resource" id="lock_cyan"]
+script = ExtResource("3")
+texture = ExtResource("24")
+
+[sub_resource type="Resource" id="rope_bottom_cyan"]
+script = ExtResource("3")
+texture = ExtResource("26")
+
+[sub_resource type="Resource" id="rope_mid_cyan"]
+script = ExtResource("3")
+texture = ExtResource("27")
+
+[sub_resource type="Resource" id="rope_top_cyan"]
+script = ExtResource("3")
+texture = ExtResource("28")
+
+[sub_resource type="Resource" id="color_cyan"]
+script = ExtResource("10")
+color_key = &"cyan"
+element = SubResource("element_cyan")
+empty_container = SubResource("empty_container_cyan")
+completed_container = SubResource("completed_container_cyan")
+target_icon = SubResource("completed_container_cyan")
+lock_icon = SubResource("lock_cyan")
+rope_top = SubResource("rope_top_cyan")
+rope_mid = SubResource("rope_mid_cyan")
+rope_bottom = SubResource("rope_bottom_cyan")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_yellow"]
+script = ExtResource("3")
+texture = ExtResource("29")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(30, 4, 196, 246)
+
+[sub_resource type="Resource" id="element_yellow"]
+script = ExtResource("3")
+texture = ExtResource("30")
+content_rect = Rect2(31, 27, 138, 136)
+visual_center = Vector2(0.5, 0.4725)
+
+[sub_resource type="Resource" id="empty_container_yellow"]
+script = ExtResource("3")
+texture = ExtResource("31")
+
+[sub_resource type="Resource" id="lock_yellow"]
+script = ExtResource("3")
+texture = ExtResource("30")
+
+[sub_resource type="Resource" id="rope_bottom_yellow"]
+script = ExtResource("3")
+texture = ExtResource("32")
+
+[sub_resource type="Resource" id="rope_mid_yellow"]
+script = ExtResource("3")
+texture = ExtResource("33")
+
+[sub_resource type="Resource" id="rope_top_yellow"]
+script = ExtResource("3")
+texture = ExtResource("34")
+
+[sub_resource type="Resource" id="color_yellow"]
+script = ExtResource("10")
+color_key = &"yellow"
+element = SubResource("element_yellow")
+empty_container = SubResource("empty_container_yellow")
+completed_container = SubResource("completed_container_yellow")
+target_icon = SubResource("completed_container_yellow")
+lock_icon = SubResource("lock_yellow")
+rope_top = SubResource("rope_top_yellow")
+rope_mid = SubResource("rope_mid_yellow")
+rope_bottom = SubResource("rope_bottom_yellow")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_green"]
+script = ExtResource("3")
+texture = ExtResource("35")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(30, 13, 197, 237)
+
+[sub_resource type="Resource" id="element_green"]
+script = ExtResource("3")
+texture = ExtResource("36")
+content_rect = Rect2(31, 27, 137, 137)
+visual_center = Vector2(0.5, 0.48)
+
+[sub_resource type="Resource" id="empty_container_green"]
+script = ExtResource("3")
+texture = ExtResource("37")
+
+[sub_resource type="Resource" id="lock_green"]
+script = ExtResource("3")
+texture = ExtResource("36")
+
+[sub_resource type="Resource" id="rope_bottom_green"]
+script = ExtResource("3")
+texture = ExtResource("38")
+
+[sub_resource type="Resource" id="rope_mid_green"]
+script = ExtResource("3")
+texture = ExtResource("39")
+
+[sub_resource type="Resource" id="rope_top_green"]
+script = ExtResource("3")
+texture = ExtResource("40")
+
+[sub_resource type="Resource" id="color_green"]
+script = ExtResource("10")
+color_key = &"green"
+element = SubResource("element_green")
+empty_container = SubResource("empty_container_green")
+completed_container = SubResource("completed_container_green")
+target_icon = SubResource("completed_container_green")
+lock_icon = SubResource("lock_green")
+rope_top = SubResource("rope_top_green")
+rope_mid = SubResource("rope_mid_green")
+rope_bottom = SubResource("rope_bottom_green")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_blue"]
+script = ExtResource("3")
+texture = ExtResource("41")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(33, 0, 191, 250)
+
+[sub_resource type="Resource" id="element_blue"]
+script = ExtResource("3")
+texture = ExtResource("42")
+content_rect = Rect2(29, 27, 142, 137)
+visual_center = Vector2(0.5, 0.4775)
+
+[sub_resource type="Resource" id="empty_container_blue"]
+script = ExtResource("3")
+texture = ExtResource("43")
+
+[sub_resource type="Resource" id="lock_blue"]
+script = ExtResource("3")
+texture = ExtResource("42")
+
+[sub_resource type="Resource" id="rope_bottom_blue"]
+script = ExtResource("3")
+texture = ExtResource("44")
+
+[sub_resource type="Resource" id="rope_mid_blue"]
+script = ExtResource("3")
+texture = ExtResource("45")
+
+[sub_resource type="Resource" id="rope_top_blue"]
+script = ExtResource("3")
+texture = ExtResource("46")
+
+[sub_resource type="Resource" id="color_blue"]
+script = ExtResource("10")
+color_key = &"blue"
+element = SubResource("element_blue")
+empty_container = SubResource("empty_container_blue")
+completed_container = SubResource("completed_container_blue")
+target_icon = SubResource("completed_container_blue")
+lock_icon = SubResource("lock_blue")
+rope_top = SubResource("rope_top_blue")
+rope_mid = SubResource("rope_mid_blue")
+rope_bottom = SubResource("rope_bottom_blue")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_teal"]
+script = ExtResource("3")
+texture = ExtResource("47")
+content_rect = Rect2(13.00813, 25.406504, 229.98373, 234.47562)
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(37, 29, 180, 221)
+
+[sub_resource type="Resource" id="element_teal"]
+script = ExtResource("3")
+texture = ExtResource("48")
+content_rect = Rect2(27, 25, 144, 144)
+visual_center = Vector2(0.495, 0.485)
+
+[sub_resource type="Resource" id="empty_container_teal"]
+script = ExtResource("3")
+texture = ExtResource("49")
+
+[sub_resource type="Resource" id="lock_teal"]
+script = ExtResource("3")
+texture = ExtResource("48")
+
+[sub_resource type="Resource" id="rope_bottom_teal"]
+script = ExtResource("3")
+texture = ExtResource("50")
+
+[sub_resource type="Resource" id="rope_mid_teal"]
+script = ExtResource("3")
+texture = ExtResource("51")
+
+[sub_resource type="Resource" id="rope_top_teal"]
+script = ExtResource("3")
+texture = ExtResource("52")
+
+[sub_resource type="Resource" id="color_teal"]
+script = ExtResource("10")
+color_key = &"teal"
+element = SubResource("element_teal")
+empty_container = SubResource("empty_container_teal")
+completed_container = SubResource("completed_container_teal")
+target_icon = SubResource("completed_container_teal")
+lock_icon = SubResource("lock_teal")
+rope_top = SubResource("rope_top_teal")
+rope_mid = SubResource("rope_mid_teal")
+rope_bottom = SubResource("rope_bottom_teal")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_orange"]
+script = ExtResource("3")
+texture = ExtResource("53")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(33, 2, 191, 248)
+
+[sub_resource type="Resource" id="element_orange"]
+script = ExtResource("3")
+texture = ExtResource("54")
+content_rect = Rect2(27, 27, 145, 137)
+visual_center = Vector2(0.5, 0.48)
+
+[sub_resource type="Resource" id="empty_container_orange"]
+script = ExtResource("3")
+texture = ExtResource("55")
+
+[sub_resource type="Resource" id="lock_orange"]
+script = ExtResource("3")
+texture = ExtResource("54")
+
+[sub_resource type="Resource" id="rope_bottom_orange"]
+script = ExtResource("3")
+texture = ExtResource("56")
+
+[sub_resource type="Resource" id="rope_mid_orange"]
+script = ExtResource("3")
+texture = ExtResource("57")
+
+[sub_resource type="Resource" id="rope_top_orange"]
+script = ExtResource("3")
+texture = ExtResource("58")
+
+[sub_resource type="Resource" id="color_orange"]
+script = ExtResource("10")
+color_key = &"orange"
+element = SubResource("element_orange")
+empty_container = SubResource("empty_container_orange")
+completed_container = SubResource("completed_container_orange")
+target_icon = SubResource("completed_container_orange")
+lock_icon = SubResource("lock_orange")
+rope_top = SubResource("rope_top_orange")
+rope_mid = SubResource("rope_mid_orange")
+rope_bottom = SubResource("rope_bottom_orange")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_container_lavender"]
+script = ExtResource("3")
+texture = ExtResource("59")
+bottom_anchor = Vector2(0.5, 0.9578544)
+source_bounds = Rect2(32, 4, 191, 246)
+
+[sub_resource type="Resource" id="element_lavender"]
+script = ExtResource("3")
+texture = ExtResource("60")
+content_rect = Rect2(29, 26, 142, 138)
+visual_center = Vector2(0.5, 0.485)
+
+[sub_resource type="Resource" id="empty_container_lavender"]
+script = ExtResource("3")
+texture = ExtResource("61")
+
+[sub_resource type="Resource" id="lock_lavender"]
+script = ExtResource("3")
+texture = ExtResource("60")
+
+[sub_resource type="Resource" id="rope_bottom_lavender"]
+script = ExtResource("3")
+texture = ExtResource("62")
+
+[sub_resource type="Resource" id="rope_mid_lavender"]
+script = ExtResource("3")
+texture = ExtResource("63")
+
+[sub_resource type="Resource" id="rope_top_lavender"]
+script = ExtResource("3")
+texture = ExtResource("64")
+
+[sub_resource type="Resource" id="color_lavender"]
+script = ExtResource("10")
+color_key = &"lavender"
+element = SubResource("element_lavender")
+empty_container = SubResource("empty_container_lavender")
+completed_container = SubResource("completed_container_lavender")
+target_icon = SubResource("completed_container_lavender")
+lock_icon = SubResource("lock_lavender")
+rope_top = SubResource("rope_top_lavender")
+rope_mid = SubResource("rope_mid_lavender")
+rope_bottom = SubResource("rope_bottom_lavender")
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="effects"]
+script = ExtResource("98")
+rope_petal = ExtResource("97")
+rope_star = ExtResource("78")
+rank_collectible_connection_01 = ExtResource("95")
+rank_collectible_connection_02 = ExtResource("96")
+rank_collectible_connection_size = Vector2(32, 48)
+rank_collectible_collection_size = Vector2(40, 64)
+unlock_leaf = ExtResource("99")
+unlock_glow = ExtResource("75")
+complete_column_glow = ExtResource("70")
+mystery_petal = ExtResource("77")
+mystery_glow = ExtResource("76")
+mystery_flash = ExtResource("75")
+mystery_star = ExtResource("78")
+cup_bloom = ExtResource("71")
+quota_ring = ExtResource("76")
+progress_dot = ExtResource("91")
+progress_star = ExtResource("94")
+progress_flower = ExtResource("93")
+ice_sparkle = ExtResource("73")
+ice_shard = ExtResource("72")
+landing_star = ExtResource("74")
+progress_colors = [ExtResource("79"), ExtResource("80"), ExtResource("81"), ExtResource("82"), ExtResource("83"), ExtResource("84"), ExtResource("85"), ExtResource("86"), ExtResource("87"), ExtResource("88"), ExtResource("89"), ExtResource("90")]
+progress_excellent = ExtResource("92")
+butterflies = [ExtResource("65"), ExtResource("66"), ExtResource("67"), ExtResource("68"), ExtResource("69")]
+
+[sub_resource type="Resource" id="guide_collect_by_color"]
+script = ExtResource("3")
+texture = ExtResource("100")
+content_rect = Rect2(0, 6, 120, 120)
+
+[sub_resource type="Resource" id="guide_connect_same_color"]
+script = ExtResource("3")
+texture = ExtResource("101")
+content_rect = Rect2(3, 4, 120, 120)
+
+[sub_resource type="Resource" id="guide_target_empty_icon"]
+script = ExtResource("3")
+texture = ExtResource("102")
+content_rect = Rect2(0, -1, 62, 62)
+
+[sub_resource type="Resource" id="guide_use_empty_ropes"]
+script = ExtResource("3")
+texture = ExtResource("103")
+content_rect = Rect2(0, 2, 120, 120)
+
+[sub_resource type="Resource" id="mystery_element"]
+script = ExtResource("3")
+texture = ExtResource("104")
+
+[sub_resource type="Resource" id="parking_container"]
+script = ExtResource("3")
+texture = ExtResource("105")
+
+[sub_resource type="Resource" id="parking_rope_bottom"]
+script = ExtResource("3")
+texture = ExtResource("106")
+
+[sub_resource type="Resource" id="parking_rope_mid"]
+script = ExtResource("3")
+texture = ExtResource("107")
+
+[sub_resource type="Resource" id="parking_rope_top"]
+script = ExtResource("3")
+texture = ExtResource("108")
+
+[sub_resource type="Resource" id="rank_gift_container"]
+script = ExtResource("3")
+texture = ExtResource("109")
+content_rect = Rect2(0, 0, 540, 552)
+bottom_anchor = Vector2(0.5, 0.87777776)
+source_bottom = 474.0
+
+[sub_resource type="Resource" id="rank_elk_visual"]
+script = ExtResource("3")
+texture = ExtResource("110")
+
+[sub_resource type="Resource" id="rank_tree_visual"]
+script = ExtResource("3")
+texture = ExtResource("111")
+
+[sub_resource type="Resource" id="rank_snow_visual"]
+script = ExtResource("3")
+texture = ExtResource("112")
+
+[sub_resource type="Resource" id="rank_gingerbread_visual"]
+script = ExtResource("3")
+texture = ExtResource("113")
+
+[sub_resource type="Resource" id="rank_bell_visual"]
+script = ExtResource("3")
+texture = ExtResource("114")
+
+[sub_resource type="Resource" id="rank_ribbon_bottom_visual"]
+script = ExtResource("3")
+texture = ExtResource("115")
+source_bounds = Rect2(21, 0, 17, 85)
+
+[sub_resource type="Resource" id="rank_ribbon_mid_visual"]
+script = ExtResource("3")
+texture = ExtResource("116")
+source_bounds = Rect2(21, 0, 17, 88)
+
+[sub_resource type="Resource" id="rank_ribbon_top_visual"]
+script = ExtResource("3")
+texture = ExtResource("117")
+source_bounds = Rect2(11, 4, 38, 117)
+
+[sub_resource type="Resource" id="rank_gift_elk_target"]
+script = ExtResource("3")
+texture = ExtResource("118")
+content_rect = Rect2(3.462316, -46.581413, 533.0754, 543.487)
+bottom_anchor = Vector2(0.5, 0.87777776)
+source_bounds = Rect2(77, 41, 391, 433)
+
+[sub_resource type="Resource" id="rank_gift_tree_target"]
+script = ExtResource("3")
+texture = ExtResource("119")
+content_rect = Rect2(3.462316, -46.581413, 533.0754, 543.487)
+bottom_anchor = Vector2(0.5, 0.87777776)
+source_bounds = Rect2(77, 41, 391, 433)
+
+[sub_resource type="Resource" id="rank_gift_snow_target"]
+script = ExtResource("3")
+texture = ExtResource("120")
+content_rect = Rect2(3.462316, -46.581413, 533.0754, 543.487)
+bottom_anchor = Vector2(0.5, 0.87777776)
+source_bounds = Rect2(77, 41, 391, 433)
+
+[sub_resource type="Resource" id="rank_gift_gingerbread_target"]
+script = ExtResource("3")
+texture = ExtResource("121")
+content_rect = Rect2(3.462316, -46.581413, 533.0754, 543.487)
+bottom_anchor = Vector2(0.5, 0.87777776)
+source_bounds = Rect2(77, 41, 391, 433)
+
+[sub_resource type="Resource" id="rank_gift_bell_target"]
+script = ExtResource("3")
+texture = ExtResource("122")
+content_rect = Rect2(3.462316, -46.581413, 533.0754, 543.487)
+bottom_anchor = Vector2(0.5, 0.87777776)
+source_bounds = Rect2(77, 41, 391, 433)
+
+[sub_resource type="Resource" id="target_empty_icon"]
+script = ExtResource("3")
+texture = ExtResource("124")
+bottom_anchor = Vector2(0.5, 0.9578544)
+
+[resource]
+script = ExtResource("123")
+id = &"default"
+display_name = "默认花朵"
+revision = 23
+page_theme = null
+colors = [SubResource("color_red"), SubResource("color_purple"), SubResource("color_pink"), SubResource("color_cyan"), SubResource("color_yellow"), SubResource("color_green"), SubResource("color_blue"), SubResource("color_teal"), SubResource("color_orange"), SubResource("color_lavender")]
+target_empty_icon = SubResource("target_empty_icon")
+target_bar_max_visible_count = 10
+guide_target_empty_icon = SubResource("guide_target_empty_icon")
+guide_connect_same_color = SubResource("guide_connect_same_color")
+guide_collect_by_color = SubResource("guide_collect_by_color")
+guide_use_empty_ropes = SubResource("guide_use_empty_ropes")
+rank_collectible_elements = [SubResource("rank_elk_visual"), SubResource("rank_tree_visual"), SubResource("rank_snow_visual"), SubResource("rank_gingerbread_visual"), SubResource("rank_bell_visual")]
+rank_collectible_container = SubResource("rank_gift_container")
+rank_collectible_target = SubResource("rank_gift_elk_target")
+rank_collectible_targets = [SubResource("rank_gift_elk_target"), SubResource("rank_gift_tree_target"), SubResource("rank_gift_snow_target"), SubResource("rank_gift_gingerbread_target"), SubResource("rank_gift_bell_target")]
+rank_collectible_target_height_ratio = 1.0
+rank_collectible_rope_top = SubResource("rank_ribbon_top_visual")
+rank_collectible_rope_mid = SubResource("rank_ribbon_mid_visual")
+rank_collectible_rope_bottom = SubResource("rank_ribbon_bottom_visual")
+rank_collectible_rope_body_rows = Vector2(121, 88)
+parking_container = SubResource("parking_container")
+parking_rope_top = SubResource("parking_rope_top")
+parking_rope_mid = SubResource("parking_rope_mid")
+parking_rope_bottom = SubResource("parking_rope_bottom")
+mystery_element = SubResource("mystery_element")
+collect_animation = SubResource("animation")
+collection_butterflies_enabled = true
+effects = SubResource("effects")

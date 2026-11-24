@@ -1,0 +1,267 @@
+{
+  "skeleton": {
+    "spine": "4.2.43",
+    "x": -160,
+    "y": -160,
+    "width": 320,
+    "height": 320,
+    "fps": 60,
+    "images": "./"
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "content",
+      "parent": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "flower_red",
+      "bone": "content",
+      "attachment": "flower_red"
+    },
+    {
+      "name": "flower_purple",
+      "bone": "content",
+      "attachment": "flower_purple"
+    },
+    {
+      "name": "flower_pink",
+      "bone": "content",
+      "attachment": "flower_pink"
+    },
+    {
+      "name": "flower_cyan",
+      "bone": "content",
+      "attachment": "flower_cyan"
+    },
+    {
+      "name": "flower_yellow",
+      "bone": "content",
+      "attachment": "flower_yellow"
+    },
+    {
+      "name": "flower_green",
+      "bone": "content",
+      "attachment": "flower_green"
+    },
+    {
+      "name": "flower_blue",
+      "bone": "content",
+      "attachment": "flower_blue"
+    },
+    {
+      "name": "flower_teal",
+      "bone": "content",
+      "attachment": "flower_teal"
+    },
+    {
+      "name": "flower_orange",
+      "bone": "content",
+      "attachment": "flower_orange"
+    },
+    {
+      "name": "flower_lavender",
+      "bone": "content",
+      "attachment": "flower_lavender"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "flower_red": {
+          "flower_red": {
+            "type": "region",
+            "path": "flower_red",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_purple": {
+          "flower_purple": {
+            "type": "region",
+            "path": "flower_purple",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_pink": {
+          "flower_pink": {
+            "type": "region",
+            "path": "flower_pink",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_cyan": {
+          "flower_cyan": {
+            "type": "region",
+            "path": "flower_cyan",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_yellow": {
+          "flower_yellow": {
+            "type": "region",
+            "path": "flower_yellow",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_green": {
+          "flower_green": {
+            "type": "region",
+            "path": "flower_green",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_blue": {
+          "flower_blue": {
+            "type": "region",
+            "path": "flower_blue",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_teal": {
+          "flower_teal": {
+            "type": "region",
+            "path": "flower_teal",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_orange": {
+          "flower_orange": {
+            "type": "region",
+            "path": "flower_orange",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        },
+        "flower_lavender": {
+          "flower_lavender": {
+            "type": "region",
+            "path": "flower_lavender",
+            "x": 0,
+            "y": 0,
+            "width": 320,
+            "height": 320
+          }
+        }
+      }
+    },
+    {
+      "name": "bird_red"
+    },
+    {
+      "name": "bird_purple"
+    },
+    {
+      "name": "bird_pink"
+    },
+    {
+      "name": "bird_cyan"
+    },
+    {
+      "name": "bird_yellow"
+    },
+    {
+      "name": "bird_green"
+    },
+    {
+      "name": "bird_blue"
+    },
+    {
+      "name": "bird_teal"
+    },
+    {
+      "name": "bird_orange"
+    },
+    {
+      "name": "bird_lavender"
+    }
+  ],
+  "animations": {
+    "get": {
+      "bones": {
+        "content": {
+          "scale": [
+            {
+              "x": 0.88,
+              "y": 0.88
+            },
+            {
+              "time": 0.16,
+              "x": 1,
+              "y": 1
+            },
+            {
+              "time": 0.6666666666666666,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      }
+    },
+    "idle": {
+      "bones": {
+        "content": {
+          "scale": [
+            {
+              "x": 1,
+              "y": 1
+            },
+            {
+              "time": 1,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      }
+    },
+    "end": {
+      "bones": {
+        "content": {
+          "scale": [
+            {
+              "x": 1,
+              "y": 1
+            },
+            {
+              "time": 0.06666666666666667,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://cgtlicckqd04o"]
+
+[ext_resource type="Script" uid="uid://bedygn0hednxp" path="res://scripts/gameplay/rank/view/rank_list_view.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://b170mpc68xk4f" path="res://scripts/gameplay/rank/view/rank_item_view.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://c6gurgur2dw3f" path="res://scripts/gameplay/rank/view/rank_zone_banner.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_collect_element_pool.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_source_collection_fx.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_row_land_burst_fx.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://dl6fxal11wxp" path="res://scripts/gameplay/rank/view/rank_avatar_pool.tscn" id="7"]
+
+[node name="RankListView" type="Control" unique_id=1438198996]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+item_scene = ExtResource("2")
+zone_banner_scene = ExtResource("3")
+element_pool_scene = ExtResource("4")
+collect_source_scene = ExtResource("5")
+land_burst_scene = ExtResource("6")
+
+[node name="Scroll" type="ScrollContainer" parent="." unique_id=1744403347]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -48.0
+offset_right = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="Content" type="Control" parent="Scroll" unique_id=1308038229]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="AvatarPool" parent="." unique_id=1911700780 instance=ExtResource("7")]
+
+[node name="RiseOverlay" type="Control" parent="." unique_id=281015072]
+z_index = 4
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2

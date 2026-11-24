@@ -1,0 +1,68 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" uid="uid://dsd371hfqk8wl" path="res://scripts/gameplay/juice_sort/view/spiral_light_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://l7r8ey7sife0" path="res://assets/effect/texture/glow/ef_glow_002.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://de5s8mysclhd" path="res://assets/effect/texture/point/ef_point_001.png" id="3"]
+
+[sub_resource type="Curve" id="Curve_dust_scale"]
+_data = [Vector2(0, 0.3), 0.0, 0.0, 0, 0, Vector2(0.15, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.2), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_dust_fade"]
+offsets = PackedFloat32Array(0, 0.6, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.85, 1, 1, 1, 0)
+
+[node name="SpiralLightFx" type="Node2D" unique_id=281417845]
+script = ExtResource("1")
+head_texture = ExtResource("2")
+dust_texture = ExtResource("3")
+
+[node name="Back" type="Node2D" parent="." unique_id=492474252]
+z_index = -1
+use_parent_material = true
+
+[node name="Front" type="Node2D" parent="." unique_id=850385709]
+z_index = 1
+use_parent_material = true
+
+[node name="Dust0" type="CPUParticles2D" parent="Front" unique_id=613988061]
+use_parent_material = true
+emitting = false
+amount = 32
+texture = ExtResource("3")
+lifetime = 0.7
+emission_shape = 1
+emission_sphere_radius = 6.0
+direction = Vector2(0, -1)
+spread = 180.0
+gravity = Vector2(0, -25)
+initial_velocity_min = 10.0
+initial_velocity_max = 40.0
+damping_min = 20.0
+damping_max = 40.0
+angle_min = -180.0
+angle_max = 180.0
+scale_amount_curve = SubResource("Curve_dust_scale")
+color = Color(1, 0.86, 0.45, 1)
+color_ramp = SubResource("Gradient_dust_fade")
+
+[node name="Dust1" type="CPUParticles2D" parent="Front" unique_id=1202842750]
+use_parent_material = true
+emitting = false
+amount = 32
+texture = ExtResource("3")
+lifetime = 0.7
+emission_shape = 1
+emission_sphere_radius = 6.0
+direction = Vector2(0, -1)
+spread = 180.0
+gravity = Vector2(0, -25)
+initial_velocity_min = 10.0
+initial_velocity_max = 40.0
+damping_min = 20.0
+damping_max = 40.0
+angle_min = -180.0
+angle_max = 180.0
+scale_amount_curve = SubResource("Curve_dust_scale")
+color = Color(1, 0.86, 0.45, 1)
+color_ramp = SubResource("Gradient_dust_fade")

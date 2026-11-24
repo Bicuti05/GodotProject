@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+
+[ext_resource type="SpineAtlasResource" uid="uid://b677efl6ahaeh" path="res://assets/spine/empty_col_feedback/empty_col_feedback.atlas" id="1"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://bkx2tsgp5cqsc" path="res://assets/spine/empty_col_feedback/empty_col_feedback.spine-json" id="2"]
+
+[resource]
+atlas_res = ExtResource("1")
+skeleton_file_res = ExtResource("2")

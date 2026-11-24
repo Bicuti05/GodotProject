@@ -1,0 +1,196 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" uid="uid://due6mn6s1ry4k" path="res://scripts/main/dialogs/finish/view/game_data_layer.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b7kv5lbu3x74j" path="res://assets/sprites/finish/gamedata_bg_normal.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dqgv801dgqxdu" path="res://assets/sprites/finish/gamedata_bg_hard.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://sdwkx63shbqx" path="res://assets/sprites/finish/gamedata_bg_superhard.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://blf73ynv45qnn" path="res://assets/sprites/finish/S.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dudu3jix80rh8" path="res://assets/sprites/finish/A.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://b7hkm42ibwqmt" path="res://assets/sprites/finish/B.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cmqhqhwwp6dqw" path="res://assets/sprites/finish_rise_body.png" id="8"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="9"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/view/result_badge.tscn" id="10"]
+
+[node name="GameDataLayer" type="Control" unique_id=67187313]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 912.0
+offset_bottom = 269.2308
+mouse_filter = 2
+script = ExtResource("1")
+normal_background = ExtResource("2")
+hard_background = ExtResource("3")
+super_hard_background = ExtResource("4")
+s_badge = ExtResource("5")
+a_badge = ExtResource("6")
+b_badge = ExtResource("7")
+rise_badge = ExtResource("8")
+
+[node name="TimeCard" type="Control" parent="." unique_id=649995238]
+anchors_preset = 0
+offset_right = 280.0
+offset_bottom = 269.2308
+mouse_filter = 2
+
+[node name="Background" type="TextureRect" parent="TimeCard" unique_id=207378801]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="TimeCard" unique_id=1455742877]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 25.0
+offset_right = 264.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.3, 0.43, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 50
+text = "FINISH_DATA_TIME"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Value" type="Label" parent="TimeCard" unique_id=18582868]
+auto_translate_mode = 2
+layout_mode = 0
+offset_left = 22.0
+offset_top = 100.0
+offset_right = 258.0
+offset_bottom = 236.0
+theme_override_colors/font_color = Color(0.28, 0.33, 0.39, 1)
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Badge" parent="TimeCard" unique_id=911460618 instance=ExtResource("10")]
+anchors_preset = 0
+offset_left = 199.0
+offset_top = 184.0
+offset_right = 279.0
+offset_bottom = 267.5556
+
+[node name="Burst" type="Node2D" parent="TimeCard" unique_id=1164838580]
+
+[node name="StepCard" type="Control" parent="." unique_id=1039543484]
+anchors_preset = 0
+offset_right = 280.0
+offset_bottom = 269.2308
+mouse_filter = 2
+
+[node name="Background" type="TextureRect" parent="StepCard" unique_id=1177643831]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="StepCard" unique_id=1779609670]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 25.0
+offset_right = 264.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.3, 0.43, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 50
+text = "FINISH_DATA_STEPS"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Value" type="Label" parent="StepCard" unique_id=1045395895]
+auto_translate_mode = 2
+layout_mode = 0
+offset_left = 22.0
+offset_top = 100.0
+offset_right = 258.0
+offset_bottom = 236.0
+theme_override_colors/font_color = Color(0.28, 0.33, 0.39, 1)
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Badge" parent="StepCard" unique_id=300142577 instance=ExtResource("10")]
+anchors_preset = 0
+offset_left = 199.0
+offset_top = 184.0
+offset_right = 279.0
+offset_bottom = 267.5556
+
+[node name="Burst" type="Node2D" parent="StepCard" unique_id=1518699388]
+
+[node name="StreakCard" type="Control" parent="." unique_id=573677555]
+anchors_preset = 0
+offset_right = 280.0
+offset_bottom = 269.2308
+mouse_filter = 2
+
+[node name="Background" type="TextureRect" parent="StreakCard" unique_id=975930944]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="StreakCard" unique_id=168270092]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 25.0
+offset_right = 264.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12, 0.3, 0.43, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 50
+text = "FINISH_DATA_STREAK"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="Value" type="Label" parent="StreakCard" unique_id=155801027]
+auto_translate_mode = 2
+layout_mode = 0
+offset_left = 22.0
+offset_top = 100.0
+offset_right = 258.0
+offset_bottom = 236.0
+theme_override_colors/font_color = Color(0.28, 0.33, 0.39, 1)
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Badge" parent="StreakCard" unique_id=1270031360 instance=ExtResource("10")]
+anchors_preset = 0
+offset_left = 199.0
+offset_top = 184.0
+offset_right = 279.0
+offset_bottom = 267.5556
+
+[node name="Burst" type="Node2D" parent="StreakCard" unique_id=2125060926]

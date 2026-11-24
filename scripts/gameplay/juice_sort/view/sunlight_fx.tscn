@@ -1,0 +1,49 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" uid="uid://rfb50skpuyhq" path="res://scripts/gameplay/juice_sort/view/sunlight_fx.gd" id="1"]
+[ext_resource type="Script" uid="uid://bwlkj1kebc4wg" path="res://scripts/gameplay/juice_sort/view/sunlight_fx_settings.gd" id="2"]
+[ext_resource type="Shader" uid="uid://fgo4hrrh2ops" path="res://scripts/gameplay/juice_sort/view/sunlight_rays.gdshader" id="3"]
+[ext_resource type="Texture2D" uid="uid://btxlnaqqbkly" path="res://assets/sprites/juice_sort/sunlight_collected_halo_back.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://mpm1kj37qsha" path="res://assets/sprites/juice_sort/sunlight_collected_halo_main.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dfd0317r7iw8a" path="res://assets/sprites/juice_sort/sunlight_collected_halo_radial_user.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bc7fnblfm88g" path="res://assets/sprites/juice_sort/sunlight_collected_halo_upper.png" id="7"]
+
+[sub_resource type="Resource" id="defaults"]
+script = ExtResource("2")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_73gni"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/halo_back_texture = ExtResource("4")
+shader_parameter/halo_main_texture = ExtResource("5")
+shader_parameter/halo_upper_texture = ExtResource("7")
+shader_parameter/halo_radial_texture = ExtResource("6")
+shader_parameter/area_size = null
+shader_parameter/clock = null
+shader_parameter/envelope = null
+shader_parameter/reveal_duration = null
+shader_parameter/fade_start = null
+shader_parameter/fade_end = null
+shader_parameter/light_enabled = null
+shader_parameter/drops_enabled = null
+shader_parameter/drop_count = null
+shader_parameter/drop_size = null
+shader_parameter/ice_count = null
+shader_parameter/ice_origins = null
+shader_parameter/ice_axes = null
+shader_parameter/melt_delay = null
+shader_parameter/melt_duration = null
+shader_parameter/melt_enabled = null
+
+[node name="SunlightFx" type="Control" unique_id=31911949]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1")
+settings = SubResource("defaults")
+
+[node name="Rays" type="ColorRect" parent="." unique_id=685272033]
+material = SubResource("ShaderMaterial_73gni")
+layout_mode = 0
+mouse_filter = 2

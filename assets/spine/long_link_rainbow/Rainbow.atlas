@@ -1,0 +1,16 @@
+Rainbow.png
+size:376,456
+filter:Linear,Linear
+scale:0.8
+cloud_left
+bounds:238,2,211,136
+rotate:90
+cloud_right
+bounds:238,215,207,126
+rotate:90
+rainbow_reveal_23
+bounds:2,2,410,234
+rotate:90
+rainbow_star_particle
+bounds:2,414,38,37
+offsets:0,0,38,38

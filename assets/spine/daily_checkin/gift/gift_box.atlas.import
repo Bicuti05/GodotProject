@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://xm463o3etien"
+path="res://.godot/imported/gift_box.atlas-0ecd1260f364ca61208395b6b97b6266.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/gift/gift_box.atlas"
+dest_files=["res://.godot/imported/gift_box.atlas-0ecd1260f364ca61208395b6b97b6266.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

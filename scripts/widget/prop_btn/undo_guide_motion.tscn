@@ -1,0 +1,105 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" uid="uid://bxbni33rabp8r" path="res://scripts/widget/prop_btn/undo_guide_motion.gd" id="1"]
+[ext_resource type="Shader" uid="uid://ddsmag0ttcw8q" path="res://assets/effect/shader/undo_guide_ripple.gdshader" id="2"]
+[ext_resource type="Texture2D" uid="uid://h1dyso4mt0pc" path="res://assets/effect/texture/undo_guide/undo_guide_ripple.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://blgt2n4bxphmj" path="res://assets/effect/texture/undo_guide/undo_guide_particle_large.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cnxgoucqm5vrp" path="res://assets/effect/texture/undo_guide/undo_guide_particle_small.png" id="5"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ring"]
+shader = ExtResource("2")
+shader_parameter/alpha_floor = 0.4
+shader_parameter/alpha_core = 0.56
+shader_parameter/ripple_tint = Color(1, 1, 0.8, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_second_ring"]
+shader = ExtResource("2")
+shader_parameter/alpha_floor = 0.4
+shader_parameter/alpha_core = 0.56
+shader_parameter/ripple_tint = Color(1, 1, 0.8, 1)
+
+[node name="UndoGuideMotion" type="Node2D" unique_id=509894977]
+texture_filter = 2
+script = ExtResource("1")
+
+[node name="Ring" type="Sprite2D" parent="." unique_id=622488257]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = -1
+material = SubResource("ShaderMaterial_ring")
+position = Vector2(102, 114)
+scale = Vector2(1.3535353, 1.3535353)
+texture = ExtResource("3")
+
+[node name="SecondRing" type="Sprite2D" parent="." unique_id=1963089641]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = -1
+material = SubResource("ShaderMaterial_second_ring")
+position = Vector2(102, 114)
+scale = Vector2(1.3535353, 1.3535353)
+texture = ExtResource("3")
+
+[node name="ParticleLarge1" type="Sprite2D" parent="." unique_id=1056957362]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(20, -2)
+scale = Vector2(0.37037036, 0.37037036)
+texture = ExtResource("4")
+
+[node name="ParticleLarge2" type="Sprite2D" parent="." unique_id=1188102932]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(165, -1)
+scale = Vector2(0.2777778, 0.2777778)
+texture = ExtResource("4")
+
+[node name="ParticleLarge3" type="Sprite2D" parent="." unique_id=1923706490]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(17, 243)
+scale = Vector2(0.3148148, 0.3148148)
+texture = ExtResource("4")
+
+[node name="ParticleSmall1" type="Sprite2D" parent="." unique_id=1811849251]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(76, -3)
+scale = Vector2(0.26086956, 0.26086956)
+texture = ExtResource("5")
+
+[node name="ParticleSmall2" type="Sprite2D" parent="." unique_id=2101575606]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(210, 8)
+scale = Vector2(0.3043478, 0.3043478)
+texture = ExtResource("5")
+
+[node name="ParticleSmall3" type="Sprite2D" parent="." unique_id=772569952]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(-3, 0)
+scale = Vector2(0.2173913, 0.2173913)
+texture = ExtResource("5")
+
+[node name="ParticleSmall4" type="Sprite2D" parent="." unique_id=590238680]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(-8, 239)
+scale = Vector2(0.26086956, 0.26086956)
+texture = ExtResource("5")
+
+[node name="ParticleSmall5" type="Sprite2D" parent="." unique_id=499732365]
+visible = false
+modulate = Color(1, 1, 1, 0)
+z_index = 1
+position = Vector2(116, 239)
+scale = Vector2(0.2173913, 0.2173913)
+texture = ExtResource("5")

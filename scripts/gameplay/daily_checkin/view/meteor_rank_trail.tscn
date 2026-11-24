@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://bp5vibrmrjwr" path="res://scripts/gameplay/daily_checkin/view/meteor_rank_trail.gd" id="1"]
+
+[node name="meteor_rank_trail" type="Node2D" unique_id=476081132]
+script = ExtResource("1")

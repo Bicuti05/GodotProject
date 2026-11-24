@@ -1,0 +1,76 @@
+effect_bird_container.png
+size:636,1560
+format:RGBA8888
+filter:Linear,Linear
+repeat:none
+pma:false
+flower_red
+  rotate:false
+  xy:2,2
+  size:320,320
+  orig:320,320
+  offset:0,0
+  index:-1
+flower_purple
+  rotate:false
+  xy:324,2
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1
+flower_pink
+  rotate:false
+  xy:324,311
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1
+flower_cyan
+  rotate:false
+  xy:2,324
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1
+flower_yellow
+  rotate:false
+  xy:311,620
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1
+flower_green
+  rotate:false
+  xy:2,633
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1
+flower_blue
+  rotate:false
+  xy:311,929
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1
+flower_teal
+  rotate:false
+  xy:2,942
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1
+flower_orange
+  rotate:false
+  xy:311,1238
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1
+flower_lavender
+  rotate:false
+  xy:2,1251
+  size:307,307
+  orig:320,320
+  offset:13,0
+  index:-1

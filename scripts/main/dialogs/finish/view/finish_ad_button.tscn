@@ -1,0 +1,243 @@
+[gd_scene load_steps=29 format=3]
+
+[ext_resource type="PackedScene" uid="uid://ctxbuwml56wj3" path="res://scripts/widget/common_btn/common_btn.tscn" id="1"]
+[ext_resource type="Script" uid="uid://b2aiufeokl32n" path="res://scripts/main/dialogs/finish/view/finish_ad_button.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dj188klpw5ht1" path="res://assets/sprites/finish/finish_ad_reward_coin.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ghhophc18eu2" path="res://assets/sprites/finish/finish_ad_reward_undo.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://btmphek74wext" path="res://assets/sprites/finish/finish_ad_reward_hint.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bur5kasn1osv" path="res://assets/sprites/finish/finish_ad_reward_rope.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cqd1tf1ff70bn" path="res://assets/sprites/finish/nice.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cc0sxdp650fyh" path="res://assets/sprites/finish/great.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c8cr5lepc6igk" path="res://assets/sprites/finish/lucky.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bc8h85ixr224n" path="res://assets/sprites/btn_primary_bg_purple.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://b7m0rjxws3ygn" path="res://assets/sprites/btn_primary_bg_orange.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://brqskayai0fbu" path="res://assets/sprites/finish/radiated_light_green.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://g4pvdlj2le5q" path="res://assets/sprites/finish/radiated_light_purple.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://l5vj5kcr0d00" path="res://assets/sprites/finish/radiated_light_orange.png" id="14"]
+[ext_resource type="Shader" uid="uid://c8xygv56mq7ek" path="res://assets/effect/shader/finish_radiated_light.gdshader" id="15"]
+[ext_resource type="Texture2D" uid="uid://l7r8ey7sife0" path="res://assets/effect/texture/glow/ef_glow_002.png" id="16"]
+[ext_resource type="Script" uid="uid://dp6857gtj5rsy" path="res://scripts/widget/common_btn/wave_jump_effect.gd" id="17"]
+[ext_resource type="Texture2D" uid="uid://c2m8gxflxyuyb" path="res://assets/sprites/common_btn_bg_primary.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://cjbyicahibyic" path="res://assets/sprites/finish/finishpage_ad_icon.png" id="19"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="20"]
+[ext_resource type="Shader" uid="uid://b4eyqjrirqdvf" path="res://assets/effect/shader/finish_ad_badge_flash.gdshader" id="21"]
+
+[sub_resource type="ShaderMaterial" id="rays_material"]
+shader = ExtResource("15")
+
+[sub_resource type="CanvasItemMaterial" id="additive"]
+blend_mode = 1
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_a1dmp"]
+script = ExtResource("17")
+resource_local_to_scene = true
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_ipqcw"]
+script = ExtResource("17")
+resource_local_to_scene = true
+
+[sub_resource type="Shader" id="outline_shader"]
+code = "shader_type canvas_item;
+render_mode unshaded;
+
+varying vec4 tint;
+
+void vertex() {
+	tint = COLOR;
+}
+
+void fragment() {
+	vec4 face = texture(TEXTURE, UV);
+	// 保留原按钮贴图的白色边框，剔除彩色填充和暗色底影。
+	float white = smoothstep(0.9, 0.98, min(face.r, min(face.g, face.b)));
+	COLOR = vec4(vec3(1.0), face.a * white) * tint;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="outline_material"]
+shader = SubResource("outline_shader")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_236ub"]
+resource_local_to_scene = true
+shader = ExtResource("21")
+shader_parameter/flash_strength = null
+
+[node name="FinishAdButton" unique_id=1737733991 instance=ExtResource("1")]
+visible = false
+custom_minimum_size = Vector2(0, 0)
+script = ExtResource("2")
+coin_icon = ExtResource("3")
+undo_icon = ExtResource("4")
+hint_icon = ExtResource("5")
+rope_icon = ExtResource("6")
+nice_badge = ExtResource("7")
+great_badge = ExtResource("8")
+lucky_badge = ExtResource("9")
+great_face = ExtResource("10")
+lucky_face = ExtResource("11")
+nice_rays = ExtResource("12")
+great_rays = ExtResource("13")
+lucky_rays = ExtResource("14")
+
+[node name="TierRays" type="Sprite2D" parent="." index="0" unique_id=1729403551]
+visible = false
+material = SubResource("rays_material")
+position = Vector2(353, -12)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("12")
+offset = Vector2(6, 24)
+
+[node name="TierBurstGlow" type="TextureRect" parent="." index="1" unique_id=1353601551]
+visible = false
+material = SubResource("additive")
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -220.0
+offset_top = -172.0
+offset_right = 220.0
+offset_bottom = 148.0
+grow_horizontal = 2
+pivot_offset = Vector2(220, 160)
+mouse_filter = 2
+texture = ExtResource("16")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="WaveLabel" parent="Contents/TextGroup" parent_id_path=PackedInt32Array(781298009) index="1" unique_id=364175833]
+custom_effects = [SubResource("RichTextEffect_a1dmp")]
+
+[node name="SubWaveLabel" parent="SubRow/SubTextGroup" parent_id_path=PackedInt32Array(1767860224) index="1" unique_id=852539736]
+custom_effects = [SubResource("RichTextEffect_ipqcw")]
+
+[node name="Outline" type="NinePatchRect" parent="." index="5" unique_id=657921158]
+material = SubResource("outline_material")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18")
+patch_margin_left = 96
+patch_margin_top = 90
+patch_margin_right = 96
+patch_margin_bottom = 106
+
+[node name="AdIcon" type="TextureRect" parent="." index="6" unique_id=722242915]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 40.0
+offset_right = 220.0
+offset_bottom = 152.0
+mouse_filter = 2
+texture = ExtResource("19")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RewardClip" type="Control" parent="." index="7" unique_id=114321901]
+clip_contents = true
+anchors_preset = 0
+offset_left = 246.0
+offset_top = 30.0
+offset_right = 610.0
+offset_bottom = 162.0
+mouse_filter = 2
+
+[node name="RowA" type="Control" parent="RewardClip" index="0" unique_id=2062875913]
+anchors_preset = 0
+offset_right = 364.0
+offset_bottom = 132.0
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="RewardClip/RowA" index="0" unique_id=1767502060]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 12.0
+offset_right = 116.0
+offset_bottom = 120.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Count" type="Label" parent="RewardClip/RowA" index="1" unique_id=858491099]
+layout_mode = 0
+offset_left = 132.0
+offset_right = 364.0
+offset_bottom = 132.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.4)
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("20")
+theme_override_font_sizes/font_size = 90
+text = "x200"
+vertical_alignment = 1
+
+[node name="RowB" type="Control" parent="RewardClip" index="1" unique_id=2048912615]
+anchors_preset = 0
+offset_top = 132.0
+offset_right = 364.0
+offset_bottom = 264.0
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="RewardClip/RowB" index="0" unique_id=142654685]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 12.0
+offset_right = 116.0
+offset_bottom = 120.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Count" type="Label" parent="RewardClip/RowB" index="1" unique_id=427182397]
+layout_mode = 0
+offset_left = 132.0
+offset_right = 364.0
+offset_bottom = 132.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.4)
+theme_override_constants/outline_size = 9
+theme_override_fonts/font = ExtResource("20")
+theme_override_font_sizes/font_size = 90
+text = "x200"
+vertical_alignment = 1
+
+[node name="TierGlow" type="TextureRect" parent="." index="8" unique_id=1033420899]
+visible = false
+material = SubResource("additive")
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -240.0
+offset_top = -160.0
+offset_right = 240.0
+offset_bottom = 40.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("16")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TierSparkles" type="Node2D" parent="." index="9" unique_id=210918378]
+
+[node name="TierBadge" type="TextureRect" parent="." index="10" unique_id=1110779293]
+visible = false
+material = SubResource("ShaderMaterial_236ub")
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -241.5
+offset_top = -89.0
+offset_right = 241.5
+offset_bottom = 65.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TierBurstStars" type="Node2D" parent="." index="11" unique_id=855917625]

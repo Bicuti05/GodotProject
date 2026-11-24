@@ -1,0 +1,17 @@
+[gd_resource type="FontVariation" load_steps=8 format=3 uid="uid://ddrdwgvpbi4ga"]
+
+[ext_resource type="FontFile" uid="uid://dqktusa210wuv" path="res://assets/fonts/BaggageGo-Bold.ttf" id="1"]
+[ext_resource type="FontFile" uid="uid://cc81mdaocv1g4" path="res://assets/fonts/NotoSansSC-Bold-subset.ttf" id="2"]
+[ext_resource type="FontFile" uid="uid://e4qq3j4cjqrl" path="res://assets/fonts/NotoSans-Bold.ttf" id="3"]
+[ext_resource type="FontFile" uid="uid://drjejuwu3xrua" path="res://assets/fonts/NotoSansThai-Bold.ttf" id="4"]
+[ext_resource type="FontFile" uid="uid://gd47aqoxjlr6" path="res://assets/fonts/NotoSansArabic-Bold.ttf" id="5"]
+[ext_resource type="FontFile" uid="uid://6gedr57htahr" path="res://assets/fonts/NotoSansBengali-Bold.ttf" id="6"]
+[ext_resource type="FontFile" uid="uid://dwalol80xm6qc" path="res://assets/fonts/NotoSansTamil-Bold.ttf" id="7"]
+
+[resource]
+fallbacks = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7")]
+base_font = ExtResource("1")
+variation_opentype = {
+2003072104: 100,
+2003265652: 800
+}

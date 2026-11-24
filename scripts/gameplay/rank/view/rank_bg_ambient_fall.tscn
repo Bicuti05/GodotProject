@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=3 uid="uid://djs6r3y4i7sjs"]
+
+[ext_resource type="Script" uid="uid://vcs84ok6moig" path="res://scripts/gameplay/rank/view/rank_bg_ambient_fall.gd" id="1"]
+[ext_resource type="Script" uid="uid://jec5iw2m1f00" path="res://scripts/main/pages/splash/splash_ambient_foliage.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://6vsrajokr4wx" path="res://assets/effect/texture/point/ef_point_007.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://3rpclcsfrg8k" path="res://assets/effect/texture/point/ef_point_005.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c36rwjikyyo16" path="res://assets/effect/texture/point/ef_point_006.png" id="5"]
+
+[node name="BgAmbientFall" type="Control" unique_id=1614516357]
+visible = false
+clip_contents = true
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 874.0
+grow_horizontal = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Foliage" type="Node2D" parent="." unique_id=956462612]
+script = ExtResource("2")
+leaf_atlas = ExtResource("3")
+petal_atlas = ExtResource("4")
+flower_atlas = ExtResource("5")
+use_parent_size = true

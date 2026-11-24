@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://chqekmmwthgam"
+path="res://.godot/imported/effect_coin_clover.skel-b3e99f68cd4c442bd8820a8fc24e51c3.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_coin_clover/effect_coin_clover.skel"
+dest_files=["res://.godot/imported/effect_coin_clover.skel-b3e99f68cd4c442bd8820a8fc24e51c3.spskel"]
+
+[params]
+

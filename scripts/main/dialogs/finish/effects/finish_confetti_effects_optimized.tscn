@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" uid="uid://i5oagbi1kenh" path="res://scripts/main/dialogs/finish/effects/finish_confetti_effects.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_confetti_fall.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_confetti_rain.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_confetti_sparkle.tscn" id="4"]
+
+[node name="FinishConfettiEffects" type="Node2D" unique_id=1184483642]
+visible = false
+script = ExtResource("1")
+emitter_scenes = {
+&"Confetti": ExtResource("3"),
+&"ConfettiFall": ExtResource("2"),
+&"ConfettiRight": ExtResource("3"),
+&"Sparkle": ExtResource("4"),
+&"SparkleRight": ExtResource("4")
+}

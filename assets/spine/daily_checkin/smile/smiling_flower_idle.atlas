@@ -1,0 +1,11 @@
+smiling_flower_idle.png
+size:1028,1088
+filter:Linear,Linear
+eye_left
+bounds:139,1028,106,47
+eye_right
+bounds:247,1028,105,47
+flower_body
+bounds:2,2,1024,1024
+mouth_smile
+bounds:2,1028,135,56

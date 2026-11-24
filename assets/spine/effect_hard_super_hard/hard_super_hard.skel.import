@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://cd8bim3daul0b"
+path="res://.godot/imported/hard_super_hard.skel-043e415b16879e4c98f9d308d3201a6a.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_hard_super_hard/hard_super_hard.skel"
+dest_files=["res://.godot/imported/hard_super_hard.skel-043e415b16879e4c98f9d308d3201a6a.spskel"]
+
+[params]
+

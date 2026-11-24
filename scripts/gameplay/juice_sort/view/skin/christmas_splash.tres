@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="JuiceSkinDefinition" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" uid="uid://fua7ns1wkld8" path="res://assets/sprites/christmas_theme/splash/snowflake.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://6806j1tj10t7" path="res://assets/sprites/christmas_theme/splash/image.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://d3h8hf2d76s88" path="res://assets/sprites/christmas_theme/splash/progress_fill.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://d0dluhv85wdjq" path="res://assets/sprites/christmas_theme/splash/progress_icon.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cvwrx3mxirmly" path="res://assets/sprites/christmas_theme/splash/progress_bar.png" id="5"]
+[ext_resource type="Script" uid="uid://dv1u02wyrm751" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_page_theme.gd" id="6"]
+[ext_resource type="Script" uid="uid://co4lq1wqsxdse" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_definition.gd" id="7"]
+
+[sub_resource type="Resource" id="page_theme"]
+script = ExtResource("6")
+reference_size = Vector2(1080, 2344)
+background_color = Color(0.99215686, 0.92156863, 0.7647059, 1)
+illustration = ExtResource("2")
+illustration_rect = Rect2(-413, 698, 800, 800)
+quote_rect = Rect2(-472, 168, 947, 351)
+quote_text_size = Vector2(889, 224)
+author_rect = Rect2(533, 274, 414, 77)
+quote_color = Color(0.4862745, 0.3019608, 0.09019608, 1)
+progress_track = ExtResource("5")
+progress_fill = ExtResource("3")
+progress_icon = ExtResource("4")
+progress_size = Vector2(778, 68)
+progress_bottom_margin = 310.0
+progress_fill_rect = Rect2(12, 11, 754, 47)
+progress_icon_size = Vector2(128, 128)
+progress_icon_offset = Vector2(-72, -127)
+decoration_textures = [ExtResource("1"), ExtResource("1"), ExtResource("1"), ExtResource("1")]
+decoration_rects = [Rect2(356, 309, 88, 88), Rect2(-449, 555, 88, 88), Rect2(204, 899, 88, 88), Rect2(-353, 1254, 88, 88)]
+decoration_anchors = [Vector2(0.5, 0), Vector2(0.5, 0), Vector2(0.5, 0), Vector2(0.5, 0)]
+
+[resource]
+script = ExtResource("7")
+id = &"christmas_splash"
+display_name = "圣诞 Splash 页面主题"
+page_theme = SubResource("page_theme")
+target_empty_icon = null
+guide_connect_same_color = null
+guide_collect_by_color = null
+guide_use_empty_ropes = null
+rank_collectible_container = null
+rank_collectible_target = null
+parking_container = null
+background_parking_container = null
+parking_rope_top = null
+parking_rope_mid = null
+parking_rope_bottom = null
+mystery_element = null
+collect_animation = null
+effects = null

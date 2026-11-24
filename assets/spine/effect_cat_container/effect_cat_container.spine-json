@@ -1,0 +1,616 @@
+{
+  "skeleton": {
+    "spine": "4.2.43",
+    "x": -128,
+    "y": -130.5,
+    "width": 256,
+    "height": 261,
+    "fps": 60,
+    "images": "./"
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "pot",
+      "parent": "root",
+      "y": -120.5
+    },
+    {
+      "name": "head",
+      "parent": "root",
+      "y": -98.0
+    }
+  ],
+  "slots": [
+    {
+      "name": "pen_orange",
+      "bone": "pot",
+      "attachment": "pen_orange"
+    },
+    {
+      "name": "flower_orange",
+      "bone": "head",
+      "attachment": "flower_orange"
+    },
+    {
+      "name": "pen_red",
+      "bone": "pot",
+      "attachment": "pen_red"
+    },
+    {
+      "name": "flower_red",
+      "bone": "head",
+      "attachment": "flower_red"
+    },
+    {
+      "name": "pen_green",
+      "bone": "pot",
+      "attachment": "pen_green"
+    },
+    {
+      "name": "flower_green",
+      "bone": "head",
+      "attachment": "flower_green"
+    },
+    {
+      "name": "pen_purple",
+      "bone": "pot",
+      "attachment": "pen_purple"
+    },
+    {
+      "name": "flower_purple",
+      "bone": "head",
+      "attachment": "flower_purple"
+    },
+    {
+      "name": "pen_cyan",
+      "bone": "pot",
+      "attachment": "pen_cyan"
+    },
+    {
+      "name": "flower_cyan",
+      "bone": "head",
+      "attachment": "flower_cyan"
+    },
+    {
+      "name": "pen_pink",
+      "bone": "pot",
+      "attachment": "pen_pink"
+    },
+    {
+      "name": "flower_pink",
+      "bone": "head",
+      "attachment": "flower_pink"
+    },
+    {
+      "name": "pen_teal",
+      "bone": "pot",
+      "attachment": "pen_teal"
+    },
+    {
+      "name": "flower_teal",
+      "bone": "head",
+      "attachment": "flower_teal"
+    },
+    {
+      "name": "pen_lavender",
+      "bone": "pot",
+      "attachment": "pen_lavender"
+    },
+    {
+      "name": "flower_lavender",
+      "bone": "head",
+      "attachment": "flower_lavender"
+    },
+    {
+      "name": "pen_yellow",
+      "bone": "pot",
+      "attachment": "pen_yellow"
+    },
+    {
+      "name": "flower_yellow",
+      "bone": "head",
+      "attachment": "flower_yellow"
+    },
+    {
+      "name": "pen_blue",
+      "bone": "pot",
+      "attachment": "pen_blue"
+    },
+    {
+      "name": "flower_blue",
+      "bone": "head",
+      "attachment": "flower_blue"
+    }
+  ],
+  "skins": [
+    {
+      "name": "default",
+      "attachments": {
+        "pen_orange": {
+          "pen_orange": {
+            "type": "region",
+            "path": "pen_orange",
+            "x": 0.0,
+            "y": 58.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_orange": {
+          "flower_orange": {
+            "type": "region",
+            "path": "flower_orange",
+            "x": 0.28974358974357983,
+            "y": 63.464102564102575,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        },
+        "pen_red": {
+          "pen_red": {
+            "type": "region",
+            "path": "pen_red",
+            "x": 0.0,
+            "y": 58.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_red": {
+          "flower_red": {
+            "type": "region",
+            "path": "flower_red",
+            "x": -0.21025641025642017,
+            "y": 63.464102564102575,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        },
+        "pen_green": {
+          "pen_green": {
+            "type": "region",
+            "path": "pen_green",
+            "x": 0.0,
+            "y": 59.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_green": {
+          "flower_green": {
+            "type": "region",
+            "path": "flower_green",
+            "x": 0.2910256410256409,
+            "y": 68.79358974358973,
+            "width": 131.65384615384616,
+            "height": 131.65384615384616
+          }
+        },
+        "pen_purple": {
+          "pen_purple": {
+            "type": "region",
+            "path": "pen_purple",
+            "x": 0.0,
+            "y": 60.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_purple": {
+          "flower_purple": {
+            "type": "region",
+            "path": "flower_purple",
+            "x": -0.21025641025642017,
+            "y": 69.96410256410257,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        },
+        "pen_cyan": {
+          "pen_cyan": {
+            "type": "region",
+            "path": "pen_cyan",
+            "x": 0.0,
+            "y": 63.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_cyan": {
+          "flower_cyan": {
+            "type": "region",
+            "path": "flower_cyan",
+            "x": -0.21025641025642017,
+            "y": 68.96410256410257,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        },
+        "pen_pink": {
+          "pen_pink": {
+            "type": "region",
+            "path": "pen_pink",
+            "x": 0.0,
+            "y": 61.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_pink": {
+          "flower_pink": {
+            "type": "region",
+            "path": "flower_pink",
+            "x": -0.21025641025642017,
+            "y": 66.46410256410257,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        },
+        "pen_teal": {
+          "pen_teal": {
+            "type": "region",
+            "path": "pen_teal",
+            "x": 0.0,
+            "y": 63.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_teal": {
+          "flower_teal": {
+            "type": "region",
+            "path": "flower_teal",
+            "x": -0.21025641025642017,
+            "y": 68.96410256410257,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        },
+        "pen_lavender": {
+          "pen_lavender": {
+            "type": "region",
+            "path": "pen_lavender",
+            "x": 0.0,
+            "y": 63.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_lavender": {
+          "flower_lavender": {
+            "type": "region",
+            "path": "flower_lavender",
+            "x": -0.21025641025642017,
+            "y": 68.46410256410257,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        },
+        "pen_yellow": {
+          "pen_yellow": {
+            "type": "region",
+            "path": "pen_yellow",
+            "x": 0.0,
+            "y": 62.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_yellow": {
+          "flower_yellow": {
+            "type": "region",
+            "path": "flower_yellow",
+            "x": -0.21025641025642017,
+            "y": 67.46410256410257,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        },
+        "pen_blue": {
+          "pen_blue": {
+            "type": "region",
+            "path": "pen_blue",
+            "x": 0.0,
+            "y": 64.5,
+            "width": 180.0,
+            "height": 187.0
+          }
+        },
+        "flower_blue": {
+          "flower_blue": {
+            "type": "region",
+            "path": "flower_blue",
+            "x": -0.21025641025642017,
+            "y": 69.46410256410257,
+            "width": 132.46153846153845,
+            "height": 132.46153846153845
+          }
+        }
+      }
+    },
+    {
+      "name": "cat_red"
+    },
+    {
+      "name": "cat_purple"
+    },
+    {
+      "name": "cat_pink"
+    },
+    {
+      "name": "cat_cyan"
+    },
+    {
+      "name": "cat_yellow"
+    },
+    {
+      "name": "cat_green"
+    },
+    {
+      "name": "cat_blue"
+    },
+    {
+      "name": "cat_teal"
+    },
+    {
+      "name": "cat_orange"
+    },
+    {
+      "name": "cat_lavender"
+    }
+  ],
+  "animations": {
+    "get": {
+      "bones": {
+        "head": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": -16
+            },
+            {
+              "time": 0.03,
+              "x": 0,
+              "y": -16,
+              "curve": [
+                0.12,
+                0,
+                0.21,
+                0,
+                0.12,
+                -16,
+                0.21,
+                4
+              ]
+            },
+            {
+              "time": 0.3,
+              "x": 0,
+              "y": 4,
+              "curve": [
+                0.366666667,
+                0,
+                0.433333333,
+                0,
+                0.366666667,
+                4,
+                0.433333333,
+                0
+              ]
+            },
+            {
+              "time": 0.5,
+              "x": 0,
+              "y": 0
+            },
+            {
+              "time": 0.6666666666666666,
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 0.48,
+              "y": 0.38
+            },
+            {
+              "time": 0.03,
+              "x": 0.48,
+              "y": 0.38,
+              "curve": [
+                0.12,
+                0.48,
+                0.21,
+                1.025,
+                0.12,
+                0.38,
+                0.21,
+                1.1
+              ]
+            },
+            {
+              "time": 0.3,
+              "x": 1.025,
+              "y": 1.1,
+              "curve": [
+                0.366666667,
+                1.025,
+                0.433333333,
+                1,
+                0.366666667,
+                1.1,
+                0.433333333,
+                1
+              ]
+            },
+            {
+              "time": 0.5,
+              "x": 1,
+              "y": 1
+            },
+            {
+              "time": 0.6666666666666666,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        },
+        "pot": {
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1,
+              "curve": [
+                0.033333333,
+                1,
+                0.066666667,
+                1.1,
+                0.033333333,
+                1,
+                0.066666667,
+                0.86
+              ]
+            },
+            {
+              "time": 0.1,
+              "x": 1.1,
+              "y": 0.86,
+              "curve": [
+                0.166666667,
+                1.1,
+                0.233333333,
+                0.985,
+                0.166666667,
+                0.86,
+                0.233333333,
+                1.035
+              ]
+            },
+            {
+              "time": 0.3,
+              "x": 0.985,
+              "y": 1.035,
+              "curve": [
+                0.366666667,
+                0.985,
+                0.433333333,
+                1,
+                0.366666667,
+                1.035,
+                0.433333333,
+                1
+              ]
+            },
+            {
+              "time": 0.5,
+              "x": 1,
+              "y": 1
+            },
+            {
+              "time": 0.6666666666666666,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      }
+    },
+    "idle": {
+      "bones": {
+        "head": {
+          "scale": [
+            {
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1.0,
+              "x": 1.0,
+              "y": 1.0
+            }
+          ],
+          "translate": [
+            {},
+            {
+              "time": 1.0
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0.0
+            },
+            {
+              "time": 1.0,
+              "angle": 0.0
+            }
+          ]
+        },
+        "pot": {
+          "scale": [
+            {
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 1.0,
+              "x": 1.0,
+              "y": 1.0
+            }
+          ]
+        }
+      }
+    },
+    "end": {
+      "bones": {
+        "head": {
+          "scale": [
+            {
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.06666666666666667,
+              "x": 1.0,
+              "y": 1.0
+            }
+          ],
+          "translate": [
+            {},
+            {
+              "time": 0.06666666666666667
+            }
+          ],
+          "rotate": [
+            {
+              "angle": 0.0
+            },
+            {
+              "time": 0.06666666666666667,
+              "angle": 0.0
+            }
+          ]
+        },
+        "pot": {
+          "scale": [
+            {
+              "x": 1.0,
+              "y": 1.0
+            },
+            {
+              "time": 0.06666666666666667,
+              "x": 1.0,
+              "y": 1.0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

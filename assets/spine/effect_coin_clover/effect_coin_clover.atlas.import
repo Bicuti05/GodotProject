@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://bmg2sy5rcfrp0"
+path="res://.godot/imported/effect_coin_clover.atlas-9c0784c78d57a739a7fc954652c20fe9.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_coin_clover/effect_coin_clover.atlas"
+dest_files=["res://.godot/imported/effect_coin_clover.atlas-9c0784c78d57a739a7fc954652c20fe9.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.json"
+type="SpineSkeletonFileResource"
+uid="uid://bkx2tsgp5cqsc"
+path="res://.godot/imported/empty_col_feedback.spine-json-a67e32d6bf88925b9152ad94517f2ca1.spjson"
+
+[deps]
+
+source_file="res://assets/spine/empty_col_feedback/empty_col_feedback.spine-json"
+dest_files=["res://.godot/imported/empty_col_feedback.spine-json-a67e32d6bf88925b9152ad94517f2ca1.spjson"]
+
+[params]
+

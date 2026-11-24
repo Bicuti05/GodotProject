@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://c6d57ytnxh2ve" path="res://scripts/main/dialogs/finish/effects/finish_card_burst.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_card_burst_emitter.tscn" id="2"]
+
+[node name="FinishCardBurst" type="Node2D" unique_id=1682049718]
+visible = false
+script = ExtResource("1")
+emitter_scenes = {
+&"Burst": ExtResource("2")
+}

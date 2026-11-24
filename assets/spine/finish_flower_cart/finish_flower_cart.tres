@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+
+[ext_resource type="SpineAtlasResource" uid="uid://cjlj8u4pi7t31" path="res://assets/spine/finish_flower_cart/SortParad.atlas" id="1"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://dpo5hu4novndu" path="res://assets/spine/finish_flower_cart/SortParad.spine-json" id="2"]
+
+[resource]
+atlas_res = ExtResource("1")
+skeleton_file_res = ExtResource("2")

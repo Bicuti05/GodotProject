@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://w3by82ej6drd"
+path="res://.godot/imported/effect_flowerpot_big.atlas-a07f35f76f3f6698af992fb0a2060415.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_flowerpot_big/effect_flowerpot_big.atlas"
+dest_files=["res://.godot/imported/effect_flowerpot_big.atlas-a07f35f76f3f6698af992fb0a2060415.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

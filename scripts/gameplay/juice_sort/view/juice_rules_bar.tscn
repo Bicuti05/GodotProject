@@ -1,0 +1,273 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" uid="uid://dx2va1lblfedu" path="res://scripts/gameplay/juice_sort/view/juice_rules_bar.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bicbriseyne0a" path="res://assets/sprites/juice_sort/new_guide/rules_panel_shadow.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://daub4rhucaw87" path="res://assets/sprites/juice_sort/new_guide/gp_progress_bg_light.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://u3gll077hhp4" path="res://assets/sprites/juice_sort/new_guide/rules_panel_outer.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ecr8jmicjlcc" path="res://assets/sprites/juice_sort/new_guide/rules_panel_fill.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://j5dvafg4ejvb" path="res://assets/sprites/juice_sort/new_guide/rules_count_tab.png" id="6"]
+[ext_resource type="Shader" uid="uid://bca5ljtkcgry8" path="res://scripts/gameplay/juice_sort/view/juice_rules_dim.gdshader" id="7"]
+[ext_resource type="Texture2D" uid="uid://bxl2il4woyegr" path="res://assets/sprites/juice_sort/new_guide/gp_progress_bg_SF.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cojnv7m8bqjnf" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_CSC_flower.png" id="9"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="10"]
+[ext_resource type="Texture2D" uid="uid://dtlaojhr0lc63" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_CBC_flower.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://8ocgv18h0u7t" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_UER_flower.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://duqc6jyo17vee" path="res://assets/sprites/juice_sort/new_guide/Icon_flower.png" id="13"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kk1rk"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/dim_amount = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u6abu"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/dim_amount = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qwr0q"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/dim_amount = 0.0
+
+[sub_resource type="FontVariation" id="count_font"]
+base_font = ExtResource("10")
+spacing_glyph = 2
+
+[node name="JuiceRulesBar" type="Control" unique_id=594158642]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1008.0
+offset_bottom = 285.0
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Shadow" type="TextureRect" parent="." unique_id=2088772979]
+layout_mode = 0
+offset_left = -6.0
+offset_top = 61.0
+offset_right = 1014.0
+offset_bottom = 233.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="EntranceGlow" type="NinePatchRect" parent="." unique_id=547514449]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = -19.0
+offset_top = 44.0
+offset_right = 1027.0
+offset_bottom = 242.0
+texture = ExtResource("3")
+draw_center = false
+patch_margin_left = 80
+patch_margin_top = 80
+patch_margin_right = 80
+patch_margin_bottom = 80
+
+[node name="Outer" type="TextureRect" parent="." unique_id=1675138700]
+layout_mode = 0
+offset_top = 10.0
+offset_right = 1008.0
+offset_bottom = 223.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+
+[node name="Fill" type="TextureRect" parent="." unique_id=1948989095]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 73.0
+offset_right = 999.0
+offset_bottom = 216.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+
+[node name="CountTab" type="TextureRect" parent="." unique_id=738435849]
+z_index = 2
+layout_mode = 0
+offset_left = 414.0
+offset_top = 223.0
+offset_right = 594.0
+offset_bottom = 285.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+
+[node name="ConnectRule" type="Control" parent="." unique_id=1261074486]
+material = SubResource("ShaderMaterial_kk1rk")
+anchors_preset = 0
+offset_left = 33.0
+offset_top = 83.0
+offset_right = 343.0
+offset_bottom = 203.0
+mouse_filter = 2
+
+[node name="Background" type="NinePatchRect" parent="ConnectRule" unique_id=1115362856]
+use_parent_material = true
+layout_mode = 0
+offset_left = -7.0
+offset_top = -4.0
+offset_right = 314.0
+offset_bottom = 124.0
+texture = ExtResource("8")
+patch_margin_left = 48
+patch_margin_top = 48
+patch_margin_right = 48
+patch_margin_bottom = 48
+
+[node name="Icon" type="TextureRect" parent="ConnectRule" unique_id=1743244889]
+use_parent_material = true
+layout_mode = 0
+offset_left = -3.0
+offset_top = -4.0
+offset_right = 123.0
+offset_bottom = 120.0
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+
+[node name="Text" type="Label" parent="ConnectRule" unique_id=452460680]
+use_parent_material = true
+layout_mode = 0
+offset_left = 130.0
+offset_top = 15.0
+offset_right = 310.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.435294, 0.196078, 0.0509804, 1)
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 34
+text = "JUICE_RULE_CONNECT_SAME_COLOR"
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="CollectRule" type="Control" parent="." unique_id=802015604]
+material = SubResource("ShaderMaterial_u6abu")
+anchors_preset = 0
+offset_left = 343.0
+offset_top = 83.0
+offset_right = 653.0
+offset_bottom = 203.0
+mouse_filter = 2
+
+[node name="Background" type="NinePatchRect" parent="CollectRule" unique_id=1626970469]
+use_parent_material = true
+layout_mode = 0
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 314.0
+offset_bottom = 124.0
+texture = ExtResource("8")
+patch_margin_left = 48
+patch_margin_top = 48
+patch_margin_right = 48
+patch_margin_bottom = 48
+
+[node name="Icon" type="TextureRect" parent="CollectRule" unique_id=1345218344]
+use_parent_material = true
+layout_mode = 0
+offset_top = -6.0
+offset_right = 120.0
+offset_bottom = 120.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+
+[node name="Text" type="Label" parent="CollectRule" unique_id=134658268]
+use_parent_material = true
+layout_mode = 0
+offset_left = 130.0
+offset_top = 15.0
+offset_right = 310.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.435294, 0.196078, 0.0509804, 1)
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 34
+text = "JUICE_RULE_COLLECT_BY_COLOR"
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="EmptyRule" type="Control" parent="." unique_id=1031601629]
+material = SubResource("ShaderMaterial_qwr0q")
+anchors_preset = 0
+offset_left = 664.0
+offset_top = 83.0
+offset_right = 974.0
+offset_bottom = 203.0
+mouse_filter = 2
+
+[node name="Background" type="NinePatchRect" parent="EmptyRule" unique_id=1421849656]
+use_parent_material = true
+layout_mode = 0
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 314.0
+offset_bottom = 124.0
+texture = ExtResource("8")
+patch_margin_left = 48
+patch_margin_top = 48
+patch_margin_right = 48
+patch_margin_bottom = 48
+
+[node name="Icon" type="TextureRect" parent="EmptyRule" unique_id=1720334037]
+use_parent_material = true
+layout_mode = 0
+offset_top = -2.0
+offset_right = 120.0
+offset_bottom = 120.0
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+
+[node name="Text" type="Label" parent="EmptyRule" unique_id=1112062227]
+use_parent_material = true
+layout_mode = 0
+offset_left = 130.0
+offset_top = 15.0
+offset_right = 310.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0.435294, 0.196078, 0.0509804, 1)
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 34
+text = "JUICE_RULE_USE_EMPTY_ROPES"
+vertical_alignment = 1
+autowrap_mode = 3
+clip_text = true
+
+[node name="TargetSlot" type="Control" parent="." unique_id=1707654916]
+z_index = 2
+clip_contents = true
+anchors_preset = 0
+offset_left = 424.0
+offset_top = 223.0
+offset_right = 484.0
+offset_bottom = 283.0
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="TargetSlot" unique_id=1780948705]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.83871
+offset_right = 56.0
+offset_bottom = 55.16129
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+
+[node name="Count" type="Label" parent="." unique_id=175619173]
+z_index = 2
+layout_mode = 0
+offset_left = 484.0
+offset_top = 232.0
+offset_right = 584.0
+offset_bottom = 272.0
+theme_override_colors/font_color = Color(0.435294, 0.196078, 0.0509804, 1)
+theme_override_fonts/font = SubResource("count_font")
+theme_override_font_sizes/font_size = 40
+text = "0/3"
+horizontal_alignment = 1
+vertical_alignment = 1

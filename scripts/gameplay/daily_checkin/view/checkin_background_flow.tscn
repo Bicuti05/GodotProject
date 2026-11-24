@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Shader" uid="uid://bjnbosbj5o7q0" path="res://assets/shaders/daily_checkin/checkin_background_flow.gdshader" id="1"]
+[ext_resource type="Script" uid="uid://c2t1vi1x6ue35" path="res://scripts/gameplay/daily_checkin/view/checkin_background_flow.gd" id="2"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1kfl4"]
+resource_local_to_scene = true
+shader = ExtResource("1")
+shader_parameter/motion_time = null
+shader_parameter/strength = null
+shader_parameter/sweep_time = null
+shader_parameter/origin_uv = null
+shader_parameter/viewport_aspect = null
+
+[node name="FullScreenColorFlow" type="ColorRect" unique_id=337803865]
+visible = false
+material = SubResource("ShaderMaterial_1kfl4")
+mouse_filter = 2
+script = ExtResource("2")

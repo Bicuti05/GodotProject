@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://bc2pu7lw8ui25"
+path="res://.godot/imported/effect_coin.atlas-beb073b8d26484ceea71ba54520fa706.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_coin/effect_coin.atlas"
+dest_files=["res://.godot/imported/effect_coin.atlas-beb073b8d26484ceea71ba54520fa706.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

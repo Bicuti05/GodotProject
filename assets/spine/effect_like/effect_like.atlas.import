@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://dydkuxn7iir5o"
+path="res://.godot/imported/effect_like.atlas-fff6db9ae4a8140e0cedfc28cd72665d.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_like/effect_like.atlas"
+dest_files=["res://.godot/imported/effect_like.atlas-fff6db9ae4a8140e0cedfc28cd72665d.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://bgpwltqb7okfm"
+path="res://.godot/imported/Celebrate_confetti.skel-056a1ac09908a8aa55284f2f5c1b9d08.spskel"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/party/Celebrate_confetti.skel"
+dest_files=["res://.godot/imported/Celebrate_confetti.skel-056a1ac09908a8aa55284f2f5c1b9d08.spskel"]
+
+[params]
+

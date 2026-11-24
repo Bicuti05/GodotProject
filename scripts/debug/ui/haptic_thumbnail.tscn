@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://dfswp5icok24x" path="res://scripts/debug/ui/haptic_thumbnail.gd" id="1"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="2"]
+
+[node name="HapticThumbnail" type="HBoxContainer" unique_id=1601602710]
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 16
+script = ExtResource("1")
+plot_font = ExtResource("2")
+
+[node name="Android" type="Control" parent="." unique_id=659141182]
+custom_minimum_size = Vector2(0, 280)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+
+[node name="Ios" type="Control" parent="." unique_id=1441418057]
+custom_minimum_size = Vector2(0, 280)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2

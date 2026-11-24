@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://cjlj8u4pi7t31"
+path="res://.godot/imported/SortParad.atlas-c7a09562be859536f983f7a675446439.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/finish_flower_cart/SortParad.atlas"
+dest_files=["res://.godot/imported/SortParad.atlas-c7a09562be859536f983f7a675446439.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

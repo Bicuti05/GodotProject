@@ -1,0 +1,272 @@
+[gd_scene load_steps=18 format=3 uid="uid://jwmlx6me8kp"]
+
+[ext_resource type="Script" uid="uid://u0gb12qjbccg" path="res://scripts/main/pages/rank/rank_page.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cu2huxkkx8rdq" path="res://scripts/gameplay/rank/view/rank_badge_view.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_tier_nav.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://djs6r3y4i7sjs" path="res://scripts/gameplay/rank/view/rank_bg_ambient_fall.tscn" id="4"]
+[ext_resource type="Texture2D" uid="uid://yvfriyrw3756" path="res://assets/sprites/rank_header_bg.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cj4v0af5ijght" path="res://assets/sprites/rank_list_bg.png" id="6"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="7"]
+[ext_resource type="Texture2D" uid="uid://bjysdnxua3aex" path="res://assets/sprites/rank_back_button.png" id="8"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_finish_clock.tscn" id="9"]
+[ext_resource type="PackedScene" uid="uid://cgtlicckqd04o" path="res://scripts/gameplay/rank/view/rank_list_view.tscn" id="10"]
+[ext_resource type="Texture2D" uid="uid://du8t76c1ap5ov" path="res://assets/sprites/rank_list_divider.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://0joy5wo0nmgo" path="res://assets/sprites/rank_decoration_left.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cx20i3rc8xgqa" path="res://assets/sprites/rank_decoration_right.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://da8x3fr0mof3m" path="res://assets/sprites/rank_bottom_bg.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://v2epwskfjkc" path="res://assets/sprites/rank_bottom_divider.png" id="15"]
+[ext_resource type="PackedScene" uid="uid://ctxbuwml56wj3" path="res://scripts/widget/common_btn/common_btn.tscn" id="16"]
+[ext_resource type="PackedScene" uid="uid://3xtxe5pxopce" path="res://scripts/gameplay/rank/view/rank_reward_tooltip.tscn" id="17"]
+
+[node name="RankPage" type="Control" unique_id=1933250655]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+deferred_scenes = {
+"Badge": ExtResource("2"),
+"BgAmbientFall": ExtResource("4"),
+"TierNav": ExtResource("3")
+}
+
+[node name="BgFill" type="ColorRect" parent="." unique_id=1902984113]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.435294, 0.239216, 0.231373, 1)
+
+[node name="Bg" type="TextureRect" parent="." unique_id=902984112]
+layout_mode = 0
+offset_right = 1080.0
+offset_bottom = 1090.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+
+[node name="ListBg" type="TextureRect" parent="." unique_id=1039172695]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 874.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BgAmbientFall" type="Control" parent="." unique_id=1111830080]
+z_index = 9
+clip_contents = true
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 874.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="TopBar" type="Control" parent="." unique_id=1453818471 groups=["_safe_top"]]
+z_index = 10
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 168.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="TopBar" unique_id=382256845]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -360.0
+offset_top = 36.0
+offset_right = 360.0
+offset_bottom = 132.0
+grow_horizontal = 2
+rotation = -0.003901145
+pivot_offset = Vector2(360, 48)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.054106, 0.229416, 0.382813, 0.25)
+theme_override_colors/font_outline_color = Color(0.215686, 0.4, 0, 1)
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 24
+theme_override_constants/shadow_outline_size = 12
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 84
+text = "RANK_LEADERBOARD_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="TextureButton" parent="TopBar" unique_id=1925910088]
+layout_mode = 1
+offset_left = 3.0
+offset_top = 6.0
+offset_right = 159.0
+offset_bottom = 162.0
+texture_normal = ExtResource("8")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Clock" parent="." unique_id=1043799344 groups=["_safe_top"] instance=ExtResource("9")]
+z_index = 10
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -142.0
+offset_top = 130.0
+offset_right = 124.0
+offset_bottom = 210.0
+grow_horizontal = 2
+
+[node name="Badge" type="Control" parent="." unique_id=1277240670]
+z_index = 6
+custom_minimum_size = Vector2(453.2, 519.2)
+anchors_preset = 0
+offset_left = 304.725
+offset_top = 226.0
+offset_right = 757.925
+offset_bottom = 745.2
+mouse_filter = 2
+
+[node name="TierNav" type="Control" parent="." unique_id=1109326574]
+z_index = 6
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TierName" type="Label" parent="." unique_id=1558298464]
+z_index = 10
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -166.0
+offset_top = 742.0
+offset_right = 166.0
+offset_bottom = 814.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.209937, 0.391883, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 60
+text = "RANK_LEVEL_1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ListRoot" parent="." unique_id=1713963110 groups=["_safe_bottom"] instance=ExtResource("10")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -492.0
+offset_top = 894.0
+offset_right = 492.0
+offset_bottom = -287.0
+top_safe_padding = 32.0
+bottom_safe_padding = 48.0
+
+[node name="Divider" type="TextureRect" parent="." unique_id=1959006271]
+z_index = 7
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 874.0
+offset_bottom = 925.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+
+[node name="DecorationLeft" type="TextureRect" parent="." unique_id=1343480514]
+z_index = 7
+layout_mode = 1
+offset_top = 709.0
+offset_right = 264.59
+offset_bottom = 922.8874
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+
+[node name="DecorationRight" type="TextureRect" parent="." unique_id=1070891915]
+z_index = 7
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -209.131
+offset_top = 710.0
+offset_bottom = 920.5629
+grow_horizontal = 0
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+
+[node name="BottomBg" type="TextureRect" parent="." unique_id=907116890 groups=["_safe_bottom_grow_top"]]
+z_index = 8
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -287.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("14")
+expand_mode = 1
+
+[node name="DividerBottom" type="TextureRect" parent="." unique_id=2085096940 groups=["_safe_bottom"]]
+z_index = 8
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -317.0
+offset_bottom = -286.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("15")
+expand_mode = 1
+
+[node name="CollectButton" parent="." unique_id=598073123 groups=["_safe_bottom"] instance=ExtResource("16")]
+z_index = 9
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -396.0
+offset_top = -239.0
+offset_right = 396.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+variant = 1
+btn_text = "RANK_GO_TO_COLLECT"
+base_font_size = 88
+
+[node name="RewardTooltip" parent="." unique_id=1089553672 instance=ExtResource("17")]
+z_index = 11
+layout_mode = 1
+
+[connection signal="pressed" from="TopBar/BackButton" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CollectButton" to="." method="_on_collect_pressed"]

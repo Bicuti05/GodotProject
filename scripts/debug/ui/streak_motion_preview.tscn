@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://dlk6ku5ctvi4r" path="res://scripts/debug/ui/streak_motion_preview.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dg6n4533bxv82" path="res://scripts/main/pages/game/streak_celebration.tscn" id="2"]
+
+[node name="StreakMotionPreview" type="CanvasLayer" unique_id=1931415392]
+process_mode = 3
+layer = 211
+script = ExtResource("1")
+
+[node name="Celebration" parent="." unique_id=1465120283 instance=ExtResource("2")]
+
+[node name="Toolbar" type="HBoxContainer" parent="." unique_id=1093264775]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 850.0
+offset_bottom = 108.0
+theme_override_constants/separation = 12
+
+[node name="Replay" type="Button" parent="Toolbar" unique_id=1159604115]
+custom_minimum_size = Vector2(170, 84)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "重播"
+
+[node name="Loop" type="Button" parent="Toolbar" unique_id=575368713]
+custom_minimum_size = Vector2(190, 84)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "循环：开"
+
+[node name="Slow" type="Button" parent="Toolbar" unique_id=146956841]
+custom_minimum_size = Vector2(230, 84)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "速度：1×"
+
+[node name="Close" type="Button" parent="Toolbar" unique_id=216886836]
+custom_minimum_size = Vector2(190, 84)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "关闭预览"
+
+[connection signal="pressed" from="Toolbar/Replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="Toolbar/Loop" to="." method="_on_loop_pressed"]
+[connection signal="pressed" from="Toolbar/Slow" to="." method="_on_slow_pressed"]
+[connection signal="pressed" from="Toolbar/Close" to="." method="_on_close_pressed"]

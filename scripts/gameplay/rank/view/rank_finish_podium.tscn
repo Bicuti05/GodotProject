@@ -1,0 +1,446 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" uid="uid://dy21fsvumuv3g" path="res://scripts/gameplay/rank/view/rank_finish_podium.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b1oc86n0lcvo0" path="res://assets/sprites/rank_game_finish_crown_glow.png" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_finish_item_view.tscn" id="3"]
+[ext_resource type="Texture2D" uid="uid://c0d0ttd4x8187" path="res://assets/sprites/rank_game_finish_podium_2.png" id="4"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_podium_sweep_fx.tscn" id="5"]
+[ext_resource type="Texture2D" uid="uid://b0srd3sojiiu1" path="res://assets/sprites/rank_game_finish_score_2.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bji76oqo7104t" path="res://assets/sprites/common_rank_ranks_gift_icon_2.png" id="7"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_theme_idle_view.tscn" id="8"]
+[ext_resource type="Texture2D" uid="uid://cod0vsa7ckuwd" path="res://assets/sprites/rank_game_finish_crown_2.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cmqxyscusbu2x" path="res://assets/sprites/rank_game_finish_podium_3.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://c4pxgaawdhweu" path="res://assets/sprites/rank_game_finish_score_3.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://d5hu6wwt42ki" path="res://assets/sprites/common_rank_ranks_gift_icon_3.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cj5ouj3eqt1ch" path="res://assets/sprites/rank_game_finish_crown_3.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://duxpktf0rn3ek" path="res://assets/sprites/rank_game_finish_podium_1.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://cnint2ixyegsb" path="res://assets/sprites/rank_game_finish_score_1.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://beiulsrpljc5p" path="res://assets/sprites/common_rank_ranks_gift_icon_1.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dyhsigd4ny0qf" path="res://assets/sprites/rank_game_finish_crown_1.png" id="17"]
+
+[node name="RankFinishPodium" type="Control" unique_id=697160496]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1080.0
+offset_bottom = 780.0
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="CrownGlow" type="TextureRect" parent="." unique_id=452587140]
+layout_mode = 0
+offset_left = 396.998
+offset_top = 84.248
+offset_right = 677.098
+offset_bottom = 364.348
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="Second" parent="." unique_id=616032788 instance=ExtResource("3")]
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 0
+offset_left = 71.0
+offset_top = 233.0
+offset_right = 359.0
+offset_bottom = 734.9822
+podium_slot = 2
+
+[node name="Bg" parent="Second" index="0"]
+offset_left = -4.5
+offset_top = 6.3
+offset_right = 292.5
+offset_bottom = 511.8822
+texture = ExtResource("4")
+patch_margin_left = 0
+patch_margin_right = 0
+
+[node name="SweepFx" parent="Second/Bg" index="0" unique_id=1060332422 instance=ExtResource("5")]
+mask_texture = ExtResource("4")
+
+[node name="RankIcon" parent="Second" index="3"]
+offset_left = 101.0
+offset_top = 449.0
+offset_right = 187.4
+offset_bottom = 535.4
+
+[node name="RankNumber" parent="Second" index="4"]
+visible = false
+
+[node name="Avatar" parent="Second" index="5"]
+offset_left = 85.68
+offset_top = 25.38
+offset_right = 202.32
+offset_bottom = 142.02
+
+[node name="AvatarFrame" parent="Second" index="6"]
+offset_left = 74.016
+offset_top = 13.716
+offset_right = 214.81714
+offset_bottom = 154.51714
+
+[node name="Info" parent="Second" index="7"]
+anchors_preset = 0
+offset_left = 0.0
+offset_top = 158.4
+offset_right = 288.0
+offset_bottom = 199.8
+
+[node name="Nickname" parent="Second/Info" index="0"]
+offset_top = 0.0
+offset_right = 288.0
+offset_bottom = 41.4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.22, 0.2, 0.16, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 41
+horizontal_alignment = 1
+
+[node name="OnlineBg" parent="Second/Info" index="1"]
+visible = false
+
+[node name="Online" parent="Second/Info" index="2"]
+visible = false
+
+[node name="CollectBg" parent="Second" index="8"]
+z_index = 20
+offset_left = 64.0
+offset_top = 360.5
+offset_right = 264.0
+offset_bottom = 440.5
+texture = ExtResource("6")
+
+[node name="CollectNum" parent="Second/CollectBg" index="0"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 18.0
+offset_right = 184.0
+offset_bottom = 54.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="CollectIcon" parent="Second" index="9"]
+z_index = 21
+offset_left = 24.0
+offset_top = 352.5
+offset_right = 120.0
+offset_bottom = 448.5
+
+[node name="GiftButton" parent="Second" index="10"]
+offset_left = 80.0
+offset_top = 226.0
+offset_right = 202.0
+offset_bottom = 348.0
+texture_normal = ExtResource("7")
+
+[node name="GiftFx" parent="Second/GiftButton" index="0" unique_id=1632955697 instance=ExtResource("8")]
+visible = false
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RiseMotes" parent="Second/GiftButton/GiftFx/Host" index="0"]
+amount = 7
+lifetime = 2.6
+preprocess = 2.0
+randomness = 0.45
+spread = 28.0
+scale_amount_min = 0.05
+scale_amount_max = 0.09
+
+[node name="Theme" parent="Second/GiftButton/GiftFx/Host" index="1"]
+visible = false
+
+[node name="Crown" type="TextureRect" parent="Second" unique_id=735781850]
+layout_mode = 0
+offset_left = 74.0
+offset_top = -64.0
+offset_right = 208.865
+offset_bottom = 35.9
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+
+[node name="Third" parent="." unique_id=1992815452 instance=ExtResource("3")]
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 0
+offset_left = 721.0
+offset_top = 233.0
+offset_right = 1009.0
+offset_bottom = 734.9822
+podium_slot = 3
+
+[node name="Bg" parent="Third" index="0"]
+offset_left = -4.5
+offset_top = 6.3
+offset_right = 292.5
+offset_bottom = 511.8822
+texture = ExtResource("10")
+patch_margin_left = 0
+patch_margin_right = 0
+
+[node name="SweepFx" parent="Third/Bg" index="0" unique_id=835308080 instance=ExtResource("5")]
+mask_texture = ExtResource("10")
+
+[node name="RankIcon" parent="Third" index="3"]
+offset_left = 101.0
+offset_top = 448.0
+offset_right = 187.4
+offset_bottom = 534.4
+
+[node name="RankNumber" parent="Third" index="4"]
+visible = false
+
+[node name="Avatar" parent="Third" index="5"]
+offset_left = 85.68
+offset_top = 25.38
+offset_right = 202.32
+offset_bottom = 142.02
+
+[node name="AvatarFrame" parent="Third" index="6"]
+offset_left = 74.016
+offset_top = 13.716
+offset_right = 214.81714
+offset_bottom = 154.51714
+
+[node name="Info" parent="Third" index="7"]
+anchors_preset = 0
+offset_left = 0.0
+offset_top = 158.4
+offset_right = 288.0
+offset_bottom = 199.8
+
+[node name="Nickname" parent="Third/Info" index="0"]
+offset_top = 0.0
+offset_right = 288.0
+offset_bottom = 41.4
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.22, 0.2, 0.16, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 41
+horizontal_alignment = 1
+
+[node name="OnlineBg" parent="Third/Info" index="1"]
+visible = false
+
+[node name="Online" parent="Third/Info" index="2"]
+visible = false
+
+[node name="CollectBg" parent="Third" index="8"]
+z_index = 20
+offset_left = 64.0
+offset_top = 360.5
+offset_right = 264.0
+offset_bottom = 440.5
+texture = ExtResource("11")
+
+[node name="CollectNum" parent="Third/CollectBg" index="0"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 18.0
+offset_right = 184.0
+offset_bottom = 54.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="CollectIcon" parent="Third" index="9"]
+z_index = 21
+offset_left = 24.0
+offset_top = 352.5
+offset_right = 120.0
+offset_bottom = 448.5
+
+[node name="GiftButton" parent="Third" index="10"]
+offset_left = 80.0
+offset_top = 226.0
+offset_right = 202.0
+offset_bottom = 348.0
+texture_normal = ExtResource("12")
+
+[node name="GiftFx" parent="Third/GiftButton" index="0" unique_id=1369794821 instance=ExtResource("8")]
+visible = false
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RiseMotes" parent="Third/GiftButton/GiftFx/Host" index="0"]
+amount = 7
+lifetime = 2.6
+preprocess = 2.0
+randomness = 0.45
+spread = 28.0
+scale_amount_min = 0.05
+scale_amount_max = 0.09
+
+[node name="Theme" parent="Third/GiftButton/GiftFx/Host" index="1"]
+visible = false
+
+[node name="Crown" type="TextureRect" parent="Third" unique_id=332589803]
+layout_mode = 0
+offset_left = 76.0
+offset_top = -64.0
+offset_right = 210.865
+offset_bottom = 35.9
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+
+[node name="First" parent="." unique_id=2007526696 instance=ExtResource("3")]
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 0
+offset_left = 380.0
+offset_top = 183.0
+offset_right = 700.0
+offset_bottom = 740.758
+podium_slot = 1
+
+[node name="Bg" parent="First" index="0"]
+offset_left = -5.0
+offset_top = 7.0
+offset_right = 325.0
+offset_bottom = 568.758
+texture = ExtResource("14")
+patch_margin_left = 0
+patch_margin_right = 0
+
+[node name="SweepFx" parent="First/Bg" index="0" unique_id=27124639 instance=ExtResource("5")]
+mask_texture = ExtResource("14")
+
+[node name="RankIcon" parent="First" index="3"]
+offset_left = 112.0
+offset_top = 498.0
+offset_right = 208.0
+offset_bottom = 594.0
+
+[node name="RankNumber" parent="First" index="4"]
+visible = false
+
+[node name="Avatar" parent="First" index="5"]
+offset_left = 95.2
+offset_top = 28.2
+offset_right = 224.8
+offset_bottom = 157.8
+
+[node name="AvatarFrame" parent="First" index="6"]
+offset_left = 82.24
+offset_top = 15.24
+offset_right = 238.68571
+offset_bottom = 171.68571
+
+[node name="Info" parent="First" index="7"]
+anchors_preset = 0
+offset_left = 0.0
+offset_top = 176.0
+offset_right = 320.0
+offset_bottom = 222.0
+
+[node name="Nickname" parent="First/Info" index="0"]
+offset_top = 0.0
+offset_right = 320.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.22, 0.2, 0.16, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 46
+horizontal_alignment = 1
+
+[node name="OnlineBg" parent="First/Info" index="1"]
+visible = false
+
+[node name="Online" parent="First/Info" index="2"]
+visible = false
+
+[node name="CollectBg" parent="First" index="8"]
+z_index = 20
+offset_left = 80.0
+offset_top = 405.0
+offset_right = 280.0
+offset_bottom = 485.0
+texture = ExtResource("15")
+
+[node name="CollectNum" parent="First/CollectBg" index="0"]
+layout_mode = 0
+offset_left = 64.0
+offset_right = 184.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+
+[node name="CollectIcon" parent="First" index="9"]
+z_index = 21
+offset_left = 40.0
+offset_top = 397.0
+offset_right = 136.0
+offset_bottom = 493.0
+
+[node name="GiftButton" parent="First" index="10"]
+offset_left = 98.0
+offset_top = 251.0
+offset_right = 234.0
+offset_bottom = 387.0
+texture_normal = ExtResource("16")
+
+[node name="GiftFx" parent="First/GiftButton" index="0" unique_id=1797298108 instance=ExtResource("8")]
+visible = false
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RiseMotes" parent="First/GiftButton/GiftFx/Host" index="0"]
+amount = 7
+lifetime = 2.6
+preprocess = 2.0
+randomness = 0.45
+spread = 28.0
+scale_amount_min = 0.05
+scale_amount_max = 0.09
+
+[node name="Theme" parent="First/GiftButton/GiftFx/Host" index="1"]
+visible = false
+
+[node name="Crown" type="TextureRect" parent="First" unique_id=1234504087]
+layout_mode = 0
+offset_left = 92.0
+offset_top = -61.0
+offset_right = 226.865
+offset_bottom = 38.9
+mouse_filter = 2
+texture = ExtResource("17")
+expand_mode = 1
+
+[node name="FlightLayer" type="Control" parent="." unique_id=1255069683]
+z_index = 4
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="gift_pressed" from="Second" to="." method="_on_gift_pressed"]
+[connection signal="gift_pressed" from="Third" to="." method="_on_gift_pressed"]
+[connection signal="gift_pressed" from="First" to="." method="_on_gift_pressed"]
+
+[editable path="Second"]
+[editable path="Second/GiftButton/GiftFx"]
+[editable path="Third"]
+[editable path="Third/GiftButton/GiftFx"]
+[editable path="First"]
+[editable path="First/GiftButton/GiftFx"]

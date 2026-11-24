@@ -1,0 +1,38 @@
+[gd_scene format=3]
+
+[node name="HapticRecordItem" type="PanelContainer" unique_id=787084923]
+visible = false
+size_flags_horizontal = 3
+theme_type_variation = &"HapticSegmentCard"
+
+[node name="Body" type="VBoxContainer" parent="." unique_id=840476852]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Body" unique_id=1216624704]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+autowrap_mode = 3
+
+[node name="Event" type="Label" parent="Body" unique_id=1415353177]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.66, 0.72, 0.79, 1)
+theme_override_font_sizes/font_size = 26
+autowrap_mode = 3
+
+[node name="Facts" type="Label" parent="Body" unique_id=544566207]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.66, 0.72, 0.79, 1)
+theme_override_font_sizes/font_size = 28
+autowrap_mode = 3
+
+[node name="Result" type="Label" parent="Body" unique_id=1413680952]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
+
+[node name="DetailsButton" type="Button" parent="Body" unique_id=199470644]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "跳转参数详情"

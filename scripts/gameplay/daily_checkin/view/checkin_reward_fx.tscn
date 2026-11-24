@@ -1,0 +1,74 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" uid="uid://bpxardfda1viw" path="res://scripts/gameplay/daily_checkin/view/checkin_reward_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://by8tfiymiydq8" path="res://assets/sprites/daily_checkin_reward_star.png" id="2"]
+[ext_resource type="Script" uid="uid://dofjqc3uwa4b6" path="res://scripts/gameplay/daily_checkin/view/checkin_finish_cpu_particles.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://c4wrtfqmhxw4u" path="res://assets/sprites/finish/reward_glow_core.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://jgh270hy0brw" path="res://assets/sprites/finish/reward_glow_rays.png" id="5"]
+
+[sub_resource type="Curve" id="twinkle_scale"]
+_data = [Vector2(0, 0.55), 0.0, 0.0, 0, 0, Vector2(0.25, 1), 0.0, 0.0, 0, 0, Vector2(0.7, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.55), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="twinkle"]
+offsets = PackedFloat32Array(0, 0.18, 0.65, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[node name="CheckinRewardFx" type="Node2D" unique_id=280254271]
+process_priority = 1
+visible = false
+script = ExtResource("1")
+
+[node name="TitleParticles" type="Node2D" parent="." unique_id=1733013473]
+visible = false
+
+[node name="Stars" type="MultiMeshInstance2D" parent="TitleParticles" unique_id=1937755275]
+texture = ExtResource("2")
+script = ExtResource("3")
+amount = 7
+lifetime = 1.2
+explosiveness = 0.85
+randomness = 0.7
+lifetime_randomness = 0.15
+emission_shape = 4
+emission_points = PackedVector2Array(31.887012, 32.48721, 181.65907, 125.65919, 135.52972, 11.829827, 462.22943, 96.52983, 824.8464, 21.786913, 601.0591, 16, 744.88873, 35.829533)
+direction = Vector2(0, -1)
+spread = 20.0
+initial_velocity_min = 2.0
+initial_velocity_max = 6.0
+angle_min = -12.0
+angle_max = 12.0
+angular_velocity_min = -8.0
+angular_velocity_max = 8.0
+scale_amount_min = 0.489346
+scale_amount_curve = SubResource("twinkle_scale")
+color_ramp = SubResource("twinkle")
+
+[node name="Dots" type="MultiMeshInstance2D" parent="TitleParticles" unique_id=1866124031]
+texture = ExtResource("4")
+script = ExtResource("3")
+amount = 6
+lifetime = 1.4
+explosiveness = 0.85
+randomness = 0.8
+lifetime_randomness = 0.2
+emission_shape = 4
+emission_points = PackedVector2Array(368.11496, 15.615062, 49.114964, 103.61505, 10.765608, 85.765724, 679.8464, 121.78692, 800.6741, 129.51465, 852.00214, 80.3868)
+direction = Vector2(0, -1)
+spread = 30.0
+initial_velocity_min = 1.0
+initial_velocity_max = 4.0
+scale_amount_min = 0.049764
+scale_amount_max = 0.136852
+scale_amount_curve = SubResource("twinkle_scale")
+color_ramp = SubResource("twinkle")
+
+[node name="CoinGlow" type="Node2D" parent="." unique_id=511522736]
+visible = false
+
+[node name="Core" type="Sprite2D" parent="CoinGlow" unique_id=1897810720]
+texture = ExtResource("4")
+
+[node name="Rays" type="Sprite2D" parent="CoinGlow" unique_id=1118615852]
+modulate = Color(1, 1, 1, 0.7)
+texture = ExtResource("5")

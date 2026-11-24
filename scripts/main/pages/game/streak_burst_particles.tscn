@@ -1,0 +1,106 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" uid="uid://c4pjbn4t1tx2t" path="res://scripts/main/pages/game/streak_burst_particles.gd" id="1"]
+[ext_resource type="Script" uid="uid://dbyq8y77hcpcu" path="res://scripts/main/dialogs/finish/view/firework_trails.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://b24m0us3dxhqg" path="res://assets/effect/texture/streak_banner/ef_point_010.png" id="3"]
+
+[node name="StreakBurstParticles" type="Node2D" unique_id=404482339]
+visible = false
+script = ExtResource("1")
+
+[node name="Trails" type="Node2D" parent="." unique_id=501110250]
+script = ExtResource("2")
+
+[node name="Sprites" type="Node2D" parent="." unique_id=29598159]
+
+[node name="Point1" type="Sprite2D" parent="Sprites" unique_id=1105057532]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point2" type="Sprite2D" parent="Sprites" unique_id=349587554]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point3" type="Sprite2D" parent="Sprites" unique_id=628433201]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point4" type="Sprite2D" parent="Sprites" unique_id=1849183814]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point5" type="Sprite2D" parent="Sprites" unique_id=752580352]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point6" type="Sprite2D" parent="Sprites" unique_id=387574135]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point7" type="Sprite2D" parent="Sprites" unique_id=1675890468]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point8" type="Sprite2D" parent="Sprites" unique_id=1576916715]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point9" type="Sprite2D" parent="Sprites" unique_id=429345096]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point10" type="Sprite2D" parent="Sprites" unique_id=1987348658]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point11" type="Sprite2D" parent="Sprites" unique_id=495422913]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point12" type="Sprite2D" parent="Sprites" unique_id=1710809295]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point13" type="Sprite2D" parent="Sprites" unique_id=192561593]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point14" type="Sprite2D" parent="Sprites" unique_id=830097122]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point15" type="Sprite2D" parent="Sprites" unique_id=1576244616]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point16" type="Sprite2D" parent="Sprites" unique_id=450361848]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point17" type="Sprite2D" parent="Sprites" unique_id=1685775203]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point18" type="Sprite2D" parent="Sprites" unique_id=239885530]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point19" type="Sprite2D" parent="Sprites" unique_id=660386055]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point20" type="Sprite2D" parent="Sprites" unique_id=1790710180]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point21" type="Sprite2D" parent="Sprites" unique_id=45138109]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point22" type="Sprite2D" parent="Sprites" unique_id=1179315575]
+visible = false
+texture = ExtResource("3")
+
+[node name="Point23" type="Sprite2D" parent="Sprites" unique_id=2023692810]
+visible = false
+texture = ExtResource("3")

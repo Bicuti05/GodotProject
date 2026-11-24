@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="PackedScene" uid="uid://c6gurgur2dw3f" path="res://scripts/gameplay/rank/view/rank_zone_banner.tscn" id="1"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="2"]
+
+[sub_resource type="Shader" id="range_shader"]
+code = "shader_type canvas_item;
+varying float local_y;
+void vertex() { local_y = VERTEX.y; }
+void fragment() {
+vec4 src = COLOR;
+vec3 ramp = mix(vec3(0.9960784, 1.0, 0.8431373), vec3(1.0, 0.9098039, 0.4627451), clamp(local_y / 48.0, 0.0, 1.0));
+float fill = smoothstep(0.65, 0.90, max(src.r, max(src.g, src.b)));
+COLOR = vec4(mix(src.rgb, ramp, fill), src.a);
+}"
+
+[sub_resource type="ShaderMaterial" id="range_material"]
+shader = SubResource("range_shader")
+
+[node name="RankFinishZoneBanner" unique_id=1428732179 node_paths=PackedStringArray("range_label") instance=ExtResource("1")]
+range_label = NodePath("Row/Range")
+
+[node name="TextLabel" parent="Row" parent_id_path=PackedInt32Array(784691772) index="0" unique_id=1109857501]
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 48
+
+[node name="Range" type="Label" parent="Row" parent_id_path=PackedInt32Array(784691772) index="1" unique_id=1175832009]
+material = SubResource("range_material")
+layout_mode = 0
+anchor_bottom = 1.0
+offset_left = 271.0
+offset_right = 348.0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 48
+text = "1-15"
+vertical_alignment = 1

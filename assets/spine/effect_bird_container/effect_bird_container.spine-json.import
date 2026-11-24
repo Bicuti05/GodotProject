@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.json"
+type="SpineSkeletonFileResource"
+uid="uid://cw78wj6vwuorb"
+path="res://.godot/imported/effect_bird_container.spine-json-c6037f92df7278359dade653d0e4fd2a.spjson"
+
+[deps]
+
+source_file="res://assets/spine/effect_bird_container/effect_bird_container.spine-json"
+dest_files=["res://.godot/imported/effect_bird_container.spine-json-c6037f92df7278359dade653d0e4fd2a.spjson"]
+
+[params]
+

@@ -1,0 +1,356 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" uid="uid://chcs7gydcn30m" path="res://scripts/main/dialogs/rank_introduction/rank_introduction_dialog.gd" id="1"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="2"]
+[ext_resource type="Script" uid="uid://nt1s0u2qanoc" path="res://scripts/widget/curve_label/curve_label.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://cq6qwr5mqr5ke" path="res://assets/sprites/rank_introduction_flowers.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ix6ebya5563i" path="res://assets/sprites/rank_introduction_arrow_down.png" id="5"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="6"]
+[ext_resource type="Texture2D" uid="uid://bkkfo5hxvf68q" path="res://assets/sprites/rank_introduction_row_1.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cpkrpmw5yo7wq" path="res://assets/sprites/rank_introduction_row_2.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cutwtqwlqu0ja" path="res://assets/sprites/rank_introduction_row_3.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://c331a42jrsprf" path="res://assets/sprites/rank_introduction_arrow_left.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://bbv5p47sp0mp7" path="res://assets/sprites/common_rank_trophy_bronze.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bhuksf2agvgob" path="res://assets/sprites/common_rank_shadow.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://d1ig01usjwog5" path="res://assets/sprites/common_rank_trophy_silver.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dwn2co2gwu7nt" path="res://assets/sprites/common_rank_trophy_gold.png" id="14"]
+
+[sub_resource type="Curve" id="c_title"]
+_data = [Vector2(0, 0.5), 2.7665656, 2.7665656, 0, 0, Vector2(0.002109723, 0.50561523), 2.6088061, 2.6088061, 0, 0, Vector2(0.008406097, 0.5214844), 2.4491906, 2.4491906, 0, 0, Vector2(0.01883993, 0.5461426), 2.2876883, 2.2876883, 0, 0, Vector2(0.033362027, 0.578125), 2.124266, 2.124266, 0, 0, Vector2(0.0519232, 0.6159668), 1.958889, 1.958889, 0, 0, Vector2(0.07447425, 0.6582031), 1.7915221, 1.7915221, 0, 0, Vector2(0.10096599, 0.70336914), 1.6221292, 1.6221292, 0, 0, Vector2(0.13134924, 0.75), 1.4506731, 1.4506731, 0, 0, Vector2(0.16557477, 0.79663086), 1.2771161, 1.2771161, 0, 0, Vector2(0.20359342, 0.8417969), 1.1014192, 1.1014192, 0, 0, Vector2(0.24535598, 0.8840332), 0.92354274, 0.92354274, 0, 0, Vector2(0.29081327, 0.921875), 0.7434457, 0.7434457, 0, 0, Vector2(0.33991608, 0.9538574), 0.56108636, 0.56108636, 0, 0, Vector2(0.39261526, 0.9785156), 0.37642184, 0.37642184, 0, 0, Vector2(0.44886157, 0.99438477), 0.18940808, 0.18940808, 0, 0, Vector2(0.50860584, 1), 3.05e-06, 3.05e-06, 0, 0, Vector2(0.5681568, 0.99438477), -0.19065113, -0.19065113, 0, 0, Vector2(0.62385684, 0.9785156), -0.38136342, -0.38136342, 0, 0, Vector2(0.67570716, 0.9538574), -0.5721369, -0.5721369, 0, 0, Vector2(0.72370905, 0.921875), -0.7629716, -0.7629716, 0, 0, Vector2(0.7678637, 0.8840332), -0.9538675, -0.9538675, 0, 0, Vector2(0.80817235, 0.8417969), -1.1448246, -1.1448246, 0, 0, Vector2(0.84463626, 0.79663086), -1.3358432, -1.3358432, 0, 0, Vector2(0.8772566, 0.75), -1.5269231, -1.5269231, 0, 0, Vector2(0.90603465, 0.70336914), -1.7180642, -1.7180642, 0, 0, Vector2(0.9309716, 0.6582031), -1.9092668, -1.9092668, 0, 0, Vector2(0.95206875, 0.6159668), -2.1005309, -2.1005309, 0, 0, Vector2(0.9693273, 0.578125), -2.2918563, -2.2918563, 0, 0, Vector2(0.98274845, 0.5461426), -2.4832432, -2.4832432, 0, 0, Vector2(0.9923335, 0.5214844), -2.6746917, -2.6746917, 0, 0, Vector2(0.9980836, 0.50561523), -2.8662016, -2.8662016, 0, 0, Vector2(1, 0.5), -3.05777, -3.05777, 0, 0]
+point_count = 33
+
+[sub_resource type="StyleBoxEmpty" id="sb_empty"]
+
+[node name="RankIntroductionDialog" type="Control" unique_id=1769881886]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Root" type="Control" parent="." unique_id=545275524]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Overlay" type="ColorRect" parent="Root" unique_id=458691250]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="Content" type="Control" parent="Root" unique_id=602213332]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="Root/Content" unique_id=1948574641]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -337.0
+offset_top = 369.0
+offset_right = 347.0
+offset_bottom = 529.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.25)
+theme_override_colors/font_outline_color = Color(0.0176405, 0.3690843, 0.2577938, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/outline_size = 6
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 100
+text = "RANK_INTRO_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3")
+curve = SubResource("c_title")
+amplitude = 11.5
+align_to_tangent = true
+outline_stamp_radius = 6.0
+
+[node name="Flowers" type="TextureRect" parent="Root/Content" unique_id=857508867]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -492.0
+offset_top = 565.0
+offset_right = -12.0
+offset_bottom = 810.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+
+[node name="ArrowDown" type="TextureRect" parent="Root/Content" unique_id=1062614176]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 8.0
+offset_top = 739.0
+offset_right = 194.0
+offset_bottom = 925.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+
+[node name="Line1" type="Label" parent="Root/Content" unique_id=436893397]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -492.0
+offset_top = 818.0
+offset_right = -12.0
+offset_bottom = 914.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9411765, 0.9058824, 0.7568628, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 48
+text = "RANK_INTRO_LINE_1"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Row1" type="TextureRect" parent="Root/Content" unique_id=1064957861]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.4126
+offset_top = 985.4819
+offset_right = 471.6118
+offset_bottom = 1125.7666
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+
+[node name="Row2" type="TextureRect" parent="Root/Content" unique_id=179454511]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.4126
+offset_top = 1106.417
+offset_right = 471.6118
+offset_bottom = 1246.7017
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+
+[node name="Row3" type="TextureRect" parent="Root/Content" unique_id=235503809]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -152.4126
+offset_top = 1227.3518
+offset_right = 471.6118
+offset_bottom = 1367.6365
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+
+[node name="Line2" type="Label" parent="Root/Content" unique_id=345502180]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -172.0
+offset_top = 1379.0
+offset_right = 492.0
+offset_bottom = 1499.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9411765, 0.9058824, 0.7568628, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 48
+text = "RANK_INTRO_LINE_2"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ArrowLeft" type="TextureRect" parent="Root/Content" unique_id=1740781168]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 190.0
+offset_top = 1531.0
+offset_right = 376.0
+offset_bottom = 1717.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("10")
+expand_mode = 1
+
+[node name="Badge1" type="TextureRect" parent="Root/Content" unique_id=2024822924]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -465.75
+offset_top = 1564.25
+offset_right = -272.25
+offset_bottom = 1757.75
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Shadow" type="TextureRect" parent="Root/Content/Badge1" unique_id=280204502]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.20974576
+anchor_top = 0.8935381
+anchor_right = 0.79025424
+anchor_bottom = 1.0354873
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Badge2" type="TextureRect" parent="Root/Content" unique_id=1284180311]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -277.75
+offset_top = 1564.25
+offset_right = -84.25
+offset_bottom = 1757.75
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Shadow" type="TextureRect" parent="Root/Content/Badge2" unique_id=871139870]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.20974576
+anchor_top = 0.8935381
+anchor_right = 0.79025424
+anchor_bottom = 1.0354873
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Badge3" type="TextureRect" parent="Root/Content" unique_id=1267300062]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -92.0
+offset_top = 1532.0
+offset_right = 166.0
+offset_bottom = 1790.0
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("14")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Shadow" type="TextureRect" parent="Root/Content/Badge3" unique_id=1979053173]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.20974576
+anchor_top = 0.8935381
+anchor_right = 0.79025424
+anchor_bottom = 1.0354873
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Line3" type="Label" parent="Root/Content" unique_id=775677274]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -492.0
+offset_top = 1765.0
+offset_right = 190.0
+offset_bottom = 1861.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9411765, 0.9058824, 0.7568628, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 48
+text = "RANK_INTRO_LINE_3"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TapHint" type="Label" parent="Root/Content" unique_id=78646630]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -492.0
+offset_top = 1938.0
+offset_right = 492.0
+offset_bottom = 2034.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 48
+text = "JUICE_LOCK_GUIDE_TAP"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TapArea" type="Button" parent="Root" unique_id=1690019823]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("sb_empty")
+theme_override_styles/pressed = SubResource("sb_empty")
+theme_override_styles/hover = SubResource("sb_empty")
+theme_override_styles/disabled = SubResource("sb_empty")
+theme_override_styles/focus = SubResource("sb_empty")
+
+[connection signal="pressed" from="Root/TapArea" to="." method="_on_tap_pressed"]

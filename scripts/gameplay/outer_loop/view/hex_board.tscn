@@ -1,0 +1,267 @@
+[gd_scene load_steps=16 format=3]
+
+[ext_resource type="Script" uid="uid://djce4osfgvkx" path="res://scripts/gameplay/outer_loop/view/hex_board.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bc0g2ej1xpdf3" path="res://assets/sprites/home_hex_hex_frame.png" id="2"]
+[ext_resource type="Shader" uid="uid://dauyxoucaa80k" path="res://assets/effect/shader/hex_mask_reveal.gdshader" id="3"]
+[ext_resource type="Texture2D" uid="uid://8nk6wcueaphq" path="res://assets/sprites/home_hex_hex_mask.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dp181ofwpj37q" path="res://assets/sprites/home_hex_cover_triangle_out.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dqnbtaltnh3i6" path="res://assets/sprites/home_hex_cover_triangle.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bsnuwnl8ynmjy" path="res://assets/sprites/home_hex_cover_trapezoid.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c74yobals3b6w" path="res://assets/sprites/home_hex_cover_circle.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c7trn8t6mfk6b" path="res://assets/sprites/home_hex_hex_grid_shadow.png" id="9"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/outer_loop/view/hex_reveal_effect.tscn" id="10"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="11"]
+[ext_resource type="Script" uid="uid://nt1s0u2qanoc" path="res://scripts/widget/curve_label/curve_label.gd" id="12"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="13"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hexmask"]
+shader = ExtResource("3")
+shader_parameter/mask_tex = ExtResource("4")
+
+[sub_resource type="Curve" id="Curve_titlearc"]
+_data = [Vector2(0, 0.5), 0.0, 2.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5), -2.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="HexBoard" type="Control" unique_id=1768892798]
+custom_minimum_size = Vector2(1024, 1120)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -512.0
+offset_top = -560.0
+offset_right = 512.0
+offset_bottom = 560.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Frame" type="TextureRect" parent="." unique_id=1663336429]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="Picture" type="TextureRect" parent="." unique_id=155033029]
+texture_filter = 4
+material = SubResource("ShaderMaterial_hexmask")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -464.0
+offset_top = -387.0
+offset_right = 464.0
+offset_bottom = 469.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+
+[node name="Covers" type="Node2D" parent="." unique_id=389875003]
+position = Vector2(512, 601)
+
+[node name="Cover00" type="Sprite2D" parent="Covers" unique_id=616105566]
+position = Vector2(-206, -247)
+rotation = 2.0943952
+texture = ExtResource("5")
+flip_h = true
+
+[node name="Cover01" type="Sprite2D" parent="Covers" unique_id=345307564]
+position = Vector2(-110, -302)
+rotation = 3.1415927
+texture = ExtResource("5")
+
+[node name="Cover02" type="Sprite2D" parent="Covers" unique_id=96276188]
+position = Vector2(0, -290.73)
+rotation = 3.1415927
+texture = ExtResource("6")
+
+[node name="Cover03" type="Sprite2D" parent="Covers" unique_id=2105713261]
+position = Vector2(111, -302)
+rotation = 3.1415927
+texture = ExtResource("5")
+flip_h = true
+
+[node name="Cover04" type="Sprite2D" parent="Covers" unique_id=1653882457]
+position = Vector2(206, -247)
+rotation = 4.1887903
+texture = ExtResource("5")
+
+[node name="Cover05" type="Sprite2D" parent="Covers" unique_id=1161837720]
+position = Vector2(-316.9, -55.1)
+rotation = 2.0943952
+texture = ExtResource("5")
+
+[node name="Cover06" type="Sprite2D" parent="Covers" unique_id=33964327]
+position = Vector2(-251.9, -145.3)
+rotation = 2.0943952
+texture = ExtResource("6")
+
+[node name="Cover07" type="Sprite2D" parent="Covers" unique_id=1887468506]
+position = Vector2(-116.92, -67.5)
+rotation = 2.0943952
+texture = ExtResource("7")
+
+[node name="Cover08" type="Sprite2D" parent="Covers" unique_id=489453271]
+position = Vector2(0, -136)
+rotation = 3.1415927
+texture = ExtResource("7")
+
+[node name="Cover09" type="Sprite2D" parent="Covers" unique_id=1721293251]
+position = Vector2(117.3, -67.6)
+rotation = 4.1887903
+texture = ExtResource("7")
+
+[node name="Cover10" type="Sprite2D" parent="Covers" unique_id=1593614272]
+position = Vector2(251.9, -145.3)
+rotation = 4.1887903
+texture = ExtResource("6")
+
+[node name="Cover11" type="Sprite2D" parent="Covers" unique_id=562144146]
+position = Vector2(316.4, -55.6)
+rotation = 4.1887903
+texture = ExtResource("5")
+flip_h = true
+
+[node name="Cover12" type="Sprite2D" parent="Covers" unique_id=1408924966]
+position = Vector2(-316.6, 55.3)
+rotation = 1.0471976
+texture = ExtResource("5")
+flip_h = true
+
+[node name="Cover13" type="Sprite2D" parent="Covers" unique_id=2052691805]
+position = Vector2(-251.9, 145.57)
+rotation = 1.0471976
+texture = ExtResource("6")
+
+[node name="Cover14" type="Sprite2D" parent="Covers" unique_id=1100482391]
+position = Vector2(-117.1, 66.9)
+rotation = 1.0493269
+texture = ExtResource("7")
+flip_h = true
+
+[node name="Cover15" type="Sprite2D" parent="Covers" unique_id=2053779118]
+position = Vector2(0, 134)
+texture = ExtResource("7")
+
+[node name="Cover16" type="Sprite2D" parent="Covers" unique_id=2125445811]
+position = Vector2(116.32, 67)
+rotation = 5.2359877
+texture = ExtResource("7")
+
+[node name="Cover17" type="Sprite2D" parent="Covers" unique_id=2118674699]
+position = Vector2(251.9, 145.57)
+rotation = 5.2359877
+texture = ExtResource("6")
+
+[node name="Cover18" type="Sprite2D" parent="Covers" unique_id=63887944]
+position = Vector2(317, 56)
+rotation = 5.2359877
+texture = ExtResource("5")
+
+[node name="Cover19" type="Sprite2D" parent="Covers" unique_id=409315134]
+position = Vector2(-206, 245)
+rotation = 1.0471976
+texture = ExtResource("5")
+
+[node name="Cover20" type="Sprite2D" parent="Covers" unique_id=1282427757]
+position = Vector2(-110, 302)
+texture = ExtResource("5")
+flip_h = true
+
+[node name="Cover21" type="Sprite2D" parent="Covers" unique_id=23500643]
+position = Vector2(0, 291)
+texture = ExtResource("6")
+
+[node name="Cover22" type="Sprite2D" parent="Covers" unique_id=1278105866]
+position = Vector2(110, 302)
+texture = ExtResource("5")
+
+[node name="Cover23" type="Sprite2D" parent="Covers" unique_id=1727100421]
+position = Vector2(206, 246)
+rotation = 5.2359877
+texture = ExtResource("5")
+flip_h = true
+
+[node name="Cover24" type="Sprite2D" parent="Covers" unique_id=1064358617]
+texture = ExtResource("8")
+
+[node name="GridShadow" type="TextureRect" parent="." unique_id=1607911951]
+material = SubResource("ShaderMaterial_hexmask")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -464.0
+offset_top = -387.0
+offset_right = 464.0
+offset_bottom = 469.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+
+[node name="RevealEffect" parent="." unique_id=493726707 instance=ExtResource("10")]
+
+[node name="SectionTitle" type="Label" parent="." unique_id=358252860]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -253.0
+offset_top = -482.0
+offset_right = 253.0
+offset_bottom = -280.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.901961, 0.956863, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.003922, 0.168627, 0.415686, 1)
+theme_override_colors/font_outline_color = Color(0.023529, 0.294118, 0.698039, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 6
+theme_override_constants/outline_size = 17
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
+script = ExtResource("12")
+curve = SubResource("Curve_titlearc")
+amplitude = 28.0
+align_to_tangent = true
+digit_color = Color(0.984314, 0.85098, 0.266667, 1)
+
+[node name="ProgressLabel" type="Label" parent="." unique_id=1518545768]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.0
+offset_top = 450.0
+offset_right = 128.0
+offset_bottom = 519.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 53
+text = "0/25"
+horizontal_alignment = 1
+vertical_alignment = 1

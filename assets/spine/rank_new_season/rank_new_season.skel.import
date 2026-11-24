@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://b4igdpf0b5xdp"
+path="res://.godot/imported/rank_new_season.skel-88bfdc3e6dcad6acf47a81ea593e1f6d.spskel"
+
+[deps]
+
+source_file="res://assets/spine/rank_new_season/rank_new_season.skel"
+dest_files=["res://.godot/imported/rank_new_season.skel-88bfdc3e6dcad6acf47a81ea593e1f6d.spskel"]
+
+[params]
+

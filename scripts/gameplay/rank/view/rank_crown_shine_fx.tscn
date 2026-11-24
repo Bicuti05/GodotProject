@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Texture2D" uid="uid://dvxqxb58cq56o" path="res://assets/effect/texture/rank/et_star_900.png" id="1"]
+[ext_resource type="Script" uid="uid://bxehmmcu7xvr6" path="res://scripts/gameplay/rank/view/rank_crown_shine_fx.gd" id="2"]
+
+[sub_resource type="CanvasItemMaterial" id="m_add"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="c_004_pop"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.044, 0), 0.0, 0.0, 0, 0, Vector2(0.522, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[node name="RankCrownShineFx" type="CPUParticles2D" unique_id=62777822]
+visible = false
+material = SubResource("m_add")
+emitting = false
+amount = 3
+texture = ExtResource("1")
+lifetime = 1.2
+emission_shape = 1
+emission_sphere_radius = 40.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 50.0
+scale_amount_min = 0.2734
+scale_amount_max = 0.2734
+scale_amount_curve = SubResource("c_004_pop")
+color = Color(1, 0.954, 0.786, 1)
+script = ExtResource("2")

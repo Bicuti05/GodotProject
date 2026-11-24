@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" uid="uid://dne0beehcht8b" path="res://scripts/gameplay/daily_checkin/view/checkin_celebration_ripple.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cj13pvs7txoe" path="res://assets/effect/daily_checkin/hex_halo.png" id="2"]
+[ext_resource type="Shader" uid="uid://dbq1617fekgjd" path="res://assets/shaders/daily_checkin/checkin_ripple.gdshader" id="3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_88m57"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/wave_progress = null
+shader_parameter/tail_progress = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_t1jh1"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/wave_progress = null
+shader_parameter/tail_progress = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fj4tu"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/wave_progress = null
+shader_parameter/tail_progress = null
+
+[node name="CelebrationAfterglowRipple" type="Node2D" unique_id=235932164]
+visible = false
+z_index = 1
+script = ExtResource("1")
+light_texture = ExtResource("2")
+
+[node name="Wave1" type="Sprite2D" parent="." unique_id=910936202]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_88m57")
+texture = ExtResource("2")
+
+[node name="Wave2" type="Sprite2D" parent="." unique_id=1237983240]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_t1jh1")
+texture = ExtResource("2")
+
+[node name="Wave3" type="Sprite2D" parent="." unique_id=2104998417]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_fj4tu")
+texture = ExtResource("2")

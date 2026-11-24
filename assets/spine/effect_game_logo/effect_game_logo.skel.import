@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://uhtv45nx42xr"
+path="res://.godot/imported/effect_game_logo.skel-3b0961f5411e42e34b815c96443e609b.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_game_logo/effect_game_logo.skel"
+dest_files=["res://.godot/imported/effect_game_logo.skel-3b0961f5411e42e34b815c96443e609b.spskel"]
+
+[params]
+

@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://dbq8t41x3106m" path="res://scripts/main/pages/game/long_link_feedback.gd" id="1"]
+
+[node name="LongLinkFeedback" type="Control" unique_id=791888252]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1")
+spine_scene_paths = PackedStringArray("res://assets/spine/long_link_seed/seed.tscn", "res://assets/spine/long_link_horn_flag/horn_flag.tscn", "res://assets/spine/long_link_rainbow/rainbow.tscn")

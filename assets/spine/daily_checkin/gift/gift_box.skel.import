@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://4dr6rr2x61yn"
+path="res://.godot/imported/gift_box.skel-2f4810946a7665520ae8d76a79cca4f3.spskel"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/gift/gift_box.skel"
+dest_files=["res://.godot/imported/gift_box.skel-2f4810946a7665520ae8d76a79cca4f3.spskel"]
+
+[params]
+

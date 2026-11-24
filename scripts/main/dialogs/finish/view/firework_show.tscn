@@ -1,0 +1,13 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" uid="uid://8j818tyuhcof" path="res://scripts/main/dialogs/finish/view/firework_show.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ca4ue6856w434" path="res://assets/effect/texture/point/ef_point_003.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://l7r8ey7sife0" path="res://assets/effect/texture/glow/ef_glow_002.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="4"]
+
+[node name="FireworkShow" type="Node2D" unique_id=713642545]
+visible = false
+script = ExtResource("1")
+particle_atlas = ExtResource("2")
+glow_texture = ExtResource("3")
+star_texture = ExtResource("4")

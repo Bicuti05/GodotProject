@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="UniKitConfig" load_steps=6 format=3 uid="uid://cx3oqayf3sde"]
+
+[ext_resource type="Script" uid="uid://dm7xc4h41fo6o" path="res://addons/unikit/editor/unikit_android_config.gd" id="1"]
+[ext_resource type="Script" uid="uid://dcx5ub20gj61v" path="res://addons/unikit/editor/unikit_ios_config.gd" id="2"]
+[ext_resource type="Script" uid="uid://cg2u5ov8w2r3g" path="res://addons/unikit/editor/unikit_config.gd" id="3"]
+
+[sub_resource type="Resource" id="Resource_cprii"]
+script = ExtResource("1")
+production_id = "6aa9f7f72ec767c598a9cb92"
+analyze_key_id = "DFbusASKwZPCmHzP"
+analyze_secret = "1mpTy6PkP.e$&Q6y"
+analyze_af_dev_key = "qNsTSFixbaPufCv5sQ6yJV"
+push_key_id = "sortparade-aUi0jv9h8MmP1oDcn"
+push_secret = "XAghW8Yc8S5PtkXgERsYLqPrCQeuH84M6E"
+admob_app_id = "ca-app-pub-4286071012672876~1772718379"
+
+[sub_resource type="Resource" id="Resource_fkb05"]
+script = ExtResource("2")
+production_id = "6aa9f7f9cf6c938a4f48027e"
+analyze_key_id = "gpAVpPyZOacwIgKY"
+analyze_secret = "dEm1E85Un?DG#x,o"
+push_key_id = "sortparade-aUi0jv9h8MmP1oDcn"
+push_secret = "XAghW8Yc8S5PtkXgERsYLqPrCQeuH84M6E"
+appsflyer_dev_key = "qNsTSFixbaPufCv5sQ6yJV"
+app_store_id = "6812166638"
+app_store_url = "https://apps.apple.com/app/id6812166638"
+admob_app_id = "ca-app-pub-4286071012672876~9216094126"
+
+[resource]
+script = ExtResource("3")
+android = SubResource("Resource_cprii")
+ios = SubResource("Resource_fkb05")

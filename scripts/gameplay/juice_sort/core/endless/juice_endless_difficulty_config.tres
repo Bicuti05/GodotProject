@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="JuiceEndlessDifficultyConfig" load_steps=2 format=3 uid="uid://bl6trmpf1jiox"]
+
+[ext_resource type="Script" uid="uid://dxny12nfeuw26" path="res://scripts/gameplay/juice_sort/core/endless/juice_endless_difficulty_config.gd" id="1"]
+
+[resource]
+script = ExtResource("1")

@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://ce4naktlr611x"
+path="res://.godot/imported/banner_hard.atlas-79044fa138914ab4a0495964aa74e6b7.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/banner_hard/banner_hard.atlas"
+dest_files=["res://.godot/imported/banner_hard.atlas-79044fa138914ab4a0495964aa74e6b7.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

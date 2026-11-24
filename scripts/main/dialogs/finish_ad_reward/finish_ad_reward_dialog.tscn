@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://d2cxairte15nj" path="res://scripts/main/dialogs/finish_ad_reward/finish_ad_reward_dialog.gd" id="1"]
+[ext_resource type="Script" uid="uid://br77333rklul3" path="res://scripts/main/dialogs/finish/view/finish_ad_reward_motion.gd" id="2"]
+
+[node name="FinishAdRewardDialog" type="Control" unique_id=403913764]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Dimmer" type="ColorRect" parent="." unique_id=1049520084]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.85)
+
+[node name="Motion" type="Node2D" parent="." unique_id=1779717608]
+script = ExtResource("2")

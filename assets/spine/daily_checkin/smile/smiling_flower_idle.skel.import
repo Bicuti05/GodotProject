@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://hghknk4dg75x"
+path="res://.godot/imported/smiling_flower_idle.skel-37a1ad459e876b7c89bf329740ed707d.spskel"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/smile/smiling_flower_idle.skel"
+dest_files=["res://.godot/imported/smiling_flower_idle.skel-37a1ad459e876b7c89bf329740ed707d.spskel"]
+
+[params]
+

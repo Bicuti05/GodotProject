@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://c6nfes4yhtej1"
+path="res://.godot/imported/effect_flower_unlock.atlas-f62190d0e92182621f3bae9a75016e05.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_flower_unlock/effect_flower_unlock.atlas"
+dest_files=["res://.godot/imported/effect_flower_unlock.atlas-f62190d0e92182621f3bae9a75016e05.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

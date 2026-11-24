@@ -1,0 +1,181 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" uid="uid://qumktykw3avy" path="res://scripts/debug/ui/home_button_fx_panel.gd" id="1"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://bc4dwjpihvaj0" path="res://assets/sprites/juice_sort/bonus_home_button_icon.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c3gcq6ysa8sr7" path="res://assets/sprites/common_special_challenge_button_chest.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c4euwv5v1aqny" path="res://assets/sprites/common_btn_fire_white.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://c1m0gldikfurk" path="res://assets/sprites/common_btn_fire_yellow.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bibnn6d3os888" path="res://assets/sprites/common_homepage_bg.png" id="7"]
+[ext_resource type="PackedScene" uid="uid://ctxbuwml56wj3" path="res://scripts/widget/common_btn/common_btn.tscn" id="8"]
+[ext_resource type="PackedScene" path="res://scripts/main/pages/home/home_button_fx.tscn" id="9"]
+
+[sub_resource type="Theme" id="PanelTheme"]
+default_font = ExtResource("2")
+default_font_size = 38
+
+[node name="HomeButtonFxPanel" type="CanvasLayer" unique_id=990628142]
+process_mode = 3
+script = ExtResource("1")
+font = ExtResource("2")
+bonus_icon = ExtResource("3")
+special_icon = ExtResource("4")
+fire_white = ExtResource("5")
+fire_yellow = ExtResource("6")
+
+[node name="Root" type="Control" parent="." unique_id=484064574]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = SubResource("PanelTheme")
+
+[node name="Panel" type="PanelContainer" parent="Root" unique_id=704804803]
+layout_mode = 0
+
+[node name="Margin" type="MarginContainer" parent="Root/Panel" unique_id=1992623474]
+layout_mode = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="Root/Panel/Margin" unique_id=1630541959]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="Root/Panel/Margin/VBox" unique_id=2032578663]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Root/Panel/Margin/VBox/Header" unique_id=1834626281]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 46
+text = "首页按钮 · 动效控制"
+
+[node name="Collapse" type="Button" parent="Root/Panel/Margin/VBox/Header" unique_id=1458107137]
+layout_mode = 2
+text = "收起"
+
+[node name="Close" type="Button" parent="Root/Panel/Margin/VBox/Header" unique_id=930382192]
+layout_mode = 2
+text = "关闭"
+
+[node name="Body" type="VBoxContainer" parent="Root/Panel/Margin/VBox" unique_id=391317073]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="PreviewStage" type="Control" parent="Root/Panel/Margin/VBox/Body" unique_id=1729082861]
+custom_minimum_size = Vector2(0, 340)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Background" type="TextureRect" parent="Root/Panel/Margin/VBox/Body/PreviewStage" unique_id=696559852]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="PlayButton" parent="Root/Panel/Margin/VBox/Body/PreviewStage" unique_id=765354194 instance=ExtResource("8")]
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 0
+variant = 1
+btn_text = "Level 20"
+sub_font_size = 43
+
+[node name="HomeButtonFx" parent="Root/Panel/Margin/VBox/Body/PreviewStage/PlayButton" unique_id=1113678318 instance=ExtResource("9")]
+
+[node name="Status" type="Label" parent="Root/Panel/Margin/VBox/Body" unique_id=1206152929]
+layout_mode = 2
+autowrap_mode = 3
+
+[node name="Modes" type="HFlowContainer" parent="Root/Panel/Margin/VBox/Body" unique_id=537859934]
+layout_mode = 2
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 12
+
+[node name="Old" type="Button" parent="Root/Panel/Margin/VBox/Body/Modes" unique_id=358851754]
+layout_mode = 2
+text = "old 原版"
+
+[node name="New" type="Button" parent="Root/Panel/Margin/VBox/Body/Modes" unique_id=409996030]
+layout_mode = 2
+text = "new 扫光＋星光"
+
+[node name="SDK" type="Button" parent="Root/Panel/Margin/VBox/Body/Modes" unique_id=980432139]
+layout_mode = 2
+text = "读取当前 AB"
+
+[node name="Options" type="HBoxContainer" parent="Root/Panel/Margin/VBox/Body" unique_id=1678954000]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Variant" type="OptionButton" parent="Root/Panel/Margin/VBox/Body/Options" unique_id=538187448]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Replay" type="Button" parent="Root/Panel/Margin/VBox/Body/Options" unique_id=1607374027]
+layout_mode = 2
+text = "重播"
+
+[node name="Defaults" type="Button" parent="Root/Panel/Margin/VBox/Body/Options" unique_id=1755118160]
+layout_mode = 2
+text = "恢复默认"
+
+[node name="Toggles" type="HBoxContainer" parent="Root/Panel/Margin/VBox/Body" unique_id=190475224]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Sweep" type="CheckButton" parent="Root/Panel/Margin/VBox/Body/Toggles" unique_id=1534302356]
+layout_mode = 2
+button_pressed = true
+text = "扫光"
+
+[node name="Stars" type="CheckButton" parent="Root/Panel/Margin/VBox/Body/Toggles" unique_id=100030181]
+layout_mode = 2
+button_pressed = true
+text = "四种星光"
+
+[node name="Live" type="CheckButton" parent="Root/Panel/Margin/VBox/Body" unique_id=1390632335]
+layout_mode = 2
+text = "同时预览当前首页（关闭即恢复）"
+
+[node name="Hint" type="Label" parent="Root/Panel/Margin/VBox/Body" unique_id=1338770839]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "直接看上方按钮；可切换难度、开关扫光与星光、调整节奏。蓝色按钮增加底部渐变光。参数只在本次预览中生效；不自动开局。"
+autowrap_mode = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Root/Panel/Margin/VBox/Body" unique_id=1667314653]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Parameters" type="VBoxContainer" parent="Root/Panel/Margin/VBox/Body/Scroll" unique_id=195082048]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 20
+
+[connection signal="pressed" from="Root/Panel/Margin/VBox/Header/Collapse" to="." method="_on_collapse"]
+[connection signal="pressed" from="Root/Panel/Margin/VBox/Header/Close" to="." method="close"]
+[connection signal="resized" from="Root/Panel/Margin/VBox/Body/PreviewStage" to="." method="_layout"]
+[connection signal="pressed" from="Root/Panel/Margin/VBox/Body/PreviewStage/PlayButton" to="." method="_on_replay"]
+[connection signal="pressed" from="Root/Panel/Margin/VBox/Body/Modes/Old" to="." method="_on_old"]
+[connection signal="pressed" from="Root/Panel/Margin/VBox/Body/Modes/New" to="." method="_on_new"]
+[connection signal="pressed" from="Root/Panel/Margin/VBox/Body/Modes/SDK" to="." method="_on_sdk"]
+[connection signal="item_selected" from="Root/Panel/Margin/VBox/Body/Options/Variant" to="." method="_on_variant_selected"]
+[connection signal="pressed" from="Root/Panel/Margin/VBox/Body/Options/Replay" to="." method="_on_replay"]
+[connection signal="pressed" from="Root/Panel/Margin/VBox/Body/Options/Defaults" to="." method="_on_defaults"]
+[connection signal="toggled" from="Root/Panel/Margin/VBox/Body/Toggles/Sweep" to="." method="_on_sweep_toggled"]
+[connection signal="toggled" from="Root/Panel/Margin/VBox/Body/Toggles/Stars" to="." method="_on_stars_toggled"]
+[connection signal="toggled" from="Root/Panel/Margin/VBox/Body/Live" to="." method="_on_live_toggled"]

@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://blrstpmqogkxw"
+path="res://.godot/imported/effect_good_luck.skel-7db10dc69a35b2a2feea9a0aa72386fc.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_good_luck/effect_good_luck.skel"
+dest_files=["res://.godot/imported/effect_good_luck.skel-7db10dc69a35b2a2feea9a0aa72386fc.spskel"]
+
+[params]
+

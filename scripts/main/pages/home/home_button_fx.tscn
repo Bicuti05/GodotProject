@@ -1,0 +1,277 @@
+[gd_scene load_steps=26 format=3]
+
+[ext_resource type="Script" uid="uid://unrtox320t8j" path="res://scripts/main/pages/home/home_button_fx.gd" id="1"]
+[ext_resource type="Shader" uid="uid://bek8uuyyiwnst" path="res://assets/shaders/home_button_sweep.gdshader" id="2"]
+[ext_resource type="Texture2D" uid="uid://g2sn8fa2sew7" path="res://assets/sprites/common_btn_bg_secondary.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bw7bjquirsuk7" path="res://assets/effect/texture/home_button/star1_white.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bs0dow6d8873y" path="res://assets/effect/texture/home_button/star1_yellow.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://kqf53ljsn4kf" path="res://assets/effect/texture/home_button/star2_white.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://dpx18mnes8bhn" path="res://assets/effect/texture/home_button/star2_yellow.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bb2pl18v5q1hx" path="res://assets/effect/petal_pink_lilac_atlas.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cps8ajudugrx7" path="res://assets/effect/petal_mint_atlas.png" id="9"]
+
+[sub_resource type="ShaderMaterial" id="GlowMaterial"]
+shader = ExtResource("2")
+shader_parameter/button_size = null
+shader_parameter/progress = null
+shader_parameter/strength = 0.9
+shader_parameter/envelope = null
+shader_parameter/breath = null
+shader_parameter/glow_mode = true
+shader_parameter/glow_margin = null
+shader_parameter/rim_progress = null
+shader_parameter/rim_envelope = null
+shader_parameter/border_insets = null
+shader_parameter/border_radius = null
+shader_parameter/rim_gap = null
+
+[sub_resource type="ShaderMaterial" id="SweepMaterial"]
+shader = ExtResource("2")
+shader_parameter/button_size = null
+shader_parameter/progress = null
+shader_parameter/strength = null
+shader_parameter/envelope = null
+shader_parameter/breath = null
+shader_parameter/glow_mode = null
+shader_parameter/glow_margin = null
+shader_parameter/rim_progress = null
+shader_parameter/rim_envelope = null
+shader_parameter/border_insets = null
+shader_parameter/border_radius = null
+shader_parameter/rim_gap = null
+
+[sub_resource type="Gradient" id="FadeGradient"]
+offsets = PackedFloat32Array(0, 0.06, 0.12, 0.2, 0.3, 0.4, 0.52, 0.64, 0.76, 0.9, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0.025, 1, 1, 1, 0.14, 1, 1, 1, 0.45, 1, 1, 1, 0.83, 1, 1, 1, 1, 1, 1, 1, 0.95, 1, 1, 1, 0.7, 1, 1, 1, 0.38, 1, 1, 1, 0.075, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="FadeTexture"]
+gradient = SubResource("FadeGradient")
+
+[sub_resource type="Curve" id="ZeroCurve"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="RiseCurve"]
+_limits = [-1.5, 0.0, 0.0, 1.0]
+_data = [Vector2(0, -0.12), 0.0, 0.0, 0, 0, Vector2(0.18, -1.5), 0.0, 0.0, 0, 0, Vector2(0.42, -1.22), 0.0, 0.0, 0, 0, Vector2(0.72, -0.58), 0.0, 0.0, 0, 0, Vector2(1, -0.14), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveXYZTexture" id="RiseTexture"]
+curve_x = SubResource("ZeroCurve")
+curve_y = SubResource("RiseCurve")
+curve_z = SubResource("ZeroCurve")
+
+[sub_resource type="Curve" id="DriftCurve"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.18, 0.45), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="DriftTexture"]
+curve = SubResource("DriftCurve")
+
+[sub_resource type="Curve" id="ScaleCurve"]
+_data = [Vector2(0, 0.22), 0.0, 0.0, 0, 0, Vector2(0.22, 0.72), 0.0, 0.0, 0, 0, Vector2(0.4, 1), 0.0, 0.0, 0, 0, Vector2(0.7, 0.82), 0.0, 0.0, 0, 0, Vector2(1, 0.18), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[sub_resource type="CurveTexture" id="ScaleTexture"]
+curve = SubResource("ScaleCurve")
+
+[sub_resource type="ParticleProcessMaterial" id="StarsMaterial"]
+lifetime_randomness = 0.35
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(356, 22, 0)
+direction = Vector3(0, -1, 0)
+spread = 22.0
+initial_velocity_min = 10.4
+initial_velocity_max = 21.6
+angular_velocity_min = -6.0
+angular_velocity_max = 6.0
+directional_velocity_min = 1.0
+directional_velocity_max = 1.0
+directional_velocity_curve = SubResource("RiseTexture")
+orbit_velocity_curve = SubResource("DriftTexture")
+gravity = Vector3(0, 0, 0)
+scale_min = 0.09
+scale_max = 0.18
+scale_curve = SubResource("ScaleTexture")
+color_ramp = SubResource("FadeTexture")
+
+[sub_resource type="AtlasTexture" id="PinkFront"]
+atlas = ExtResource("8")
+region = Rect2(0, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="MintOblique"]
+atlas = ExtResource("9")
+region = Rect2(256, 512, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="PinkOblique"]
+atlas = ExtResource("8")
+region = Rect2(256, 0, 256, 256)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="MintFront"]
+atlas = ExtResource("9")
+region = Rect2(512, 0, 256, 256)
+filter_clip = true
+
+[node name="HomeButtonFx" type="Control" unique_id=1235546299]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Glow" type="ColorRect" parent="." unique_id=241793884]
+visible = false
+material = SubResource("GlowMaterial")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -42.0
+offset_top = -42.0
+offset_right = 42.0
+offset_bottom = 42.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Sweep" type="NinePatchRect" parent="." unique_id=662822564]
+visible = false
+material = SubResource("SweepMaterial")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3")
+patch_margin_left = 96
+patch_margin_top = 90
+patch_margin_right = 96
+patch_margin_bottom = 106
+
+[node name="Stars" type="Node2D" parent="." unique_id=9778130]
+z_index = 1
+
+[node name="WhiteSoft" type="GPUParticles2D" parent="Stars" unique_id=898807617]
+visible = false
+emitting = false
+amount = 5
+texture = ExtResource("4")
+lifetime = 2.6
+randomness = 0.85
+visibility_rect = Rect2(-500, -260, 1000, 520)
+local_coords = true
+process_material = SubResource("StarsMaterial")
+
+[node name="YellowSoft" type="GPUParticles2D" parent="Stars" unique_id=1074232060]
+visible = false
+emitting = false
+amount = 5
+texture = ExtResource("5")
+lifetime = 2.6
+randomness = 0.85
+visibility_rect = Rect2(-500, -260, 1000, 520)
+local_coords = true
+process_material = SubResource("StarsMaterial")
+
+[node name="WhiteRay" type="GPUParticles2D" parent="Stars" unique_id=288179535]
+visible = false
+emitting = false
+amount = 3
+texture = ExtResource("6")
+lifetime = 2.6
+randomness = 0.85
+visibility_rect = Rect2(-500, -260, 1000, 520)
+local_coords = true
+process_material = SubResource("StarsMaterial")
+
+[node name="YellowRay" type="GPUParticles2D" parent="Stars" unique_id=1319717094]
+visible = false
+emitting = false
+amount = 3
+texture = ExtResource("7")
+lifetime = 2.6
+randomness = 0.85
+visibility_rect = Rect2(-500, -260, 1000, 520)
+local_coords = true
+process_material = SubResource("StarsMaterial")
+
+[node name="Petals" type="Node2D" parent="." unique_id=1640807127]
+
+[node name="LeftPink" type="TextureRect" parent="Petals" unique_id=1665196300]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 64.0
+offset_bottom = 64.0
+pivot_offset = Vector2(32, 32)
+mouse_filter = 2
+texture = SubResource("PinkFront")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LeftMint" type="TextureRect" parent="Petals" unique_id=219253437]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 64.0
+offset_bottom = 64.0
+pivot_offset = Vector2(32, 32)
+mouse_filter = 2
+texture = SubResource("MintOblique")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RightPink" type="TextureRect" parent="Petals" unique_id=737138716]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 64.0
+offset_bottom = 64.0
+pivot_offset = Vector2(32, 32)
+mouse_filter = 2
+texture = SubResource("PinkOblique")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RightMint" type="TextureRect" parent="Petals" unique_id=638105730]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 64.0
+offset_bottom = 64.0
+pivot_offset = Vector2(32, 32)
+mouse_filter = 2
+texture = SubResource("MintFront")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Corners" type="Node2D" parent="." unique_id=453972226]
+z_index = 2
+
+[node name="LeftGleam" type="TextureRect" parent="Corners" unique_id=323513253]
+visible = false
+offset_right = 84.0
+offset_bottom = 84.0
+pivot_offset = Vector2(42, 42)
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RightGleam" type="TextureRect" parent="Corners" unique_id=1435435959]
+visible = false
+offset_right = 84.0
+offset_bottom = 84.0
+pivot_offset = Vector2(42, 42)
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="resized" from="." to="." method="_on_resized"]
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]

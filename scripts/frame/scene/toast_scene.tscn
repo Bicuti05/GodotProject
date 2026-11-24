@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxdqdmwqwjrda"]
+
+[ext_resource type="Script" uid="uid://y5hrs48q484d" path="res://scripts/frame/scene/toast_scene.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cba5h136aukak" path="res://assets/sprites/common_toast_bg_9s.png" id="2"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="3"]
+
+[node name="Toast" type="Control" unique_id=664464008]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Bg" type="NinePatchRect" parent="." unique_id=529282225]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 660.0
+offset_right = 1000.0
+offset_bottom = 820.0
+texture = ExtResource("2")
+patch_margin_left = 70
+patch_margin_top = 87
+patch_margin_right = 70
+patch_margin_bottom = 70
+
+[node name="Label" type="Label" parent="Bg" unique_id=1535405324]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = 40.0
+offset_right = -56.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.21, 0.29, 0.37, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 50
+text = "Toast message"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

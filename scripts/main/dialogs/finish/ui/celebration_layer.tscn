@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://d16r30xvetf1a" path="res://scripts/main/dialogs/finish/view/celebration_layer.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cdbib4kqtor3l" path="res://assets/sprites/splash_logo.png" id="2"]
+
+[node name="CelebrationLayer" type="Control" unique_id=1144344477]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Logo" type="TextureRect" parent="." unique_id=1403495528]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -500.0
+offset_top = 575.0
+offset_right = 500.0
+offset_bottom = 1241.67
+grow_horizontal = 2
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5

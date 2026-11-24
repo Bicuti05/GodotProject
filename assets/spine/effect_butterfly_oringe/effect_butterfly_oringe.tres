@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+
+[ext_resource type="SpineAtlasResource" uid="uid://dpkji71bbpu83" path="res://assets/spine/effect_butterfly_oringe/effect_butterfly_oringe.atlas" id="1"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://cae2qdge1hbf5" path="res://assets/spine/effect_butterfly_oringe/effect_butterfly_oringe.skel" id="2"]
+
+[resource]
+atlas_res = ExtResource("1")
+skeleton_file_res = ExtResource("2")

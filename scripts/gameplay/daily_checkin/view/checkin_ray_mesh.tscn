@@ -1,0 +1,3 @@
+[gd_scene format=3]
+
+[node name="checkin_ray_mesh" type="MeshInstance2D" unique_id=1613831981]

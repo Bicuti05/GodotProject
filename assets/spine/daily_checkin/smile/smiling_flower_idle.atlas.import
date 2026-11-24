@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://b22e00727oodo"
+path="res://.godot/imported/smiling_flower_idle.atlas-b1dc218af4f15916ed71f43c76538086.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/smile/smiling_flower_idle.atlas"
+dest_files=["res://.godot/imported/smiling_flower_idle.atlas-b1dc218af4f15916ed71f43c76538086.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

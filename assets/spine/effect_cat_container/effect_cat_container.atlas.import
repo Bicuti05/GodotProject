@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://bjywfb5a15eof"
+path="res://.godot/imported/effect_cat_container.atlas-06910e00c3985dfa21f9b8725d59d82e.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_cat_container/effect_cat_container.atlas"
+dest_files=["res://.godot/imported/effect_cat_container.atlas-06910e00c3985dfa21f9b8725d59d82e.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

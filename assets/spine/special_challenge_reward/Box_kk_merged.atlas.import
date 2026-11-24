@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://2t5lvexkhut4"
+path="res://.godot/imported/Box_kk_merged.atlas-af52870452d65881738567b78b8d0f53.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/special_challenge_reward/Box_kk_merged.atlas"
+dest_files=["res://.godot/imported/Box_kk_merged.atlas-af52870452d65881738567b78b8d0f53.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

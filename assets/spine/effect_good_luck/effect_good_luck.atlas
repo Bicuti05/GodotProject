@@ -1,0 +1,17 @@
+effect_good_luck.png
+size:512,512
+filter:Linear,Linear
+flower_large_glow
+bounds:229,105,123,122
+offsets:12,11,148,146
+flower_small_glow
+bounds:229,12,91,91
+offsets:15,14,120,120
+original_backplate
+bounds:1,299,432,147
+offsets:11,9,453,165
+particle_pink
+bounds:1,1,226,226
+offsets:15,15,256,256
+text
+bounds:1,229,353,68

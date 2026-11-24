@@ -1,0 +1,116 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" uid="uid://blobb2s17c0id" path="res://scripts/main/dialogs/prop_unlock/prop_unlock_dialog.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bjtlkyrlyq6sd" path="res://assets/sprites/game_unlock_hint.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c1upu66v7xja0" path="res://assets/sprites/game_unlock_undo.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c5erar2a14lvn" path="res://assets/sprites/game_unlock_rope.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b56l4msf6afco" path="res://assets/sprites/game_unlock_fill_pot.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cehjbukrcuf40" path="res://assets/sprites/game_unlock_glow_rays.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://b8tblsalmksls" path="res://assets/sprites/game_unlock_glow_core.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dbqlgkydafjdb" path="res://assets/sprites/game_unlock_star.png" id="8"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="9"]
+[ext_resource type="Script" uid="uid://nt1s0u2qanoc" path="res://scripts/widget/curve_label/curve_label.gd" id="10"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="11"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/guide_hand01/guide_hand01.tres" id="12"]
+
+[sub_resource type="Gradient" id="Gradient_twinkle"]
+offsets = PackedFloat32Array(0, 0.3, 0.7, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[node name="GamePropUnlockOverlay" type="Control" unique_id=673676633]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+hint_icon = ExtResource("2")
+undo_icon = ExtResource("3")
+rope_icon = ExtResource("4")
+fill_pot_icon = ExtResource("5")
+
+[node name="Content" type="Control" parent="." unique_id=612361828]
+z_index = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="GlowRays" type="TextureRect" parent="Content" unique_id=468916217]
+layout_mode = 0
+offset_right = 982.0
+offset_bottom = 989.0
+mouse_filter = 2
+texture = ExtResource("6")
+
+[node name="GlowCore" type="TextureRect" parent="Content" unique_id=1605945569]
+layout_mode = 0
+offset_right = 982.0
+offset_bottom = 982.0
+mouse_filter = 2
+texture = ExtResource("7")
+
+[node name="Icon" type="TextureRect" parent="Content" unique_id=674378633]
+layout_mode = 0
+offset_right = 624.0
+offset_bottom = 624.0
+mouse_filter = 2
+
+[node name="Stars" type="CPUParticles2D" parent="Content" unique_id=688939823]
+emitting = false
+amount = 9
+texture = ExtResource("8")
+lifetime = 1.8
+emission_shape = 3
+emission_rect_extents = Vector2(328.5, 259.5)
+direction = Vector2(0, -1)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_max = 16.0
+scale_amount_min = 0.041
+scale_amount_max = 0.246
+color_ramp = SubResource("Gradient_twinkle")
+
+[node name="TitleBottom" type="Label" parent="Content" unique_id=801618790]
+layout_mode = 0
+offset_right = 824.0
+offset_bottom = 268.0
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 160
+horizontal_alignment = 1
+script = ExtResource("10")
+amplitude = 8.0
+
+[node name="TitleTop" type="Label" parent="Content" unique_id=1392442367]
+layout_mode = 0
+offset_right = 824.0
+offset_bottom = 268.0
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 160
+horizontal_alignment = 1
+script = ExtResource("10")
+amplitude = 8.0
+
+[node name="Desc" type="Label" parent="Content" unique_id=1779019379]
+layout_mode = 0
+offset_right = 824.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Hand" type="SpineSprite" parent="Content" unique_id=1779820173]
+z_index = 2
+skeleton_data_res = ExtResource("12")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

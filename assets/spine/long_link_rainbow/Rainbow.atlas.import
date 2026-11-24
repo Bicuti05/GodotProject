@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://ce85wueh453bj"
+path="res://.godot/imported/Rainbow.atlas-b84fd7f99eab62a35d14b075de8a9beb.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/long_link_rainbow/Rainbow.atlas"
+dest_files=["res://.godot/imported/Rainbow.atlas-b84fd7f99eab62a35d14b075de8a9beb.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

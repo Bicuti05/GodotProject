@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://bhunl12ytg3w3" path="res://scripts/widget/special_challenge_chest/special_challenge_chest.gd" id="1"]
+
+[sub_resource type="StyleBoxEmpty" id="empty"]
+
+[node name="SpecialChallengeChest" type="Button" unique_id=269960863]
+offset_right = 120.0
+offset_bottom = 100.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("empty")
+theme_override_styles/pressed = SubResource("empty")
+theme_override_styles/hover = SubResource("empty")
+theme_override_styles/disabled = SubResource("empty")
+script = ExtResource("1")

@@ -1,0 +1,103 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" uid="uid://dd3m12psuiukn" path="res://scripts/gameplay/rank/view/rank_crown_burst_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://d1tutcslbd2cd" path="res://assets/effect/texture/rank/et_shine_004.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cpo8tssne0rtp" path="res://assets/effect/texture/rank/et_ring_700.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://doeqonm3pgxg2" path="res://assets/effect/texture/rank/et_star_404.png" id="4"]
+
+[sub_resource type="CanvasItemMaterial" id="m_add"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="g_glow"]
+offsets = PackedFloat32Array(0, 0.141, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Curve" id="c_ring_grow"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.333, 0.828), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="g_ring"]
+offsets = PackedFloat32Array(0, 0.139, 0.588, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 0.471, 1, 1, 1, 0.471, 1, 1, 1, 0)
+
+[sub_resource type="Gradient" id="g_shine"]
+offsets = PackedFloat32Array(0, 0.078, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="AtlasTexture" id="a_star404"]
+atlas = ExtResource("4")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="Curve" id="c_star_pop"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.044, 0), 0.0, 0.0, 0, 0, Vector2(0.091, 1), 0.0, 0.0, 0, 0, Vector2(0.625, 0), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 5
+
+[node name="RankCrownBurstFx" type="Node2D" unique_id=540466296]
+visible = false
+script = ExtResource("1")
+
+[node name="Glow" type="CPUParticles2D" parent="." unique_id=1108310517]
+material = SubResource("m_add")
+emitting = false
+amount = 1
+texture = ExtResource("2")
+lifetime = 0.8
+one_shot = true
+explosiveness = 1.0
+spread = 180.0
+gravity = Vector2(0, 0)
+scale_amount_min = 1.1876
+scale_amount_max = 1.1876
+color = Color(1, 0.839, 0.55, 1)
+color_ramp = SubResource("g_glow")
+
+[node name="Ring" type="CPUParticles2D" parent="." unique_id=37589514]
+material = SubResource("m_add")
+emitting = false
+amount = 1
+texture = ExtResource("3")
+lifetime = 0.7
+one_shot = true
+explosiveness = 1.0
+spread = 180.0
+gravity = Vector2(0, 0)
+scale_amount_min = 1.3333
+scale_amount_max = 1.3333
+scale_amount_curve = SubResource("c_ring_grow")
+color = Color(1, 1, 1, 0.588)
+color_ramp = SubResource("g_ring")
+
+[node name="Shine" type="CPUParticles2D" parent="." unique_id=1285387553]
+material = SubResource("m_add")
+emitting = false
+amount = 1
+texture = ExtResource("2")
+lifetime = 0.5
+one_shot = true
+explosiveness = 1.0
+spread = 180.0
+gravity = Vector2(0, 0)
+angular_velocity_min = 45.0
+angular_velocity_max = 45.0
+scale_amount_min = 0.5938
+scale_amount_max = 0.5938
+color = Color(1, 0.839, 0.55, 1)
+color_ramp = SubResource("g_shine")
+
+[node name="Stars" type="CPUParticles2D" parent="." unique_id=1797800875]
+material = SubResource("m_add")
+emitting = false
+amount = 9
+texture = SubResource("a_star404")
+one_shot = true
+explosiveness = 0.7
+emission_shape = 1
+emission_sphere_radius = 200.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 500.0
+initial_velocity_max = 500.0
+scale_amount_min = 2.1875
+scale_amount_max = 2.1875
+scale_amount_curve = SubResource("c_star_pop")
+color = Color(1, 0.954, 0.786, 1)

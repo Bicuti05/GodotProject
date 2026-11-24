@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://b677efl6ahaeh"
+path="res://.godot/imported/empty_col_feedback.atlas-8824f895ed7f204d7402975b3d1a81e5.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/empty_col_feedback/empty_col_feedback.atlas"
+dest_files=["res://.godot/imported/empty_col_feedback.atlas-8824f895ed7f204d7402975b3d1a81e5.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

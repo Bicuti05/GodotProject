@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://dj71o2kj03y0e"
+path="res://.godot/imported/rank_completion.atlas-ed7b8dbbce8942e902df337a9ff617b3.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/rank_completion/rank_completion.atlas"
+dest_files=["res://.godot/imported/rank_completion.atlas-ed7b8dbbce8942e902df337a9ff617b3.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

@@ -1,0 +1,12 @@
+effect_smart_move.png
+size:1340,224
+filter:Linear,Linear
+common_element_colorful_star_2
+bounds:1235,119,102,100
+offsets:21,25,144,144
+rotate:90
+et_point_40303
+bounds:1071,59,162,162
+new/gp_text_smart_move
+bounds:2,2,1067,219
+offsets:3,2,1073,222

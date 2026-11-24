@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" uid="uid://b15jp8171gkci" path="res://scripts/gameplay/rank/view/rank_row_source_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b8l2kseva8xx7" path="res://assets/effect/texture/rank/finish_up.png" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/source_fx/rank_cell_particles.tscn" id="3"]
+
+[node name="RankRowSourceFx" type="Node2D" unique_id=1848895631]
+visible = false
+z_index = 10
+script = ExtResource("1")
+arrow_texture = ExtResource("2")
+
+[node name="Particles" parent="." unique_id=1303118046 instance=ExtResource("3")]
+mouse_filter = 2
+
+[editable path="Particles"]

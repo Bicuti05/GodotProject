@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://bl702bhgmf4e3"
+path="res://.godot/imported/smug_flower_idle_sweep_fixed.skel-b0bfba2e76b0a2a098063333342874e0.spskel"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/proud/smug_flower_idle_sweep_fixed.skel"
+dest_files=["res://.godot/imported/smug_flower_idle_sweep_fixed.skel-b0bfba2e76b0a2a098063333342874e0.spskel"]
+
+[params]
+

@@ -1,0 +1,155 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Script" uid="uid://yggnnuknlnea" path="res://scripts/gameplay/juice_sort/view/juice_sunlight_ambient.gd" id="1"]
+[ext_resource type="Script" uid="uid://bwlkj1kebc4wg" path="res://scripts/gameplay/juice_sort/view/sunlight_fx_settings.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://c6s8x8tcdxbmq" path="res://assets/sprites/juice_sort/sunlight_sun_incentive_back_figma.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://q20qv52p4r3t" path="res://assets/sprites/juice_sort/sunlight_sunlight_particle.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bnih1agkv0l0o" path="res://assets/sprites/juice_sort/sunlight_sun_effect_middle_figma.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ixgf1jd7pias" path="res://assets/effect/texture/bonus/smoke_puff.png" id="6"]
+
+[sub_resource type="Resource" id="Settings"]
+script = ExtResource("2")
+
+[sub_resource type="Shader" id="SunCoreShader"]
+code = "shader_type canvas_item;
+render_mode blend_mix, unshaded;
+
+varying vec4 particle_tint;
+
+void vertex() {
+    particle_tint = COLOR;
+}
+
+void fragment() {
+    vec4 source = texture(TEXTURE, UV);
+    float core_alpha = smoothstep(0.25, 0.75, source.a);
+    COLOR = vec4(source.rgb * particle_tint.rgb, core_alpha * particle_tint.a);
+}
+"
+
+[sub_resource type="ShaderMaterial" id="SunCoreMaterial"]
+shader = SubResource("SunCoreShader")
+
+[sub_resource type="Gradient" id="SunFade"]
+offsets = PackedFloat32Array(0, 0.08, 0.3, 0.7, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0.45, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="SunFadeTexture"]
+gradient = SubResource("SunFade")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dsgmp"]
+resource_local_to_scene = true
+lifetime_randomness = 0.3
+particle_flag_disable_z = true
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 1.0
+emission_ring_radius = 130.0
+emission_ring_inner_radius = 106.0
+emission_ring_cone_angle = 90.0
+direction = Vector3(0, -1, 0)
+spread = 180.0
+initial_velocity_min = 18.2
+initial_velocity_max = 31.2
+gravity = Vector3(0, -2, 0)
+radial_accel_min = 7.0
+radial_accel_max = 14.0
+scale_min = 0.35
+scale_max = 0.625
+color = Color(1, 0.98, 0.85, 0.85)
+color_ramp = SubResource("SunFadeTexture")
+
+[sub_resource type="CanvasItemMaterial" id="ColdCanvas"]
+particles_animation = true
+particles_anim_h_frames = 2
+particles_anim_v_frames = 2
+particles_anim_loop = false
+
+[sub_resource type="Gradient" id="ColdFade"]
+offsets = PackedFloat32Array(0, 0.12, 0.5, 0.8, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.95, 1, 1, 1, 0.4, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="ColdFadeTexture"]
+gradient = SubResource("ColdFade")
+
+[sub_resource type="Curve" id="ColdExpansion"]
+_limits = [0.0, 1.5, 0.0, 1.0]
+_data = [Vector2(0, 0.6), 0.0, 0.0, 0, 0, Vector2(0.5, 1.05), 0.0, 0.0, 0, 0, Vector2(1, 1.5), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="ColdExpansionTexture"]
+curve = SubResource("ColdExpansion")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_lq008"]
+resource_local_to_scene = true
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(68.5, 77, 0)
+angle_min = -35.0
+angle_max = 35.0
+direction = Vector3(0, -1, 0)
+spread = 25.0
+initial_velocity_min = 33.0
+initial_velocity_max = 52.8
+angular_velocity_min = -22.0
+angular_velocity_max = 22.0
+gravity = Vector3(0, -4, 0)
+scale_min = 0.3024
+scale_max = 0.504
+scale_curve = SubResource("ColdExpansionTexture")
+color = Color(1, 1, 1, 0.325)
+color_ramp = SubResource("ColdFadeTexture")
+anim_offset_max = 1.0
+turbulence_enabled = true
+turbulence_noise_strength = 5.0
+turbulence_noise_scale = 2.0
+turbulence_noise_speed = Vector3(0.4, -0.6, 0)
+turbulence_influence_min = 0.12
+turbulence_influence_max = 0.25
+
+[node name="JuiceSunlightAmbient" type="Node2D" unique_id=1062108615]
+script = ExtResource("1")
+settings = SubResource("Settings")
+
+[node name="Halo" type="Node2D" parent="." unique_id=1648349510]
+visible = false
+
+[node name="Background" type="Sprite2D" parent="Halo" unique_id=460231125]
+position = Vector2(-0.259079, -3.113403)
+scale = Vector2(0.9964315, 0.9991082)
+texture = ExtResource("3")
+
+[node name="SunParticles" type="GPUParticles2D" parent="." unique_id=1505862878]
+visible = false
+material = SubResource("SunCoreMaterial")
+emitting = false
+amount = 6
+texture = ExtResource("4")
+lifetime = 0.8
+randomness = 0.85
+visibility_rect = Rect2(-235, -275, 470, 530)
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_dsgmp")
+
+[node name="SunEffect" type="Node2D" parent="." unique_id=1778232089]
+visible = false
+position = Vector2(0, 3)
+
+[node name="Graphic" type="Sprite2D" parent="SunEffect" unique_id=646071365]
+position = Vector2(0.2971, 0.2971)
+texture = ExtResource("5")
+
+[node name="ColdParticles" type="GPUParticles2D" parent="." unique_id=12540869]
+visible = false
+z_index = 120
+z_as_relative = false
+material = SubResource("ColdCanvas")
+position = Vector2(0, -10)
+emitting = false
+amount = 18
+texture = ExtResource("6")
+lifetime = 3.2
+randomness = 0.45
+visibility_rect = Rect2(-180, -300, 360, 370)
+local_coords = true
+process_material = SubResource("ParticleProcessMaterial_lq008")

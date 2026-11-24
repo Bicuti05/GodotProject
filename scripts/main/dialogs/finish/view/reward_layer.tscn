@@ -1,0 +1,140 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" uid="uid://daomy3b7j8x7r" path="res://scripts/main/dialogs/finish/view/reward_layer.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://jgh270hy0brw" path="res://assets/sprites/finish/reward_glow_rays.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c4wrtfqmhxw4u" path="res://assets/sprites/finish/reward_glow_core.png" id="3"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/finish_flower_cart/finish_flower_cart.tres" id="4"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/effect_butterfly_oringe/effect_butterfly_oringe.tres" id="5"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/effect_butterfly_red/effect_butterfly_red.tres" id="6"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/effect_butterfly_green/effect_butterfly_green.tres" id="7"]
+[ext_resource type="Shader" uid="uid://yn2s8i7i2tav" path="res://assets/effect/shader/finish_rainbow_sweep.gdshader" id="8"]
+[ext_resource type="Texture2D" uid="uid://dk8txaajsrlk1" path="res://assets/sprites/finish/rainbow.png" id="9"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="10"]
+[ext_resource type="Script" uid="uid://nt1s0u2qanoc" path="res://scripts/widget/curve_label/curve_label.gd" id="11"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_2efky"]
+resource_local_to_scene = true
+shader = ExtResource("8")
+shader_parameter/sweep_progress = -1.0
+shader_parameter/sweep_strength = null
+shader_parameter/sweep_width = null
+
+[node name="RewardLayer" type="Control" unique_id=502175277]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Fx" type="Node2D" parent="." unique_id=247943853]
+
+[node name="GlowRays" type="Sprite2D" parent="Fx" unique_id=433899700]
+position = Vector2(0, 1156.4)
+scale = Vector2(2.4, 2.4)
+texture = ExtResource("2")
+
+[node name="GlowCore" type="Sprite2D" parent="Fx" unique_id=1450551323]
+position = Vector2(0, 1153)
+scale = Vector2(1.9217, 1.9217)
+texture = ExtResource("3")
+
+[node name="WheelTrailLeft" type="Node2D" parent="Fx" unique_id=763977564]
+
+[node name="WheelTrailRight" type="Node2D" parent="Fx" unique_id=1644469855]
+
+[node name="Basket" type="SpineSprite" parent="Fx" unique_id=1855278681]
+position = Vector2(0, 1052.02)
+scale = Vector2(0.684096, 0.684096)
+skeleton_data_res = ExtResource("4")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="ButterflyOrange" type="SpineSprite" parent="Fx" unique_id=1217163623]
+skeleton_data_res = ExtResource("5")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="ButterflyRed" type="SpineSprite" parent="Fx" unique_id=1433919296]
+skeleton_data_res = ExtResource("6")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="ButterflyGreen" type="SpineSprite" parent="Fx" unique_id=1925301040]
+skeleton_data_res = ExtResource("7")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="Rainbow" type="Sprite2D" parent="Fx" unique_id=1486737639]
+visible = false
+material = SubResource("ShaderMaterial_2efky")
+position = Vector2(0, 473.84)
+scale = Vector2(0.622222, 0.4)
+texture = ExtResource("9")
+
+[node name="RainbowSparkles" type="Node2D" parent="Fx" unique_id=602280580]
+
+[node name="TitleBottom" type="Label" parent="." unique_id=869967311]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 382.5
+offset_right = 400.0
+offset_bottom = 782.5
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 206
+text = "FINISH_TITLE_PERFECT"
+horizontal_alignment = 1
+script = ExtResource("11")
+amplitude = 82.0
+align_to_tangent = true
+
+[node name="TitleMid" type="Label" parent="." unique_id=655432533]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 378.5
+offset_right = 400.0
+offset_bottom = 778.5
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 206
+text = "FINISH_TITLE_PERFECT"
+horizontal_alignment = 1
+script = ExtResource("11")
+amplitude = 82.0
+align_to_tangent = true
+
+[node name="TitleTop" type="Label" parent="." unique_id=686206040]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 373.5
+offset_right = 400.0
+offset_bottom = 773.5
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 206
+text = "FINISH_TITLE_PERFECT"
+horizontal_alignment = 1
+script = ExtResource("11")
+amplitude = 82.0
+align_to_tangent = true

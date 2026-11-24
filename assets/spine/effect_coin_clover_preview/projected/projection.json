@@ -1,0 +1,18 @@
+{
+  "angles_degrees": [
+    0,
+    -12,
+    -30,
+    -45,
+    -60,
+    -78,
+    -90,
+    75,
+    58,
+    42,
+    25,
+    0
+  ],
+  "method": "fixed-camera textured beveled cylinder",
+  "face_relief": "baked source image, not reconstructed mesh"
+}

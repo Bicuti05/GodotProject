@@ -1,0 +1,234 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" uid="uid://e2hhc3r2ogxo" path="res://scripts/debug/ab_debug_page.gd" id="1"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_panel"]
+bg_color = Color(0.11, 0.12, 0.15, 0.98)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.35, 0.72, 0.55, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sticky"]
+bg_color = Color(0.11, 0.12, 0.15, 1)
+
+[node name="AbDebugPage" type="Control" unique_id=1086152429]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Scrim" type="ColorRect" parent="." unique_id=369870296]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.78)
+
+[node name="Panel" type="PanelContainer" parent="." unique_id=580198123]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_panel")
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=483731433]
+layout_mode = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 36
+
+[node name="VBox" type="VBoxContainer" parent="Panel/Margin" unique_id=1138600543]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="TitleRow" type="HBoxContainer" parent="Panel/Margin/VBox" unique_id=45068397]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Panel/Margin/VBox/TitleRow" unique_id=208246351]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 52
+text = "AB 实验调试"
+
+[node name="CloseBtn" type="Button" parent="Panel/Margin/VBox/TitleRow" unique_id=525502811]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 36
+text = "关闭"
+
+[node name="EditSectionTitle" type="Label" parent="Panel/Margin/VBox" unique_id=631254145]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 44
+text = "【分组】（重启生效）"
+
+[node name="ExperimentsRow" type="HBoxContainer" parent="Panel/Margin/VBox" unique_id=1469399897]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ExperimentsTitle" type="Label" parent="Panel/Margin/VBox/ExperimentsRow" unique_id=586128059]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+text = "命中的关卡实验"
+
+[node name="ExperimentsValue" type="Label" parent="Panel/Margin/VBox/ExperimentsRow" unique_id=833295697]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(0.68, 0.7, 0.74, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+text = "（无）"
+autowrap_mode = 3
+
+[node name="GroupIdRow" type="HBoxContainer" parent="Panel/Margin/VBox" unique_id=1352855283]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="GroupIdLabel" type="Label" parent="Panel/Margin/VBox/GroupIdRow" unique_id=520911852]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+text = "当前 group_id"
+
+[node name="GroupIdInput" type="LineEdit" parent="Panel/Margin/VBox/GroupIdRow" unique_id=1696964786]
+custom_minimum_size = Vector2(0, 84)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+placeholder_text = "12345"
+
+[node name="IncrementBtn" type="Button" parent="Panel/Margin/VBox/GroupIdRow" unique_id=404204280]
+custom_minimum_size = Vector2(110, 84)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+text = "+1"
+
+[node name="RandomBtn" type="Button" parent="Panel/Margin/VBox/GroupIdRow" unique_id=850941018]
+custom_minimum_size = Vector2(140, 84)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+text = "随机"
+
+[node name="CountryRow" type="HBoxContainer" parent="Panel/Margin/VBox" unique_id=1650304960]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CountryLabel" type="Label" parent="Panel/Margin/VBox/CountryRow" unique_id=133201237]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+text = "当前 country"
+
+[node name="CountryInput" type="LineEdit" parent="Panel/Margin/VBox/CountryRow" unique_id=1790971984]
+custom_minimum_size = Vector2(0, 84)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+placeholder_text = "US"
+max_length = 2
+
+[node name="CountryRandomBtn" type="Button" parent="Panel/Margin/VBox/CountryRow" unique_id=697058214]
+custom_minimum_size = Vector2(140, 84)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+text = "随机"
+
+[node name="ConfirmBtn" type="Button" parent="Panel/Margin/VBox" unique_id=279642675]
+custom_minimum_size = Vector2(0, 84)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 36
+text = "修改分组（立即重启）"
+
+[node name="Sep" type="HSeparator" parent="Panel/Margin/VBox" unique_id=508811068]
+layout_mode = 2
+
+[node name="ExperimentSectionTitle" type="Label" parent="Panel/Margin/VBox" unique_id=2064010371]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 44
+text = "【实验】（即时生效）"
+
+[node name="ExperimentSearch" type="LineEdit" parent="Panel/Margin/VBox" unique_id=1414301122]
+custom_minimum_size = Vector2(0, 84)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+placeholder_text = "搜索实验 key、描述或版本…"
+clear_button_enabled = true
+
+[node name="StartupSpacer" type="Control" parent="Panel/Margin/VBox" unique_id=936220099]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ExperimentsArea" type="Control" parent="Panel/Margin/VBox" unique_id=750296716]
+custom_minimum_size = Vector2(0, 180)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="FixedExperiments" type="ScrollContainer" parent="Panel/Margin/VBox/ExperimentsArea" unique_id=1841017195]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+
+[node name="RowsVBox" type="VBoxContainer" parent="Panel/Margin/VBox/ExperimentsArea/FixedExperiments" unique_id=1894389602]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 24
+
+[node name="StickyVersion" type="Label" parent="Panel/Margin/VBox/ExperimentsArea" unique_id=1739879479]
+visible = false
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 48.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_sticky")
+
+[connection signal="pressed" from="Panel/Margin/VBox/TitleRow/CloseBtn" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Panel/Margin/VBox/GroupIdRow/IncrementBtn" to="." method="_on_increment_pressed"]
+[connection signal="pressed" from="Panel/Margin/VBox/GroupIdRow/RandomBtn" to="." method="_on_random_pressed"]
+[connection signal="pressed" from="Panel/Margin/VBox/CountryRow/CountryRandomBtn" to="." method="_on_country_random_pressed"]
+[connection signal="pressed" from="Panel/Margin/VBox/ConfirmBtn" to="." method="_on_confirm_pressed"]
+[connection signal="text_changed" from="Panel/Margin/VBox/ExperimentSearch" to="." method="_on_experiment_search_changed"]

@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://bkelpsj0u7bhs"
+path="res://.godot/imported/Celebrate.atlas-f90401dcde367883ba8bf827d3e2ac33.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/party/Celebrate.atlas"
+dest_files=["res://.godot/imported/Celebrate.atlas-f90401dcde367883ba8bf827d3e2ac33.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

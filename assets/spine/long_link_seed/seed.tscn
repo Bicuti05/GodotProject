@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/long_link_seed/seed.tres" id="1"]
+
+[node name="LongLinkSeed" type="SpineSprite" unique_id=271332380]
+process_mode = 4
+visible = false
+texture_filter = 2
+skeleton_data_res = ExtResource("1")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

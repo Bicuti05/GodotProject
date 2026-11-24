@@ -1,0 +1,11 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" uid="uid://bbadurmw7y25m" path="res://scripts/gameplay/juice_sort/view/bonus_pig_idle_fx.gd" id="1"]
+[ext_resource type="Shader" uid="uid://de0t3w55ey1lv" path="res://assets/effect/shader/bonus_pig_shine.gdshader" id="2"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="3"]
+
+[node name="BonusPigIdleFx" type="Node2D" unique_id=813407393]
+script = ExtResource("1")
+shine_shader = ExtResource("2")
+point_texture = ExtResource("3")
+star_texture = ExtResource("3")

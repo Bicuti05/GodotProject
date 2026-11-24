@@ -1,0 +1,65 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" uid="uid://bgby41vpyxohl" path="res://scripts/gameplay/juice_sort/view/juice_col_mark.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cm7q23m4lxaa3" path="res://assets/sprites/juice_sort/gp_col_highlight_green_top.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://x03bapfmikj6" path="res://assets/sprites/juice_sort/gp_col_highlight_red_top.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://curmfflwcmvps" path="res://assets/sprites/juice_sort/gp_col_highlight_blue_top.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://dend0t7shi83h" path="res://assets/sprites/juice_sort/gp_col_highlight_yellow_top.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://b1aetnqrehwwi" path="res://assets/sprites/juice_sort/gp_col_highlight_green.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bntskc3g124kb" path="res://assets/sprites/juice_sort/gp_col_highlight_red_bottom.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://bj15v42cp00ke" path="res://assets/sprites/juice_sort/gp_col_highlight_yellow_bottom.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://b3rivmnlvtka6" path="res://assets/sprites/juice_sort/gp_col_mark_tick.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://d10ex7dgi6dn0" path="res://assets/sprites/juice_sort/gp_col_mark_cross.png" id="10"]
+[ext_resource type="Script" uid="uid://bn8sh34fsj74d" path="res://scripts/gameplay/juice_sort/view/juice_capsule_rect.gd" id="11"]
+
+[node name="JuiceColMark" type="Control" unique_id=1406871869]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1")
+glow_green = ExtResource("2")
+glow_red = ExtResource("3")
+glow_blue = ExtResource("4")
+glow_yellow = ExtResource("5")
+fill_green = ExtResource("6")
+fill_red = ExtResource("7")
+fill_yellow = ExtResource("8")
+mark_tick = ExtResource("9")
+mark_cross = ExtResource("10")
+
+[node name="Fill" type="Control" parent="." unique_id=1333968014]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("11")
+texture = ExtResource("6")
+
+[node name="Glow" type="Control" parent="." unique_id=1167247935]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("11")
+texture = ExtResource("2")
+
+[node name="Mark" type="TextureRect" parent="." unique_id=1901803984]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -44.0
+offset_right = 44.0
+offset_bottom = 88.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+texture = ExtResource("9")

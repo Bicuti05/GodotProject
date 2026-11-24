@@ -1,0 +1,74 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" uid="uid://d87wudpm8o4u" path="res://scripts/main/pages/game/challenge_banner.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://rvh23d310l6s" path="res://assets/sprites/game_challenge_petal_0.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://lj21p14wm6ec" path="res://assets/sprites/game_challenge_petal_1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://vdy6dy0ellpt" path="res://assets/sprites/game_challenge_petal_2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://lnuod3tfgxu4" path="res://assets/sprites/game_challenge_petal_3.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bghc1gmrvthsk" path="res://assets/sprites/game_challenge_petal_4.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://h6m4v4licdxn" path="res://assets/sprites/game_challenge_title_en.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://da7evcirjcecx" path="res://assets/sprites/game_challenge_title_es.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://drm61feelvkpm" path="res://assets/sprites/game_challenge_title_fr.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://b5jbb6u3dfqix" path="res://assets/sprites/game_challenge_title_pt.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://rehqlb3ontus" path="res://assets/sprites/game_challenge_title_ru.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://dgj3ax22kavqy" path="res://assets/sprites/game_challenge_banner.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cvs88db03n5ao" path="res://assets/sprites/game_challenge_title_background.png" id="13"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_title_background"]
+atlas = ExtResource("13")
+region = Rect2(167, 54, 442, 99)
+
+[node name="ChallengeBanner" type="Control" unique_id=1809680989]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+petal_textures = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6")]
+title_textures = {
+"en": ExtResource("7"),
+"es": ExtResource("8"),
+"fr": ExtResource("9"),
+"pt": ExtResource("10"),
+"ru": ExtResource("11")
+}
+title_positions = {
+"en": Vector2(167.65991, 59.51367),
+"es": Vector2(167.65991, 54.06641),
+"fr": Vector2(167.65991, 54.06641),
+"pt": Vector2(167.65991, 57.375),
+"ru": Vector2(161.9707, 59.67188)
+}
+
+[node name="Card" type="TextureRect" parent="." unique_id=483509734]
+layout_mode = 0
+offset_right = 775.0
+offset_bottom = 224.0
+mouse_filter = 2
+texture = ExtResource("12")
+stretch_mode = 2
+
+[node name="TitleBackground" type="TextureRect" parent="Card" unique_id=1482666267]
+layout_mode = 0
+offset_left = 167.0
+offset_top = 54.0
+offset_right = 609.0
+offset_bottom = 153.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_title_background")
+expand_mode = 1
+stretch_mode = 2
+
+[node name="Title" type="TextureRect" parent="Card" unique_id=882033493]
+layout_mode = 0
+offset_left = 167.65991
+offset_top = 59.51367
+offset_right = 608.6599
+offset_bottom = 151.51367
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 2

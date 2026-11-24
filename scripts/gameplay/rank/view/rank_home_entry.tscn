@@ -1,0 +1,137 @@
+[gd_scene load_steps=12 format=3 uid="uid://4hhvseljqh3e"]
+
+[ext_resource type="Texture2D" uid="uid://d2sy2jx71ae87" path="res://assets/sprites/common_rank_home_ranks_icon_bg.png" id="1"]
+[ext_resource type="Script" uid="uid://b7defj0kiuv3r" path="res://scripts/gameplay/rank/view/rank_home_entry.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://dh6t3ybfie16o" path="res://assets/sprites/common_rank_home_rank_subscript_level_1.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://btmter70mksoy" path="res://assets/sprites/common_rank_home_rank_subscript_level_2.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cvj6f731hxolx" path="res://assets/sprites/common_rank_home_rank_subscript_level_3.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://mpahwe1o3ogg" path="res://assets/sprites/common_rank_home_rank_subscript_level_4.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://be8kb1y7bo82m" path="res://assets/sprites/common_rank_home_rank_subscript_level_5.png" id="7"]
+[ext_resource type="PackedScene" uid="uid://cu2huxkkx8rdq" path="res://scripts/gameplay/rank/view/rank_badge_view.tscn" id="8"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="9"]
+[ext_resource type="Texture2D" uid="uid://b1l4r5iv3w7dw" path="res://assets/sprites/common_rank_home_ranks_countdown_bg.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://gsc1o8noy0l3" path="res://assets/sprites/common_rank_home_ranks_lock_icon.png" id="11"]
+
+[node name="RankHomeEntry" type="TextureButton" unique_id=2048210815]
+visible = false
+custom_minimum_size = Vector2(232, 232)
+offset_right = 232.0
+offset_bottom = 232.0
+texture_normal = ExtResource("1")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("2")
+subscript_bgs = [ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("7"), ExtResource("7")]
+
+[node name="Badge" parent="." unique_id=1030034886 instance=ExtResource("8")]
+layout_mode = 1
+offset_top = -24.0
+offset_right = 232.0
+offset_bottom = 208.0
+
+[node name="Subscript" type="TextureRect" parent="." unique_id=1290704031]
+visible = false
+layout_mode = 1
+offset_left = 124.0
+offset_top = -16.0
+offset_right = 222.0
+offset_bottom = 82.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Number" type="Label" parent="Subscript" unique_id=443234753]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -6.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.6)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 34
+text = "50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Countdown" type="TextureRect" parent="." unique_id=2080026657]
+layout_mode = 1
+offset_top = 161.0
+offset_right = 232.0
+offset_bottom = 244.0
+scale = Vector2(1.56, 1.56)
+pivot_offset = Vector2(116, 41.5)
+mouse_filter = 2
+texture = ExtResource("10")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Time" type="Label" parent="Countdown" unique_id=1484710278]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.3)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 30
+text = "00:00:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LockArea" type="TextureRect" parent="." unique_id=418813080]
+visible = false
+layout_mode = 1
+offset_top = 161.0
+offset_right = 232.0
+offset_bottom = 244.0
+scale = Vector2(1.56, 1.56)
+pivot_offset = Vector2(116, 41.5)
+mouse_filter = 2
+texture = ExtResource("10")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Text" type="Label" parent="LockArea" unique_id=1993038731]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9")
+theme_override_font_sizes/font_size = 27
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LockIcon" type="TextureRect" parent="." unique_id=1995374316]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -26.0
+offset_top = -26.0
+offset_right = 26.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Tick" type="Timer" parent="." unique_id=1042110198]

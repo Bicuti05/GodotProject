@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" uid="uid://b7u2h4s3c3w4c" path="res://scripts/main/dialogs/finish/effects/finish_reward_particles.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_wheel_trail.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_rainbow_sparkles.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_flower_sparkle.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_flower_dot.tscn" id="5"]
+
+[node name="FinishRewardParticles" type="Node2D" unique_id=1595903715]
+visible = false
+script = ExtResource("1")
+emitter_scenes = {
+&"FlowerDot": ExtResource("5"),
+&"FlowerSparkle": ExtResource("4"),
+&"RainbowSparkles": ExtResource("3"),
+&"WheelTrailLeft": ExtResource("2"),
+&"WheelTrailRight": ExtResource("2")
+}

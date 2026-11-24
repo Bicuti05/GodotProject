@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://dnje750g8t2ku" path="res://scripts/gameplay/rank/view/rank_row_land_burst_fx.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/source_fx/rank_cell_particles.tscn" id="2"]
+
+[node name="RankRowLandBurstFx" type="Node2D" unique_id=2075539556]
+visible = false
+z_index = 10
+script = ExtResource("1")
+
+[node name="Particles" parent="." unique_id=97391800 instance=ExtResource("2")]
+mouse_filter = 2
+
+[editable path="Particles"]

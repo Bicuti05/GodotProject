@@ -1,0 +1,205 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" uid="uid://c5jj5fy8ccfvv" path="res://scripts/main/pages/game/combo_fullscreen_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://djy1jw1icr03t" path="res://assets/effect/texture/combo_fullscreen/edge_light_band.png" id="2"]
+[ext_resource type="Shader" uid="uid://bxwq0i836pe3s" path="res://assets/effect/shader/combo_petal_motion.gdshader" id="3"]
+[ext_resource type="Texture2D" uid="uid://btvx5vtlvkgib" path="res://assets/effect/texture/combo_fullscreen/petals_atlas.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://drxde2b446bka" path="res://assets/effect/texture/combo_fullscreen/combo10_flowers_atlas.png" id="5"]
+
+[sub_resource type="Shader" id="EdgeLightBandShader"]
+code = "shader_type canvas_item;
+render_mode blend_premul_alpha;
+
+uniform bool right_edge = false;
+uniform float band_brightness = 1.38;
+uniform float end_opacity = 0.0;
+varying vec4 band_tint;
+
+float light_profile(float inward_distance, float vertical_distance) {
+    float inward_opacity = 1.0 - smoothstep(0.0, 1.0, inward_distance);
+    float vertical_opacity = mix(1.0, end_opacity, smoothstep(0.0, 1.0, vertical_distance));
+    return inward_opacity * vertical_opacity;
+}
+
+void vertex() {
+    band_tint = COLOR;
+}
+
+void fragment() {
+    float cross_band_uv = right_edge ? UV.x : 1.0 - UV.x;
+    vec2 band_uv = vec2(cross_band_uv, 0.5);
+    vec4 band_sample = texture(TEXTURE, band_uv);
+    float inward_distance = right_edge ? 1.0 - UV.x : UV.x;
+    float vertical_distance = abs(UV.y * 2.0 - 1.0);
+    float band_profile = light_profile(inward_distance, vertical_distance);
+    float inward_profile = light_profile(inward_distance, 0.0);
+    float core_profile = inward_profile * inward_profile * inward_profile;
+    float amplitude = band_sample.a * band_tint.a * band_profile * band_brightness;
+    float tint_opacity = amplitude * 0.68;
+    vec3 halo_tint = mix(band_tint.rgb, vec3(1.0, 0.98, 0.74), 0.3);
+    vec3 core_tint = mix(halo_tint, vec3(1.0, 0.995, 0.9), 0.4);
+    vec3 light_color = mix(halo_tint, core_tint, core_profile);
+    float edge_energy = tint_opacity * core_profile * 0.1;
+    vec3 light_rgb = band_sample.rgb * (light_color * tint_opacity + core_tint * edge_energy);
+    COLOR = vec4(light_rgb, tint_opacity);
+}
+"
+
+[sub_resource type="ShaderMaterial" id="LeftEdgeGlow"]
+shader = SubResource("EdgeLightBandShader")
+shader_parameter/right_edge = null
+shader_parameter/band_brightness = null
+shader_parameter/end_opacity = null
+
+[sub_resource type="ShaderMaterial" id="RightEdgeGlow"]
+shader = SubResource("EdgeLightBandShader")
+shader_parameter/right_edge = true
+shader_parameter/band_brightness = null
+shader_parameter/end_opacity = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e6gn0"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/reference_items = null
+shader_parameter/visible_count = null
+shader_parameter/atlas_grid = Vector2(10, 8)
+shader_parameter/art_scale = null
+
+[sub_resource type="Gradient" id="ParticleFade"]
+offsets = PackedFloat32Array(0, 0.06, 0.64, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.95, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="ParticleFadeTexture"]
+gradient = SubResource("ParticleFade")
+
+[sub_resource type="Curve" id="BotanicalScaleCurve"]
+_data = [Vector2(0, 0.6), 0.0, 0.0, 0, 0, Vector2(0.1, 1), 0.0, 0.0, 0, 0, Vector2(0.7, 0.95), 0.0, 0.0, 0, 0, Vector2(1, 0.6), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="BotanicalScaleTexture"]
+curve = SubResource("BotanicalScaleCurve")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2eg4g"]
+resource_local_to_scene = true
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(3, 3, 0)
+angle_min = -100.0
+angle_max = 100.0
+angular_velocity_min = -28.0
+angular_velocity_max = 28.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("BotanicalScaleTexture")
+color_ramp = SubResource("ParticleFadeTexture")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d6cef"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/reference_items = null
+shader_parameter/visible_count = null
+shader_parameter/atlas_grid = Vector2(2, 1)
+shader_parameter/art_scale = null
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_67a8q"]
+resource_local_to_scene = true
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(3, 3, 0)
+angle_min = -90.0
+angle_max = 90.0
+angular_velocity_min = -20.0
+angular_velocity_max = 20.0
+gravity = Vector3(0, 0, 0)
+scale_curve = SubResource("BotanicalScaleTexture")
+color_ramp = SubResource("ParticleFadeTexture")
+
+[node name="ComboFullscreenFx" type="Control" unique_id=360396940]
+visible = false
+top_level = true
+z_index = 91
+z_as_relative = false
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Glow" type="Node2D" parent="." unique_id=741325919]
+z_index = -1
+
+[node name="Left" type="Sprite2D" parent="Glow" unique_id=1824795223]
+modulate = Color(1, 0.976, 0.6, 1)
+self_modulate = Color(1, 1, 1, 0)
+material = SubResource("LeftEdgeGlow")
+texture = ExtResource("2")
+centered = false
+
+[node name="Right" type="Sprite2D" parent="Glow" unique_id=2043900568]
+modulate = Color(1, 0.976, 0.6, 1)
+self_modulate = Color(1, 1, 1, 0)
+material = SubResource("RightEdgeGlow")
+texture = ExtResource("2")
+centered = false
+
+[node name="Petals" type="Node2D" parent="." unique_id=1498589794]
+
+[node name="Left" type="GPUParticles2D" parent="Petals" unique_id=135370012]
+visible = false
+material = SubResource("ShaderMaterial_e6gn0")
+emitting = false
+amount = 16
+texture = ExtResource("4")
+lifetime = 0.9
+one_shot = true
+explosiveness = 0.82
+randomness = 0.2
+fixed_fps = 0
+visibility_rect = Rect2(-240, -240, 1560, 2820)
+draw_order = 0
+process_material = SubResource("ParticleProcessMaterial_2eg4g")
+
+[node name="Right" type="GPUParticles2D" parent="Petals" unique_id=1817281613]
+visible = false
+material = SubResource("ShaderMaterial_e6gn0")
+emitting = false
+amount = 16
+texture = ExtResource("4")
+lifetime = 0.9
+one_shot = true
+explosiveness = 0.82
+randomness = 0.2
+fixed_fps = 0
+visibility_rect = Rect2(-240, -240, 1560, 2820)
+draw_order = 0
+process_material = SubResource("ParticleProcessMaterial_2eg4g")
+
+[node name="Flowers" type="Node2D" parent="." unique_id=1605737548]
+
+[node name="Left" type="GPUParticles2D" parent="Flowers" unique_id=278788267]
+visible = false
+material = SubResource("ShaderMaterial_d6cef")
+emitting = false
+amount = 3
+texture = ExtResource("5")
+lifetime = 0.9
+one_shot = true
+explosiveness = 0.82
+randomness = 0.2
+fixed_fps = 0
+visibility_rect = Rect2(-240, -240, 1560, 2820)
+draw_order = 0
+process_material = SubResource("ParticleProcessMaterial_67a8q")
+
+[node name="Right" type="GPUParticles2D" parent="Flowers" unique_id=921436173]
+visible = false
+material = SubResource("ShaderMaterial_d6cef")
+emitting = false
+amount = 3
+texture = ExtResource("5")
+lifetime = 0.9
+one_shot = true
+explosiveness = 0.82
+randomness = 0.2
+fixed_fps = 0
+visibility_rect = Rect2(-240, -240, 1560, 2820)
+draw_order = 0
+process_material = SubResource("ParticleProcessMaterial_67a8q")

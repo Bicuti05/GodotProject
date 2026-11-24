@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+
+[ext_resource type="SpineAtlasResource" uid="uid://b3fafrgqjece6" path="res://assets/spine/effect_good_luck/effect_good_luck.atlas" id="1"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://blrstpmqogkxw" path="res://assets/spine/effect_good_luck/effect_good_luck.skel" id="2"]
+
+[resource]
+atlas_res = ExtResource("1")
+skeleton_file_res = ExtResource("2")

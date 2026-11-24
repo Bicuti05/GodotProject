@@ -1,0 +1,377 @@
+[gd_scene load_steps=17 format=3 uid="uid://benwmdppgxaxn"]
+
+[ext_resource type="Script" uid="uid://dkucgldl665ap" path="res://scripts/main/dialogs/rank_change/rank_change_dialog.gd" id="1"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="2"]
+[ext_resource type="Script" uid="uid://nt1s0u2qanoc" path="res://scripts/widget/curve_label/curve_label.gd" id="3"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_change_effect.tscn" id="4"]
+[ext_resource type="PackedScene" uid="uid://cu2huxkkx8rdq" path="res://scripts/gameplay/rank/view/rank_badge_view.tscn" id="5"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="6"]
+[ext_resource type="Texture2D" uid="uid://bqspchhalotex" path="res://assets/sprites/special_challenge_reward_halo_figma.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://c2c03ed47d0dj" path="res://assets/sprites/prop_btn_hint.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://d2wkj0vlu7n2a" path="res://assets/sprites/game_coin_icon.png" id="9"]
+[ext_resource type="PackedScene" uid="uid://ctxbuwml56wj3" path="res://scripts/widget/common_btn/common_btn.tscn" id="10"]
+[ext_resource type="Texture2D" uid="uid://73823utb8342" path="res://assets/sprites/game_coin_pill.png" id="11"]
+[ext_resource type="PackedScene" uid="uid://c3ngxpupv73tp" path="res://scripts/widget/prop_btn/prop_btn.tscn" id="12"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_collect_fly_layer.tscn" id="13"]
+[ext_resource type="Animation" uid="uid://c0cedm524acvo" path="res://assets/animation/GenericPopup.res" id="14"]
+[ext_resource type="PackedScene" path="res://scripts/widget/confetti_fx/confetti_fx.tscn" id="15"]
+
+[sub_resource type="AnimationLibrary" id="anim_lib"]
+_data = {
+&"GenericPopup": ExtResource("14")
+}
+
+[node name="RankChangeDialog" type="Control" unique_id=1840887620]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Root" type="Control" parent="." unique_id=1459191860]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Overlay" type="ColorRect" parent="Root" unique_id=1279465410]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.85)
+
+[node name="Content" type="Control" parent="Root" unique_id=214273836]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+
+[node name="Title" type="Label" parent="Root/Content" unique_id=1201644186]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 330.0
+offset_right = 400.0
+offset_bottom = 590.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 84
+text = "RANK_END_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+script = ExtResource("3")
+amplitude = 50.0
+align_to_tangent = true
+
+[node name="ChangeEffect" parent="Root/Content" unique_id=358834471 instance=ExtResource("4")]
+position = Vector2(540, 879)
+
+[node name="BadgeRow" type="Control" parent="Root/Content" unique_id=1215126904]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 599.0
+offset_bottom = 1159.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Track" type="Control" parent="Root/Content/BadgeRow" unique_id=309690551]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Badge1" parent="Root/Content/BadgeRow/Track" unique_id=2092763056 instance=ExtResource("5")]
+custom_minimum_size = Vector2(560, 560)
+layout_mode = 0
+offset_right = 560.0
+offset_bottom = 560.0
+pivot_offset = Vector2(280, 280)
+
+[node name="Badge2" parent="Root/Content/BadgeRow/Track" unique_id=884037438 instance=ExtResource("5")]
+custom_minimum_size = Vector2(560, 560)
+layout_mode = 0
+offset_right = 560.0
+offset_bottom = 560.0
+pivot_offset = Vector2(280, 280)
+
+[node name="Badge3" parent="Root/Content/BadgeRow/Track" unique_id=1008716050 instance=ExtResource("5")]
+custom_minimum_size = Vector2(560, 560)
+layout_mode = 0
+offset_right = 560.0
+offset_bottom = 560.0
+pivot_offset = Vector2(280, 280)
+
+[node name="Badge4" parent="Root/Content/BadgeRow/Track" unique_id=361576462 instance=ExtResource("5")]
+custom_minimum_size = Vector2(560, 560)
+layout_mode = 0
+offset_right = 560.0
+offset_bottom = 560.0
+pivot_offset = Vector2(280, 280)
+
+[node name="Badge5" parent="Root/Content/BadgeRow/Track" unique_id=1910185959 instance=ExtResource("5")]
+custom_minimum_size = Vector2(560, 560)
+layout_mode = 0
+offset_right = 560.0
+offset_bottom = 560.0
+pivot_offset = Vector2(280, 280)
+
+[node name="Badge6" parent="Root/Content/BadgeRow/Track" unique_id=2049512702 instance=ExtResource("5")]
+custom_minimum_size = Vector2(560, 560)
+layout_mode = 0
+offset_right = 560.0
+offset_bottom = 560.0
+pivot_offset = Vector2(280, 280)
+
+[node name="Badge7" parent="Root/Content/BadgeRow/Track" unique_id=1866955245 instance=ExtResource("5")]
+custom_minimum_size = Vector2(560, 560)
+layout_mode = 0
+offset_right = 560.0
+offset_bottom = 560.0
+pivot_offset = Vector2(280, 280)
+
+[node name="Tips" type="RichTextLabel" parent="Root/Content" unique_id=1741728594]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -500.0
+offset_top = 1329.0
+offset_right = 500.0
+offset_bottom = 1489.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/normal_font = ExtResource("6")
+theme_override_font_sizes/normal_font_size = 52
+bbcode_enabled = true
+text = "RANK_MAINTAINED_CONTENT"
+fit_content = true
+horizontal_alignment = 1
+
+[node name="RewardBox" type="Control" parent="Root/Content" unique_id=818231498]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 80.0
+offset_top = 1534.0
+offset_right = 300.0
+offset_bottom = 1854.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Halo" type="TextureRect" parent="Root/Content/RewardBox" unique_id=400245898]
+visible = false
+layout_mode = 0
+offset_left = -20.0
+offset_top = -10.0
+offset_right = 240.0
+offset_bottom = 250.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="Root/Content/RewardBox" unique_id=2068959123]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 210.0
+offset_bottom = 200.0
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Count" type="Label" parent="Root/Content/RewardBox" unique_id=2073647977]
+layout_mode = 0
+offset_top = 210.0
+offset_right = 220.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.65098, 0.294118, 0.015686, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 76
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CoinBox" type="Control" parent="Root/Content" unique_id=1289760100]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -300.0
+offset_top = 1534.0
+offset_right = -80.0
+offset_bottom = 1854.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Halo" type="TextureRect" parent="Root/Content/CoinBox" unique_id=585836482]
+visible = false
+layout_mode = 0
+offset_left = -50.0
+offset_top = -40.0
+offset_right = 270.0
+offset_bottom = 280.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="Root/Content/CoinBox" unique_id=562862809]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 210.0
+offset_bottom = 200.0
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Count" type="Label" parent="Root/Content/CoinBox" unique_id=1691437952]
+layout_mode = 0
+offset_top = 210.0
+offset_right = 220.0
+offset_bottom = 320.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.65098, 0.294118, 0.015686, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 76
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionButton" parent="Root/Content" unique_id=77111243 instance=ExtResource("10")]
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -353.0
+offset_top = 1908.0
+offset_right = 353.0
+offset_bottom = 2138.0
+grow_horizontal = 2
+btn_text = "SPECIAL_CHALLENGE_CLAIM"
+
+[node name="ClaimPanel" type="Control" parent="Root" unique_id=363287369]
+visible = false
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CoinPill" type="Control" parent="Root/ClaimPanel" unique_id=2144388522]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -294.0
+offset_top = 20.0
+offset_right = -24.0
+offset_bottom = 136.0
+grow_horizontal = 0
+mouse_filter = 2
+
+[node name="Pill" type="TextureRect" parent="Root/ClaimPanel/CoinPill" unique_id=1463263180]
+layout_mode = 1
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 290.0
+offset_bottom = 136.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="Root/ClaimPanel/CoinPill" unique_id=288885253]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 110.0
+offset_right = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.137, 0.184, 0.243, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="CoinIcon" type="TextureRect" parent="Root/ClaimPanel/CoinPill" unique_id=1430638171]
+layout_mode = 1
+offset_left = 66.0
+offset_top = 14.0
+offset_right = 154.0
+offset_bottom = 102.0
+pivot_offset = Vector2(44, 44)
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HintCounter" parent="Root/ClaimPanel" unique_id=1619935852 groups=["_safe_bottom"] instance=ExtResource("12")]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -215.0
+offset_top = -458.0
+offset_right = -11.0
+offset_bottom = -230.0
+grow_horizontal = 2
+grow_vertical = 0
+pivot_offset = Vector2(102, 114)
+mouse_filter = 2
+
+[node name="HintFly" parent="Root/ClaimPanel" unique_id=113150964 instance=ExtResource("13")]
+z_index = 200
+item_size = 128.0
+randomize_item_scale = false
+
+[node name="CoinFly" parent="Root/ClaimPanel" unique_id=201491619 instance=ExtResource("13")]
+z_index = 200
+item_size = 88.0
+randomize_item_scale = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Root" unique_id=1016763548]
+libraries/ = SubResource("anim_lib")
+
+[node name="Confetti" parent="Root" unique_id=312405906 instance=ExtResource("15")]
+
+[connection signal="pressed" from="Root/Content/ActionButton" to="." method="_on_action_pressed"]

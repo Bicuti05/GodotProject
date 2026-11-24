@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://cwu3wjvaj8hln"
+path="res://.godot/imported/effect_splash_birdie01.skel-41f4c7448f8aee3207440f63f0c873b7.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_splash_birdie01/effect_splash_birdie01.skel"
+dest_files=["res://.godot/imported/effect_splash_birdie01.skel-41f4c7448f8aee3207440f63f0c873b7.spskel"]
+
+[params]
+

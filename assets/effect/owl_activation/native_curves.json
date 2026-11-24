@@ -1,0 +1,1743 @@
+{
+  "EffectRoot/BadgeInactive/m_AnchoredPosition.y": [
+    {
+      "serializedVersion": 3,
+      "time": 1.15,
+      "value": -878.6683,
+      "inSlope": 2.9394562,
+      "outSlope": 2.9394562,
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 1
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.5166667,
+      "value": -861.129,
+      "inSlope": 114.41375,
+      "outSlope": 114.41375,
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 1
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.8333334,
+      "value": -566.5536,
+      "inSlope": 261.93634,
+      "outSlope": 261.93634,
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": 0.33333334,
+      "outWeight": 0.1551607
+    },
+    {
+      "serializedVersion": 3,
+      "time": 2.7833333,
+      "value": -523.31,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/BadgeInactive/ranse/m_TransitionRate": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": 0.9728093,
+      "inSlope": -0.971093,
+      "outSlope": -0.971093,
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0.22415018
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.65,
+      "value": 0.462529,
+      "inSlope": -0.20115179,
+      "outSlope": -0.20115179,
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.40956873
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.7666667,
+      "value": 0.007843018,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/BadgeInactive/ranse/m_Alpha": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": 0.5090637,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.4,
+      "value": 0.78,
+      "inSlope": 0.62672716,
+      "outSlope": 0.62672716,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.78333336,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/BadgeInactive/_rotationX": [
+    {
+      "serializedVersion": 3,
+      "time": 0.33333334,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.53333336,
+      "value": 28.834034,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.4333333,
+      "value": -1.5056839,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.75,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/BadgeInactive/_rotationY": [
+    {
+      "serializedVersion": 3,
+      "time": 0.33333334,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.55,
+      "value": -11.486389,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.1166667,
+      "value": 3.9203224,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.4833333,
+      "value": -1.1085234,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.9166666,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/glow00/m_Alpha": [
+    {
+      "serializedVersion": 3,
+      "time": 0.5,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.8,
+      "value": 0.831347,
+      "inSlope": 1.2265675,
+      "outSlope": 1.2265675,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.05,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.1,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.75,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/glow01/m_Alpha": [
+    {
+      "serializedVersion": 3,
+      "time": 0.35,
+      "value": 0.16702682,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.6666667,
+      "value": 0.4566553,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.1,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/glow01/m_Color.r": [
+    {
+      "serializedVersion": 3,
+      "time": 0.35,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.4,
+      "value": 0.9523067,
+      "inSlope": -0.45785582,
+      "outSlope": -0.45785582,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.76666665,
+      "value": 0.59607846,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/glow01/m_Color.g": [
+    {
+      "serializedVersion": 3,
+      "time": 0.35,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.4,
+      "value": 0.9865718,
+      "inSlope": -0.12891084,
+      "outSlope": -0.12891084,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.76666665,
+      "value": 0.8862746,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/glow03/m_Alpha": [
+    {
+      "serializedVersion": 3,
+      "time": 0.65,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.9,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.4666667,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/glow04/m_Alpha": [
+    {
+      "serializedVersion": 3,
+      "time": 0.11666667,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.76666665,
+      "value": 0.5,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.96666664,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/BadgeGlow/m_Alpha": [
+    {
+      "serializedVersion": 3,
+      "time": 2.0166667,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 2.6333334,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/vx_tuowei/m_IsActive": [
+    {
+      "serializedVersion": 3,
+      "time": 0.33333334,
+      "value": 0,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.53333336,
+      "value": 1,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    }
+  ],
+  "EffectRoot/BadgeInactive/vx_baodian/m_IsActive": [
+    {
+      "serializedVersion": 3,
+      "time": 0.4,
+      "value": 0,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.55,
+      "value": 1,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    }
+  ],
+  "EffectRoot/glow00/m_IsActive": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": 1,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.8333334,
+      "value": 0,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    }
+  ],
+  "EffectRoot/glow01/m_IsActive": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": 1,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.95,
+      "value": 0,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    }
+  ],
+  "EffectRoot/glow03/m_IsActive": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": 1,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    },
+    {
+      "serializedVersion": 3,
+      "time": 2.0166667,
+      "value": 0,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    }
+  ],
+  "EffectRoot/glow04/m_IsActive": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": 1,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.95,
+      "value": 0,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    }
+  ],
+  "EffectRoot/BadgeInactive/ranse/saoguang/m_MaskOffset.y": [
+    {
+      "serializedVersion": 3,
+      "time": 0.21666667,
+      "value": 0.10655945,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.9166667,
+      "value": -0.22602722,
+      "inSlope": -0.2692292,
+      "outSlope": -0.2692292,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 2.1666667,
+      "value": -0.41843748,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/BadgeInactive/ranse/saoguang/m_Alpha": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.5,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 2.0166667,
+      "value": 0.3,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/BadgeInactive/AddBg/m_IsActive": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": 0,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.98333335,
+      "value": 1,
+      "inSlope": "Infinity",
+      "outSlope": "Infinity",
+      "tangentMode": 103,
+      "weightedMode": 0,
+      "inWeight": 0,
+      "outWeight": 0
+    }
+  ],
+  "EffectRoot/BadgeInactive/AddBg/m_Alpha": [
+    {
+      "serializedVersion": 3,
+      "time": 0.98333335,
+      "value": 0,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    },
+    {
+      "serializedVersion": 3,
+      "time": 2.1166666,
+      "value": 1,
+      "inSlope": 0,
+      "outSlope": 0,
+      "tangentMode": 136,
+      "weightedMode": 0,
+      "inWeight": 0.33333334,
+      "outWeight": 0.33333334
+    }
+  ],
+  "EffectRoot/BadgeInactive/scale": [
+    {
+      "serializedVersion": 3,
+      "time": 0,
+      "value": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "inSlope": {
+        "x": -3.2531183,
+        "y": -3.2531183,
+        "z": -3.2531183
+      },
+      "outSlope": {
+        "x": -3.2531183,
+        "y": -3.2531183,
+        "z": -3.2531183
+      },
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.1385162,
+        "y": 0.1385162,
+        "z": 0.1385162
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.11666667,
+      "value": {
+        "x": 0.8603106,
+        "y": 0.8603106,
+        "z": 0.8603106
+      },
+      "inSlope": {
+        "x": 0.081384264,
+        "y": 0.081384264,
+        "z": 0.081384264
+      },
+      "outSlope": {
+        "x": 0.081384264,
+        "y": 0.081384264,
+        "z": 0.081384264
+      },
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": {
+        "x": 0.6357536,
+        "y": 0.6357536,
+        "z": 0.6357536
+      },
+      "outWeight": {
+        "x": 0.5284687,
+        "y": 0.5284687,
+        "z": 0.5284687
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.21666667,
+      "value": {
+        "x": 1.2870003,
+        "y": 1.2870003,
+        "z": 1.2870003
+      },
+      "inSlope": {
+        "x": 3.6980572,
+        "y": 3.6980572,
+        "z": 3.6980572
+      },
+      "outSlope": {
+        "x": 3.6980572,
+        "y": 3.6980572,
+        "z": 3.6980572
+      },
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.22444816,
+        "y": 0.22444816,
+        "z": 0.22444816
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.31666666,
+      "value": {
+        "x": 1.3895851,
+        "y": 1.3895851,
+        "z": 1.3895851
+      },
+      "inSlope": {
+        "x": 0.021103553,
+        "y": 0.021103553,
+        "z": 0.021103553
+      },
+      "outSlope": {
+        "x": 0.021103553,
+        "y": 0.021103553,
+        "z": 0.021103553
+      },
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": {
+        "x": 0.587016,
+        "y": 0.587016,
+        "z": 0.587016
+      },
+      "outWeight": {
+        "x": 0.6866133,
+        "y": 0.6866133,
+        "z": 0.6866133
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.5,
+      "value": {
+        "x": 0.76796055,
+        "y": 0.76796055,
+        "z": 0.76796055
+      },
+      "inSlope": {
+        "x": 0.059807193,
+        "y": 0.059807193,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0.059807193,
+        "y": 0.059807193,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": {
+        "x": 0.2507932,
+        "y": 0.2507932,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.56666666,
+      "value": {
+        "x": 0.86309105,
+        "y": 0.86309105,
+        "z": 0.86309105
+      },
+      "inSlope": {
+        "x": 1.6738752,
+        "y": 1.6738752,
+        "z": 1.6738752
+      },
+      "outSlope": {
+        "x": 1.6738752,
+        "y": 1.6738752,
+        "z": 1.6738752
+      },
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.14290014,
+        "y": 0.14290014,
+        "z": 0.14290014
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.8666667,
+      "value": {
+        "x": 0.97335815,
+        "y": 0.97335815,
+        "z": 0.97335815
+      },
+      "inSlope": {
+        "x": 0.13049066,
+        "y": 0.13049066,
+        "z": 0.13049066
+      },
+      "outSlope": {
+        "x": 0.13049066,
+        "y": 0.13049066,
+        "z": 0.13049066
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.3833333,
+      "value": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 2.6166666,
+      "value": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    }
+  ],
+  "EffectRoot/glow00/scale": [
+    {
+      "serializedVersion": 3,
+      "time": 0.5,
+      "value": {
+        "x": 5,
+        "y": 5,
+        "z": 5
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.8833333,
+      "value": {
+        "x": 22.577139,
+        "y": 22.577139,
+        "z": 22.577139
+      },
+      "inSlope": {
+        "x": 23.820002,
+        "y": 23.820002,
+        "z": 23.820002
+      },
+      "outSlope": {
+        "x": 23.820002,
+        "y": 23.820002,
+        "z": 23.820002
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.5,
+      "value": {
+        "x": 28.820002,
+        "y": 28.820002,
+        "z": 28.820002
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    }
+  ],
+  "EffectRoot/glow01/scale": [
+    {
+      "serializedVersion": 3,
+      "time": 0.35,
+      "value": {
+        "x": -0.8765081,
+        "y": -0.8765081,
+        "z": -0.8765081
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.55,
+      "value": {
+        "x": 2.1056604,
+        "y": 2.1056604,
+        "z": 2.1056604
+      },
+      "inSlope": {
+        "x": 13.289141,
+        "y": 13.289141,
+        "z": 13.289141
+      },
+      "outSlope": {
+        "x": 13.289141,
+        "y": 13.289141,
+        "z": 13.289141
+      },
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.1695495,
+        "y": 0.1695495,
+        "z": 0.1695495
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.2,
+      "value": {
+        "x": 3.5550933,
+        "y": 3.5550933,
+        "z": 3.5550933
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    }
+  ],
+  "EffectRoot/glow03/scale": [
+    {
+      "serializedVersion": 3,
+      "time": 0.6333333,
+      "value": {
+        "x": 1.0884335,
+        "y": 1.0884335,
+        "z": 1.0884335
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.05,
+      "value": {
+        "x": 11.36203,
+        "y": 11.36203,
+        "z": 11.36203
+      },
+      "inSlope": {
+        "x": 18.385656,
+        "y": 18.385656,
+        "z": 18.385656
+      },
+      "outSlope": {
+        "x": 18.385656,
+        "y": 18.385656,
+        "z": 18.385656
+      },
+      "tangentMode": 0,
+      "weightedMode": 3,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.22407764,
+        "y": 0.22407764,
+        "z": 0.22407764
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.5,
+      "value": {
+        "x": 13.87,
+        "y": 13.87,
+        "z": 13.87
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    }
+  ],
+  "EffectRoot/glow04/scale": [
+    {
+      "serializedVersion": 3,
+      "time": 0.4,
+      "value": {
+        "x": 1.6899999,
+        "y": 1.6899999,
+        "z": 1.6899999
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.93333334,
+      "value": {
+        "x": 2.2,
+        "y": 2.2,
+        "z": 2.2
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    }
+  ],
+  "EffectRoot/BadgeInactive/euler": [
+    {
+      "serializedVersion": 3,
+      "time": 0.28333333,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 0.0466156
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.33333334,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 0.49057555
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 16.713785
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 16.713785
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.41666666,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 2.584634
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 30.64193
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 30.64193
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.5,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 5.113948
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 27.159893
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 27.159893
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.6,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 6.6808653
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.6666667,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 6.1567535
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": -14.824877
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": -14.824877
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 0.9166667,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": -0.07643366
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": -22.405777
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": -22.405777
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.0333333,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": -1.5439453
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.2833333,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 0.84945273
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.3333334,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 0.6400576
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": -7.4451475
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": -7.4451475
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.4666667,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": -0.29747874
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    },
+    {
+      "serializedVersion": 3,
+      "time": 1.5833334,
+      "value": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "inSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "outSlope": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "tangentMode": 0,
+      "weightedMode": 0,
+      "inWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      },
+      "outWeight": {
+        "x": 0.33333334,
+        "y": 0.33333334,
+        "z": 0.33333334
+      }
+    }
+  ]
+}

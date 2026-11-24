@@ -1,0 +1,82 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" uid="uid://do7y6ncic3otu" path="res://scripts/gameplay/daily_checkin/view/owl_activation_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://k3jkeixo3pju" path="res://assets/effect/owl_activation/ef_point_208.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dh350k15sghyp" path="res://assets/effect/owl_activation/ef_ui_202.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://db40dsso6fiwt" path="res://assets/effect/owl_activation/ef_other_205.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ohdpessuqych" path="res://assets/effect/owl_activation/ef_other_240.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dahjskm5jkrkl" path="res://assets/effect/owl_activation/reveal_noise.png" id="6"]
+[ext_resource type="Shader" uid="uid://bxi4pv4cse0dp" path="res://assets/shaders/daily_checkin/pics_hex_inner_glow.gdshader" id="7"]
+[ext_resource type="Texture2D" uid="uid://2ok6tb7kxtbm" path="res://assets/effect/owl_activation/hex_soft.png" id="8"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/native_owl_rays.tscn" id="9"]
+
+[sub_resource type="CanvasItemMaterial" id="add"]
+blend_mode = 1
+
+[sub_resource type="ShaderMaterial" id="halo1"]
+shader = ExtResource("7")
+shader_parameter/glow_tint = null
+shader_parameter/iridescence = 0.7
+shader_parameter/color_phase = null
+
+[sub_resource type="ShaderMaterial" id="halo2"]
+shader = ExtResource("7")
+shader_parameter/glow_tint = null
+shader_parameter/iridescence = 0.7
+shader_parameter/color_phase = null
+
+[sub_resource type="ShaderMaterial" id="halo3"]
+shader = ExtResource("7")
+shader_parameter/glow_tint = null
+shader_parameter/iridescence = 0.5
+shader_parameter/color_phase = null
+
+[node name="owl_activation_fx" type="Node2D" unique_id=342029629]
+script = ExtResource("1")
+expand_texture = ExtResource("2")
+star_texture = ExtResource("3")
+soft_star_texture = ExtResource("4")
+dot_texture = ExtResource("5")
+noise_texture = ExtResource("6")
+
+[node name="Halo0" type="Sprite2D" parent="." unique_id=577631523]
+visible = false
+top_level = true
+z_index = 2
+material = SubResource("add")
+texture = ExtResource("6")
+
+[node name="Halo1" type="Sprite2D" parent="." unique_id=1356130031]
+visible = false
+top_level = true
+z_index = 2
+material = SubResource("halo1")
+texture = ExtResource("8")
+
+[node name="Halo2" type="Sprite2D" parent="." unique_id=2114136644]
+visible = false
+top_level = true
+z_index = 2
+material = SubResource("halo2")
+texture = ExtResource("8")
+
+[node name="Halo3" type="Sprite2D" parent="." unique_id=194059737]
+visible = false
+top_level = true
+z_index = 2
+material = SubResource("halo3")
+texture = ExtResource("2")
+
+[node name="OriginalUnityParticleTrails" parent="." unique_id=1135906414 instance=ExtResource("9")]
+
+[node name="PreviousExpressionUnderDissolve" type="Sprite2D" parent="." unique_id=880995569]
+visible = false
+
+[node name="PicsAlphaNoiseColorReveal" type="Sprite2D" parent="." unique_id=98066752]
+visible = false
+
+[node name="SubjectHuggingGlow" type="Sprite2D" parent="." unique_id=1985928731]
+visible = false
+
+[node name="AnticipationFlash" type="Sprite2D" parent="." unique_id=1574825224]
+visible = false

@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" uid="uid://b081lbllcvyqo" path="res://scripts/main/dialogs/finish/effects/finish_ad_particles.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_ad_tier_sparkles.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/effects/emitters/finish_ad_tier_burst_stars.tscn" id="3"]
+
+[node name="FinishAdParticles" type="Node2D" unique_id=1766820727]
+visible = false
+script = ExtResource("1")
+emitter_scenes = {
+&"TierBurstStars": ExtResource("3"),
+&"TierSparkles": ExtResource("2")
+}

@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://d7hg2syl1smt"
+path="res://.godot/imported/effect_flowerpot_big.skel-6e62f96d1a11de8e3620963edb00030e.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_flowerpot_big/effect_flowerpot_big.skel"
+dest_files=["res://.godot/imported/effect_flowerpot_big.skel-6e62f96d1a11de8e3620963edb00030e.spskel"]
+
+[params]
+

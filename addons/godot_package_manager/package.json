@@ -1,0 +1,14 @@
+{
+  "name": "com.learnings.godot.godot-package-manager",
+  "version": "1.1.1",
+  "displayName": "Godot Package Manager",
+  "description": "A package manager for godot",
+  "godot": "4.6",
+  "dependencies": {},
+  "keywords": [],
+  "author": {
+	"name": "Learnings",
+	"email": "",
+	"url": ""
+  }
+}

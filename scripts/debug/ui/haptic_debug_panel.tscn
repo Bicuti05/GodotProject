@@ -1,0 +1,1056 @@
+[gd_scene load_steps=25 format=3]
+
+[ext_resource type="Script" uid="uid://dhkahd022wuxv" path="res://scripts/debug/ui/haptic_debug_panel.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/debug/ui/haptic_thumbnail.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/debug/ui/haptic_record_item.tscn" id="3"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="4"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="5"]
+[ext_resource type="PackedScene" path="res://scripts/debug/ui/haptic_preview.tscn" id="6"]
+
+[sub_resource type="StyleBoxFlat" id="Button"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+bg_color = Color(0.157, 0.192, 0.235, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="Pressed"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+bg_color = Color(0.157, 0.247, 0.231, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="Primary"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+bg_color = Color(0.45, 0.867, 0.769, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="PrimaryPressed"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+bg_color = Color(0.35, 0.788, 0.682, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="Quiet"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.14, 0.16, 0.2, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="QuietPressed"]
+content_margin_left = 16.0
+content_margin_top = 16.0
+content_margin_right = 16.0
+content_margin_bottom = 16.0
+bg_color = Color(0.157, 0.247, 0.231, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="Segment"]
+bg_color = Color(0.102, 0.125, 0.153, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.2, 0.25, 0.3, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="SelectorFocus"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.45, 0.867, 0.769, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="SelectorSelected"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+bg_color = Color(0.157, 0.247, 0.231, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.45, 0.867, 0.769, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="SyncDisabled"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+bg_color = Color(0.302, 0.251, 0.192, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="SyncFocus"]
+draw_center = false
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.835, 0.616, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="SyncButton"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+bg_color = Color(0.992, 0.71, 0.373, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="SyncPressed"]
+content_margin_left = 20.0
+content_margin_top = 16.0
+content_margin_right = 20.0
+content_margin_bottom = 16.0
+bg_color = Color(0.914, 0.608, 0.235, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="Input"]
+content_margin_left = 14.0
+content_margin_top = 12.0
+content_margin_right = 14.0
+content_margin_bottom = 12.0
+bg_color = Color(0.078, 0.098, 0.122, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.23, 0.31, 0.36, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="Card"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0.125, 0.145, 0.18, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.204, 0.239, 0.286, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme"]
+default_font = ExtResource("4")
+default_font_size = 38
+Button/styles/disabled = SubResource("Button")
+Button/styles/hover = SubResource("Button")
+Button/styles/normal = SubResource("Button")
+Button/styles/pressed = SubResource("Pressed")
+HapticPrimaryButton/base_type = &"Button"
+HapticPrimaryButton/colors/font_color = Color(0.063, 0.173, 0.141, 1)
+HapticPrimaryButton/colors/font_hover_color = Color(0.063, 0.173, 0.141, 1)
+HapticPrimaryButton/colors/font_pressed_color = Color(0.063, 0.173, 0.141, 1)
+HapticPrimaryButton/styles/hover = SubResource("Primary")
+HapticPrimaryButton/styles/normal = SubResource("Primary")
+HapticPrimaryButton/styles/pressed = SubResource("PrimaryPressed")
+HapticQuietButton/base_type = &"Button"
+HapticQuietButton/colors/font_color = Color(0.66, 0.72, 0.79, 1)
+HapticQuietButton/styles/hover = SubResource("Quiet")
+HapticQuietButton/styles/normal = SubResource("Quiet")
+HapticQuietButton/styles/pressed = SubResource("QuietPressed")
+HapticSegmentCard/base_type = &"PanelContainer"
+HapticSegmentCard/styles/panel = SubResource("Segment")
+HapticSelectorOption/base_type = &"OptionButton"
+HapticSelectorOption/styles/focus = SubResource("SelectorFocus")
+HapticSelectorOption/styles/hover = SubResource("Button")
+HapticSelectorOption/styles/normal = SubResource("Button")
+HapticSelectorOption/styles/pressed = SubResource("SelectorSelected")
+HapticSyncButton/base_type = &"Button"
+HapticSyncButton/colors/font_color = Color(0.141, 0.086, 0.043, 1)
+HapticSyncButton/colors/font_disabled_color = Color(0.62, 0.58, 0.52, 1)
+HapticSyncButton/colors/font_hover_color = Color(0.141, 0.086, 0.043, 1)
+HapticSyncButton/colors/font_pressed_color = Color(0.141, 0.086, 0.043, 1)
+HapticSyncButton/styles/disabled = SubResource("SyncDisabled")
+HapticSyncButton/styles/focus = SubResource("SyncFocus")
+HapticSyncButton/styles/hover = SubResource("SyncButton")
+HapticSyncButton/styles/normal = SubResource("SyncButton")
+HapticSyncButton/styles/pressed = SubResource("SyncPressed")
+Label/colors/font_color = Color(0.87, 0.91, 0.94, 1)
+LineEdit/styles/normal = SubResource("Input")
+LineEdit/styles/read_only = SubResource("Input")
+OptionButton/styles/hover = SubResource("Button")
+OptionButton/styles/normal = SubResource("Button")
+OptionButton/styles/pressed = SubResource("Pressed")
+PopupMenu/styles/panel = SubResource("Card")
+TextEdit/styles/normal = SubResource("Input")
+
+[sub_resource type="StyleBoxFlat" id="Panel"]
+bg_color = Color(0.082, 0.094, 0.118, 0.98)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.19, 0.21, 0.25, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="StyleBoxFlat" id="SectionCard"]
+content_margin_left = 20.0
+content_margin_top = 12.0
+content_margin_right = 20.0
+content_margin_bottom = 12.0
+bg_color = Color(0.125, 0.145, 0.18, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.204, 0.239, 0.286, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="HapticDebugPanel" type="CanvasLayer" unique_id=1271652746]
+script = ExtResource("1")
+thumbnail_scene = ExtResource("2")
+record_item_scene = ExtResource("3")
+
+[node name="Bg" type="ColorRect" parent="." unique_id=463942550]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.65)
+
+[node name="CenterPanel" type="PanelContainer" parent="Bg" unique_id=45801747]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 24.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme")
+theme_override_styles/panel = SubResource("Panel")
+
+[node name="Margin" type="MarginContainer" parent="Bg/CenterPanel" unique_id=579009841]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="Bg/CenterPanel/Margin" unique_id=26119900]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TitleRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=76654541]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Bg/CenterPanel/Margin/VBox/TitleRow" unique_id=543825363]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("5")
+theme_override_font_sizes/font_size = 50
+text = "震动调试"
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="CollapseBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/TitleRow" unique_id=6011303]
+custom_minimum_size = Vector2(160, 112)
+layout_mode = 2
+theme_type_variation = &"HapticQuietButton"
+theme_override_font_sizes/font_size = 32
+text = "收起"
+
+[node name="CloseBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/TitleRow" unique_id=350896417]
+custom_minimum_size = Vector2(160, 112)
+layout_mode = 2
+theme_type_variation = &"HapticQuietButton"
+theme_override_font_sizes/font_size = 32
+text = "关闭"
+
+[node name="TabRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=1097063485]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TuneTab" type="Button" parent="Bg/CenterPanel/Margin/VBox/TabRow" unique_id=1610442476]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "场景调参"
+
+[node name="JigsawTab" type="Button" parent="Bg/CenterPanel/Margin/VBox/TabRow" unique_id=1153074720]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "JigsawCard 震动库"
+
+[node name="RecordsTab" type="Button" parent="Bg/CenterPanel/Margin/VBox/TabRow" unique_id=1449474022]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "震动记录"
+
+[node name="SceneRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=862297096]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CategoryLabel" type="Label" parent="Bg/CenterPanel/Margin/VBox/SceneRow" unique_id=244484703]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "场景分类"
+vertical_alignment = 1
+
+[node name="CategorySelector" type="OptionButton" parent="Bg/CenterPanel/Margin/VBox/SceneRow" unique_id=2005051925]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 36
+clip_text = true
+fit_to_longest_item = false
+
+[node name="PlatformRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox/SceneRow" unique_id=1586060743]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="AndroidBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/SceneRow/PlatformRow" unique_id=1552640259]
+custom_minimum_size = Vector2(180, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+text = "Android"
+
+[node name="IosBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/SceneRow/PlatformRow" unique_id=1550954096]
+custom_minimum_size = Vector2(180, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+text = "iOS"
+
+[node name="SceneSelection" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=957878467]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="SceneLabel" type="Label" parent="Bg/CenterPanel/Margin/VBox/SceneSelection" unique_id=1828645673]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "场景"
+vertical_alignment = 1
+
+[node name="SceneSelector" type="OptionButton" parent="Bg/CenterPanel/Margin/VBox/SceneSelection" unique_id=230347830]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.4
+theme_type_variation = &"HapticSelectorOption"
+theme_override_font_sizes/font_size = 34
+clip_text = true
+fit_to_longest_item = false
+
+[node name="StyleRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox/SceneSelection" unique_id=1345132343]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="StyleLabel" type="Label" parent="Bg/CenterPanel/Margin/VBox/SceneSelection/StyleRow" unique_id=459631680]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "样式"
+vertical_alignment = 1
+
+[node name="StyleSelector" type="OptionButton" parent="Bg/CenterPanel/Margin/VBox/SceneSelection/StyleRow" unique_id=1194313252]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"HapticSelectorOption"
+theme_override_font_sizes/font_size = 32
+clip_text = true
+fit_to_longest_item = false
+
+[node name="InfoLabel" type="Label" parent="Bg/CenterPanel/Margin/VBox" unique_id=276210536]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.64, 0.71, 1)
+theme_override_font_sizes/font_size = 30
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="PreviewCard" type="PanelContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=1203982888]
+layout_mode = 2
+theme_override_styles/panel = SubResource("Card")
+
+[node name="HapticPreview" parent="Bg/CenterPanel/Margin/VBox/PreviewCard" unique_id=246170461 instance=ExtResource("6")]
+layout_mode = 2
+
+[node name="EffectsCard" type="PanelContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=151147508]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("SectionCard")
+
+[node name="Body" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/EffectsCard" unique_id=1374220568]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="TitleRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body" unique_id=621514467]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/TitleRow" unique_id=823525939]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 40
+text = "效果参数"
+
+[node name="EffectsToggle" type="Button" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/TitleRow" unique_id=1773245721]
+custom_minimum_size = Vector2(160, 96)
+layout_mode = 2
+theme_type_variation = &"HapticQuietButton"
+theme_override_font_sizes/font_size = 32
+text = "收起"
+
+[node name="Scroll" type="ScrollContainer" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body" unique_id=1738476881]
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll" unique_id=55793329]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 18
+
+[node name="ConversionRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content" unique_id=1111899808]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="IosToAndroidBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/ConversionRow" unique_id=2093136637]
+visible = false
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"HapticQuietButton"
+theme_override_font_sizes/font_size = 32
+text = "iOS 转 Android"
+
+[node name="AndroidToIosBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/ConversionRow" unique_id=417266743]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"HapticQuietButton"
+theme_override_font_sizes/font_size = 32
+text = "Android 转 iOS"
+
+[node name="CopyEffectBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/ConversionRow" unique_id=1451185155]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "复制当前场景、当前平台的完整效果参数"
+theme_type_variation = &"HapticQuietButton"
+theme_override_font_sizes/font_size = 32
+text = "复制效果参数"
+
+[node name="ApplyCopiedEffectBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/ConversionRow" unique_id=296752288]
+modulate = Color(1, 1, 1, 0.45)
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "请先复制效果参数"
+theme_type_variation = &"HapticQuietButton"
+theme_override_font_sizes/font_size = 32
+disabled = true
+text = "应用复制参数"
+
+[node name="TypeFlow" type="HFlowContainer" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content" unique_id=326218087]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+
+[node name="ParamsBox" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content" unique_id=1573039761]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="QuickActions" type="HFlowContainer" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content" unique_id=1081158634]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+
+[node name="ResetBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/QuickActions" unique_id=515345999]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+text = "恢复当前默认"
+
+[node name="ResetAllBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/QuickActions" unique_id=1753767697]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.96, 0.62, 0.6, 1)
+text = "全部恢复默认"
+
+[node name="ConfigCard" type="PanelContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=1377978433]
+layout_mode = 2
+theme_override_styles/panel = SubResource("SectionCard")
+
+[node name="Body" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/ConfigCard" unique_id=1114174585]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="TitleRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body" unique_id=571695725]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Title" type="Label" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/TitleRow" unique_id=1199718568]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 40
+text = "配置交接"
+
+[node name="ConfigToggle" type="Button" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/TitleRow" unique_id=1044505003]
+custom_minimum_size = Vector2(160, 96)
+layout_mode = 2
+theme_type_variation = &"HapticQuietButton"
+theme_override_font_sizes/font_size = 32
+text = "展开"
+
+[node name="Scroll" type="ScrollContainer" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body" unique_id=1639724984]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll" unique_id=729191359]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 18
+
+[node name="SyncActions" type="HFlowContainer" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content" unique_id=2118385972]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+
+[node name="SyncBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/SyncActions" unique_id=813077121]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+theme_type_variation = &"HapticSyncButton"
+text = "同步配置表并通知飞书"
+
+[node name="ConnectionToggle" type="Button" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/SyncActions" unique_id=1524631]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+text = "连接设置"
+
+[node name="ConnectionBox" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content" unique_id=1711948446]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="UploadAddressLabel" type="Label" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConnectionBox" unique_id=2091446064]
+layout_mode = 2
+text = "中转地址"
+
+[node name="UploadAddress" type="LineEdit" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConnectionBox" unique_id=1876277110]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+text = "http://127.0.0.1:18791"
+
+[node name="UploadTokenLabel" type="Label" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConnectionBox" unique_id=1357582296]
+layout_mode = 2
+text = "上传凭证"
+
+[node name="UploadToken" type="LineEdit" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConnectionBox" unique_id=1033888080]
+custom_minimum_size = Vector2(0, 96)
+layout_mode = 2
+secret = true
+
+[node name="ConfigBox" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content" unique_id=784006692]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="JsonInput" type="TextEdit" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConfigBox" unique_id=1248062614]
+custom_minimum_size = Vector2(0, 280)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+placeholder_text = "在此粘贴配置 JSON 后导入"
+wrap_mode = 1
+
+[node name="ConfigActions" type="HFlowContainer" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConfigBox" unique_id=758923239]
+layout_mode = 2
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+
+[node name="CopyBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConfigBox/ConfigActions" unique_id=957923251]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+text = "复制全部配置"
+
+[node name="ImportBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConfigBox/ConfigActions" unique_id=734030408]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+text = "导入配置"
+
+[node name="LibraryScroll" type="ScrollContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=883073221]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("Card")
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/LibraryScroll" unique_id=472818437]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 20
+
+[node name="Hint" type="Label" parent="Bg/CenterPanel/Margin/VBox/LibraryScroll/Content" unique_id=355400877]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "播放用于参考。载入会立即将双端参数应用到当前选中场景，并自动保存。"
+autowrap_mode = 3
+
+[node name="JigsawBox" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/LibraryScroll/Content" unique_id=2080766323]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="HistorySection" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=1658248852]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 16
+
+[node name="Hint" type="Label" parent="Bg/CenterPanel/Margin/VBox/HistorySection" unique_id=1846036452]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.66, 0.72, 0.79, 1)
+theme_override_font_sizes/font_size = 28
+text = "最近64条真实业务请求，本次运行有效。已派发表示交给播放层，不代表马达实测。"
+autowrap_mode = 3
+
+[node name="Actions" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox/HistorySection" unique_id=72895118]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Count" type="Label" parent="Bg/CenterPanel/Margin/VBox/HistorySection/Actions" unique_id=1646403804]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 32
+text = "0条记录"
+
+[node name="RefreshButton" type="Button" parent="Bg/CenterPanel/Margin/VBox/HistorySection/Actions" unique_id=432515629]
+custom_minimum_size = Vector2(180, 112)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "刷新"
+
+[node name="ClearButton" type="Button" parent="Bg/CenterPanel/Margin/VBox/HistorySection/Actions" unique_id=1237039051]
+custom_minimum_size = Vector2(180, 112)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "清空"
+
+[node name="HistoryScroll" type="ScrollContainer" parent="Bg/CenterPanel/Margin/VBox/HistorySection" unique_id=486092950]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("Card")
+horizontal_scroll_mode = 0
+
+[node name="Content" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/HistorySection/HistoryScroll" unique_id=529942919]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="EmptyLabel" type="Label" parent="Bg/CenterPanel/Margin/VBox/HistorySection/HistoryScroll/Content" unique_id=2005753856]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "暂无记录。收起或关闭面板，在游戏中操作后回来查看。"
+autowrap_mode = 3
+
+[node name="Records" type="VBoxContainer" parent="Bg/CenterPanel/Margin/VBox/HistorySection/HistoryScroll/Content" unique_id=1402933282]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="StatusLabel" type="Label" parent="Bg/CenterPanel/Margin/VBox" unique_id=797146621]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.48, 0.83, 0.68, 1)
+theme_override_font_sizes/font_size = 30
+autowrap_mode = 3
+
+[node name="ActionRow" type="HBoxContainer" parent="Bg/CenterPanel/Margin/VBox" unique_id=313667231]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="TestBtn" type="Button" parent="Bg/CenterPanel/Margin/VBox/ActionRow" unique_id=342235206]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"HapticPrimaryButton"
+text = "试播当前场景"
+
+[node name="ResetConfirm" type="ColorRect" parent="." unique_id=1845113504]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme")
+color = Color(0, 0, 0, 0.78)
+
+[node name="Margin" type="MarginContainer" parent="ResetConfirm" unique_id=944490347]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_right = 48
+
+[node name="Column" type="VBoxContainer" parent="ResetConfirm/Margin" unique_id=1981599636]
+layout_mode = 2
+
+[node name="TopSpacer" type="Control" parent="ResetConfirm/Margin/Column" unique_id=18359705]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Card" type="PanelContainer" parent="ResetConfirm/Margin/Column" unique_id=1554177968]
+layout_mode = 2
+theme_override_styles/panel = SubResource("Card")
+
+[node name="Body" type="VBoxContainer" parent="ResetConfirm/Margin/Column/Card" unique_id=672248784]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="ResetConfirm/Margin/Column/Card/Body" unique_id=1026584146]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5")
+theme_override_font_sizes/font_size = 46
+text = "全部恢复默认？"
+autowrap_mode = 3
+
+[node name="Message" type="Label" parent="ResetConfirm/Margin/Column/Card/Body" unique_id=2086426717]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "将清除全部场景的 Android 和 iOS 调参，恢复到包内默认配置。"
+autowrap_mode = 3
+
+[node name="Actions" type="HBoxContainer" parent="ResetConfirm/Margin/Column/Card/Body" unique_id=556929167]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CancelBtn" type="Button" parent="ResetConfirm/Margin/Column/Card/Body/Actions" unique_id=295764330]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "取消"
+
+[node name="ConfirmBtn" type="Button" parent="ResetConfirm/Margin/Column/Card/Body/Actions" unique_id=906057138]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.96, 0.62, 0.6, 1)
+text = "确认恢复"
+
+[node name="BottomSpacer" type="Control" parent="ResetConfirm/Margin/Column" unique_id=1284519156]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ConvertConfirm" type="ColorRect" parent="." unique_id=451742565]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme")
+color = Color(0, 0, 0, 0.78)
+
+[node name="Margin" type="MarginContainer" parent="ConvertConfirm" unique_id=2014419933]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_right = 48
+
+[node name="Column" type="VBoxContainer" parent="ConvertConfirm/Margin" unique_id=1344330000]
+layout_mode = 2
+
+[node name="TopSpacer" type="Control" parent="ConvertConfirm/Margin/Column" unique_id=239148652]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Card" type="PanelContainer" parent="ConvertConfirm/Margin/Column" unique_id=662302277]
+layout_mode = 2
+theme_override_styles/panel = SubResource("Card")
+
+[node name="Body" type="VBoxContainer" parent="ConvertConfirm/Margin/Column/Card" unique_id=34221252]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="ConvertConfirm/Margin/Column/Card/Body" unique_id=1227805668]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5")
+theme_override_font_sizes/font_size = 46
+text = "确认转换当前场景?"
+autowrap_mode = 3
+
+[node name="Message" type="Label" parent="ConvertConfirm/Margin/Column/Card/Body" unique_id=647779129]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "转换会覆盖目标端已经修改的值。实际震动效果双端不会一致，请分别在真机上试播确认。"
+autowrap_mode = 3
+
+[node name="Actions" type="HBoxContainer" parent="ConvertConfirm/Margin/Column/Card/Body" unique_id=1833019377]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CancelBtn" type="Button" parent="ConvertConfirm/Margin/Column/Card/Body/Actions" unique_id=1098578546]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "取消"
+
+[node name="ConfirmBtn" type="Button" parent="ConvertConfirm/Margin/Column/Card/Body/Actions" unique_id=548999272]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.96, 0.62, 0.6, 1)
+text = "确认转换"
+
+[node name="BottomSpacer" type="Control" parent="ConvertConfirm/Margin/Column" unique_id=1357521561]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SyncConfirm" type="ColorRect" parent="." unique_id=1713295840]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme")
+color = Color(0, 0, 0, 0.78)
+
+[node name="Margin" type="MarginContainer" parent="SyncConfirm" unique_id=465597334]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_right = 48
+
+[node name="Column" type="VBoxContainer" parent="SyncConfirm/Margin" unique_id=1100480292]
+layout_mode = 2
+
+[node name="TopSpacer" type="Control" parent="SyncConfirm/Margin/Column" unique_id=784473971]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Card" type="PanelContainer" parent="SyncConfirm/Margin/Column" unique_id=1337892558]
+layout_mode = 2
+theme_override_styles/panel = SubResource("Card")
+
+[node name="Body" type="VBoxContainer" parent="SyncConfirm/Margin/Column/Card" unique_id=1836036842]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="SyncConfirm/Margin/Column/Card/Body" unique_id=511321620]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5")
+theme_override_font_sizes/font_size = 46
+text = "确认同步并通知飞书?"
+autowrap_mode = 3
+
+[node name="Message" type="Label" parent="SyncConfirm/Margin/Column/Card/Body" unique_id=689142337]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "将保存全部场景的 Android 和 iOS 当前配置，并发送一条飞书通知。"
+autowrap_mode = 3
+
+[node name="Actions" type="HBoxContainer" parent="SyncConfirm/Margin/Column/Card/Body" unique_id=536933616]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CancelBtn" type="Button" parent="SyncConfirm/Margin/Column/Card/Body/Actions" unique_id=1886333674]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "取消"
+
+[node name="ConfirmBtn" type="Button" parent="SyncConfirm/Margin/Column/Card/Body/Actions" unique_id=1575451386]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"HapticSyncButton"
+text = "确认同步"
+
+[node name="BottomSpacer" type="Control" parent="SyncConfirm/Margin/Column" unique_id=1731448060]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="EffectApplyConfirm" type="ColorRect" parent="." unique_id=783220812]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme")
+color = Color(0, 0, 0, 0.78)
+
+[node name="Margin" type="MarginContainer" parent="EffectApplyConfirm" unique_id=1845687445]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_right = 48
+
+[node name="Column" type="VBoxContainer" parent="EffectApplyConfirm/Margin" unique_id=1871260922]
+layout_mode = 2
+
+[node name="TopSpacer" type="Control" parent="EffectApplyConfirm/Margin/Column" unique_id=1782796833]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Card" type="PanelContainer" parent="EffectApplyConfirm/Margin/Column" unique_id=731858402]
+layout_mode = 2
+theme_override_styles/panel = SubResource("Card")
+
+[node name="Body" type="VBoxContainer" parent="EffectApplyConfirm/Margin/Column/Card" unique_id=1315461694]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="EffectApplyConfirm/Margin/Column/Card/Body" unique_id=707989059]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5")
+theme_override_font_sizes/font_size = 46
+text = "确认覆盖效果参数?"
+autowrap_mode = 3
+
+[node name="Message" type="Label" parent="EffectApplyConfirm/Margin/Column/Card/Body" unique_id=570292173]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "当前平台已有非默认配置，应用复制的效果参数将覆盖之前的配置，是否继续？"
+autowrap_mode = 3
+
+[node name="Actions" type="HBoxContainer" parent="EffectApplyConfirm/Margin/Column/Card/Body" unique_id=2001579540]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CancelBtn" type="Button" parent="EffectApplyConfirm/Margin/Column/Card/Body/Actions" unique_id=1987771797]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "取消"
+
+[node name="ConfirmBtn" type="Button" parent="EffectApplyConfirm/Margin/Column/Card/Body/Actions" unique_id=2126264998]
+custom_minimum_size = Vector2(0, 112)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"HapticSyncButton"
+text = "确认覆盖"
+
+[node name="BottomSpacer" type="Control" parent="EffectApplyConfirm/Margin/Column" unique_id=2032842843]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/TitleRow/CollapseBtn" to="." method="_on_collapse_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/TitleRow/CloseBtn" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/TabRow/TuneTab" to="." method="_on_tune_tab_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/TabRow/JigsawTab" to="." method="_on_jigsaw_tab_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/TabRow/RecordsTab" to="." method="_on_records_tab_pressed"]
+[connection signal="item_selected" from="Bg/CenterPanel/Margin/VBox/SceneRow/CategorySelector" to="." method="_on_scene_category_selected"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/SceneRow/PlatformRow/AndroidBtn" to="." method="_on_android_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/SceneRow/PlatformRow/IosBtn" to="." method="_on_ios_pressed"]
+[connection signal="item_selected" from="Bg/CenterPanel/Margin/VBox/SceneSelection/SceneSelector" to="." method="_on_scene_selected"]
+[connection signal="item_selected" from="Bg/CenterPanel/Margin/VBox/SceneSelection/StyleRow/StyleSelector" to="." method="_on_scene_style_selected"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/TitleRow/EffectsToggle" to="." method="_on_effects_toggle_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/ConversionRow/IosToAndroidBtn" to="." method="_on_ios_to_android_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/ConversionRow/AndroidToIosBtn" to="." method="_on_android_to_ios_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/ConversionRow/CopyEffectBtn" to="." method="_on_copy_effect_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/ConversionRow/ApplyCopiedEffectBtn" to="." method="_on_apply_copied_effect_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/QuickActions/ResetBtn" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/EffectsCard/Body/Scroll/Content/QuickActions/ResetAllBtn" to="." method="_on_reset_all_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/TitleRow/ConfigToggle" to="." method="_on_config_toggle_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/SyncActions/SyncBtn" to="." method="_on_sync_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/SyncActions/ConnectionToggle" to="." method="_on_connection_toggle_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConfigBox/ConfigActions/CopyBtn" to="." method="_on_copy_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/ConfigCard/Body/Scroll/Content/ConfigBox/ConfigActions/ImportBtn" to="." method="_on_import_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/HistorySection/Actions/RefreshButton" to="." method="_on_history_refresh_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/HistorySection/Actions/ClearButton" to="." method="_on_history_clear_pressed"]
+[connection signal="pressed" from="Bg/CenterPanel/Margin/VBox/ActionRow/TestBtn" to="." method="_on_test_pressed"]
+[connection signal="pressed" from="ResetConfirm/Margin/Column/Card/Body/Actions/CancelBtn" to="." method="_on_reset_all_cancelled"]
+[connection signal="pressed" from="ResetConfirm/Margin/Column/Card/Body/Actions/ConfirmBtn" to="." method="_on_reset_all_confirmed"]
+[connection signal="pressed" from="ConvertConfirm/Margin/Column/Card/Body/Actions/CancelBtn" to="." method="_on_conversion_cancelled"]
+[connection signal="pressed" from="ConvertConfirm/Margin/Column/Card/Body/Actions/ConfirmBtn" to="." method="_on_conversion_confirmed"]
+[connection signal="pressed" from="SyncConfirm/Margin/Column/Card/Body/Actions/CancelBtn" to="." method="_on_sync_cancelled"]
+[connection signal="pressed" from="SyncConfirm/Margin/Column/Card/Body/Actions/ConfirmBtn" to="." method="_on_sync_confirmed"]
+[connection signal="pressed" from="EffectApplyConfirm/Margin/Column/Card/Body/Actions/CancelBtn" to="." method="_on_effect_apply_cancelled"]
+[connection signal="pressed" from="EffectApplyConfirm/Margin/Column/Card/Body/Actions/ConfirmBtn" to="." method="_on_effect_apply_confirmed"]

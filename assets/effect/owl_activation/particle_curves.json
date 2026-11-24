@@ -1,0 +1,132 @@
+{
+  "kuosan": {
+    "size": 800,
+    "life": 0.82,
+    "size_curve": [
+      {
+        "serializedVersion": 3,
+        "time": 0,
+        "value": 0,
+        "inSlope": 7.9345417,
+        "outSlope": 7.9345417,
+        "tangentMode": 0,
+        "weightedMode": 3,
+        "inWeight": 0,
+        "outWeight": 0.127304
+      },
+      {
+        "serializedVersion": 3,
+        "time": 0.24818993,
+        "value": 0.8259595,
+        "inSlope": 0.85611844,
+        "outSlope": 0.85611844,
+        "tangentMode": 0,
+        "weightedMode": 3,
+        "inWeight": 0.46532312,
+        "outWeight": 0.14056808
+      },
+      {
+        "serializedVersion": 3,
+        "time": 1,
+        "value": 1,
+        "inSlope": 0,
+        "outSlope": 0,
+        "tangentMode": 0,
+        "weightedMode": 0,
+        "inWeight": 0,
+        "outWeight": 0
+      }
+    ],
+    "alpha": [
+      {
+        "time": 0.0,
+        "value": 0
+      },
+      {
+        "time": 0.10882734416723888,
+        "value": 1
+      },
+      {
+        "time": 0.2529488059815366,
+        "value": 0.35588235
+      },
+      {
+        "time": 1.0,
+        "value": 0
+      }
+    ],
+    "color": {
+      "r": 1,
+      "g": 1,
+      "b": 1,
+      "a": 1
+    }
+  },
+  "kuosan2": {
+    "size": 1200,
+    "life": 0.85,
+    "size_curve": [
+      {
+        "serializedVersion": 3,
+        "time": 0,
+        "value": 0,
+        "inSlope": 2,
+        "outSlope": 2,
+        "tangentMode": 0,
+        "weightedMode": 0,
+        "inWeight": 0,
+        "outWeight": 0
+      },
+      {
+        "serializedVersion": 3,
+        "time": 0.25249887,
+        "value": 0.7368183,
+        "inSlope": 1.5994351,
+        "outSlope": 1.5994351,
+        "tangentMode": 0,
+        "weightedMode": 3,
+        "inWeight": 0.33333334,
+        "outWeight": 0.15527727
+      },
+      {
+        "serializedVersion": 3,
+        "time": 1,
+        "value": 1,
+        "inSlope": 0,
+        "outSlope": 0,
+        "tangentMode": 0,
+        "weightedMode": 0,
+        "inWeight": 0,
+        "outWeight": 0
+      }
+    ],
+    "alpha": [
+      {
+        "time": 0.0,
+        "value": 0
+      },
+      {
+        "time": 0.07647821774624247,
+        "value": 0.10620609
+      },
+      {
+        "time": 0.13235675593194476,
+        "value": 0.9558824
+      },
+      {
+        "time": 0.2794079499504082,
+        "value": 0.5176471
+      },
+      {
+        "time": 1.0,
+        "value": 0
+      }
+    ],
+    "color": {
+      "r": 0.3948914,
+      "g": 0.50186384,
+      "b": 0.5471698,
+      "a": 0.33333334
+    }
+  }
+}

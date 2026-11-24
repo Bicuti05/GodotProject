@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://cd8x0an8pvdhh"
+path="res://.godot/imported/Sunglasses.atlas-d74ccd655ab3806293a6a0f6758d9b34.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/proud/Sunglasses.atlas"
+dest_files=["res://.godot/imported/Sunglasses.atlas-d74ccd655ab3806293a6a0f6758d9b34.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

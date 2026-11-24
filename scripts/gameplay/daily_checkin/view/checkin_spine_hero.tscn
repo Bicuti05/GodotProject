@@ -1,0 +1,78 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" uid="uid://70a26kxlj74w" path="res://scripts/gameplay/daily_checkin/view/checkin_spine_hero.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://d1r3yewm0cqu4" path="res://assets/spine/daily_checkin/smile/body-mask-ui.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://kp1hcn23o737" path="res://assets/spine/daily_checkin/proud/body-mask-ui.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ke7lxgw6ct83" path="res://assets/spine/daily_checkin/party/body-mask-ui.png" id="4"]
+[ext_resource type="SpineAtlasResource" uid="uid://b22e00727oodo" path="res://assets/spine/daily_checkin/smile/smiling_flower_idle.atlas" id="5"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://hghknk4dg75x" path="res://assets/spine/daily_checkin/smile/smiling_flower_idle.skel" id="6"]
+[ext_resource type="SpineAtlasResource" uid="uid://cd8x0an8pvdhh" path="res://assets/spine/daily_checkin/proud/Sunglasses.atlas" id="7"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://buuocdliok8lk" path="res://assets/spine/daily_checkin/proud/Sunglasses.skel" id="8"]
+[ext_resource type="SpineAtlasResource" uid="uid://bkelpsj0u7bhs" path="res://assets/spine/daily_checkin/party/Celebrate.atlas" id="9"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://bnqligo8s8mm0" path="res://assets/spine/daily_checkin/party/Celebrate_hero.skel" id="10"]
+
+[sub_resource type="SpineSkeletonDataResource" id="smile_data"]
+atlas_res = ExtResource("5")
+skeleton_file_res = ExtResource("6")
+default_mix = 0.12
+
+[sub_resource type="SpineSkeletonDataResource" id="proud_data"]
+atlas_res = ExtResource("7")
+skeleton_file_res = ExtResource("8")
+default_mix = 0.12
+
+[sub_resource type="SpineSkeletonDataResource" id="party_data"]
+atlas_res = ExtResource("9")
+skeleton_file_res = ExtResource("10")
+default_mix = 0.12
+
+[node name="checkin_spine_hero" type="Node" unique_id=359246656]
+script = ExtResource("1")
+smile_mask = ExtResource("2")
+proud_mask = ExtResource("3")
+party_mask = ExtResource("4")
+
+[node name="smileSpineViewport" type="SubViewport" parent="." unique_id=1356234515]
+disable_3d = true
+transparent_bg = true
+gui_disable_input = true
+size = Vector2i(1024, 1024)
+render_target_update_mode = 0
+
+[node name="smileNativeSpine" type="SpineSprite" parent="smileSpineViewport" unique_id=1931487296]
+skeleton_data_res = SubResource("smile_data")
+update_mode = 2
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="proudSpineViewport" type="SubViewport" parent="." unique_id=283363504]
+disable_3d = true
+transparent_bg = true
+gui_disable_input = true
+size = Vector2i(1024, 1024)
+render_target_update_mode = 0
+
+[node name="proudNativeSpine" type="SpineSprite" parent="proudSpineViewport" unique_id=1588347345]
+skeleton_data_res = SubResource("proud_data")
+update_mode = 2
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="partySpineViewport" type="SubViewport" parent="." unique_id=1853451685]
+disable_3d = true
+transparent_bg = true
+gui_disable_input = true
+size = Vector2i(2048, 1536)
+render_target_update_mode = 0
+
+[node name="partyNativeSpine" type="SpineSprite" parent="partySpineViewport" unique_id=182366103]
+skeleton_data_res = SubResource("party_data")
+update_mode = 2
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

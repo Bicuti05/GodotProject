@@ -1,0 +1,106 @@
+{
+  "clock_body": {
+    "offset": [
+      -148,
+      -166
+    ]
+  },
+  "hour_hand": {
+    "size": [
+      48,
+      38
+    ],
+    "offset": [
+      -43,
+      -31
+    ]
+  },
+  "minute_hand": {
+    "size": [
+      68,
+      45
+    ],
+    "offset": [
+      -4,
+      -40
+    ]
+  },
+  "center_cap": {
+    "size": [
+      23,
+      23
+    ],
+    "offset": [
+      -12,
+      -12
+    ]
+  },
+  "bell_left": {
+    "offset": [
+      -48,
+      -58
+    ],
+    "pivot": [
+      -49,
+      -74
+    ]
+  },
+  "bell_right": {
+    "offset": [
+      -30,
+      -58
+    ],
+    "pivot": [
+      48,
+      -74
+    ]
+  },
+  "clock_position": [
+    532,
+    176
+  ],
+  "leaf_left_position": [
+    272,
+    91
+  ],
+  "leaf_right_position": [
+    542,
+    38
+  ],
+  "ribbon_position": [
+    0,
+    115
+  ],
+  "source_sha256": "ce60158e0fa2fee7174a6044913ced522eecb1159cb194e0d3b387bbd144791b",
+  "psd_sha256": "f7867e57447e45bbc6c266570474068fd56dbc98ec03085e700a39e2dd2dab08",
+  "alignment_scores": {
+    "clock": [
+      20333,
+      [
+        384,
+        10
+      ]
+    ],
+    "ribbon": [
+      114116,
+      [
+        0,
+        115
+      ]
+    ],
+    "leaf_left": [
+      8426,
+      [
+        272,
+        91
+      ]
+    ],
+    "leaf_right": [
+      12187,
+      [
+        542,
+        38
+      ]
+    ]
+  }
+}

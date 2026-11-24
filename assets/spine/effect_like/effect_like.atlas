@@ -1,0 +1,11 @@
+effect_like.png
+size:324,248
+filter:Linear,Linear
+like
+bounds:2,2,241,281
+offsets:31,7,312,312
+rotate:90
+star_particles
+bounds:285,205,38,37
+offsets:1,1,40,39
+rotate:90

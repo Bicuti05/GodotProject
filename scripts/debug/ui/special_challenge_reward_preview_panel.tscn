@@ -1,0 +1,198 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" uid="uid://bqspchprevpan" path="res://scripts/debug/ui/special_challenge_reward_preview_panel.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/special_challenge_reward/special_challenge_reward_dialog.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://73823utb8342" path="res://assets/sprites/game_coin_pill.png" id="3"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="4"]
+[ext_resource type="Texture2D" uid="uid://d2wkj0vlu7n2a" path="res://assets/sprites/game_coin_icon.png" id="5"]
+[ext_resource type="PackedScene" uid="uid://c3ngxpupv73tp" path="res://scripts/widget/prop_btn/prop_btn.tscn" id="6"]
+
+[node name="SpecialChallengeRewardPreviewPanel" type="CanvasLayer" unique_id=1923690022]
+process_mode = 3
+layer = 211
+script = ExtResource("1")
+
+[node name="Root" type="Control" parent="." unique_id=2044769808]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Reward" parent="Root" unique_id=938700537 instance=ExtResource("2")]
+layout_mode = 1
+
+[node name="PreviewHud" type="Control" parent="Root" unique_id=2069548319]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CoinHud" type="Control" parent="Root/PreviewHud" unique_id=2061651123]
+anchors_preset = 0
+offset_left = 714.0
+offset_top = 38.0
+offset_right = 984.0
+offset_bottom = 154.0
+mouse_filter = 2
+
+[node name="Pill" type="TextureRect" parent="Root/PreviewHud/CoinHud" unique_id=1648431621]
+layout_mode = 0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 290.0
+offset_bottom = 136.0
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="Root/PreviewHud/CoinHud" unique_id=398604727]
+layout_mode = 0
+offset_left = 110.0
+offset_right = 256.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(0.137, 0.184, 0.243, 1)
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 72
+text = "1000"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CoinIcon" type="TextureRect" parent="Root/PreviewHud/CoinHud" unique_id=1753416450]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 14.0
+offset_right = 154.0
+offset_bottom = 102.0
+pivot_offset = Vector2(44, 44)
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="undo" parent="Root/PreviewHud" unique_id=930900763 instance=ExtResource("6")]
+layout_mode = 0
+mouse_filter = 2
+
+[node name="hint" parent="Root/PreviewHud" unique_id=487268343 instance=ExtResource("6")]
+layout_mode = 0
+mouse_filter = 2
+
+[node name="rope" parent="Root/PreviewHud" unique_id=2130625284 instance=ExtResource("6")]
+layout_mode = 0
+mouse_filter = 2
+
+[node name="Card" type="PanelContainer" parent="Root" unique_id=1570632393]
+z_index = 200
+layout_mode = 0
+offset_right = 1000.0
+offset_bottom = 196.0
+
+[node name="Body" type="VBoxContainer" parent="Root/Card" unique_id=1956943311]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Root/Card/Body" unique_id=336578031]
+auto_translate_mode = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 40
+text = "特殊挑战奖励控制面板"
+horizontal_alignment = 1
+
+[node name="Actions" type="HBoxContainer" parent="Root/Card/Body" unique_id=645736181]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Choices" type="HBoxContainer" parent="Root/Card/Body/Actions" unique_id=1282407464]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 12
+
+[node name="One" type="Button" parent="Root/Card/Body/Actions/Choices" unique_id=179921136]
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 36
+toggle_mode = true
+text = "1项"
+
+[node name="Two" type="Button" parent="Root/Card/Body/Actions/Choices" unique_id=334162745]
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 36
+toggle_mode = true
+text = "2项"
+
+[node name="Three" type="Button" parent="Root/Card/Body/Actions/Choices" unique_id=54971646]
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 36
+toggle_mode = true
+text = "3项"
+
+[node name="Replay" type="Button" parent="Root/Card/Body/Actions" unique_id=81193328]
+auto_translate_mode = 2
+custom_minimum_size = Vector2(132, 68)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 36
+text = "重播"
+
+[node name="Close" type="Button" parent="Root/Card/Body/Actions" unique_id=536498003]
+auto_translate_mode = 2
+custom_minimum_size = Vector2(132, 68)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 36
+text = "关闭"
+
+[node name="Collection" type="HBoxContainer" parent="Root/Card/Body" unique_id=372581127]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Claim" type="Button" parent="Root/Card/Body/Collection" unique_id=2102525687]
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 34
+disabled = true
+text = "演示领取"
+
+[node name="Double" type="Button" parent="Root/Card/Body/Collection" unique_id=348020345]
+auto_translate_mode = 2
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 34
+disabled = true
+text = "演示领取×2（无广告）"
+
+[node name="Status" type="Label" parent="Root/Card/Body" unique_id=513148081]
+auto_translate_mode = 2
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 30
+text = "预览 3 项奖励 · 不发奖、不播放广告、不写存档"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Root/Card/Body/Actions/Replay" to="." method="_replay"]
+[connection signal="pressed" from="Root/Card/Body/Actions/Close" to="." method="close"]
+[connection signal="pressed" from="Root/Card/Body/Collection/Claim" to="." method="_on_preview_claim"]
+[connection signal="pressed" from="Root/Card/Body/Collection/Double" to="." method="_on_preview_double"]

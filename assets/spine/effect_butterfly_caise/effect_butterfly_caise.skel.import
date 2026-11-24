@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://ckawnyfnvob5h"
+path="res://.godot/imported/effect_butterfly_caise.skel-6ae8a6cca0e9c37ae98651a62e828e00.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_butterfly_caise/effect_butterfly_caise.skel"
+dest_files=["res://.godot/imported/effect_butterfly_caise.skel-6ae8a6cca0e9c37ae98651a62e828e00.spskel"]
+
+[params]
+

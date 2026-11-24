@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://c1iwvi8ki0lsa"
+path="res://.godot/imported/effect_butterfly_red.skel-1a5463a9184d18c8d1d75ed1c58d00dc.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_butterfly_red/effect_butterfly_red.skel"
+dest_files=["res://.godot/imported/effect_butterfly_red.skel-1a5463a9184d18c8d1d75ed1c58d00dc.spskel"]
+
+[params]
+

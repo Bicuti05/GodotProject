@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://bljuqe165v5t0" path="res://scripts/debug/ui/bonus_motion_preview.gd" id="1"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="2"]
+
+[node name="BonusMotionPreview" type="CanvasLayer" unique_id=1937693093]
+process_mode = 3
+script = ExtResource("1")
+font = ExtResource("2")
+
+[node name="Root" type="Control" parent="." unique_id=1630562501]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Shade" type="ColorRect" parent="Root" unique_id=965170989]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.035, 0.07, 0.065, 0.1)

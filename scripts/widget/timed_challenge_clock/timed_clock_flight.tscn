@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://bhv3dfysl1h51" path="res://scripts/widget/timed_challenge_clock/timed_clock_flight.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/widget/timed_challenge_clock/timed_challenge_clock.tscn" id="2"]
+
+[node name="TimedClockFlight" type="Control" unique_id=1038574540]
+visible = false
+z_index = 100
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Actor" type="Node2D" parent="." unique_id=1536626514]
+visible = false
+
+[node name="Visual" parent="Actor" unique_id=1892166488 instance=ExtResource("2")]
+layout_mode = 3
+anchors_preset = 0
+clock_only = true

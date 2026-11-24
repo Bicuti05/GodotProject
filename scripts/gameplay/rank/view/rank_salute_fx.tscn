@@ -1,0 +1,288 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" uid="uid://cpqt4nuppvqvx" path="res://scripts/gameplay/rank/view/rank_salute_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cjbcd8diobop0" path="res://assets/sprites/common_rank_salute.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://b1cgmvegeqorn" path="res://assets/effect/texture/rank/et_star_700.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b7425mgjvcw0l" path="res://assets/sprites/common_rank_et_ribbon_007.png" id="4"]
+
+[sub_resource type="CanvasItemMaterial" id="m_add"]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id="atlas_0"]
+atlas = ExtResource("4")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="Gradient" id="ribbon_ramp"]
+offsets = PackedFloat32Array(0, 0.08, 0.78, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="AtlasTexture" id="atlas_1"]
+atlas = ExtResource("4")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="atlas_3"]
+atlas = ExtResource("4")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="atlas_2"]
+atlas = ExtResource("4")
+region = Rect2(0, 64, 64, 64)
+
+[node name="RankSaluteFx" type="Node2D" unique_id=1500705968]
+script = ExtResource("1")
+
+[node name="SaluteL" type="Node2D" parent="." unique_id=1295815960]
+position = Vector2(86, 2120)
+rotation = 0.563741
+
+[node name="Barrel" type="TextureRect" parent="SaluteL" unique_id=664363652]
+offset_left = -184.5
+offset_top = -184.5
+offset_right = 184.5
+offset_bottom = 184.5
+scale = Vector2(0.936, 0.936)
+pivot_offset = Vector2(184.5, 184.5)
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flash" type="Sprite2D" parent="SaluteL" unique_id=432340516]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("m_add")
+position = Vector2(2.808, -113.724)
+texture = ExtResource("3")
+
+[node name="Muzzle0" type="CPUParticles2D" parent="SaluteL" unique_id=1360024212]
+position = Vector2(2.808, -113.724)
+emitting = false
+amount = 14
+texture = SubResource("atlas_0")
+lifetime = 1.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 700)
+initial_velocity_min = 950.0
+initial_velocity_max = 1500.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+damping_min = 0.4
+damping_max = 1.2
+scale_amount_min = 0.6
+scale_amount_max = 2.0
+color_ramp = SubResource("ribbon_ramp")
+
+[node name="Muzzle1" type="CPUParticles2D" parent="SaluteL" unique_id=597167285]
+position = Vector2(2.808, -113.724)
+emitting = false
+amount = 14
+texture = SubResource("atlas_1")
+lifetime = 1.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 700)
+initial_velocity_min = 950.0
+initial_velocity_max = 1500.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+damping_min = 0.4
+damping_max = 1.2
+scale_amount_min = 0.6
+scale_amount_max = 2.0
+color_ramp = SubResource("ribbon_ramp")
+
+[node name="SaluteR" type="Node2D" parent="." unique_id=1779255055]
+position = Vector2(994, 2120)
+rotation = -0.563741
+
+[node name="Barrel" type="TextureRect" parent="SaluteR" unique_id=1215219836]
+offset_left = -184.5
+offset_top = -184.5
+offset_right = 184.5
+offset_bottom = 184.5
+scale = Vector2(0.936, 0.936)
+pivot_offset = Vector2(184.5, 184.5)
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flash" type="Sprite2D" parent="SaluteR" unique_id=2069295028]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("m_add")
+position = Vector2(2.808, -113.724)
+texture = ExtResource("3")
+
+[node name="Muzzle0" type="CPUParticles2D" parent="SaluteR" unique_id=1349836784]
+position = Vector2(2.808, -113.724)
+emitting = false
+amount = 14
+texture = SubResource("atlas_3")
+lifetime = 1.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 700)
+initial_velocity_min = 950.0
+initial_velocity_max = 1500.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+damping_min = 0.4
+damping_max = 1.2
+scale_amount_min = 0.6
+scale_amount_max = 2.0
+color_ramp = SubResource("ribbon_ramp")
+
+[node name="Muzzle1" type="CPUParticles2D" parent="SaluteR" unique_id=62337402]
+position = Vector2(2.808, -113.724)
+emitting = false
+amount = 14
+texture = SubResource("atlas_0")
+lifetime = 1.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 700)
+initial_velocity_min = 950.0
+initial_velocity_max = 1500.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+damping_min = 0.4
+damping_max = 1.2
+scale_amount_min = 0.6
+scale_amount_max = 2.0
+color_ramp = SubResource("ribbon_ramp")
+
+[node name="SaluteL2" type="Node2D" parent="." unique_id=1030923483]
+position = Vector2(38, 1870)
+rotation = 0.415388
+
+[node name="Barrel" type="TextureRect" parent="SaluteL2" unique_id=640479207]
+offset_left = -184.5
+offset_top = -184.5
+offset_right = 184.5
+offset_bottom = 184.5
+scale = Vector2(0.9, 0.9)
+pivot_offset = Vector2(184.5, 184.5)
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flash" type="Sprite2D" parent="SaluteL2" unique_id=931185625]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("m_add")
+position = Vector2(2.7, -109.35)
+texture = ExtResource("3")
+
+[node name="Muzzle0" type="CPUParticles2D" parent="SaluteL2" unique_id=1315866774]
+position = Vector2(2.7, -109.35)
+emitting = false
+amount = 14
+texture = SubResource("atlas_2")
+lifetime = 1.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 700)
+initial_velocity_min = 950.0
+initial_velocity_max = 1500.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+damping_min = 0.4
+damping_max = 1.2
+scale_amount_min = 0.6
+scale_amount_max = 2.0
+color_ramp = SubResource("ribbon_ramp")
+
+[node name="Muzzle1" type="CPUParticles2D" parent="SaluteL2" unique_id=1416745262]
+position = Vector2(2.7, -109.35)
+emitting = false
+amount = 14
+texture = SubResource("atlas_3")
+lifetime = 1.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 700)
+initial_velocity_min = 950.0
+initial_velocity_max = 1500.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+damping_min = 0.4
+damping_max = 1.2
+scale_amount_min = 0.6
+scale_amount_max = 2.0
+color_ramp = SubResource("ribbon_ramp")
+
+[node name="SaluteR2" type="Node2D" parent="." unique_id=1072692233]
+position = Vector2(1042, 1870)
+rotation = -0.415388
+
+[node name="Barrel" type="TextureRect" parent="SaluteR2" unique_id=426706317]
+offset_left = -184.5
+offset_top = -184.5
+offset_right = 184.5
+offset_bottom = 184.5
+scale = Vector2(0.9, 0.9)
+pivot_offset = Vector2(184.5, 184.5)
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Flash" type="Sprite2D" parent="SaluteR2" unique_id=1189169751]
+modulate = Color(1, 1, 1, 0)
+material = SubResource("m_add")
+position = Vector2(2.7, -109.35)
+texture = ExtResource("3")
+
+[node name="Muzzle0" type="CPUParticles2D" parent="SaluteR2" unique_id=780788277]
+position = Vector2(2.7, -109.35)
+emitting = false
+amount = 14
+texture = SubResource("atlas_1")
+lifetime = 1.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 700)
+initial_velocity_min = 950.0
+initial_velocity_max = 1500.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+damping_min = 0.4
+damping_max = 1.2
+scale_amount_min = 0.6
+scale_amount_max = 2.0
+color_ramp = SubResource("ribbon_ramp")
+
+[node name="Muzzle1" type="CPUParticles2D" parent="SaluteR2" unique_id=982310421]
+position = Vector2(2.7, -109.35)
+emitting = false
+amount = 14
+texture = SubResource("atlas_2")
+lifetime = 1.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, -1)
+spread = 30.0
+gravity = Vector2(0, 700)
+initial_velocity_min = 950.0
+initial_velocity_max = 1500.0
+angular_velocity_min = -300.0
+angular_velocity_max = 300.0
+damping_min = 0.4
+damping_max = 1.2
+scale_amount_min = 0.6
+scale_amount_max = 2.0
+color_ramp = SubResource("ribbon_ramp")

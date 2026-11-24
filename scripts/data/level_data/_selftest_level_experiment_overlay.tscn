@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://de1wj28ffagcy" path="res://scripts/data/level_data/_selftest_level_experiment_overlay.gd" id="1"]
+
+[node name="SelftestLevelExperimentOverlay" type="Node" unique_id=1592847594]
+script = ExtResource("1")

@@ -1,0 +1,469 @@
+[gd_scene load_steps=16 format=3 uid="uid://cyn2a0yilpydi"]
+
+[ext_resource type="Script" uid="uid://2ic0dykaqngw" path="res://scripts/main/dialogs/settings/settings_dialog.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://fji7sfuetlw1" path="res://assets/sprites/common_btn_cricle_green.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dlx5f48sbf432" path="res://assets/sprites/common_btn_cricle_grey.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dm1c3jc2m8h7d" path="res://assets/sprites/ic_sounds_on.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cr62fe6x60lp8" path="res://assets/sprites/ic_sounds_off.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://53futjgqvr00" path="res://assets/sprites/ic_vibration_on.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bkauy17yk3h6e" path="res://assets/sprites/ic_vibration_off.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://b4iqwosi6kchs" path="res://assets/sprites/bgm_music_on.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c36ltvwevifa4" path="res://assets/sprites/bgm_music_off.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://deumvcjfmbtdm" path="res://assets/sprites/common_dialog_bg.png" id="10"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="11"]
+[ext_resource type="Texture2D" uid="uid://c5ojqxmcy14pg" path="res://assets/sprites/common_btn_close.png" id="12"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="13"]
+[ext_resource type="PackedScene" uid="uid://ctxbuwml56wj3" path="res://scripts/widget/common_btn/common_btn.tscn" id="14"]
+[ext_resource type="Texture2D" uid="uid://dyuy50y62lu07" path="res://assets/sprites/common_reddot.png" id="15"]
+
+[node name="SettingsDialog" type="Control" unique_id=1055411213]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+toggle_on_bg_tex = ExtResource("2")
+toggle_off_bg_tex = ExtResource("3")
+sound_on_tex = ExtResource("4")
+sound_off_tex = ExtResource("5")
+vibration_on_tex = ExtResource("6")
+vibration_off_tex = ExtResource("7")
+music_on_tex = ExtResource("8")
+music_off_tex = ExtResource("9")
+
+[node name="Root" type="Control" parent="." unique_id=723820679]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Content" type="Control" parent="Root" unique_id=392543955]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+mouse_filter = 2
+
+[node name="Center" type="CenterContainer" parent="Root/Content" unique_id=332765203]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CardRoot" type="Control" parent="Root/Content/Center" unique_id=88635177]
+custom_minimum_size = Vector2(1080, 1200)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Bg" type="NinePatchRect" parent="Root/Content/Center/CardRoot" unique_id=697900457]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10")
+patch_margin_left = 212
+patch_margin_top = 414
+patch_margin_right = 212
+patch_margin_bottom = 200
+
+[node name="TitleBack" type="Label" parent="Root/Content/Center/CardRoot" unique_id=641682508]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -364.0
+offset_top = 26.0
+offset_right = 364.0
+offset_bottom = 198.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0.388, 0.584, 1)
+theme_override_colors/font_outline_color = Color(0, 0.388, 0.584, 1)
+theme_override_constants/outline_size = 18
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 96
+text = "SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="Root/Content/Center/CardRoot" unique_id=2127262828]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -364.0
+offset_top = 22.0
+offset_right = 364.0
+offset_bottom = 194.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.749, 0.875, 1, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 96
+text = "SETTINGS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CloseButton" type="TextureButton" parent="Root/Content/Center/CardRoot" unique_id=908896644]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -192.0
+offset_top = 40.0
+offset_right = -48.0
+offset_bottom = 184.0
+grow_horizontal = 0
+texture_normal = ExtResource("12")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Body" type="VBoxContainer" parent="Root/Content/Center/CardRoot" unique_id=374476278]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 104.0
+offset_top = 264.0
+offset_right = -104.0
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/separation = 32
+
+[node name="TogglesMargin" type="MarginContainer" parent="Root/Content/Center/CardRoot/Body" unique_id=1048665858]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_bottom = 16
+
+[node name="Toggles" type="HBoxContainer" parent="Root/Content/Center/CardRoot/Body/TogglesMargin" unique_id=1819395772]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 160
+alignment = 1
+
+[node name="MusicToggle" type="VBoxContainer" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles" unique_id=801835276]
+visible = false
+custom_minimum_size = Vector2(272, 265)
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+alignment = 1
+
+[node name="MusicBtn" type="TextureButton" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/MusicToggle" unique_id=844491326]
+custom_minimum_size = Vector2(196, 196)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("8")
+ignore_texture_size = true
+stretch_mode = 3
+
+[node name="MusicLabel" type="Label" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/MusicToggle" unique_id=1328296914]
+custom_minimum_size = Vector2(224, 57)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.2235294, 0.2745098, 0.3411765, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 48
+text = "SETTINGS_MUSIC"
+horizontal_alignment = 1
+
+[node name="SoundToggle" type="VBoxContainer" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles" unique_id=1059609968]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="SoundBtn" type="TextureButton" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/SoundToggle" unique_id=101054012]
+custom_minimum_size = Vector2(220, 220)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/SoundToggle/SoundBtn" unique_id=1397642248]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = -68.0
+offset_right = 68.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="SoundLabel" type="Label" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/SoundToggle" unique_id=1227970967]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.298, 0.263, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 52
+text = "SETTINGS_SOUND"
+horizontal_alignment = 1
+
+[node name="VibrationToggle" type="VBoxContainer" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles" unique_id=240251338]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="VibrationBtn" type="TextureButton" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/VibrationToggle" unique_id=641920299]
+custom_minimum_size = Vector2(220, 220)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/VibrationToggle/VibrationBtn" unique_id=1231533115]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.0
+offset_top = -68.0
+offset_right = 68.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="VibrationLabel" type="Label" parent="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/VibrationToggle" unique_id=1206706373]
+custom_minimum_size = Vector2(260, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.298, 0.263, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 52
+text = "SETTINGS_VIBRATION"
+horizontal_alignment = 1
+
+[node name="GameContent" type="VBoxContainer" parent="Root/Content/Center/CardRoot/Body" unique_id=641675258]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="RestartBtn" parent="Root/Content/Center/CardRoot/Body/GameContent" unique_id=31045931 instance=ExtResource("14")]
+custom_minimum_size = Vector2(760, 176)
+layout_mode = 2
+size_flags_horizontal = 4
+variant = 1
+btn_text = "SETTING_RESTART"
+
+[node name="HomeBtn" parent="Root/Content/Center/CardRoot/Body/GameContent" unique_id=1199889542 instance=ExtResource("14")]
+custom_minimum_size = Vector2(760, 176)
+layout_mode = 2
+size_flags_horizontal = 4
+variant = 2
+btn_text = "SETTINGS_HOME"
+
+[node name="HomeContent" type="VBoxContainer" parent="Root/Content/Center/CardRoot/Body" unique_id=179713218]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 56
+alignment = 1
+
+[node name="HomeActionsMargin" type="MarginContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent" unique_id=1736399885]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/margin_top = 24
+
+[node name="HomeActions" type="VBoxContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/HomeActionsMargin" unique_id=1859335248]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="HelpBtn" parent="Root/Content/Center/CardRoot/Body/HomeContent/HomeActionsMargin/HomeActions" unique_id=39625111 instance=ExtResource("14")]
+custom_minimum_size = Vector2(760, 176)
+layout_mode = 2
+size_flags_horizontal = 4
+variant = 1
+btn_text = "HELP_CENTER"
+
+[node name="RedDot" type="TextureRect" parent="Root/Content/Center/CardRoot/Body/HomeContent/HomeActionsMargin/HomeActions/HelpBtn" unique_id=1717194104]
+visible = false
+layout_mode = 1
+offset_left = 723.0
+offset_right = 760.0
+offset_bottom = 37.0
+mouse_filter = 2
+texture = ExtResource("15")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RateBtn" parent="Root/Content/Center/CardRoot/Body/HomeContent/HomeActionsMargin/HomeActions" unique_id=1123313142 instance=ExtResource("14")]
+custom_minimum_size = Vector2(760, 176)
+layout_mode = 2
+size_flags_horizontal = 4
+variant = 2
+btn_text = "SETTINGS_RATE_US"
+
+[node name="LegalFooter" type="VBoxContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent" unique_id=1464379993]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="LegalLinksMargin" type="MarginContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter" unique_id=513276165]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 16
+
+[node name="LegalLinks" type="VBoxContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin" unique_id=1201622589]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 24
+
+[node name="LegalTop" type="HBoxContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks" unique_id=1050464650]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="PrivacyPolicyCenter" type="CenterContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalTop" unique_id=1272691804]
+custom_minimum_size = Vector2(396, 48)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="PrivacyPolicyBtn" type="LinkButton" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalTop/PrivacyPolicyCenter" unique_id=498145507]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_focus_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_hover_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 40
+text = "PRIVACY_POLICY"
+
+[node name="TermsCenter" type="CenterContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalTop" unique_id=2075088840]
+custom_minimum_size = Vector2(396, 48)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="TermsBtn" type="LinkButton" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalTop/TermsCenter" unique_id=2110711662]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_focus_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_hover_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 40
+text = "TERMS_OF_SERVICE"
+
+[node name="LegalBottom" type="HBoxContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks" unique_id=1691725449]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 24
+alignment = 1
+
+[node name="PrivacyPreferenceCenter" type="CenterContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalBottom" unique_id=1460455211]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="PrivacyPreferenceBtn" type="LinkButton" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalBottom/PrivacyPreferenceCenter" unique_id=661940963]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_focus_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_hover_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 40
+text = "PRIVACY_PREFERENCE"
+
+[node name="OpenSourceLicensesCenter" type="CenterContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalBottom" unique_id=1453624904]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OpenSourceLicensesBtn" type="LinkButton" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalBottom/OpenSourceLicensesCenter" unique_id=474670792]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_focus_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_colors/font_hover_color = Color(0.121569, 0.592157, 1, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 40
+text = "SETTINGS_OPEN_SOURCE_LICENSES"
+
+[node name="VersionMargin" type="MarginContainer" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter" unique_id=668953652]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 16
+
+[node name="Version" type="Label" parent="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/VersionMargin" unique_id=1781951280]
+custom_minimum_size = Vector2(0, 38)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.52549, 0.572549, 0.631373, 1)
+theme_override_fonts/font = ExtResource("13")
+theme_override_font_sizes/font_size = 32
+text = "vx.x.x"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Root/Content/Center/CardRoot/CloseButton" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/MusicToggle/MusicBtn" to="." method="_on_music_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/SoundToggle/SoundBtn" to="." method="_on_sound_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/TogglesMargin/Toggles/VibrationToggle/VibrationBtn" to="." method="_on_vibration_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/GameContent/RestartBtn" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/GameContent/HomeBtn" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/HomeContent/HomeActionsMargin/HomeActions/HelpBtn" to="." method="_on_help_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/HomeContent/HomeActionsMargin/HomeActions/RateBtn" to="." method="_on_rate_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalTop/PrivacyPolicyCenter/PrivacyPolicyBtn" to="." method="_on_privacy_policy_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalTop/TermsCenter/TermsBtn" to="." method="_on_terms_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalBottom/PrivacyPreferenceCenter/PrivacyPreferenceBtn" to="." method="_on_privacy_preference_pressed"]
+[connection signal="pressed" from="Root/Content/Center/CardRoot/Body/HomeContent/LegalFooter/LegalLinksMargin/LegalLinks/LegalBottom/OpenSourceLicensesCenter/OpenSourceLicensesBtn" to="." method="_on_open_source_licenses_pressed"]

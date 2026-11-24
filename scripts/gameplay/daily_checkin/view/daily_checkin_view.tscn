@@ -1,0 +1,475 @@
+[gd_scene load_steps=43 format=3]
+
+[ext_resource type="Script" uid="uid://chfcob8gr3xp5" path="res://scripts/gameplay/daily_checkin/view/daily_checkin_view.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_coin_trail.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://1flbjw1glqca" path="res://assets/sprites/daily_first_win_checkin_sun_cute.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dd530p58kyvvl" path="res://assets/sprites/daily_first_win_checkin_sun_proud_clean.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bswj17nr13tse" path="res://assets/sprites/daily_first_win_checkin_sun_party_clean.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://e8dsxf5ciert" path="res://assets/sprites/daily_first_win_checkin_day_check.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bx25ms83admjg" path="res://assets/sprites/daily_first_win_checkin_day_idle.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dnagco8j8vc5a" path="res://assets/sprites/daily_first_win_checkin_9868c.png" id="8"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_motion_director.tscn" id="9"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_background_motion.tscn" id="10"]
+[ext_resource type="Texture2D" uid="uid://w8a387epxplu" path="res://assets/sprites/daily_first_win_checkin_4ed62.png" id="11"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_background_flow.tscn" id="12"]
+[ext_resource type="Shader" uid="uid://bjnbosbj5o7q0" path="res://assets/shaders/daily_checkin/checkin_background_flow.gdshader" id="13"]
+[ext_resource type="Texture2D" uid="uid://vcup8vqrgtk4" path="res://assets/sprites/daily_first_win_checkin_fa510.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://cat71f745hi6u" path="res://assets/sprites/daily_first_win_checkin_hero_glow.png" id="15"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_fx.tscn" id="16"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_rank_particles.tscn" id="17"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/owl_activation_fx.tscn" id="18"]
+[ext_resource type="Shader" uid="uid://55yp21uxgbu8" path="res://assets/shaders/daily_checkin/spine_viewport_display.gdshader" id="19"]
+[ext_resource type="Shader" uid="uid://u4ybkv4vd2nf" path="res://assets/shaders/daily_checkin/hero_sweep.gdshader" id="20"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_spine_hero.tscn" id="21"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/live_text.tscn" id="22"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="23"]
+[ext_resource type="Texture2D" uid="uid://0o4g3p1xo66" path="res://assets/sprites/daily_first_win_checkin_calendar_panel.png" id="24"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_activation_fx.tscn" id="25"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/check_stamp_rank_burst.tscn" id="26"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/gift_podium_idle.tscn" id="27"]
+[ext_resource type="Texture2D" uid="uid://bgn4k6ouls7qm" path="res://assets/sprites/daily_first_win_checkin_button_green.png" id="28"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_reward_fx.tscn" id="29"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_spine_gift.tscn" id="30"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_spine_coin.tscn" id="31"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_game_coin_hud.tscn" id="32"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_celebration_ripple.tscn" id="33"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_spine_confetti.tscn" id="34"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_rank_confetti_burst.tscn" id="35"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/checkin_confetti_fall.tscn" id="36"]
+[ext_resource type="AudioStream" uid="uid://cuuf53rm1imv7" path="res://assets/audio/check_confirm.ogg" id="37"]
+[ext_resource type="AudioStream" uid="uid://5bebstnieaud" path="res://assets/audio/reward_reveal.mp3" id="38"]
+[ext_resource type="AudioStream" uid="uid://d0cjewwix3tm0" path="res://assets/audio/button.mp3" id="39"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ek512"]
+resource_local_to_scene = true
+shader = ExtResource("13")
+shader_parameter/motion_time = null
+shader_parameter/strength = null
+shader_parameter/sweep_time = null
+shader_parameter/origin_uv = null
+shader_parameter/viewport_aspect = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_q0jjj"]
+resource_local_to_scene = true
+shader = ExtResource("19")
+
+[sub_resource type="ShaderMaterial" id="sweep"]
+shader = ExtResource("20")
+shader_parameter/progress = null
+shader_parameter/strength = null
+
+[node name="DailyCheckinView" type="Control" unique_id=2146313562]
+layout_mode = 3
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+coin_trail_scene = ExtResource("2")
+cute_expression = ExtResource("3")
+proud_expression = ExtResource("4")
+party_expression = ExtResource("5")
+check_texture = ExtResource("6")
+idle_texture = ExtResource("7")
+gift_texture = ExtResource("8")
+
+[node name="MotionDirector" parent="." unique_id=950708261 instance=ExtResource("9")]
+
+[node name="DecorativeBackgroundMotion" parent="." unique_id=1348685772 instance=ExtResource("10")]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1468008517]
+visible = false
+texture = ExtResource("11")
+centered = false
+
+[node name="FullScreenColorFlow" parent="." unique_id=9948639 instance=ExtResource("12")]
+material = SubResource("ShaderMaterial_ek512")
+layout_mode = 0
+
+[node name="FigmaStage" type="Node2D" parent="." unique_id=846355926]
+visible = false
+
+[node name="BottomCloud" type="Sprite2D" parent="FigmaStage" unique_id=64442038]
+position = Vector2(228.5, 2290.5)
+scale = Vector2(0.7988861, 0.7984375)
+texture = ExtResource("14")
+
+[node name="TopCloud" type="Sprite2D" parent="FigmaStage" unique_id=1803590868]
+position = Vector2(1159.5, 111)
+scale = Vector2(0.552599, 0.553125)
+texture = ExtResource("14")
+
+[node name="Ambient" type="Node2D" parent="FigmaStage" unique_id=1096366005]
+
+[node name="HeroGlow" type="Sprite2D" parent="FigmaStage" unique_id=732150099]
+position = Vector2(540, 657)
+texture = ExtResource("15")
+
+[node name="ShootingStar" type="Node2D" parent="FigmaStage" unique_id=12883360]
+
+[node name="ConfettiBehindHero" parent="FigmaStage" unique_id=140703229 instance=ExtResource("16")]
+
+[node name="SunflowerRankParticleFeedback" parent="FigmaStage" unique_id=479810885 instance=ExtResource("17")]
+
+[node name="HeroRig" type="Node2D" parent="FigmaStage" unique_id=1143607573]
+
+[node name="PrimaryActivationLayers" parent="FigmaStage/HeroRig" unique_id=1906252020 instance=ExtResource("18")]
+
+[node name="Expression" type="Sprite2D" parent="FigmaStage/HeroRig" unique_id=799449720]
+material = SubResource("ShaderMaterial_q0jjj")
+texture = ExtResource("4")
+
+[node name="BodyMaskForIdleParticles" type="Sprite2D" parent="FigmaStage/HeroRig" unique_id=1606677965]
+visible = false
+texture = ExtResource("4")
+
+[node name="AlphaMaskedSweep" type="Sprite2D" parent="FigmaStage/HeroRig" unique_id=1120281585]
+material = SubResource("sweep")
+texture = ExtResource("4")
+
+[node name="LiveSpineHero" parent="FigmaStage/HeroRig" unique_id=1836189578 instance=ExtResource("21")]
+
+[node name="DayNumber" parent="FigmaStage" unique_id=1741410087 instance=ExtResource("22")]
+position = Vector2(317, 981)
+font = ExtResource("23")
+font_size = 300
+box_size = Vector2(453, 239)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+outline_size = 9
+glyph_scale = Vector2(0.9375, 0.9396985)
+glyph_offset = Vector2(-4.541, 8.151)
+
+[node name="StreakTitle" parent="FigmaStage" unique_id=1911915372 instance=ExtResource("22")]
+position = Vector2(73, 1252)
+font = ExtResource("23")
+font_size = 100
+box_size = Vector2(934, 104)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+outline_size = 6
+glyph_scale = Vector2(0.9925373, 0.9333333)
+glyph_offset = Vector2(-1.837, 2.003)
+
+[node name="SevenDayCalendar" type="Node2D" parent="FigmaStage" unique_id=1827565316]
+
+[node name="CalendarPanel" type="Sprite2D" parent="FigmaStage/SevenDayCalendar" unique_id=1288867614]
+position = Vector2(540.184, 1548.771)
+scale = Vector2(0.9994207, 0.99844134)
+texture = ExtResource("24")
+
+[node name="TodayCellActivationLayers" parent="FigmaStage/SevenDayCalendar" unique_id=1444521834 instance=ExtResource("25")]
+
+[node name="TodayCheckRankLandingBurst" parent="FigmaStage/SevenDayCalendar" unique_id=1782197425 instance=ExtResource("26")]
+
+[node name="DayLabel1" parent="FigmaStage/SevenDayCalendar" unique_id=1183327572 instance=ExtResource("22")]
+position = Vector2(89.5408, 1460.276)
+font = ExtResource("23")
+font_size = 48
+box_size = Vector2(134.4, 54.6)
+color = Color(0.635, 0.216, 0.102, 1)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+vertical_alignment = 0
+line_height_ratio = 1.0
+glyph_scale = Vector2(1.00625, 1.00625)
+
+[node name="FixedDayGear1" type="Sprite2D" parent="FigmaStage/SevenDayCalendar" unique_id=100010014]
+position = Vector2(156.7408, 1577.351)
+scale = Vector2(0.9990291, 0.9990291)
+texture = ExtResource("7")
+
+[node name="DayIcon1" type="Node2D" parent="FigmaStage/SevenDayCalendar" unique_id=1439396880]
+z_index = 2
+position = Vector2(156.7408, 1577.351)
+
+[node name="DayStateOverlay" type="Sprite2D" parent="FigmaStage/SevenDayCalendar/DayIcon1" unique_id=495662094]
+visible = false
+texture = ExtResource("7")
+
+[node name="DayLabel2" parent="FigmaStage/SevenDayCalendar" unique_id=653560117 instance=ExtResource("22")]
+position = Vector2(217.6408, 1460.276)
+font = ExtResource("23")
+font_size = 48
+box_size = Vector2(134.4, 54.6)
+color = Color(0.635, 0.216, 0.102, 1)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+vertical_alignment = 0
+line_height_ratio = 1.0
+glyph_scale = Vector2(1.00625, 1.00625)
+
+[node name="FixedDayGear2" type="Sprite2D" parent="FigmaStage/SevenDayCalendar" unique_id=444998749]
+position = Vector2(284.8408, 1577.351)
+scale = Vector2(0.9990291, 0.9990291)
+texture = ExtResource("7")
+
+[node name="DayIcon2" type="Node2D" parent="FigmaStage/SevenDayCalendar" unique_id=254633894]
+z_index = 2
+position = Vector2(284.8408, 1577.351)
+
+[node name="DayStateOverlay" type="Sprite2D" parent="FigmaStage/SevenDayCalendar/DayIcon2" unique_id=1533766541]
+visible = false
+texture = ExtResource("7")
+
+[node name="GiftPodiumIdle2" parent="FigmaStage/SevenDayCalendar" unique_id=1756399082 instance=ExtResource("27")]
+
+[node name="DayLabel3" parent="FigmaStage/SevenDayCalendar" unique_id=996228628 instance=ExtResource("22")]
+position = Vector2(345.7408, 1460.276)
+font = ExtResource("23")
+font_size = 48
+box_size = Vector2(134.4, 54.6)
+color = Color(0.635, 0.216, 0.102, 1)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+vertical_alignment = 0
+line_height_ratio = 1.0
+glyph_scale = Vector2(1.00625, 1.00625)
+
+[node name="FixedDayGear3" type="Sprite2D" parent="FigmaStage/SevenDayCalendar" unique_id=689562036]
+position = Vector2(412.9408, 1577.351)
+scale = Vector2(0.9990291, 0.9990291)
+texture = ExtResource("7")
+
+[node name="DayIcon3" type="Node2D" parent="FigmaStage/SevenDayCalendar" unique_id=2070532382]
+z_index = 2
+position = Vector2(412.9408, 1577.351)
+
+[node name="DayStateOverlay" type="Sprite2D" parent="FigmaStage/SevenDayCalendar/DayIcon3" unique_id=506599457]
+visible = false
+texture = ExtResource("7")
+
+[node name="DayLabel4" parent="FigmaStage/SevenDayCalendar" unique_id=861566074 instance=ExtResource("22")]
+position = Vector2(473.8408, 1460.276)
+font = ExtResource("23")
+font_size = 48
+box_size = Vector2(134.4, 54.6)
+color = Color(0.635, 0.216, 0.102, 1)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+vertical_alignment = 0
+line_height_ratio = 1.0
+glyph_scale = Vector2(1.00625, 1.00625)
+
+[node name="FixedDayGear4" type="Sprite2D" parent="FigmaStage/SevenDayCalendar" unique_id=300333786]
+position = Vector2(541.0408, 1577.351)
+scale = Vector2(0.9990291, 0.9990291)
+texture = ExtResource("7")
+
+[node name="DayIcon4" type="Node2D" parent="FigmaStage/SevenDayCalendar" unique_id=1916108526]
+z_index = 2
+position = Vector2(541.0408, 1577.351)
+
+[node name="DayStateOverlay" type="Sprite2D" parent="FigmaStage/SevenDayCalendar/DayIcon4" unique_id=1546521704]
+visible = false
+texture = ExtResource("7")
+
+[node name="GiftPodiumIdle4" parent="FigmaStage/SevenDayCalendar" unique_id=1690425340 instance=ExtResource("27")]
+
+[node name="DayLabel5" parent="FigmaStage/SevenDayCalendar" unique_id=1214355241 instance=ExtResource("22")]
+position = Vector2(601.9408, 1460.276)
+font = ExtResource("23")
+font_size = 48
+box_size = Vector2(134.4, 54.6)
+color = Color(0.635, 0.216, 0.102, 1)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+vertical_alignment = 0
+line_height_ratio = 1.0
+glyph_scale = Vector2(1.00625, 1.00625)
+
+[node name="FixedDayGear5" type="Sprite2D" parent="FigmaStage/SevenDayCalendar" unique_id=1997830009]
+position = Vector2(669.1408, 1577.351)
+scale = Vector2(0.9990291, 0.9990291)
+texture = ExtResource("7")
+
+[node name="DayIcon5" type="Node2D" parent="FigmaStage/SevenDayCalendar" unique_id=1106127963]
+z_index = 2
+position = Vector2(669.1408, 1577.351)
+
+[node name="DayStateOverlay" type="Sprite2D" parent="FigmaStage/SevenDayCalendar/DayIcon5" unique_id=402337793]
+visible = false
+texture = ExtResource("7")
+
+[node name="DayLabel6" parent="FigmaStage/SevenDayCalendar" unique_id=1064143799 instance=ExtResource("22")]
+position = Vector2(730.0408, 1460.276)
+font = ExtResource("23")
+font_size = 48
+box_size = Vector2(134.4, 54.6)
+color = Color(0.635, 0.216, 0.102, 1)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+vertical_alignment = 0
+line_height_ratio = 1.0
+glyph_scale = Vector2(1.00625, 1.00625)
+
+[node name="FixedDayGear6" type="Sprite2D" parent="FigmaStage/SevenDayCalendar" unique_id=974523154]
+position = Vector2(797.2408, 1577.351)
+scale = Vector2(0.9990291, 0.9990291)
+texture = ExtResource("7")
+
+[node name="DayIcon6" type="Node2D" parent="FigmaStage/SevenDayCalendar" unique_id=175969999]
+z_index = 2
+position = Vector2(797.2408, 1577.351)
+
+[node name="DayStateOverlay" type="Sprite2D" parent="FigmaStage/SevenDayCalendar/DayIcon6" unique_id=1977582040]
+visible = false
+texture = ExtResource("7")
+
+[node name="DayLabel7" parent="FigmaStage/SevenDayCalendar" unique_id=1113664432 instance=ExtResource("22")]
+position = Vector2(858.1408, 1460.276)
+font = ExtResource("23")
+font_size = 48
+box_size = Vector2(134.4, 54.6)
+color = Color(0.635, 0.216, 0.102, 1)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+vertical_alignment = 0
+line_height_ratio = 1.0
+glyph_scale = Vector2(1.00625, 1.00625)
+
+[node name="FixedDayGear7" type="Sprite2D" parent="FigmaStage/SevenDayCalendar" unique_id=939956032]
+position = Vector2(925.3408, 1577.351)
+scale = Vector2(0.9990291, 0.9990291)
+texture = ExtResource("7")
+
+[node name="DayIcon7" type="Node2D" parent="FigmaStage/SevenDayCalendar" unique_id=421110850]
+z_index = 2
+position = Vector2(925.3408, 1577.351)
+
+[node name="DayStateOverlay" type="Sprite2D" parent="FigmaStage/SevenDayCalendar/DayIcon7" unique_id=185258439]
+visible = false
+texture = ExtResource("7")
+
+[node name="GiftPodiumIdle7" parent="FigmaStage/SevenDayCalendar" unique_id=2123982723 instance=ExtResource("27")]
+
+[node name="RewardCellVisualProxy" type="Node2D" parent="FigmaStage/SevenDayCalendar" unique_id=87711589]
+visible = false
+
+[node name="GiftVisual" type="Sprite2D" parent="FigmaStage/SevenDayCalendar/RewardCellVisualProxy" unique_id=461325445]
+
+[node name="Encouragement" parent="FigmaStage" unique_id=1565777350 instance=ExtResource("22")]
+position = Vector2(50, 1758)
+font = ExtResource("23")
+box_size = Vector2(981, 52)
+outline_color = Color(0.176, 0.337, 0.055, 1)
+outline_size = 3
+vertical_alignment = 0
+line_height_ratio = 1.16
+
+[node name="ContinueRig" type="Node2D" parent="FigmaStage" unique_id=792835702]
+position = Vector2(160, 1858.551)
+
+[node name="OriginalFigmaButtonArt" type="Sprite2D" parent="FigmaStage/ContinueRig" unique_id=93796702]
+position = Vector2(380, 100)
+texture = ExtResource("28")
+
+[node name="LiveButtonCaption" parent="FigmaStage/ContinueRig" unique_id=110749672 instance=ExtResource("22")]
+font = ExtResource("23")
+font_size = 102
+box_size = Vector2(760, 176)
+outline_color = Color(0, 0, 0, 0.4)
+outline_size = 3
+glyph_scale = Vector2(0.9621212, 0.9142857)
+glyph_offset = Vector2(-1.386, -10)
+
+[node name="ContinueButton" type="Button" parent="FigmaStage/ContinueRig" unique_id=1973852506]
+offset_right = 760.0
+offset_bottom = 176.0
+focus_mode = 0
+disabled = true
+flat = true
+
+[node name="TransientFX" parent="FigmaStage" unique_id=1145773610 instance=ExtResource("16")]
+
+[node name="EarnedCoinsOverlay" type="Node2D" parent="FigmaStage" unique_id=1374279627]
+visible = false
+z_index = 20
+
+[node name="Veil" type="ColorRect" parent="FigmaStage/EarnedCoinsOverlay" unique_id=911786609]
+mouse_filter = 2
+color = Color(0.06, 0.045, 0.1, 0.78)
+
+[node name="Card" type="Node2D" parent="FigmaStage/EarnedCoinsOverlay" unique_id=1700154395]
+position = Vector2(540, 1100)
+
+[node name="RewardFx" parent="FigmaStage/EarnedCoinsOverlay/Card" unique_id=2138595741 instance=ExtResource("29")]
+
+[node name="Title" parent="FigmaStage/EarnedCoinsOverlay/Card" unique_id=878166539 instance=ExtResource("22")]
+position = Vector2(-450, -570)
+font = ExtResource("23")
+font_size = 110
+box_size = Vector2(900, 120)
+outline_color = Color(0.855, 0.533, 0.078, 1)
+outline_size = 4
+
+[node name="Aura" type="Sprite2D" parent="FigmaStage/EarnedCoinsOverlay/Card" unique_id=628167849]
+modulate = Color(1, 0.92, 0.38, 1)
+position = Vector2(0, -70)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("15")
+
+[node name="Gift" parent="FigmaStage/EarnedCoinsOverlay/Card" unique_id=1048114145 instance=ExtResource("30")]
+position = Vector2(0, 40)
+
+[node name="Coin" parent="FigmaStage/EarnedCoinsOverlay/Card" unique_id=981423987 instance=ExtResource("31")]
+position = Vector2(0, -325)
+
+[node name="Number" parent="FigmaStage/EarnedCoinsOverlay/Card" unique_id=2137680302 instance=ExtResource("22")]
+position = Vector2(-380, 385)
+font = ExtResource("23")
+font_size = 145
+box_size = Vector2(760, 150)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+outline_size = 9
+
+[node name="Hint" parent="FigmaStage/EarnedCoinsOverlay" unique_id=1082979158 instance=ExtResource("22")]
+position = Vector2(200, 2145)
+font = ExtResource("23")
+font_size = 48
+box_size = Vector2(680, 90)
+outline_color = Color(0.65, 0.22, 0.1, 1)
+
+[node name="Hit" type="Button" parent="FigmaStage/EarnedCoinsOverlay" unique_id=1711391848]
+modulate = Color(1, 1, 1, 0)
+focus_mode = 0
+disabled = true
+flat = true
+
+[node name="GameCoinHud" parent="FigmaStage" unique_id=30868152 instance=ExtResource("32")]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 762.0
+offset_top = 38.0
+offset_right = 1032.0
+offset_bottom = 154.0
+
+[node name="CelebrationAfterglowRipple" parent="FigmaStage" unique_id=1772170985 instance=ExtResource("33")]
+
+[node name="ScreenAnchoredSpineConfetti" parent="FigmaStage" unique_id=1733034080 instance=ExtResource("34")]
+
+[node name="RankHornInstantConfetti" parent="FigmaStage" unique_id=1510661150 instance=ExtResource("35")]
+
+[node name="CelebrationIdleConfettiFall" parent="FigmaStage" unique_id=1401785751 instance=ExtResource("36")]
+
+[node name="Audio" type="Node" parent="." unique_id=326711817]
+
+[node name="Sound1" type="AudioStreamPlayer" parent="Audio" unique_id=398891015]
+stream = ExtResource("37")
+volume_db = -8.0
+
+[node name="Sound2" type="AudioStreamPlayer" parent="Audio" unique_id=2019136614]
+stream = ExtResource("38")
+volume_db = -8.0
+
+[node name="Sound3" type="AudioStreamPlayer" parent="Audio" unique_id=1213201078]
+stream = ExtResource("39")
+volume_db = -8.0
+
+[connection signal="completed" from="MotionDirector" to="." method="_on_complete"]
+[connection signal="meteor_due" from="DecorativeBackgroundMotion" to="." method="_shooting_star"]
+[connection signal="activation_settled" from="FigmaStage/HeroRig/PrimaryActivationLayers" to="." method="_start_sunflower_idle"]
+[connection signal="expression_swap_requested" from="FigmaStage/HeroRig/PrimaryActivationLayers" to="." method="_swap_expression_at_peak"]
+[connection signal="slam_landed" from="FigmaStage/HeroRig/PrimaryActivationLayers" to="." method="_on_sunflower_slam"]
+[connection signal="celebration_core_finished" from="FigmaStage/HeroRig/LiveSpineHero" to="." method="_on_celebration_core_finished"]
+[connection signal="celebration_started" from="FigmaStage/HeroRig/LiveSpineHero" to="." method="_on_celebration_focus_started"]
+[connection signal="button_down" from="FigmaStage/ContinueRig/ContinueButton" to="." method="_on_ok_down"]
+[connection signal="button_up" from="FigmaStage/ContinueRig/ContinueButton" to="." method="_on_ok_up"]
+[connection signal="pressed" from="FigmaStage/ContinueRig/ContinueButton" to="." method="_on_continue_pressed"]
+[connection signal="opening_sound_cued" from="FigmaStage/EarnedCoinsOverlay/Card/Gift" to="." method="_on_gift_opening_sound_cued"]
+[connection signal="reward_revealed" from="FigmaStage/EarnedCoinsOverlay/Card/Gift" to="." method="_on_gift_reward_revealed"]
+[connection signal="pressed" from="FigmaStage/EarnedCoinsOverlay/Hit" to="." method="dismiss_reward"]

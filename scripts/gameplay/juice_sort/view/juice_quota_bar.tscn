@@ -1,0 +1,91 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" uid="uid://qj5k70ulyt55" path="res://scripts/gameplay/juice_sort/view/juice_quota_bar.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://f2rdh87ngvmj" path="res://assets/sprites/juice_sort/quota_count_tab.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://g453sjx1ujj8" path="res://assets/sprites/juice_sort/quota_bar_bg.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://d02cxje123cue" path="res://assets/sprites/juice_sort/quota_slot_empty.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ded1kvn5wgo74" path="res://assets/effect/texture/glow/ef_ring_001.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://b85jredv7edsn" path="res://assets/sprites/game_iq_quota_frame.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://chd1qa7y0rkog" path="res://assets/sprites/game_iq_count_tab.png" id="7"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="8"]
+[ext_resource type="Texture2D" uid="uid://bbcm6aomm6a8" path="res://assets/sprites/juice_sort/progress_pot_board.png" id="9"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/juice_sort/view/juice_rules_bar.tscn" id="10"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tab"]
+texture = ExtResource("2")
+texture_margin_left = 65.0
+texture_margin_right = 65.0
+region_rect = Rect2(0, 0, 131, 62)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_panel"]
+texture = ExtResource("3")
+texture_margin_left = 69.0
+texture_margin_right = 70.0
+region_rect = Rect2(0, 0, 140, 169)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iq_tab"]
+atlas = ExtResource("6")
+region = Rect2(258, 0, 492, 64)
+
+[node name="JuiceQuotaBar" type="Control" unique_id=1000896726]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1056.0
+offset_bottom = 274.0
+mouse_filter = 2
+script = ExtResource("1")
+tab_style = SubResource("StyleBoxTexture_tab")
+panel_style = SubResource("StyleBoxTexture_panel")
+slot_empty_texture = ExtResource("4")
+cup_ring_texture = ExtResource("5")
+
+[node name="IqTab" type="TextureRect" parent="." unique_id=606857738]
+visible = false
+layout_mode = 0
+offset_left = 282.0
+offset_top = 9.0
+offset_right = 774.0
+offset_bottom = 73.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_iq_tab")
+expand_mode = 1
+
+[node name="BottomCountTab" type="TextureRect" parent="." unique_id=1492043137]
+visible = false
+layout_mode = 0
+offset_left = 443.5
+offset_top = 228.0
+offset_right = 588.5
+offset_bottom = 281.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+
+[node name="Count" type="Label" parent="." unique_id=1980134117]
+z_index = 1
+layout_mode = 0
+offset_left = 406.0
+offset_top = 2.0
+offset_right = 602.0
+offset_bottom = 70.6
+theme_override_colors/font_color = Color(0.435, 0.196, 0.051, 1)
+theme_override_fonts/font = ExtResource("8")
+theme_override_font_sizes/font_size = 56
+text = "0/12"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgressPotBoard" type="NinePatchRect" parent="." unique_id=620051146]
+z_index = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = 204.0
+offset_right = 1060.0
+offset_bottom = 256.0
+texture = ExtResource("9")
+patch_margin_left = 31
+patch_margin_right = 31
+
+[node name="RulesBar" parent="." unique_id=107863773 instance=ExtResource("10")]
+visible = false
+anchors_preset = 0

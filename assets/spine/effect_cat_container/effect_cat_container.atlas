@@ -1,0 +1,146 @@
+effect_cat_container.png
+size:788,1504
+format:RGBA8888
+filter:Linear,Linear
+repeat:none
+pma:false
+pen_orange
+  rotate:false
+  xy:622,923
+  size:162,127
+  orig:180,187
+  offset:10,29
+  index:-1
+flower_orange
+  rotate:false
+  xy:2,2
+  size:308,300
+  orig:320,320
+  offset:0,0
+  index:-1
+pen_red
+  rotate:false
+  xy:622,793
+  size:162,128
+  orig:180,187
+  offset:9,29
+  index:-1
+flower_red
+  rotate:false
+  xy:312,2
+  size:308,300
+  orig:320,320
+  offset:0,0
+  index:-1
+pen_green
+  rotate:false
+  xy:622,1052
+  size:161,130
+  orig:180,187
+  offset:10,29
+  index:-1
+flower_green
+  rotate:false
+  xy:2,304
+  size:308,300
+  orig:320,320
+  offset:0,0
+  index:-1
+pen_purple
+  rotate:false
+  xy:622,267
+  size:163,130
+  orig:180,187
+  offset:9,28
+  index:-1
+flower_purple
+  rotate:false
+  xy:312,1210
+  size:307,291
+  orig:320,319
+  offset:0,9
+  index:-1
+pen_cyan
+  rotate:false
+  xy:622,529
+  size:162,130
+  orig:180,187
+  offset:9,24
+  index:-1
+flower_cyan
+  rotate:false
+  xy:2,1210
+  size:308,291
+  orig:319,320
+  offset:0,9
+  index:-1
+pen_pink
+  rotate:false
+  xy:622,1184
+  size:161,129
+  orig:180,187
+  offset:9,26
+  index:-1
+flower_pink
+  rotate:false
+  xy:312,304
+  size:308,300
+  orig:320,320
+  offset:0,0
+  index:-1
+pen_teal
+  rotate:false
+  xy:622,661
+  size:162,130
+  orig:180,187
+  offset:9,25
+  index:-1
+flower_teal
+  rotate:false
+  xy:2,606
+  size:308,300
+  orig:320,320
+  offset:0,0
+  index:-1
+pen_lavender
+  rotate:false
+  xy:622,135
+  size:164,130
+  orig:180,187
+  offset:8,25
+  index:-1
+flower_lavender
+  rotate:false
+  xy:312,606
+  size:308,300
+  orig:320,320
+  offset:0,0
+  index:-1
+pen_yellow
+  rotate:false
+  xy:622,399
+  size:163,128
+  orig:180,187
+  offset:8,25
+  index:-1
+flower_yellow
+  rotate:false
+  xy:2,908
+  size:308,300
+  orig:320,320
+  offset:0,0
+  index:-1
+pen_blue
+  rotate:false
+  xy:622,2
+  size:164,131
+  orig:180,187
+  offset:8,23
+  index:-1
+flower_blue
+  rotate:false
+  xy:312,908
+  size:308,300
+  orig:320,320
+  offset:0,0
+  index:-1

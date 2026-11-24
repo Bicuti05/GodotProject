@@ -1,0 +1,497 @@
+[gd_scene load_steps=40 format=3]
+
+[ext_resource type="Script" uid="uid://btgdk3tijpxdl" path="res://scripts/gameplay/juice_sort/view/progress_bling.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://b7ywmkn4cpoi1" path="res://assets/effect/texture/progress_bling/normal_red.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c2w1orpkjxutm" path="res://assets/effect/texture/progress_bling/normal_purple.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://cd1iamswniaue" path="res://assets/effect/texture/progress_bling/normal_pink.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://2p6emlkrp0t7" path="res://assets/effect/texture/progress_bling/normal_cyan.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bxhjyue2mr2ma" path="res://assets/effect/texture/progress_bling/normal_yellow.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://byd0ytowdwiq5" path="res://assets/effect/texture/progress_bling/normal_green.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cpt3fv17kto8m" path="res://assets/effect/texture/progress_bling/normal_blue.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://0y4l64yuv3os" path="res://assets/effect/texture/progress_bling/normal_teal.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://p02e3ii4m8y4" path="res://assets/effect/texture/progress_bling/normal_orange.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://dsesdi8v7iioc" path="res://assets/effect/texture/progress_bling/normal_lavender.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://e6nf23bhjowj" path="res://assets/effect/texture/progress_bling/normal_violet.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://0svciskkkji3" path="res://assets/effect/texture/progress_bling/normal_lime.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://c7a1qois6f7tk" path="res://assets/effect/texture/progress_bling/excellent_target_effect_color.png" id="14"]
+[ext_resource type="Shader" uid="uid://bf66gujleda2g" path="res://assets/effect/shader/progress_bling_particle_match.gdshader" id="15"]
+[ext_resource type="Shader" uid="uid://wsfjenq5fhfb" path="res://assets/effect/shader/progress_bling.gdshader" id="16"]
+[ext_resource type="Texture2D" uid="uid://bjkpk6og43kxo" path="res://assets/effect/texture/progress_bling/mask_outer.png" id="17"]
+[ext_resource type="Shader" uid="uid://bkw38o824gtpf" path="res://assets/effect/shader/progress_bling_impact_ripples.gdshader" id="18"]
+[ext_resource type="Texture2D" uid="uid://dvaxyolgkaf0a" path="res://assets/effect/texture/progress_bling/unity_frame.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://ct4n6ic4mfcic" path="res://assets/effect/texture/progress_bling/ripple_elements/particle_dot.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://ddutkbticg73a" path="res://assets/effect/texture/progress_bling/ripple_elements/particle_star.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://23poiuhre2xj" path="res://assets/effect/texture/progress_bling/ripple_elements/particle_flower.png" id="22"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ojl00"]
+resource_local_to_scene = true
+shader = ExtResource("15")
+shader_parameter/color_texture = ExtResource("2")
+shader_parameter/effect_origin = null
+shader_parameter/effect_scale = null
+shader_parameter/color_center = null
+shader_parameter/color_size = null
+shader_parameter/angle = 0.0
+shader_parameter/effect_color = null
+shader_parameter/use_color_texture = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u8epp"]
+resource_local_to_scene = true
+shader = ExtResource("16")
+shader_parameter/color_texture = null
+shader_parameter/angle = 0.0
+shader_parameter/color_center = null
+shader_parameter/color_size = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qjj4f"]
+resource_local_to_scene = true
+shader = ExtResource("16")
+shader_parameter/color_texture = null
+shader_parameter/angle = 0.0
+shader_parameter/color_center = null
+shader_parameter/color_size = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ip1ux"]
+resource_local_to_scene = true
+shader = ExtResource("16")
+shader_parameter/color_texture = null
+shader_parameter/angle = 0.0
+shader_parameter/color_center = null
+shader_parameter/color_size = null
+
+[sub_resource type="Animation" id="Animation_bling"]
+resource_name = "bling"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Root/Glow:material:shader_parameter/angle")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.283]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Root/Soft:material:shader_parameter/angle")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.283]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Root/Border:material:shader_parameter/angle")
+tracks/2/interp = 1
+tracks/2/loop_wrap = false
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.283]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Root:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = false
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.15, 0.2, 1.7, 1.75, 1.8, 1.85, 1.9, 1.95, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.15625, 0.5, 0.84375, 1.0, 1.0, 0.92592593, 0.74074074, 0.5, 0.25925926, 0.07407407, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("ParticleRoot/Stars:material:shader_parameter/angle")
+tracks/4/interp = 1
+tracks/4/loop_wrap = false
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 6.283]
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = false
+tracks/5/keys = {
+"times": PackedFloat32Array(0.11111111, 0.22762592, 0.32536402, 0.45079377, 0.55416095, 0.6623741),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"_emit_small_star"
+}, {
+"args": [],
+"method": &"_emit_small_star"
+}, {
+"args": [],
+"method": &"_emit_small_star"
+}, {
+"args": [],
+"method": &"_emit_small_star"
+}, {
+"args": [],
+"method": &"_emit_small_star"
+}, {
+"args": [],
+"method": &"_emit_small_star"
+}]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath(".")
+tracks/6/interp = 1
+tracks/6/loop_wrap = false
+tracks/6/keys = {
+"times": PackedFloat32Array(0.25555557, 0.31651482, 0.35869735, 0.42857155, 0.47638315, 0.52904075, 0.5966141, 0.6373439, 0.7027465, 0.75860554, 0.8038665, 0.87430096),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}, {
+"args": [],
+"method": &"_emit_large_star"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="Library_bling"]
+_data = {
+&"bling": SubResource("Animation_bling")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4hs3g"]
+resource_local_to_scene = true
+shader = ExtResource("18")
+shader_parameter/frame_texture = ExtResource("19")
+shader_parameter/body_size = null
+shader_parameter/padding = null
+shader_parameter/progress = 0.0
+shader_parameter/expansion_pixels = null
+shader_parameter/ripple_color = Color(0.980392, 0.172549, 0.180392, 1)
+shader_parameter/use_color_texture = null
+shader_parameter/color_texture = null
+shader_parameter/color_center = null
+shader_parameter/color_size = null
+shader_parameter/body_origin = null
+shader_parameter/angle = null
+
+[sub_resource type="Gradient" id="AddedStarAlpha"]
+offsets = PackedFloat32Array(0, 0.12, 0.5, 0.8, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="AddedStarRamp"]
+gradient = SubResource("AddedStarAlpha")
+
+[sub_resource type="Curve" id="AddedStarSizeCurve"]
+_limits = [-4.0, 4.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.4, 1), 0.0, 0.0, 0, 0, Vector2(0.8, 0.6), 0.0, 0.0, 0, 0, Vector2(1, 0.55), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="AddedStarSize"]
+curve = SubResource("AddedStarSizeCurve")
+
+[sub_resource type="ParticleProcessMaterial" id="AddedstardotProcess"]
+lifetime_randomness = 0.2
+particle_flag_disable_z = true
+angle_min = -44.999996
+angle_max = -44.999996
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = -50.0
+angular_velocity_max = 179.99998
+gravity = Vector3(0, 0, 0)
+scale_min = 0.19375
+scale_max = 0.19375
+scale_curve = SubResource("AddedStarSize")
+color_ramp = SubResource("AddedStarRamp")
+
+[sub_resource type="ParticleProcessMaterial" id="AddedstarstarProcess"]
+lifetime_randomness = 0.2
+particle_flag_disable_z = true
+angle_min = -44.999996
+angle_max = -44.999996
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = -50.0
+angular_velocity_max = 179.99998
+gravity = Vector3(0, 0, 0)
+scale_min = 0.4359375
+scale_max = 0.4359375
+scale_curve = SubResource("AddedStarSize")
+color_ramp = SubResource("AddedStarRamp")
+
+[sub_resource type="ParticleProcessMaterial" id="AddedstarflowerProcess"]
+lifetime_randomness = 0.2
+particle_flag_disable_z = true
+angle_min = -44.999996
+angle_max = -44.999996
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = -50.0
+angular_velocity_max = 179.99998
+gravity = Vector3(0, 0, 0)
+scale_min = 0.329375
+scale_max = 0.329375
+scale_curve = SubResource("AddedStarSize")
+color_ramp = SubResource("AddedStarRamp")
+
+[sub_resource type="ParticleProcessMaterial" id="Addedstar_1dotProcess"]
+lifetime_randomness = 0.2
+particle_flag_disable_z = true
+angle_min = -44.999996
+angle_max = -44.999996
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = -50.0
+angular_velocity_max = 179.99998
+gravity = Vector3(0, 0, 0)
+scale_min = 0.109375
+scale_max = 0.109375
+scale_curve = SubResource("AddedStarSize")
+color_ramp = SubResource("AddedStarRamp")
+
+[sub_resource type="ParticleProcessMaterial" id="Addedstar_1starProcess"]
+lifetime_randomness = 0.2
+particle_flag_disable_z = true
+angle_min = -44.999996
+angle_max = -44.999996
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = -50.0
+angular_velocity_max = 179.99998
+gravity = Vector3(0, 0, 0)
+scale_min = 0.24609375
+scale_max = 0.24609375
+scale_curve = SubResource("AddedStarSize")
+color_ramp = SubResource("AddedStarRamp")
+
+[sub_resource type="ParticleProcessMaterial" id="Addedstar_1flowerProcess"]
+lifetime_randomness = 0.2
+particle_flag_disable_z = true
+angle_min = -44.999996
+angle_max = -44.999996
+direction = Vector3(0, 0, 0)
+spread = 0.0
+angular_velocity_min = -50.0
+angular_velocity_max = 179.99998
+gravity = Vector3(0, 0, 0)
+scale_min = 0.1859375
+scale_max = 0.1859375
+scale_curve = SubResource("AddedStarSize")
+color_ramp = SubResource("AddedStarRamp")
+
+[node name="ProgressBling" type="Control" unique_id=780694736]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+normal_textures = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("8"), ExtResource("9"), ExtResource("10"), ExtResource("11"), ExtResource("12"), ExtResource("13")]
+excellent_texture = ExtResource("14")
+particle_match_material = SubResource("ShaderMaterial_ojl00")
+
+[node name="Root" type="Control" parent="." unique_id=726506344]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Glow" type="NinePatchRect" parent="Root" unique_id=1166609239]
+self_modulate = Color(1, 1, 1, 0.08)
+material = SubResource("ShaderMaterial_u8epp")
+layout_mode = 0
+texture = ExtResource("17")
+patch_margin_left = 80
+patch_margin_top = 80
+patch_margin_right = 80
+
+[node name="Soft" type="NinePatchRect" parent="Root" unique_id=1543521684]
+self_modulate = Color(1, 1, 1, 0.16)
+material = SubResource("ShaderMaterial_qjj4f")
+layout_mode = 0
+texture = ExtResource("17")
+patch_margin_left = 80
+patch_margin_top = 80
+patch_margin_right = 80
+
+[node name="Border" type="NinePatchRect" parent="Root" unique_id=1729416536]
+material = SubResource("ShaderMaterial_ip1ux")
+layout_mode = 0
+texture = ExtResource("17")
+patch_margin_left = 80
+patch_margin_top = 80
+patch_margin_right = 80
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=658617667]
+callback_mode_method = 1
+libraries/ = SubResource("Library_bling")
+
+[node name="ImpactRipples" type="ColorRect" parent="." unique_id=1612144461]
+visible = false
+material = SubResource("ShaderMaterial_4hs3g")
+layout_mode = 0
+mouse_filter = 2
+
+[node name="ParticleRoot" type="Node2D" parent="." unique_id=736641883]
+
+[node name="Stars" type="Node2D" parent="ParticleRoot" unique_id=1164958388]
+material = SubResource("ShaderMaterial_ojl00")
+
+[node name="Dot" type="GPUParticles2D" parent="ParticleRoot/Stars" unique_id=225943305]
+visible = false
+z_index = 2
+material = SubResource("ShaderMaterial_ojl00")
+emitting = false
+amount = 4
+texture = ExtResource("20")
+lifetime = 1.35
+one_shot = true
+speed_scale = 1.5
+use_fixed_seed = true
+seed = 2312
+visibility_rect = Rect2(-900, -400, 1800, 800)
+local_coords = true
+process_material = SubResource("AddedstardotProcess")
+
+[node name="Star" type="GPUParticles2D" parent="ParticleRoot/Stars" unique_id=137208368]
+visible = false
+z_index = 2
+material = SubResource("ShaderMaterial_ojl00")
+emitting = false
+amount = 4
+texture = ExtResource("21")
+lifetime = 1.35
+one_shot = true
+speed_scale = 1.5
+use_fixed_seed = true
+seed = 2312
+visibility_rect = Rect2(-900, -400, 1800, 800)
+local_coords = true
+process_material = SubResource("AddedstarstarProcess")
+
+[node name="Flower" type="GPUParticles2D" parent="ParticleRoot/Stars" unique_id=1941500990]
+visible = false
+z_index = 2
+material = SubResource("ShaderMaterial_ojl00")
+emitting = false
+amount = 4
+texture = ExtResource("22")
+lifetime = 1.35
+one_shot = true
+speed_scale = 1.5
+use_fixed_seed = true
+seed = 2312
+visibility_rect = Rect2(-900, -400, 1800, 800)
+local_coords = true
+process_material = SubResource("AddedstarflowerProcess")
+
+[node name="SmallStars" type="Node2D" parent="ParticleRoot" unique_id=608933403]
+material = SubResource("ShaderMaterial_ojl00")
+
+[node name="Dot" type="GPUParticles2D" parent="ParticleRoot/SmallStars" unique_id=1181391212]
+visible = false
+z_index = 2
+material = SubResource("ShaderMaterial_ojl00")
+emitting = false
+amount = 2
+texture = ExtResource("20")
+lifetime = 1.8
+one_shot = true
+speed_scale = 1.5
+use_fixed_seed = true
+seed = 2312
+visibility_rect = Rect2(-900, -400, 1800, 800)
+local_coords = true
+process_material = SubResource("Addedstar_1dotProcess")
+
+[node name="Star" type="GPUParticles2D" parent="ParticleRoot/SmallStars" unique_id=839250732]
+visible = false
+z_index = 2
+material = SubResource("ShaderMaterial_ojl00")
+emitting = false
+amount = 2
+texture = ExtResource("21")
+lifetime = 1.8
+one_shot = true
+speed_scale = 1.5
+use_fixed_seed = true
+seed = 2312
+visibility_rect = Rect2(-900, -400, 1800, 800)
+local_coords = true
+process_material = SubResource("Addedstar_1starProcess")
+
+[node name="Flower" type="GPUParticles2D" parent="ParticleRoot/SmallStars" unique_id=1345149197]
+visible = false
+z_index = 2
+material = SubResource("ShaderMaterial_ojl00")
+emitting = false
+amount = 2
+texture = ExtResource("22")
+lifetime = 1.8
+one_shot = true
+speed_scale = 1.5
+use_fixed_seed = true
+seed = 2312
+visibility_rect = Rect2(-900, -400, 1800, 800)
+local_coords = true
+process_material = SubResource("Addedstar_1flowerProcess")
+
+[node name="PreviewTimer" type="Timer" parent="." unique_id=964092262]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]
+[connection signal="timeout" from="PreviewTimer" to="." method="_on_preview_timeout"]

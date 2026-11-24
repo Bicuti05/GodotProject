@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" uid="uid://cn74trwg27hxf" path="res://scripts/gameplay/daily_checkin/view/checkin_rank_particles.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://wxyd78er7nja" path="res://assets/effect/texture/bonus/et_star_701.png" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/check_stamp_rank_burst.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/daily_checkin/view/gift_podium_idle.tscn" id="4"]
+
+[node name="checkin_rank_particles" type="Node2D" unique_id=1207658624]
+script = ExtResource("1")
+combined_star = ExtResource("2")
+
+[node name="SunflowerConfirmedCollectionBurst" parent="." unique_id=111762596 instance=ExtResource("3")]
+
+[node name="SunflowerPodiumGiftIdle" parent="." unique_id=136651291 instance=ExtResource("4")]

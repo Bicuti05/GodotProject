@@ -1,0 +1,104 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" uid="uid://5dx1m0a7jfdm" path="res://scripts/main/pages/game/streak_roll_number.gd" id="1"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="2"]
+[ext_resource type="Shader" uid="uid://usj0s802g0oi" path="res://assets/shaders/streak_number_gradient.gdshader" id="3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p2row"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/grad_top = Color(1, 0.402799, 0.11859, 1)
+shader_parameter/grad_bottom = Color(1, 0.402799, 0.11859, 1)
+shader_parameter/box_origin = Vector2(0, 0)
+shader_parameter/box_size = Vector2(270, 272)
+shader_parameter/grad_dir = Vector2(0, 1)
+shader_parameter/grad_from = 0.0
+shader_parameter/grad_to = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1rgda"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/grad_top = Color(1, 0.402799, 0.11859, 1)
+shader_parameter/grad_bottom = Color(1, 0.402799, 0.11859, 1)
+shader_parameter/box_origin = Vector2(0, 0)
+shader_parameter/box_size = Vector2(270, 272)
+shader_parameter/grad_dir = Vector2(0, 1)
+shader_parameter/grad_from = 0.0
+shader_parameter/grad_to = 1.0
+
+[node name="StreakRollNumber" type="Control" unique_id=748651654]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="FromShadow" type="Label" parent="." unique_id=1277332821]
+layout_mode = 1
+offset_right = 240.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0.737255, 0.427451, 0.180392, 1)
+theme_override_colors/font_outline_color = Color(0.737255, 0.427451, 0.180392, 1)
+theme_override_constants/outline_size = 43
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 228
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ToShadow" type="Label" parent="." unique_id=414055703]
+layout_mode = 1
+offset_right = 240.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0.737255, 0.427451, 0.180392, 1)
+theme_override_colors/font_outline_color = Color(0.737255, 0.427451, 0.180392, 1)
+theme_override_constants/outline_size = 43
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 228
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FromOutline" type="Label" parent="." unique_id=867625135]
+layout_mode = 1
+offset_right = 240.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(1, 1, 1, 0)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 43
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 228
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ToOutline" type="Label" parent="." unique_id=530533160]
+layout_mode = 1
+offset_right = 240.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(1, 1, 1, 0)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 43
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 228
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="From" type="Label" parent="." unique_id=110543530]
+material = SubResource("ShaderMaterial_p2row")
+layout_mode = 1
+offset_right = 240.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 228
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="To" type="Label" parent="." unique_id=1865551194]
+material = SubResource("ShaderMaterial_1rgda")
+layout_mode = 1
+offset_right = 240.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2")
+theme_override_font_sizes/font_size = 228
+horizontal_alignment = 1
+vertical_alignment = 1

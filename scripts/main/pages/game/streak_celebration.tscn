@@ -1,0 +1,448 @@
+[gd_scene load_steps=31 format=3 uid="uid://dg6n4533bxv82"]
+
+[ext_resource type="Script" uid="uid://cd1yvgp3nyg6e" path="res://scripts/main/pages/game/streak_celebration.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://jgh270hy0brw" path="res://assets/sprites/finish/reward_glow_rays.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://c4wrtfqmhxw4u" path="res://assets/sprites/finish/reward_glow_core.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bqapb4uhi1m6x" path="res://assets/sprites/juice_sort/streak/cloud_figma.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cfiroa0cm3glc" path="res://assets/sprites/juice_sort/streak_ellipse_glow.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://7jmrr0ld3lvd" path="res://assets/sprites/juice_sort/streak/figma_20261029/leaf_left.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cg4rg0gkg6gaa" path="res://assets/sprites/juice_sort/streak/figma_20261029/leaf_center.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://u82okjuwd2xi" path="res://assets/sprites/juice_sort/streak/figma_20261029/leaf_upper_left.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://cdb04syxc3y4s" path="res://assets/sprites/juice_sort/streak/figma_20261029/leaf_right.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://wao4f1uwhk8k" path="res://assets/sprites/juice_sort/streak/figma_20261029/leaf_upper_right.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://bbodj2qbp4cwr" path="res://assets/sprites/juice_sort/streak/figma_20261029/flower_blue.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://cjrabe512trxp" path="res://assets/sprites/juice_sort/streak/figma_20261029/flower_orange.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://b7kull8ahvt65" path="res://assets/sprites/juice_sort/streak/figma_20261029/flower_pink.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://cvsxe6rc4swgq" path="res://assets/sprites/juice_sort/streak/figma_20261029/trophy_body.png" id="14"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="15"]
+[ext_resource type="Script" uid="uid://nt1s0u2qanoc" path="res://scripts/widget/curve_label/curve_label.gd" id="16"]
+[ext_resource type="Shader" uid="uid://cg6x5gk2aqfga" path="res://assets/shaders/streak_text_gradient.gdshader" id="17"]
+[ext_resource type="Shader" uid="uid://cnhklkoikebme" path="res://assets/shaders/streak_text_inner_shadow.gdshader" id="18"]
+[ext_resource type="Texture2D" uid="uid://1ujhlutt3ssh" path="res://assets/sprites/juice_sort/streak/star.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://cb0eu3xdvdk5g" path="res://assets/sprites/juice_sort/streak/petal_01.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://b10i653dfibsy" path="res://assets/sprites/juice_sort/streak/petal_02.png" id="21"]
+
+[sub_resource type="Curve" id="Curve_6mqa0"]
+_data = [Vector2(0, 0.5), 0.0, 2.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5), -2.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="ShaderMaterial" id="mat_top"]
+shader = ExtResource("17")
+shader_parameter/grad_top = Color(1, 0.9412, 0.349, 1)
+shader_parameter/grad_mid = Color(1, 0.8314, 0.1216, 1)
+shader_parameter/grad_bottom = Color(1, 0.549, 0.0196, 1)
+shader_parameter/use_mid = true
+shader_parameter/ink_top_uv = 0.0
+shader_parameter/ink_bottom_uv = 0.02
+shader_parameter/outline_luma = 0.55
+
+[sub_resource type="Curve" id="Curve_xd0b7"]
+_data = [Vector2(0, 0.5), 0.0, 2.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5), -2.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_dc65x"]
+_data = [Vector2(0, 0.5), 0.0, 2.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5), -2.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_u8iu4"]
+_data = [Vector2(0, 0.5), 0.0, 2.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5), -2.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="ShaderMaterial" id="mat_inner"]
+shader = ExtResource("18")
+shader_parameter/shadow_color = Color(1, 1, 1, 0.61)
+shader_parameter/shadow_offset = Vector2(0, 4.2)
+shader_parameter/shadow_blur = 4.2
+shader_parameter/glyph_alpha = 0.5
+shader_parameter/tex_size = Vector2(800, 184)
+
+[sub_resource type="Curve" id="Curve_u5bl0"]
+_data = [Vector2(0, 0.5), 0.0, 2.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5), -2.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="ShaderMaterial" id="mat_bottom"]
+shader = ExtResource("17")
+shader_parameter/grad_top = Color(1, 0.9804, 0.8588, 1)
+shader_parameter/grad_mid = Color(1, 0.9216, 0.7412, 1)
+shader_parameter/grad_bottom = Color(1, 0.8627, 0.6235, 1)
+shader_parameter/use_mid = false
+shader_parameter/ink_top_uv = 0.0
+shader_parameter/ink_bottom_uv = 0.02
+shader_parameter/outline_luma = 0.55
+
+[sub_resource type="Curve" id="Curve_o0tha"]
+_data = [Vector2(0, 0.5), 0.0, 2.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.5), -2.0, 0.0, 0, 0]
+point_count = 3
+
+[node name="StreakCelebration" type="Control" unique_id=343938307]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=212645491]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Stage" type="Node2D" parent="." unique_id=412003127]
+
+[node name="Effects" type="Node2D" parent="Stage" unique_id=1935979176]
+
+[node name="Radial" type="Sprite2D" parent="Stage/Effects" unique_id=1196490195]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(0, -100)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("2")
+
+[node name="Glow" type="Sprite2D" parent="Stage/Effects" unique_id=71710209]
+position = Vector2(0, -90)
+scale = Vector2(2.2681017, 2.2681017)
+texture = ExtResource("3")
+
+[node name="GlowInner" type="Sprite2D" parent="Stage/Effects" unique_id=2111353507]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(0, -150)
+scale = Vector2(1.6330333, 1.6330333)
+texture = ExtResource("3")
+
+[node name="Cloud" type="Sprite2D" parent="Stage/Effects" unique_id=751468795]
+position = Vector2(-1.4338, 171.925)
+scale = Vector2(0.9991189, 0.9990066)
+texture = ExtResource("4")
+
+[node name="FootGlow" type="Sprite2D" parent="Stage/Effects" unique_id=27736331]
+z_index = 9
+position = Vector2(1, 242)
+texture = ExtResource("5")
+
+[node name="Trophy" type="Node2D" parent="Stage" unique_id=1493609833]
+position = Vector2(0, 255)
+
+[node name="Skeleton" type="Skeleton2D" parent="Stage/Trophy" unique_id=1634977021]
+
+[node name="LeavesLeft" type="Bone2D" parent="Stage/Trophy/Skeleton" unique_id=1040864865]
+position = Vector2(-30, -305)
+rest = Transform2D(1, 0, 0, 1, -30, -305)
+auto_calculate_length_and_angle = false
+length = 140.0
+bone_angle = 0.0
+
+[node name="Art" type="Sprite2D" parent="Stage/Trophy/Skeleton/LeavesLeft" unique_id=1268004435]
+z_index = 2
+position = Vector2(-120.2515, -45.2515)
+scale = Vector2(0.9967338, 0.9967338)
+texture = ExtResource("6")
+
+[node name="Center" type="Sprite2D" parent="Stage/Trophy/Skeleton/LeavesLeft" unique_id=1146000313]
+position = Vector2(38, -18.5)
+texture = ExtResource("7")
+
+[node name="Upper" type="Sprite2D" parent="Stage/Trophy/Skeleton/LeavesLeft" unique_id=1892316277]
+z_index = 4
+position = Vector2(-44.2607, -131.163)
+scale = Vector2(0.99763, 0.99810463)
+texture = ExtResource("8")
+
+[node name="LeavesRight" type="Bone2D" parent="Stage/Trophy/Skeleton" unique_id=1330800050]
+position = Vector2(35, -305)
+rest = Transform2D(1, 0, 0, 1, 35, -305)
+auto_calculate_length_and_angle = false
+length = 140.0
+bone_angle = 0.0
+
+[node name="Art" type="Sprite2D" parent="Stage/Trophy/Skeleton/LeavesRight" unique_id=1415887747]
+z_index = 3
+position = Vector2(135, 14)
+texture = ExtResource("9")
+
+[node name="Upper" type="Sprite2D" parent="Stage/Trophy/Skeleton/LeavesRight" unique_id=1180814574]
+z_index = 1
+position = Vector2(71, -121)
+texture = ExtResource("10")
+
+[node name="Blue" type="Bone2D" parent="Stage/Trophy/Skeleton" unique_id=1799563013]
+z_index = 6
+position = Vector2(0, -345)
+rest = Transform2D(1, 0, 0, 1, 0, -345)
+auto_calculate_length_and_angle = false
+length = 140.0
+bone_angle = 0.0
+
+[node name="Art" type="Sprite2D" parent="Stage/Trophy/Skeleton/Blue" unique_id=2026927676]
+position = Vector2(7.5, -114)
+scale = Vector2(0.26674786, 0.2668428)
+texture = ExtResource("11")
+
+[node name="Orange" type="Bone2D" parent="Stage/Trophy/Skeleton" unique_id=359941149]
+z_index = 8
+position = Vector2(-110, -275)
+rest = Transform2D(1, 0, 0, 1, -110, -275)
+auto_calculate_length_and_angle = false
+length = 140.0
+bone_angle = 0.0
+
+[node name="Art" type="Sprite2D" parent="Stage/Trophy/Skeleton/Orange" unique_id=1027289669]
+position = Vector2(16.5, -89.5)
+scale = Vector2(0.2974428, 0.2971698)
+texture = ExtResource("12")
+
+[node name="Pink" type="Bone2D" parent="Stage/Trophy/Skeleton" unique_id=1183649099]
+z_index = 7
+position = Vector2(110, -275)
+rest = Transform2D(1, 0, 0, 1, 110, -275)
+auto_calculate_length_and_angle = false
+length = 140.0
+bone_angle = 0.0
+
+[node name="Art" type="Sprite2D" parent="Stage/Trophy/Skeleton/Pink" unique_id=826053369]
+position = Vector2(-5.5, -83)
+scale = Vector2(0.26081082, 0.26074073)
+texture = ExtResource("13")
+
+[node name="Body" type="Sprite2D" parent="Stage/Trophy/Skeleton" unique_id=518450895]
+z_index = 5
+position = Vector2(0, -150)
+scale = Vector2(0.45137614, 0.45180723)
+texture = ExtResource("14")
+
+[node name="Words" type="CanvasGroup" parent="Stage" unique_id=1950588514]
+z_index = 10
+
+[node name="TopGroup" type="Control" parent="Stage/Words" unique_id=75304429]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -400.0
+offset_top = 130.0
+offset_right = 400.0
+offset_bottom = 314.0
+mouse_filter = 2
+
+[node name="TextTopShadow" type="Label" parent="Stage/Words/TopGroup" unique_id=865251390]
+layout_mode = 0
+offset_top = 4.2
+offset_right = 800.0
+offset_bottom = 188.2
+theme_override_colors/font_color = Color(0.949, 0.4078, 0.0157, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 124
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+script = ExtResource("16")
+curve = SubResource("Curve_6mqa0")
+amplitude = -50.0
+align_to_tangent = true
+
+[node name="TextTopBase" type="Label" parent="Stage/Words/TopGroup" unique_id=409740848]
+material = SubResource("mat_top")
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(0.6392, 0.2314, 0.0392, 1)
+theme_override_colors/font_outline_color = Color(0.6392, 0.2314, 0.0392, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 124
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+script = ExtResource("16")
+curve = SubResource("Curve_xd0b7")
+amplitude = -50.0
+align_to_tangent = true
+outline_stamp_radius = 9.0
+
+[node name="TextTop" type="Label" parent="Stage/Words/TopGroup" unique_id=1158139895]
+material = SubResource("mat_top")
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(1, 0.8314, 0.1216, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 124
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+script = ExtResource("16")
+curve = SubResource("Curve_dc65x")
+amplitude = -50.0
+align_to_tangent = true
+
+[node name="TextTopInnerViewport" type="SubViewport" parent="Stage/Words/TopGroup" unique_id=2090964772]
+transparent_bg = true
+size = Vector2i(800, 184)
+render_target_update_mode = 3
+
+[node name="Glyph" type="Label" parent="Stage/Words/TopGroup/TextTopInnerViewport" unique_id=947696989]
+offset_right = 800.0
+offset_bottom = 184.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 124
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+script = ExtResource("16")
+curve = SubResource("Curve_u8iu4")
+amplitude = -50.0
+align_to_tangent = true
+
+[node name="TextTopInner" type="TextureRect" parent="Stage/Words/TopGroup" unique_id=871312572]
+material = SubResource("mat_inner")
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 184.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="BottomGroup" type="Control" parent="Stage/Words" unique_id=2008230806]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -400.0
+offset_top = 304.0
+offset_right = 400.0
+offset_bottom = 414.0
+mouse_filter = 2
+
+[node name="TextBottomShadow" type="Label" parent="Stage/Words/BottomGroup" unique_id=923931438]
+layout_mode = 0
+offset_top = 2.1
+offset_right = 800.0
+offset_bottom = 112.1
+theme_override_colors/font_color = Color(0.7098, 0.2784, 0.0314, 1)
+theme_override_colors/font_outline_color = Color(0.7098, 0.2784, 0.0314, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 72
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+script = ExtResource("16")
+curve = SubResource("Curve_u5bl0")
+amplitude = -4.0
+align_to_tangent = true
+outline_stamp_radius = 4.0
+
+[node name="TextBottom" type="Label" parent="Stage/Words/BottomGroup" unique_id=596714036]
+material = SubResource("mat_bottom")
+layout_mode = 0
+offset_right = 800.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(1, 0.9804, 0.8588, 1)
+theme_override_colors/font_outline_color = Color(0.6392, 0.2314, 0.0392, 1)
+theme_override_fonts/font = ExtResource("15")
+theme_override_font_sizes/font_size = 72
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+script = ExtResource("16")
+curve = SubResource("Curve_o0tha")
+amplitude = -4.0
+align_to_tangent = true
+outline_stamp_radius = 4.0
+
+[node name="Particles" type="Node2D" parent="Stage" unique_id=1710297927]
+
+[node name="Particle0" type="Sprite2D" parent="Stage/Particles" unique_id=856117263]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle1" type="Sprite2D" parent="Stage/Particles" unique_id=1863665058]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle2" type="Sprite2D" parent="Stage/Particles" unique_id=1085749387]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle3" type="Sprite2D" parent="Stage/Particles" unique_id=654587620]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle4" type="Sprite2D" parent="Stage/Particles" unique_id=1100008125]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle5" type="Sprite2D" parent="Stage/Particles" unique_id=1531242280]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle6" type="Sprite2D" parent="Stage/Particles" unique_id=293382740]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle7" type="Sprite2D" parent="Stage/Particles" unique_id=1451355422]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle8" type="Sprite2D" parent="Stage/Particles" unique_id=434768882]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle9" type="Sprite2D" parent="Stage/Particles" unique_id=983217524]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle10" type="Sprite2D" parent="Stage/Particles" unique_id=1197471729]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle11" type="Sprite2D" parent="Stage/Particles" unique_id=1130065812]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle12" type="Sprite2D" parent="Stage/Particles" unique_id=1095244201]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle13" type="Sprite2D" parent="Stage/Particles" unique_id=359967703]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle14" type="Sprite2D" parent="Stage/Particles" unique_id=1318560169]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle15" type="Sprite2D" parent="Stage/Particles" unique_id=1519015489]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("19")
+
+[node name="Particle16" type="Sprite2D" parent="Stage/Particles" unique_id=755978391]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("20")
+
+[node name="Particle17" type="Sprite2D" parent="Stage/Particles" unique_id=596885737]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("21")
+
+[node name="Particle18" type="Sprite2D" parent="Stage/Particles" unique_id=2139156901]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("20")
+
+[node name="Particle19" type="Sprite2D" parent="Stage/Particles" unique_id=572095211]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("21")
+
+[node name="Particle20" type="Sprite2D" parent="Stage/Particles" unique_id=124593133]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("20")
+
+[node name="Particle21" type="Sprite2D" parent="Stage/Particles" unique_id=871835042]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("21")
+
+[node name="Particle22" type="Sprite2D" parent="Stage/Particles" unique_id=1554105633]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("20")
+
+[node name="Particle23" type="Sprite2D" parent="Stage/Particles" unique_id=118007046]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("21")

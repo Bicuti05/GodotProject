@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://k171arii77uj"
+path="res://.godot/imported/Combo_centered.atlas-bee953711fe7dc230e4c80416f40d9e3.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/combo_timing2/Combo_centered.atlas"
+dest_files=["res://.godot/imported/Combo_centered.atlas-bee953711fe7dc230e4c80416f40d9e3.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

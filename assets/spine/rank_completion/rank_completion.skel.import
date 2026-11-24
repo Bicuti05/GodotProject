@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://c0xp5lpu3eixf"
+path="res://.godot/imported/rank_completion.skel-02be591ada630a91dce3b2e448dcad9c.spskel"
+
+[deps]
+
+source_file="res://assets/spine/rank_completion/rank_completion.skel"
+dest_files=["res://.godot/imported/rank_completion.skel-02be591ada630a91dce3b2e448dcad9c.spskel"]
+
+[params]
+

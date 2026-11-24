@@ -1,0 +1,269 @@
+[gd_scene load_steps=16 format=3]
+
+[ext_resource type="Script" uid="uid://bnafeqy2elyvb" path="res://scripts/main/pages/game/special_challenge_banner.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dtdrq0iwdkqk2" path="res://assets/sprites/game_special_challenge_title_shadow.png" id="2"]
+[ext_resource type="Shader" uid="uid://8x6g5s5v7j82" path="res://scripts/main/pages/game/special_challenge_title.gdshader" id="3"]
+[ext_resource type="Texture2D" uid="uid://beg50boq8laqm" path="res://assets/sprites/game_special_challenge_glow.png" id="4"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="5"]
+[ext_resource type="Texture2D" uid="uid://c8exuawxpweq" path="res://assets/sprites/game_special_challenge_foliage.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://drvq0gnfucki" path="res://assets/sprites/game_special_challenge_garden.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://w30ck3xn1o1k" path="res://assets/sprites/game_special_challenge_chest_shadow.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://calxjf4tn4vtb" path="res://assets/sprites/game_special_challenge_chest.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="10"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="11"]
+[ext_resource type="Script" uid="uid://cyjd2t7w24xhl" path="res://scripts/main/pages/game/special_challenge_title.gd" id="12"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ikxjy"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/glyph_bounds = null
+shader_parameter/title_mask = null
+shader_parameter/horizontal_blur = null
+shader_parameter/blur_only = null
+shader_parameter/display_cached = true
+shader_parameter/glow_sigma = null
+shader_parameter/glow_opacity = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dxq00"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/glyph_bounds = null
+shader_parameter/title_mask = null
+shader_parameter/horizontal_blur = null
+shader_parameter/blur_only = true
+shader_parameter/display_cached = null
+shader_parameter/glow_sigma = null
+shader_parameter/glow_opacity = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e1ctv"]
+resource_local_to_scene = true
+shader = ExtResource("3")
+shader_parameter/glyph_bounds = null
+shader_parameter/title_mask = null
+shader_parameter/horizontal_blur = null
+shader_parameter/blur_only = null
+shader_parameter/display_cached = null
+shader_parameter/glow_sigma = null
+shader_parameter/glow_opacity = null
+
+[node name="SpecialChallengeBanner" type="Control" unique_id=230568382]
+visible = false
+z_index = 100
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=473594860]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="Content" type="Control" parent="." unique_id=345582839]
+anchors_preset = 0
+offset_right = 1080.0
+offset_bottom = 2344.0
+mouse_filter = 2
+
+[node name="Card" type="Control" parent="Content" unique_id=690042012]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TitleShadow" type="TextureRect" parent="Content/Card" unique_id=1895248620]
+layout_mode = 0
+offset_left = 339.3
+offset_top = 1241.3
+offset_right = 740.7
+offset_bottom = 1324.7
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="TitleComposite" type="CanvasGroup" parent="Content/Card" unique_id=274534278]
+fit_margin = 64.0
+clear_margin = 64.0
+
+[node name="Title" type="TextureRect" parent="Content/Card/TitleComposite" unique_id=1568493099]
+material = SubResource("ShaderMaterial_ikxjy")
+offset_left = 28.0
+offset_top = 479.0
+offset_right = 1056.0
+offset_bottom = 894.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="Glow" type="TextureRect" parent="Content/Card" unique_id=1078713988]
+layout_mode = 0
+offset_left = -10.0
+offset_top = 752.0
+offset_right = 1080.0
+offset_bottom = 1373.0
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+
+[node name="Description" type="Label" parent="Content/Card" unique_id=1775183333]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 1615.0
+offset_right = 992.0
+offset_bottom = 1785.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("5")
+theme_override_font_sizes/font_size = 60
+text = "SPECIAL_CHALLENGE_DESCRIPTION"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="FoliageLeft" type="TextureRect" parent="Content/Card" unique_id=748423211]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 1071.0
+offset_right = 614.0
+offset_bottom = 1385.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+
+[node name="FoliageRight" type="TextureRect" parent="Content/Card" unique_id=2102951800]
+layout_mode = 0
+offset_left = 461.0
+offset_top = 1091.0
+offset_right = 931.0
+offset_bottom = 1405.0
+mouse_filter = 2
+texture = ExtResource("6")
+expand_mode = 1
+flip_h = true
+
+[node name="Garden" type="TextureRect" parent="Content/Card" unique_id=1212922161]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 1186.0
+offset_right = 989.0
+offset_bottom = 1486.0
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+
+[node name="ChestShadow" type="TextureRect" parent="Content/Card" unique_id=2083978273]
+layout_mode = 0
+offset_left = 308.7
+offset_top = 1310.7
+offset_right = 774.3
+offset_bottom = 1405.3
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+
+[node name="Chest" type="TextureRect" parent="Content" unique_id=1158804135]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 943.0
+offset_right = 809.0
+offset_bottom = 1428.0
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+
+[node name="Sparkles" type="Node2D" parent="Content" unique_id=1180405528]
+
+[node name="Star0" type="Sprite2D" parent="Content/Sparkles" unique_id=418029903]
+modulate = Color(1, 0.9, 0.5, 0)
+position = Vector2(242, 1000)
+texture = ExtResource("10")
+
+[node name="Star1" type="Sprite2D" parent="Content/Sparkles" unique_id=466118041]
+modulate = Color(1, 0.9, 0.5, 0)
+position = Vector2(843, 1058)
+texture = ExtResource("10")
+
+[node name="Star2" type="Sprite2D" parent="Content/Sparkles" unique_id=1308197287]
+modulate = Color(1, 0.9, 0.5, 0)
+position = Vector2(324, 889)
+texture = ExtResource("10")
+
+[node name="Star3" type="Sprite2D" parent="Content/Sparkles" unique_id=1840321458]
+modulate = Color(1, 0.9, 0.5, 0)
+position = Vector2(780, 905)
+texture = ExtResource("10")
+
+[node name="Star4" type="Sprite2D" parent="Content/Sparkles" unique_id=1666530225]
+modulate = Color(1, 0.9, 0.5, 0)
+position = Vector2(190, 1258)
+texture = ExtResource("10")
+
+[node name="Star5" type="Sprite2D" parent="Content/Sparkles" unique_id=1841599626]
+modulate = Color(1, 0.9, 0.5, 0)
+position = Vector2(875, 1280)
+texture = ExtResource("10")
+
+[node name="TitleViewport" type="SubViewport" parent="." unique_id=189665060]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(1028, 415)
+render_target_update_mode = 0
+
+[node name="GlowViewport" type="SubViewport" parent="TitleViewport" unique_id=2097381860]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(1028, 415)
+render_target_update_mode = 0
+
+[node name="MaskViewport" type="SubViewport" parent="TitleViewport/GlowViewport" unique_id=633524764]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(1028, 415)
+render_target_update_mode = 0
+
+[node name="Title" type="Label" parent="TitleViewport/GlowViewport/MaskViewport" unique_id=1228319688]
+auto_translate_mode = 2
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 964.0
+offset_bottom = 350.23
+theme_override_colors/font_color = Color(0.992157, 0.996078, 0.992157, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(1, 0.301961, 0.301961, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 32
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("11")
+theme_override_font_sizes/font_size = 115
+text = "SPECIAL_CHALLENGE_BUTTON"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("12")
+amplitude = 30.0
+align_to_tangent = true
+minimum_word_gap = 12.0
+outline_stamp_radius = 15.84
+
+[node name="Surface" type="TextureRect" parent="TitleViewport/GlowViewport" unique_id=64762901]
+material = SubResource("ShaderMaterial_dxq00")
+offset_right = 1028.0
+offset_bottom = 415.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="Surface" type="TextureRect" parent="TitleViewport" unique_id=2041858606]
+material = SubResource("ShaderMaterial_e1ctv")
+offset_right = 1028.0
+offset_bottom = 415.0
+mouse_filter = 2
+expand_mode = 1

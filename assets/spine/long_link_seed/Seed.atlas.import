@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://dqfrbilgdakrs"
+path="res://.godot/imported/Seed.atlas-85af4df188950659283d0e4cc2855c75.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/long_link_seed/Seed.atlas"
+dest_files=["res://.godot/imported/Seed.atlas-85af4df188950659283d0e4cc2855c75.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

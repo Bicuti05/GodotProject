@@ -1,0 +1,79 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" uid="uid://cy65mago36clp" path="res://scripts/gameplay/rank/view/rank_banner_glint_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://7nnhwotroeku" path="res://assets/effect/texture/bonus/et_point_001.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://wxyd78er7nja" path="res://assets/effect/texture/bonus/et_star_701.png" id="3"]
+
+[sub_resource type="CanvasItemMaterial" id="m_rise_add"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="c_rise_scale"]
+_data = [Vector2(0, 0.35), 0.0, 0.0, 0, 0, Vector2(0.35, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.2), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="g_rise_fade"]
+offsets = PackedFloat32Array(0, 0.12, 0.5, 1)
+colors = PackedColorArray(1, 0.96, 0.82, 0, 1, 0.98, 0.9, 1, 1, 0.96, 0.85, 0.75, 1, 0.92, 0.72, 0)
+
+[sub_resource type="CanvasItemMaterial" id="m_sparkle_add"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="c_sparkle_pop"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="g_sparkle_fade"]
+offsets = PackedFloat32Array(0, 0.25, 0.55, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.7, 1, 1, 1, 0)
+
+[node name="RankBannerGlintFx" type="Control" unique_id=691683797]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="RiseMotes" type="CPUParticles2D" parent="." unique_id=1248133739]
+material = SubResource("m_rise_add")
+emitting = false
+amount = 24
+texture = ExtResource("2")
+lifetime = 2.6
+preprocess = 2.0
+randomness = 0.45
+lifetime_randomness = 0.4
+emission_shape = 3
+emission_rect_extents = Vector2(237, 10)
+direction = Vector2(0, -1)
+spread = 28.0
+gravity = Vector2(0, -4)
+initial_velocity_min = 71.0
+initial_velocity_max = 117.0
+angular_velocity_min = -10.0
+angular_velocity_max = 10.0
+scale_amount_min = 0.05
+scale_amount_max = 0.09
+scale_amount_curve = SubResource("c_rise_scale")
+color = Color(1, 0.96, 0.82, 1)
+color_ramp = SubResource("g_rise_fade")
+
+[node name="Sparkles" type="CPUParticles2D" parent="." unique_id=1521118036]
+z_index = 1
+material = SubResource("m_sparkle_add")
+emitting = false
+amount = 1
+texture = ExtResource("3")
+lifetime = 0.48
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 0.05
+direction = Vector2(0, 0)
+spread = 0.0
+gravity = Vector2(0, 0)
+scale_amount_min = 0.18
+scale_amount_max = 0.26
+scale_amount_curve = SubResource("c_sparkle_pop")
+color_ramp = SubResource("g_sparkle_fade")

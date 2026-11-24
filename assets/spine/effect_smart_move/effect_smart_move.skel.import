@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://cml62cxep151c"
+path="res://.godot/imported/effect_smart_move.skel-c1de382190afb796273ec6110e8bbf06.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_smart_move/effect_smart_move.skel"
+dest_files=["res://.godot/imported/effect_smart_move.skel-c1de382190afb796273ec6110e8bbf06.spskel"]
+
+[params]
+

@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://rya4vurpkxhf"
+path="res://.godot/imported/effect_splash_birdie01.atlas-b798d976c98c80165ae550e3c7e4f500.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_splash_birdie01/effect_splash_birdie01.atlas"
+dest_files=["res://.godot/imported/effect_splash_birdie01.atlas-b798d976c98c80165ae550e3c7e4f500.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

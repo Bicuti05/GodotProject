@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://cyamshmj3laxh"
+path="res://.godot/imported/banner_hard.skel-a13ce3fada0e8a6f04a5d6c802ccdf4a.spskel"
+
+[deps]
+
+source_file="res://assets/spine/banner_hard/banner_hard.skel"
+dest_files=["res://.godot/imported/banner_hard.skel-a13ce3fada0e8a6f04a5d6c802ccdf4a.spskel"]
+
+[params]
+

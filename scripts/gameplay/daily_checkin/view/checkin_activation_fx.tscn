@@ -1,0 +1,183 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" uid="uid://dh65nrjn0low3" path="res://scripts/gameplay/daily_checkin/view/checkin_activation_fx.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dgck4krw7a2a7" path="res://assets/effect/rank_collect_trail/et_glow_005.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bvu6k2k1a7v8e" path="res://assets/effect/rank_collect_trail/et_star_2.png" id="3"]
+
+[sub_resource type="CanvasItemMaterial" id="add"]
+blend_mode = 1
+
+[node name="checkin_activation_fx" type="Node2D" unique_id=356235637]
+visible = false
+script = ExtResource("1")
+
+[node name="Ray1" type="Node2D" parent="." unique_id=1991677718]
+material = SubResource("add")
+
+[node name="Wedge0" type="Polygon2D" parent="Ray1" unique_id=77535724]
+material = SubResource("add")
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge1" type="Polygon2D" parent="Ray1" unique_id=955261925]
+material = SubResource("add")
+rotation = 0.5235988
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge2" type="Polygon2D" parent="Ray1" unique_id=1565889879]
+material = SubResource("add")
+rotation = 1.0471976
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge3" type="Polygon2D" parent="Ray1" unique_id=1399245676]
+material = SubResource("add")
+rotation = 1.5707964
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge4" type="Polygon2D" parent="Ray1" unique_id=680249803]
+material = SubResource("add")
+rotation = 2.0943952
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge5" type="Polygon2D" parent="Ray1" unique_id=915938230]
+material = SubResource("add")
+rotation = 2.6179938
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge6" type="Polygon2D" parent="Ray1" unique_id=1198056666]
+material = SubResource("add")
+rotation = 3.1415927
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge7" type="Polygon2D" parent="Ray1" unique_id=472346914]
+material = SubResource("add")
+rotation = 3.6651914
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge8" type="Polygon2D" parent="Ray1" unique_id=143413614]
+material = SubResource("add")
+rotation = 4.1887903
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge9" type="Polygon2D" parent="Ray1" unique_id=118136401]
+material = SubResource("add")
+rotation = 4.712389
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge10" type="Polygon2D" parent="Ray1" unique_id=1390480125]
+material = SubResource("add")
+rotation = 5.2359877
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge11" type="Polygon2D" parent="Ray1" unique_id=1321092008]
+material = SubResource("add")
+rotation = 5.7595863
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Ray2" type="Node2D" parent="." unique_id=1424698683]
+material = SubResource("add")
+
+[node name="Wedge0" type="Polygon2D" parent="Ray2" unique_id=75412933]
+material = SubResource("add")
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge1" type="Polygon2D" parent="Ray2" unique_id=929258950]
+material = SubResource("add")
+rotation = 0.5235988
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge2" type="Polygon2D" parent="Ray2" unique_id=1932794171]
+material = SubResource("add")
+rotation = 1.0471976
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge3" type="Polygon2D" parent="Ray2" unique_id=1524109730]
+material = SubResource("add")
+rotation = 1.5707964
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge4" type="Polygon2D" parent="Ray2" unique_id=858942483]
+material = SubResource("add")
+rotation = 2.0943952
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge5" type="Polygon2D" parent="Ray2" unique_id=176539073]
+material = SubResource("add")
+rotation = 2.6179938
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge6" type="Polygon2D" parent="Ray2" unique_id=702907016]
+material = SubResource("add")
+rotation = 3.1415927
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge7" type="Polygon2D" parent="Ray2" unique_id=879709730]
+material = SubResource("add")
+rotation = 3.6651914
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge8" type="Polygon2D" parent="Ray2" unique_id=2090136167]
+material = SubResource("add")
+rotation = 4.1887903
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge9" type="Polygon2D" parent="Ray2" unique_id=1154210578]
+material = SubResource("add")
+rotation = 4.712389
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge10" type="Polygon2D" parent="Ray2" unique_id=1039971548]
+material = SubResource("add")
+rotation = 5.2359877
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Wedge11" type="Polygon2D" parent="Ray2" unique_id=1141669890]
+material = SubResource("add")
+rotation = 5.7595863
+color = Color(1, 0.945, 0.702, 1)
+polygon = PackedVector2Array(-0.012, -0.58, -0.02, -1, 0.02, -1, 0.012, -0.58)
+
+[node name="Glow" type="Sprite2D" parent="." unique_id=1416184657]
+material = SubResource("add")
+texture = ExtResource("2")
+
+[node name="Burst" type="CPUParticles2D" parent="." unique_id=2072576625]
+material = SubResource("add")
+emitting = false
+amount = 12
+texture = ExtResource("3")
+lifetime = 0.55
+one_shot = true
+explosiveness = 1.0
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+damping_min = 180.0
+damping_max = 300.0
+scale_amount_min = 0.02
+scale_amount_max = 0.045
+color = Color(1, 0.96, 0.788, 1)

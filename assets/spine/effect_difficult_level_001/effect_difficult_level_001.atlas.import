@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://kaudvwlywc7j"
+path="res://.godot/imported/effect_difficult_level_001.atlas-acc83f5425ff99eee09da582b4663800.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_difficult_level_001/effect_difficult_level_001.atlas"
+dest_files=["res://.godot/imported/effect_difficult_level_001.atlas-acc83f5425ff99eee09da582b4663800.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://l7fpuw4lkbjt"
+path="res://.godot/imported/effect_smart_move.atlas-34cda1efdef63f6992d981d815d916b9.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_smart_move/effect_smart_move.atlas"
+dest_files=["res://.godot/imported/effect_smart_move.atlas-34cda1efdef63f6992d981d815d916b9.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

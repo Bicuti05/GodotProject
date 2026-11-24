@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/effect_bird_container/effect_bird_container.tres" id="1"]
+
+[node name="EffectBirdContainer" type="SpineSprite" unique_id=941490299]
+visible = false
+skeleton_data_res = ExtResource("1")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

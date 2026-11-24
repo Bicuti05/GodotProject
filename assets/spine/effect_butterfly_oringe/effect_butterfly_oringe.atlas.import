@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://dpkji71bbpu83"
+path="res://.godot/imported/effect_butterfly_oringe.atlas-a21a0c66d76ee82404aff79cd97ebf22.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_butterfly_oringe/effect_butterfly_oringe.atlas"
+dest_files=["res://.godot/imported/effect_butterfly_oringe.atlas-a21a0c66d76ee82404aff79cd97ebf22.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

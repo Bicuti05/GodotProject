@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://vyn3iorj2nq3"
+path="res://.godot/imported/Combo_title03.atlas-fff1865d37a595275d15dea3bfce92b7.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/combo/Combo_title03.atlas"
+dest_files=["res://.godot/imported/Combo_title03.atlas-fff1865d37a595275d15dea3bfce92b7.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://bfapu4fkreqmu" path="res://scripts/gameplay/rank/view/rank_collect_fly_layer.gd" id="1"]
+
+[node name="RankCollectFlyLayer" type="Node2D" unique_id=295797769]
+script = ExtResource("1")

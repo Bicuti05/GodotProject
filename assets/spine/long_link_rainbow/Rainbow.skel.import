@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://b427l10qwwsje"
+path="res://.godot/imported/Rainbow.skel-826a3e8e80d3f649b78a29ef82751cce.spskel"
+
+[deps]
+
+source_file="res://assets/spine/long_link_rainbow/Rainbow.skel"
+dest_files=["res://.godot/imported/Rainbow.skel-826a3e8e80d3f649b78a29ef82751cce.spskel"]
+
+[params]
+

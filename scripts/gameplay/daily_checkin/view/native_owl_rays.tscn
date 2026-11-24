@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://b86da4er2lmsh" path="res://scripts/gameplay/daily_checkin/view/native_owl_rays.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dsa00pp3eptxs" path="res://assets/effect/owl_activation/ef_other_220.png" id="2"]
+
+[node name="native_owl_rays" type="Node2D" unique_id=67273827]
+script = ExtResource("1")
+trail_texture = ExtResource("2")

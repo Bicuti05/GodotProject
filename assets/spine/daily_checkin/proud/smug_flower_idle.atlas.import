@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://bbvb332oqr3no"
+path="res://.godot/imported/smug_flower_idle.atlas-35b819712c09b465e55820c34168ffcd.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/proud/smug_flower_idle.atlas"
+dest_files=["res://.godot/imported/smug_flower_idle.atlas-35b819712c09b465e55820c34168ffcd.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

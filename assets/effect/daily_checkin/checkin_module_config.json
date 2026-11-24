@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "body_registration": "res://assets/spine/daily_checkin/registration.json",
+  "reference_body_size": [
+    618,
+    590
+  ],
+  "roles": {
+    "smile": {
+      "skin": "default",
+      "idle": "idle",
+      "viewport_size": [
+        1024,
+        1024
+      ],
+      "mix_seconds": 0.12
+    },
+    "proud": {
+      "skin": "default",
+      "idle": "idle",
+      "viewport_size": [
+        1024,
+        1024
+      ],
+      "mix_seconds": 0.12,
+      "peek_sequence": [
+        "glasses_peek_left",
+        "glasses_peek_right"
+      ],
+      "peek_idle_seconds": 2.0
+    },
+    "party": {
+      "skin": "庆祝",
+      "idle": "idle_wait",
+      "viewport_size": [
+        2048,
+        1536
+      ],
+      "mix_seconds": 0.12,
+      "celebration": "celebrate_power",
+      "attack_mix_seconds": 0.06,
+      "core_complete_seconds": 2.6
+    }
+  },
+  "arrival_distance": 8,
+  "focus": {
+    "meteor_opacity": 0.3,
+    "sunflower_idle_opacity": 0.35,
+    "gift_idle_opacity": 0.6,
+    "transition_seconds": 0.18
+  },
+  "ui": {
+    "activation_at": 0.58,
+    "information_at": 1.6833333,
+    "information_end": 2.0666666,
+    "today_feedback_at": 2.3666667,
+    "post_stamp_hold": 0.11,
+    "ok_source_at": 2.9166667,
+    "ok_source_end": 3.1666667,
+    "ok_unlock_hold": 0.1533333,
+    "reward_post_gift_hold": 0.08,
+    "hero_lift_seconds": 0.72,
+    "information_lift_delay": 0.3,
+    "information_offset_y": 48
+  },
+  "gift": {
+    "idle": "idle_loop",
+    "open": "open",
+    "width": 540,
+    "coin_hold": 0.48,
+    "coin_count": 6,
+    "flight_seconds": 0.55,
+    "flight_stagger": 0.075,
+    "cell_width": 96.6,
+    "travel_seconds": 0.62,
+    "display_coin_width": 220,
+    "flight_coin_width": 135,
+    "flight_pop_seconds": 0.3,
+    "flight_arc_height": 180,
+    "reward_reveal_seconds": 1.0,
+    "open_sound_lead_seconds": 0.29,
+    "retire_delay": 0.12,
+    "retire_seconds": 0.2,
+    "check_after_departure": 0.1,
+    "display_offset_y": 80,
+    "travel_curve": {
+      "lift_seconds": 0.1,
+      "main_seconds": 0.4,
+      "settle_seconds": 0.12,
+      "lift_distance": 34,
+      "landing_overshoot": 12,
+      "scale_delay_fraction": 0.12
+    }
+  },
+  "coin": {
+    "animation": "animation"
+  },
+  "expression": {
+    "celebration_from_day": 4
+  },
+  "party_flow": {
+    "after_swap_delay": 0.06,
+    "horn_peak_seconds": 0.32,
+    "after_blow_hold": 0.0,
+    "ripple_start_seconds": 1.6,
+    "playback_speed": 1.35,
+    "side_confetti_delay": 0.12
+  }
+}

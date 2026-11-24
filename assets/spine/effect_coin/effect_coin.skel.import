@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://ddtd6oo0s13pn"
+path="res://.godot/imported/effect_coin.skel-819e8af0392c8c31c16ed4418f631f61.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_coin/effect_coin.skel"
+dest_files=["res://.godot/imported/effect_coin.skel-819e8af0392c8c31c16ed4418f631f61.spskel"]
+
+[params]
+

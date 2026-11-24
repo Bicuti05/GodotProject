@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://cnvqacvj3tbm1"
+path="res://.godot/imported/celebration_wait_fixed.skel-b62e408caabcdbbe2c89727c4f1c931f.spskel"
+
+[deps]
+
+source_file="res://assets/spine/daily_checkin/party/celebration_wait_fixed.skel"
+dest_files=["res://.godot/imported/celebration_wait_fixed.skel-b62e408caabcdbbe2c89727c4f1c931f.spskel"]
+
+[params]
+

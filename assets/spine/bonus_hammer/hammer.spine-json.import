@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.json"
+type="SpineSkeletonFileResource"
+uid="uid://bwhwekavyklbg"
+path="res://.godot/imported/hammer.spine-json-3e72242cc08723b681f33d75409448ec.spjson"
+
+[deps]
+
+source_file="res://assets/spine/bonus_hammer/hammer.spine-json"
+dest_files=["res://.godot/imported/hammer.spine-json-3e72242cc08723b681f33d75409448ec.spjson"]
+
+[params]
+

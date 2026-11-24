@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Shader" uid="uid://dgajequqs0iwt" path="res://assets/effect/shader/finish_petal_fall.gdshader" id="1"]
+[ext_resource type="Texture2D" uid="uid://3boibskiyy4i" path="res://assets/effect/petal_gold_atlas.png" id="2"]
+[ext_resource type="Script" uid="uid://dqu86tvv78mk" path="res://scripts/main/dialogs/finish/ui/confetti_fall.gd" id="3"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qio5u"]
+resource_local_to_scene = true
+shader = ExtResource("1")
+shader_parameter/h_frames = 3.0
+shader_parameter/v_frames = 3.0
+shader_parameter/flip_speed_min = 1.2
+shader_parameter/flip_speed_max = 3.2
+shader_parameter/particle_scale_max = null
+shader_parameter/inverse_emitter_basis = null
+shader_parameter/petal_color_0 = null
+shader_parameter/petal_color_1 = null
+shader_parameter/petal_color_2 = null
+shader_parameter/petal_color_3 = null
+shader_parameter/petal_color_4 = null
+shader_parameter/petal_color_5 = null
+shader_parameter/petal_color_6 = null
+shader_parameter/petal_color_7 = null
+
+[sub_resource type="Gradient" id="Gradient_fade"]
+offsets = PackedFloat32Array(0, 0.7, 1)
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GPU_ConfettiFall_ramp"]
+gradient = SubResource("Gradient_fade")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_gftp6"]
+resource_local_to_scene = true
+lifetime_randomness = 0.4
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(540, 75, 0)
+angle_min = -180.0
+angle_max = 180.0
+direction = Vector3(0, 1, 0)
+spread = 22.0
+initial_velocity_min = 27.3
+initial_velocity_max = 81.2
+angular_velocity_min = -81.0
+angular_velocity_max = 81.0
+gravity = Vector3(0, 105, 0)
+scale_min = 0.0297
+scale_max = 0.0702
+color_ramp = SubResource("GPU_ConfettiFall_ramp")
+anim_offset_max = 1.0
+turbulence_enabled = true
+turbulence_noise_strength = 60.0
+turbulence_noise_scale = 1.5
+turbulence_influence_min = 0.03
+turbulence_influence_max = 0.05
+
+[node name="ConfettiFall" type="GPUParticles2D" unique_id=332897161]
+visible = false
+material = SubResource("ShaderMaterial_qio5u")
+emitting = false
+amount = 26
+texture = ExtResource("2")
+lifetime = 8.0
+randomness = 0.6
+visibility_rect = Rect2(-740, -700, 1480, 3400)
+process_material = SubResource("ParticleProcessMaterial_gftp6")
+script = ExtResource("3")

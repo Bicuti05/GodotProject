@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://dryb4vkn8tpd7"
+path="res://.godot/imported/hammer.atlas-759a27cbf632c8954e2763d26976a3b6.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/bonus_hammer/hammer.atlas"
+dest_files=["res://.godot/imported/hammer.atlas-759a27cbf632c8954e2763d26976a3b6.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

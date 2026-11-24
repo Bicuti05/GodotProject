@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://b6128u5cq265" path="res://scripts/gameplay/rank/view/rank_source_collection_fx.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/source_fx/rank_change_collection.tscn" id="2"]
+
+[node name="RankSourceCollectionFx" type="Node2D" unique_id=1814218514]
+visible = false
+top_level = true
+z_index = 110
+z_as_relative = false
+script = ExtResource("1")
+
+[node name="Collection" parent="." unique_id=1631686044 instance=ExtResource("2")]
+mouse_filter = 2
+
+[editable path="Collection"]
+[editable path="Collection/EffectBurst"]

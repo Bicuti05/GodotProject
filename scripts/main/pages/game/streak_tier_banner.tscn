@@ -1,0 +1,560 @@
+[gd_scene load_steps=18 format=3]
+
+[ext_resource type="Script" uid="uid://8vjkekqqct6b" path="res://scripts/main/pages/game/streak_tier_banner.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dw1vsbf273f1e" path="res://assets/effect/texture/glow/ef_glow_001.png" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/main/pages/game/streak_burst_particles.tscn" id="3"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/effect_win_streak/effect_win_streak.tres" id="4"]
+[ext_resource type="PackedScene" path="res://scripts/main/pages/game/streak_roll_number.tscn" id="5"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="6"]
+[ext_resource type="Shader" uid="uid://cg6x5gk2aqfga" path="res://assets/shaders/streak_text_gradient.gdshader" id="7"]
+[ext_resource type="Shader" uid="uid://cnhklkoikebme" path="res://assets/shaders/streak_text_inner_shadow.gdshader" id="8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ikf8g"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/grad_top = Color(1, 0.941176, 0.34902, 1)
+shader_parameter/grad_mid = Color(1, 0.835294, 0, 1)
+shader_parameter/grad_bottom = Color(1, 0.835294, 0, 1)
+shader_parameter/use_mid = false
+shader_parameter/ink_top_uv = 0.0
+shader_parameter/ink_bottom_uv = 0.02
+shader_parameter/outline_luma = 0.65
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3k3eq"]
+resource_local_to_scene = true
+shader = ExtResource("8")
+shader_parameter/shadow_color = Color(1, 1, 1, 0.61)
+shader_parameter/shadow_offset = Vector2(0, 5.04)
+shader_parameter/shadow_blur = 5.04
+shader_parameter/glyph_alpha = 0.5
+shader_parameter/tex_size = Vector2(732, 204)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iijq0"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/grad_top = Color(1, 1, 1, 1)
+shader_parameter/grad_mid = Color(1, 1, 1, 1)
+shader_parameter/grad_bottom = Color(1, 0.891363, 0.705128, 1)
+shader_parameter/use_mid = false
+shader_parameter/ink_top_uv = 0.0
+shader_parameter/ink_bottom_uv = 0.02
+shader_parameter/outline_luma = 0.55
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qcep1"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/grad_top = Color(1, 0.941176, 0.34902, 1)
+shader_parameter/grad_mid = Color(1, 0.835294, 0, 1)
+shader_parameter/grad_bottom = Color(1, 0.835294, 0, 1)
+shader_parameter/use_mid = false
+shader_parameter/ink_top_uv = 0.0
+shader_parameter/ink_bottom_uv = 0.02
+shader_parameter/outline_luma = 0.65
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xe7rr"]
+resource_local_to_scene = true
+shader = ExtResource("8")
+shader_parameter/shadow_color = Color(1, 1, 1, 0.61)
+shader_parameter/shadow_offset = Vector2(0, 5.04)
+shader_parameter/shadow_blur = 5.04
+shader_parameter/glyph_alpha = 0.5
+shader_parameter/tex_size = Vector2(732, 204)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f1pf6"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/grad_top = Color(1, 1, 1, 1)
+shader_parameter/grad_mid = Color(1, 1, 1, 1)
+shader_parameter/grad_bottom = Color(1, 0.891363, 0.705128, 1)
+shader_parameter/use_mid = false
+shader_parameter/ink_top_uv = 0.0
+shader_parameter/ink_bottom_uv = 0.02
+shader_parameter/outline_luma = 0.55
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pilvu"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/grad_top = Color(1, 0.941176, 0.34902, 1)
+shader_parameter/grad_mid = Color(1, 0.835294, 0, 1)
+shader_parameter/grad_bottom = Color(1, 0.835294, 0, 1)
+shader_parameter/use_mid = false
+shader_parameter/ink_top_uv = 0.0
+shader_parameter/ink_bottom_uv = 0.02
+shader_parameter/outline_luma = 0.65
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e8yi4"]
+resource_local_to_scene = true
+shader = ExtResource("8")
+shader_parameter/shadow_color = Color(1, 1, 1, 0.61)
+shader_parameter/shadow_offset = Vector2(0, 5.04)
+shader_parameter/shadow_blur = 5.04
+shader_parameter/glyph_alpha = 0.5
+shader_parameter/tex_size = Vector2(732, 204)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xwtyg"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/grad_top = Color(1, 1, 1, 1)
+shader_parameter/grad_mid = Color(1, 1, 1, 1)
+shader_parameter/grad_bottom = Color(1, 0.891363, 0.705128, 1)
+shader_parameter/use_mid = false
+shader_parameter/ink_top_uv = 0.0
+shader_parameter/ink_bottom_uv = 0.02
+shader_parameter/outline_luma = 0.55
+
+[node name="StreakTierBanner" type="Control" unique_id=1499308886]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Backdrop" type="ColorRect" parent="." unique_id=67527911]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Stage" type="CanvasGroup" parent="." unique_id=1780236227]
+
+[node name="Glow" type="TextureRect" parent="Stage" unique_id=837695488]
+modulate = Color(1, 1, 1, 0)
+offset_left = 90.0
+offset_top = 680.0
+offset_right = 990.0
+offset_bottom = 1580.0
+pivot_offset = Vector2(450, 450)
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="BurstParticles" parent="Stage" unique_id=1003090023 instance=ExtResource("3")]
+position = Vector2(540, 1170)
+
+[node name="Spine" type="SpineSprite" parent="Stage" unique_id=1269779276]
+visible = false
+scale = Vector2(1.2, 1.2)
+skeleton_data_res = ExtResource("4")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="Content" type="Control" parent="Stage" unique_id=485419180]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1080.0
+offset_bottom = 2340.0
+pivot_offset = Vector2(540, 1170)
+mouse_filter = 2
+
+[node name="Lv1" type="Control" parent="Stage/Content" unique_id=2099353758]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_left = 52.0
+offset_right = 1132.0
+offset_bottom = 2340.0
+mouse_filter = 2
+
+[node name="NumberRoll" parent="Stage/Content/Lv1" unique_id=1933359116 instance=ExtResource("5")]
+layout_mode = 1
+offset_left = 353.0
+offset_top = 962.35
+offset_right = 623.0
+offset_bottom = 1234.35
+
+[node name="TitleBaseShadow" type="Label" parent="Stage/Content/Lv1" unique_id=652017447]
+layout_mode = 1
+offset_left = 138.1
+offset_top = 1309.0
+offset_right = 838.1
+offset_bottom = 1481.0
+theme_override_colors/font_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleBase" type="Label" parent="Stage/Content/Lv1" unique_id=501645959]
+material = SubResource("ShaderMaterial_ikf8g")
+layout_mode = 1
+offset_left = 138.1
+offset_top = 1309.0
+offset_right = 838.1
+offset_bottom = 1481.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleOrange" type="Label" parent="Stage/Content/Lv1" unique_id=1346148292]
+layout_mode = 1
+offset_left = 138.1
+offset_top = 1309.0
+offset_right = 838.1
+offset_bottom = 1481.0
+theme_override_colors/font_color = Color(0.937255, 0.533333, 0.098039, 1)
+theme_override_colors/font_shadow_color = Color(0.545098, 0.180392, 0.007843, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 3
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="Stage/Content/Lv1" unique_id=551665613]
+material = SubResource("ShaderMaterial_ikf8g")
+layout_mode = 1
+offset_left = 138.1
+offset_top = 1309.0
+offset_right = 838.1
+offset_bottom = 1481.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleInner" type="Control" parent="Stage/Content/Lv1" unique_id=138041135]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 138.1
+offset_top = 1309.0
+offset_right = 838.1
+offset_bottom = 1481.0
+mouse_filter = 2
+
+[node name="GlyphViewport" type="SubViewport" parent="Stage/Content/Lv1/TitleInner" unique_id=1445245099]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(700, 172)
+render_target_update_mode = 3
+
+[node name="Glyph" type="Label" parent="Stage/Content/Lv1/TitleInner/GlyphViewport" unique_id=1778049731]
+offset_right = 700.0
+offset_bottom = 172.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InnerShadow" type="TextureRect" parent="Stage/Content/Lv1/TitleInner" unique_id=778902252]
+material = SubResource("ShaderMaterial_3k3eq")
+layout_mode = 0
+offset_right = 700.0
+offset_bottom = 172.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="SubtitleShadow" type="Label" parent="Stage/Content/Lv1" unique_id=1171234215]
+layout_mode = 1
+offset_left = 138.0
+offset_top = 1456.6
+offset_right = 838.0
+offset_bottom = 1551.6
+theme_override_colors/font_color = Color(0.709804, 0.278431, 0.031373, 1)
+theme_override_colors/font_outline_color = Color(0.709804, 0.278431, 0.031373, 1)
+theme_override_constants/outline_size = 29
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 79
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Stage/Content/Lv1" unique_id=2064051481]
+material = SubResource("ShaderMaterial_iijq0")
+layout_mode = 1
+offset_left = 138.0
+offset_top = 1456.6
+offset_right = 838.0
+offset_bottom = 1551.6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 29
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 79
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lv2" type="Control" parent="Stage/Content" unique_id=2091090326]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_left = -7.86
+offset_right = 1072.14
+offset_bottom = 2340.0
+mouse_filter = 2
+
+[node name="NumberRoll" parent="Stage/Content/Lv2" unique_id=996362377 instance=ExtResource("5")]
+layout_mode = 1
+offset_left = 411.06
+offset_top = 962.47
+offset_right = 681.06
+offset_bottom = 1234.47
+
+[node name="TitleBaseShadow" type="Label" parent="Stage/Content/Lv2" unique_id=1297341930]
+layout_mode = 1
+offset_left = 191.5
+offset_top = 1313.0
+offset_right = 891.5
+offset_bottom = 1485.0
+theme_override_colors/font_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleBase" type="Label" parent="Stage/Content/Lv2" unique_id=1859872886]
+material = SubResource("ShaderMaterial_qcep1")
+layout_mode = 1
+offset_left = 191.5
+offset_top = 1313.0
+offset_right = 891.5
+offset_bottom = 1485.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleOrange" type="Label" parent="Stage/Content/Lv2" unique_id=1955382305]
+layout_mode = 1
+offset_left = 191.5
+offset_top = 1313.0
+offset_right = 891.5
+offset_bottom = 1485.0
+theme_override_colors/font_color = Color(0.937255, 0.533333, 0.098039, 1)
+theme_override_colors/font_shadow_color = Color(0.545098, 0.180392, 0.007843, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 3
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="Stage/Content/Lv2" unique_id=652990882]
+material = SubResource("ShaderMaterial_qcep1")
+layout_mode = 1
+offset_left = 191.5
+offset_top = 1313.0
+offset_right = 891.5
+offset_bottom = 1485.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleInner" type="Control" parent="Stage/Content/Lv2" unique_id=1289188258]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 191.5
+offset_top = 1313.0
+offset_right = 891.5
+offset_bottom = 1485.0
+mouse_filter = 2
+
+[node name="GlyphViewport" type="SubViewport" parent="Stage/Content/Lv2/TitleInner" unique_id=1261312848]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(700, 172)
+render_target_update_mode = 3
+
+[node name="Glyph" type="Label" parent="Stage/Content/Lv2/TitleInner/GlyphViewport" unique_id=897005031]
+offset_right = 700.0
+offset_bottom = 172.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InnerShadow" type="TextureRect" parent="Stage/Content/Lv2/TitleInner" unique_id=1675632355]
+material = SubResource("ShaderMaterial_xe7rr")
+layout_mode = 0
+offset_right = 700.0
+offset_bottom = 172.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="SubtitleShadow" type="Label" parent="Stage/Content/Lv2" unique_id=1269554026]
+layout_mode = 1
+offset_left = 190.8
+offset_top = 1460.6
+offset_right = 890.8
+offset_bottom = 1555.6
+theme_override_colors/font_color = Color(0.709804, 0.278431, 0.031373, 1)
+theme_override_colors/font_outline_color = Color(0.709804, 0.278431, 0.031373, 1)
+theme_override_constants/outline_size = 29
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 79
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Stage/Content/Lv2" unique_id=379203688]
+material = SubResource("ShaderMaterial_f1pf6")
+layout_mode = 1
+offset_left = 190.8
+offset_top = 1460.6
+offset_right = 890.8
+offset_bottom = 1555.6
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 29
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 79
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Lv3" type="Control" parent="Stage/Content" unique_id=1834823417]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+offset_left = -20.44
+offset_right = 1059.56
+offset_bottom = 2340.0
+mouse_filter = 2
+
+[node name="NumberRoll" parent="Stage/Content/Lv3" unique_id=339774442 instance=ExtResource("5")]
+layout_mode = 1
+offset_left = 425.2
+offset_top = 968.3
+offset_right = 695.2
+offset_bottom = 1240.3
+
+[node name="TitleBaseShadow" type="Label" parent="Stage/Content/Lv3" unique_id=1035042529]
+layout_mode = 1
+offset_left = 210.7
+offset_top = 1317.9
+offset_right = 910.7
+offset_bottom = 1489.9
+theme_override_colors/font_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleBase" type="Label" parent="Stage/Content/Lv3" unique_id=1339357891]
+material = SubResource("ShaderMaterial_pilvu")
+layout_mode = 1
+offset_left = 210.7
+offset_top = 1317.9
+offset_right = 910.7
+offset_bottom = 1489.9
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 40
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleOrange" type="Label" parent="Stage/Content/Lv3" unique_id=660751512]
+layout_mode = 1
+offset_left = 210.7
+offset_top = 1317.9
+offset_right = 910.7
+offset_bottom = 1489.9
+theme_override_colors/font_color = Color(0.937255, 0.533333, 0.098039, 1)
+theme_override_colors/font_shadow_color = Color(0.545098, 0.180392, 0.007843, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 3
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="Stage/Content/Lv3" unique_id=917405762]
+material = SubResource("ShaderMaterial_pilvu")
+layout_mode = 1
+offset_left = 210.7
+offset_top = 1317.9
+offset_right = 910.7
+offset_bottom = 1489.9
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TitleInner" type="Control" parent="Stage/Content/Lv3" unique_id=1516992236]
+layout_mode = 1
+anchors_preset = 0
+offset_left = 210.7
+offset_top = 1317.9
+offset_right = 910.7
+offset_bottom = 1489.9
+mouse_filter = 2
+
+[node name="GlyphViewport" type="SubViewport" parent="Stage/Content/Lv3/TitleInner" unique_id=1485181962]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(700, 172)
+render_target_update_mode = 3
+
+[node name="Glyph" type="Label" parent="Stage/Content/Lv3/TitleInner/GlyphViewport" unique_id=598470949]
+offset_right = 700.0
+offset_bottom = 172.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 144
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InnerShadow" type="TextureRect" parent="Stage/Content/Lv3/TitleInner" unique_id=1217694643]
+material = SubResource("ShaderMaterial_e8yi4")
+layout_mode = 0
+offset_right = 700.0
+offset_bottom = 172.0
+mouse_filter = 2
+expand_mode = 1
+
+[node name="SubtitleShadow" type="Label" parent="Stage/Content/Lv3" unique_id=930680010]
+layout_mode = 1
+offset_left = 210.1
+offset_top = 1465.5
+offset_right = 910.1
+offset_bottom = 1560.5
+theme_override_colors/font_color = Color(0.709804, 0.278431, 0.031373, 1)
+theme_override_colors/font_outline_color = Color(0.709804, 0.278431, 0.031373, 1)
+theme_override_constants/outline_size = 29
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 79
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Stage/Content/Lv3" unique_id=2013060508]
+material = SubResource("ShaderMaterial_xwtyg")
+layout_mode = 1
+offset_left = 210.1
+offset_top = 1465.5
+offset_right = 910.1
+offset_bottom = 1560.5
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.639216, 0.231373, 0.039216, 1)
+theme_override_constants/outline_size = 29
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 79
+horizontal_alignment = 1
+vertical_alignment = 1

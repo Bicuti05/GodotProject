@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" uid="uid://b8w7ej4u7klja" path="res://scripts/main/pages/game/bonus_pig_fill.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://o18wa6nak6y8" path="res://assets/sprites/juice_sort/bonus_pig_big.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bcewcbc73acla" path="res://assets/sprites/juice_sort/bonus_coin_small.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="4"]
+
+[node name="BonusPigFill" type="Control" unique_id=1041704814]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+pig_texture = ExtResource("2")
+coin_texture = ExtResource("3")
+entry_point_texture = ExtResource("4")
+entry_star_texture = ExtResource("4")
+
+[node name="Pig" type="TextureRect" parent="." unique_id=154269502]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5

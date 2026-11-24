@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://dkdm6cmttg5t4"
+path="res://.godot/imported/Box_kk_merged.skel-b17fbca50f9b5137724ff959bd3ceaa0.spskel"
+
+[deps]
+
+source_file="res://assets/spine/special_challenge_reward/Box_kk_merged.skel"
+dest_files=["res://.godot/imported/Box_kk_merged.skel-b17fbca50f9b5137724ff959bd3ceaa0.spskel"]
+
+[params]
+

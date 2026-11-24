@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://d4gi0i1h6ybjx"
+path="res://.godot/imported/effect_butterfly_bigoringe.skel-10a87968acac6f7e7b04f6c59185575f.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_butterfly_bigoringe/effect_butterfly_bigoringe.skel"
+dest_files=["res://.godot/imported/effect_butterfly_bigoringe.skel-10a87968acac6f7e7b04f6c59185575f.spskel"]
+
+[params]
+

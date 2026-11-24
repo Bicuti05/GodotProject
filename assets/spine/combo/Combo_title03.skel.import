@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://cnjfdi1p8efdb"
+path="res://.godot/imported/Combo_title03.skel-036216f43d60b2acbf74eda47bd98253.spskel"
+
+[deps]
+
+source_file="res://assets/spine/combo/Combo_title03.skel"
+dest_files=["res://.godot/imported/Combo_title03.skel-036216f43d60b2acbf74eda47bd98253.spskel"]
+
+[params]
+

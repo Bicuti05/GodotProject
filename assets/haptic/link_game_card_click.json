@@ -1,0 +1,76 @@
+{
+  "Version" : 1,
+  "Pattern" : [
+    {
+      "Event" : {
+        "EventParameters" : [
+          {
+            "ParameterValue" : 0.79999995231628418,
+            "ParameterID" : "HapticIntensity"
+          },
+          {
+            "ParameterValue" : 0.34999999403953552,
+            "ParameterID" : "HapticSharpness"
+          },
+          {
+            "ParameterID" : "AttackTime",
+            "ParameterValue" : 0.11999999731779099
+          },
+          {
+            "ParameterID" : "DecayTime",
+            "ParameterValue" : 1
+          },
+          {
+            "ParameterID" : "ReleaseTime",
+            "ParameterValue" : 0
+          },
+          {
+            "ParameterID" : "Sustained",
+            "ParameterValue" : 1
+          }
+        ],
+        "EventType" : "HapticContinuous",
+        "EventDuration" : 0.15000000596046448,
+        "Time" : 0
+      }
+    },
+    {
+      "Event" : {
+        "EventType" : "HapticContinuous",
+        "EventParameters" : [
+          {
+            "ParameterValue" : 0.61000001430511475,
+            "ParameterID" : "HapticIntensity"
+          },
+          {
+            "ParameterID" : "HapticSharpness",
+            "ParameterValue" : 0.34999999403953552
+          },
+          {
+            "ParameterID" : "AttackTime",
+            "ParameterValue" : 0
+          },
+          {
+            "ParameterID" : "DecayTime",
+            "ParameterValue" : 1
+          },
+          {
+            "ParameterID" : "ReleaseTime",
+            "ParameterValue" : 0
+          },
+          {
+            "ParameterID" : "Sustained",
+            "ParameterValue" : 1
+          }
+        ],
+        "Time" : 0.23205128130622393,
+        "EventDuration" : 0.10000000149011612
+      }
+    }
+  ],
+  "Metadata" : {
+    "Description" : "Custom haptic pattern created with HapticSync",
+    "Project" : "HapticSync",
+    "Created" : "2026-08-05T07:17:01Z"
+  }
+}

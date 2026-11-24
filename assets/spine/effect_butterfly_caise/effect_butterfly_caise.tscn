@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/effect_butterfly_caise/effect_butterfly_caise.tres" id="1"]
+
+[node name="EffectButterflyCaise" type="SpineSprite" unique_id=1806051935]
+skeleton_data_res = ExtResource("1")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

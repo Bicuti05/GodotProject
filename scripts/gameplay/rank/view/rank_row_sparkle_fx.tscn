@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Texture2D" uid="uid://doeqonm3pgxg2" path="res://assets/effect/texture/rank/et_star_404.png" id="1"]
+[ext_resource type="Script" uid="uid://bbry30uoiw8jn" path="res://scripts/gameplay/rank/view/rank_row_sparkle_fx.gd" id="2"]
+
+[sub_resource type="CanvasItemMaterial" id="m_add"]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id="a_star404"]
+atlas = ExtResource("1")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="Curve" id="c_002_pop"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.065, 1), 0.0, 0.0, 0, 0, Vector2(0.5, 0.833), 0.0, 0.0, 0, 0, Vector2(1, 0.246), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[node name="RankRowSparkleFx" type="CPUParticles2D" unique_id=577109154]
+visible = false
+material = SubResource("m_add")
+emitting = false
+amount = 15
+texture = SubResource("a_star404")
+lifetime = 1.1
+one_shot = true
+explosiveness = 0.73
+emission_shape = 3
+emission_rect_extents = Vector2(500, 2.5)
+spread = 180.0
+gravity = Vector2(0, 0)
+angular_velocity_min = 90.0
+angular_velocity_max = 90.0
+scale_amount_min = 0.7812
+scale_amount_max = 0.7812
+scale_amount_curve = SubResource("c_002_pop")
+color = Color(1, 0.955, 0.84, 1)
+script = ExtResource("2")

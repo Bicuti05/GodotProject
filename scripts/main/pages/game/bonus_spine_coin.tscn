@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://tijg02x0gtip" path="res://scripts/main/pages/game/bonus_spine_coin.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/spine/effect_coin_clover/effect_coin_clover.tscn" id="2"]
+
+[node name="BonusSpineCoin" type="Control" unique_id=547184907]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="Spine" parent="." unique_id=1981278540 instance=ExtResource("2")]
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

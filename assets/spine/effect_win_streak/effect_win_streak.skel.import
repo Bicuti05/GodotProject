@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://b0r80kjwaxhci"
+path="res://.godot/imported/effect_win_streak.skel-f8c58547093b23e54636025a44c44f9b.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_win_streak/effect_win_streak.skel"
+dest_files=["res://.godot/imported/effect_win_streak.skel-f8c58547093b23e54636025a44c44f9b.spskel"]
+
+[params]
+

@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+
+[ext_resource type="SpineAtlasResource" uid="uid://c6nfes4yhtej1" path="res://assets/spine/effect_flower_unlock/effect_flower_unlock.atlas" id="1"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://dhyvhisis8eb0" path="res://assets/spine/effect_flower_unlock/effect_flower_unlock.skel" id="2"]
+
+[resource]
+atlas_res = ExtResource("1")
+skeleton_file_res = ExtResource("2")

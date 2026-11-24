@@ -1,0 +1,110 @@
+[
+  {
+    "name": "trophy_body",
+    "source": "AI reference-conditioned reconstruction; occluded regions reconstructed, not original Figma hidden layers",
+    "bounds": [
+      28,
+      113,
+      615,
+      500
+    ],
+    "size": [
+      587,
+      387
+    ],
+    "alpha": [
+      0,
+      254
+    ]
+  },
+  {
+    "name": "flower_blue",
+    "source": "AI reference-conditioned reconstruction; occluded regions reconstructed, not original Figma hidden layers",
+    "bounds": [
+      607,
+      78,
+      1052,
+      486
+    ],
+    "size": [
+      445,
+      408
+    ],
+    "alpha": [
+      0,
+      254
+    ]
+  },
+  {
+    "name": "flower_orange",
+    "source": "AI reference-conditioned reconstruction; occluded regions reconstructed, not original Figma hidden layers",
+    "bounds": [
+      1069,
+      82,
+      1514,
+      491
+    ],
+    "size": [
+      445,
+      409
+    ],
+    "alpha": [
+      0,
+      254
+    ]
+  },
+  {
+    "name": "flower_pink",
+    "source": "AI reference-conditioned reconstruction; occluded regions reconstructed, not original Figma hidden layers",
+    "bounds": [
+      77,
+      540,
+      519,
+      937
+    ],
+    "size": [
+      442,
+      397
+    ],
+    "alpha": [
+      0,
+      254
+    ]
+  },
+  {
+    "name": "leaves_left",
+    "source": "AI reference-conditioned reconstruction; occluded regions reconstructed, not original Figma hidden layers",
+    "bounds": [
+      585,
+      557,
+      963,
+      945
+    ],
+    "size": [
+      378,
+      388
+    ],
+    "alpha": [
+      0,
+      254
+    ]
+  },
+  {
+    "name": "leaves_right",
+    "source": "AI reference-conditioned reconstruction; occluded regions reconstructed, not original Figma hidden layers",
+    "bounds": [
+      1148,
+      572,
+      1487,
+      948
+    ],
+    "size": [
+      339,
+      376
+    ],
+    "alpha": [
+      0,
+      254
+    ]
+  }
+]

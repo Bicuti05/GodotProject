@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://dofl5vglgxd2o"
+path="res://.godot/imported/effect_butterfly_caise.atlas-6d04257aa0669a83653e84333d779ef2.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_butterfly_caise/effect_butterfly_caise.atlas"
+dest_files=["res://.godot/imported/effect_butterfly_caise.atlas-6d04257aa0669a83653e84333d779ef2.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

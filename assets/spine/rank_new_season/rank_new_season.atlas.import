@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://cqpoh5rpuaeqp"
+path="res://.godot/imported/rank_new_season.atlas-a61bf45dbb98f4add87dcc8a30bc5c12.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/rank_new_season/rank_new_season.atlas"
+dest_files=["res://.godot/imported/rank_new_season.atlas-a61bf45dbb98f4add87dcc8a30bc5c12.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

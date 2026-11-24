@@ -1,0 +1,109 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" uid="uid://ctvikikf4x0ab" path="res://scripts/main/pages/game/bonus_pig_hud.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://1nfmv7kl7owo" path="res://assets/sprites/juice_sort/bonus_pig.png" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/juice_sort/view/spiral_light_fx.tscn" id="3"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="4"]
+
+[sub_resource type="CanvasItemMaterial" id="add"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="particle_scale"]
+_data = [Vector2(0, 0.65), 0.0, 0.0, 0, 0, Vector2(0.2, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.15), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="trail_fade"]
+offsets = PackedFloat32Array(0, 0.18, 1)
+colors = PackedColorArray(1, 0.9529, 0.7, 0, 1, 0.9529, 0.7, 0.85, 1, 0.9529, 0.7, 0)
+
+[sub_resource type="Gradient" id="arrival_fade"]
+offsets = PackedFloat32Array(0, 0.15, 0.55, 1)
+colors = PackedColorArray(1, 0.9529, 0.7, 0.5, 1, 0.9529, 0.7, 0.85, 1, 0.9529, 0.7, 0.5, 1, 0.9529, 0.7, 0)
+
+[node name="BonusPigHud" type="Control" unique_id=697813563]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+pig_texture = ExtResource("2")
+spiral_scene = ExtResource("3")
+
+[node name="Pig" type="TextureRect" parent="." unique_id=338975908]
+visible = false
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 96.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="TrailAnchor" type="Node2D" parent="." unique_id=14720232]
+
+[node name="TrailDust" type="CPUParticles2D" parent="." unique_id=989699571]
+material = SubResource("add")
+emitting = false
+amount = 24
+texture = ExtResource("4")
+lifetime = 0.26
+emission_shape = 1
+emission_sphere_radius = 11.0
+spread = 180.0
+gravity = Vector2(0, 18)
+initial_velocity_min = 12.0
+initial_velocity_max = 45.0
+damping_min = 20.0
+damping_max = 35.0
+scale_amount_min = 0.18
+scale_amount_max = 0.28
+scale_amount_curve = SubResource("particle_scale")
+color_ramp = SubResource("trail_fade")
+
+[node name="ArrivalDust" type="CPUParticles2D" parent="." unique_id=270626015]
+material = SubResource("add")
+emitting = false
+amount = 18
+texture = ExtResource("4")
+lifetime = 0.3
+one_shot = true
+explosiveness = 0.95
+emission_shape = 1
+emission_sphere_radius = 24.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 250.0
+initial_velocity_max = 420.0
+damping_min = 140.0
+damping_max = 200.0
+scale_amount_min = 0.24
+scale_amount_max = 0.36
+scale_amount_curve = SubResource("particle_scale")
+color_ramp = SubResource("arrival_fade")
+
+[node name="ArrivalStars" type="CPUParticles2D" parent="." unique_id=1667871084]
+material = SubResource("add")
+emitting = false
+amount = 6
+texture = ExtResource("4")
+lifetime = 0.34
+one_shot = true
+explosiveness = 1.0
+emission_shape = 1
+emission_sphere_radius = 34.0
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 180.0
+initial_velocity_max = 260.0
+angular_velocity_min = -90.0
+angular_velocity_max = 90.0
+damping_min = 100.0
+damping_max = 130.0
+angle_min = -180.0
+angle_max = 180.0
+scale_amount_min = 0.32
+scale_amount_max = 0.44
+scale_amount_curve = SubResource("particle_scale")
+color_ramp = SubResource("arrival_fade")

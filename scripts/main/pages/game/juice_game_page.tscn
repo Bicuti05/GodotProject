@@ -1,0 +1,552 @@
+[gd_scene load_steps=25 format=3]
+
+[ext_resource type="Script" uid="uid://b55xykvl3gan3" path="res://scripts/main/pages/game/juice_game_page.gd" id="1"]
+[ext_resource type="Resource" path="res://scripts/gameplay/juice_sort/view/skin/christmas_game.tres" id="2"]
+[ext_resource type="Resource" path="res://scripts/gameplay/juice_sort/view/skin/skin_catalog.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://dxqydfsn8eak8" path="res://assets/sprites/game_super_hard_fire.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://b0shbskik1k18" path="res://assets/sprites/juice_sort/gamepage_bg_leaf_shadow.webp" id="5"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/juice_sort/view/juice_quota_bar.tscn" id="6"]
+[ext_resource type="Texture2D" uid="uid://duwvugg3isumg" path="res://assets/sprites/juice_sort/reset_icon_bg.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://hhmslhd1b4w5" path="res://assets/sprites/juice_sort/common_ic_reset.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://c5g6ca2unnxrg" path="res://assets/sprites/prop_btn_badge_bg_orange.png" id="9"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="10"]
+[ext_resource type="Texture2D" uid="uid://dyqdvqab0fjws" path="res://assets/sprites/common_nav_round_bg.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://gybg45k5by20" path="res://assets/sprites/juice_sort/ic_back.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cbde5nls6dvhu" path="res://assets/sprites/juice_sort/common_nav_round_bluebg.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://q0cnqgerh35x" path="res://assets/sprites/juice_sort/common_ic_reopen.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://qovu1ld2tmig" path="res://assets/sprites/juice_sort/common_ic_reopen_blue.png" id="15"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="16"]
+[ext_resource type="Texture2D" uid="uid://c8pyg3kryodkp" path="res://assets/sprites/game_hard_fire.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://bgxig8lrhegdu" path="res://assets/sprites/game_special_challenge_header_chest.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://73823utb8342" path="res://assets/sprites/game_coin_pill.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://d2wkj0vlu7n2a" path="res://assets/sprites/game_coin_icon.png" id="20"]
+[ext_resource type="PackedScene" path="res://scripts/widget/timed_challenge_clock/timed_clock_flight.tscn" id="21"]
+[ext_resource type="Texture2D" uid="uid://c1spc76ih3y8i" path="res://assets/sprites/juice_sort/double_coins_x2_text.png" id="22"]
+
+[sub_resource type="Shader" id="EndlessWarningShader"]
+code = "shader_type canvas_item;
+uniform vec2 viewport_size = vec2(1080.0, 2340.0);
+uniform float strength = 0.0;
+void fragment() {
+    vec2 edge_distance = min(UV, vec2(1.0) - UV) * viewport_size;
+    float width = min(viewport_size.x, viewport_size.y) * 0.07;
+    float edge = 1.0 - smoothstep(0.0, width, min(edge_distance.x, edge_distance.y));
+    COLOR = vec4(0.92, 0.14, 0.18, edge * edge * strength);
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vrumk"]
+resource_local_to_scene = true
+shader = SubResource("EndlessWarningShader")
+shader_parameter/viewport_size = null
+shader_parameter/strength = null
+
+[node name="JuiceGamePage" type="Control" unique_id=1407328961]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+christmas_theme_skin = ExtResource("2")
+skin_catalog = ExtResource("3")
+super_hard_fire_texture = ExtResource("4")
+
+[node name="IqGeniusFeedback" type="Control" parent="." unique_id=1604607695]
+visible = false
+z_index = 97
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="Bg" type="TextureRect" parent="." unique_id=26137732]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+
+[node name="ChristmasBackground" type="ColorRect" parent="." unique_id=1227509184]
+visible = false
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.8980392, 0.84705883, 0.7647059, 1)
+
+[node name="Snowflake" type="TextureRect" parent="ChristmasBackground" unique_id=1177490930]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Candy" type="TextureRect" parent="ChristmasBackground" unique_id=541282676]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Bell" type="TextureRect" parent="ChristmasBackground" unique_id=1169974214]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hat" type="TextureRect" parent="ChristmasBackground" unique_id=2085536694]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Gift" type="TextureRect" parent="ChristmasBackground" unique_id=1262189125]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Board" type="Control" parent="." unique_id=1145749602]
+visible = false
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="Quota" parent="." unique_id=1212292023 instance=ExtResource("6")]
+layout_mode = 0
+scale = Vector2(0.95, 0.95)
+
+[node name="IqProgressBar" type="Control" parent="Quota" unique_id=2107818097]
+visible = false
+z_index = 2
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="ProgressBling" type="Control" parent="Quota" unique_id=316191444]
+visible = false
+layout_mode = 1
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="ComboFeedback" type="Control" parent="." unique_id=1441473612]
+visible = false
+z_index = 92
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="EmptyColFeedback" type="Control" parent="." unique_id=334752158]
+visible = false
+z_index = 90
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="LongLinkFeedback" type="Control" parent="." unique_id=451463655]
+visible = false
+z_index = 90
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="ResetBtn" type="Button" parent="." unique_id=1650595209]
+z_index = 5
+custom_minimum_size = Vector2(204, 228)
+layout_mode = 0
+offset_right = 204.0
+offset_bottom = 228.0
+focus_mode = 0
+flat = true
+
+[node name="Bg" type="TextureRect" parent="ResetBtn" unique_id=1155996280]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="ResetBtn" unique_id=1401022148]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 42.0
+offset_right = 174.0
+offset_bottom = 186.0
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Badge" type="NinePatchRect" parent="ResetBtn" unique_id=652441774]
+z_index = 2
+layout_mode = 0
+offset_left = 103.5
+offset_top = 137.0
+offset_right = 244.5
+offset_bottom = 225.0
+texture = ExtResource("9")
+patch_margin_left = 44
+patch_margin_right = 44
+
+[node name="Label" type="Label" parent="ResetBtn/Badge" unique_id=1251652810]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 46
+text = "JUICE_RESET_BADGE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Header" type="Control" parent="." unique_id=61271399]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 177.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="BackBtn" type="Button" parent="Header" unique_id=1784897945 groups=["_safe_top"]]
+z_index = 70
+layout_mode = 0
+offset_left = 40.0
+offset_top = 38.0
+offset_right = 156.0
+offset_bottom = 154.0
+focus_mode = 0
+flat = true
+
+[node name="Bg" type="TextureRect" parent="Header/BackBtn" unique_id=1066351228]
+layout_mode = 1
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 136.0
+offset_bottom = 136.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Texture" type="TextureRect" parent="Header/BackBtn" unique_id=1058571798]
+layout_mode = 1
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 102.0
+offset_bottom = 102.0
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ResetSmallBtn" type="Button" parent="Header" unique_id=283932577 groups=["_safe_top"]]
+visible = false
+z_index = 70
+layout_mode = 0
+offset_left = 176.0
+offset_top = 38.0
+offset_right = 292.0
+offset_bottom = 154.0
+focus_mode = 0
+flat = true
+
+[node name="Bg" type="TextureRect" parent="Header/ResetSmallBtn" unique_id=77187867]
+layout_mode = 1
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 136.0
+offset_bottom = 136.0
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Texture" type="TextureRect" parent="Header/ResetSmallBtn" unique_id=856029455]
+layout_mode = 1
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 102.0
+offset_bottom = 102.0
+mouse_filter = 2
+texture = ExtResource("14")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BgWhite" type="TextureRect" parent="Header/ResetSmallBtn" unique_id=1456217716]
+visible = false
+layout_mode = 1
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 136.0
+offset_bottom = 136.0
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TextureBlue" type="TextureRect" parent="Header/ResetSmallBtn" unique_id=164348610]
+visible = false
+layout_mode = 1
+offset_left = 14.0
+offset_top = 14.0
+offset_right = 102.0
+offset_bottom = 102.0
+mouse_filter = 2
+texture = ExtResource("15")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LevelBlock" type="Control" parent="Header" unique_id=1641550607 groups=["_safe_top"]]
+layout_mode = 1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -235.0
+offset_top = 48.0
+offset_right = 235.0
+offset_bottom = 177.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="LevelLabel" type="Label" parent="Header/LevelBlock" unique_id=1955103587]
+layout_mode = 0
+offset_right = 470.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.0549, 0.0941, 0.1451, 1)
+theme_override_fonts/font = ExtResource("16")
+theme_override_font_sizes/font_size = 64
+text = "LEVEL_NUM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HardBadge" type="Control" parent="Header/LevelBlock" unique_id=1819254386]
+visible = false
+anchors_preset = 0
+offset_left = 163.0
+offset_top = 76.0
+offset_right = 307.0
+offset_bottom = 124.0
+mouse_filter = 2
+
+[node name="Icon" type="TextureRect" parent="Header/LevelBlock/HardBadge" unique_id=1170139963]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 9.5
+offset_right = 35.0
+offset_bottom = 48.5
+mouse_filter = 2
+texture = ExtResource("17")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="Header/LevelBlock/HardBadge" unique_id=2120644927]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 144.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.984314, 0.392157, 0.345098, 1)
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 44
+text = "HOME_HARD_BADGE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ChallengeChest" type="TextureRect" parent="Header/LevelBlock" unique_id=1875100010]
+visible = false
+layout_mode = 0
+offset_left = 66.481
+offset_top = 1.1643
+offset_right = 169.52
+offset_bottom = 94.8357
+mouse_filter = 2
+texture = ExtResource("18")
+expand_mode = 1
+
+[node name="CoinHud" type="Control" parent="Header" unique_id=1710060059 groups=["_safe_top"]]
+z_index = 70
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -318.0
+offset_top = 38.0
+offset_right = -48.0
+offset_bottom = 154.0
+grow_horizontal = 0
+mouse_filter = 2
+
+[node name="Pill" type="TextureRect" parent="Header/CoinHud" unique_id=1421685839]
+layout_mode = 1
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 290.0
+offset_bottom = 136.0
+mouse_filter = 2
+texture = ExtResource("19")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CoinLabel" type="Label" parent="Header/CoinHud" unique_id=1480727604]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 1.0
+offset_left = 110.0
+offset_right = 256.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.137, 0.184, 0.243, 1)
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 72
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="CoinIcon" type="TextureRect" parent="Header/CoinHud" unique_id=165284470]
+layout_mode = 1
+offset_left = 66.0
+offset_top = 14.0
+offset_right = 154.0
+offset_bottom = 102.0
+pivot_offset = Vector2(44, 44)
+mouse_filter = 2
+texture = ExtResource("20")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BonusGainLabel" type="Label" parent="Header/CoinHud" unique_id=1485583332]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+offset_left = -20.0
+offset_top = 140.0
+offset_right = 290.0
+offset_bottom = 212.0
+theme_override_colors/font_color = Color(1, 0.725, 0.043, 1)
+theme_override_colors/font_outline_color = Color(0.478, 0.267, 0.043, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 56
+text = "+300"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgressFullPreviewTimer" type="Timer" parent="." unique_id=1843512213]
+wait_time = 2.5
+one_shot = true
+
+[node name="SpecialChallengeBanner" type="Control" parent="." unique_id=1641827315]
+visible = false
+z_index = 100
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="BonusPigHud" type="Control" parent="." unique_id=2086374376]
+visible = false
+z_index = 72
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="BonusPigSmash" type="Control" parent="." unique_id=265495555]
+visible = false
+z_index = 95
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="BonusLevelBanner" type="Control" parent="." unique_id=1905495592]
+visible = false
+z_index = 91
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="RankCollectBar" type="Control" parent="." unique_id=828980135]
+visible = false
+z_index = 96
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="RankCollectFly" type="Node2D" parent="." unique_id=734289183]
+visible = false
+z_index = 96
+metadata/component_preserve_layout = true
+
+[node name="TimedClockFlight" parent="." unique_id=1437825461 instance=ExtResource("21")]
+layout_mode = 1
+
+[node name="GameStartBanner" type="Control" parent="." unique_id=433132313]
+visible = false
+z_index = 91
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="GoodLuckSpine" type="Node2D" parent="." unique_id=1797635986]
+visible = false
+z_index = 90
+scale = Vector2(2, 2)
+
+[node name="ChallengeBanner" type="Control" parent="." unique_id=884108223]
+visible = false
+z_index = 90
+anchors_preset = 0
+metadata/component_preserve_layout = true
+
+[node name="SmartMoveSpine" type="Node2D" parent="." unique_id=1615269455]
+visible = false
+z_index = 90
+
+[node name="LikeSpine" type="Node2D" parent="." unique_id=2077530772]
+visible = false
+z_index = 90
+
+[node name="EndlessTimeWarning" type="ColorRect" parent="." unique_id=1212146466]
+visible = false
+z_index = 97
+material = SubResource("ShaderMaterial_vrumk")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="EndlessEndMask" type="ColorRect" parent="." unique_id=142012795]
+visible = false
+z_index = 98
+layout_mode = 0
+color = Color(0, 0, 0, 0.55)
+
+[node name="Message" type="Label" parent="EndlessEndMask" unique_id=775344185]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("10")
+theme_override_font_sizes/font_size = 54
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="CoinBonusText" type="TextureRect" parent="." unique_id=562523909]
+visible = false
+z_index = 90
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("22")
+expand_mode = 1
+stretch_mode = 5
+
+[connection signal="pressed" from="ResetBtn" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="Header/BackBtn" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Header/ResetSmallBtn" to="." method="_on_reset_pressed"]
+[connection signal="timeout" from="ProgressFullPreviewTimer" to="." method="_on_progress_full_preview_timeout"]

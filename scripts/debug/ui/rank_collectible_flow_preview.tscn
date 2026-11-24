@@ -1,0 +1,160 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" uid="uid://c113gd46no5na" path="res://scripts/debug/ui/rank_collectible_flow_preview.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/main/pages/game/juice_game_page.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/main/pages/rank_game_finish/rank_game_finish_page.tscn" id="3"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="4"]
+
+[sub_resource type="Theme" id="theme"]
+default_font = ExtResource("4")
+default_font_size = 30
+
+[sub_resource type="StyleBoxFlat" id="panel_style"]
+bg_color = Color(0.04, 0.07, 0.12, 0.97)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="RankCollectibleFlowPreview" type="Control" unique_id=1509027612]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Shade" type="ColorRect" parent="." unique_id=1664212030]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.02, 0.03, 0.05, 1)
+
+[node name="Views" type="Control" parent="." unique_id=291783080]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Game" parent="Views" unique_id=486286374 instance=ExtResource("2")]
+process_mode = 3
+layout_mode = 1
+
+[node name="Preview" parent="Views" unique_id=861869672 instance=ExtResource("3")]
+process_mode = 3
+visible = false
+
+[node name="Panel" type="PanelContainer" parent="." unique_id=47443706]
+z_index = 200
+layout_mode = 0
+offset_right = 1032.0
+offset_bottom = 400.0
+theme = SubResource("theme")
+theme_override_styles/panel = SubResource("panel_style")
+
+[node name="Margin" type="MarginContainer" parent="Panel" unique_id=1687870874]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 16
+
+[node name="Rows" type="VBoxContainer" parent="Panel/Margin" unique_id=855786443]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Title" type="Label" parent="Panel/Margin/Rows" unique_id=347507046]
+layout_mode = 2
+text = "前三名收集花 · 衔接调试"
+
+[node name="Kind" type="HBoxContainer" parent="Panel/Margin/Rows" unique_id=1633000209]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Style" type="OptionButton" parent="Panel/Margin/Rows/Kind" unique_id=101153634]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Count" type="OptionButton" parent="Panel/Margin/Rows/Kind" unique_id=2042913815]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Mode" type="OptionButton" parent="Panel/Margin/Rows" unique_id=2043663143]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Options" type="HBoxContainer" parent="Panel/Margin/Rows" unique_id=1664085510]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Speed" type="OptionButton" parent="Panel/Margin/Rows/Options" unique_id=134073537]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Step" type="OptionButton" parent="Panel/Margin/Rows/Options" unique_id=1700432709]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Rules" type="CheckButton" parent="Panel/Margin/Rows/Options" unique_id=753367639]
+layout_mode = 2
+text = "规则栏"
+
+[node name="Loop" type="CheckButton" parent="Panel/Margin/Rows/Options" unique_id=1592417142]
+layout_mode = 2
+text = "循环"
+
+[node name="Buttons" type="HBoxContainer" parent="Panel/Margin/Rows" unique_id=113062974]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Replay" type="Button" parent="Panel/Margin/Rows/Buttons" unique_id=913481344]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "从头重播"
+
+[node name="Pause" type="Button" parent="Panel/Margin/Rows/Buttons" unique_id=2059008657]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "暂停"
+
+[node name="Stop" type="Button" parent="Panel/Margin/Rows/Buttons" unique_id=1946096074]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "停止"
+
+[node name="Close" type="Button" parent="Panel/Margin/Rows/Buttons" unique_id=616366728]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "关闭"
+
+[node name="Fold" type="Button" parent="Panel/Margin/Rows/Buttons" unique_id=1288604164]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "收起"
+
+[node name="Status" type="Label" parent="Panel/Margin/Rows" unique_id=313030576]
+custom_minimum_size = Vector2(0, 44)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "准备中"
+
+[node name="Notice" type="Label" parent="Panel/Margin/Rows" unique_id=566822154]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "只读模拟yes组；不切换真实活动或AB。参数重播生效，切换速度自动重播；慢放不修改全局速度。"
+
+[connection signal="item_selected" from="Panel/Margin/Rows/Options/Speed" to="." method="_on_speed_selected"]
+[connection signal="pressed" from="Panel/Margin/Rows/Buttons/Replay" to="." method="replay"]
+[connection signal="pressed" from="Panel/Margin/Rows/Buttons/Pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="Panel/Margin/Rows/Buttons/Stop" to="." method="stop"]
+[connection signal="pressed" from="Panel/Margin/Rows/Buttons/Close" to="." method="close"]
+[connection signal="pressed" from="Panel/Margin/Rows/Buttons/Fold" to="." method="_on_fold_pressed"]

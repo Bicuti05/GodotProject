@@ -1,0 +1,233 @@
+[gd_scene load_steps=24 format=3]
+
+[ext_resource type="Script" uid="uid://be2wmdcqnnavo" path="res://scripts/main/dialogs/rank_season_win/rank_season_win_page.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dqruvmx32514s" path="res://assets/sprites/common_rank_ranks_detailpage_icon_top1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bu7uef775ub70" path="res://assets/sprites/common_rank_ranks_detailpage_icon_top2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c5xsvl32aolo3" path="res://assets/sprites/common_rank_ranks_detailpage_icon_top3.png" id="4"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/special_challenge_reward/special_challenge_reward.tres" id="5"]
+[ext_resource type="Script" uid="uid://cxr43kgvg6urr" path="res://scripts/main/dialogs/rank_season_win/rank_season_win_flags.gd" id="6"]
+[ext_resource type="Script" uid="uid://8j818tyuhcof" path="res://scripts/main/dialogs/finish/view/firework_show.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://ca4ue6856w434" path="res://assets/effect/texture/point/ef_point_003.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://l7r8ey7sife0" path="res://assets/effect/texture/glow/ef_glow_002.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="10"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/rank_completion/rank_completion.tres" id="11"]
+[ext_resource type="Shader" uid="uid://bcsn2sv8emr45" path="res://assets/effect/shader/rank_season_win_slot.gdshader" id="12"]
+[ext_resource type="PackedScene" path="res://scripts/widget/confetti_fx/confetti_fx.tscn" id="13"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_danmaku_layer.tscn" id="14"]
+[ext_resource type="PackedScene" uid="uid://dl6fxal11wxp" path="res://scripts/gameplay/rank/view/rank_avatar_pool.tscn" id="15"]
+[ext_resource type="PackedScene" uid="uid://ccscmf2c8wdu8" path="res://scripts/gameplay/rank/view/rank_avatar_cell.tscn" id="16"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="17"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="18"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fojsf"]
+resource_local_to_scene = true
+shader = ExtResource("12")
+shader_parameter/replacement_texture = null
+shader_parameter/atlas_region = Vector4(0.0021459227, 0.7226096, 0.21888413, 0.10159363)
+shader_parameter/content_scale = null
+shader_parameter/mesh_scale = null
+shader_parameter/mesh_center = null
+shader_parameter/enabled = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vrtv3"]
+resource_local_to_scene = true
+shader = ExtResource("12")
+shader_parameter/replacement_texture = null
+shader_parameter/atlas_region = Vector4(0.8991416, 0.9023904, 0.09334764, 0.055278886)
+shader_parameter/content_scale = null
+shader_parameter/mesh_scale = null
+shader_parameter/mesh_center = null
+shader_parameter/enabled = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sykqd"]
+resource_local_to_scene = true
+shader = ExtResource("12")
+shader_parameter/replacement_texture = null
+shader_parameter/atlas_region = Vector4(0.6909871, 0.18824701, 0.2950644, 0.024402391)
+shader_parameter/content_scale = null
+shader_parameter/mesh_scale = 1.6
+shader_parameter/mesh_center = null
+shader_parameter/enabled = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e5fn4"]
+resource_local_to_scene = true
+shader = ExtResource("12")
+shader_parameter/replacement_texture = null
+shader_parameter/atlas_region = Vector4(0.9087983, 0.82071716, 0.08476395, 0.020916335)
+shader_parameter/content_scale = null
+shader_parameter/mesh_scale = 2.2
+shader_parameter/mesh_center = null
+shader_parameter/enabled = false
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xxv1a"]
+resource_local_to_scene = true
+shader = ExtResource("12")
+shader_parameter/replacement_texture = null
+shader_parameter/atlas_region = Vector4(0.55150217, 0.2569721, 0.42918456, 0.0498008)
+shader_parameter/content_scale = null
+shader_parameter/mesh_scale = null
+shader_parameter/mesh_center = null
+shader_parameter/enabled = false
+
+[node name="RankSeasonWinPage" type="Control" unique_id=1947775855]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+top_icons = [ExtResource("2"), ExtResource("3"), ExtResource("4")]
+
+[node name="Scrim" type="ColorRect" parent="." unique_id=961333421]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.85)
+
+[node name="Flags" type="SpineSprite" parent="." unique_id=1601561474]
+visible = false
+skeleton_data_res = ExtResource("5")
+update_mode = 2
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+script = ExtResource("6")
+
+[node name="Firework" type="Node2D" parent="." unique_id=1753516076]
+visible = false
+script = ExtResource("7")
+particle_atlas = ExtResource("8")
+glow_texture = ExtResource("9")
+star_texture = ExtResource("10")
+
+[node name="Presentation" type="Control" parent="." unique_id=1402795583]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 16.0
+offset_top = 95.0
+offset_right = 16.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Spine" type="SpineSprite" parent="Presentation" unique_id=1337881948]
+visible = false
+texture_filter = 2
+skeleton_data_res = ExtResource("11")
+update_mode = 2
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="AvatarSlot" type="SpineSlotNode" parent="Presentation/Spine" unique_id=798914733]
+slot_name = "player_avatar"
+normal_material = SubResource("ShaderMaterial_fojsf")
+
+[node name="BadgeSlot" type="SpineSlotNode" parent="Presentation/Spine" unique_id=320365546]
+slot_name = "badge_rank_01"
+normal_material = SubResource("ShaderMaterial_vrtv3")
+
+[node name="NicknameSlot" type="SpineSlotNode" parent="Presentation/Spine" unique_id=1889716620]
+slot_name = "text_player_name"
+normal_material = SubResource("ShaderMaterial_sykqd")
+
+[node name="RankSlot" type="SpineSlotNode" parent="Presentation/Spine" unique_id=428144762]
+slot_name = "text_rank_1st"
+normal_material = SubResource("ShaderMaterial_e5fn4")
+
+[node name="TitleSlot" type="SpineSlotNode" parent="Presentation/Spine" unique_id=1238887208]
+slot_name = "text_you_win"
+normal_material = SubResource("ShaderMaterial_xxv1a")
+
+[node name="Confetti" parent="." unique_id=44050739 instance=ExtResource("13")]
+
+[node name="DanmakuLayer" parent="." unique_id=2062704489 instance=ExtResource("14")]
+layout_mode = 1
+
+[node name="AvatarPool" parent="." unique_id=924120088 instance=ExtResource("15")]
+
+[node name="CueClock" type="Timer" parent="." unique_id=1633309600]
+one_shot = true
+
+[node name="DynamicTextures" type="Node" parent="." unique_id=125293608]
+
+[node name="Avatar" type="SubViewport" parent="DynamicTextures" unique_id=2029169750]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(204, 204)
+render_target_update_mode = 0
+
+[node name="Cell" parent="DynamicTextures/Avatar" unique_id=1705552106 instance=ExtResource("16")]
+custom_minimum_size = Vector2(168, 168)
+offset_left = 18.0
+offset_top = 18.0
+offset_right = 186.0
+offset_bottom = 186.0
+mouse_filter = 2
+frame_kind = 2
+
+[node name="Nickname" type="SubViewport" parent="DynamicTextures" unique_id=809490544]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(550, 98)
+render_target_update_mode = 0
+
+[node name="Label" type="Label" parent="DynamicTextures/Nickname" unique_id=1658110437]
+auto_translate_mode = 2
+offset_right = 550.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0.996078, 0.972549, 0.901961, 1)
+theme_override_colors/font_outline_color = Color(0.141176, 0.082353, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 92
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Rank" type="SubViewport" parent="DynamicTextures" unique_id=177846031]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(158, 84)
+render_target_update_mode = 0
+
+[node name="Label" type="Label" parent="DynamicTextures/Rank" unique_id=1719435770]
+auto_translate_mode = 2
+offset_right = 158.0
+offset_bottom = 84.0
+theme_override_colors/font_color = Color(0.996078, 0.972549, 0.901961, 1)
+theme_override_colors/font_outline_color = Color(0.141176, 0.082353, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("17")
+theme_override_font_sizes/font_size = 76
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="SubViewport" parent="DynamicTextures" unique_id=1766926057]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(800, 200)
+render_target_update_mode = 0
+
+[node name="Label" type="Label" parent="DynamicTextures/Title" unique_id=1561081290]
+auto_translate_mode = 2
+offset_right = 800.0
+offset_bottom = 200.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 0.043137, 0.419608, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("18")
+theme_override_font_sizes/font_size = 168
+horizontal_alignment = 1
+vertical_alignment = 1

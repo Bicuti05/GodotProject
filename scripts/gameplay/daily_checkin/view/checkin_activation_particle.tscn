@@ -1,0 +1,3 @@
+[gd_scene format=3]
+
+[node name="checkin_activation_particle" type="Sprite2D" unique_id=90540935]

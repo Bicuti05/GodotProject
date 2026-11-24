@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://b1lda2cefhq3l"
+path="res://.godot/imported/effect_game_logo.atlas-f32407b0965c4402e89eacbffa036a0b.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_game_logo/effect_game_logo.atlas"
+dest_files=["res://.godot/imported/effect_game_logo.atlas-f32407b0965c4402e89eacbffa036a0b.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

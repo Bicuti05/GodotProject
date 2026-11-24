@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://scripts/main/dialogs/finish/ui/confetti_sparkle.tscn" id="1"]
+
+[node name="ConfettiSparkle" unique_id=538809205 instance=ExtResource("1")]
+visible = false

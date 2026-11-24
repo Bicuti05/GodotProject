@@ -1,0 +1,26 @@
+{
+  "Version" : 1,
+  "Metadata" : {
+    "Project" : "HapticSync",
+    "Created" : "2026-03-17T08:48:25Z",
+    "Description" : "Custom haptic pattern created with HapticSync"
+  },
+  "Pattern" : [
+    {
+      "Event" : {
+        "EventType" : "HapticTransient",
+        "EventParameters" : [
+          {
+            "ParameterValue" : 0.34999999403953552,
+            "ParameterID" : "HapticIntensity"
+          },
+          {
+            "ParameterID" : "HapticSharpness",
+            "ParameterValue" : 0.70999997854232788
+          }
+        ],
+        "Time" : 0.045389372740587949
+      }
+    }
+  ]
+}

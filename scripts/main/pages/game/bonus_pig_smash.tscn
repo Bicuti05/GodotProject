@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" uid="uid://behte64jhq46w" path="res://scripts/main/pages/game/bonus_pig_smash.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://ixgf1jd7pias" path="res://assets/effect/texture/bonus/smoke_puff.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://o18wa6nak6y8" path="res://assets/sprites/juice_sort/bonus_pig_big.png" id="3"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/bonus_hammer/hammer.tres" id="4"]
+[ext_resource type="Script" uid="uid://c85v2oonji6vc" path="res://scripts/main/pages/game/bonus_pig_shatter_ceramic.gd" id="5"]
+
+[node name="BonusPigSmash" type="Control" unique_id=1295215169]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+dust_texture = ExtResource("2")
+big_pig_texture = ExtResource("3")
+hammer_data = ExtResource("4")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=929692757]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Pig" type="TextureRect" parent="." unique_id=668690159]
+z_index = 2
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Hammer" type="SpineSprite" parent="." unique_id=1966183457]
+z_index = 3
+
+[node name="Ceramic" type="Node2D" parent="." unique_id=1312343778]
+z_index = 2
+script = ExtResource("5")
+pig_texture = ExtResource("3")

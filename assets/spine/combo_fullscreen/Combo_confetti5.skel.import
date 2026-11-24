@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://xjuep7837ard"
+path="res://.godot/imported/Combo_confetti5.skel-e57a68ce105ffaea20016451ac45aec6.spskel"
+
+[deps]
+
+source_file="res://assets/spine/combo_fullscreen/Combo_confetti5.skel"
+dest_files=["res://.godot/imported/Combo_confetti5.skel-e57a68ce105ffaea20016451ac45aec6.spskel"]
+
+[params]
+

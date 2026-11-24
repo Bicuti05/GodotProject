@@ -1,0 +1,106 @@
+[gd_scene load_steps=25 format=3 uid="uid://cu2huxkkx8rdq"]
+
+[ext_resource type="Script" uid="uid://clyru6wpqmi8e" path="res://scripts/gameplay/rank/view/rank_badge_view.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://bbv5p47sp0mp7" path="res://assets/sprites/common_rank_trophy_bronze.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://d1ig01usjwog5" path="res://assets/sprites/common_rank_trophy_silver.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dwn2co2gwu7nt" path="res://assets/sprites/common_rank_trophy_gold.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cwxr4jhrx1p16" path="res://assets/sprites/common_rank_trophy_platinum.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bliwx80iye780" path="res://assets/sprites/common_rank_trophy_diamond.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://qn0wx2gi2fb0" path="res://assets/sprites/common_rank_trophy_amethyst.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://dpx4cd08uyakh" path="res://assets/sprites/common_rank_trophy_glory.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://mf6qr3a2y06c" path="res://assets/sprites/common_rank_trophy_bronze_mask.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://cjpgnhd68mlp6" path="res://assets/sprites/common_rank_trophy_silver_mask.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://2w4tjd6grcw6" path="res://assets/sprites/common_rank_trophy_gold_mask.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bo0ys13qm7ppe" path="res://assets/sprites/common_rank_trophy_platinum_mask.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://dkl53f3b8owre" path="res://assets/sprites/common_rank_trophy_diamond_mask.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://ot8r20d3l77c" path="res://assets/sprites/common_rank_trophy_amethyst_mask.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://c27e5q1tent1l" path="res://assets/sprites/common_rank_trophy_glory_mask.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bhuksf2agvgob" path="res://assets/sprites/common_rank_shadow.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://7nnhwotroeku" path="res://assets/effect/texture/bonus/et_point_001.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://wxyd78er7nja" path="res://assets/effect/texture/bonus/et_star_701.png" id="18"]
+
+[sub_resource type="CanvasItemMaterial" id="m_rise_add"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="c_rise_scale"]
+_data = [Vector2(0, 0.35), 0.0, 0.0, 0, 0, Vector2(0.35, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.2), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="g_rise_fade"]
+offsets = PackedFloat32Array(0, 0.12, 0.5, 1)
+colors = PackedColorArray(1, 0.96, 0.82, 0, 1, 0.98, 0.9, 1, 1, 0.96, 0.85, 0.75, 1, 0.92, 0.72, 0)
+
+[sub_resource type="CanvasItemMaterial" id="m_sparkle_add"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="c_sparkle_pop"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="g_sparkle_fade"]
+offsets = PackedFloat32Array(0, 0.25, 0.55, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.7, 1, 1, 1, 0)
+
+[node name="RankBadgeView" type="Control" unique_id=1511506417]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 200.0
+offset_bottom = 200.0
+mouse_filter = 2
+script = ExtResource("1")
+badges = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("8")]
+badges_dark = [ExtResource("9"), ExtResource("10"), ExtResource("11"), ExtResource("12"), ExtResource("13"), ExtResource("14"), ExtResource("15")]
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=68841911]
+show_behind_parent = true
+texture = ExtResource("16")
+
+[node name="FloatHost" type="Node2D" parent="." unique_id=193007942]
+position = Vector2(100, 100)
+
+[node name="Badge" type="Sprite2D" parent="FloatHost" unique_id=193007943]
+texture = ExtResource("2")
+
+[node name="RiseMotes" type="CPUParticles2D" parent="FloatHost" unique_id=193007945]
+z_index = 1
+material = SubResource("m_rise_add")
+emitting = false
+amount = 7
+texture = ExtResource("17")
+lifetime = 2.6
+preprocess = 2.0
+randomness = 0.45
+lifetime_randomness = 0.4
+emission_shape = 3
+emission_rect_extents = Vector2(55, 10)
+direction = Vector2(0, -1)
+spread = 28.0
+gravity = Vector2(0, -4)
+initial_velocity_min = 28.0
+initial_velocity_max = 48.0
+angular_velocity_min = -10.0
+angular_velocity_max = 10.0
+scale_amount_min = 0.05
+scale_amount_max = 0.09
+scale_amount_curve = SubResource("c_rise_scale")
+color = Color(1, 0.96, 0.82, 1)
+color_ramp = SubResource("g_rise_fade")
+
+[node name="Sparkles" type="CPUParticles2D" parent="FloatHost" unique_id=193007944]
+z_index = 2
+material = SubResource("m_sparkle_add")
+emitting = false
+amount = 1
+texture = ExtResource("18")
+lifetime = 0.48
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 0.05
+direction = Vector2(0, 0)
+spread = 0.0
+gravity = Vector2(0, 0)
+scale_amount_min = 0.18
+scale_amount_max = 0.26
+scale_amount_curve = SubResource("c_sparkle_pop")
+color_ramp = SubResource("g_sparkle_fade")

@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://dhyvhisis8eb0"
+path="res://.godot/imported/effect_flower_unlock.skel-e2d1b52bc5b4d7f1128f6ea10d91bd16.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_flower_unlock/effect_flower_unlock.skel"
+dest_files=["res://.godot/imported/effect_flower_unlock.skel-e2d1b52bc5b4d7f1128f6ea10d91bd16.spskel"]
+
+[params]
+

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/effect_cat_container/effect_cat_container.tres" id="1"]
+
+[node name="EffectCatContainer" type="SpineSprite" unique_id=1936221650]
+visible = false
+skeleton_data_res = ExtResource("1")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

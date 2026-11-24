@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+
+[ext_resource type="SpineAtlasResource" uid="uid://k171arii77uj" path="res://assets/spine/combo_timing2/Combo_centered.atlas" id="1"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://bjqohidbu6bcw" path="res://assets/spine/combo_timing2/Combo_centered.skel" id="2"]
+
+[resource]
+atlas_res = ExtResource("1")
+skeleton_file_res = ExtResource("2")

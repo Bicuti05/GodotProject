@@ -1,0 +1,227 @@
+[gd_scene load_steps=29 format=3 uid="uid://b170mpc68xk4f"]
+
+[ext_resource type="Script" uid="uid://cdc3bi1v8djyf" path="res://scripts/gameplay/rank/view/rank_item_view.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://dqruvmx32514s" path="res://assets/sprites/common_rank_ranks_detailpage_icon_top1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bu7uef775ub70" path="res://assets/sprites/common_rank_ranks_detailpage_icon_top2.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c5xsvl32aolo3" path="res://assets/sprites/common_rank_ranks_detailpage_icon_top3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://beiulsrpljc5p" path="res://assets/sprites/common_rank_ranks_gift_icon_1.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bji76oqo7104t" path="res://assets/sprites/common_rank_ranks_gift_icon_2.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://d5hu6wwt42ki" path="res://assets/sprites/common_rank_ranks_gift_icon_3.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://cqm0x7burw2f6" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_normal_bg.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://chh3h3q8vg78p" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_normal_me_bg.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bxdkwgfcy6fch" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_top1_bg.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://c03a3tx44qa4i" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_top2_bg.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://fc2wkifyby1p" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_top3_bg.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://cal5b4qxk5lwq" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_top1_me_bg.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://bt3hwxa7rw26m" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_top2_me_bg.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://wa3mqyxh2eld" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_top3_me_bg.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://bxemq84w73xpn" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_number_bg.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://42g6pb12wlwb" path="res://assets/sprites/common_rank_ranks_detailpage_singleline_number_me_bg.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://bt0iw2cd3atov" path="res://assets/sprites/common_rank_ranks_online_bg.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://b7ind6g3d6fx0" path="res://assets/sprites/common_rank_ranks_offline_bg.png" id="19"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_row_source_fx.tscn" id="20"]
+[ext_resource type="Texture2D" uid="uid://c81xx8xllnueq" path="res://assets/effect/texture/rank/et_glow_501.png" id="21"]
+[ext_resource type="Shader" uid="uid://bjy3pnw1acd02" path="res://assets/effect/shader/rank_flow_light.gdshader" id="22"]
+[ext_resource type="Texture2D" uid="uid://bclwop8o1rsq6" path="res://assets/effect/texture/rank/et_mask_702.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://cnyjq53jb37q4" path="res://assets/effect/texture/rank/et_glow_607.png" id="24"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="25"]
+[ext_resource type="Texture2D" uid="uid://drf6nqrg31xlj" path="res://assets/sprites/common_rank_avatar_frame_list.png" id="26"]
+
+[sub_resource type="ShaderMaterial" id="m_flow"]
+shader = ExtResource("22")
+shader_parameter/mask_tex = ExtResource("23")
+shader_parameter/mask_rotate = 0.431
+shader_parameter/mask_speed = Vector2(0.5, 0)
+
+[sub_resource type="AtlasTexture" id="a_flow"]
+atlas = ExtResource("24")
+region = Rect2(11, 11, 378, 80)
+
+[node name="RankItemView" type="Control" unique_id=339447707]
+custom_minimum_size = Vector2(984, 200)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 984.0
+offset_bottom = 200.0
+mouse_filter = 2
+script = ExtResource("1")
+top_icons = [ExtResource("2"), ExtResource("3"), ExtResource("4")]
+gift_icons = [ExtResource("5"), ExtResource("6"), ExtResource("7")]
+bg_normal = ExtResource("8")
+bg_normal_me = ExtResource("9")
+bg_top = [ExtResource("10"), ExtResource("11"), ExtResource("12")]
+bg_top_me = [ExtResource("13"), ExtResource("14"), ExtResource("15")]
+number_bg = ExtResource("16")
+number_bg_me = ExtResource("17")
+online_bg = ExtResource("18")
+offline_bg = ExtResource("19")
+source_row_fx_scene = ExtResource("20")
+
+[node name="Bg" type="NinePatchRect" parent="." unique_id=451321531]
+layout_mode = 0
+offset_left = -24.0
+offset_top = -16.0
+offset_right = 1008.0
+offset_bottom = 216.0
+texture = ExtResource("8")
+patch_margin_left = 170
+patch_margin_right = 110
+
+[node name="OutlineGlow" type="NinePatchRect" parent="." unique_id=770001001]
+visible = false
+layout_mode = 0
+offset_left = -38.0
+offset_top = -28.5
+offset_right = 1022.0
+offset_bottom = 233.0
+texture = ExtResource("21")
+patch_margin_left = 103
+patch_margin_top = 103
+patch_margin_right = 98
+patch_margin_bottom = 95
+
+[node name="FlowLight" type="TextureRect" parent="." unique_id=770001002]
+visible = false
+material = SubResource("m_flow")
+layout_mode = 0
+offset_left = -8.0
+offset_right = 992.0
+offset_bottom = 210.0
+mouse_filter = 2
+texture = SubResource("a_flow")
+expand_mode = 1
+
+[node name="RankIcon" type="TextureRect" parent="." unique_id=1790653836]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 52.0
+offset_right = 128.0
+offset_bottom = 148.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="RankNumber" type="Label" parent="." unique_id=603302707]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 52.0
+offset_right = 148.0
+offset_bottom = 148.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("25")
+theme_override_font_sizes/font_size = 64
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Avatar" type="TextureRect" parent="." unique_id=1821204626]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 30.0
+offset_right = 308.0
+offset_bottom = 170.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AvatarFrame" type="TextureRect" parent="." unique_id=1516392575]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 16.0
+offset_right = 323.0
+offset_bottom = 185.0
+mouse_filter = 2
+texture = ExtResource("26")
+expand_mode = 1
+
+[node name="Info" type="Control" parent="." unique_id=2032796747]
+anchors_preset = 0
+offset_left = 336.0
+offset_top = 40.0
+offset_right = 620.0
+offset_bottom = 160.0
+mouse_filter = 2
+
+[node name="Nickname" type="Label" parent="Info" unique_id=132801669]
+layout_mode = 0
+offset_right = 284.0
+offset_bottom = 60.0
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.094118, 0.14902, 0.207843, 1)
+theme_override_fonts/font = ExtResource("25")
+theme_override_font_sizes/font_size = 52
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="OnlineBg" type="NinePatchRect" parent="Info" unique_id=1487797323]
+layout_mode = 0
+offset_top = 66.0
+offset_right = 120.0
+offset_bottom = 138.0
+texture = ExtResource("18")
+patch_margin_left = 28
+patch_margin_right = 28
+
+[node name="Online" type="Label" parent="Info" unique_id=1533619003]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 66.0
+offset_right = 264.0
+offset_bottom = 138.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("25")
+theme_override_font_sizes/font_size = 36
+text = "RANK_ONLINE_NOW"
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="CollectBg" type="TextureRect" parent="." unique_id=1869430520]
+layout_mode = 0
+offset_left = 760.0
+offset_top = 60.0
+offset_right = 936.0
+offset_bottom = 140.0
+mouse_filter = 2
+texture = ExtResource("16")
+expand_mode = 1
+
+[node name="CollectNum" type="Label" parent="CollectBg" unique_id=1020150568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.094118, 0.14902, 0.207843, 1)
+theme_override_fonts/font = ExtResource("25")
+theme_override_font_sizes/font_size = 52
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CollectIcon" type="TextureRect" parent="." unique_id=1456122250]
+layout_mode = 0
+offset_left = 718.5
+offset_top = 58.0
+offset_right = 801.5
+offset_bottom = 141.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="GiftButton" type="TextureButton" parent="." unique_id=84125945]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 52.0
+offset_right = 716.0
+offset_bottom = 148.0
+ignore_texture_size = true
+stretch_mode = 5
+
+[connection signal="pressed" from="GiftButton" to="." method="_on_gift_pressed"]

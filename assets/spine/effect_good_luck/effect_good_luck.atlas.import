@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://b3fafrgqjece6"
+path="res://.godot/imported/effect_good_luck.atlas-51a61cba3725e3a85ce8f8fb5d1baadb.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_good_luck/effect_good_luck.atlas"
+dest_files=["res://.godot/imported/effect_good_luck.atlas-51a61cba3725e3a85ce8f8fb5d1baadb.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

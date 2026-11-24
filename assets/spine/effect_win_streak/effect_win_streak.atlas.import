@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://c0tb8d1eua0nd"
+path="res://.godot/imported/effect_win_streak.atlas-e4d8386a7643d60e1a6b949a5bb8f9e0.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_win_streak/effect_win_streak.atlas"
+dest_files=["res://.godot/imported/effect_win_streak.atlas-e4d8386a7643d60e1a6b949a5bb8f9e0.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

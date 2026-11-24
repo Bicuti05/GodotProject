@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://bjqohidbu6bcw"
+path="res://.godot/imported/Combo_centered.skel-bfa75ec5cd9bd548bd7df40a2df4d5e0.spskel"
+
+[deps]
+
+source_file="res://assets/spine/combo_timing2/Combo_centered.skel"
+dest_files=["res://.godot/imported/Combo_centered.skel-bfa75ec5cd9bd548bd7df40a2df4d5e0.spskel"]
+
+[params]
+

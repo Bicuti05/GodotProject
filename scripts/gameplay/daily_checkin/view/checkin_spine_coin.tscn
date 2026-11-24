@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" uid="uid://bix81eynd2djb" path="res://scripts/gameplay/daily_checkin/view/checkin_spine_coin.gd" id="1"]
+[ext_resource type="SpineAtlasResource" uid="uid://b56gjcumjot53" path="res://assets/spine/daily_checkin/coin/effect_coin_clover.atlas" id="2"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://du4n2c1ypha47" path="res://assets/spine/daily_checkin/coin/effect_coin_clover.skel" id="3"]
+
+[sub_resource type="SpineSkeletonDataResource" id="coin_data"]
+atlas_res = ExtResource("2")
+skeleton_file_res = ExtResource("3")
+default_mix = 0.06
+
+[node name="checkin_spine_coin" type="Node2D" unique_id=1873044140]
+visible = false
+script = ExtResource("1")
+
+[node name="coinNativeSpine" type="SpineSprite" parent="." unique_id=89906176]
+skeleton_data_res = SubResource("coin_data")
+update_mode = 2
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0

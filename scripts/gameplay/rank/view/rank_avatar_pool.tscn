@@ -1,0 +1,19 @@
+[gd_scene load_steps=14 format=3 uid="uid://dl6fxal11wxp"]
+
+[ext_resource type="Script" uid="uid://0dfpnoa6xvof" path="res://scripts/gameplay/rank/view/rank_avatar_pool.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cop6fr18tlo5b" path="res://assets/sprites/common_rank_avatar_animal_01.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cs10r0asa3duy" path="res://assets/sprites/common_rank_avatar_animal_02.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bn36ge3u88kkc" path="res://assets/sprites/common_rank_avatar_animal_03.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://i0ww82no5s16" path="res://assets/sprites/common_rank_avatar_animal_04.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bwu2s8jmuupx7" path="res://assets/sprites/common_rank_avatar_animal_05.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://djsr706abyqqr" path="res://assets/sprites/common_rank_avatar_animal_06.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://s7c714c3a05d" path="res://assets/sprites/common_rank_avatar_animal_07.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dnrdqj24o7fqk" path="res://assets/sprites/common_rank_avatar_animal_08.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://bue3ayc44h23s" path="res://assets/sprites/common_rank_avatar_animal_09.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://d3octxbgrc2jg" path="res://assets/sprites/common_rank_avatar_animal_10.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://becntgd7cqtis" path="res://assets/sprites/common_rank_avatar_animal_11.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://tnn25l05t04e" path="res://assets/sprites/common_rank_avatar_animal_12.png" id="13"]
+
+[node name="RankAvatarPool" type="Node" unique_id=1001844944]
+script = ExtResource("1")
+textures = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7"), ExtResource("8"), ExtResource("9"), ExtResource("10"), ExtResource("11"), ExtResource("12"), ExtResource("13")]

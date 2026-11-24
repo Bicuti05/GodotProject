@@ -1,0 +1,14 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" uid="uid://ch6kjaypls1yu" path="res://scripts/gameplay/rank/view/rank_collect_element_pool.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://burj1bn6scs0p" path="res://assets/sprites/common_rank_collect_item.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dx2fw31cckgxp" path="res://assets/sprites/juice_sort/rank_collectible/elk.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b6c085ys4kyc1" path="res://assets/sprites/juice_sort/rank_collectible/tree.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://gorgixke8je" path="res://assets/sprites/juice_sort/rank_collectible/snow.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cpwjsnqkgg3mg" path="res://assets/sprites/juice_sort/rank_collectible/gingerbread.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bb1iisi6an67p" path="res://assets/sprites/juice_sort/rank_collectible/bell.png" id="7"]
+
+[node name="RankCollectElementPool" type="Node" unique_id=613909019]
+script = ExtResource("1")
+fixed_texture = ExtResource("2")
+collectible_textures = [ExtResource("3"), ExtResource("4"), ExtResource("5"), ExtResource("6"), ExtResource("7")]

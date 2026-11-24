@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://c6gurgur2dw3f"]
+
+[ext_resource type="Script" uid="uid://dhl27njkt43dy" path="res://scripts/gameplay/rank/view/rank_zone_banner.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://81unf0rcdkhb" path="res://assets/sprites/common_rank_ranks_detailpage_promotedplayers_up.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bmyx6hy5482dx" path="res://assets/sprites/common_rank_ranks_detailpage_promotedplayers_down.png" id="3"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="4"]
+
+[node name="RankZoneBanner" type="Control" unique_id=177443484]
+custom_minimum_size = Vector2(984, 106)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 984.0
+offset_bottom = 106.0
+mouse_filter = 2
+script = ExtResource("1")
+bg_upgrade = ExtResource("2")
+bg_downgrade = ExtResource("3")
+
+[node name="Bg" type="TextureRect" parent="." unique_id=726800729]
+layout_mode = 0
+offset_top = 16.0
+offset_right = 984.0
+offset_bottom = 90.0
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+
+[node name="Row" type="Control" parent="." unique_id=784691772]
+anchors_preset = 0
+offset_top = 16.0
+offset_right = 984.0
+offset_bottom = 90.0
+mouse_filter = 2
+
+[node name="TextLabel" type="Label" parent="Row" unique_id=1109857501]
+layout_mode = 0
+offset_left = 120.0
+offset_right = 864.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.219608, 0.360784, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 40
+text = "RANK_ZONE_UPGRADE"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3

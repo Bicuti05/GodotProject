@@ -1,0 +1,26 @@
+[configuration]
+entry_symbol = "godot_vpx_library_init"
+compatibility_minimum = "4.6"
+reloadable = true
+
+[libraries]
+macos.debug = "res://addons/godot_vpx/bin/libgodot_vpx.macos.template_debug.framework"
+macos.release = "res://addons/godot_vpx/bin/libgodot_vpx.macos.template_release.dylib"
+android.debug.arm64 = "res://addons/godot_vpx/bin/libgodot_vpx.android.template_debug.arm64.so"
+android.release.arm64 = "res://addons/godot_vpx/bin/libgodot_vpx.android.template_release.arm64.so"
+android.debug.arm32 = "res://addons/godot_vpx/bin/libgodot_vpx.android.template_debug.arm32.so"
+android.release.arm32 = "res://addons/godot_vpx/bin/libgodot_vpx.android.template_release.arm32.so"
+android.debug.x86_64 = "res://addons/godot_vpx/bin/libgodot_vpx.android.template_debug.x86_64.so"
+android.release.x86_64 = "res://addons/godot_vpx/bin/libgodot_vpx.android.template_release.x86_64.so"
+ios.debug = "res://addons/godot_vpx/bin/libgodot_vpx.ios.template_debug.xcframework"
+ios.release = "res://addons/godot_vpx/bin/libgodot_vpx.ios.template_release.xcframework"
+
+[dependencies]
+macos.debug = {"res://addons/godot_vpx/bin/macos/libvpxplayer.dylib": ""}
+macos.release = {"res://addons/godot_vpx/bin/macos/libvpxplayer.dylib": ""}
+android.debug.arm64 = {"res://addons/godot_vpx/bin/android/arm64-v8a/libvpxplayer.so": ""}
+android.release.arm64 = {"res://addons/godot_vpx/bin/android/arm64-v8a/libvpxplayer.so": ""}
+android.debug.arm32 = {"res://addons/godot_vpx/bin/android/armeabi-v7a/libvpxplayer.so": ""}
+android.release.arm32 = {"res://addons/godot_vpx/bin/android/armeabi-v7a/libvpxplayer.so": ""}
+android.debug.x86_64 = {"res://addons/godot_vpx/bin/android/x86_64/libvpxplayer.so": ""}
+android.release.x86_64 = {"res://addons/godot_vpx/bin/android/x86_64/libvpxplayer.so": ""}

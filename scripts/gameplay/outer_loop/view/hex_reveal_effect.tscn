@@ -1,0 +1,283 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" uid="uid://de2qe7064gpnq" path="res://scripts/gameplay/outer_loop/view/hex_reveal_effect.gd" id="1"]
+[ext_resource type="Script" uid="uid://ceakyyrrbe4p4" path="res://scripts/gameplay/outer_loop/view/hex_reveal_particles.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://3fkne3j446jd" path="res://assets/effect/outer_loop_reveal/et_shine_701.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://basi216mr6dwc" path="res://assets/effect/outer_loop_reveal/et_point_601.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cklgjbu4k88u1" path="res://assets/effect/outer_loop_reveal/et_point_000.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://dis700vp7s5cl" path="res://assets/effect/outer_loop_reveal/et_glow_602.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://bbbujaevuk81i" path="res://assets/effect/outer_loop_reveal/et_glow_601.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://drnpkolcpcn68" path="res://assets/effect/outer_loop_reveal/et_glow_603.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://bd6cmbxbsy0xd" path="res://assets/effect/outer_loop_reveal/et_glow_604.png" id="9"]
+
+[sub_resource type="CanvasItemMaterial" id="Additive"]
+blend_mode = 1
+
+[sub_resource type="Animation" id="Reveal"]
+resource_name = "reveal"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Shapes/TriangleOut/effect_glow01:modulate:a")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.011111111, 0, 1, -0.011111111, 0, 0.15555556, 0, 1, -0.15555556, 0, 0.027777767, 0, 0, -0.027777767, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.033333335, 0.5, 0.5833333)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Shapes/TriangleOut/effect_glow02:modulate:a")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.1611111, 0, 0, -0.1611111, 0, 0.00555556, 0, 1, -0.00555556, 0, 0.09444445, 0, 0, -0.09444445, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.48333332, 0.5, 0.78333336)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Shapes/Triangle/effect_glow03:modulate:a")
+tracks/2/interp = 1
+tracks/2/loop_wrap = false
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.011111111, 0, 1, -0.011111111, 0, 0.14999999, 0, 1, -0.14999999, 0, 0.00555556, 0, 0, -0.00555556, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.033333335, 0.48333332, 0.5)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Shapes/Triangle/effect_glow04:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = false
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.1611111, 0, 0, -0.1611111, 0, 0.00555556, 0, 1, -0.00555556, 0, 0.09444445, 0, 0, -0.09444445, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.48333332, 0.5, 0.78333336)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Shapes/Trapezoid/effect_glow05:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = false
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.011111111, 0, 1, -0.011111111, 0, 0.14999999, 0, 1, -0.14999999, 0, 0.00555556, 0, 0, -0.00555556, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.033333335, 0.48333332, 0.5)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Shapes/Trapezoid/effect_glow06:modulate:a")
+tracks/5/interp = 1
+tracks/5/loop_wrap = false
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.1611111, 0, 0, -0.1611111, 0, 0.00555556, 0, 1, -0.00555556, 0, 0.09444445, 0, 0, -0.09444445, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.48333332, 0.5, 0.78333336)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Shapes/Circle/effect_glow07:modulate:a")
+tracks/6/interp = 1
+tracks/6/loop_wrap = false
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.011111111, 0, 1, -0.011111111, 0, 0.14999999, 0, 1, -0.14999999, 0, 0.00555556, 0, 0, -0.00555556, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.033333335, 0.48333332, 0.5)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Shapes/Circle/effect_glow08:modulate:a")
+tracks/7/interp = 1
+tracks/7/loop_wrap = false
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.1611111, 0, 0, -0.1611111, 0, 0.00555556, 0, 1, -0.00555556, 0, 0.09444445, 0, 0, -0.09444445, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.48333332, 0.5, 0.78333336)
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {
+&"reveal": SubResource("Reveal")
+}
+
+[node name="HexRevealEffect" type="Node2D" unique_id=1268612232]
+visible = false
+script = ExtResource("1")
+
+[node name="Particles" type="Node2D" parent="." unique_id=884694488]
+
+[node name="Particle0" type="Node2D" parent="Particles" unique_id=1769325279]
+material = SubResource("Additive")
+script = ExtResource("2")
+texture = ExtResource("3")
+config = {
+"alpha_keys": [[0.0, 0], [0.3499961852445258, 1], [1.0, 0]],
+"angular_velocity": [-0.17453292, 0.17453292],
+"burst": 0,
+"color_keys": [[0.0, 1, 1, 1], [1.0, 1, 1, 1]],
+"color_max": [0.9496855, 0.89609367, 0.5226256, 0.15686275],
+"color_min": [1, 0.99403054, 0.49999988, 0.09803922],
+"cone_angle": 25,
+"dampen": 0,
+"delay": 0.0,
+"duration": 0.5,
+"frames": 1,
+"grid": 1,
+"lifetime": [0.5, 0.5],
+"limit": [0, 0],
+"max_count": 5,
+"radius": 1,
+"radius_thickness": 1,
+"rate": 12,
+"rotation": [-6.283185, 6.283185],
+"seed": 0,
+"shape_scale": 0,
+"size": [14, 18],
+"size_curve": [[0, 0.69369507, 6.6666665, 0.30630493], [1, 1, 0.30630493, -1.1764705]],
+"speed": [0, 0],
+"unit_scale": 25.0,
+"velocity_x": [0, 0],
+"velocity_y": [0, 0]
+}
+
+[node name="Particle1" type="Node2D" parent="Particles" unique_id=2030264560]
+script = ExtResource("2")
+texture = ExtResource("4")
+config = {
+"alpha_keys": [[0.6803997863736935, 0.9772777], [1.0, 0]],
+"angular_velocity": [-3.1415925, 3.1415925],
+"burst": 20,
+"color_keys": [[0.0, 1, 1, 1], [1.0, 1, 1, 1]],
+"color_max": [1, 1, 1, 1],
+"color_min": [1, 1, 1, 1],
+"cone_angle": 25,
+"dampen": 0.1,
+"delay": 0.5,
+"duration": 0.5,
+"fade_out": [0.2, 0.5],
+"frames": 4,
+"grid": 2,
+"lifetime": [0.6, 0.8],
+"limit": [8.0, 12.0],
+"max_count": 20,
+"radius": 30,
+"radius_thickness": 1,
+"rate": 0,
+"rotation": [0, 6.283185],
+"seed": 6,
+"shape_scale": 0,
+"size": [1.0, 5.0],
+"size_curve": [[0, 0, 3.9033632, 3.9033632], [0.5074451, 0.8018017, 0.6774622, 0.6774622], [1, 1, 0, 0]],
+"speed": [3, 10],
+"unit_scale": 25.0,
+"velocity_x": [50, -50],
+"velocity_y": [50, -50]
+}
+
+[node name="Particle2" type="Node2D" parent="Particles" unique_id=1678033738]
+material = SubResource("Additive")
+script = ExtResource("2")
+texture = ExtResource("5")
+config = {
+"alpha_keys": [[0.0, 1], [0.14999618524452582, 1], [1.0, 1]],
+"angular_velocity": [0, 0],
+"burst": 0,
+"color_keys": [[0.0, 1, 0.7033794, 0], [0.14999618524452582, 1, 1, 1], [0.8, 1, 0.7033794, 0]],
+"color_max": [1, 0.78535163, 0, 1],
+"color_min": [1, 0.78535163, 0, 1],
+"cone_angle": 25,
+"dampen": 0.15,
+"delay": 0.5,
+"duration": 0.05,
+"frames": 9,
+"grid": 3,
+"lifetime": [0.35, 0.65],
+"limit": [0.5, 1],
+"max_count": 10,
+"radius": 0.0001,
+"radius_thickness": 0,
+"rate": 1000,
+"rotation": [0, 6.283185],
+"seed": 0,
+"shape_scale": 1,
+"size": [0.05, 0.25],
+"size_curve": [[0, 0, 3.7755327, 3.7755327], [0.26486328, 1, 0, 0], [1, 0.011049271, -1.3452609, -1.3452609]],
+"speed": [20, 50],
+"unit_scale": 25.0,
+"velocity_x": [0, 0],
+"velocity_y": [0, 0]
+}
+
+[node name="Shapes" type="Node2D" parent="." unique_id=1122972680]
+
+[node name="Triangle" type="Node2D" parent="Shapes" unique_id=947644981]
+visible = false
+
+[node name="effect_glow03" type="Sprite2D" parent="Shapes/Triangle" unique_id=763063792]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0.98311514)
+scale = Vector2(1.171875, 1.171875)
+texture = ExtResource("6")
+
+[node name="effect_glow04" type="Sprite2D" parent="Shapes/Triangle" unique_id=214899689]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(2.6111445, 2.6111445, 2.6111445, 0.98311514)
+scale = Vector2(1.171875, 1.171875)
+texture = ExtResource("6")
+
+[node name="TriangleOut" type="Node2D" parent="Shapes" unique_id=144353112]
+visible = false
+
+[node name="effect_glow01" type="Sprite2D" parent="Shapes/TriangleOut" unique_id=1780977403]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0.98311514)
+scale = Vector2(1.171875, 1.171875)
+texture = ExtResource("7")
+
+[node name="effect_glow02" type="Sprite2D" parent="Shapes/TriangleOut" unique_id=525812493]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(2.6111445, 2.6111445, 2.6111445, 0.98311514)
+scale = Vector2(1.171875, 1.171875)
+texture = ExtResource("7")
+
+[node name="Trapezoid" type="Node2D" parent="Shapes" unique_id=334625836]
+visible = false
+
+[node name="effect_glow05" type="Sprite2D" parent="Shapes/Trapezoid" unique_id=804880057]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0.98311514)
+scale = Vector2(1.171875, 1.171875)
+texture = ExtResource("8")
+
+[node name="effect_glow06" type="Sprite2D" parent="Shapes/Trapezoid" unique_id=1093504613]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(2.6111445, 2.6111445, 2.6111445, 0.98311514)
+scale = Vector2(1.171875, 1.171875)
+texture = ExtResource("8")
+
+[node name="Circle" type="Node2D" parent="Shapes" unique_id=837145968]
+visible = false
+
+[node name="effect_glow07" type="Sprite2D" parent="Shapes/Circle" unique_id=775337270]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0.98311514)
+scale = Vector2(0.859375, 0.859375)
+texture = ExtResource("9")
+
+[node name="effect_glow08" type="Sprite2D" parent="Shapes/Circle" unique_id=1617837040]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(2.6111445, 2.6111445, 2.6111445, 0.98311514)
+scale = Vector2(0.859375, 0.859375)
+texture = ExtResource("9")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=274530976]
+libraries/ = SubResource("Library")

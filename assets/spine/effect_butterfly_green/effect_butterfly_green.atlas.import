@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://ck2ug6kfehbwh"
+path="res://.godot/imported/effect_butterfly_green.atlas-f129cb7ad53dfcaecd8097c907b4d0dd.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_butterfly_green/effect_butterfly_green.atlas"
+dest_files=["res://.godot/imported/effect_butterfly_green.atlas-f129cb7ad53dfcaecd8097c907b4d0dd.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://bvtmvdc52wlje"
+path="res://.godot/imported/hard_super_hard.atlas-41fe8ab87e44457ecdd96076cc318df7.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_hard_super_hard/hard_super_hard.atlas"
+dest_files=["res://.godot/imported/hard_super_hard.atlas-41fe8ab87e44457ecdd96076cc318df7.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

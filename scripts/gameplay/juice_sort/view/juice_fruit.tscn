@@ -1,0 +1,117 @@
+[gd_scene load_steps=16 format=3]
+
+[ext_resource type="Script" uid="uid://dpuh58lvr6pcm" path="res://scripts/gameplay/juice_sort/view/juice_fruit.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://d2tebubb5mi67" path="res://assets/sprites/juice_sort/gp_flower_question.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://wk827g0qm25u" path="res://assets/sprites/juice_sort/sunlight_sun_body_top_figma.png" id="3"]
+[ext_resource type="Shader" uid="uid://ccpcgdmpxpn2l" path="res://assets/effect/shader/flower_group_halo.gdshader" id="4"]
+[ext_resource type="Shader" uid="uid://umoix6yb1v3l" path="res://scripts/gameplay/juice_sort/view/sunlight_ice_melt.gdshader" id="5"]
+[ext_resource type="Texture2D" uid="uid://cp6ey5mf71238" path="res://assets/sprites/juice_sort/sunlight_ice_body.png" id="6"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/juice_sort/view/juice_sunlight_ambient.tscn" id="7"]
+[ext_resource type="Shader" uid="uid://d331gk2is5mct" path="res://assets/effect/shader/flower_hint_outline.gdshader" id="8"]
+[ext_resource type="Script" uid="uid://d3n5xwl1njhcv" path="res://scripts/gameplay/juice_sort/view/juice_group_highlight_landing_particles.gd" id="9"]
+[ext_resource type="Texture2D" uid="uid://dym0vk73c0cdb" path="res://assets/sprites/juice_sort/sunlight_ice_frost_figma.png" id="10"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_funtq"]
+resource_local_to_scene = true
+shader = ExtResource("4")
+shader_parameter/halo_strength = null
+shader_parameter/halo_range = null
+shader_parameter/halo_expansion = null
+shader_parameter/halo_center = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3v30r"]
+resource_local_to_scene = true
+shader = ExtResource("5")
+shader_parameter/melt_progress = 0.0
+shader_parameter/frost_layer = false
+shader_parameter/opaque_surface = null
+shader_parameter/uv_region = Vector4(0.16456719, 0.19767442, 0.6622093, 0.58527124)
+shader_parameter/shelf_texture = null
+shader_parameter/shelf_occlusion_enabled = null
+shader_parameter/shelf_uv_x = null
+shader_parameter/shelf_uv_y = null
+shader_parameter/second_shelf_uv_x = null
+shader_parameter/second_shelf_uv_y = null
+shader_parameter/shelf_alpha = null
+shader_parameter/second_shelf_alpha = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hint"]
+shader = ExtResource("8")
+shader_parameter/outline_color = null
+shader_parameter/outline_width = null
+shader_parameter/glow_color = null
+shader_parameter/glow_width = null
+shader_parameter/glow_strength = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oar66"]
+resource_local_to_scene = true
+shader = ExtResource("5")
+shader_parameter/melt_progress = 0.0
+shader_parameter/frost_layer = false
+shader_parameter/opaque_surface = null
+shader_parameter/uv_region = Vector4(0.16456719, 0.19767442, 0.6622093, 0.58527124)
+shader_parameter/shelf_texture = null
+shader_parameter/shelf_occlusion_enabled = null
+shader_parameter/shelf_uv_x = null
+shader_parameter/shelf_uv_y = null
+shader_parameter/second_shelf_uv_x = null
+shader_parameter/second_shelf_uv_y = null
+shader_parameter/shelf_alpha = null
+shader_parameter/second_shelf_alpha = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wrvqj"]
+resource_local_to_scene = true
+shader = ExtResource("5")
+shader_parameter/melt_progress = 0.0
+shader_parameter/frost_layer = true
+shader_parameter/opaque_surface = null
+shader_parameter/uv_region = Vector4(0, 0, 1, 1)
+shader_parameter/shelf_texture = null
+shader_parameter/shelf_occlusion_enabled = null
+shader_parameter/shelf_uv_x = null
+shader_parameter/shelf_uv_y = null
+shader_parameter/second_shelf_uv_x = null
+shader_parameter/second_shelf_uv_y = null
+shader_parameter/shelf_alpha = null
+shader_parameter/second_shelf_alpha = null
+
+[node name="JuiceFruit" type="Node2D" unique_id=1749611439]
+script = ExtResource("1")
+question_texture = ExtResource("2")
+sunlight_texture = ExtResource("3")
+
+[node name="Shadow" type="Sprite2D" parent="." unique_id=132457352]
+self_modulate = Color(0, 0, 0, 0.22)
+offset = Vector2(6, 10)
+
+[node name="GroupHighlightHalo" type="Sprite2D" parent="." unique_id=1727300690]
+visible = false
+material = SubResource("ShaderMaterial_funtq")
+
+[node name="IceBack" type="Sprite2D" parent="." unique_id=1662261280]
+visible = false
+material = SubResource("ShaderMaterial_3v30r")
+texture = ExtResource("6")
+region_enabled = true
+region_rect = Rect2(157.9845, 211.90698, 635.7209, 627.4108)
+
+[node name="SunlightAmbient" parent="." unique_id=1705950417 instance=ExtResource("7")]
+
+[node name="Body" type="Sprite2D" parent="." unique_id=2122783127]
+material = SubResource("ShaderMaterial_hint")
+
+[node name="GroupHighlightLandingParticles" type="Node2D" parent="." unique_id=1054928763]
+visible = false
+script = ExtResource("9")
+
+[node name="IceBody" type="Sprite2D" parent="." unique_id=324181511]
+visible = false
+material = SubResource("ShaderMaterial_oar66")
+texture = ExtResource("6")
+region_enabled = true
+region_rect = Rect2(157.9845, 211.90698, 635.7209, 627.4108)
+
+[node name="IceFrost" type="Sprite2D" parent="." unique_id=1106654893]
+visible = false
+material = SubResource("ShaderMaterial_wrvqj")
+texture = ExtResource("10")

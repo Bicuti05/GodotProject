@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scripts/gameplay/juice_sort/view/spiral_light_fx.tscn" id="1"]
+[ext_resource type="Script" uid="uid://klcml8gxcq4g" path="res://scripts/gameplay/juice_sort/view/empty_rope_spiral_fx.gd" id="2"]
+
+[node name="EmptyRopeSpiralFx" unique_id=852629959 instance=ExtResource("1")]
+script = ExtResource("2")

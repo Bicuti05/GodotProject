@@ -1,0 +1,15 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" uid="uid://bqmsqvoprff3p" path="res://scripts/gameplay/juice_sort/view/bonus_coin_entry_fx.gd" id="1"]
+[ext_resource type="Shader" uid="uid://coxd6qtl4qgp0" path="res://assets/effect/shader/bonus_pig_receive.gdshader" id="2"]
+[ext_resource type="Texture2D" uid="uid://ckugcsexcgbrf" path="res://assets/effect/texture/hint_guide/hint_guide_sparkle_compact.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bcewcbc73acla" path="res://assets/sprites/juice_sort/bonus_coin_small.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="5"]
+
+[node name="BonusCoinEntryFx" type="Node2D" unique_id=1919394958]
+script = ExtResource("1")
+receive_shader = ExtResource("2")
+impact_star_texture = ExtResource("3")
+coin_texture = ExtResource("4")
+point_texture = ExtResource("5")
+star_texture = ExtResource("5")

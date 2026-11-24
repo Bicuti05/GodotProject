@@ -1,0 +1,517 @@
+[gd_scene load_steps=31 format=3]
+
+[ext_resource type="Script" uid="uid://cdmnjjd6n76tq" path="res://scripts/main/pages/game/bonus_level_banner.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://do4dsmy6br28o" path="res://assets/sprites/juice_sort/bonus_banner_figma/coins_left.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://odu3rdxtnmju" path="res://assets/sprites/juice_sort/bonus_banner_figma/coins_right.png" id="3"]
+[ext_resource type="Shader" uid="uid://de0t3w55ey1lv" path="res://assets/effect/shader/bonus_pig_shine.gdshader" id="4"]
+[ext_resource type="Texture2D" uid="uid://c8e2f7y5ojenr" path="res://assets/sprites/juice_sort/bonus_banner_figma/pig.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="6"]
+[ext_resource type="Shader" uid="uid://cin0kcq27hlbh" path="res://assets/effect/shader/bonus_title_effect.gdshader" id="7"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m787i"]
+resource_local_to_scene = true
+shader = ExtResource("4")
+shader_parameter/progress = null
+shader_parameter/band_width = 0.14
+shader_parameter/intensity = 0.16
+shader_parameter/angle = null
+shader_parameter/tint_color = Color(1, 0.96, 0.86, 1)
+
+[sub_resource type="CanvasItemMaterial" id="Add"]
+blend_mode = 1
+
+[sub_resource type="Curve" id="MoteSize"]
+_data = [Vector2(0, 0.5), 0.0, 0.0, 0, 0, Vector2(0.3, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.45), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="MoteFade"]
+offsets = PackedFloat32Array(0, 0.12, 0.5, 1)
+colors = PackedColorArray(1, 0.96, 0.82, 0, 1, 0.98, 0.9, 1, 1, 0.96, 0.85, 0.75, 1, 0.92, 0.72, 0)
+
+[sub_resource type="ShaderMaterial" id="TitleComposite"]
+shader = ExtResource("7")
+shader_parameter/effect_mode = 3
+shader_parameter/gradient_top = null
+shader_parameter/gradient_bottom = null
+shader_parameter/gradient_top_stop = null
+shader_parameter/gradient_top_y = null
+shader_parameter/gradient_height = null
+shader_parameter/blur_direction = null
+shader_parameter/blur_radius = null
+shader_parameter/inner_color = null
+shader_parameter/face_shadow_color = null
+shader_parameter/inner_offset = null
+shader_parameter/inner_blur = null
+shader_parameter/face_shadow_offset = null
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_8cvwh"]
+viewport_path = NodePath("Art/Title/CompositeCache")
+
+[sub_resource type="LabelSettings" id="LabelSettings_4sb11"]
+resource_local_to_scene = true
+font = ExtResource("8")
+font_size = 115
+font_color = Color(1, 0.5961539, 0.5961539, 0.55)
+outline_size = 33
+outline_color = Color(0.9804875, 0.4056517, 0.6535166, 1)
+shadow_size = 33
+shadow_color = Color(0.9803922, 0.4039216, 0.654902, 1)
+shadow_offset = Vector2(0, 5.7499204)
+
+[sub_resource type="LabelSettings" id="LabelSettings_0ypou"]
+resource_local_to_scene = true
+font = ExtResource("8")
+font_size = 115
+outline_size = 23
+outline_color = Color(0.9804875, 0.4056517, 0.6535166, 1)
+shadow_size = 23
+shadow_color = Color(0.8033917, 0.2009234, 0.4632225, 1)
+shadow_offset = Vector2(0, 5.7499204)
+
+[sub_resource type="ShaderMaterial" id="TitleBlurHorizontal"]
+shader = ExtResource("7")
+shader_parameter/effect_mode = 1
+shader_parameter/gradient_top = null
+shader_parameter/gradient_bottom = null
+shader_parameter/gradient_top_stop = null
+shader_parameter/gradient_top_y = null
+shader_parameter/gradient_height = null
+shader_parameter/blur_direction = Vector2(1, 0)
+shader_parameter/blur_radius = 90.75
+shader_parameter/inner_color = null
+shader_parameter/face_shadow_color = null
+shader_parameter/inner_offset = null
+shader_parameter/inner_blur = null
+shader_parameter/face_shadow_offset = null
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_7ixvg"]
+viewport_path = NodePath("Art/Title/CompositeCache/GlowCache/HorizontalCache/PinkSource")
+
+[sub_resource type="ShaderMaterial" id="TitleBlurVertical"]
+shader = ExtResource("7")
+shader_parameter/effect_mode = 1
+shader_parameter/gradient_top = null
+shader_parameter/gradient_bottom = null
+shader_parameter/gradient_top_stop = null
+shader_parameter/gradient_top_y = null
+shader_parameter/gradient_height = null
+shader_parameter/blur_direction = Vector2(0, 1)
+shader_parameter/blur_radius = 45.375
+shader_parameter/inner_color = null
+shader_parameter/face_shadow_color = null
+shader_parameter/inner_offset = null
+shader_parameter/inner_blur = null
+shader_parameter/face_shadow_offset = null
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_ruqyj"]
+viewport_path = NodePath("Art/Title/CompositeCache/GlowCache/HorizontalCache")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_68hcl"]
+viewport_path = NodePath("Art/Title/CompositeCache/GlowCache")
+
+[sub_resource type="CanvasItemMaterial" id="TitleSourcePremultiplied"]
+blend_mode = 4
+
+[sub_resource type="LabelSettings" id="LabelSettings_q4njo"]
+resource_local_to_scene = true
+font = ExtResource("8")
+font_size = 115
+outline_size = 37
+shadow_size = 37
+shadow_color = Color(1, 1, 1, 1)
+shadow_offset = Vector2(0, 5.7499204)
+
+[sub_resource type="LabelSettings" id="LabelSettings_fplli"]
+resource_local_to_scene = true
+font = ExtResource("8")
+font_size = 115
+font_color = Color(0.7474835, 0.2980885, 0.0352348, 1)
+outline_size = 23
+outline_color = Color(0.7474835, 0.2980885, 0.0352348, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_th7hd"]
+resource_local_to_scene = true
+shader = ExtResource("7")
+shader_parameter/effect_mode = 0
+shader_parameter/gradient_top = null
+shader_parameter/gradient_bottom = null
+shader_parameter/gradient_top_stop = null
+shader_parameter/gradient_top_y = null
+shader_parameter/gradient_height = null
+shader_parameter/blur_direction = null
+shader_parameter/blur_radius = null
+shader_parameter/inner_color = null
+shader_parameter/face_shadow_color = null
+shader_parameter/inner_offset = null
+shader_parameter/inner_blur = null
+shader_parameter/face_shadow_offset = null
+
+[sub_resource type="LabelSettings" id="LabelSettings_a8rdi"]
+resource_local_to_scene = true
+font = ExtResource("8")
+font_size = 115
+outline_size = 23
+
+[sub_resource type="ShaderMaterial" id="TitleFace"]
+shader = ExtResource("7")
+shader_parameter/effect_mode = 2
+shader_parameter/gradient_top = null
+shader_parameter/gradient_bottom = null
+shader_parameter/gradient_top_stop = null
+shader_parameter/gradient_top_y = null
+shader_parameter/gradient_height = null
+shader_parameter/blur_direction = null
+shader_parameter/blur_radius = null
+shader_parameter/inner_color = null
+shader_parameter/face_shadow_color = null
+shader_parameter/inner_offset = null
+shader_parameter/inner_blur = null
+shader_parameter/face_shadow_offset = null
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_kxuct"]
+viewport_path = NodePath("Art/Title/CompositeCache/GlyphSource")
+
+[sub_resource type="Curve" id="StarPop"]
+_data = [Vector2(0, 0.15), 0.0, 0.0, 0, 0, Vector2(0.25, 1), 0.0, 0.0, 0, 0, Vector2(1, 0.15), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="StarFade"]
+offsets = PackedFloat32Array(0, 0.22, 0.55, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.7, 1, 1, 1, 0)
+
+[node name="BonusLevelBanner" type="Control" unique_id=914691830]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Art" type="Control" parent="." unique_id=1342178378]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -539.0
+offset_top = -280.5
+offset_right = 539.0
+offset_bottom = 280.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(539, 280.5)
+mouse_filter = 2
+
+[node name="CoinsLeft" type="TextureRect" parent="Art" unique_id=1237519356]
+layout_mode = 0
+offset_left = 58.948364
+offset_top = 150.83398
+offset_right = 528.4314
+offset_bottom = 527.0495
+mouse_filter = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CoinsRight" type="TextureRect" parent="Art" unique_id=1437688284]
+layout_mode = 0
+offset_left = 548.90894
+offset_top = 150.83398
+offset_right = 1018.39197
+offset_bottom = 527.0495
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FloatHost" type="Node2D" parent="Art" unique_id=1202768666]
+position = Vector2(531.25, 296.75)
+
+[node name="Pig" type="Sprite2D" parent="Art/FloatHost" unique_id=3692781]
+material = SubResource("ShaderMaterial_m787i")
+texture = ExtResource("5")
+
+[node name="RiseMotes" type="CPUParticles2D" parent="Art" unique_id=1345835604]
+z_index = 1
+material = SubResource("Add")
+position = Vector2(539, 415)
+emitting = false
+amount = 16
+texture = ExtResource("6")
+lifetime = 2.6
+preprocess = 2.6
+randomness = 0.45
+lifetime_randomness = 0.4
+emission_shape = 3
+emission_rect_extents = Vector2(415, 85)
+direction = Vector2(0, -1)
+spread = 12.0
+gravity = Vector2(0, -4)
+initial_velocity_min = 110.0
+initial_velocity_max = 155.0
+scale_amount_min = 0.2
+scale_amount_max = 0.3
+scale_amount_curve = SubResource("MoteSize")
+color_ramp = SubResource("MoteFade")
+
+[node name="Title" type="Control" parent="Art" unique_id=176615500]
+z_index = 3
+anchors_preset = 0
+offset_left = 64.0
+offset_top = 352.0
+offset_right = 1014.0
+offset_bottom = 478.0
+mouse_filter = 2
+
+[node name="Composite" type="TextureRect" parent="Art/Title" unique_id=875810253]
+texture_filter = 2
+material = SubResource("TitleComposite")
+layout_mode = 0
+offset_left = -160.0
+offset_top = -160.0
+offset_right = 1110.0
+offset_bottom = 286.0
+mouse_filter = 2
+texture = SubResource("ViewportTexture_8cvwh")
+expand_mode = 1
+
+[node name="CompositeCache" type="SubViewport" parent="Art/Title" unique_id=1026401333]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(1270, 446)
+render_target_update_mode = 0
+
+[node name="GlowCache" type="SubViewport" parent="Art/Title/CompositeCache" unique_id=1608932072]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(635, 223)
+render_target_update_mode = 0
+
+[node name="HorizontalCache" type="SubViewport" parent="Art/Title/CompositeCache/GlowCache" unique_id=1075538720]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(635, 223)
+render_target_update_mode = 0
+
+[node name="PinkSource" type="SubViewport" parent="Art/Title/CompositeCache/GlowCache/HorizontalCache" unique_id=1088801037]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(1270, 446)
+render_target_update_mode = 0
+
+[node name="PinkOutline" type="Label" parent="Art/Title/CompositeCache/GlowCache/HorizontalCache/PinkSource" unique_id=1308823860]
+offset_left = 160.0
+offset_top = 160.0
+offset_right = 1110.0
+offset_bottom = 286.0
+text = "BONUS_LEVEL_TITLE"
+label_settings = SubResource("LabelSettings_4sb11")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PinkDepth" type="Label" parent="Art/Title/CompositeCache/GlowCache/HorizontalCache/PinkSource" unique_id=584643099]
+offset_left = 160.0
+offset_top = 160.0
+offset_right = 1110.0
+offset_bottom = 286.0
+text = "BONUS_LEVEL_TITLE"
+label_settings = SubResource("LabelSettings_0ypou")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BlurHorizontal" type="TextureRect" parent="Art/Title/CompositeCache/GlowCache/HorizontalCache" unique_id=9466914]
+texture_filter = 2
+material = SubResource("TitleBlurHorizontal")
+offset_right = 635.0
+offset_bottom = 223.0
+mouse_filter = 2
+texture = SubResource("ViewportTexture_7ixvg")
+expand_mode = 1
+
+[node name="BlurVertical" type="TextureRect" parent="Art/Title/CompositeCache/GlowCache" unique_id=1667382060]
+texture_filter = 2
+material = SubResource("TitleBlurVertical")
+offset_right = 635.0
+offset_bottom = 223.0
+mouse_filter = 2
+texture = SubResource("ViewportTexture_ruqyj")
+expand_mode = 1
+
+[node name="Glow" type="TextureRect" parent="Art/Title/CompositeCache" unique_id=892188978]
+modulate = Color(1, 0.4134615, 0.5904343, 1)
+texture_filter = 2
+material = SubResource("Add")
+offset_right = 1270.0
+offset_bottom = 446.0
+mouse_filter = 2
+texture = SubResource("ViewportTexture_68hcl")
+expand_mode = 1
+
+[node name="PinkBacking" type="TextureRect" parent="Art/Title/CompositeCache" unique_id=1158795193]
+texture_filter = 2
+material = SubResource("TitleSourcePremultiplied")
+offset_right = 1270.0
+offset_bottom = 446.0
+mouse_filter = 2
+texture = SubResource("ViewportTexture_7ixvg")
+expand_mode = 1
+
+[node name="WhiteOutline" type="Label" parent="Art/Title/CompositeCache" unique_id=1867892334]
+offset_left = 160.0
+offset_top = 160.0
+offset_right = 1110.0
+offset_bottom = 286.0
+text = "BONUS_LEVEL_TITLE"
+label_settings = SubResource("LabelSettings_q4njo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BrownShadow" type="Label" parent="Art/Title/CompositeCache" unique_id=1698631695]
+offset_left = 160.0
+offset_top = 168.8
+offset_right = 1110.0
+offset_bottom = 294.8
+text = "BONUS_LEVEL_TITLE"
+label_settings = SubResource("LabelSettings_fplli")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrangeOutline" type="Label" parent="Art/Title/CompositeCache" unique_id=5375105]
+material = SubResource("ShaderMaterial_th7hd")
+offset_left = 160.0
+offset_top = 160.0
+offset_right = 1110.0
+offset_bottom = 286.0
+text = "BONUS_LEVEL_TITLE"
+label_settings = SubResource("LabelSettings_a8rdi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GlyphSource" type="SubViewport" parent="Art/Title/CompositeCache" unique_id=795410542]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(1270, 446)
+render_target_update_mode = 0
+
+[node name="Glyph" type="Label" parent="Art/Title/CompositeCache/GlyphSource" unique_id=1649948655]
+offset_left = 160.0
+offset_top = 160.0
+offset_right = 1110.0
+offset_bottom = 286.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("8")
+theme_override_font_sizes/font_size = 115
+text = "BONUS_LEVEL_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Face" type="TextureRect" parent="Art/Title/CompositeCache" unique_id=638533228]
+texture_filter = 2
+material = SubResource("TitleFace")
+offset_right = 1270.0
+offset_bottom = 446.0
+mouse_filter = 2
+texture = SubResource("ViewportTexture_kxuct")
+expand_mode = 1
+
+[node name="Sparkle0" type="CPUParticles2D" parent="Art" unique_id=90809681]
+z_index = 2
+material = SubResource("Add")
+emitting = false
+amount = 1
+texture = ExtResource("6")
+lifetime = 0.62
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+scale_amount_min = 0.42
+scale_amount_max = 0.58
+scale_amount_curve = SubResource("StarPop")
+color_ramp = SubResource("StarFade")
+
+[node name="Sparkle1" type="CPUParticles2D" parent="Art" unique_id=491075781]
+z_index = 2
+material = SubResource("Add")
+emitting = false
+amount = 1
+texture = ExtResource("6")
+lifetime = 0.62
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+scale_amount_min = 0.42
+scale_amount_max = 0.58
+scale_amount_curve = SubResource("StarPop")
+color_ramp = SubResource("StarFade")
+
+[node name="Sparkle2" type="CPUParticles2D" parent="Art" unique_id=1007161396]
+z_index = 2
+material = SubResource("Add")
+emitting = false
+amount = 1
+texture = ExtResource("6")
+lifetime = 0.62
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+scale_amount_min = 0.42
+scale_amount_max = 0.58
+scale_amount_curve = SubResource("StarPop")
+color_ramp = SubResource("StarFade")
+
+[node name="Sparkle3" type="CPUParticles2D" parent="Art" unique_id=926042430]
+z_index = 2
+material = SubResource("Add")
+emitting = false
+amount = 1
+texture = ExtResource("6")
+lifetime = 0.62
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+scale_amount_min = 0.42
+scale_amount_max = 0.58
+scale_amount_curve = SubResource("StarPop")
+color_ramp = SubResource("StarFade")
+
+[node name="Sparkle4" type="CPUParticles2D" parent="Art" unique_id=1947970692]
+z_index = 2
+material = SubResource("Add")
+emitting = false
+amount = 1
+texture = ExtResource("6")
+lifetime = 0.62
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+scale_amount_min = 0.42
+scale_amount_max = 0.58
+scale_amount_curve = SubResource("StarPop")
+color_ramp = SubResource("StarFade")
+
+[node name="Sparkle5" type="CPUParticles2D" parent="Art" unique_id=759595054]
+z_index = 2
+material = SubResource("Add")
+emitting = false
+amount = 1
+texture = ExtResource("6")
+lifetime = 0.62
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(0, 0)
+gravity = Vector2(0, 0)
+scale_amount_min = 0.42
+scale_amount_max = 0.58
+scale_amount_curve = SubResource("StarPop")
+color_ramp = SubResource("StarFade")

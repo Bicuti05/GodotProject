@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.json"
+type="SpineSkeletonFileResource"
+uid="uid://ced6cgmheuw27"
+path="res://.godot/imported/iq_genius.spine-json-0079db83e17e049746f24283609f88d6.spjson"
+
+[deps]
+
+source_file="res://assets/spine/iq_genius/iq_genius.spine-json"
+dest_files=["res://.godot/imported/iq_genius.spine-json-0079db83e17e049746f24283609f88d6.spjson"]
+
+[params]
+

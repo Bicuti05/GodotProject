@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" uid="uid://bqcavnphtdwvr" path="res://scripts/main/pages/game/empty_col_feedback.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/spine/empty_col_feedback/empty_col_feedback.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/juice_sort/view/empty_rope_spiral_fx.tscn" id="3"]
+
+[node name="EmptyColFeedback" type="Control" unique_id=1142144462]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1")
+applause_scene = ExtResource("2")
+spiral_scene = ExtResource("3")

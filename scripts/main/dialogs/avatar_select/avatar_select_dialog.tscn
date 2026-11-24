@@ -1,0 +1,245 @@
+[gd_scene load_steps=14 format=3 uid="uid://deys2cacvk316"]
+
+[ext_resource type="Script" uid="uid://ba00binkrhm7" path="res://scripts/main/dialogs/avatar_select/avatar_select_dialog.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://ccscmf2c8wdu8" path="res://scripts/gameplay/rank/view/rank_avatar_cell.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://deumvcjfmbtdm" path="res://assets/sprites/common_dialog_bg.png" id="3"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="4"]
+[ext_resource type="Texture2D" uid="uid://d0smoilrgkaxq" path="res://assets/sprites/common_btn_close_red.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://yxr07a1q7iq5" path="res://assets/sprites/avatar_select_name_bg.png" id="6"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="7"]
+[ext_resource type="Texture2D" uid="uid://d51ldo1l7q4x" path="res://assets/sprites/avatar_select_frame_selected.png" id="8"]
+[ext_resource type="PackedScene" uid="uid://ctxbuwml56wj3" path="res://scripts/widget/common_btn/common_btn.tscn" id="9"]
+[ext_resource type="Animation" uid="uid://c0cedm524acvo" path="res://assets/animation/GenericPopup.res" id="10"]
+[ext_resource type="PackedScene" uid="uid://dl6fxal11wxp" path="res://scripts/gameplay/rank/view/rank_avatar_pool.tscn" id="11"]
+
+[sub_resource type="StyleBoxEmpty" id="sb_input"]
+
+[sub_resource type="AnimationLibrary" id="anim_lib"]
+_data = {
+&"GenericPopup": ExtResource("10")
+}
+
+[node name="AvatarSelectDialog" type="Control" unique_id=1165799093]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+cell_scene = ExtResource("2")
+
+[node name="Root" type="Control" parent="." unique_id=1536574278]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Overlay" type="ColorRect" parent="Root" unique_id=710231007]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="BgCatcher" type="Button" parent="Root" unique_id=1555947734]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+flat = true
+
+[node name="Content" type="Control" parent="Root" unique_id=1524480885]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.8, 0.8)
+pivot_offset_ratio = Vector2(0.5, 0.5)
+mouse_filter = 2
+
+[node name="Dialog" type="Control" parent="Root/Content" unique_id=1083994001]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -825.0
+offset_right = 540.0
+offset_bottom = 821.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CardBg" type="NinePatchRect" parent="Root/Content/Dialog" unique_id=19429088]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 88.0
+offset_right = 1060.0
+offset_bottom = 1578.0
+texture = ExtResource("3")
+patch_margin_left = 212
+patch_margin_top = 414
+patch_margin_right = 212
+patch_margin_bottom = 200
+
+[node name="TitleBack" type="Label" parent="Root/Content/Dialog" unique_id=1577904837]
+layout_mode = 0
+offset_left = 36.5
+offset_top = 116.5
+offset_right = 1044.5
+offset_bottom = 288.5
+theme_override_colors/font_color = Color(0, 0.388235, 0.584314, 1)
+theme_override_colors/font_outline_color = Color(0, 0.388235, 0.584314, 1)
+theme_override_constants/outline_size = 24
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 108
+text = "RANK_AVATAR_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Title" type="Label" parent="Root/Content/Dialog" unique_id=264437250]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 114.0
+offset_right = 1044.0
+offset_bottom = 286.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.749, 0.875, 1, 1)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 0
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 108
+text = "RANK_AVATAR_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CloseButton" type="TextureButton" parent="Root/Content/Dialog" unique_id=1351070658]
+layout_mode = 0
+offset_left = 886.0
+offset_top = 133.0
+offset_right = 1012.0
+offset_bottom = 259.0
+texture_normal = ExtResource("5")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CurrentAvatar" parent="Root/Content/Dialog" unique_id=963911027 instance=ExtResource("2")]
+custom_minimum_size = Vector2(198, 198)
+layout_mode = 0
+offset_left = 172.0
+offset_top = 351.0
+offset_right = 370.0
+offset_bottom = 549.0
+disabled = true
+frame_kind = 1
+
+[node name="NameBg" type="TextureRect" parent="Root/Content/Dialog" unique_id=1961350834]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 369.0
+offset_right = 917.0
+offset_bottom = 532.0
+texture = ExtResource("6")
+expand_mode = 1
+
+[node name="NameInput" type="LineEdit" parent="Root/Content/Dialog/NameBg" unique_id=1454686709]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = 33.0
+offset_right = -30.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.137255, 0.184314, 0.243137, 1)
+theme_override_colors/font_placeholder_color = Color(0.153, 0.22, 0.298, 0.45)
+theme_override_colors/caret_color = Color(0.153, 0.22, 0.298, 1)
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("sb_input")
+theme_override_styles/focus = SubResource("sb_input")
+placeholder_text = "RANK_AVATAR_NAME_PLACEHOLDER"
+alignment = 1
+max_length = 16
+
+[node name="ListBg" type="Control" parent="Root/Content/Dialog" unique_id=1949937665]
+anchors_preset = 0
+offset_left = 84.0
+offset_top = 578.0
+offset_right = 996.0
+offset_bottom = 1550.0
+
+[node name="Scroll" type="ScrollContainer" parent="Root/Content/Dialog/ListBg" unique_id=1005889252]
+clip_contents = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 0
+
+[node name="GridMargin" type="MarginContainer" parent="Root/Content/Dialog/ListBg/Scroll" unique_id=1005889253]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+mouse_filter = 2
+theme_override_constants/margin_left = 36
+theme_override_constants/margin_top = 36
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 36
+
+[node name="Grid" type="GridContainer" parent="Root/Content/Dialog/ListBg/Scroll/GridMargin" unique_id=773809311]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 40
+columns = 4
+
+[node name="SelectionLayer" type="Control" parent="Root/Content/Dialog/ListBg/Scroll/GridMargin" unique_id=1784606284]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Selected" type="TextureRect" parent="Root/Content/Dialog/ListBg/Scroll/GridMargin/SelectionLayer" unique_id=194672029]
+visible = false
+layout_mode = 0
+mouse_filter = 2
+texture = ExtResource("8")
+expand_mode = 1
+
+[node name="ConfirmButton" parent="Root/Content/Dialog" unique_id=554267692 instance=ExtResource("9")]
+custom_minimum_size = Vector2(0, 0)
+layout_mode = 0
+offset_left = 144.0
+offset_top = 1278.551
+offset_right = 936.0
+offset_bottom = 1494.551
+btn_text = "RANK_AVATAR_CONFIRM"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Root" unique_id=1175750225]
+libraries/ = SubResource("anim_lib")
+
+[node name="AvatarPool" parent="." unique_id=1766000755 instance=ExtResource("11")]
+
+[connection signal="pressed" from="Root/BgCatcher" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Root/Content/Dialog/CloseButton" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Root/Content/Dialog/ConfirmButton" to="." method="_on_confirm_pressed"]

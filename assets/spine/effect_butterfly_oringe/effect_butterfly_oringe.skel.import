@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://cae2qdge1hbf5"
+path="res://.godot/imported/effect_butterfly_oringe.skel-d23002d2a15159f9265884ad4d1cd4d4.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_butterfly_oringe/effect_butterfly_oringe.skel"
+dest_files=["res://.godot/imported/effect_butterfly_oringe.skel-d23002d2a15159f9265884ad4d1cd4d4.spskel"]
+
+[params]
+

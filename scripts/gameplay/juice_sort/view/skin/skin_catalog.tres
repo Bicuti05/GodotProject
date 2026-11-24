@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="JuiceSkinCatalog" load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://gd2tg1tygiit" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_catalog.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+paths = {
+&"bird": "res://scripts/gameplay/juice_sort/view/skin/bird.tres",
+&"cat": "res://scripts/gameplay/juice_sort/view/skin/cat.tres",
+&"default": "res://scripts/gameplay/juice_sort/view/skin/default.tres"
+}

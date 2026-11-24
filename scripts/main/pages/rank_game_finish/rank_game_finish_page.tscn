@@ -1,0 +1,321 @@
+[gd_scene load_steps=26 format=3]
+
+[ext_resource type="Script" uid="uid://dxeqrlcuj5bxj" path="res://scripts/main/pages/rank_game_finish/rank_game_finish_page.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_finish_podium.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_crown_burst_fx.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_crown_shine_fx.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://scripts/main/pages/rank_game_finish/rank_finish_confetti.tscn" id="5"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/rank_encourage/ranking_titles.tres" id="6"]
+[ext_resource type="FontVariation" uid="uid://ddrdwgvpbi4ga" path="res://assets/fonts/Roboto-bold-title.tres" id="7"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_finish_clock.tscn" id="8"]
+[ext_resource type="Shader" uid="uid://c6hptlsm7ca8k" path="res://scripts/main/pages/rank_game_finish/rank_scroll_fade.gdshader" id="9"]
+[ext_resource type="PackedScene" uid="uid://cgtlicckqd04o" path="res://scripts/gameplay/rank/view/rank_list_view.tscn" id="10"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_finish_item_view.tscn" id="11"]
+[ext_resource type="PackedScene" path="res://scripts/gameplay/rank/view/rank_finish_zone_banner.tscn" id="12"]
+[ext_resource type="Script" uid="uid://2fajjh44l845" path="res://scripts/gameplay/rank/view/rank_crown_animator.gd" id="13"]
+[ext_resource type="Texture2D" uid="uid://dyhsigd4ny0qf" path="res://assets/sprites/rank_game_finish_crown_1.png" id="14"]
+[ext_resource type="PackedScene" uid="uid://ctxbuwml56wj3" path="res://scripts/widget/common_btn/common_btn.tscn" id="15"]
+[ext_resource type="Texture2D" uid="uid://bqxqw8iffluoo" path="res://assets/sprites/rank_game_finish_rise_tip_border.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://dx0o1127xmko7" path="res://assets/sprites/rank_game_finish_rise_tip_fill.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://dvukbcg1wehlu" path="res://assets/sprites/rank_game_finish_rise_tip_rope.png" id="18"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="19"]
+[ext_resource type="PackedScene" uid="uid://3xtxe5pxopce" path="res://scripts/gameplay/rank/view/rank_reward_tooltip.tscn" id="20"]
+
+[sub_resource type="Shader" id="title_shader"]
+code = "shader_type canvas_item;
+varying float local_y;
+uniform float ink_top = 38.0;
+uniform float ink_bottom = 138.0;
+void vertex() { local_y = VERTEX.y; }
+void fragment() {
+	vec4 src = COLOR;
+	float t = clamp((local_y - ink_top) / max(ink_bottom - ink_top, 1.0), 0.0, 1.0);
+	vec3 outline = mix(vec3(0.1254902, 0.4235294, 0.3254902), vec3(0.1127726, 0.5913461, 0.3359112), t);
+	float fill = smoothstep(0.65, 0.90, max(src.r, max(src.g, src.b)));
+	COLOR = vec4(mix(outline, src.rgb, fill), src.a);
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_inh26"]
+resource_local_to_scene = true
+shader = SubResource("title_shader")
+shader_parameter/ink_top = null
+shader_parameter/ink_bottom = null
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_126ky"]
+resource_local_to_scene = true
+shader = ExtResource("9")
+shader_parameter/top_uv = null
+shader_parameter/bottom_uv = null
+shader_parameter/fade_uv = null
+
+[sub_resource type="Shader" id="collect_icon_fade_shader"]
+code = "shader_type canvas_item;
+render_mode unshaded;
+
+uniform float top_uv = 0.0;
+uniform float bottom_uv = 1.0;
+uniform float fade_uv = 0.0;
+
+void fragment() {
+    float width = max(fade_uv, 0.000001);
+    float top_alpha = smoothstep(top_uv, top_uv + width, SCREEN_UV.y);
+    float bottom_alpha = 1.0 - smoothstep(bottom_uv - width, bottom_uv, SCREEN_UV.y);
+    COLOR.a *= top_alpha * bottom_alpha;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_86mbi"]
+resource_local_to_scene = true
+shader = SubResource("collect_icon_fade_shader")
+shader_parameter/top_uv = null
+shader_parameter/bottom_uv = null
+shader_parameter/fade_uv = null
+
+[node name="RankGameFinishPage" type="Control" unique_id=1903399795]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+deferred_scenes = {
+"Confetti": ExtResource("5"),
+"CrownBurstFx": ExtResource("3"),
+"CrownShineFx": ExtResource("4"),
+"Podium": ExtResource("2")
+}
+encourage_data = ExtResource("6")
+
+[node name="Scrim" type="ColorRect" parent="." unique_id=1551511370]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.85)
+
+[node name="TopBlock" type="Control" parent="." unique_id=54533445 groups=["_safe_top"]]
+z_index = 10
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Title" type="Label" parent="TopBlock" unique_id=1349638588]
+material = SubResource("ShaderMaterial_inh26")
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -428.0
+offset_top = -190.0
+offset_right = 422.0
+offset_bottom = -14.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0.12549, 0.423529, 0.32549, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("7")
+theme_override_font_sizes/font_size = 100
+text = "RANK_LEADERBOARD_TITLE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Clock" parent="TopBlock" unique_id=1611485756 instance=ExtResource("8")]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -141.0
+offset_top = 10.0
+offset_right = 125.0
+offset_bottom = 90.0
+grow_horizontal = 2
+
+[node name="Podium" type="Control" parent="." unique_id=1315333888 groups=["_safe_top"]]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -540.0
+offset_top = 190.0
+offset_right = 540.0
+offset_bottom = 970.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="ListArea" type="Control" parent="." unique_id=1962120228 groups=["_safe_bottom", "_safe_top"]]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -492.0
+offset_top = 988.0
+offset_right = 492.0
+offset_bottom = -360.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="ListFade" type="CanvasGroup" parent="ListArea" unique_id=319843361]
+material = SubResource("ShaderMaterial_126ky")
+fit_margin = 0.0
+clear_margin = 0.0
+
+[node name="ListRoot" parent="ListArea/ListFade" unique_id=738936799 instance=ExtResource("10")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 984.0
+offset_bottom = 759.0
+grow_horizontal = 1
+grow_vertical = 1
+overlay_scene = ExtResource("11")
+collect_icon_fade_material = SubResource("ShaderMaterial_86mbi")
+item_scene = ExtResource("11")
+zone_banner_scene = ExtResource("12")
+top_safe_padding = 24.0
+
+[node name="CrownBurstFx" type="Node2D" parent="." unique_id=237319612]
+
+[node name="CrownShineFx" type="Node2D" parent="." unique_id=1958558049]
+
+[node name="CrownLayer" type="Control" parent="." unique_id=358624097]
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("13")
+anchor_start = Vector2(160, 21)
+anchor_phase1 = Vector2(160, -110)
+anchor_phase2 = Vector2(160, -90)
+anchor_phase3 = Vector2(159.4325, -11.05)
+anchor_row_center = Vector2(160, 200)
+final_scale = 1.0
+final_rotation = 0.0
+
+[node name="Crown" type="TextureRect" parent="CrownLayer" unique_id=1925072320]
+layout_mode = 0
+offset_left = -67.4325
+offset_top = -49.95
+offset_right = 67.4325
+offset_bottom = 49.95
+mouse_filter = 2
+texture = ExtResource("14")
+expand_mode = 1
+
+[node name="ContinueButton" parent="." unique_id=1493266277 instance=ExtResource("15")]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -396.0
+offset_top = 1988.0
+offset_right = 396.0
+offset_bottom = 2204.0
+grow_horizontal = 2
+grow_vertical = 0
+btn_text = "FINISH_CONTINUE"
+
+[node name="RiseTip" type="Control" parent="." unique_id=2075760522 groups=["_safe_top"]]
+visible = false
+z_index = 20
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -401.0
+offset_top = -31.0
+offset_right = 418.59485
+offset_bottom = 187.31915
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="Content" type="Control" parent="RiseTip" unique_id=395596032]
+anchors_preset = 0
+offset_right = 819.59485
+offset_bottom = 218.31915
+mouse_filter = 2
+
+[node name="Border" type="TextureRect" parent="RiseTip/Content" unique_id=1691770655]
+layout_mode = 0
+offset_left = -4.0
+offset_top = 60.539795
+offset_right = 823.5947
+offset_bottom = 226.31915
+mouse_filter = 2
+texture = ExtResource("16")
+expand_mode = 1
+
+[node name="Fill" type="TextureRect" parent="RiseTip/Content" unique_id=939257276]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 72.70117
+offset_right = 807.0
+offset_bottom = 207.07855
+mouse_filter = 2
+texture = ExtResource("17")
+expand_mode = 1
+
+[node name="LeftRope" type="TextureRect" parent="RiseTip/Content" unique_id=519775288]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 31.0
+offset_right = 83.0
+offset_bottom = 105.400024
+mouse_filter = 2
+texture = ExtResource("18")
+expand_mode = 1
+
+[node name="RightRope" type="TextureRect" parent="RiseTip/Content" unique_id=733689077]
+layout_mode = 0
+offset_left = 732.0
+offset_top = 31.0
+offset_right = 804.0
+offset_bottom = 105.400024
+mouse_filter = 2
+texture = ExtResource("18")
+expand_mode = 1
+
+[node name="Text" type="RichTextLabel" parent="RiseTip/Content" unique_id=688891648]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 73.728966
+offset_right = 779.59485
+offset_bottom = 205.72896
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.54902, 0.321569, 0.223529, 1)
+theme_override_fonts/normal_font = ExtResource("19")
+theme_override_font_sizes/normal_font_size = 48
+scroll_active = false
+vertical_alignment = 1
+
+[node name="RewardTooltip" parent="." unique_id=1159031393 instance=ExtResource("20")]
+z_index = 200
+z_as_relative = false
+layout_mode = 1
+
+[node name="Confetti" type="Node2D" parent="." unique_id=1158073209]
+z_index = 199
+
+[node name="EncourageWord" type="Control" parent="." unique_id=734134299]
+visible = false
+z_index = 200
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_pressed"]
+
+[editable path="ListArea/ListFade/ListRoot"]

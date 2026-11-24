@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+
+[ext_resource type="SpineAtlasResource" uid="uid://co8oge8upftae" path="res://assets/spine/iq_genius/iq_genius.atlas" id="1"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://ced6cgmheuw27" path="res://assets/spine/iq_genius/iq_genius.spine-json" id="2"]
+
+[resource]
+atlas_res = ExtResource("1")
+skeleton_file_res = ExtResource("2")

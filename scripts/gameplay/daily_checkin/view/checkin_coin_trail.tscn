@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Texture2D" uid="uid://bsomy3dv3cur" path="res://assets/effect/texture/point/ef_point_004.png" id="1"]
+[ext_resource type="Script" uid="uid://bbjpvkqogh13h" path="res://scripts/gameplay/daily_checkin/view/checkin_coin_trail.gd" id="2"]
+
+[sub_resource type="CanvasItemMaterial" id="add"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="fade"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[node name="CoinTrail" type="CPUParticles2D" unique_id=576944281]
+visible = false
+modulate = Color(1, 0.9529, 0.7, 1)
+z_index = 119
+material = SubResource("add")
+emitting = false
+texture = ExtResource("1")
+lifetime = 0.4
+lifetime_randomness = 0.2
+emission_shape = 1
+emission_sphere_radius = 35.2
+direction = Vector2(0, -1)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_max = 20.0
+scale_amount_min = 0.15
+scale_amount_max = 0.35
+color_ramp = SubResource("fade")
+script = ExtResource("2")

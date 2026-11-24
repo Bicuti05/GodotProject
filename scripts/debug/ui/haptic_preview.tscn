@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" uid="uid://c3vf04li0ggkc" path="res://scripts/debug/ui/haptic_preview.gd" id="1"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="2"]
+
+[node name="HapticPreview" type="VBoxContainer" unique_id=1895024586]
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 16
+script = ExtResource("1")
+plot_font = ExtResource("2")
+
+[node name="Header" type="HBoxContainer" parent="." unique_id=1976516103]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Headings" type="VBoxContainer" parent="Header" unique_id=1560472759]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="Caption" type="Label" parent="Header/Headings" unique_id=972577613]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "震动轨道"
+autowrap_mode = 3
+
+[node name="Subtitle" type="Label" parent="Header/Headings" unique_id=583640945]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.64, 0.71, 1)
+theme_override_font_sizes/font_size = 28
+text = "时间 / 振动强度"
+autowrap_mode = 3
+
+[node name="Summary" type="VBoxContainer" parent="Header" unique_id=1354978294]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Total" type="Label" parent="Header/Summary" unique_id=972770988]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "--"
+horizontal_alignment = 2
+
+[node name="Detail" type="Label" parent="Header/Summary" unique_id=1288401613]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.64, 0.71, 1)
+theme_override_font_sizes/font_size = 26
+text = "等待有效配置"
+horizontal_alignment = 2
+
+[node name="PlotScroll" type="ScrollContainer" parent="." unique_id=894203300]
+layout_mode = 2
+size_flags_horizontal = 3
+vertical_scroll_mode = 0
+
+[node name="Plot" type="Control" parent="PlotScroll" unique_id=811093028]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2

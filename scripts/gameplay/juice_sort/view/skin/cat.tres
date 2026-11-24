@@ -1,0 +1,607 @@
+[gd_resource type="Resource" script_class="JuiceSkinDefinition" load_steps=113 format=3]
+
+[ext_resource type="PackedScene" path="res://assets/spine/effect_cat_container/effect_cat_container.tscn" id="1"]
+[ext_resource type="Script" uid="uid://bvihsiljxxdnt" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_animation_assets.gd" id="2"]
+[ext_resource type="Script" uid="uid://5qb68r4s3se7" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_visual.gd" id="3"]
+[ext_resource type="Texture2D" uid="uid://d0rrts8pxjn58" path="res://assets/sprites/juice_sort/cat/completed_red.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://ctqiyewaejqk8" path="res://assets/sprites/juice_sort/cat/element_red.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cag0136p75vnq" path="res://assets/sprites/juice_sort/cat/empty_red.png" id="6"]
+[ext_resource type="Script" uid="uid://imkgjn0btuot" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_color_assets.gd" id="7"]
+[ext_resource type="Texture2D" uid="uid://dkqtnh82i8qw5" path="res://assets/sprites/juice_sort/cat/completed_purple.png" id="8"]
+[ext_resource type="Texture2D" uid="uid://dpuw77magv53o" path="res://assets/sprites/juice_sort/cat/element_purple.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://d3l0xg6kl80yi" path="res://assets/sprites/juice_sort/cat/empty_purple.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://gv8bf2b7bqa6" path="res://assets/sprites/juice_sort/cat/completed_pink.png" id="11"]
+[ext_resource type="Texture2D" uid="uid://bkamt5hxmt0yg" path="res://assets/sprites/juice_sort/cat/element_pink.png" id="12"]
+[ext_resource type="Texture2D" uid="uid://bu7ckkah6vmuy" path="res://assets/sprites/juice_sort/cat/empty_pink.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://cjtlsuye371ho" path="res://assets/sprites/juice_sort/cat/completed_cyan.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://d3a51nuwu0amx" path="res://assets/sprites/juice_sort/cat/element_cyan.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://gys48v3r4c6b" path="res://assets/sprites/juice_sort/cat/empty_cyan.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://c58jjm2xoc5we" path="res://assets/sprites/juice_sort/cat/completed_yellow.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://cab27r6imattd" path="res://assets/sprites/juice_sort/cat/element_yellow.png" id="18"]
+[ext_resource type="Texture2D" uid="uid://cu37m4fmofmft" path="res://assets/sprites/juice_sort/cat/empty_yellow.png" id="19"]
+[ext_resource type="Texture2D" uid="uid://bvx0jgugq7ulp" path="res://assets/sprites/juice_sort/cat/completed_green.png" id="20"]
+[ext_resource type="Texture2D" uid="uid://b5qxccwibcs8s" path="res://assets/sprites/juice_sort/cat/element_green.png" id="21"]
+[ext_resource type="Texture2D" uid="uid://6otfy38h78p8" path="res://assets/sprites/juice_sort/cat/empty_green.png" id="22"]
+[ext_resource type="Texture2D" uid="uid://cfkh3cdty0gtg" path="res://assets/sprites/juice_sort/cat/completed_blue.png" id="23"]
+[ext_resource type="Texture2D" uid="uid://bubpts55b31aj" path="res://assets/sprites/juice_sort/cat/element_blue.png" id="24"]
+[ext_resource type="Texture2D" uid="uid://b36phwgdr6lbu" path="res://assets/sprites/juice_sort/cat/empty_blue.png" id="25"]
+[ext_resource type="Texture2D" uid="uid://bdcoajk476orj" path="res://assets/sprites/juice_sort/cat/completed_teal.png" id="26"]
+[ext_resource type="Texture2D" uid="uid://blkt5n4edr71p" path="res://assets/sprites/juice_sort/cat/element_teal.png" id="27"]
+[ext_resource type="Texture2D" uid="uid://48hbtd0kca4b" path="res://assets/sprites/juice_sort/cat/empty_teal.png" id="28"]
+[ext_resource type="Texture2D" uid="uid://dp5p374ouvpqn" path="res://assets/sprites/juice_sort/cat/completed_orange.png" id="29"]
+[ext_resource type="Texture2D" uid="uid://83tdiuxxy3dw" path="res://assets/sprites/juice_sort/cat/element_orange.png" id="30"]
+[ext_resource type="Texture2D" uid="uid://d183ixe4rm00y" path="res://assets/sprites/juice_sort/cat/empty_orange.png" id="31"]
+[ext_resource type="Texture2D" uid="uid://bjuy5lt6tj2n5" path="res://assets/sprites/juice_sort/cat/completed_lavender.png" id="32"]
+[ext_resource type="Texture2D" uid="uid://ccdnop0uhkpc" path="res://assets/sprites/juice_sort/cat/element_lavender.png" id="33"]
+[ext_resource type="Texture2D" uid="uid://bmpq05dbfoxmf" path="res://assets/sprites/juice_sort/cat/empty_lavender.png" id="34"]
+[ext_resource type="Texture2D" uid="uid://bsro1oklio4ff" path="res://assets/effect/texture/cat_paw/paw_red.png" id="35"]
+[ext_resource type="Texture2D" uid="uid://be3s5kdv7hne6" path="res://assets/effect/texture/cat_paw/paw_purple.png" id="36"]
+[ext_resource type="Texture2D" uid="uid://dopye8plcnpry" path="res://assets/effect/texture/cat_paw/paw_pink.png" id="37"]
+[ext_resource type="Texture2D" uid="uid://e6jx7j6gocho" path="res://assets/effect/texture/cat_paw/paw_cyan.png" id="38"]
+[ext_resource type="Texture2D" uid="uid://dxovsiin0634r" path="res://assets/effect/texture/cat_paw/paw_yellow.png" id="39"]
+[ext_resource type="Texture2D" uid="uid://6s72wcdu0e7a" path="res://assets/effect/texture/cat_paw/paw_green.png" id="40"]
+[ext_resource type="Texture2D" uid="uid://32uok22330c3" path="res://assets/effect/texture/cat_paw/paw_blue.png" id="41"]
+[ext_resource type="Texture2D" uid="uid://drrfcdru6ql7p" path="res://assets/effect/texture/cat_paw/paw_teal.png" id="42"]
+[ext_resource type="Texture2D" uid="uid://db0cfii7a0ytf" path="res://assets/effect/texture/cat_paw/paw_orange.png" id="43"]
+[ext_resource type="Texture2D" uid="uid://brnucadf461os" path="res://assets/effect/texture/cat_paw/paw_lavender.png" id="44"]
+[ext_resource type="Script" uid="uid://bwunoc4klc2c2" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_effect_assets.gd" id="45"]
+[ext_resource type="Texture2D" uid="uid://cxj3q83uk1dya" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_CBC_cat.png" id="46"]
+[ext_resource type="Texture2D" uid="uid://xphmhrwwrx8a" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_CSC_cat.png" id="47"]
+[ext_resource type="Texture2D" uid="uid://o4618rx5ff45" path="res://assets/sprites/juice_sort/new_guide/Icon_cat.png" id="48"]
+[ext_resource type="Texture2D" uid="uid://b6cn27chheis3" path="res://assets/sprites/juice_sort/new_guide/Icon_guide_UER_cat.png" id="49"]
+[ext_resource type="Texture2D" uid="uid://kcx3jkuj6nl" path="res://assets/sprites/juice_sort/cat/mystery_element.png" id="50"]
+[ext_resource type="Texture2D" uid="uid://bglm0rpcbjleh" path="res://assets/sprites/juice_sort/cat/parking.png" id="51"]
+[ext_resource type="Script" uid="uid://co4lq1wqsxdse" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_definition.gd" id="52"]
+[ext_resource type="Texture2D" uid="uid://blphhbv6b5rg0" path="res://assets/sprites/juice_sort/cat/target_empty_icon.png" id="53"]
+
+[sub_resource type="Resource" id="collect_animation"]
+script = ExtResource("2")
+scene = ExtResource("1")
+color_keys = PackedStringArray("red", "purple", "pink", "cyan", "yellow", "green", "blue", "teal", "orange", "lavender")
+skin_prefix = "cat_"
+slot_prefixes = null
+reference_width = 256.0
+collection_display_scale = 1.2
+bottom_center = Vector2(0, 120.5)
+offset_y = 0.0
+
+[sub_resource type="Resource" id="completed_red"]
+script = ExtResource("3")
+texture = ExtResource("4")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(52, 118, 151, 133)
+
+[sub_resource type="Resource" id="visual_red"]
+script = ExtResource("3")
+texture = ExtResource("5")
+content_rect = Rect2(28, 33, 142, 134)
+visual_center = Vector2(0.495, 0.5)
+
+[sub_resource type="Resource" id="empty_red"]
+script = ExtResource("3")
+texture = ExtResource("6")
+content_rect = Rect2(0, -2.9629629, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 152
+source_bounds = Rect2(14, 32, 151, 120)
+
+[sub_resource type="Resource" id="lock_red"]
+script = ExtResource("3")
+texture = ExtResource("5")
+visual_center = Vector2(0.495, 0.5)
+
+[sub_resource type="Resource" id="color_red"]
+script = ExtResource("7")
+color_key = &"red"
+element = SubResource("visual_red")
+empty_container = SubResource("empty_red")
+completed_container = SubResource("completed_red")
+target_icon = SubResource("completed_red")
+lock_icon = SubResource("lock_red")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_purple"]
+script = ExtResource("3")
+texture = ExtResource("8")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(52, 112, 153, 139)
+
+[sub_resource type="Resource" id="visual_purple"]
+script = ExtResource("3")
+texture = ExtResource("9")
+content_rect = Rect2(29, 32, 142, 134)
+visual_center = Vector2(0.5, 0.495)
+
+[sub_resource type="Resource" id="empty_purple"]
+script = ExtResource("3")
+texture = ExtResource("10")
+content_rect = Rect2(0, -0.962963, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 154
+source_bounds = Rect2(14, 31, 153, 123)
+
+[sub_resource type="Resource" id="lock_purple"]
+script = ExtResource("3")
+texture = ExtResource("9")
+visual_center = Vector2(0.5, 0.495)
+
+[sub_resource type="Resource" id="color_purple"]
+script = ExtResource("7")
+color_key = &"purple"
+element = SubResource("visual_purple")
+empty_container = SubResource("empty_purple")
+completed_container = SubResource("completed_purple")
+target_icon = SubResource("completed_purple")
+lock_icon = SubResource("lock_purple")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_pink"]
+script = ExtResource("3")
+texture = ExtResource("11")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(52, 115, 151, 136)
+
+[sub_resource type="Resource" id="visual_pink"]
+script = ExtResource("3")
+texture = ExtResource("12")
+content_rect = Rect2(31, 34, 143, 132)
+visual_center = Vector2(0.502451, 0.49019608)
+size_correction = 1.012867133
+
+[sub_resource type="Resource" id="empty_pink"]
+script = ExtResource("3")
+texture = ExtResource("13")
+content_rect = Rect2(0, 0.03703704, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 155
+source_bounds = Rect2(14, 34, 151, 121)
+
+[sub_resource type="Resource" id="lock_pink"]
+script = ExtResource("3")
+texture = ExtResource("12")
+visual_center = Vector2(0.502451, 0.49019608)
+size_correction = 1.012867133
+
+[sub_resource type="Resource" id="color_pink"]
+script = ExtResource("7")
+color_key = &"pink"
+element = SubResource("visual_pink")
+empty_container = SubResource("empty_pink")
+completed_container = SubResource("completed_pink")
+target_icon = SubResource("completed_pink")
+lock_icon = SubResource("lock_pink")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_cyan"]
+script = ExtResource("3")
+texture = ExtResource("14")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(52, 113, 152, 138)
+
+[sub_resource type="Resource" id="visual_cyan"]
+script = ExtResource("3")
+texture = ExtResource("15")
+content_rect = Rect2(29, 33, 143, 136)
+visual_center = Vector2(0.49264705, 0.49509802)
+size_correction = 1.012867133
+
+[sub_resource type="Resource" id="empty_cyan"]
+script = ExtResource("3")
+texture = ExtResource("16")
+content_rect = Rect2(0, 2.0370371, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 157
+source_bounds = Rect2(14, 35, 152, 122)
+
+[sub_resource type="Resource" id="lock_cyan"]
+script = ExtResource("3")
+texture = ExtResource("15")
+visual_center = Vector2(0.49264705, 0.49509802)
+size_correction = 1.012867133
+
+[sub_resource type="Resource" id="color_cyan"]
+script = ExtResource("7")
+color_key = &"cyan"
+element = SubResource("visual_cyan")
+empty_container = SubResource("empty_cyan")
+completed_container = SubResource("completed_cyan")
+target_icon = SubResource("completed_cyan")
+lock_icon = SubResource("lock_cyan")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_yellow"]
+script = ExtResource("3")
+texture = ExtResource("17")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(51, 114, 153, 137)
+
+[sub_resource type="Resource" id="visual_yellow"]
+script = ExtResource("3")
+texture = ExtResource("18")
+content_rect = Rect2(32, 35, 144, 134)
+visual_center = Vector2(0.5, 0.4903846)
+size_correction = 1.025555556
+
+[sub_resource type="Resource" id="empty_yellow"]
+script = ExtResource("3")
+texture = ExtResource("19")
+content_rect = Rect2(0, 1.037037, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 156
+source_bounds = Rect2(13, 36, 153, 120)
+
+[sub_resource type="Resource" id="lock_yellow"]
+script = ExtResource("3")
+texture = ExtResource("18")
+visual_center = Vector2(0.5, 0.4903846)
+size_correction = 1.025555556
+
+[sub_resource type="Resource" id="color_yellow"]
+script = ExtResource("7")
+color_key = &"yellow"
+element = SubResource("visual_yellow")
+empty_container = SubResource("empty_yellow")
+completed_container = SubResource("completed_yellow")
+target_icon = SubResource("completed_yellow")
+lock_icon = SubResource("lock_yellow")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_green"]
+script = ExtResource("3")
+texture = ExtResource("20")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(53, 113, 150, 138)
+
+[sub_resource type="Resource" id="visual_green"]
+script = ExtResource("3")
+texture = ExtResource("21")
+content_rect = Rect2(29, 32, 141, 134)
+visual_center = Vector2(0.4975, 0.495)
+size_correction = 1.007092199
+
+[sub_resource type="Resource" id="empty_green"]
+script = ExtResource("3")
+texture = ExtResource("22")
+content_rect = Rect2(0, -1.962963, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 153
+source_bounds = Rect2(15, 31, 150, 122)
+
+[sub_resource type="Resource" id="lock_green"]
+script = ExtResource("3")
+texture = ExtResource("21")
+visual_center = Vector2(0.4975, 0.495)
+size_correction = 1.007092199
+
+[sub_resource type="Resource" id="color_green"]
+script = ExtResource("7")
+color_key = &"green"
+element = SubResource("visual_green")
+empty_container = SubResource("empty_green")
+completed_container = SubResource("completed_green")
+target_icon = SubResource("completed_green")
+lock_icon = SubResource("lock_green")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_blue"]
+script = ExtResource("3")
+texture = ExtResource("23")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(51, 112, 154, 139)
+
+[sub_resource type="Resource" id="visual_blue"]
+script = ExtResource("3")
+texture = ExtResource("24")
+content_rect = Rect2(34, 36, 142, 133)
+visual_center = Vector2(0.5, 0.48809522)
+size_correction = 1.05
+
+[sub_resource type="Resource" id="empty_blue"]
+script = ExtResource("3")
+texture = ExtResource("25")
+content_rect = Rect2(0, 3.0370371, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 158
+source_bounds = Rect2(13, 35, 154, 123)
+
+[sub_resource type="Resource" id="lock_blue"]
+script = ExtResource("3")
+texture = ExtResource("24")
+visual_center = Vector2(0.5, 0.48809522)
+size_correction = 1.05
+
+[sub_resource type="Resource" id="color_blue"]
+script = ExtResource("7")
+color_key = &"blue"
+element = SubResource("visual_blue")
+empty_container = SubResource("empty_blue")
+completed_container = SubResource("completed_blue")
+target_icon = SubResource("completed_blue")
+lock_icon = SubResource("lock_blue")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_teal"]
+script = ExtResource("3")
+texture = ExtResource("26")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(52, 113, 152, 138)
+
+[sub_resource type="Resource" id="visual_teal"]
+script = ExtResource("3")
+texture = ExtResource("27")
+content_rect = Rect2(33, 34, 139, 132)
+visual_center = Vector2(0.502451, 0.49019608)
+size_correction = 1.042014388
+
+[sub_resource type="Resource" id="empty_teal"]
+script = ExtResource("3")
+texture = ExtResource("28")
+content_rect = Rect2(0, 2.0370371, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 157
+source_bounds = Rect2(14, 34, 152, 123)
+
+[sub_resource type="Resource" id="lock_teal"]
+script = ExtResource("3")
+texture = ExtResource("27")
+visual_center = Vector2(0.502451, 0.49019608)
+size_correction = 1.042014388
+
+[sub_resource type="Resource" id="color_teal"]
+script = ExtResource("7")
+color_key = &"teal"
+element = SubResource("visual_teal")
+empty_container = SubResource("empty_teal")
+completed_container = SubResource("completed_teal")
+target_icon = SubResource("completed_teal")
+lock_icon = SubResource("lock_teal")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_orange"]
+script = ExtResource("3")
+texture = ExtResource("29")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(53, 118, 151, 133)
+
+[sub_resource type="Resource" id="visual_orange"]
+script = ExtResource("3")
+texture = ExtResource("30")
+content_rect = Rect2(28, 32, 143, 135)
+visual_center = Vector2(0.4975, 0.4975)
+size_correction = 0.993006993
+
+[sub_resource type="Resource" id="empty_orange"]
+script = ExtResource("3")
+texture = ExtResource("31")
+content_rect = Rect2(0, -2.9629629, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 152
+source_bounds = Rect2(15, 33, 151, 119)
+
+[sub_resource type="Resource" id="lock_orange"]
+script = ExtResource("3")
+texture = ExtResource("30")
+visual_center = Vector2(0.4975, 0.4975)
+size_correction = 0.993006993
+
+[sub_resource type="Resource" id="color_orange"]
+script = ExtResource("7")
+color_key = &"orange"
+element = SubResource("visual_orange")
+empty_container = SubResource("empty_orange")
+completed_container = SubResource("completed_orange")
+target_icon = SubResource("completed_orange")
+lock_icon = SubResource("lock_orange")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="completed_lavender"]
+script = ExtResource("3")
+texture = ExtResource("32")
+content_rect = Rect2(0, 0, 256, 261)
+bottom_anchor = Vector2(0.5, 0.96168584)
+source_bounds = Rect2(51, 113, 154, 138)
+
+[sub_resource type="Resource" id="visual_lavender"]
+script = ExtResource("3")
+texture = ExtResource("33")
+content_rect = Rect2(31, 33, 142, 132)
+visual_center = Vector2(0.5, 0.4852941)
+size_correction = 1.02
+
+[sub_resource type="Resource" id="empty_lavender"]
+script = ExtResource("3")
+texture = ExtResource("34")
+content_rect = Rect2(0, 2.0370371, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 157
+source_bounds = Rect2(13, 34, 154, 123)
+
+[sub_resource type="Resource" id="lock_lavender"]
+script = ExtResource("3")
+texture = ExtResource("33")
+visual_center = Vector2(0.5, 0.4852941)
+size_correction = 1.02
+
+[sub_resource type="Resource" id="color_lavender"]
+script = ExtResource("7")
+color_key = &"lavender"
+element = SubResource("visual_lavender")
+empty_container = SubResource("empty_lavender")
+completed_container = SubResource("completed_lavender")
+target_icon = SubResource("completed_lavender")
+lock_icon = SubResource("lock_lavender")
+rope_top = null
+rope_mid = null
+rope_bottom = null
+background_empty_container = null
+feather = null
+door_atlas = null
+open_house = null
+
+[sub_resource type="Resource" id="collection_effects"]
+script = ExtResource("45")
+rope_petal = null
+rope_star = null
+rank_collectible_connection_01 = null
+rank_collectible_connection_02 = null
+unlock_leaf = null
+unlock_glow = null
+complete_column_glow = null
+mystery_petal = null
+mystery_particles = [ExtResource("35"), ExtResource("36"), ExtResource("37"), ExtResource("38"), ExtResource("39"), ExtResource("40"), ExtResource("41"), ExtResource("42"), ExtResource("43"), ExtResource("44")]
+mystery_particle_size_correction = 2.0
+mystery_glow = null
+mystery_flash = null
+mystery_star = null
+cup_bloom = null
+quota_ring = null
+quota_ring_center = Vector2(0.5, 0.73)
+quota_ring_shape = Vector2(0.9, 0.45)
+progress_dot = null
+progress_star = null
+progress_flower = null
+ice_sparkle = null
+ice_shard = null
+landing_star = null
+collection_particles = [ExtResource("35"), ExtResource("36"), ExtResource("37"), ExtResource("38"), ExtResource("39"), ExtResource("40"), ExtResource("41"), ExtResource("42"), ExtResource("43"), ExtResource("44")]
+collection_particle_size_correction = 2.0
+connection_particle_size_correction = 1.7
+progress_excellent = null
+
+[sub_resource type="Resource" id="guide_collect_by_color"]
+script = ExtResource("3")
+texture = ExtResource("46")
+content_rect = Rect2(0, 6, 120, 120)
+
+[sub_resource type="Resource" id="guide_connect_same_color"]
+script = ExtResource("3")
+texture = ExtResource("47")
+content_rect = Rect2(3, 4, 120, 120)
+
+[sub_resource type="Resource" id="guide_target_empty_icon"]
+script = ExtResource("3")
+texture = ExtResource("48")
+content_rect = Rect2(0, 0, 66, 66)
+
+[sub_resource type="Resource" id="guide_use_empty_ropes"]
+script = ExtResource("3")
+texture = ExtResource("49")
+content_rect = Rect2(0, 2, 120, 120)
+
+[sub_resource type="Resource" id="mystery_element"]
+script = ExtResource("3")
+texture = ExtResource("50")
+content_rect = Rect2(20, 14, 161, 163)
+visual_center = Vector2(0.5025, 0.4775)
+
+[sub_resource type="Resource" id="parking"]
+script = ExtResource("3")
+texture = ExtResource("51")
+content_rect = Rect2(0, 1.037037, 180, 184)
+offset = Vector2(0, -8)
+source_bottom = 156
+source_bounds = Rect2(13, 32, 155, 124)
+
+[sub_resource type="Resource" id="target_empty_icon"]
+script = ExtResource("3")
+texture = ExtResource("53")
+content_rect = Rect2(-47, -110, 256, 261)
+bottom_anchor = Vector2(0.5, 0.8597561)
+
+[resource]
+script = ExtResource("52")
+id = &"cat"
+display_name = "猫咪"
+revision = 21
+page_theme = null
+toast_keys = {
+"JUICE_TOAST_LOCKED_GRAB": "JUICE_TOAST_LOCKED_GRAB_CAT",
+"JUICE_TOAST_MYSTERY_EMPTY_ONLY": "JUICE_TOAST_MYSTERY_EMPTY_ONLY_CAT",
+"JUICE_TOAST_ROPE_SPACE": "JUICE_TOAST_ROPE_SPACE_CAT",
+"JUICE_TUTOR_WHY_COLOR": "JUICE_TUTOR_WHY_COLOR_CAT",
+"JUICE_TUTOR_WHY_FULL": "JUICE_TUTOR_WHY_FULL_CAT"
+}
+colors = [SubResource("color_red"), SubResource("color_purple"), SubResource("color_pink"), SubResource("color_cyan"), SubResource("color_yellow"), SubResource("color_green"), SubResource("color_blue"), SubResource("color_teal"), SubResource("color_orange"), SubResource("color_lavender")]
+target_empty_icon = SubResource("target_empty_icon")
+target_bar_max_visible_count = 6
+guide_target_empty_icon = SubResource("guide_target_empty_icon")
+guide_connect_same_color = SubResource("guide_connect_same_color")
+guide_collect_by_color = SubResource("guide_collect_by_color")
+guide_use_empty_ropes = SubResource("guide_use_empty_ropes")
+rank_collectible_container = null
+rank_collectible_target = null
+rank_collectible_target_height_ratio = 1.15
+rank_collectible_rope_top = null
+rank_collectible_rope_mid = null
+rank_collectible_rope_bottom = null
+parking_container = SubResource("parking")
+background_parking_container = null
+parking_rope_top = null
+parking_rope_mid = null
+parking_rope_bottom = null
+mystery_element = SubResource("mystery_element")
+collect_animation = SubResource("collect_animation")
+effects = SubResource("collection_effects")

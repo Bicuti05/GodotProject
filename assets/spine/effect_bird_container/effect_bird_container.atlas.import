@@ -1,0 +1,16 @@
+[remap]
+
+importer="spine.atlas"
+type="SpineAtlasResource"
+uid="uid://ba6x8wfq0socb"
+path="res://.godot/imported/effect_bird_container.atlas-34f21247897b16dd0e088fa1d3f6f795.spatlas"
+
+[deps]
+
+source_file="res://assets/spine/effect_bird_container/effect_bird_container.atlas"
+dest_files=["res://.godot/imported/effect_bird_container.atlas-34f21247897b16dd0e088fa1d3f6f795.spatlas"]
+
+[params]
+
+normal_map_prefix="n"
+specular_map_prefix="s"

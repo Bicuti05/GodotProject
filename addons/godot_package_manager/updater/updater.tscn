@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cva5vmp8q6je2"]
+
+[ext_resource type="Script" uid="uid://huw75680bu5f" path="res://addons/godot_package_manager/updater/updater.gd" id="1"]
+
+[node name="Updater" type="Control" unique_id=836923631]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="CompletionDialog" type="AcceptDialog" parent="." unique_id=1219682306]
+title = "更新完成"

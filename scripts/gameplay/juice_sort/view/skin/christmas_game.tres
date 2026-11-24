@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="JuiceSkinDefinition" load_steps=9 format=3]
+
+[ext_resource type="Texture2D" uid="uid://dgrtt5s4ctu0e" path="res://assets/sprites/christmas_theme/game/snowflake.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://fpwlhnhy67hq" path="res://assets/sprites/christmas_theme/game/candy.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://cy1pbv200ee2e" path="res://assets/sprites/christmas_theme/game/bell.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://ctdh0m0ihcvs6" path="res://assets/sprites/christmas_theme/game/hat.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://djth6c2t1faka" path="res://assets/sprites/christmas_theme/game/gift.png" id="5"]
+[ext_resource type="Script" uid="uid://dv1u02wyrm751" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_page_theme.gd" id="6"]
+[ext_resource type="Script" uid="uid://co4lq1wqsxdse" path="res://scripts/gameplay/juice_sort/view/skin/juice_skin_definition.gd" id="7"]
+
+[sub_resource type="Resource" id="page_theme"]
+script = ExtResource("6")
+background_color = Color(0.8980392, 0.84705883, 0.7647059, 1)
+illustration = null
+progress_track = null
+progress_fill = null
+progress_icon = null
+decoration_textures = [ExtResource("1"), ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")]
+decoration_rects = [Rect2(-158.89061, -0.939486, 142.20334, 93.854195), Rect2(-86.81, -474.64667, 323.89377, 323.89377), Rect2(-42.573612, 167, 119.131714, 119.131714), Rect2(-152.15, -350, 165.6315, 149.50452), Rect2(148, -77, 255.23941, 255.23941)]
+decoration_anchors = [Vector2(1, 0), Vector2(0, 1), Vector2(0, 0), Vector2(1, 1), Vector2(0, 0)]
+
+[resource]
+script = ExtResource("7")
+id = &"christmas_game"
+display_name = "圣诞游戏页背景主题"
+page_theme = SubResource("page_theme")
+target_empty_icon = null
+guide_connect_same_color = null
+guide_collect_by_color = null
+guide_use_empty_ropes = null
+rank_collectible_container = null
+rank_collectible_target = null
+parking_container = null
+background_parking_container = null
+parking_rope_top = null
+parking_rope_mid = null
+parking_rope_bottom = null
+mystery_element = null
+collect_animation = null
+effects = null

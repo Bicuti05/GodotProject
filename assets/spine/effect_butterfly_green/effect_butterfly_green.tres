@@ -1,0 +1,8 @@
+[gd_resource type="SpineSkeletonDataResource" load_steps=3 format=3]
+
+[ext_resource type="SpineAtlasResource" uid="uid://ck2ug6kfehbwh" path="res://assets/spine/effect_butterfly_green/effect_butterfly_green.atlas" id="1"]
+[ext_resource type="SpineSkeletonFileResource" uid="uid://dcjotv1yv41i7" path="res://assets/spine/effect_butterfly_green/effect_butterfly_green.skel" id="2"]
+
+[resource]
+atlas_res = ExtResource("1")
+skeleton_file_res = ExtResource("2")

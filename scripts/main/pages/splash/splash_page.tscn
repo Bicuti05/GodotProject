@@ -1,0 +1,275 @@
+[gd_scene load_steps=21 format=3 uid="uid://d6mqt7eyuhga"]
+
+[ext_resource type="Script" uid="uid://cppsj8hm7jbf1" path="res://scripts/main/pages/splash/splash_page.gd" id="1"]
+[ext_resource type="Resource" path="res://scripts/gameplay/juice_sort/view/skin/christmas_splash.tres" id="2"]
+[ext_resource type="Texture2D" uid="uid://dbs1cv7vvgg65" path="res://assets/sprites/splash_optimization/background.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bibnn6d3os888" path="res://assets/sprites/common_homepage_bg.png" id="4"]
+[ext_resource type="Script" uid="uid://onwld12bs56i" path="res://scripts/main/pages/splash/splash_ambient_light.gd" id="5"]
+[ext_resource type="Texture2D" uid="uid://clgdwkc56ncqi" path="res://assets/effect/texture/beam/ef_beam_001.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://gpitwm007f62" path="res://assets/effect/texture/mask/ef_mask_003.png" id="7"]
+[ext_resource type="Script" uid="uid://jec5iw2m1f00" path="res://scripts/main/pages/splash/splash_ambient_foliage.gd" id="8"]
+[ext_resource type="Texture2D" uid="uid://6vsrajokr4wx" path="res://assets/effect/texture/point/ef_point_007.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://3rpclcsfrg8k" path="res://assets/effect/texture/point/ef_point_005.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://c36rwjikyyo16" path="res://assets/effect/texture/point/ef_point_006.png" id="11"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="12"]
+[ext_resource type="Texture2D" uid="uid://bwrwmdesygxjq" path="res://assets/sprites/splash_progress_track.png" id="13"]
+[ext_resource type="Texture2D" uid="uid://dvhh6aqyt2reb" path="res://assets/sprites/splash_optimization/progress_track.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://1xuggfm6qyk4" path="res://assets/sprites/splash_progress_fill.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://dqutwumvyivoc" path="res://assets/sprites/splash_optimization/progress_fill.png" id="16"]
+[ext_resource type="SpineSkeletonDataResource" path="res://assets/spine/effect_butterfly_oringe/effect_butterfly_oringe.tres" id="17"]
+[ext_resource type="Texture2D" uid="uid://bcw2swjbmj2v3" path="res://assets/sprites/splash_butterfly_static.png" id="18"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ambadd"]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_progress_fill"]
+atlas = ExtResource("15")
+region = Rect2(26, 28, 640, 40)
+
+[node name="SplashPage" type="Control" unique_id=542357139]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+christmas_theme_skin = ExtResource("2")
+
+[node name="NewBackgroundFill" type="ColorRect" parent="." unique_id=1098117691]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 0.8862745, 0.7529412, 1)
+
+[node name="NewBackground" type="TextureRect" parent="." unique_id=1358993269]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Background" type="TextureRect" parent="." unique_id=622759370]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="ChristmasBackground" type="ColorRect" parent="." unique_id=1462624137]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.99215686, 0.92156863, 0.7647059, 1)
+
+[node name="Illustration" type="TextureRect" parent="ChristmasBackground" unique_id=2108807867]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Snowflake1" type="TextureRect" parent="ChristmasBackground" unique_id=388020658]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Snowflake2" type="TextureRect" parent="ChristmasBackground" unique_id=331400971]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Snowflake3" type="TextureRect" parent="ChristmasBackground" unique_id=1319905383]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Snowflake4" type="TextureRect" parent="ChristmasBackground" unique_id=1613637491]
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AmbientLight" type="Node2D" parent="." unique_id=541149576]
+material = SubResource("CanvasItemMaterial_ambadd")
+script = ExtResource("5")
+beam_texture = ExtResource("6")
+spot_texture = ExtResource("7")
+
+[node name="AmbientFoliage" type="Node2D" parent="." unique_id=679535315]
+script = ExtResource("8")
+leaf_atlas = ExtResource("9")
+petal_atlas = ExtResource("10")
+flower_atlas = ExtResource("11")
+
+[node name="Logo" type="SpineSprite" parent="." unique_id=1820438487]
+process_mode = 4
+visible = false
+position = Vector2(540, 2153.866)
+scale = Vector2(0.40002, 0.40002)
+
+[node name="QuoteAuthor" type="VBoxContainer" parent="." unique_id=957660095]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -460.0
+offset_top = 444.0
+offset_right = 460.0
+offset_bottom = 1174.0
+grow_horizontal = 2
+mouse_filter = 2
+theme_override_constants/separation = 28
+
+[node name="QuoteLabel" type="Label" parent="QuoteAuthor" unique_id=26421631]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.149, 0.216, 0.322, 0.55)
+theme_override_constants/line_spacing = 4
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 64
+text = "SLOGAN_CONTENT_1"
+autowrap_mode = 3
+
+[node name="AuthorLabel" type="Label" parent="QuoteAuthor" unique_id=1717159164]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0.149, 0.216, 0.322, 0.55)
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/shadow_outline_size = 8
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 48
+text = "SLOGAN_AUTHOR_1"
+horizontal_alignment = 2
+
+[node name="ProgressBar" type="TextureProgressBar" parent="." unique_id=623119285]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -346.0
+offset_top = 1922.0
+offset_right = 346.0
+offset_bottom = 2018.0
+grow_horizontal = 2
+mouse_filter = 2
+step = 0.0
+texture_under = ExtResource("13")
+
+[node name="NewTrack" type="TextureRect" parent="ProgressBar" unique_id=1006405663]
+visible = false
+layout_mode = 0
+offset_left = 8.0
+offset_top = 18.0
+offset_right = 819.2
+offset_bottom = 109.2
+scale = Vector2(0.8333333, 0.8333333)
+mouse_filter = 2
+texture = ExtResource("14")
+expand_mode = 1
+
+[node name="Fill" type="NinePatchRect" parent="ProgressBar" unique_id=295504019]
+visible = false
+layout_mode = 0
+offset_left = 26.0
+offset_top = 28.0
+offset_right = 26.0
+offset_bottom = 68.0
+texture = SubResource("AtlasTexture_progress_fill")
+patch_margin_left = 20
+patch_margin_top = 20
+patch_margin_right = 20
+patch_margin_bottom = 20
+
+[node name="NewFill" type="NinePatchRect" parent="ProgressBar" unique_id=2093315422]
+visible = false
+layout_mode = 0
+offset_left = 26.0
+offset_top = 28.0
+offset_right = 794.0
+offset_bottom = 76.0
+scale = Vector2(0.8333333, 0.8333333)
+texture = ExtResource("16")
+patch_margin_left = 24
+patch_margin_right = 24
+
+[node name="Butterfly" type="SpineSprite" parent="ProgressBar" unique_id=1965496749]
+z_index = 2
+position = Vector2(26, -39)
+skeleton_data_res = ExtResource("17")
+preview_skin = "Default"
+preview_animation = "-- Empty --"
+preview_frame = false
+preview_time = 0.0
+
+[node name="StaticButterfly" type="Sprite2D" parent="ProgressBar" unique_id=1363677914]
+visible = false
+z_index = 2
+position = Vector2(26, -44)
+scale = Vector2(0.79292035, 0.79292035)
+texture = ExtResource("18")
+
+[node name="ChristmasTrack" type="NinePatchRect" parent="ProgressBar" unique_id=1383069687]
+visible = false
+layout_mode = 0
+patch_margin_left = 34
+patch_margin_right = 34
+
+[node name="ChristmasFill" type="NinePatchRect" parent="ProgressBar" unique_id=734540090]
+visible = false
+layout_mode = 0
+patch_margin_left = 24
+patch_margin_right = 24
+
+[node name="ChristmasIcon" type="TextureRect" parent="ProgressBar" unique_id=1778870820]
+visible = false
+layout_mode = 0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ChristmasQuote" type="Control" parent="." unique_id=1005958455]
+visible = false
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="QuoteLabel" type="Label" parent="ChristmasQuote" unique_id=1662094947]
+layout_mode = 0
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 74
+autowrap_mode = 3
+
+[node name="AuthorLabel" type="Label" parent="ChristmasQuote" unique_id=551718921]
+layout_mode = 0
+theme_override_fonts/font = ExtResource("12")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 2

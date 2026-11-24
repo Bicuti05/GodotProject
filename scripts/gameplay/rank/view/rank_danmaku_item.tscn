@@ -1,0 +1,225 @@
+[gd_scene load_steps=15 format=3]
+
+[ext_resource type="Script" uid="uid://dht0xpxvm7uv1" path="res://scripts/gameplay/rank/view/rank_danmaku_item.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://cbyryw3828bg4" path="res://assets/sprites/common_rank_rank_settlement_barrage_blue.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://y1d476tbu8ha" path="res://assets/sprites/common_rank_rank_settlement_barrage_green.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b1f1qy10ueewt" path="res://assets/sprites/common_rank_rank_settlement_barrage_orange.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bkpbntmmu5ddr" path="res://assets/sprites/common_rank_rank_settlement_barrage_purple.png" id="5"]
+[ext_resource type="FontVariation" uid="uid://c4kdt3xx2mofx" path="res://assets/fonts/Roboto-bold.tres" id="6"]
+[ext_resource type="PackedScene" uid="uid://ccscmf2c8wdu8" path="res://scripts/gameplay/rank/view/rank_avatar_cell.tscn" id="7"]
+[ext_resource type="PackedScene" uid="uid://cu2huxkkx8rdq" path="res://scripts/gameplay/rank/view/rank_badge_view.tscn" id="8"]
+[ext_resource type="Texture2D" uid="uid://d3csero76uu75" path="res://assets/sprites/rank_season_win_barrage_glow_10.svg" id="9"]
+[ext_resource type="Texture2D" uid="uid://dic5fa21pu08e" path="res://assets/sprites/rank_season_win_barrage_glow_18.svg" id="10"]
+[ext_resource type="Texture2D" uid="uid://cevghx5yacqns" path="res://assets/sprites/rank_season_win_barrage_glow_16.svg" id="11"]
+[ext_resource type="Texture2D" uid="uid://pf4jdfm5o8aj" path="res://assets/sprites/rank_season_win_barrage_glow_12.svg" id="12"]
+[ext_resource type="Texture2D" uid="uid://bgk4hwemw7wwf" path="res://assets/sprites/rank_season_win_barrage_glow_4.svg" id="13"]
+[ext_resource type="Texture2D" uid="uid://x4r7u5vgawb5" path="res://assets/sprites/rank_season_win_barrage_glow_8.svg" id="14"]
+
+[node name="RankDanmakuItem" type="Control" unique_id=648456269]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 560.0
+offset_bottom = 81.0
+mouse_filter = 2
+script = ExtResource("1")
+bg_textures = [ExtResource("2"), ExtResource("3"), ExtResource("4"), ExtResource("5")]
+
+[node name="Bg" type="NinePatchRect" parent="." unique_id=1229916565]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3")
+region_rect = Rect2(0, 15, 560, 81)
+patch_margin_left = 64
+patch_margin_right = 464
+
+[node name="Text" type="Label" parent="." unique_id=532230918]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 108.0
+offset_right = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("6")
+theme_override_font_sizes/font_size = 48
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="AvatarSlot" type="Control" parent="." unique_id=186483488]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -64.0
+offset_right = 88.0
+offset_bottom = 64.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="AvatarCell" parent="AvatarSlot" unique_id=167790705 instance=ExtResource("7")]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+frame_kind = 2
+
+[node name="BadgeSlot" type="Control" parent="." unique_id=648083533]
+visible = false
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -64.0
+offset_right = 88.0
+offset_bottom = 64.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Badge" parent="BadgeSlot" unique_id=1486633956 instance=ExtResource("8")]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sparkles" type="Control" parent="." unique_id=555324283]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 85.0
+offset_top = -15.0
+offset_right = -15.0
+offset_bottom = 110.0
+mouse_filter = 2
+
+[node name="Glow1" type="TextureRect" parent="Sparkles" unique_id=899361391]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.087312415
+anchor_right = 0.087312415
+offset_left = -4.4444447
+offset_top = 5.5555553
+offset_right = 14.444445
+offset_bottom = 24.444445
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+
+[node name="Glow2" type="TextureRect" parent="Sparkles" unique_id=350824776]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.16507503
+anchor_right = 0.16507503
+offset_left = -8.0
+offset_top = 62.0
+offset_right = 26.0
+offset_bottom = 96.0
+mouse_filter = 2
+texture = ExtResource("10")
+expand_mode = 1
+
+[node name="Glow3" type="TextureRect" parent="Sparkles" unique_id=155079934]
+layout_mode = 1
+offset_left = -7.111111
+offset_top = 31.88889
+offset_right = 23.11111
+offset_bottom = 62.11111
+mouse_filter = 2
+texture = ExtResource("11")
+expand_mode = 1
+
+[node name="Glow4" type="TextureRect" parent="Sparkles" unique_id=166358591]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.21282402
+anchor_right = 0.21282402
+offset_left = -5.3333335
+offset_top = 30.666666
+offset_right = 17.333334
+offset_bottom = 53.333332
+mouse_filter = 2
+texture = ExtResource("12")
+expand_mode = 1
+
+[node name="Glow5" type="TextureRect" parent="Sparkles" unique_id=56277485]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55388814
+anchor_right = 0.55388814
+offset_left = -1.7777778
+offset_top = 25.222221
+offset_right = 5.7777777
+offset_bottom = 32.77778
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+
+[node name="Glow6" type="TextureRect" parent="Sparkles" unique_id=76652050]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.99454296
+anchor_right = 0.99454296
+offset_left = -1.7777778
+offset_top = 69.22222
+offset_right = 5.7777777
+offset_bottom = 76.77778
+mouse_filter = 2
+texture = ExtResource("13")
+expand_mode = 1
+
+[node name="Glow7" type="TextureRect" parent="Sparkles" unique_id=1850095319]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.4420191
+anchor_right = 0.4420191
+offset_left = -4.4444447
+offset_top = -4.4444447
+offset_right = 14.444445
+offset_bottom = 14.444445
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+
+[node name="Glow8" type="TextureRect" parent="Sparkles" unique_id=1989702617]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5552524
+anchor_right = 0.5552524
+offset_left = -4.4444447
+offset_top = 110.55556
+offset_right = 14.444445
+offset_bottom = 129.44444
+mouse_filter = 2
+texture = ExtResource("9")
+expand_mode = 1
+
+[node name="Glow9" type="TextureRect" parent="Sparkles" unique_id=1212923643]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.83492494
+anchor_right = 0.83492494
+offset_left = -3.5555556
+offset_top = 76.44444
+offset_right = 11.555555
+offset_bottom = 91.55556
+mouse_filter = 2
+texture = ExtResource("14")
+expand_mode = 1

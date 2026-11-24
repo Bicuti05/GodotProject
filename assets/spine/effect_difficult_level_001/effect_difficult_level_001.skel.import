@@ -1,0 +1,14 @@
+[remap]
+
+importer="spine.skel"
+type="SpineSkeletonFileResource"
+uid="uid://cw6e182eg2h1b"
+path="res://.godot/imported/effect_difficult_level_001.skel-f672bc371a90d9a581bdc035fda4c227.spskel"
+
+[deps]
+
+source_file="res://assets/spine/effect_difficult_level_001/effect_difficult_level_001.skel"
+dest_files=["res://.godot/imported/effect_difficult_level_001.skel-f672bc371a90d9a581bdc035fda4c227.spskel"]
+
+[params]
+

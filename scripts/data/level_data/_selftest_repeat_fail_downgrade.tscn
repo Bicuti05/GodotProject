@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" uid="uid://bwiyg7am72ssi" path="res://scripts/data/level_data/_selftest_repeat_fail_downgrade.gd" id="1"]
+
+[node name="SelftestRepeatFailDowngrade" type="Node" unique_id=198126226]
+script = ExtResource("1")
