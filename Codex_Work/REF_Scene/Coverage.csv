@@ -1,0 +1,192 @@
+﻿Scene,Mức preview,PNG liên quan,Ảnh
+scripts/capability/audio/audio_manager.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/capability/haptic/haptic_manager.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/data/level_data/_selftest_level_experiment_overlay.tscn,Debug/selftest,0,
+scripts/data/level_data/_selftest_repeat_fail_downgrade.tscn,Debug/selftest,0,
+scripts/debug/_selftest_bonus_motion_preview.tscn,Debug/selftest,0,
+scripts/debug/ab_debug_page.tscn,Debug/selftest,0,
+scripts/debug/cheat_manager/cheat_overlay.tscn,Debug/selftest,0,
+scripts/debug/ui/bonus_motion_preview.tscn,Debug/selftest,0,
+scripts/debug/ui/haptic_debug_panel.tscn,Debug/selftest,0,
+scripts/debug/ui/haptic_preview.tscn,Debug/selftest,0,
+scripts/debug/ui/haptic_record_item.tscn,Debug/selftest,0,
+scripts/debug/ui/haptic_thumbnail.tscn,Debug/selftest,0,
+scripts/debug/ui/hard_banner_animation_preview.tscn,Debug/selftest,0,
+scripts/debug/ui/home_button_fx_panel.tscn,Debug/selftest,0,
+scripts/debug/ui/mock_unikit_panel.tscn,Debug/selftest,0,
+scripts/debug/ui/rank_collectible_flow_preview.tscn,Debug/selftest,0,
+scripts/debug/ui/rank_first_collect_preview.tscn,Debug/selftest,0,
+scripts/debug/ui/special_challenge_reward_preview_panel.tscn,Debug/selftest,0,
+scripts/debug/ui/streak_motion_preview.tscn,Debug/selftest,0,
+scripts/debug/ui/timed_endless_popup_preview.tscn,Debug/selftest,0,
+scripts/debug/ui/user_level_hud.tscn,Debug/selftest,0,
+scripts/debug/ui/wood_door_lock_preview.tscn,Debug/selftest,0,
+scripts/debug/view/rank_debug_page.tscn,Debug/selftest,0,
+scripts/frame/scene/toast_scene.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/daily_checkin/view/check_stamp_rank_burst.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/daily_checkin/view/checkin_activation_fx.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/gameplay/daily_checkin/view/checkin_activation_particle.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/gameplay/daily_checkin/view/checkin_background_flow.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/gameplay/daily_checkin/view/checkin_background_motion.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/gameplay/daily_checkin/view/checkin_celebration_ripple.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/daily_checkin/view/checkin_coin_trail.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/daily_checkin/view/checkin_confetti_fall.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/daily_checkin/view/checkin_fx.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/gameplay/daily_checkin/view/checkin_game_coin_hud.tscn,Render tĩnh,2,Frames/010.png
+scripts/gameplay/daily_checkin/view/checkin_meteor_head.tscn,Render tĩnh,1,Frames/011.png
+scripts/gameplay/daily_checkin/view/checkin_motion_director.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/gameplay/daily_checkin/view/checkin_rank_confetti_burst.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/gameplay/daily_checkin/view/checkin_rank_particles.tscn,Cần runtime / không ra visual tĩnh,5,
+scripts/gameplay/daily_checkin/view/checkin_ray_mesh.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/gameplay/daily_checkin/view/checkin_reward_fx.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/daily_checkin/view/checkin_spine_coin.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/daily_checkin/view/checkin_spine_confetti.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/daily_checkin/view/checkin_spine_gift.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/daily_checkin/view/checkin_spine_hero.tscn,Cần runtime / không ra visual tĩnh,6,
+scripts/gameplay/daily_checkin/view/daily_checkin_view.tscn,Cần runtime / không ra visual tĩnh,42,
+scripts/gameplay/daily_checkin/view/gift_podium_idle.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/gameplay/daily_checkin/view/live_text.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/gameplay/daily_checkin/view/meteor_rank_trail.tscn,Cần runtime / không ra visual tĩnh,6,
+scripts/gameplay/daily_checkin/view/native_owl_rays.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/daily_checkin/view/owl_activation_fx.tscn,Cần runtime / không ra visual tĩnh,7,
+scripts/gameplay/juice_sort/tutorial/juice_lock_guide_overlay.tscn,Render tĩnh,13,Frames/027.png
+scripts/gameplay/juice_sort/tutorial/juice_sunlight_guide_overlay.tscn,Render tĩnh,0,Frames/028.png
+scripts/gameplay/juice_sort/tutorial/juice_tutorial_layer.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/juice_sort/tutorial/legacy/juice_legacy_tutorial_layer.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/gameplay/juice_sort/view/bonus_coin_entry_fx.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/juice_sort/view/bonus_pig_idle_fx.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/juice_sort/view/empty_rope_spiral_fx.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/gameplay/juice_sort/view/juice_blender.tscn,Cần runtime / không ra visual tĩnh,20,
+scripts/gameplay/juice_sort/view/juice_board_view.tscn,Render tĩnh,193,Frames/035.png
+scripts/gameplay/juice_sort/view/juice_col_mark.tscn,Cần runtime / không ra visual tĩnh,9,
+scripts/gameplay/juice_sort/view/juice_fruit.tscn,Cần runtime / không ra visual tĩnh,8,
+scripts/gameplay/juice_sort/view/juice_hand_demo.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/juice_sort/view/juice_lock_overlay.tscn,Render tĩnh,13,Frames/039.png
+scripts/gameplay/juice_sort/view/juice_quota_bar.tscn,Render tĩnh,17,Frames/040.png
+scripts/gameplay/juice_sort/view/juice_rope_capacity_label.tscn,Render tĩnh,0,Frames/041.png
+scripts/gameplay/juice_sort/view/juice_rules_bar.tscn,Render tĩnh,10,Frames/042.png
+scripts/gameplay/juice_sort/view/juice_sunlight_ambient.tscn,Cần runtime / không ra visual tĩnh,4,
+scripts/gameplay/juice_sort/view/progress_bling.tscn,Cần runtime / không ra visual tĩnh,18,
+scripts/gameplay/juice_sort/view/spiral_light_fx.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/gameplay/juice_sort/view/sunlight_fx.tscn,Cần runtime / không ra visual tĩnh,4,
+scripts/gameplay/juice_sort/view/wood_door_lock.tscn,Render tĩnh,11,Frames/047.png
+scripts/gameplay/outer_loop/view/hex_board.tscn,Render tĩnh,14,Frames/048.png
+scripts/gameplay/outer_loop/view/hex_reveal_effect.tscn,Cần runtime / không ra visual tĩnh,7,
+scripts/gameplay/outer_loop/view/new_scene_page.tscn,Render tĩnh,7,Frames/050.png
+scripts/gameplay/outer_loop/view/outer_loop_backdrop.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/rank/view/rank_avatar_cell.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/rank/view/rank_avatar_pool.tscn,Cần runtime / không ra visual tĩnh,12,
+scripts/gameplay/rank/view/rank_badge_view.tscn,Render tĩnh,17,Frames/054.png
+scripts/gameplay/rank/view/rank_banner_glint_fx.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/gameplay/rank/view/rank_bg_ambient_fall.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/rank/view/rank_change_effect.tscn,Cần runtime / không ra visual tĩnh,14,
+scripts/gameplay/rank/view/rank_collect_bar.tscn,Render tĩnh,1,Frames/058.png
+scripts/gameplay/rank/view/rank_collect_element_pool.tscn,Cần runtime / không ra visual tĩnh,6,
+scripts/gameplay/rank/view/rank_collect_fly_layer.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/rank/view/rank_crown_animator.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/rank/view/rank_crown_burst_fx.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/rank/view/rank_crown_shine_fx.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/rank/view/rank_danmaku_item.tscn,Render tĩnh,24,Frames/064.png
+scripts/gameplay/rank/view/rank_danmaku_layer.tscn,Cần runtime / không ra visual tĩnh,36,
+scripts/gameplay/rank/view/rank_finish_clock.tscn,Render tĩnh,6,Frames/066.png
+scripts/gameplay/rank/view/rank_finish_item_view.tscn,Render tĩnh,27,Frames/067.png
+scripts/gameplay/rank/view/rank_finish_podium.tscn,Render tĩnh,45,Frames/068.png
+scripts/gameplay/rank/view/rank_finish_zone_banner.tscn,Render tĩnh,2,Frames/069.png
+scripts/gameplay/rank/view/rank_home_entry.tscn,Render tĩnh,25,Frames/070.png
+scripts/gameplay/rank/view/rank_item_view.tscn,Render tĩnh,27,Frames/071.png
+scripts/gameplay/rank/view/rank_list_view.tscn,Cần runtime / không ra visual tĩnh,49,
+scripts/gameplay/rank/view/rank_podium_sweep_fx.tscn,Render tĩnh,8,Frames/073.png
+scripts/gameplay/rank/view/rank_reference_trail.tscn,Cần runtime / không ra visual tĩnh,6,
+scripts/gameplay/rank/view/rank_reward_tooltip.tscn,Render tĩnh,3,Frames/075.png
+scripts/gameplay/rank/view/rank_row_land_burst_fx.tscn,Cần runtime / không ra visual tĩnh,4,
+scripts/gameplay/rank/view/rank_row_source_fx.tscn,Cần runtime / không ra visual tĩnh,5,
+scripts/gameplay/rank/view/rank_row_sparkle_fx.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/gameplay/rank/view/rank_salute_fx.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/rank/view/rank_source_collection_fx.tscn,Cần runtime / không ra visual tĩnh,4,
+scripts/gameplay/rank/view/rank_theme_idle_view.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/gameplay/rank/view/rank_tier_nav.tscn,Render tĩnh,19,Frames/082.png
+scripts/gameplay/rank/view/rank_zone_banner.tscn,Render tĩnh,2,Frames/083.png
+scripts/gameplay/rank/view/source_fx/effect_score_burst.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/gameplay/rank/view/source_fx/podium_sweep.tscn,Render tĩnh,8,Frames/085.png
+scripts/gameplay/rank/view/source_fx/rank_cell_particles.tscn,Cần runtime / không ra visual tĩnh,4,
+scripts/gameplay/rank/view/source_fx/rank_change_collection.tscn,Cần runtime / không ra visual tĩnh,4,
+scripts/main/dialogs/avatar_select/avatar_select_dialog.tscn,Cần runtime / không ra visual tĩnh,24,
+scripts/main/dialogs/confirm/confirm_dialog.tscn,Cần runtime / không ra visual tĩnh,8,
+scripts/main/dialogs/daily_first_win_checkin/daily_first_win_checkin_dialog.tscn,Cần runtime / không ra visual tĩnh,42,
+scripts/main/dialogs/finish/effects/emitters/finish_ad_tier_burst_stars.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_ad_tier_sparkles.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_card_burst_emitter.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_confetti_fall.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_confetti_rain.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_confetti_sparkle.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_flower_dot.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_flower_sparkle.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_rainbow_sparkles.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/emitters/finish_wheel_trail.tscn,Thành phần particle,1,
+scripts/main/dialogs/finish/effects/finish_ad_particles.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/dialogs/finish/effects/finish_ad_particles_optimized.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/dialogs/finish/effects/finish_card_burst.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/dialogs/finish/effects/finish_card_burst_optimized.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/dialogs/finish/effects/finish_confetti_effects.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/dialogs/finish/effects/finish_confetti_effects_optimized.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/dialogs/finish/effects/finish_reward_particles.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/main/dialogs/finish/effects/finish_reward_particles_optimized.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/main/dialogs/finish/finish_dialog.tscn,Cần runtime / không ra visual tĩnh,42,
+scripts/main/dialogs/finish/ui/celebration_layer.tscn,Render tĩnh,1,Frames/100.png
+scripts/main/dialogs/finish/ui/confetti_fall.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/dialogs/finish/ui/confetti_rain.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/dialogs/finish/ui/confetti_sparkle.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/dialogs/finish/view/finish_ad_button.tscn,Render tĩnh,20,Frames/104.png
+scripts/main/dialogs/finish/view/firework_show.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/dialogs/finish/view/game_data_layer.tscn,Render tĩnh,19,Frames/106.png
+scripts/main/dialogs/finish/view/result_badge.tscn,Cần runtime / không ra visual tĩnh,13,
+scripts/main/dialogs/finish/view/reward_layer.tscn,Render tĩnh,7,Frames/108.png
+scripts/main/dialogs/finish_ad_reward/finish_ad_reward_dialog.tscn,Render tĩnh,0,Frames/109.png
+scripts/main/dialogs/game_dead_toast/game_dead_toast.tscn,Render tĩnh,1,Frames/110.png
+scripts/main/dialogs/loading/loading_overlay.tscn,Render tĩnh,1,Frames/111.png
+scripts/main/dialogs/privacy/privacy_dialog.tscn,Cần runtime / không ra visual tĩnh,7,
+scripts/main/dialogs/prop_unlock/prop_unlock_dialog.tscn,Render tĩnh,8,Frames/113.png
+scripts/main/dialogs/rank_change/rank_change_dialog.tscn,Cần runtime / không ra visual tĩnh,61,
+scripts/main/dialogs/rank_introduction/rank_introduction_dialog.tscn,Render tĩnh,10,Frames/115.png
+scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn,Render tĩnh,30,Frames/116.png
+scripts/main/dialogs/rank_season_win/rank_season_win_page.tscn,Render tĩnh,32,Frames/117.png
+scripts/main/dialogs/reset_confirm/reset_confirm_dialog.tscn,Cần runtime / không ra visual tĩnh,9,
+scripts/main/dialogs/settings/settings_dialog.tscn,Cần runtime / không ra visual tĩnh,17,
+scripts/main/dialogs/special_challenge_reward/special_challenge_reward_dialog.tscn,Render tĩnh,13,Frames/120.png
+scripts/main/dialogs/timed_endless_reward/timed_endless_reward_dialog.tscn,Cần runtime / không ra visual tĩnh,18,
+scripts/main/launcher/launcher.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/main/pages/game/_selftest_bonus_main_flow.tscn,Debug/selftest,0,
+scripts/main/pages/game/bonus_level_banner.tscn,Render tĩnh,4,Frames/123.png
+scripts/main/pages/game/bonus_pig_fill.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/pages/game/bonus_pig_hud.tscn,Cần runtime / không ra visual tĩnh,4,
+scripts/main/pages/game/bonus_pig_smash.tscn,Render tĩnh,3,Frames/126.png
+scripts/main/pages/game/bonus_spine_coin.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/pages/game/challenge_banner.tscn,Render tĩnh,12,Frames/128.png
+scripts/main/pages/game/combo_confetti_fullscreen_fx.tscn,Cần runtime / không ra visual tĩnh,6,
+scripts/main/pages/game/combo_feedback.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/pages/game/combo_fullscreen_fx.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/pages/game/empty_col_feedback.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/pages/game/game_start_banner.tscn,Cần runtime / không ra visual tĩnh,33,
+scripts/main/pages/game/iq_genius_feedback.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/pages/game/iq_progress_bar.tscn,Render tĩnh,11,Frames/135.png
+scripts/main/pages/game/juice_game_page.tscn,Render tĩnh,290,Frames/136.png
+scripts/main/pages/game/long_link_feedback.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/pages/game/special_challenge_banner.tscn,Render tĩnh,7,Frames/138.png
+scripts/main/pages/game/streak_burst_particles.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/main/pages/game/streak_celebration.tscn,Render tĩnh,16,Frames/140.png
+scripts/main/pages/game/streak_roll_number.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/main/pages/game/streak_tier_banner.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/main/pages/home/home_button_fx.tscn,Cần runtime / không ra visual tĩnh,7,
+scripts/main/pages/home/home_page.tscn,Render tĩnh,24,Frames/144.png
+scripts/main/pages/logo/logo_page.tscn,Render tĩnh,2,Frames/145.png
+scripts/main/pages/rank/rank_page.tscn,Render tĩnh,94,Frames/146.png
+scripts/main/pages/rank_game_finish/rank_finish_confetti.tscn,Cần runtime / không ra visual tĩnh,2,
+scripts/main/pages/rank_game_finish/rank_game_finish_page.tscn,Render tĩnh,91,Frames/148.png
+scripts/main/pages/splash/splash_page.tscn,Render tĩnh,20,Frames/149.png
+scripts/widget/common_btn/common_btn.tscn,Render tĩnh,6,Frames/150.png
+scripts/widget/confetti_fx/confetti_fx.tscn,Cần runtime / không ra visual tĩnh,1,
+scripts/widget/prop_btn/prop_btn.tscn,Render tĩnh,22,Frames/152.png
+scripts/widget/prop_btn/undo_guide_motion.tscn,Cần runtime / không ra visual tĩnh,3,
+scripts/widget/special_challenge_chest/special_challenge_chest.tscn,Cần runtime / không ra visual tĩnh,0,
+scripts/widget/timed_challenge_clock/timed_challenge_clock.tscn,Render tĩnh,9,Frames/155.png
+scripts/widget/timed_challenge_clock/timed_clock_flight.tscn,Cần runtime / không ra visual tĩnh,9,
