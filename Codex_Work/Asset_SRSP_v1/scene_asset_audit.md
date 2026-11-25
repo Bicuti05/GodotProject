@@ -50,3 +50,7 @@ Thêm 24 asset và 3 mockup. Còn 614 dòng manifest. [Ghi chú](home_store_revi
 ## Godot Finish và Bonus
 
 Đã thêm 38 mục drop-in cho màn kết quả, Bonus và hiệu ứng hướng dẫn. [Ghi chú dùng asset](godot_finish_bonus_review.md).
+
+## Godot Streak
+
+Đã thêm 29 mục drop-in cho banner chuỗi thắng và hoạt cảnh cúp trái cây. [Ghi chú dùng asset](godot_streak_review.md).
