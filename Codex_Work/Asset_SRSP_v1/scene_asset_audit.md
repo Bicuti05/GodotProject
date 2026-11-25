@@ -18,3 +18,7 @@ Có đủ 81 mockup duyệt bố cục. Tất cả dựng ngoài engine. Content
 - `UNITY_REDRAW / draw`: 80 mục còn thiếu.
 
 Các dòng action skip được loại khỏi thống kê. Asset tạo trong lượt này giữ nguyên canvas nguồn hoặc thu nhỏ đúng tỷ lệ. Source tại source/. Checker chạy theo danh sách file mới, sau đó đối chiếu alpha và kích thước master.
+
+## Bổ sung Gameplay drop-in
+
+Giao thêm 90 PNG. Xem [ghi chú](gameplay_dropin_notes.md) và [checker](report_gameplay_dropin.csv). Còn 835 dòng trong manifest.
