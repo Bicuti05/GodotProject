@@ -6,13 +6,13 @@ Manifest Sweet Rope có 1.259 dòng, gồm 147 dòng `skip`. 1.112 dòng cần g
 
 | Nhóm | Dòng cần giao | Đã có | Còn thiếu |
 |---|---:|---:|---:|
-| `GODOT / draw` | 690 | 377 | 313 |
+| `GODOT / draw` | 690 | 395 | 295 |
 | `GODOT / layers` | 46 | 0 | 46 |
 | `UNITY_NEW / draw` | 292 | 237 | 55 |
 | `UNITY_REDRAW / atlas` | 4 | 0 | 4 |
 | `UNITY_REDRAW / draw` | 80 | 80 | 0 |
 
-Tổng còn thiếu **418 dòng**. 1106 vùng PNG dành cho 46 mục layers của Godot. Với rows layers, kiểm sự hiện diện của motion.md và toàn bộ file vùng. [Danh sách còn thiếu](remaining_scene_assets.csv) ghi từng tên và yêu cầu.
+Tổng còn thiếu **400 dòng**. 1106 vùng PNG dành cho 46 mục layers của Godot. Với rows layers, kiểm sự hiện diện của motion.md và toàn bộ file vùng. [Danh sách còn thiếu](remaining_scene_assets.csv) ghi từng tên và yêu cầu.
 
 ## Bổ sung lượt này
 
@@ -40,3 +40,5 @@ Tổng còn thiếu **418 dòng**. 1106 vùng PNG dành cho 46 mục layers củ
 - Lượt Rank FX: thêm 23 mục drop-in cho hiệu ứng thăng hạng, vương miện, bục và điểm danh. [Ghi chú và contact sheet](godot_rank_fx_review.md).
 
 - Lượt Gameplay Particles: thêm 24 mục drop-in cho hạt gameplay, băng và mở ô Outer Loop. [Ghi chú và contact sheet](godot_particles_review.md).
+
+- Lượt Guide và Sunlight: thêm 18 mục drop-in cho hướng dẫn gameplay, reset và Sunlight. [Ghi chú và contact sheet](godot_guide_sunlight_review.md).

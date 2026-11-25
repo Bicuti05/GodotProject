@@ -70,3 +70,7 @@ Thêm 24 asset và 3 mockup. Còn 614 dòng manifest. [Ghi chú](home_store_revi
 ## Gameplay Particles
 
 Đã thêm 24 mục drop-in cho hạt gameplay, băng và mở ô Outer Loop. [Ghi chú dùng asset](godot_particles_review.md).
+
+## Guide và Sunlight
+
+Đã thêm 18 mục drop-in cho hướng dẫn gameplay, reset và Sunlight. [Ghi chú dùng asset](godot_guide_sunlight_review.md).
