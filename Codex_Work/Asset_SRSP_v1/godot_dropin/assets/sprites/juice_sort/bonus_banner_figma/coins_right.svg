@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="469" height="376" viewBox="0 0 469 376">
+  <defs>
+    <linearGradient id="gold" x2="0" y2="1">
+      <stop stop-color="#fff3a8"/>
+      <stop offset=".52" stop-color="#ffc843"/>
+      <stop offset="1" stop-color="#dd8b20"/>
+    </linearGradient>
+    <g id="coin">
+      <ellipse cx="4" cy="3" rx="40" ry="51" fill="#ad5417"/>
+      <ellipse rx="40" ry="51" fill="url(#gold)" stroke="#d98a25" stroke-width="3"/>
+      <ellipse rx="32" ry="42" fill="none" stroke="#fff09a" stroke-width="3"/>
+      <path d="M-5 -10 C-27 -25 -27 10 -12 20 Q-6 25 0 22 Q9 27 16 16 C28 -4 16 -22 3 -11 Q0 -8 -5 -10Z" fill="#f6ba37" stroke="#c17923" stroke-width="3"/>
+      <path d="M0 -13 Q-1 -22 -6 -26 M1 -17 Q8 -30 18 -26 Q14 -17 1 -17Z" fill="#ffdb69" stroke="#ba781e" stroke-width="2"/>
+      <path d="M-29 -14 Q-26 -30 -16 -35" fill="none" stroke="#fff5b7" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <use xlink:href="#coin" transform="translate(378.96 254.80) rotate(0)"/><use xlink:href="#coin" transform="translate(278.40 288.20) rotate(-13)"/><use xlink:href="#coin" transform="translate(198.79 101.16) rotate(8)"/><use xlink:href="#coin" transform="translate(106.61 221.40) rotate(-16)"/><use xlink:href="#coin" transform="translate(311.92 154.60) rotate(-20)"/>
+</svg>
