@@ -1,68 +1,65 @@
-# Sweet Rope – giao việc theo phase
+# Sweet Rope – giao một lần: sửa hết và làm hết
 
-Đọc file này mỗi lần bắt đầu. **Chỉ làm phase đang MỞ**, làm xong thì dừng và chờ duyệt. Không tự mở phase sau.
+Đọc file này trước. **Không còn chia phase, không dừng chờ duyệt.** Làm liên tục đến khi xong toàn bộ: phần A, B, C, D.
 
-Quy tắc đầy đủ về style, pixel và bản quyền: `tools/PROMPT.md`. Nếu trái nhau thì file README này đúng.
+File này đúng hơn mọi tài liệu cũ. Các câu sau trong `tools/PROMPT.md` **không còn áp dụng**: dừng ở mỗi đợt (mục 0.4 và mục 8), chỉ commit khi được yêu cầu và hỏi trước khi đẩy (mục 10), thư mục đầu ra cũ. Đầu ra là `Codex_Work/Asset_SRSP_v1/`. Style, pixel và bản quyền trong PROMPT vẫn giữ.
 
-## Trạng thái
+## Cách chạy
 
-| Phase | Nội dung | Số file | Trạng thái |
-|---|---|---|---|
-| 0 | Chốt style (đợt 0) | 45 | Đã nộp. 28 file đạt, 17 file phải sửa |
-| 0S | Sửa đợt 0 | 17 | **MỞ** |
-| 1 | Container 10 màu (còn lại) | 9 | Khóa |
-| 2 | Container đầy quả | 10 | Khóa |
-| 3 | Phụ kiện bàn chơi, dấu thả, bàn tay | 9 | Khóa |
-| 4 | Mở túi, mật chảy, dấu sáp nứt | 10 | Khóa |
-| 5 | Hiệu ứng Deliver và màn Thua | 9 | Khóa |
-| 6 | Khung và nút dùng chung | 5 | Khóa |
-| 7 | Bộ biểu tượng | 12 | Khóa |
-| 8 | HUD và Helper | 12 | Khóa |
-| 9 | Home và logo | 11 | Khóa |
+1. Thứ tự: **A (sửa lỗi) → B (làm phần thiếu) → C (mockup) → D (tự kiểm, báo cáo)**.
+2. Xong mỗi nhóm thì cập nhật `status` trong `asset_manifest.csv`, commit và push, rồi làm nhóm kế tiếp ngay. Commit chỉ trong `Codex_Work/Asset_SRSP_v1/`.
+3. Nếu phiên bị ngắt vì hết giới hạn: lần chạy sau đọc `status` và `fix_list.csv`, làm tiếp từ mục chưa xong, không làm lại mục đã xong.
+4. Không dừng để hỏi. Chỗ chưa rõ thì chọn phương án mặc định, ghi vào `questions.md`, làm tiếp.
+5. Không commit `tools/unity_current/` và `tools/SR_Art Task.xlsx` (repo đang công khai): thêm hai đường dẫn này vào `.git/info/exclude`.
 
-Sau phase 9 còn phần P1, P2 và bộ Godot: chưa giao.
+## Chất lượng: áp dụng cho mọi file
 
-## Phase 0S – sửa đợt 0
+- Hình minh họa phải do **công cụ sinh ảnh** vẽ, cùng style khối 3D bóng với chậu, quả, icon và mèo đã nộp. Code chỉ dùng để tách nền, cắt, ghép, thu nhỏ và kiểm.
+- **Không nộp hình khối phẳng vẽ bằng PIL/SVG thay cho tranh.** Chỉ quầng sáng và gradient mờ mới được dựng bằng code.
+- Sửa quy tắc cũ về ảnh nguồn: với ảnh có một cạnh trên 1536 px, được phóng bằng **super-resolution** nếu công cụ sinh ảnh không đủ px (ghi vào báo cáo). Vẫn cấm kéo lệch tỉ lệ và nhòe mép để lấp chỗ trống.
+- File nào không vẽ đạt thì để `status` = `không làm được` kèm lý do. Không nộp hình tạm rồi ghi là xong.
 
-Đã đạt, **không vẽ lại**: các quả trừ chuối, túi vải, dấu sáp, chậu đỏ và chậu trắng, chậu đầy quả, thân dây, hình nút xanh.
+## A. Sửa lỗi (danh sách file: `fix_list.csv`)
 
-| File (trong `Codex_Work/Asset_SRSP_v1/`) | Px | Lỗi cần sửa |
+Các file này đã nộp nhưng **chưa đạt**, dù `check_assets.py` không báo FAIL.
+
+| Nhóm | Lỗi | Đạt khi |
 |---|---|---|
-| `unity/Assets/_IEC/Image/Mechanic/OBJ_HONEY_TOP.png` | 160×80 | Chưa đọc ra mật ong: ống màu đỏ gạch phẳng. Vẽ mật hổ phách sáng, bóng, có vệt sáng dọc và vân chảy; khác rõ chuối và cam. |
-| `unity/Assets/_IEC/Image/Mechanic/OBJ_HONEY_BODY.png` | 160×256 | Cùng tông với đỉnh và đáy; lặp dọc không thấy đường nối; thân đặc (alpha từ 250 trở lên, chỉ mép ngoài được mờ). |
-| `unity/Assets/_IEC/Image/Mechanic/OBJ_HONEY_BOTTOM.png` | 160×100 | Bỏ dải xám mờ ở chỗ nối: hiện thấy quả phía sau lọt qua ở cả hai đầu. |
-| `unity/Assets/_IEC/Image/Theme/Fruit/BG_BOARD_FRUIT.png` | 1080×2340 | Nguồn 898×1752 bị kéo lên 1080×2340, lá ở mép nhòe thành mảng. Vẽ nguồn từ 1080×2340 trở lên, cùng tỉ lệ. |
-| `godot_dropin/assets/sprites/juice_sort/wood_door/frame.png` | 340×1754 | Là lớp mật đóng bản Godot: sửa theo ba mảnh mật ở trên, hết dải xám. |
-| `godot_dropin/assets/sprites/juice_sort/quota_slot_empty.png` | 256×261 | Ô Order trống đang giống hệt chậu trắng của Free Rope. Vẽ bản xám mờ, đọc ra là chỗ chờ giao. |
-| `godot_dropin/assets/sprites/juice_sort/rope_red_top.png` | 60×121 | Nút buộc chỉ là một hình bầu dục phẳng dán lên dây. Vẽ nút thắt có khối, cùng vân dây. |
-| `godot_dropin/assets/sprites/juice_sort/rope_red_bottom.png` | 60×102 | Đuôi dây là một đốm mờ. Vẽ nút đuôi rõ khối. |
-| `unity/Assets/_IEC/Image/Board/BOARD_PLANK.png` | 1058×45 | Nguồn 380×105 nhỏ hơn bản xuất. Vẽ nguồn đủ lớn. |
-| `godot_dropin/assets/sprites/juice_sort/board.png` | 1144×243 | Cùng lỗi nguồn nhỏ như BOARD_PLANK. |
-| `unity/Assets/_IEC/Image/UIKit/BUTTON_GREEN_NORMAL.png` | 520×134 | Nguồn 379×183 nhỏ hơn bề ngang bản xuất. Hình hiện đạt, chỉ cần nguồn đủ lớn. |
-| `unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_3.png` | 200×200 | Ảnh mẫu đã chốt là MỘT quả chuối; bản nộp là nải 2–3 quả. |
-| `godot_dropin/assets/sprites/juice_sort/flower_yellow.png` | 200×200 | Cùng hình với ITEM_FRUIT_3. |
-| `unity/Assets/_IEC/Image/Board/MOCK_BOARD_4ROPE.png` | 1080×2340 | Dựng lại với mật và nền mới. Các chậu thử cùng cỡ nhau. |
-| `unity/Assets/_IEC/Image/Board/MOCK_BOARD_7ROPE.png` | 1080×2340 | Như trên. |
-| `unity/Assets/_IEC/Image/UIKit/MOCK_UI_HOME.png` | 1080×2340 | Mép trên, dưới và hai bên là vệt nhòe. Vẽ nền đúng cỡ. Logo tiếp tục để tạm cho đến khi có file gốc. |
-| `unity/Assets/_IEC/Image/UIKit/MOCK_UI_POPUP.png` | 1080×2340 | Dựng trên nền Home mới. |
+| A1 Mật ong | Đọc ra tấm gỗ, không ra mật. Đáy như giấy rách. | Mật hổ phách lỏng, bóng: đỉnh đọng dày tràn mép tròn, giọt đáy tròn mập, đốm bóng. Đục, không thấy item. Ghép TOP + BODY + BOTTOM liền mạch ở **mọi** chiều cao dây 3–8 Item (mỗi Item 125 px), kể cả khi BODY bị cắt giữa chừng. |
+| A2 Dây Godot | Ba đoạn không khớp: `mid` ở x 21–38 (đỏ 24–41), cuối `top` ở x 23–33, đầu `bottom` ở x 28–41. | Cả 11 bộ: thân của `top`, `mid`, `bottom` cùng nằm ở **x 25–35** trên khung rộng 60 px (như file gốc), cùng vân xoắn. Nút được rộng hơn thân. Ghép thử không thấy gãy. |
+| A3 Ô Order trống | Xô xám phẳng, khác dáng chậu. | Đúng dáng Container, cùng khối bóng, màu xám mờ, đọc ra là chỗ chờ giao. |
+| A4 Cỡ chậu | `CONTAINER_FRUIT_1` có chậu rộng 74% khung, các chậu khác 85%. | Cùng tỉ lệ, cùng đường đáy với 9 chậu còn lại. |
+| A5 Nền | Gradient, đồi và lá phẳng, gần như trống. | Tranh vẽ cùng style `BG_STAGE_001`; vùng giữa vẫn thoáng để đặt Item và nút. |
+| A6 Nút, khung, thanh | Chữ nhật gradient phẳng, khác hẳn `BUTTON_GREEN_NORMAL`. | Cùng viền, vát khối và đốm bóng với `BUTTON_GREEN_NORMAL`. Ba trạng thái Normal, Pressed, Locked phân biệt rõ. Giữ 9-slice. |
+| A7 Hiệu ứng, trang trí | Đa giác và sao phẳng; bốn file glow trùng y nhau; khói gần như không thấy. | Mỗi file đúng chức năng trong `what_to_draw`, khung hình liên tiếp thấy được chuyển động, không trùng nhau trừ khi manifest ghi `same_pixels_as`. |
+| A8 Art vẽ lại | Đổi dáng so với art team: mũi tên `x1/x8/x10` thành chữ nhật; `BOARD_DATE` bị in sẵn 7 ô; đuôi `BOARD_REWARD` rời; `BOARD_TOP` đổi cấu trúc; nút Quit tròn thành vuông; tia sáng quá mờ; chữ mất độ cong và quầng; nền mất họa tiết. | Đặt chồng lên bản trong `tools/unity_current/`: cùng đường viền ngoài, cùng vị trí chữ và ô nội dung. Chỉ đổi chất liệu và chủ đề. |
 
-## Tiêu chí chung (mọi phase)
+## B. Làm toàn bộ phần còn thiếu
 
-1. Đúng đường dẫn và đúng pixel.
-2. File nguồn trong `source/` rộng và cao **ít nhất bằng** bản xuất. Không phóng to, không kéo giãn, không nhòe mép để lấp khoảng trống.
-3. Ảnh mới hoàn toàn, không lấy pixel của Sort Streak.
-4. Contact sheet trên nền sáng, nền tối và ảnh xám, đặt ở cỡ chơi thật: `contact_sheets/phase<N>_*.png`.
-5. Chạy kiểm: không còn `FAIL`; mỗi `WARN` ghi lý do trong `report_phase<N>.csv` hoặc `questions.md`.
+Mọi dòng có `action` khác `skip` và `status` = `chưa làm` (số dòng lấy theo `status` mới nhất).
+
+1. P0.
+2. P1.
+3. P2 ảnh Godot và Unity. Theme Flower và Winter: dùng tên hoa và hoa văn bánh đang ghi trong manifest làm mặc định, ghi vào `questions.md`.
+4. P2 `layers`: mỗi vùng trong `atlas_regions.json` một PNG đúng px, kèm `motion.md`. Không dùng lại skeleton hay animation của Sort Streak.
+5. P2 `atlas`: các atlas Unity của team, đúng từng ô.
+
+## C. Mockup (làm sau A và B)
+
+- Dựng lại `MOCK_BOARD_*`, `MOCK_UI_*` và đủ 81 mockup bằng asset đã sửa.
+- Chữ không đè lên vùng tranh rối (ví dụ "Orchard 1" ở Home). Ô Order trống phải nhìn ra chậu.
+- Logo: tiếp tục để tạm cho đến khi có file PNG gốc.
+
+## D. Tự kiểm và báo cáo cuối
 
 ```bash
-python Codex_Work/Asset_SRSP_v1/tools/check_assets.py --manifest Codex_Work/Asset_SRSP_v1/asset_manifest.csv --out Codex_Work/Asset_SRSP_v1 --source . --only Mechanic/OBJ_HONEY_TOP.png,Mechanic/OBJ_HONEY_BODY.png,Mechanic/OBJ_HONEY_BOTTOM.png,Fruit/BG_BOARD_FRUIT.png,wood_door/frame.png,juice_sort/quota_slot_empty.png,juice_sort/rope_red_top.png,juice_sort/rope_red_bottom.png,Board/BOARD_PLANK.png,juice_sort/board.png,UIKit/BUTTON_GREEN_NORMAL.png,Fruit/ITEM_FRUIT_3.png,juice_sort/flower_yellow.png,Board/MOCK_BOARD_4ROPE.png,Board/MOCK_BOARD_7ROPE.png,UIKit/MOCK_UI_HOME.png,UIKit/MOCK_UI_POPUP.png --report Codex_Work/Asset_SRSP_v1/report_phase0S.csv
+python Codex_Work/Asset_SRSP_v1/tools/check_assets.py --manifest Codex_Work/Asset_SRSP_v1/asset_manifest.csv --out Codex_Work/Asset_SRSP_v1 --source . --report Codex_Work/Asset_SRSP_v1/report_all.csv
 ```
 
-## Khi nộp
-
-- Cập nhật cột `status` trong `asset_manifest.csv` thành `chờ duyệt`.
-- Commit chỉ trong `Codex_Work/Asset_SRSP_v1/`, tiêu đề `Phase 0S: ...`, rồi **dừng**.
-- File nào công cụ của bạn không vẽ đạt thì ghi thẳng `không làm được` kèm lý do, đừng nộp ảnh kém.
+- Không còn `FAIL`, trừ các dòng `không làm được`. Mỗi `WARN` ghi lý do.
+- Kiểm thêm điều script không kiểm: x của thân dây (A2); mật ghép ở 3–8 Item; tỉ lệ 10 chậu; art vẽ lại đặt chồng lên bản cũ.
+- Contact sheet trên nền sáng, nền tối, ảnh xám, ở cỡ chơi thật, cho từng nhóm. **Mở ra xem** trước khi ghi `chờ duyệt`.
+- `final_report.md`: số dòng đã xong, chưa xong, không làm được kèm lý do; việc dev phải làm.
 
 ## Theme xác nhận
 
