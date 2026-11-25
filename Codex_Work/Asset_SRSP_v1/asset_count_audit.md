@@ -6,13 +6,13 @@ Manifest Sweet Rope có 1.259 dòng, gồm 147 dòng `skip`. 1.112 dòng cần g
 
 | Nhóm | Dòng cần giao | Đã có | Còn thiếu |
 |---|---:|---:|---:|
-| `GODOT / draw` | 690 | 209 | 481 |
+| `GODOT / draw` | 690 | 215 | 475 |
 | `GODOT / layers` | 46 | 0 | 46 |
-| `UNITY_NEW / draw` | 292 | 185 | 107 |
+| `UNITY_NEW / draw` | 292 | 203 | 89 |
 | `UNITY_REDRAW / atlas` | 4 | 0 | 4 |
 | `UNITY_REDRAW / draw` | 80 | 80 | 0 |
 
-Tổng còn thiếu **638 dòng**. 1106 vùng PNG dành cho 46 mục layers của Godot. Với rows layers, kiểm sự hiện diện của motion.md và toàn bộ file vùng. [Danh sách còn thiếu](remaining_scene_assets.csv) ghi từng tên và yêu cầu.
+Tổng còn thiếu **614 dòng**. 1106 vùng PNG dành cho 46 mục layers của Godot. Với rows layers, kiểm sự hiện diện của motion.md và toàn bộ file vùng. [Danh sách còn thiếu](remaining_scene_assets.csv) ghi từng tên và yêu cầu.
 
 ## Bổ sung lượt này
 
@@ -24,3 +24,5 @@ Tổng còn thiếu **638 dòng**. 1106 vùng PNG dành cho 46 mục layers củ
 - Lượt Rank/Profile: 70 mục, gồm 56 ảnh Unity redraw và 14 texture Rank Godot. Xem [mockup và ghi chú](rank_profile_review/README.md).
 
 - Lượt Streak/Win: thêm 24 PNG Unity redraw. Hoàn tất các dòng redraw tĩnh. 4 atlas Unity đang chờ.
+
+- Lượt Home/Loading/Shop: 24 mục, gồm nền và Stage, UI Shop, adaptive/store icon và lớp Loading Godot.

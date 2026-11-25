@@ -38,3 +38,7 @@ Bổ sung 70 asset và 2 mockup theo art mới. Còn 662 mục trong manifest. [
 ## Streak và Win
 
 Bổ sung 24 PNG Unity redraw và 2 mockup theo theme mèo nông dân. Còn 638 mục. [Ghi chú](streak_win_review/README.md) · [checker](report_streak_win.csv).
+
+## Home, Loading và Shop
+
+Thêm 24 asset và 3 mockup. Còn 614 dòng manifest. [Ghi chú](home_store_review/README.md) · [checker](report_home_store.csv).

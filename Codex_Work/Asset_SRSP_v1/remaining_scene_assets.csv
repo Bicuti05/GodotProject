@@ -80,12 +80,6 @@ GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/tutorial_bg_9s.png,225,228,"
 GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/tutorial_rules_reference.png,720,126,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/juice_sort/tutorial/juice_tutorial_layer.tscn
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/OBJ_HAND_HOLD.png,200,200,Bàn tay hướng dẫn level 1. Bàn tay đeo găng chỉ và kéo.,Gốc dùng tay; game đang dùng bóng mờ (DEV-13)
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/OBJ_HAND_POINT.png,200,200,Bàn tay hướng dẫn level 1. Bàn tay đeo găng chỉ và kéo.,Gốc dùng tay; game đang dùng bóng mờ (DEV-13)
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Home/BG_HOME_GROUND.png,1080,600,"Nền Home. Trời, đồi xa, đất gần; tách 3 lớp vì code đang có 3 object.","DarkBG, Hill, Ground"
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Home/BG_HOME_HILL.png,1080,900,"Nền Home. Trời, đồi xa, đất gần; tách 3 lớp vì code đang có 3 object.","DarkBG, Hill, Ground"
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Home/BG_HOME_SKY.png,1080,2340,"Nền Home. Trời, đồi xa, đất gần; tách 3 lớp vì code đang có 3 object.","DarkBG, Hill, Ground"
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Home/BG_STAGE_001.png,980,860,"Tranh Stage (bộ đầu). Tranh phong cảnh lộ dần sau 25 mảnh. Chủ thể chính nằm giữa, 24 mảnh đều có nội dung. Số tranh cần làm: chốt CX-05.","HexProgressView (đang tô màu, DEV-03)"
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Home/BOARD_HEX_COVER.png,980,860,"Khung lục giác tiến độ. Khung cam, viền sáng, 24 nắp tam giác + nắp tròn giữa, đường chia mảnh.","HexProgressView (vẽ mesh, DEV-03)"
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Home/BOARD_HEX_FRAME.png,980,860,"Khung lục giác tiến độ. Khung cam, viền sáng, 24 nắp tam giác + nắp tròn giữa, đường chia mảnh.","HexProgressView (vẽ mesh, DEV-03)"
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Result/DIS_LOSE_TITLE.png,732,122,"Màn Thua. Nền/panel, hình minh họa, ribbon tiêu đề.","Screen-LevelLose (cần thêm ô ảnh, DEV-11)"
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Result/OBJ_LOSE.png,700,600,"Màn Thua. Nền/panel, hình minh họa, ribbon tiêu đề.","Screen-LevelLose (cần thêm ô ảnh, DEV-11)"
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Store/TEXT_LOGO.png,1400,700,"Logo Sweet Rope. Logo chính, nền trong suốt, kèm bản một dòng.",Home Logo (đang là Text)
@@ -284,7 +278,6 @@ GODOT,2,draw,godot_dropin/assets/sprites/juice_sort/endless/reward_popup_coin.pn
 GODOT,2,draw,godot_dropin/assets/sprites/juice_sort/endless/reward_popup_flower.png,185,180,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/dialogs/timed_endless_reward/timed_endless_reward_dialog.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/juice_sort/endless/timer_alarm.png,80,80,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/game/iq_progress_bar.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/loading_dots.png,640,640,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/dialogs/loading/loading_overlay.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/new_scene_pic_frame.png,600,600,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/outer_loop/view/new_scene_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/rank_back_button.png,156,156,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/rank/rank_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/rank_bottom_bg.png,1080,287,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/rank/rank_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/rank_bottom_divider.png,1080,31,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/rank/rank_page.tscn
@@ -339,11 +332,6 @@ GODOT,2,draw,godot_dropin/assets/sprites/special_challenge_reward_rope_figma.png
 GODOT,2,draw,godot_dropin/assets/sprites/special_challenge_reward_sparkle.png,40,40,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/dialogs/special_challenge_reward/special_challenge_reward_dialog.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/splash_butterfly_static.png,113,113,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/splash_logo.png,1016,683,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/dialogs/finish/ui/celebration_layer.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/splash_optimization/background.png,1080,2344,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/splash_optimization/progress_fill.png,768,48,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/splash_optimization/progress_track.png,812,92,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/splash_progress_fill.png,692,96,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/splash_progress_track.png,692,96,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/DIS_BANNER_HARD_BADGE.png,256,256,Banner Hard. Dải đỏ + huy hiệu.,Chưa có (DEV-08)
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_2.png,500,140,"Chữ Combo theo bậc. Kiểu chữ/hiệu ứng cho Combo 2, 3, 4 trở lên. Đề xuất làm material TMP + hạt thay vì ảnh chữ.",BoardGroup.ShowCombo
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_3.png,500,140,"Chữ Combo theo bậc. Kiểu chữ/hiệu ứng cho Combo 2, 3, 4 trở lên. Đề xuất làm material TMP + hạt thay vì ảnh chữ.",BoardGroup.ShowCombo
@@ -365,18 +353,6 @@ UNITY_NEW,2,draw,unity/Assets/_IEC/Image/HUD/ICON_HARD_INGAME.png,64,64,Nhãn Ha
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Home/ICON_HARD.png,240,60,Nhãn Hard trên nút Level. Biến thể nút và nhãn cho level Hard.,Chưa làm (DEV-14)
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Popup/OBJ_POPUP_FAIL.png,256,256,Popup mua hàng và thông báo. Khung 975×561 + nút OK; hình minh họa thành công và thất bại.,5 prefab Popup-*
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Popup/OBJ_POPUP_OK.png,256,256,Popup mua hàng và thông báo. Khung 975×561 + nút OK; hình minh họa thành công và thất bại.,5 prefab Popup-*
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Shop/BG_SHOP.png,1080,2340,"Nền Shop + tiêu đề. Nền hoặc panel toàn màn, ribbon ""SHOP"" (chữ do game vẽ).","DarkBG, Title"
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Shop/BOARD_PACK.png,951,183,"Thẻ gói. Thẻ ngang, 9-slice; bản nổi bật cho gói lớn.",Pack-Pack_*
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Shop/BOARD_PACK_HIGHLIGHT.png,951,183,"Thẻ gói. Thẻ ngang, 9-slice; bản nổi bật cho gói lớn.",Pack-Pack_*
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Shop/DIS_SHOP_TITLE.png,732,122,"Nền Shop + tiêu đề. Nền hoặc panel toàn màn, ribbon ""SHOP"" (chữ do game vẽ).","DarkBG, Title"
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Shop/ICON_PACK_GOLD_1.png,160,160,"Hình gói Gold. Ba mức: 1000, 3500 + 3 Undo, 8000 + 3 Hint + 1 Extra Rope.","PackUI (cần thêm ô ảnh, DEV-20)"
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Shop/ICON_PACK_GOLD_2.png,160,160,"Hình gói Gold. Ba mức: 1000, 3500 + 3 Undo, 8000 + 3 Hint + 1 Extra Rope.","PackUI (cần thêm ô ảnh, DEV-20)"
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Shop/ICON_PACK_GOLD_3.png,160,160,"Hình gói Gold. Ba mức: 1000, 3500 + 3 Undo, 8000 + 3 Hint + 1 Extra Rope.","PackUI (cần thêm ô ảnh, DEV-20)"
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Shop/ICON_PACK_NOADS.png,160,160,Hình gói No Ads. Biểu tượng quảng cáo bị gạch.,PackUI (DEV-20)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Store/BG_SPLASH.png,1080,2340,"Nền splash + thanh tải. Nền dọc và thanh tải (nền, phần đầy).",Chưa có màn splash (DEV-12)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Store/ICON_APP_BACKGROUND.png,432,432,"Icon app Android. Adaptive icon: lớp trước, lớp nền, bản vuông cho store.",ProjectSettings icon (đang trống)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Store/ICON_APP_FOREGROUND.png,432,432,"Icon app Android. Adaptive icon: lớp trước, lớp nền, bản vuông cho store.",ProjectSettings icon (đang trống)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Store/ICON_APP_STORE.png,512,512,"Icon app Android. Adaptive icon: lớp trước, lớp nền, bản vuông cho store.",ProjectSettings icon (đang trống)
 GODOT,3,draw,godot_dropin/assets/builtin/451ab742088ec315e5e18f5a9eb629db.webp,1080,1080,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",assets/builtin/outer_loop/chapters.json
 GODOT,3,draw,godot_dropin/assets/builtin/61d33d3cf670a36c31e294293f56f616.webp,1024,1872,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",assets/builtin/outer_loop/chapters.json; scripts/main/pages/home/_selftest_home_loading.gd
 GODOT,3,draw,godot_dropin/assets/effect/daily_checkin/hex_halo.png,98,98,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/daily_checkin/view/checkin_celebration_ripple.tscn
