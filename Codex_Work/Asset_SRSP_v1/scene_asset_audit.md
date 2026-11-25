@@ -34,3 +34,7 @@ Bổ sung 96 dòng HUD/FX. Xem [kiểm kê](asset_count_audit.md) và [checker](
 ## Rank và Profile
 
 Bổ sung 70 asset và 2 mockup theo art mới. Còn 662 mục trong manifest. [Ghi chú](rank_profile_review/README.md) · [checker](report_rank_profile.csv).
+
+## Streak và Win
+
+Bổ sung 24 PNG Unity redraw và 2 mockup theo theme mèo nông dân. Còn 638 mục. [Ghi chú](streak_win_review/README.md) · [checker](report_streak_win.csv).

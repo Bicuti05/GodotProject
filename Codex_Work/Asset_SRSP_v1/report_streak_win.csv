@@ -1,0 +1,25 @@
+﻿batch,output_path,result,detail
+2,unity/Assets/_IEC/Image/Streak/BG_STREAK.png,OK,
+2,unity/Assets/_IEC/Image/Streak/BOARD_DATE.png,OK,
+2,unity/Assets/_IEC/Image/Streak/BOARD_STREAK.png,OK,
+2,unity/Assets/_IEC/Image/Streak/BOARD_STREAKDONE.png,OK,
+2,unity/Assets/_IEC/Image/Streak/BUTTON_CLAIM.png,OK,
+2,unity/Assets/_IEC/Image/Streak/BUTTON_CLAIMx2.png,OK,
+2,unity/Assets/_IEC/Image/Streak/BUTTON_STREAK.png,OK,
+2,unity/Assets/_IEC/Image/Streak/EFF_LIGHT.png,OK,
+2,unity/Assets/_IEC/Image/Streak/GIFT_NORMAL.png,OK,
+2,unity/Assets/_IEC/Image/Streak/GIFT_NORMAL_OPEN.png,OK,
+2,unity/Assets/_IEC/Image/Streak/GIFT_SPECIAL.png,OK,
+2,unity/Assets/_IEC/Image/Streak/GIFT_SPECIAL_OPEN.png,OK,
+2,unity/Assets/_IEC/Image/Streak/GOLD.png,OK,
+2,unity/Assets/_IEC/Image/Streak/GOLD_UNLOCK.png,OK,
+2,unity/Assets/_IEC/Image/Streak/OBJ_CROWN.png,WARN,"vùng hình 68% x 100% bản cũ (pivot, va chạm có thể lệch)"
+2,unity/Assets/_IEC/Image/Streak/Pawn.png,OK,
+2,unity/Assets/_IEC/Image/Streak/TEXT_CONGRATS.png,WARN,"vùng hình 94% x 60% bản cũ (pivot, va chạm có thể lệch)"
+2,unity/Assets/_IEC/Image/Streak/TEXT_DAYSTREAK.png,WARN,"vùng hình 94% x 45% bản cũ (pivot, va chạm có thể lệch)"
+2,unity/Assets/_IEC/Image/Win/BG.png,OK,
+2,unity/Assets/_IEC/Image/Win/BUTTON_PLAY 1.png,OK,
+2,unity/Assets/_IEC/Image/Win/DIS_LIGHTWIN.png,OK,
+2,unity/Assets/_IEC/Image/Win/DIS_RIBBON.png,OK,
+2,unity/Assets/_IEC/Image/Win/DIS_SCORE.png,OK,
+2,unity/Assets/_IEC/Image/Win/DIS_WIN_TEXT.png,WARN,"vùng hình 94% x 62% bản cũ (pivot, va chạm có thể lệch)"

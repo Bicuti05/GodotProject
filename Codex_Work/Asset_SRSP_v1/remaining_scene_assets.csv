@@ -344,30 +344,6 @@ GODOT,2,draw,godot_dropin/assets/sprites/splash_optimization/progress_fill.png,7
 GODOT,2,draw,godot_dropin/assets/sprites/splash_optimization/progress_track.png,812,92,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/splash_progress_fill.png,692,96,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/splash_progress_track.png,692,96,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BG_STREAK.png,1700,2585,"Nền màn Streak. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BOARD_DATE.png,990,206,"Khay 7 ngày. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BOARD_STREAK.png,220,93,"Viên đồng hồ dưới nút Streak. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BOARD_STREAKDONE.png,220,93,"Viên chữ ""Done"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BUTTON_CLAIM.png,635,207,"Nút cam chữ ""Claim"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BUTTON_CLAIMx2.png,641,213,"Nút chữ ""Claim x2"" có biểu tượng quảng cáo. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BUTTON_STREAK.png,229,229,"Nút Streak ở Home. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/EFF_LIGHT.png,1080,1029,"Tia sáng tỏa. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/GIFT_NORMAL.png,95,105,"Hộp quà xanh đóng. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/GIFT_NORMAL_OPEN.png,132,95,"Hộp quà xanh mở. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/GIFT_SPECIAL.png,99,113,"Hộp quà đỏ đóng. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/GIFT_SPECIAL_OPEN.png,125,89,"Hộp quà đỏ đã mở. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/GOLD.png,105,105,"Dấu ngày đã đạt. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/GOLD_UNLOCK.png,105,105,"Dấu ngày chưa đạt. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/OBJ_CROWN.png,95,57,"Vương miện nhỏ. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/Pawn.png,1388,1133,"Dấu chân lớn. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/TEXT_CONGRATS.png,768,287,"Chữ ""Congrats!"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/TEXT_DAYSTREAK.png,906,384,"Chữ ""Day Streak"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Win/BG.png,1080,2340,"Nền màn Win. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Win/BUTTON_PLAY 1.png,752,213,"Nút xanh trơn. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Win/DIS_LIGHTWIN.png,1080,1082,"Tia sáng sau nhân vật. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Win/DIS_RIBBON.png,946,304,"Ruy băng cam. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Win/DIS_SCORE.png,333,87,"Ô chữ ""SCORE"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Win/DIS_WIN_TEXT.png,489,120,"Chữ ""Well Done!"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/DIS_BANNER_HARD_BADGE.png,256,256,Banner Hard. Dải đỏ + huy hiệu.,Chưa có (DEV-08)
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_2.png,500,140,"Chữ Combo theo bậc. Kiểu chữ/hiệu ứng cho Combo 2, 3, 4 trở lên. Đề xuất làm material TMP + hạt thay vì ảnh chữ.",BoardGroup.ShowCombo
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_3.png,500,140,"Chữ Combo theo bậc. Kiểu chữ/hiệu ứng cho Combo 2, 3, 4 trở lên. Đề xuất làm material TMP + hạt thay vì ảnh chữ.",BoardGroup.ShowCombo
