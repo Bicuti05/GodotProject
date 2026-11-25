@@ -1,0 +1,6 @@
+﻿batch,output_path,result,detail
+2,unity/Assets/_IEC/Image/Rank/BG_CHALL.png,OK,
+2,unity/Assets/_IEC/Image/Rank/BG_UPPER2.png,OK,
+2,unity/Assets/_IEC/Image/Rank/BOARD_FISHCHALLENGE.png,OK,
+2,unity/Assets/_IEC/Image/Rank/OBJ_FISH.png,OK,
+2,unity/Assets/_IEC/Image/Rank/TEXT 1.png,WARN,"vùng hình 94% x 51% bản cũ (pivot, va chạm có thể lệch)"

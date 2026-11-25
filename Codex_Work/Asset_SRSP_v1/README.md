@@ -63,3 +63,7 @@ python Codex_Work/Asset_SRSP_v1/tools/check_assets.py --manifest Codex_Work/Asse
 - Cập nhật cột `status` trong `asset_manifest.csv` thành `chờ duyệt`.
 - Commit chỉ trong `Codex_Work/Asset_SRSP_v1/`, tiêu đề `Phase 0S: ...`, rồi **dừng**.
 - File nào công cụ của bạn không vẽ đạt thì ghi thẳng `không làm được` kèm lý do, đừng nộp ảnh kém.
+
+## Theme xác nhận
+
+Mèo nông dân bán trái cây. Rank dùng tên hiển thị **Fruit Challenge**, sạp trái cây và táo vàng. Quyết định này thay nội dung cá trong mục Rank của handoff cũ. Tên các file Unity hiện hữu được giữ nguyên để bảo toàn đường dẫn tham chiếu.

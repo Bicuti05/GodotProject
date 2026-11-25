@@ -1,8 +1,7 @@
-# Rank / Profile · mockup duyệt
+# Fruit Challenge / Profile
 
-Hai PNG 1080 × 2340 dựng tĩnh từ asset Sweet Rope ở `unity/Assets/_IEC/Image/Rank/`. Dữ liệu xếp hạng, tên và điểm là text mẫu. Các nhãn in sẵn giữ tiếng Anh như art Unity bàn giao. Những mockup cũ trong bộ 81 là bản bám bố cục tham chiếu; hai ảnh ở đây dùng đúng bộ Rank/Avatar được vẽ lại trong lượt này.
+Hai mockup 1080 × 2340 dựng tĩnh bằng sprite Sweet Rope, theo theme **mèo nông dân bán trái cây**. Cảnh Rank có sạp trái cây và táo vàng để thu thập. Avatar, cúp mèo nông dân và số liệu mẫu lấy từ bộ Rank hiện có.
 
-- 56 mục Unity redraw gồm 8 avatar, Fish Challenge, ba bục, hàng điểm, panel Profile, CTA, icon và quà. Ván/điểm/CTA bám vai trò, hình và chất liệu được dựng mới.
-- 7 cúp mèo nông dân theo chất liệu bậc và 7 bản khóa tương ứng trong Godot drop-in. Một mặt nạ khóa giữ đúng alpha của cúp tương ứng.
-- Cảnh báo checker: hộp quà mở thuôn nên vùng ngang 60% bản cũ, icon cá giữ dáng ngang nên vùng cao 73%, chữ Fish Challenge dựng bằng Nunito Black trên một dòng nên vùng cao 53%. Giữ canvas, tỷ lệ tự nhiên và xác nhận lại khoảng trống quanh ba lớp trong Unity. Không kéo giãn chỉ để giảm cảnh báo.
-- Checker đã đọc được tài liệu art Unity gốc từ gói handoff đã giải nén. Chưa import trong Unity hoặc Godot runtime.
+Năm ảnh được cập nhật gồm nền Rank, cảnh sạp, popup, tiêu đề và collectible. Hai tên file cũ `BOARD_FISHCHALLENGE.png` và `OBJ_FISH.png` vẫn dùng cho tham chiếu Unity. Ảnh hiển thị và nhãn trong ảnh đều theo theme Fruit Challenge. Chuỗi bản địa hóa, tên sự kiện hoặc điều kiện gameplay ở Unity cần kiểm tra riêng khi có project.
+
+Checker của bản cập nhật ở `../report_rank_fruit_theme.csv`. Tiêu đề in bằng Nunito Black một dòng, có thể chiếm ít chiều cao hơn ảnh cũ; kiểm khoảng trống khi import. Mockup không chạy trong Unity.
