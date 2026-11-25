@@ -54,3 +54,7 @@ Thêm 24 asset và 3 mockup. Còn 614 dòng manifest. [Ghi chú](home_store_revi
 ## Godot Streak
 
 Đã thêm 29 mục drop-in cho banner chuỗi thắng và hoạt cảnh cúp trái cây. [Ghi chú dùng asset](godot_streak_review.md).
+
+## Endless và Combo
+
+Đã thêm 19 mục drop-in cho đồng hồ, phần thưởng Endless và hiệu ứng Combo. [Ghi chú dùng asset](godot_endless_combo_review.md).

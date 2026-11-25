@@ -6,13 +6,13 @@ Manifest Sweet Rope có 1.259 dòng, gồm 147 dòng `skip`. 1.112 dòng cần g
 
 | Nhóm | Dòng cần giao | Đã có | Còn thiếu |
 |---|---:|---:|---:|
-| `GODOT / draw` | 690 | 282 | 408 |
+| `GODOT / draw` | 690 | 301 | 389 |
 | `GODOT / layers` | 46 | 0 | 46 |
 | `UNITY_NEW / draw` | 292 | 237 | 55 |
 | `UNITY_REDRAW / atlas` | 4 | 0 | 4 |
 | `UNITY_REDRAW / draw` | 80 | 80 | 0 |
 
-Tổng còn thiếu **513 dòng**. 1106 vùng PNG dành cho 46 mục layers của Godot. Với rows layers, kiểm sự hiện diện của motion.md và toàn bộ file vùng. [Danh sách còn thiếu](remaining_scene_assets.csv) ghi từng tên và yêu cầu.
+Tổng còn thiếu **494 dòng**. 1106 vùng PNG dành cho 46 mục layers của Godot. Với rows layers, kiểm sự hiện diện của motion.md và toàn bộ file vùng. [Danh sách còn thiếu](remaining_scene_assets.csv) ghi từng tên và yêu cầu.
 
 ## Bổ sung lượt này
 
@@ -32,3 +32,5 @@ Tổng còn thiếu **513 dòng**. 1106 vùng PNG dành cho 46 mục layers củ
 - Lượt Godot Finish và Bonus: thêm 38 mục drop-in cho màn kết quả, Bonus và hiệu ứng hướng dẫn. [Ghi chú và contact sheet](godot_finish_bonus_review.md).
 
 - Lượt Godot Streak: thêm 29 mục drop-in cho banner chuỗi thắng và hoạt cảnh cúp trái cây. [Ghi chú và contact sheet](godot_streak_review.md).
+
+- Lượt Endless và Combo: thêm 19 mục drop-in cho đồng hồ, phần thưởng Endless và hiệu ứng Combo. [Ghi chú và contact sheet](godot_endless_combo_review.md).
