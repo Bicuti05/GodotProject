@@ -58,3 +58,7 @@ Thêm 24 asset và 3 mockup. Còn 614 dòng manifest. [Ghi chú](home_store_revi
 ## Endless và Combo
 
 Đã thêm 19 mục drop-in cho đồng hồ, phần thưởng Endless và hiệu ứng Combo. [Ghi chú dùng asset](godot_endless_combo_review.md).
+
+## Progress và Trails
+
+Đã thêm 29 mục drop-in cho thanh mục tiêu, vệt Rank và nút Home. [Ghi chú dùng asset](godot_progress_trails_review.md).
