@@ -62,3 +62,7 @@ Thêm 24 asset và 3 mockup. Còn 614 dòng manifest. [Ghi chú](home_store_revi
 ## Progress và Trails
 
 Đã thêm 29 mục drop-in cho thanh mục tiêu, vệt Rank và nút Home. [Ghi chú dùng asset](godot_progress_trails_review.md).
+
+## Rank FX
+
+Đã thêm 23 mục drop-in cho hiệu ứng thăng hạng, vương miện, bục và điểm danh. [Ghi chú dùng asset](godot_rank_fx_review.md).

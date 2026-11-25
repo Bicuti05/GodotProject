@@ -1,0 +1,24 @@
+﻿batch,output_path,result,detail
+3,godot_dropin/assets/effect/texture/rank/eff_fireworks2.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_glow_004.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_glow_401.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+3,godot_dropin/assets/effect/texture/rank/et_glow_402.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+3,godot_dropin/assets/effect/texture/rank/et_glow_501.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_glow_607.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_line_700.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_mask_702.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_ribbon_005.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_ribbon_900.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_ring_700.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_shine_004.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_star_404.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_star_700.png,OK,
+3,godot_dropin/assets/effect/texture/rank/et_star_900.png,OK,
+3,godot_dropin/assets/effect/texture/rank/finish_up.png,OK,
+3,godot_dropin/assets/effect/texture/rank_source/et_change_arrow.png,OK,
+3,godot_dropin/assets/effect/texture/rank_source/et_glow_002.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+3,godot_dropin/assets/effect/texture/rank_source/et_line_001.png,OK,
+3,godot_dropin/assets/effect/texture/rank_source/et_mask_015.png,OK,
+3,godot_dropin/assets/effect/texture/rank_source/et_ribbon_001.png,OK,
+3,godot_dropin/assets/effect/texture/rank_source/et_star_003.png,OK,
+3,godot_dropin/assets/effect/texture/rank_source/et_star_1.png,OK,
