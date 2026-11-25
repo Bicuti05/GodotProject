@@ -42,3 +42,7 @@ Bổ sung 24 PNG Unity redraw và 2 mockup theo theme mèo nông dân. Còn 638 
 ## Home, Loading và Shop
 
 Thêm 24 asset và 3 mockup. Còn 614 dòng manifest. [Ghi chú](home_store_review/README.md) · [checker](report_home_store.csv).
+
+## Bonus Level và hiệu ứng gameplay
+
+Đã thêm 34 sprite Unity, gồm cử chỉ hướng dẫn, Bonus, Combo, Hard/Streak, trạng thái kết quả và hiệu ứng. Hai [mockup](bonus_fx_review/README.md) dùng board Sweet Rope hiện có. Các dòng Godot tiếp tục được theo dõi riêng trong [danh sách còn thiếu](remaining_scene_assets.csv).

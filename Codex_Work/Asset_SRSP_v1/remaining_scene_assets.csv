@@ -78,10 +78,6 @@ GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/sunlight_ice_frost_figma.png
 GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/sunlight_sunlight.png,1376,1280,Mặt trời / MeltContainer,scripts/gameplay/juice_sort/view/_selftest_juice_sunlight_ice_view.gd; scripts/gameplay/juice_sort/view/juice_blender.tscn; scripts/gameplay/juice_sort/view/juice_board_view.tscn
 GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/tutorial_bg_9s.png,225,228,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/juice_sort/tutorial/juice_tutorial_layer.tscn; scripts/gameplay/juice_sort/tutorial/legacy/juice_legacy_tutorial_layer.tscn
 GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/tutorial_rules_reference.png,720,126,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/juice_sort/tutorial/juice_tutorial_layer.tscn
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/OBJ_HAND_HOLD.png,200,200,Bàn tay hướng dẫn level 1. Bàn tay đeo găng chỉ và kéo.,Gốc dùng tay; game đang dùng bóng mờ (DEV-13)
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/OBJ_HAND_POINT.png,200,200,Bàn tay hướng dẫn level 1. Bàn tay đeo găng chỉ và kéo.,Gốc dùng tay; game đang dùng bóng mờ (DEV-13)
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Result/DIS_LOSE_TITLE.png,732,122,"Màn Thua. Nền/panel, hình minh họa, ribbon tiêu đề.","Screen-LevelLose (cần thêm ô ảnh, DEV-11)"
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Result/OBJ_LOSE.png,700,600,"Màn Thua. Nền/panel, hình minh họa, ribbon tiêu đề.","Screen-LevelLose (cần thêm ô ảnh, DEV-11)"
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Store/TEXT_LOGO.png,1400,700,"Logo Sweet Rope. Logo chính, nền trong suốt, kèm bản một dòng.",Home Logo (đang là Text)
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Store/TEXT_LOGO_LINE.png,1400,400,"Logo Sweet Rope. Logo chính, nền trong suốt, kèm bản một dòng.",Home Logo (đang là Text)
 GODOT,2,draw,godot_dropin/assets/app/app_icon.png,1024,1024,Icon / logo khởi động Sweet Rope,
@@ -332,27 +328,6 @@ GODOT,2,draw,godot_dropin/assets/sprites/special_challenge_reward_rope_figma.png
 GODOT,2,draw,godot_dropin/assets/sprites/special_challenge_reward_sparkle.png,40,40,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/dialogs/special_challenge_reward/special_challenge_reward_dialog.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/splash_butterfly_static.png,113,113,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/splash_logo.png,1016,683,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/dialogs/finish/ui/celebration_layer.tscn
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/DIS_BANNER_HARD_BADGE.png,256,256,Banner Hard. Dải đỏ + huy hiệu.,Chưa có (DEV-08)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_2.png,500,140,"Chữ Combo theo bậc. Kiểu chữ/hiệu ứng cho Combo 2, 3, 4 trở lên. Đề xuất làm material TMP + hạt thay vì ảnh chữ.",BoardGroup.ShowCombo
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_3.png,500,140,"Chữ Combo theo bậc. Kiểu chữ/hiệu ứng cho Combo 2, 3, 4 trở lên. Đề xuất làm material TMP + hạt thay vì ảnh chữ.",BoardGroup.ShowCombo
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_4.png,500,140,"Chữ Combo theo bậc. Kiểu chữ/hiệu ứng cho Combo 2, 3, 4 trở lên. Đề xuất làm material TMP + hạt thay vì ảnh chữ.",BoardGroup.ShowCombo
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/DIS_BONUS_COINS_L.png,470,377,"Banner ""Bonus Level"". Heo giữa 2 chồng xu trái, phải; chữ tiêu đề.",Chưa có (DEV-09)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/DIS_BONUS_COINS_R.png,470,377,"Banner ""Bonus Level"". Heo giữa 2 chồng xu trái, phải; chữ tiêu đề.",Chưa có (DEV-09)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/EFF_PIG_COIN_SPIN.png,256,256,"Mảnh vỡ + xu bay + lấp lánh. Mảnh gốm vàng, bụi khói, tia sao, xu xoay bay.",Chưa có (DEV-09)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/EFF_PIG_SHARD.png,256,256,"Mảnh vỡ + xu bay + lấp lánh. Mảnh gốm vàng, bụi khói, tia sao, xu xoay bay.",Chưa có (DEV-09)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/EFF_PIG_SMOKE.png,512,512,"Mảnh vỡ + xu bay + lấp lánh. Mảnh gốm vàng, bụi khói, tia sao, xu xoay bay.",Chưa có (DEV-09)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/OBJ_HAMMER_BONUS.png,512,512,"Búa đập heo. Búa to có sao. Giao 1 ảnh búa kèm mô tả chuyển động vung và chạm (dev dựng, CX-10).",Chưa có (DEV-09)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/OBJ_PIG_CONTAINER_FULL.png,180,184,"Heo vàng (Container). Heo đất vàng bóng, khe nhét xu trên lưng, mặt hiền, vừa chỗ Container.",Chưa có (DEV-09)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/TEXT_BONUS.png,600,160,"Banner ""Bonus Level"". Heo giữa 2 chồng xu trái, phải; chữ tiêu đề.",Chưa có (DEV-09)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Bonus/TEXT_X2.png,82,68,Nhãn x2 trên HUD. Chữ x2 viền đỏ cạnh ô Gold.,Text-Bonus
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_BLOOM_1.png,128,128,"Sao lấp lánh và nở khi Container bay. Sao dọc dây và bung nở ở Container khi bay lên Order (gốc có, game chưa có).",Chưa có chỗ gắn (DEV-16)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_BLOOM_2.png,128,128,"Sao lấp lánh và nở khi Container bay. Sao dọc dây và bung nở ở Container khi bay lên Order (gốc có, game chưa có).",Chưa có chỗ gắn (DEV-16)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_FILL_1.png,256,256,"Hiệu ứng Fill Container. Item bay gom về một dây, xoáy sáng.",Chưa có chỗ gắn riêng
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_FILL_2.png,256,256,"Hiệu ứng Fill Container. Item bay gom về một dây, xoáy sáng.",Chưa có chỗ gắn riêng
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/HUD/ICON_HARD_INGAME.png,64,64,Nhãn Hard trong ván. Biểu tượng lửa/huy hiệu + chữ do game vẽ.,Chưa có (DEV-14)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Home/ICON_HARD.png,240,60,Nhãn Hard trên nút Level. Biến thể nút và nhãn cho level Hard.,Chưa làm (DEV-14)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Popup/OBJ_POPUP_FAIL.png,256,256,Popup mua hàng và thông báo. Khung 975×561 + nút OK; hình minh họa thành công và thất bại.,5 prefab Popup-*
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Popup/OBJ_POPUP_OK.png,256,256,Popup mua hàng và thông báo. Khung 975×561 + nút OK; hình minh họa thành công và thất bại.,5 prefab Popup-*
 GODOT,3,draw,godot_dropin/assets/builtin/451ab742088ec315e5e18f5a9eb629db.webp,1080,1080,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",assets/builtin/outer_loop/chapters.json
 GODOT,3,draw,godot_dropin/assets/builtin/61d33d3cf670a36c31e294293f56f616.webp,1024,1872,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",assets/builtin/outer_loop/chapters.json; scripts/main/pages/home/_selftest_home_loading.gd
 GODOT,3,draw,godot_dropin/assets/effect/daily_checkin/hex_halo.png,98,98,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/daily_checkin/view/checkin_celebration_ripple.tscn
@@ -551,15 +526,6 @@ UNITY_REDRAW,3,atlas,unity/Assets/_IEC/Image/Streak/Anim/Gift_BlueGold_Spine42/G
 UNITY_REDRAW,3,atlas,unity/Assets/_IEC/Image/Streak/Anim/Gift_RedGold_Spine42/Gift_RedGold.png,2048,1087,"Vẽ lại từng mảnh đúng ô của file .atlas (không xê dịch, không đổi cỡ ô) để dùng tiếp skeleton đang có.",
 UNITY_REDRAW,3,atlas,unity/Assets/_IEC/Image/Streak/Anim/PawStreak_Spine/paw_streak.png,1024,1024,"Vẽ lại từng mảnh đúng ô của file .atlas (không xê dịch, không đổi cỡ ô) để dùng tiếp skeleton đang có.",
 UNITY_REDRAW,3,atlas,unity/Assets/_IEC/Image/Win/Anim/CatVictory.png,1200,1200,Vẽ lại từng mảnh đúng ô của file .atlas để dùng tiếp skeleton đang có.,
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_1.png,512,512,Banner Streak thắng liên tiếp. Huy hiệu số theo 3 bậc + cúp.,Chưa có (DEV-08)
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_2.png,512,512,Banner Streak thắng liên tiếp. Huy hiệu số theo 3 bậc + cúp.,Chưa có (DEV-08)
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_3.png,512,512,Banner Streak thắng liên tiếp. Huy hiệu số theo 3 bậc + cúp.,Chưa có (DEV-08)
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_TROPHY.png,512,512,Banner Streak thắng liên tiếp. Huy hiệu số theo 3 bậc + cúp.,Chưa có (DEV-08)
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Banner/TEXT_GOODLUCK.png,500,120,"Chữ Good Luck, Smart Move. Chữ khen ngắn đầu ván và khi đi hay.",Chưa có (DEV-08)
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Banner/TEXT_SMART.png,500,120,"Chữ Good Luck, Smart Move. Chữ khen ngắn đầu ván và khi đi hay.",Chưa có (DEV-08)
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Endless/EFF_TIME_ADD_1.png,200,100,"Hiệu ứng cộng giờ. ""+3s"" và tia sáng.",Chưa có (DEV-11)
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Endless/EFF_TIME_ADD_2.png,200,100,"Hiệu ứng cộng giờ. ""+3s"" và tia sáng.",Chưa có (DEV-11)
-UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Special/DIS_FLAGS.png,900,220,Ribbon thưởng + cờ trang trí. Ribbon đỏ và dây cờ.,Chưa có (DEV-10)
 UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Store/STORE_FEATURE.png,1024,500,Ảnh store. Feature graphic và bộ screenshot có chú thích. Làm sau khi art gameplay xong.,Google Play
 UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Theme/Flower/BG_BOARD_FLOWER.png,1080,2340,"Bộ phụ theme Flower. Vườn hoa nhạt; Item ẩn, băng, Container, dây, khóa, ô Order theo theme.",ThemeConfig flower
 UNITY_NEW,3,draw,unity/Assets/_IEC/Image/Theme/Flower/CONTAINER_FLOWER_0.png,180,184,"Bộ phụ theme Flower. Vườn hoa nhạt; Item ẩn, băng, Container, dây, khóa, ô Order theo theme.",ThemeConfig flower
