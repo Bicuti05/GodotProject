@@ -2,6 +2,8 @@
 
 Viewport 1080 × 2340. Dựng tĩnh bằng Pillow, có nhãn MOCKUP. JPEG Sort Streak dùng để đối chiếu trạng thái. Một số thành phần (logo, cúp/rank, animation) dùng art minh họa của bản demo, đánh dấu theo nguồn trong bảng lớp.
 
+Bản FullRun dựng lại 81 ảnh bằng lớp hiển thị và chữ đã ghi trong hai CSV bố cục. Bản dựng dùng nền Orchard mới, ghép ba đoạn Godot ở các dây màu, và đặt ô Order trống theo đúng hình chậu. Chữ Orchard có thẻ nền riêng. Hai CSV giữ tọa độ và đường dẫn của bản dựng cơ sở để đối chiếu. Giữ chữ Sweet Rope tạm cho logo trong các hình xem trước.
+
 Đọc `reference_coverage.csv` để so từng ảnh nguồn. `sprite_layers.csv` trỏ tới asset trong handoff hoặc `review_sprites/`; các lớp review hỗ trợ duyệt mockup và chưa thuộc manifest production. `dynamic_text.csv` dùng để đối chiếu thứ tự lớp.
 
 | Mockup | Trạng thái ảnh tham chiếu | JPEG tham chiếu |
