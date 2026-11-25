@@ -22,3 +22,7 @@ Các dòng action skip được loại khỏi thống kê. Asset tạo trong lư
 ## Bổ sung Gameplay drop-in
 
 Giao thêm 90 PNG. Xem [ghi chú](gameplay_dropin_notes.md) và [checker](report_gameplay_dropin.csv). Còn 835 dòng trong manifest.
+
+## Ref main scene mới
+
+Đã xuất [Level 27](main_scene_review/Gameplay_Level_27_Ref.png), 13 lớp art bổ sung ngoài manifest và 7 mục theo manifest. Xem [ghi chú](main_scene_review/README.md) và [checker](report_main_scene_ref.csv).

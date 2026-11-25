@@ -1,0 +1,167 @@
+﻿draw_order,file,slot_or_text,x,y,w_or_font_px,h,fit,modulate_or_text_color
+1,unity/Assets/_IEC/Image/UIKit/BUTTON_ICON_NORMAL.png,Back base,38,116,124,116,fit,
+2,unity/Assets/_IEC/Image/UIKit/ICON_BACK.png,Back icon,68,146,64,64,fit,
+3,,Level 27,540,173,58,0,dynamic text,#2e353b
+4,unity/Assets/_IEC/Image/UIKit/BOARD_GOLD.png,Gold pill,759,111,278,122,stretch,
+5,unity/Assets/_IEC/Image/UIKit/ICON_GOLD.png,Gold icon,792,134,76,76,fit,
+6,,1770,948,174,55,0,dynamic text,#2e353b
+7,,40,360,309,39,0,dynamic text,#4f3528
+8,,90,505,309,39,0,dynamic text,#4f3528
+9,,180,716,309,39,0,dynamic text,#4f3528
+10,unity/Assets/_IEC/Image/HUD/BOARD_IQ_BADGE.png,IQ badge,566,258,73,73,fit,
+11,,IQ,603,294,29,0,dynamic text,#fff4d8
+12,unity/Assets/_IEC/Image/HUD/BOARD_IQ_TRACK.png,IQ track,320,340,448,54,stretch,
+13,unity/Assets/_IEC/Image/HUD/BOARD_IQ_GROOVE.png,IQ groove,339,351,408,31,stretch,
+14,unity/Assets/_IEC/Image/HUD/BOARD_IQ_FILL.png,IQ fill,340,354,170,26,stretch,
+15,unity/Assets/_IEC/Image/HUD/BOARD_IQ_DIVIDER.png,IQ threshold,511,351,6,31,fit,
+16,unity/Assets/_IEC/Image/HUD/BOARD_IQ_DIVIDER.png,IQ threshold,614,351,6,31,fit,
+17,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_LARGE.png,Order backing,31,384,1018,215,stretch,
+18,unity/Assets/_IEC/Image/Board/BOARD_ORDER_SHELF.png,Order shelf,37,564,1006,34,stretch,
+19,main_scene_review/delivered_tree_1.png,Delivered Type 1,71,409,135,165,fit,
+20,main_scene_review/delivered_tree_3.png,Delivered Type 3,239,409,135,165,fit,
+21,main_scene_review/delivered_tree_7.png,Delivered Type 7,407,409,135,165,fit,
+22,unity/Assets/_IEC/Image/Board/OBJ_ORDER_EMPTY.png,Empty Order,576,511,64,65,fit,
+23,unity/Assets/_IEC/Image/Board/OBJ_ORDER_EMPTY.png,Empty Order,664,511,64,65,fit,
+24,unity/Assets/_IEC/Image/Board/OBJ_ORDER_EMPTY.png,Empty Order,752,511,64,65,fit,
+25,unity/Assets/_IEC/Image/Board/OBJ_ORDER_EMPTY.png,Empty Order,840,511,64,65,fit,
+26,unity/Assets/_IEC/Image/Board/OBJ_ORDER_EMPTY.png,Empty Order,928,511,64,65,fit,
+27,unity/Assets/_IEC/Image/Board/BOARD_ORDER_COUNT.png,Order total,470,588,139,66,fit,
+28,,3 / 8,540,620,39,0,dynamic text,#4f3528
+29,unity/Assets/_IEC/Image/Board/BOARD_PLANK.png,Board shelf,24,843,1032,57,stretch,
+30,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_FREE.png,Container FREE,46,714,145,148,fit,
+31,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,894,52,88,stretch,#9e8f76 / #fff2d1
+32,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,976,52,88,stretch,#9e8f76 / #fff2d1
+33,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1058,52,88,stretch,#9e8f76 / #fff2d1
+34,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1140,52,88,stretch,#9e8f76 / #fff2d1
+35,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1222,52,88,stretch,#9e8f76 / #fff2d1
+36,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1304,52,88,stretch,#9e8f76 / #fff2d1
+37,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1386,52,88,stretch,#9e8f76 / #fff2d1
+38,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1468,52,88,stretch,#9e8f76 / #fff2d1
+39,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1550,52,88,stretch,#9e8f76 / #fff2d1
+40,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1632,52,88,stretch,#9e8f76 / #fff2d1
+41,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1714,52,88,stretch,#9e8f76 / #fff2d1
+42,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,93,1796,52,88,stretch,#9e8f76 / #fff2d1
+43,unity/Assets/_IEC/Image/Board/OBJ_ROPE_KNOT.png,Rope tail,97,1829,44,44,fit,#9e8f76 / #fff2d1
+44,unity/Assets/_IEC/Image/Board/OBJ_ROPE_RING.png,Rope ring,99,860,40,40,fit,
+45,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_1.png,Item 1,37,963,164,164,fit,
+46,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_3.png,Item 3,37,1136,164,164,fit,
+47,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_0.png,Item 0,37,1309,164,164,fit,
+48,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_3.png,Item 3,37,1482,164,164,fit,
+49,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_4.png,Item 4,37,1655,164,164,fit,
+50,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_4.png,Container 4,214,714,145,148,fit,
+51,main_scene_review/soil.png,Soil,265,736,43,26,fit,
+52,main_scene_review/sprout.png,Sprout,245,662,84,84,fit,
+53,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,894,52,88,stretch,#357b98 / #a3e8f8
+54,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,976,52,88,stretch,#357b98 / #a3e8f8
+55,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1058,52,88,stretch,#357b98 / #a3e8f8
+56,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1140,52,88,stretch,#357b98 / #a3e8f8
+57,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1222,52,88,stretch,#357b98 / #a3e8f8
+58,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1304,52,88,stretch,#357b98 / #a3e8f8
+59,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1386,52,88,stretch,#357b98 / #a3e8f8
+60,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1468,52,88,stretch,#357b98 / #a3e8f8
+61,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1550,52,88,stretch,#357b98 / #a3e8f8
+62,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1632,52,88,stretch,#357b98 / #a3e8f8
+63,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1714,52,88,stretch,#357b98 / #a3e8f8
+64,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,261,1796,52,88,stretch,#357b98 / #a3e8f8
+65,unity/Assets/_IEC/Image/Board/OBJ_ROPE_KNOT.png,Rope tail,265,1829,44,44,fit,#357b98 / #a3e8f8
+66,unity/Assets/_IEC/Image/Board/OBJ_ROPE_RING.png,Rope ring,267,860,40,40,fit,
+67,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_4.png,Item 4,205,963,164,164,fit,
+68,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_3.png,Item 3,205,1136,164,164,fit,
+69,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_0.png,Item 0,205,1309,164,164,fit,
+70,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_4.png,Item 4,205,1482,164,164,fit,
+71,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_3.png,Container 3,382,714,145,148,fit,
+72,main_scene_review/soil.png,Soil,433,736,43,26,fit,
+73,main_scene_review/sprout.png,Sprout,413,662,84,84,fit,
+74,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,894,52,88,stretch,#7953a5 / #dbbbf4
+75,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,976,52,88,stretch,#7953a5 / #dbbbf4
+76,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1058,52,88,stretch,#7953a5 / #dbbbf4
+77,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1140,52,88,stretch,#7953a5 / #dbbbf4
+78,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1222,52,88,stretch,#7953a5 / #dbbbf4
+79,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1304,52,88,stretch,#7953a5 / #dbbbf4
+80,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1386,52,88,stretch,#7953a5 / #dbbbf4
+81,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1468,52,88,stretch,#7953a5 / #dbbbf4
+82,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1550,52,88,stretch,#7953a5 / #dbbbf4
+83,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1632,52,88,stretch,#7953a5 / #dbbbf4
+84,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1714,52,88,stretch,#7953a5 / #dbbbf4
+85,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,429,1796,52,88,stretch,#7953a5 / #dbbbf4
+86,unity/Assets/_IEC/Image/Board/OBJ_ROPE_KNOT.png,Rope tail,433,1829,44,44,fit,#7953a5 / #dbbbf4
+87,unity/Assets/_IEC/Image/Board/OBJ_ROPE_RING.png,Rope ring,435,860,40,40,fit,
+88,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_1.png,Item 1,373,963,164,164,fit,
+89,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_2.png,Item 2,373,1136,164,164,fit,
+90,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_0.png,Item 0,373,1309,164,164,fit,
+91,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_2.png,Item 2,373,1482,164,164,fit,
+92,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_1.png,Container 1,550,714,145,148,fit,
+93,main_scene_review/soil.png,Soil,601,736,43,26,fit,
+94,main_scene_review/sprout.png,Sprout,581,662,84,84,fit,
+95,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,894,52,88,stretch,#ab453b / #ee9388
+96,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,976,52,88,stretch,#ab453b / #ee9388
+97,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1058,52,88,stretch,#ab453b / #ee9388
+98,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1140,52,88,stretch,#ab453b / #ee9388
+99,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1222,52,88,stretch,#ab453b / #ee9388
+100,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1304,52,88,stretch,#ab453b / #ee9388
+101,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1386,52,88,stretch,#ab453b / #ee9388
+102,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1468,52,88,stretch,#ab453b / #ee9388
+103,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1550,52,88,stretch,#ab453b / #ee9388
+104,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1632,52,88,stretch,#ab453b / #ee9388
+105,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1714,52,88,stretch,#ab453b / #ee9388
+106,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,597,1796,52,88,stretch,#ab453b / #ee9388
+107,unity/Assets/_IEC/Image/Board/OBJ_ROPE_KNOT.png,Rope tail,601,1829,44,44,fit,#ab453b / #ee9388
+108,unity/Assets/_IEC/Image/Board/OBJ_ROPE_RING.png,Rope ring,603,860,40,40,fit,
+109,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_2.png,Item 2,541,963,164,164,fit,
+110,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_3.png,Item 3,541,1136,164,164,fit,
+111,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_2.png,Container 2,718,714,145,148,fit,
+112,main_scene_review/soil.png,Soil,769,736,43,26,fit,
+113,main_scene_review/sprout.png,Sprout,749,662,84,84,fit,
+114,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,894,52,88,stretch,#3764a0 / #86bdf1
+115,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,976,52,88,stretch,#3764a0 / #86bdf1
+116,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1058,52,88,stretch,#3764a0 / #86bdf1
+117,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1140,52,88,stretch,#3764a0 / #86bdf1
+118,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1222,52,88,stretch,#3764a0 / #86bdf1
+119,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1304,52,88,stretch,#3764a0 / #86bdf1
+120,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1386,52,88,stretch,#3764a0 / #86bdf1
+121,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1468,52,88,stretch,#3764a0 / #86bdf1
+122,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1550,52,88,stretch,#3764a0 / #86bdf1
+123,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1632,52,88,stretch,#3764a0 / #86bdf1
+124,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1714,52,88,stretch,#3764a0 / #86bdf1
+125,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,765,1796,52,88,stretch,#3764a0 / #86bdf1
+126,unity/Assets/_IEC/Image/Board/OBJ_ROPE_KNOT.png,Rope tail,769,1829,44,44,fit,#3764a0 / #86bdf1
+127,unity/Assets/_IEC/Image/Board/OBJ_ROPE_RING.png,Rope ring,771,860,40,40,fit,
+128,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_2.png,Item 2,709,963,164,164,fit,
+129,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_1.png,Item 1,709,1136,164,164,fit,
+130,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_0.png,Container 0,886,714,145,148,fit,
+131,main_scene_review/soil.png,Soil,937,736,43,26,fit,
+132,main_scene_review/sprout.png,Sprout,917,662,84,84,fit,
+133,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,894,52,88,stretch,#713d8f / #e0a4f0
+134,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,976,52,88,stretch,#713d8f / #e0a4f0
+135,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1058,52,88,stretch,#713d8f / #e0a4f0
+136,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1140,52,88,stretch,#713d8f / #e0a4f0
+137,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1222,52,88,stretch,#713d8f / #e0a4f0
+138,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1304,52,88,stretch,#713d8f / #e0a4f0
+139,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1386,52,88,stretch,#713d8f / #e0a4f0
+140,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1468,52,88,stretch,#713d8f / #e0a4f0
+141,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1550,52,88,stretch,#713d8f / #e0a4f0
+142,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1632,52,88,stretch,#713d8f / #e0a4f0
+143,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1714,52,88,stretch,#713d8f / #e0a4f0
+144,unity/Assets/_IEC/Image/Board/OBJ_ROPE_LINE.png,Rope tile,933,1796,52,88,stretch,#713d8f / #e0a4f0
+145,unity/Assets/_IEC/Image/Board/OBJ_ROPE_KNOT.png,Rope tail,937,1829,44,44,fit,#713d8f / #e0a4f0
+146,unity/Assets/_IEC/Image/Board/OBJ_ROPE_RING.png,Rope ring,939,860,40,40,fit,
+147,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_0.png,Item 0,877,963,164,164,fit,
+148,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_1.png,Item 1,877,1136,164,164,fit,
+149,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_4.png,Item 4,877,1309,164,164,fit,
+150,unity/Assets/_IEC/Image/Helper/BUTTON_HELPER_LOCKED.png,Helper plate Undo,108,1939,176,165,fit,
+151,unity/Assets/_IEC/Image/Helper/ICON_HELPER_UNDO_GREY.png,Helper glyph Undo,146,1961,99,99,fit,
+152,unity/Assets/_IEC/Image/UIKit/BOARD_BADGE_FREE.png,Helper badge Undo,174,2050,144,73,stretch,
+153,,400,246,2087,34,0,dynamic text,#4f3528
+154,unity/Assets/_IEC/Image/Helper/BUTTON_HELPER_NORMAL.png,Helper plate Hint,333,1939,176,165,fit,
+155,unity/Assets/_IEC/Image/Helper/ICON_HELPER_HINT_COLOR.png,Helper glyph Hint,371,1961,99,99,fit,
+156,unity/Assets/_IEC/Image/UIKit/BOARD_BADGE_COUNT.png,Helper badge Hint,399,2050,144,73,stretch,
+157,,3,471,2087,34,0,dynamic text,#4f3528
+158,unity/Assets/_IEC/Image/Helper/BUTTON_HELPER_NORMAL.png,Helper plate Free Rope,558,1939,176,165,fit,
+159,unity/Assets/_IEC/Image/Helper/ICON_HELPER_ROPE_COLOR.png,Helper glyph Free Rope,596,1961,99,99,fit,
+160,unity/Assets/_IEC/Image/UIKit/BOARD_BADGE_ORANGE.png,Helper badge Free Rope,624,2050,144,73,stretch,
+161,,1200,696,2087,34,0,dynamic text,#4f3528
+162,unity/Assets/_IEC/Image/Helper/BUTTON_RESET_NORMAL.png,Helper plate Restart,783,1939,176,165,fit,
+163,unity/Assets/_IEC/Image/UIKit/ICON_RESTART.png,Helper glyph Restart,821,1961,99,99,fit,
+164,unity/Assets/_IEC/Image/UIKit/BOARD_BADGE_ORANGE.png,Helper badge Restart,849,2050,144,73,stretch,
+165,,Reset,921,2087,34,0,dynamic text,#4f3528
+166,,MOCKUP,94,2280,22,0,dynamic text,#4f3528

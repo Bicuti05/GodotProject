@@ -1,0 +1,14 @@
+﻿file,slot,png_width,png_height,source_width,source_height
+main_scene_review/sprout.png,Lớp tách cho mô phỏng,160,160,320,320
+main_scene_review/canopy.png,Lớp tách cho mô phỏng,256,256,512,512
+main_scene_review/soil.png,Lớp tách cho mô phỏng,160,96,480,288
+main_scene_review/delivered_tree_0.png,Cây đã Deliver — Type ID 0,216,264,648,792
+main_scene_review/delivered_tree_1.png,Cây đã Deliver — Type ID 1,216,264,648,792
+main_scene_review/delivered_tree_2.png,Cây đã Deliver — Type ID 2,216,264,648,792
+main_scene_review/delivered_tree_3.png,Cây đã Deliver — Type ID 3,216,264,648,792
+main_scene_review/delivered_tree_4.png,Cây đã Deliver — Type ID 4,216,264,648,792
+main_scene_review/delivered_tree_5.png,Cây đã Deliver — Type ID 5,216,264,648,792
+main_scene_review/delivered_tree_6.png,Cây đã Deliver — Type ID 6,216,264,648,792
+main_scene_review/delivered_tree_7.png,Cây đã Deliver — Type ID 7,216,264,648,792
+main_scene_review/delivered_tree_8.png,Cây đã Deliver — Type ID 8,216,264,648,792
+main_scene_review/delivered_tree_9.png,Cây đã Deliver — Type ID 9,216,264,648,792

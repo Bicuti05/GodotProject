@@ -132,11 +132,6 @@ GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/sunlight_sun_incentive_back_
 GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/sunlight_sunlight.png,1376,1280,Mặt trời / MeltContainer,scripts/gameplay/juice_sort/view/_selftest_juice_sunlight_ice_view.gd; scripts/gameplay/juice_sort/view/juice_blender.tscn; scripts/gameplay/juice_sort/view/juice_board_view.tscn
 GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/tutorial_bg_9s.png,225,228,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/juice_sort/tutorial/juice_tutorial_layer.tscn; scripts/gameplay/juice_sort/tutorial/legacy/juice_legacy_tutorial_layer.tscn
 GODOT,1,draw,godot_dropin/assets/sprites/juice_sort/tutorial_rules_reference.png,720,126,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/juice_sort/tutorial/juice_tutorial_layer.tscn
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Board/OBJ_ROPE_KNOT.png,64,64,Nút đuôi Rope. Nút thắt tròn có tua ở cuối dây. Vẽ trắng / xám sáng: game tô đậm hơn dây một chút.,"RopeView knot (đang chấm tròn, DEV-15)"
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/EFF_DELIVER_1.png,32,32,"Hạt Deliver (lá/cánh/nước quả). Hạt nhỏ tô được màu, 2–3 dáng.",BoardFx.CreatePetals
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/EFF_DELIVER_2.png,32,32,"Hạt Deliver (lá/cánh/nước quả). Hạt nhỏ tô được màu, 2–3 dáng.",BoardFx.CreatePetals
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/EFF_DELIVER_3.png,32,32,"Hạt Deliver (lá/cánh/nước quả). Hạt nhỏ tô được màu, 2–3 dáng.",BoardFx.CreatePetals
-UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/EFF_TRAIL.png,128,32,"Vệt bay + chớp + quầng. Texture vệt mềm, chớp sao, quầng tròn.","BoardFx, ViewUtil.Glow"
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/OBJ_HAND_HOLD.png,200,200,Bàn tay hướng dẫn level 1. Bàn tay đeo găng chỉ và kéo.,Gốc dùng tay; game đang dùng bóng mờ (DEV-13)
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Effect/OBJ_HAND_POINT.png,200,200,Bàn tay hướng dẫn level 1. Bàn tay đeo găng chỉ và kéo.,Gốc dùng tay; game đang dùng bóng mờ (DEV-13)
 UNITY_NEW,1,draw,unity/Assets/_IEC/Image/Home/BG_HOME_GROUND.png,1080,600,"Nền Home. Trời, đồi xa, đất gần; tách 3 lớp vì code đang có 3 object.","DarkBG, Hill, Ground"
@@ -541,8 +536,6 @@ UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_BLOOM_1.png,128,128,"Sao l�
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_BLOOM_2.png,128,128,"Sao lấp lánh và nở khi Container bay. Sao dọc dây và bung nở ở Container khi bay lên Order (gốc có, game chưa có).",Chưa có chỗ gắn (DEV-16)
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_FILL_1.png,256,256,"Hiệu ứng Fill Container. Item bay gom về một dây, xoáy sáng.",Chưa có chỗ gắn riêng
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_FILL_2.png,256,256,"Hiệu ứng Fill Container. Item bay gom về một dây, xoáy sáng.",Chưa có chỗ gắn riêng
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_ROPE_GLOW_HINT.png,230,302,"Sáng dây đích (Hint, đang kéo). Dải sáng bo tròn bao quanh dây.",BoardGroup m_HintMarker (dùng sprite dây)
-UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Effect/EFF_ROPE_GLOW_OK.png,230,302,"Sáng dây đích (Hint, đang kéo). Dải sáng bo tròn bao quanh dây.",BoardGroup m_HintMarker (dùng sprite dây)
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/HUD/ICON_HARD_INGAME.png,64,64,Nhãn Hard trong ván. Biểu tượng lửa/huy hiệu + chữ do game vẽ.,Chưa có (DEV-14)
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Home/ICON_HARD.png,240,60,Nhãn Hard trên nút Level. Biến thể nút và nhãn cho level Hard.,Chưa làm (DEV-14)
 UNITY_NEW,2,draw,unity/Assets/_IEC/Image/Mechanic/EFF_ICE_MELT_1.png,256,256,"Hiệu ứng tan băng. Băng nứt, vỡ mảnh, nhỏ giọt rồi lộ Item.",BoardGroup (đang dùng hiệu ứng cũ)
