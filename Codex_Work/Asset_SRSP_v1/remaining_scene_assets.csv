@@ -179,20 +179,6 @@ GODOT,2,draw,godot_dropin/assets/sprites/common_rank_ranks_online_bg.png,120,72,
 GODOT,2,draw,godot_dropin/assets/sprites/common_rank_ranks_reward_tooltip_bg.png,410,212,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/rank/view/rank_reward_tooltip.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/common_rank_salute.png,369,369,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/rank/view/rank_salute_fx.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/common_rank_shadow.png,274,67,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/gameplay/rank/view/rank_badge_view.tscn; scripts/main/dialogs/rank_introduction/rank_introduction_dialog.tscn; scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_amethyst.png,412,472,"Cúp bậc hạng: mèo nông dân như ảnh Bronze đã chốt, đổi chất liệu theo bậc trong tên file",scripts/gameplay/rank/view/rank_badge_view.tscn; scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_amethyst_mask.png,412,472,Bản khóa (tô tối) của cúp cùng bậc: cùng bóng hình và vùng trong suốt với cúp mới,scripts/gameplay/rank/view/rank_badge_view.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_bronze.png,412,472,"Cúp bậc hạng: mèo nông dân như ảnh Bronze đã chốt, đổi chất liệu theo bậc trong tên file",scripts/gameplay/rank/view/rank_badge_view.tscn; scripts/main/dialogs/rank_introduction/rank_introduction_dialog.tscn; scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_bronze_mask.png,412,472,Bản khóa (tô tối) của cúp cùng bậc: cùng bóng hình và vùng trong suốt với cúp mới,scripts/gameplay/rank/view/rank_badge_view.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_diamond.png,412,472,"Cúp bậc hạng: mèo nông dân như ảnh Bronze đã chốt, đổi chất liệu theo bậc trong tên file",scripts/gameplay/rank/view/rank_badge_view.tscn; scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_diamond_mask.png,412,472,Bản khóa (tô tối) của cúp cùng bậc: cùng bóng hình và vùng trong suốt với cúp mới,scripts/gameplay/rank/view/rank_badge_view.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_glory.png,412,472,"Cúp bậc hạng: mèo nông dân như ảnh Bronze đã chốt, đổi chất liệu theo bậc trong tên file",scripts/gameplay/rank/view/rank_badge_view.tscn; scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_glory_mask.png,412,472,Bản khóa (tô tối) của cúp cùng bậc: cùng bóng hình và vùng trong suốt với cúp mới,scripts/gameplay/rank/view/rank_badge_view.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_gold.png,412,472,"Cúp bậc hạng: mèo nông dân như ảnh Bronze đã chốt, đổi chất liệu theo bậc trong tên file",scripts/gameplay/rank/view/rank_badge_view.tscn; scripts/main/dialogs/rank_introduction/rank_introduction_dialog.tscn; scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_gold_mask.png,412,472,Bản khóa (tô tối) của cúp cùng bậc: cùng bóng hình và vùng trong suốt với cúp mới,scripts/gameplay/rank/view/rank_badge_view.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_platinum.png,412,472,"Cúp bậc hạng: mèo nông dân như ảnh Bronze đã chốt, đổi chất liệu theo bậc trong tên file",scripts/gameplay/rank/view/rank_badge_view.tscn; scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_platinum_mask.png,412,472,Bản khóa (tô tối) của cúp cùng bậc: cùng bóng hình và vùng trong suốt với cúp mới,scripts/gameplay/rank/view/rank_badge_view.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_silver.png,412,472,"Cúp bậc hạng: mèo nông dân như ảnh Bronze đã chốt, đổi chất liệu theo bậc trong tên file",scripts/gameplay/rank/view/rank_badge_view.tscn; scripts/main/dialogs/rank_introduction/rank_introduction_dialog.tscn; scripts/main/dialogs/rank_new_season/rank_new_season_dialog.tscn
-GODOT,2,draw,godot_dropin/assets/sprites/common_rank_trophy_silver_mask.png,412,472,Bản khóa (tô tối) của cúp cùng bậc: cùng bóng hình và vùng trong suốt với cúp mới,scripts/gameplay/rank/view/rank_badge_view.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/common_reddot.png,110,110,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/dialogs/settings/settings_dialog.tscn; scripts/main/pages/home/home_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/common_setting.png,176,176,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/home/home_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/common_special_challenge_button_chest.png,134,123,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/debug/ui/home_button_fx_panel.tscn; scripts/main/pages/home/home_page.tscn
@@ -358,62 +344,6 @@ GODOT,2,draw,godot_dropin/assets/sprites/splash_optimization/progress_fill.png,7
 GODOT,2,draw,godot_dropin/assets/sprites/splash_optimization/progress_track.png,812,92,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/splash_progress_fill.png,692,96,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
 GODOT,2,draw,godot_dropin/assets/sprites/splash_progress_track.png,692,96,"Vật tương đương cùng chức năng, thiết kế mới theo style Sweet Rope (xem referenced_by và ảnh màn để biết chức năng)",scripts/main/pages/splash/splash_page.tscn
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Avatar/AVATAR_CAPY.png,125,125,Avatar Capy trong khung bo tròn.,
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Avatar/AVATAR_CAT.png,148,148,Avatar Cat trong khung bo tròn.,
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Avatar/AVATAR_DOG.png,125,125,Avatar Dog trong khung bo tròn.,
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Avatar/AVATAR_GOAT.png,126,126,Avatar Goat trong khung bo tròn.,
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Avatar/AVATAR_HAMS.png,125,125,Avatar Hams trong khung bo tròn.,
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Avatar/AVATAR_KOALA.png,125,125,Avatar Koala trong khung bo tròn.,
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Avatar/AVATAR_PANDA.png,125,125,Avatar Panda trong khung bo tròn.,
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Avatar/AVATAR_PIG.png,125,125,Avatar Pig trong khung bo tròn.,
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BG_CHALL.png,1700,2585,"Nền màn Rank, hoa văn mờ. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BG_UPPER2.png,1043,830,"Cảnh sạp hàng phía trên màn Rank. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARDPOINT_TOP1.png,151,60,"Ô điểm hạng 1. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARDPOINT_TOP2.png,151,60,"Ô điểm hạng 2. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARDPOINT_TOP3.png,151,60,"Ô điểm hạng 3. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_FISHCHALLENGE.png,988,1204,"Khung popup bắt đầu kỳ, có chữ tiêu đề ""FISH CHALLENGE"" và tranh sạp. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_GREENPOINT.png,213,92,"Ô điểm dòng người chơi. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_OTHERSPOINT.png,1002,218,"Nền dòng người khác. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_PLAYERSPOINT.png,1002,218,"Nền dòng người chơi (xanh). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_REWARD1.png,146,187,"Bong bóng quà (hẹp). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_REWARD2.png,212,187,"Bong bóng quà (rộng). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_STREAK.png,220,93,"Viên đồng hồ dưới nút Streak. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_TIMER.png,305,88,"Ô đồng hồ có biểu tượng đồng hồ. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_TOP1.png,328,616,"Bục hạng 1 (vàng). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_TOP2.png,300,560,"Bục hạng 2 (xanh). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_TOP3.png,300,560,"Bục hạng 3 (cam). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BOARD_WHITEPOINT.png,209,88,"Ô điểm dòng khác. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BUTTON_BACK.png,106,106,"Nút quay lại. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BUTTON_CHALL.png,229,229,"Nút Rank ở Home (bục 1-2-3). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BUTTON_CLAIM.png,635,207,"Nút cam chữ ""Claim"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BUTTON_CTN.png,588,198,"Nút xanh chữ ""Continue"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BUTTON_START.png,469,141,"Nút xanh chữ ""Start"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/BUTTON_TUT.png,106,106,"Nút ""!"" xem luật. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/DIS_LIGHTWIN 1.png,1078,1008,"Tia sáng tỏa. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/EFF_LIGHT.png,1080,1029,"Tia sáng tỏa. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/GIFT_SPECIAL_OPEN.png,125,89,"Hộp quà đỏ đã mở. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/GIFT_TOP1.png,169,170,"Hộp quà hạng 1 (cam). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/GIFT_TOP2.png,153,148,"Hộp quà hạng 2 (xanh). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/GIFT_TOP3.png,140,136,"Hộp quà hạng 3 (hồng). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/OBJ_FIREWORK.png,100,127,"Pháo hoa. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/OBJ_FISH.png,85,89,"Cá thu thập (gắn lên Item). Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/OBJ_FWUNLOCKED.png,483,443,"Pháo hoa phát sáng. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/OBJ_HAMMER.png,142,140,"Búa. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/OBJ_HMUNLOCKED.png,429,428,"Búa phát sáng. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Profile/BOARD_AVATAR.png,634,381,"Khay chọn avatar. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Profile/BOARD_NAME.png,591,131,"Ô tên. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Profile/BOARD_PROFILE.png,868,1077,"Khung popup có chữ ""PROFILE"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Profile/BUTTON_QUIT.png,92,92,"Nút đóng đỏ. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Profile/BUTTON_SAVE.png,351,107,"Nút chữ ""Save"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/Profile/ICON_TYPE.png,48,40,"Biểu tượng xúc xắc/đổi tên. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/TEXT 1.png,625,169,"Chữ ""Fish Challenge"". Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/mui_ten_vang_256x256.png,256,256,"Mũi tên vàng cong. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/x1.png,160,99,"Mốc hệ số x1, ô đang đạt. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/x10.png,144,99,"Mốc x10, ô đang đạt. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/x10_w.png,144,99,"Mốc x10 chưa đạt. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/x1_w.png,160,99,"Mốc x1 chưa đạt. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/x8.png,147,99,"Mốc x8, ô đang đạt. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
-UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Rank/x8_w.png,147,99,"Mốc x8 chưa đạt. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
 UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BG_STREAK.png,1700,2585,"Nền màn Streak. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
 UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BOARD_DATE.png,990,206,"Khay 7 ngày. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",
 UNITY_REDRAW,2,draw,unity/Assets/_IEC/Image/Streak/BOARD_STREAK.png,220,93,"Viên đồng hồ dưới nút Streak. Giữ vai trò, bố cục và vùng trong suốt; đổi nét vẽ.",

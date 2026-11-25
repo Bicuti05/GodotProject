@@ -30,3 +30,7 @@ Giao thêm 90 PNG. Xem [ghi chú](gameplay_dropin_notes.md) và [checker](report
 ## Đối chiếu số lượng
 
 Bổ sung 96 dòng HUD/FX. Xem [kiểm kê](asset_count_audit.md) và [checker](report_hud_fx_parity.csv). Còn 732 dòng cần giao.
+
+## Rank và Profile
+
+Bổ sung 70 asset và 2 mockup theo art mới. Còn 662 mục trong manifest. [Ghi chú](rank_profile_review/README.md) · [checker](report_rank_profile.csv).
