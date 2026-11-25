@@ -1,0 +1,25 @@
+﻿batch,output_path,result,detail
+3,godot_dropin/assets/effect/outer_loop_reveal/et_glow_601.png,OK,
+3,godot_dropin/assets/effect/outer_loop_reveal/et_glow_602.png,OK,
+3,godot_dropin/assets/effect/outer_loop_reveal/et_glow_603.png,OK,
+3,godot_dropin/assets/effect/outer_loop_reveal/et_glow_604.png,OK,
+3,godot_dropin/assets/effect/outer_loop_reveal/et_point_000.png,OK,
+3,godot_dropin/assets/effect/outer_loop_reveal/et_point_601.png,OK,
+3,godot_dropin/assets/effect/outer_loop_reveal/et_shine_701.png,OK,
+3,godot_dropin/assets/effect/texture/glow/ef_glow_001.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+3,godot_dropin/assets/effect/texture/glow/ef_glow_002.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+3,godot_dropin/assets/effect/texture/glow/ef_ring_001.png,OK,
+3,godot_dropin/assets/effect/texture/ice/ice_crystal_glint.png,OK,
+3,godot_dropin/assets/effect/texture/ice/ice_shard_silhouette.png,OK,
+3,godot_dropin/assets/effect/texture/ice/ice_snowflake_soft.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_001.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_002.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_003.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+3,godot_dropin/assets/effect/texture/point/ef_point_004.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_005.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_006.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_007.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_008.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_009.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_009a.png,OK,
+3,godot_dropin/assets/effect/texture/point/ef_point_glow002.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại

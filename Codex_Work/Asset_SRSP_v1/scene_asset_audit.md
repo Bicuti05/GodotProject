@@ -66,3 +66,7 @@ Thêm 24 asset và 3 mockup. Còn 614 dòng manifest. [Ghi chú](home_store_revi
 ## Rank FX
 
 Đã thêm 23 mục drop-in cho hiệu ứng thăng hạng, vương miện, bục và điểm danh. [Ghi chú dùng asset](godot_rank_fx_review.md).
+
+## Gameplay Particles
+
+Đã thêm 24 mục drop-in cho hạt gameplay, băng và mở ô Outer Loop. [Ghi chú dùng asset](godot_particles_review.md).

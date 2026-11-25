@@ -6,13 +6,13 @@ Manifest Sweet Rope có 1.259 dòng, gồm 147 dòng `skip`. 1.112 dòng cần g
 
 | Nhóm | Dòng cần giao | Đã có | Còn thiếu |
 |---|---:|---:|---:|
-| `GODOT / draw` | 690 | 353 | 337 |
+| `GODOT / draw` | 690 | 377 | 313 |
 | `GODOT / layers` | 46 | 0 | 46 |
 | `UNITY_NEW / draw` | 292 | 237 | 55 |
 | `UNITY_REDRAW / atlas` | 4 | 0 | 4 |
 | `UNITY_REDRAW / draw` | 80 | 80 | 0 |
 
-Tổng còn thiếu **442 dòng**. 1106 vùng PNG dành cho 46 mục layers của Godot. Với rows layers, kiểm sự hiện diện của motion.md và toàn bộ file vùng. [Danh sách còn thiếu](remaining_scene_assets.csv) ghi từng tên và yêu cầu.
+Tổng còn thiếu **418 dòng**. 1106 vùng PNG dành cho 46 mục layers của Godot. Với rows layers, kiểm sự hiện diện của motion.md và toàn bộ file vùng. [Danh sách còn thiếu](remaining_scene_assets.csv) ghi từng tên và yêu cầu.
 
 ## Bổ sung lượt này
 
@@ -38,3 +38,5 @@ Tổng còn thiếu **442 dòng**. 1106 vùng PNG dành cho 46 mục layers củ
 - Lượt Progress và Trails: thêm 29 mục drop-in cho thanh mục tiêu, vệt Rank và nút Home. [Ghi chú và contact sheet](godot_progress_trails_review.md).
 
 - Lượt Rank FX: thêm 23 mục drop-in cho hiệu ứng thăng hạng, vương miện, bục và điểm danh. [Ghi chú và contact sheet](godot_rank_fx_review.md).
+
+- Lượt Gameplay Particles: thêm 24 mục drop-in cho hạt gameplay, băng và mở ô Outer Loop. [Ghi chú và contact sheet](godot_particles_review.md).
