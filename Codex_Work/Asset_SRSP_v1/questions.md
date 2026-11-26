@@ -5,3 +5,10 @@
 - Mockup giữ khung 1080 × 2340 theo README, dùng chữ Sweet Rope tạm ở vị trí logo. Logo sản xuất chờ PNG trong suốt đã chốt.
 - Home dùng bản tranh toàn màn ở lớp trời, cắt hai dải chồng lề cho đồi và đất. Dev cần đặt các lớp theo trục Y của nguồn chung trong Unity.
 - Các dòng kích thước ghi “Px: đề xuất” tiếp tục dùng giá trị trong manifest khi xuất trong lần này. Kiểm tra pivot, 9-slice và căn lề bằng scene Unity thật.
+
+## Quyết định Round 3b
+
+- Nền Home dùng trời, đồi và tiền cảnh riêng. Khi tích hợp Unity, đặt lớp theo trục Y và kiểm mép ở nhiều tỉ lệ màn hình.
+- Mockup Streak và Rank dùng cúp mèo Gold. Tên hiển thị Rank là Fruit Challenge.
+- Hai mockup Home dùng thẻ phần thưởng ở nửa dưới. Huy hiệu IQ nằm ở đầu thanh và số mốc nằm phía trên.
+- Tạo chuyển động mới từ các PNG Sweet Rope. Cần kiểm tra pivot và thứ tự lớp ở tốc độ chơi khi tích hợp.

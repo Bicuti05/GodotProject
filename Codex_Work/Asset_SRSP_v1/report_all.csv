@@ -9,7 +9,7 @@
 0,godot_dropin/assets/sprites/juice_sort/flower_pink.png,OK,
 0,godot_dropin/assets/sprites/juice_sort/flower_purple.png,OK,
 0,godot_dropin/assets/sprites/juice_sort/flower_red.png,OK,
-0,godot_dropin/assets/sprites/juice_sort/flower_teal.png,WARN,"vùng hình 68% x 99% bản cũ (pivot, va chạm có thể lệch)"
+0,godot_dropin/assets/sprites/juice_sort/flower_teal.png,OK,
 0,godot_dropin/assets/sprites/juice_sort/flower_yellow.png,OK,
 0,godot_dropin/assets/sprites/juice_sort/gp_flower_question.png,OK,
 0,godot_dropin/assets/sprites/juice_sort/pot_park.png,OK,
@@ -28,7 +28,7 @@
 0,unity/Assets/_IEC/Image/Mechanic/OBJ_HONEY_BOTTOM.png,OK,
 0,unity/Assets/_IEC/Image/Mechanic/OBJ_HONEY_SEAL.png,OK,
 0,unity/Assets/_IEC/Image/Mechanic/OBJ_HONEY_TOP.png,OK,
-0,unity/Assets/_IEC/Image/Theme/Fruit/BG_BOARD_FRUIT.png,WARN,file nguồn 898x1752 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+0,unity/Assets/_IEC/Image/Theme/Fruit/BG_BOARD_FRUIT.png,OK,
 0,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_1.png,OK,
 0,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_0.png,OK,
 0,unity/Assets/_IEC/Image/Theme/Fruit/ITEM_FRUIT_1.png,OK,
@@ -71,7 +71,7 @@
 1,godot_dropin/assets/sprites/juice_sort/double_coins_x2_text.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/error_toast_bg.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/flower_badge.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/flowering_shrubs.png,WARN,"vùng hình 100% x 51% bản cũ (pivot, va chạm có thể lệch)"
+1,godot_dropin/assets/sprites/juice_sort/flowering_shrubs.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/game_background_new/iq_track_base.svg,OK,
 1,godot_dropin/assets/sprites/juice_sort/game_background_new/iq_track_frame.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/gamepage_bg_leaf_shadow.webp,OK,
@@ -89,9 +89,9 @@
 1,godot_dropin/assets/sprites/juice_sort/gp_col_mark_cross.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/gp_col_mark_tick.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/gp_prop_bg_glow.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/group_halo/bell_rank_collectible_halo.png,WARN,"vùng hình 59% x 61% bản cũ (pivot, va chạm có thể lệch); file nguồn 184x196 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn"
+1,godot_dropin/assets/sprites/juice_sort/group_halo/bell_rank_collectible_halo.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/group_halo/bonus_coin_halo.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/group_halo/elk_rank_collectible_halo.png,WARN,"vùng hình 62% x 58% bản cũ (pivot, va chạm có thể lệch)"
+1,godot_dropin/assets/sprites/juice_sort/group_halo/elk_rank_collectible_halo.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/group_halo/flower_blue_halo.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/group_halo/flower_cyan_halo.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/group_halo/flower_green_halo.png,OK,
@@ -102,11 +102,11 @@
 1,godot_dropin/assets/sprites/juice_sort/group_halo/flower_red_halo.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/group_halo/flower_teal_halo.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/group_halo/flower_yellow_halo.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/group_halo/gingerbread_rank_collectible_halo.png,WARN,"vùng hình 58% x 64% bản cũ (pivot, va chạm có thể lệch); file nguồn 172x212 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn"
+1,godot_dropin/assets/sprites/juice_sort/group_halo/gingerbread_rank_collectible_halo.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/group_halo/group_highlight_star.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/group_halo/snow_rank_collectible_halo.png,WARN,"vùng hình 62% x 61% bản cũ (pivot, va chạm có thể lệch)"
+1,godot_dropin/assets/sprites/juice_sort/group_halo/snow_rank_collectible_halo.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/group_halo/sunlight_sun_body_top_figma_halo.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/group_halo/tree_rank_collectible_halo.png,WARN,"vùng hình 57% x 62% bản cũ (pivot, va chạm có thể lệch); file nguồn 176x244 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn"
+1,godot_dropin/assets/sprites/juice_sort/group_halo/tree_rank_collectible_halo.png,WARN,"vùng hình 100% x 72% bản cũ (pivot, va chạm có thể lệch)"
 1,godot_dropin/assets/sprites/juice_sort/ic_back.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/new_guide/Icon_flower.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/new_guide/Icon_guide_CBC_flower.png,OK,
@@ -132,20 +132,20 @@
 1,godot_dropin/assets/sprites/juice_sort/quota_count_tab.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rank_collectible/bell.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rank_collectible/elk.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_bell.png,WARN,file nguồn 445x474 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_elk.png,WARN,file nguồn 444x474 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_empty.png,WARN,file nguồn 444x473 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_gingerbread.png,WARN,file nguồn 444x474 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_snow.png,WARN,file nguồn 444x473 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_tree.png,WARN,file nguồn 444x473 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_bell.png,OK,
+1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_elk.png,OK,
+1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_empty.png,OK,
+1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_gingerbread.png,OK,
+1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_snow.png,OK,
+1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_tree.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rank_collectible/gingerbread.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rank_collectible/link_snow_01.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rank_collectible/link_snow_02.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/rank_collectible/ribbon_bottom.png,WARN,"vùng hình 162% x 105% bản cũ (pivot, va chạm có thể lệch)"
+1,godot_dropin/assets/sprites/juice_sort/rank_collectible/ribbon_bottom.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rank_collectible/ribbon_mid.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rank_collectible/ribbon_top.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rank_collectible/snow.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/rank_collectible/tree.png,WARN,"vùng hình 100% x 72% bản cũ (pivot, va chạm có thể lệch)"
+1,godot_dropin/assets/sprites/juice_sort/rank_collectible/tree.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/reset_confirm_dialog_bg.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/reset_icon_bg.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rope_blue_bottom.png,OK,
@@ -178,7 +178,7 @@
 1,godot_dropin/assets/sprites/juice_sort/rope_yellow_bottom.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/rope_yellow_mid.png,WARN,"vùng hình 61% x 116% bản cũ (pivot, va chạm có thể lệch)"
 1,godot_dropin/assets/sprites/juice_sort/rope_yellow_top.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/streak/cloud_figma.png,WARN,file nguồn 625x366 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,godot_dropin/assets/sprites/juice_sort/streak/cloud_figma.png,WARN,"vùng hình 100% x 65% bản cũ (pivot, va chạm có thể lệch)"
 1,godot_dropin/assets/sprites/juice_sort/streak/figma_20261029/flower_blue.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/streak/figma_20261029/flower_orange.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/streak/figma_20261029/flower_pink.png,OK,
@@ -206,8 +206,8 @@
 1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_scatter.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_shield_frame.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_shield_inner.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_side_gold_1.png,WARN,"vùng hình 59% x 100% bản cũ (pivot, va chạm có thể lệch)"
-1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_side_gold_2.png,WARN,"vùng hình 59% x 100% bản cũ (pivot, va chạm có thể lệch)"
+1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_side_gold_1.png,OK,
+1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_side_gold_2.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_top_flowers.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_top_gem.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/streak_ellipse_glow.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
@@ -215,7 +215,7 @@
 1,godot_dropin/assets/sprites/juice_sort/sunlight_collected_halo_main.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/sunlight_collected_halo_radial_user.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/sunlight_collected_halo_upper.png,OK,
-1,godot_dropin/assets/sprites/juice_sort/sunlight_collector_body.png,WARN,"vùng hình 99% x 72% bản cũ (pivot, va chạm có thể lệch)"
+1,godot_dropin/assets/sprites/juice_sort/sunlight_collector_body.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/sunlight_collector_empty_figma.png,OK,
 1,godot_dropin/assets/sprites/juice_sort/sunlight_collector_glow_back_figma.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
 1,godot_dropin/assets/sprites/juice_sort/sunlight_collector_glow_middle_figma.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
@@ -257,9 +257,9 @@
 1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_BADGE.png,OK,
 1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_BADGE_GENIUS.png,OK,
 1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_DIVIDER.png,OK,
-1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_FILL.png,WARN,file nguồn 309x35 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_GROOVE.png,WARN,file nguồn 243x60 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_TRACK.png,WARN,file nguồn 323x60 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_FILL.png,OK,
+1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_GROOVE.png,OK,
+1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_TRACK.png,OK,
 1,unity/Assets/_IEC/Image/Helper/BUTTON_HELPER_HIGHLIGHT.png,OK,
 1,unity/Assets/_IEC/Image/Helper/BUTTON_HELPER_LOCKED.png,OK,
 1,unity/Assets/_IEC/Image/Helper/BUTTON_HELPER_NORMAL.png,OK,
@@ -276,18 +276,18 @@
 1,unity/Assets/_IEC/Image/Helper/ICON_HELPER_UNDO_GREY.png,OK,
 1,unity/Assets/_IEC/Image/Home/BG_HOME_GROUND.png,OK,
 1,unity/Assets/_IEC/Image/Home/BG_HOME_HILL.png,OK,
-1,unity/Assets/_IEC/Image/Home/BG_HOME_SKY.png,WARN,file nguồn 841x1870 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,unity/Assets/_IEC/Image/Home/BG_HOME_SKY.png,OK,
 1,unity/Assets/_IEC/Image/Home/BG_STAGE_001.png,OK,
-1,unity/Assets/_IEC/Image/Home/BOARD_HEX_COVER.png,WARN,file nguồn 712x540 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/Home/BOARD_HEX_FRAME.png,WARN,file nguồn 711x539 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,unity/Assets/_IEC/Image/Home/BOARD_HEX_COVER.png,OK,
+1,unity/Assets/_IEC/Image/Home/BOARD_HEX_FRAME.png,OK,
 1,unity/Assets/_IEC/Image/Home/BOARD_STAGE_COUNT.png,OK,
-1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_BLUE_NORMAL.png,WARN,file nguồn 655x152 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_BLUE_PRESSED.png,WARN,file nguồn 658x151 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_ORANGE_NORMAL.png,WARN,file nguồn 655x152 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_ORANGE_PRESSED.png,WARN,file nguồn 659x149 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_BLUE_NORMAL.png,OK,
+1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_BLUE_PRESSED.png,OK,
+1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_ORANGE_NORMAL.png,OK,
+1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_ORANGE_PRESSED.png,OK,
 1,unity/Assets/_IEC/Image/Home/DIS_STAGE_BANNER.png,OK,
 1,unity/Assets/_IEC/Image/Mechanic/EFF_HONEY_DROP.png,OK,
-1,unity/Assets/_IEC/Image/Mechanic/EFF_HONEY_FLOW_1.png,WARN,file nguồn 466x187 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,unity/Assets/_IEC/Image/Mechanic/EFF_HONEY_FLOW_1.png,OK,
 1,unity/Assets/_IEC/Image/Mechanic/EFF_HONEY_FLOW_2.png,OK,
 1,unity/Assets/_IEC/Image/Mechanic/EFF_HONEY_FLOW_3.png,OK,
 1,unity/Assets/_IEC/Image/Mechanic/EFF_HONEY_FLOW_4.png,OK,
@@ -296,7 +296,7 @@
 1,unity/Assets/_IEC/Image/Mechanic/OBJ_HONEY_SEAL_CRACK.png,OK,
 1,unity/Assets/_IEC/Image/Mechanic/OBJ_SACK_KNOT.png,OK,
 1,unity/Assets/_IEC/Image/Mechanic/OBJ_SACK_OPEN.png,OK,
-1,unity/Assets/_IEC/Image/Result/BOARD_LOSE.png,WARN,file nguồn 478x648 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,unity/Assets/_IEC/Image/Result/BOARD_LOSE.png,OK,
 1,unity/Assets/_IEC/Image/Result/DIS_LOSE_TITLE.png,OK,
 1,unity/Assets/_IEC/Image/Result/OBJ_LOSE.png,OK,
 1,unity/Assets/_IEC/Image/Store/TEXT_LOGO.png,FAIL,chưa có file
@@ -322,14 +322,14 @@
 1,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_FULL_8.png,OK,
 1,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_FULL_9.png,OK,
 1,unity/Assets/_IEC/Image/UIKit/BOARD_GOLD.png,OK,
-1,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_CARD.png,WARN,file nguồn 542x182 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_LARGE.png,WARN,file nguồn 632x379 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_SMALL.png,WARN,file nguồn 497x314 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_CARD.png,OK,
+1,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_LARGE.png,OK,
+1,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_SMALL.png,OK,
 1,unity/Assets/_IEC/Image/UIKit/BUTTON_BLUE_LOCKED.png,OK,
 1,unity/Assets/_IEC/Image/UIKit/BUTTON_BLUE_NORMAL.png,OK,
 1,unity/Assets/_IEC/Image/UIKit/BUTTON_BLUE_PRESSED.png,OK,
-1,unity/Assets/_IEC/Image/UIKit/BUTTON_GREEN_LOCKED.png,WARN,file nguồn 502x189 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-1,unity/Assets/_IEC/Image/UIKit/BUTTON_GREEN_PRESSED.png,WARN,file nguồn 500x189 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+1,unity/Assets/_IEC/Image/UIKit/BUTTON_GREEN_LOCKED.png,OK,
+1,unity/Assets/_IEC/Image/UIKit/BUTTON_GREEN_PRESSED.png,OK,
 1,unity/Assets/_IEC/Image/UIKit/BUTTON_GREY_LOCKED.png,OK,
 1,unity/Assets/_IEC/Image/UIKit/BUTTON_GREY_NORMAL.png,OK,
 1,unity/Assets/_IEC/Image/UIKit/BUTTON_GREY_PRESSED.png,OK,
@@ -362,11 +362,11 @@
 2,godot_dropin/assets/app/app_icon_main.png,OK,
 2,godot_dropin/assets/app/app_icon_mono.png,OK,
 2,godot_dropin/assets/app/boot_logo.png,FAIL,chưa có file
-2,godot_dropin/assets/app/launch_bg.png,WARN,file nguồn 841x1870 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,godot_dropin/assets/sprites/avatar_select_frame_selected.png,FAIL,chưa có file
+2,godot_dropin/assets/app/launch_bg.png,OK,
+2,godot_dropin/assets/sprites/avatar_select_frame_selected.png,OK,
 2,godot_dropin/assets/sprites/avatar_select_name_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/bgm_music_off.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/bgm_music_on.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/bgm_music_off.png,OK,
+2,godot_dropin/assets/sprites/bgm_music_on.png,OK,
 2,godot_dropin/assets/sprites/btn_double_badge_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/btn_primary_bg_orange.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/btn_primary_bg_purple.png,FAIL,chưa có file
@@ -388,12 +388,12 @@
 2,godot_dropin/assets/sprites/common_coin_disabled.png,OK,
 2,godot_dropin/assets/sprites/common_deco_bubble.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_dialog_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_dialog_card_bg_blue_9.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_homepage_bg.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_dialog_card_bg_blue_9.png,OK,
+2,godot_dropin/assets/sprites/common_homepage_bg.png,OK,
 2,godot_dropin/assets/sprites/common_ic_rope_dead.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_nav_round_bg.png,OK,
-2,godot_dropin/assets/sprites/common_particle_diamond_cyan.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_particle_diamond_yellow.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_particle_diamond_cyan.png,OK,
+2,godot_dropin/assets/sprites/common_particle_diamond_yellow.png,OK,
 2,godot_dropin/assets/sprites/common_rank_avatar_animal_01.png,OK,
 2,godot_dropin/assets/sprites/common_rank_avatar_animal_02.png,OK,
 2,godot_dropin/assets/sprites/common_rank_avatar_animal_03.png,OK,
@@ -406,14 +406,14 @@
 2,godot_dropin/assets/sprites/common_rank_avatar_animal_10.png,OK,
 2,godot_dropin/assets/sprites/common_rank_avatar_animal_11.png,OK,
 2,godot_dropin/assets/sprites/common_rank_avatar_animal_12.png,OK,
-2,godot_dropin/assets/sprites/common_rank_avatar_frame_current.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_avatar_frame_list.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_badge_tier_lock.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_avatar_frame_current.png,OK,
+2,godot_dropin/assets/sprites/common_rank_avatar_frame_list.png,OK,
+2,godot_dropin/assets/sprites/common_rank_badge_tier_lock.png,OK,
 2,godot_dropin/assets/sprites/common_rank_btn_tier_arrow.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_collect_dot.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_collect_item.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_et_rankchange_arrow_1.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_et_rankchange_arrow_2.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_collect_item.png,OK,
+2,godot_dropin/assets/sprites/common_rank_et_rankchange_arrow_1.png,OK,
+2,godot_dropin/assets/sprites/common_rank_et_rankchange_arrow_2.png,OK,
 2,godot_dropin/assets/sprites/common_rank_et_ribbon_007.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_home_rank_subscript_level_1.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_home_rank_subscript_level_2.png,FAIL,chưa có file
@@ -421,37 +421,37 @@
 2,godot_dropin/assets/sprites/common_rank_home_rank_subscript_level_4.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_home_rank_subscript_level_5.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_home_ranks_countdown_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_home_ranks_icon_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_home_ranks_lock_icon.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_bg.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_home_ranks_icon_bg.png,OK,
+2,godot_dropin/assets/sprites/common_rank_home_ranks_lock_icon.png,OK,
+2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_bg.png,OK,
 2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_board.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_center_dot.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_center_dot.png,OK,
 2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_point.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_time_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_time_colorbg.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_time_bg.png,OK,
+2,godot_dropin/assets/sprites/common_rank_img_finishpage_clock_time_colorbg.png,OK,
 2,godot_dropin/assets/sprites/common_rank_rank_first_settle_crown.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_rank_settlement_barrage_blue.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_rank_settlement_barrage_green.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_rank_settlement_barrage_orange.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_rank_settlement_barrage_purple.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_icon_top1.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_icon_top2.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_icon_top3.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_icon_top1.png,OK,
+2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_icon_top2.png,OK,
+2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_icon_top3.png,OK,
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_promotedplayers_down.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_promotedplayers_up.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_normal_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_normal_me_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_number_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_number_me_bg.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_number_bg.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_number_me_bg.png,OK,
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_top1_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_top1_me_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_top2_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_top2_me_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_top3_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_detailpage_singleline_top3_me_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_ranks_gift_icon_1.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_ranks_gift_icon_2.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_ranks_gift_icon_3.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_ranks_gift_icon_1.png,OK,
+2,godot_dropin/assets/sprites/common_rank_ranks_gift_icon_2.png,OK,
+2,godot_dropin/assets/sprites/common_rank_ranks_gift_icon_3.png,OK,
 2,godot_dropin/assets/sprites/common_rank_ranks_hint_default.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_offline_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_online_bg.png,FAIL,chưa có file
@@ -473,24 +473,24 @@
 2,godot_dropin/assets/sprites/common_rank_trophy_silver.png,OK,
 2,godot_dropin/assets/sprites/common_rank_trophy_silver_mask.png,OK,
 2,godot_dropin/assets/sprites/common_reddot.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_setting.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_special_challenge_button_chest.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_setting.png,OK,
+2,godot_dropin/assets/sprites/common_special_challenge_button_chest.png,OK,
 2,godot_dropin/assets/sprites/common_toast_bg_9s.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/daily_checkin_reward_star.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/daily_checkin_reward_star.png,OK,
 2,godot_dropin/assets/sprites/daily_first_win_checkin_03bc7.svg,FAIL,chưa có file
-2,godot_dropin/assets/sprites/daily_first_win_checkin_4ed62.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/daily_first_win_checkin_4ed62.png,OK,
 2,godot_dropin/assets/sprites/daily_first_win_checkin_9868c.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/daily_first_win_checkin_button_green.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/daily_first_win_checkin_button_green.png,OK,
 2,godot_dropin/assets/sprites/daily_first_win_checkin_calendar_panel.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/daily_first_win_checkin_day_check.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/daily_first_win_checkin_day_idle.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/daily_first_win_checkin_day_check.png,OK,
+2,godot_dropin/assets/sprites/daily_first_win_checkin_day_idle.png,OK,
 2,godot_dropin/assets/sprites/daily_first_win_checkin_fa510.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/daily_first_win_checkin_game_coin_icon.png,OK,
 2,godot_dropin/assets/sprites/daily_first_win_checkin_game_coin_pill.png,OK,
 2,godot_dropin/assets/sprites/daily_first_win_checkin_hero_glow.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/daily_first_win_checkin_sun_cute.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/daily_first_win_checkin_sun_party_clean.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/daily_first_win_checkin_sun_proud_clean.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/daily_first_win_checkin_sun_cute.png,OK,
+2,godot_dropin/assets/sprites/daily_first_win_checkin_sun_party_clean.png,OK,
+2,godot_dropin/assets/sprites/daily_first_win_checkin_sun_proud_clean.png,OK,
 2,godot_dropin/assets/sprites/finish/A.png,OK,
 2,godot_dropin/assets/sprites/finish/B.png,OK,
 2,godot_dropin/assets/sprites/finish/S.png,OK,
@@ -516,27 +516,27 @@
 2,godot_dropin/assets/sprites/finish_complete_encourage_bg_green.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/finish_complete_encourage_bg_purple.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/finish_complete_encourage_bg_red.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_arrow.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/finish_rise_arrow.png,OK,
 2,godot_dropin/assets/sprites/finish_rise_body.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_idle_1.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_idle_2.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_idle_3.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_idle_4.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_idle_5.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_idle_6.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/finish_rise_idle_1.png,OK,
+2,godot_dropin/assets/sprites/finish_rise_idle_2.png,OK,
+2,godot_dropin/assets/sprites/finish_rise_idle_3.png,OK,
+2,godot_dropin/assets/sprites/finish_rise_idle_4.png,OK,
+2,godot_dropin/assets/sprites/finish_rise_idle_5.png,OK,
+2,godot_dropin/assets/sprites/finish_rise_idle_6.png,OK,
 2,godot_dropin/assets/sprites/finish_rise_mask.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/finish_rise_rim.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_spark_1.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_spark_2.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/finish_rise_spark_3.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/finish_rise_spark_1.png,OK,
+2,godot_dropin/assets/sprites/finish_rise_spark_2.png,OK,
+2,godot_dropin/assets/sprites/finish_rise_spark_3.png,OK,
 2,godot_dropin/assets/sprites/game_ambient_bubble.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/game_challenge_banner.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/game_challenge_banner.png,OK,
 2,godot_dropin/assets/sprites/game_challenge_petal_0.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_challenge_petal_1.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_challenge_petal_2.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_challenge_petal_3.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_challenge_petal_4.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/game_challenge_title_background.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/game_challenge_title_background.png,OK,
 2,godot_dropin/assets/sprites/game_challenge_title_en.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_coin_icon.png,OK,
 2,godot_dropin/assets/sprites/game_coin_pill.png,OK,
@@ -550,12 +550,12 @@
 2,godot_dropin/assets/sprites/game_iq_glow.png,OK,
 2,godot_dropin/assets/sprites/game_iq_quota_frame.png,OK,
 2,godot_dropin/assets/sprites/game_iq_track.png,OK,
-2,godot_dropin/assets/sprites/game_nav_settings.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/game_nav_settings.png,OK,
 2,godot_dropin/assets/sprites/game_special_challenge_chest.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_special_challenge_chest_shadow.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_special_challenge_foliage.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_special_challenge_garden.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/game_special_challenge_glow.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/game_special_challenge_glow.png,OK,
 2,godot_dropin/assets/sprites/game_special_challenge_header_chest.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_special_challenge_title_shadow.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_super_hard_fire.png,FAIL,chưa có file
@@ -563,8 +563,8 @@
 2,godot_dropin/assets/sprites/game_unlock_glow_core.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_unlock_glow_rays.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_unlock_hint.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/game_unlock_rope.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/game_unlock_star.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/game_unlock_rope.png,OK,
+2,godot_dropin/assets/sprites/game_unlock_star.png,OK,
 2,godot_dropin/assets/sprites/game_unlock_undo.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/home_hex_cover_circle.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/home_hex_cover_trapezoid.png,FAIL,chưa có file
@@ -573,8 +573,8 @@
 2,godot_dropin/assets/sprites/home_hex_hex_frame.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/home_hex_hex_grid_shadow.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/home_hex_hex_mask.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/ic_sounds_off.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/ic_sounds_on.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/ic_sounds_off.png,OK,
+2,godot_dropin/assets/sprites/ic_sounds_on.png,OK,
 2,godot_dropin/assets/sprites/ic_vibration_off.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/ic_vibration_on.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/juice_sort/endless/clock_rig/bell_left.png,OK,
@@ -600,18 +600,18 @@
 2,godot_dropin/assets/sprites/prop_btn_badge_bg_gray.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_badge_bg_green.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_badge_bg_orange.png,OK,
-2,godot_dropin/assets/sprites/prop_btn_bg.png,WARN,file nguồn 418x402 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,godot_dropin/assets/sprites/prop_btn_bg.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_bg_disabled.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_fill_pot.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_fill_pot_disabled.png,OK,
-2,godot_dropin/assets/sprites/prop_btn_hint.png,WARN,"vùng hình 68% x 66% bản cũ (pivot, va chạm có thể lệch)"
+2,godot_dropin/assets/sprites/prop_btn_hint.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_hint_disabled.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_locked.png,OK,
-2,godot_dropin/assets/sprites/prop_btn_rope.png,WARN,"vùng hình 81% x 67% bản cũ (pivot, va chạm có thể lệch)"
+2,godot_dropin/assets/sprites/prop_btn_rope.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_rope_disabled.png,OK,
-2,godot_dropin/assets/sprites/prop_btn_undo.png,WARN,"vùng hình 74% x 76% bản cũ (pivot, va chạm có thể lệch)"
+2,godot_dropin/assets/sprites/prop_btn_undo.png,OK,
 2,godot_dropin/assets/sprites/prop_btn_undo_disabled.png,OK,
-2,godot_dropin/assets/sprites/rank_back_button.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/rank_back_button.png,OK,
 2,godot_dropin/assets/sprites/rank_bottom_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_bottom_divider.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_collect_bar_bg.png,FAIL,chưa có file
@@ -620,31 +620,31 @@
 2,godot_dropin/assets/sprites/rank_game_finish_crown_1.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_crown_2.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_crown_3.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_game_finish_crown_glow.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/rank_game_finish_crown_glow.png,OK,
 2,godot_dropin/assets/sprites/rank_game_finish_podium_1.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_podium_2.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_podium_3.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_rise_tip_border.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_rise_tip_fill.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_rise_tip_rope.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_game_finish_score_1.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_game_finish_score_2.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_game_finish_score_3.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_game_finish_source_fish_full.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/rank_game_finish_score_1.png,OK,
+2,godot_dropin/assets/sprites/rank_game_finish_score_2.png,OK,
+2,godot_dropin/assets/sprites/rank_game_finish_score_3.png,OK,
+2,godot_dropin/assets/sprites/rank_game_finish_source_fish_full.png,OK,
 2,godot_dropin/assets/sprites/rank_game_finish_source_top3_bronze_base.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_source_top3_gold_base.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_game_finish_source_top3_silver_base.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_header_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_introduction_arrow_down.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_introduction_arrow_left.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/rank_header_bg.png,OK,
+2,godot_dropin/assets/sprites/rank_introduction_arrow_down.png,OK,
+2,godot_dropin/assets/sprites/rank_introduction_arrow_left.png,OK,
 2,godot_dropin/assets/sprites/rank_introduction_flowers.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_introduction_row_1.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_introduction_row_2.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_introduction_row_3.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_list_bg.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/rank_introduction_row_1.png,OK,
+2,godot_dropin/assets/sprites/rank_introduction_row_2.png,OK,
+2,godot_dropin/assets/sprites/rank_introduction_row_3.png,OK,
+2,godot_dropin/assets/sprites/rank_list_bg.png,OK,
 2,godot_dropin/assets/sprites/rank_list_divider.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_new_season_bg.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/rank_new_season_close.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/rank_new_season_close.png,OK,
 2,godot_dropin/assets/sprites/rank_new_season_illustration.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_season_win_barrage_glow_10.svg,FAIL,chưa có file
 2,godot_dropin/assets/sprites/rank_season_win_barrage_glow_12.svg,FAIL,chưa có file
@@ -657,15 +657,15 @@
 2,godot_dropin/assets/sprites/setting_ic_weak_privacy.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/setting_ic_weak_privacy_preference.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/setting_ic_weak_service.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/special_challenge_reward_halo_back_figma.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/special_challenge_reward_halo_figma.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/special_challenge_reward_halo_back_figma.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+2,godot_dropin/assets/sprites/special_challenge_reward_halo_figma.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
 2,godot_dropin/assets/sprites/special_challenge_reward_halo_rays.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/special_challenge_reward_halo_soft.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/special_challenge_reward_rope_figma.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/special_challenge_reward_sparkle.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/special_challenge_reward_halo_soft.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+2,godot_dropin/assets/sprites/special_challenge_reward_rope_figma.png,OK,
+2,godot_dropin/assets/sprites/special_challenge_reward_sparkle.png,OK,
 2,godot_dropin/assets/sprites/splash_butterfly_static.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/splash_logo.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/splash_optimization/background.png,WARN,file nguồn 841x1870 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,godot_dropin/assets/sprites/splash_optimization/background.png,OK,
 2,godot_dropin/assets/sprites/splash_optimization/progress_fill.png,OK,
 2,godot_dropin/assets/sprites/splash_optimization/progress_track.png,OK,
 2,godot_dropin/assets/sprites/splash_progress_fill.png,OK,
@@ -703,7 +703,7 @@
 2,unity/Assets/_IEC/Image/Rank/BUTTON_TUT.png,OK,
 2,unity/Assets/_IEC/Image/Rank/DIS_LIGHTWIN 1.png,OK,
 2,unity/Assets/_IEC/Image/Rank/EFF_LIGHT.png,OK,
-2,unity/Assets/_IEC/Image/Rank/GIFT_SPECIAL_OPEN.png,WARN,"vùng hình 60% x 100% bản cũ (pivot, va chạm có thể lệch)"
+2,unity/Assets/_IEC/Image/Rank/GIFT_SPECIAL_OPEN.png,OK,
 2,unity/Assets/_IEC/Image/Rank/GIFT_TOP1.png,OK,
 2,unity/Assets/_IEC/Image/Rank/GIFT_TOP2.png,OK,
 2,unity/Assets/_IEC/Image/Rank/GIFT_TOP3.png,OK,
@@ -727,7 +727,7 @@
 2,unity/Assets/_IEC/Image/Rank/x8.png,OK,
 2,unity/Assets/_IEC/Image/Rank/x8_w.png,OK,
 2,unity/Assets/_IEC/Image/Streak/BG_STREAK.png,WARN,file nguồn 1017x1546 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Streak/BOARD_DATE.png,WARN,"vùng hình 74% x 83% bản cũ (pivot, va chạm có thể lệch); file nguồn 729x171 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn"
+2,unity/Assets/_IEC/Image/Streak/BOARD_DATE.png,OK,
 2,unity/Assets/_IEC/Image/Streak/BOARD_STREAK.png,OK,
 2,unity/Assets/_IEC/Image/Streak/BOARD_STREAKDONE.png,OK,
 2,unity/Assets/_IEC/Image/Streak/BUTTON_CLAIM.png,OK,
@@ -740,7 +740,7 @@
 2,unity/Assets/_IEC/Image/Streak/GIFT_SPECIAL_OPEN.png,OK,
 2,unity/Assets/_IEC/Image/Streak/GOLD.png,OK,
 2,unity/Assets/_IEC/Image/Streak/GOLD_UNLOCK.png,OK,
-2,unity/Assets/_IEC/Image/Streak/OBJ_CROWN.png,WARN,"vùng hình 68% x 100% bản cũ (pivot, va chạm có thể lệch)"
+2,unity/Assets/_IEC/Image/Streak/OBJ_CROWN.png,OK,
 2,unity/Assets/_IEC/Image/Streak/Pawn.png,OK,
 2,unity/Assets/_IEC/Image/Streak/TEXT_CONGRATS.png,OK,
 2,unity/Assets/_IEC/Image/Streak/TEXT_DAYSTREAK.png,OK,
@@ -750,7 +750,7 @@
 2,unity/Assets/_IEC/Image/Win/DIS_RIBBON.png,OK,
 2,unity/Assets/_IEC/Image/Win/DIS_SCORE.png,OK,
 2,unity/Assets/_IEC/Image/Win/DIS_WIN_TEXT.png,OK,
-2,unity/Assets/_IEC/Image/Banner/DIS_BANNER_HARD.png,WARN,file nguồn 506x306 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/Banner/DIS_BANNER_HARD.png,OK,
 2,unity/Assets/_IEC/Image/Banner/DIS_BANNER_HARD_BADGE.png,OK,
 2,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_2.png,OK,
 2,unity/Assets/_IEC/Image/Banner/TEXT_COMBO_3.png,OK,
@@ -758,8 +758,8 @@
 2,unity/Assets/_IEC/Image/Bonus/DIS_BONUS_COINS_L.png,OK,
 2,unity/Assets/_IEC/Image/Bonus/DIS_BONUS_COINS_R.png,OK,
 2,unity/Assets/_IEC/Image/Bonus/EFF_PIG_COIN_SPIN.png,OK,
-2,unity/Assets/_IEC/Image/Bonus/EFF_PIG_SHARD.png,WARN,file nguồn 255x256 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Bonus/EFF_PIG_SMOKE.png,WARN,file nguồn 331x322 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/Bonus/EFF_PIG_SHARD.png,OK,
+2,unity/Assets/_IEC/Image/Bonus/EFF_PIG_SMOKE.png,OK,
 2,unity/Assets/_IEC/Image/Bonus/EFF_PIG_STAR.png,OK,
 2,unity/Assets/_IEC/Image/Bonus/ICON_PIG.png,OK,
 2,unity/Assets/_IEC/Image/Bonus/ITEM_COIN.png,OK,
@@ -777,7 +777,7 @@
 2,unity/Assets/_IEC/Image/Effect/EFF_ROPE_GLOW_HINT.png,OK,
 2,unity/Assets/_IEC/Image/Effect/EFF_ROPE_GLOW_OK.png,OK,
 2,unity/Assets/_IEC/Image/HUD/ICON_HARD_INGAME.png,OK,
-2,unity/Assets/_IEC/Image/Helper/BOARD_DEAD_TOAST.png,WARN,file nguồn 379x162 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/Helper/BOARD_DEAD_TOAST.png,OK,
 2,unity/Assets/_IEC/Image/Helper/OBJ_UNLOCK_FILL.png,OK,
 2,unity/Assets/_IEC/Image/Helper/OBJ_UNLOCK_HINT.png,OK,
 2,unity/Assets/_IEC/Image/Helper/OBJ_UNLOCK_RAY.png,OK,
@@ -785,7 +785,7 @@
 2,unity/Assets/_IEC/Image/Helper/OBJ_UNLOCK_STAR.png,OK,
 2,unity/Assets/_IEC/Image/Helper/OBJ_UNLOCK_UNDO.png,OK,
 2,unity/Assets/_IEC/Image/Home/BOARD_CLOCK.png,OK,
-2,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_HARD.png,WARN,file nguồn 512x191 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_HARD.png,OK,
 2,unity/Assets/_IEC/Image/Home/BUTTON_RANK.png,OK,
 2,unity/Assets/_IEC/Image/Home/BUTTON_SETTINGS.png,OK,
 2,unity/Assets/_IEC/Image/Home/EFF_PIECE_GLOW.png,OK,
@@ -793,29 +793,29 @@
 2,unity/Assets/_IEC/Image/Home/ICON_GEAR.png,OK,
 2,unity/Assets/_IEC/Image/Home/ICON_HARD.png,OK,
 2,unity/Assets/_IEC/Image/Mechanic/CONTAINER_SUN.png,OK,
-2,unity/Assets/_IEC/Image/Mechanic/EFF_ICE_MELT_1.png,WARN,file nguồn 316x249 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/Mechanic/EFF_ICE_MELT_1.png,OK,
 2,unity/Assets/_IEC/Image/Mechanic/EFF_ICE_MELT_2.png,OK,
-2,unity/Assets/_IEC/Image/Mechanic/EFF_ICE_MELT_3.png,WARN,file nguồn 128x307 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/Mechanic/EFF_ICE_MELT_3.png,OK,
 2,unity/Assets/_IEC/Image/Mechanic/EFF_SUN_GLOW.png,OK,
 2,unity/Assets/_IEC/Image/Mechanic/ITEM_SUN.png,OK,
 2,unity/Assets/_IEC/Image/Mechanic/OBJ_ICE_CONTAINER.png,OK,
 2,unity/Assets/_IEC/Image/Mechanic/OBJ_ICE_ITEM.png,OK,
 2,unity/Assets/_IEC/Image/Popup/OBJ_POPUP_FAIL.png,OK,
 2,unity/Assets/_IEC/Image/Popup/OBJ_POPUP_OK.png,OK,
-2,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_GENIUS.png,WARN,file nguồn 513x136 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_GOLD.png,WARN,file nguồn 511x137 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_IQ.png,WARN,file nguồn 510x137 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Shop/BG_SHOP.png,WARN,file nguồn 841x1870 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Shop/BOARD_PACK.png,WARN,file nguồn 829x235 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Shop/BOARD_PACK_HIGHLIGHT.png,WARN,file nguồn 834x245 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_GENIUS.png,OK,
+2,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_GOLD.png,OK,
+2,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_IQ.png,OK,
+2,unity/Assets/_IEC/Image/Shop/BG_SHOP.png,OK,
+2,unity/Assets/_IEC/Image/Shop/BOARD_PACK.png,OK,
+2,unity/Assets/_IEC/Image/Shop/BOARD_PACK_HIGHLIGHT.png,OK,
 2,unity/Assets/_IEC/Image/Shop/DIS_SHOP_TITLE.png,OK,
 2,unity/Assets/_IEC/Image/Shop/ICON_PACK_GOLD_1.png,OK,
 2,unity/Assets/_IEC/Image/Shop/ICON_PACK_GOLD_2.png,OK,
 2,unity/Assets/_IEC/Image/Shop/ICON_PACK_GOLD_3.png,OK,
 2,unity/Assets/_IEC/Image/Shop/ICON_PACK_NOADS.png,OK,
-2,unity/Assets/_IEC/Image/Store/BG_SPLASH.png,WARN,file nguồn 841x1870 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Store/BOARD_LOADING_FILL.png,WARN,file nguồn 320x61 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-2,unity/Assets/_IEC/Image/Store/BOARD_LOADING_FRAME.png,WARN,file nguồn 322x77 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/Store/BG_SPLASH.png,OK,
+2,unity/Assets/_IEC/Image/Store/BOARD_LOADING_FILL.png,OK,
+2,unity/Assets/_IEC/Image/Store/BOARD_LOADING_FRAME.png,OK,
 2,unity/Assets/_IEC/Image/Store/ICON_APP_BACKGROUND.png,OK,
 2,unity/Assets/_IEC/Image/Store/ICON_APP_FOREGROUND.png,OK,
 2,unity/Assets/_IEC/Image/Store/ICON_APP_STORE.png,OK,
@@ -823,9 +823,9 @@
 2,unity/Assets/_IEC/Image/UIKit/BOARD_BADGE_COUNT.png,OK,
 2,unity/Assets/_IEC/Image/UIKit/BOARD_BADGE_FREE.png,OK,
 2,unity/Assets/_IEC/Image/UIKit/BOARD_BADGE_ORANGE.png,OK,
-2,unity/Assets/_IEC/Image/UIKit/BOARD_GUIDE.png,WARN,file nguồn 796x199 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/UIKit/BOARD_GUIDE.png,OK,
 2,unity/Assets/_IEC/Image/UIKit/BOARD_TOAST.png,OK,
-2,unity/Assets/_IEC/Image/UIKit/DIS_RIBBON_TITLE.png,WARN,file nguồn 583x137 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+2,unity/Assets/_IEC/Image/UIKit/DIS_RIBBON_TITLE.png,OK,
 3,godot_dropin/assets/builtin/451ab742088ec315e5e18f5a9eb629db.webp,FAIL,chưa có file
 3,godot_dropin/assets/builtin/61d33d3cf670a36c31e294293f56f616.webp,FAIL,chưa có file
 3,godot_dropin/assets/effect/daily_checkin/hex_halo.png,FAIL,chưa có file
@@ -836,12 +836,12 @@
 3,godot_dropin/assets/effect/outer_loop_reveal/et_point_000.png,OK,
 3,godot_dropin/assets/effect/outer_loop_reveal/et_point_601.png,OK,
 3,godot_dropin/assets/effect/outer_loop_reveal/et_shine_701.png,OK,
-3,godot_dropin/assets/effect/owl_activation/ef_other_205.png,FAIL,chưa có file
+3,godot_dropin/assets/effect/owl_activation/ef_other_205.png,OK,
 3,godot_dropin/assets/effect/owl_activation/ef_other_220.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/owl_activation/ef_other_240.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/owl_activation/ef_point_208.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/owl_activation/ef_ui_202.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/owl_activation/hex_soft.png,FAIL,chưa có file
+3,godot_dropin/assets/effect/owl_activation/ef_other_240.png,OK,
+3,godot_dropin/assets/effect/owl_activation/ef_point_208.png,OK,
+3,godot_dropin/assets/effect/owl_activation/ef_ui_202.png,OK,
+3,godot_dropin/assets/effect/owl_activation/hex_soft.png,OK,
 3,godot_dropin/assets/effect/owl_activation/reveal_noise.png,FAIL,chưa có file
 3,godot_dropin/assets/effect/petal_gold_atlas.png,FAIL,chưa có file
 3,godot_dropin/assets/effect/petal_mint_atlas.png,FAIL,chưa có file
@@ -851,21 +851,21 @@
 3,godot_dropin/assets/effect/rank_collect_trail/et_star_1.png,OK,
 3,godot_dropin/assets/effect/rank_collect_trail/et_star_2.png,OK,
 3,godot_dropin/assets/effect/rank_collect_trail/et_trail_001.png,OK,
-3,godot_dropin/assets/effect/rank_collect_trail/et_trail_002.png,WARN,"vùng hình 99% x 71% bản cũ (pivot, va chạm có thể lệch)"
+3,godot_dropin/assets/effect/rank_collect_trail/et_trail_002.png,OK,
 3,godot_dropin/assets/effect/texture/beam/ef_beam_001.png,FAIL,chưa có file
 3,godot_dropin/assets/effect/texture/bonus/et_point_001.png,OK,
 3,godot_dropin/assets/effect/texture/bonus/et_star_701.png,OK,
 3,godot_dropin/assets/effect/texture/bonus/smoke_puff.png,OK,
-3,godot_dropin/assets/effect/texture/cat_paw/paw_blue.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_cyan.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_green.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_lavender.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_orange.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_pink.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_purple.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_red.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_teal.png,FAIL,chưa có file
-3,godot_dropin/assets/effect/texture/cat_paw/paw_yellow.png,FAIL,chưa có file
+3,godot_dropin/assets/effect/texture/cat_paw/paw_blue.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_cyan.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_green.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_lavender.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_orange.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_pink.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_purple.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_red.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_teal.png,OK,
+3,godot_dropin/assets/effect/texture/cat_paw/paw_yellow.png,OK,
 3,godot_dropin/assets/effect/texture/combo_fullscreen/combo10_flowers_atlas.png,OK,
 3,godot_dropin/assets/effect/texture/combo_fullscreen/edge_light_band.png,OK,
 3,godot_dropin/assets/effect/texture/combo_fullscreen/flowers_atlas.png,OK,
@@ -903,7 +903,7 @@
 3,godot_dropin/assets/effect/texture/mask/ef_mask_003.png,FAIL,chưa có file
 3,godot_dropin/assets/effect/texture/point/ef_point_001.png,OK,
 3,godot_dropin/assets/effect/texture/point/ef_point_002.png,OK,
-3,godot_dropin/assets/effect/texture/point/ef_point_003.png,WARN,quá giống ảnh gốc (nghi vẽ đè hoặc đổi màu): kiểm lại
+3,godot_dropin/assets/effect/texture/point/ef_point_003.png,WARN,"vùng hình 69% x 69% bản cũ (pivot, va chạm có thể lệch)"
 3,godot_dropin/assets/effect/texture/point/ef_point_004.png,OK,
 3,godot_dropin/assets/effect/texture/point/ef_point_005.png,OK,
 3,godot_dropin/assets/effect/texture/point/ef_point_006.png,OK,
@@ -962,29 +962,29 @@
 3,godot_dropin/assets/spine/daily_checkin/proud/body-mask-ui.png,FAIL,chưa có file
 3,godot_dropin/assets/spine/daily_checkin/smile/body-mask-ui.png,FAIL,chưa có file
 3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/locked-front.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-00.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-01.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-02.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-03.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-04.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-05.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-06.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-07.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-08.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-09.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-10.png,FAIL,chưa có file
-3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-11.png,FAIL,chưa có file
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-00.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-01.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-02.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-03.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-04.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-05.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-06.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-07.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-08.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-09.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-10.png,OK,
+3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-11.png,OK,
 3,godot_dropin/assets/spine/special_challenge_reward/reward_ad_icon.png,FAIL,chưa có file
 3,godot_dropin/assets/spine/special_challenge_reward/reward_unlock_title.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/game/bell.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/game/candy.png,FAIL,chưa có file
-3,godot_dropin/assets/sprites/christmas_theme/game/gift.png,FAIL,chưa có file
+3,godot_dropin/assets/sprites/christmas_theme/game/gift.png,OK,
 3,godot_dropin/assets/sprites/christmas_theme/game/hat.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/game/snowflake.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/splash/image.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/splash/progress_bar.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/splash/progress_fill.png,FAIL,chưa có file
-3,godot_dropin/assets/sprites/christmas_theme/splash/progress_icon.png,FAIL,chưa có file
+3,godot_dropin/assets/sprites/christmas_theme/splash/progress_icon.png,OK,
 3,godot_dropin/assets/sprites/christmas_theme/splash/snowflake.png,FAIL,chưa có file
 3,motion/spine/banner_hard/small_popup_no_text/,FAIL,thiếu motion.md; thiếu lớp arrow_inner; thiếu lớp arrow_outer; thiếu lớp backlight; thiếu lớp badge_blur; thiếu lớp badge_border; thiếu lớp badge_face; thiếu lớp body_panel
 3,motion/spine/banner_super_hard/small_popup_no_text_purple/,FAIL,thiếu motion.md; thiếu lớp arrow_inner; thiếu lớp arrow_outer; thiếu lớp backlight; thiếu lớp badge_blur; thiếu lớp badge_border; thiếu lớp badge_face; thiếu lớp body_panel
@@ -993,7 +993,7 @@
 3,motion/spine/combo_fullscreen/Combo_confetti5/,FAIL,thiếu motion.md; thiếu lớp amazing_flower_1; thiếu lớp amazing_flower_1_shadow; thiếu lớp amazing_flower_1s; thiếu lớp amazing_flower_1s_shadow; thiếu lớp amazing_flower_2; thiếu lớp amazing_flower_2_shadow; thiếu lớp amazing_text
 3,motion/spine/combo_timing2/Combo_timing2_complete_base/,FAIL,thiếu motion.md; thiếu lớp amazing_base_glow_lo; thiếu lớp amazing_flower_1; thiếu lớp amazing_flower_1_glow_lo; thiếu lớp amazing_flower_1_shadow; thiếu lớp amazing_flower_1s; thiếu lớp amazing_flower_1s_glow_lo; thiếu lớp amazing_flower_1s_shadow
 3,motion/spine/daily_checkin/coin/effect_coin_clover/,FAIL,thiếu motion.md; thiếu lớp image_jinbi_00000; thiếu lớp image_jinbi_00001; thiếu lớp image_jinbi_00002; thiếu lớp image_jinbi_00003; thiếu lớp image_jinbi_00004; thiếu lớp image_jinbi_00005; thiếu lớp image_jinbi_00006
-3,motion/spine/daily_checkin/gift/gift_box/,FAIL,thiếu motion.md; thiếu lớp gift_body; thiếu lớp gift_bow_knot; thiếu lớp gift_bow_left; thiếu lớp gift_bow_right; thiếu lớp gift_lid; thiếu lớp gift_ribbon_lid; thiếu lớp gift_ribbon_vertical
+3,motion/spine/daily_checkin/gift/gift_box/,OK,
 3,motion/spine/daily_checkin/party/Celebrate/,FAIL,thiếu motion.md; thiếu lớp figma_confetti_blue_ribbon; thiếu lớp figma_confetti_blue_triangle; thiếu lớp figma_confetti_cyan_paper; thiếu lớp figma_confetti_green_ribbon; thiếu lớp figma_confetti_green_triangle; thiếu lớp figma_confetti_purple_paper; thiếu lớp figma_confetti_red_paper
 3,motion/spine/daily_checkin/party/celebration/,FAIL,thiếu motion.md; thiếu lớp figma_confetti_blue_ribbon; thiếu lớp figma_confetti_blue_triangle; thiếu lớp figma_confetti_cyan_paper; thiếu lớp figma_confetti_green_ribbon; thiếu lớp figma_confetti_green_triangle; thiếu lớp figma_confetti_purple_paper; thiếu lớp figma_confetti_red_paper
 3,motion/spine/daily_checkin/proud/Sunglasses/,FAIL,thiếu motion.md; thiếu lớp brow_left; thiếu lớp brow_right; thiếu lớp eye_white_left; thiếu lớp eye_white_right; thiếu lớp flower_body; thiếu lớp frame_sweep; thiếu lớp glasses
@@ -1012,7 +1012,7 @@
 3,motion/spine/effect_game_logo/effect_game_logo/,FAIL,thiếu motion.md; thiếu lớp image_flower_mix_00000; thiếu lớp image_flower_mix_00001; thiếu lớp image_flower_mix_00002; thiếu lớp image_flower_mix_00003; thiếu lớp image_flower_mix_00004; thiếu lớp image_flower_mix_00005; thiếu lớp image_flower_mix_00006
 3,motion/spine/effect_good_luck/effect_good_luck/,FAIL,thiếu motion.md; thiếu lớp flower_large_glow; thiếu lớp flower_small_glow; thiếu lớp original_backplate; thiếu lớp particle_pink; thiếu lớp text
 3,motion/spine/effect_hard_super_hard/hard_super_hard/,FAIL,thiếu motion.md; thiếu lớp board_hard; thiếu lớp board_super; thiếu lớp body; thiếu lớp flower_l; thiếu lớp flower_l_m; thiếu lớp flower_r; thiếu lớp flower_s
-3,motion/spine/effect_like/effect_like/,FAIL,thiếu motion.md; thiếu lớp like; thiếu lớp star_particles
+3,motion/spine/effect_like/effect_like/,OK,
 3,motion/spine/effect_smart_move/effect_smart_move/,FAIL,thiếu motion.md; thiếu lớp common_element_colorful_star_2; thiếu lớp et_point_40303; thiếu lớp new/gp_text_smart_move
 3,motion/spine/effect_splash_birdie01/effect_splash_birdie01/,FAIL,thiếu motion.md; thiếu lớp bird_00006; thiếu lớp bird_00007; thiếu lớp bird_00008; thiếu lớp bird_00009; thiếu lớp bird_00010; thiếu lớp bird_00011; thiếu lớp bird_00012
 3,motion/spine/effect_win_streak/effect_win_streak/,FAIL,thiếu motion.md; thiếu lớp dp1_1; thiếu lớp dp1_2; thiếu lớp dp1_3; thiếu lớp dp1_4; thiếu lớp dp2_1; thiếu lớp dp2_2; thiếu lớp dp2_3
@@ -1022,7 +1022,7 @@
 3,motion/spine/guide_hand02/guide_hand02/,OK,
 3,motion/spine/iq_genius/iq_genius/,FAIL,thiếu motion.md; thiếu lớp alt_confetti_blue_01; thiếu lớp alt_confetti_blue_03; thiếu lớp alt_confetti_green_02; thiếu lớp alt_confetti_red_05; thiếu lớp alt_confetti_yellow_04; thiếu lớp alt_ribbon_blue_04; thiếu lớp alt_ribbon_green_05
 3,motion/spine/long_link_horn_flag/Horn_Flag/,FAIL,thiếu motion.md; thiếu lớp dot_blue; thiếu lớp dot_orange; thiếu lớp dot_yellow; thiếu lớp flag_back; thiếu lớp flag_front; thiếu lớp horn
-3,motion/spine/long_link_rainbow/Rainbow/,FAIL,thiếu motion.md; thiếu lớp cloud_left; thiếu lớp cloud_right; thiếu lớp rainbow_reveal_23; thiếu lớp rainbow_star_particle
+3,motion/spine/long_link_rainbow/Rainbow/,OK,
 3,motion/spine/long_link_seed/Seed/,OK,
 3,motion/spine/rank_completion/rank_completion/,FAIL,thiếu motion.md; thiếu lớp badge_rank_01; thiếu lớp banner_ribbon; thiếu lớp fx_big_up_sweep_band; thiếu lớp fx_fall_gold_dot; thiếu lớp fx_glow_overlay; thiếu lớp fx_impact_smoke_01; thiếu lớp fx_impact_smoke_05
 3,motion/spine/rank_completion/rank_completion_2/,FAIL,thiếu motion.md; thiếu lớp fx_radial_rays; thiếu lớp fx_trophy_glow; thiếu lớp trophy_handle_right_art; thiếu lớp trophy_main; thiếu lớp wreath_shared_stem
@@ -1030,36 +1030,36 @@
 3,motion/spine/rank_new_season/rank_new_season/,FAIL,thiếu motion.md; thiếu lớp flower_blue; thiếu lớp flower_pink; thiếu lớp flower_yellow; thiếu lớp glow_new; thiếu lớp leaf_blue_middle; thiếu lớp leaf_blue_upper; thiếu lớp leaf_left_lower
 3,motion/spine/special_challenge_reward/Box_kk_merged/,FAIL,thiếu motion.md; thiếu lớp reward_halo; thiếu lớp reward_halo_coin; thiếu lớp box_closed_front; thiếu lớp garden_chest; thiếu lớp chest_rays; thiếu lớp reward_button_blue; thiếu lớp reward_button_gray
 3,motion/spine/special_challenge_reward/Box_kk_merged_flags/,FAIL,thiếu motion.md; thiếu lớp celebration_flags_left; thiếu lớp celebration_flags_right
-3,motion/spine/special_challenge_reward/Box_kk_merged_halos/,FAIL,thiếu motion.md; thiếu lớp reward_halo_dual; thiếu lớp reward_halo_coin_dual; thiếu lớp reward_halo_undo_dual
+3,motion/spine/special_challenge_reward/Box_kk_merged_halos/,OK,
 3,motion/spine/special_challenge_reward/Box_kk_merged_vine/,OK,
-3,unity/Assets/_IEC/Image/Streak/Anim/Gift_BlueGold_Spine42/Gift_BlueGold.png,FAIL,chưa có file
-3,unity/Assets/_IEC/Image/Streak/Anim/Gift_RedGold_Spine42/Gift_RedGold.png,FAIL,chưa có file
+3,unity/Assets/_IEC/Image/Streak/Anim/Gift_BlueGold_Spine42/Gift_BlueGold.png,OK,
+3,unity/Assets/_IEC/Image/Streak/Anim/Gift_RedGold_Spine42/Gift_RedGold.png,OK,
 3,unity/Assets/_IEC/Image/Streak/Anim/PawStreak_Spine/paw_streak.png,OK,
-3,unity/Assets/_IEC/Image/Win/Anim/CatVictory.png,FAIL,chưa có file
-3,unity/Assets/_IEC/Image/Banner/DIS_BANNER_CHALLENGE.png,WARN,file nguồn 589x301 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-3,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_1.png,WARN,file nguồn 412x517 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-3,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_2.png,WARN,file nguồn 451x526 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+3,unity/Assets/_IEC/Image/Win/Anim/CatVictory.png,OK,
+3,unity/Assets/_IEC/Image/Banner/DIS_BANNER_CHALLENGE.png,OK,
+3,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_1.png,OK,
+3,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_2.png,OK,
 3,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_3.png,OK,
 3,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_TROPHY.png,OK,
 3,unity/Assets/_IEC/Image/Banner/TEXT_GOODLUCK.png,OK,
 3,unity/Assets/_IEC/Image/Banner/TEXT_SMART.png,OK,
-3,unity/Assets/_IEC/Image/Endless/BOARD_ENDLESS_RESULT.png,WARN,file nguồn 543x587 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_BAR.png,WARN,file nguồn 311x68 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+3,unity/Assets/_IEC/Image/Endless/BOARD_ENDLESS_RESULT.png,OK,
+3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_BAR.png,OK,
 3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_CLOCK.png,OK,
-3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_GREEN.png,WARN,file nguồn 301x48 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_RED.png,WARN,file nguồn 305x48 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
-3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_YELLOW.png,WARN,file nguồn 305x48 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_GREEN.png,OK,
+3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_RED.png,OK,
+3,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_YELLOW.png,OK,
 3,unity/Assets/_IEC/Image/Endless/EFF_TIME_ADD_1.png,OK,
 3,unity/Assets/_IEC/Image/Endless/EFF_TIME_ADD_2.png,OK,
 3,unity/Assets/_IEC/Image/Home/BOARD_AVATAR_FRAME.png,OK,
 3,unity/Assets/_IEC/Image/Home/BOARD_NEW_SCENE.png,OK,
 3,unity/Assets/_IEC/Image/Popup/ICON_SPINNER.png,OK,
-3,unity/Assets/_IEC/Image/Special/DIS_FLAGS.png,WARN,file nguồn 705x188 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+3,unity/Assets/_IEC/Image/Special/DIS_FLAGS.png,OK,
 3,unity/Assets/_IEC/Image/Special/DIS_REWARD_RIBBON.png,OK,
 3,unity/Assets/_IEC/Image/Special/GIFT_CHEST.png,OK,
 3,unity/Assets/_IEC/Image/Special/GIFT_CHEST_OPEN.png,OK,
-3,unity/Assets/_IEC/Image/Store/STORE_FEATURE.png,FAIL,chưa có file
-3,unity/Assets/_IEC/Image/Theme/Flower/BG_BOARD_FLOWER.png,WARN,file nguồn 841x1870 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+3,unity/Assets/_IEC/Image/Store/STORE_FEATURE.png,OK,
+3,unity/Assets/_IEC/Image/Theme/Flower/BG_BOARD_FLOWER.png,OK,
 3,unity/Assets/_IEC/Image/Theme/Flower/CONTAINER_FLOWER_0.png,OK,
 3,unity/Assets/_IEC/Image/Theme/Flower/CONTAINER_FLOWER_1.png,OK,
 3,unity/Assets/_IEC/Image/Theme/Flower/CONTAINER_FLOWER_2.png,OK,
@@ -1085,7 +1085,7 @@
 3,unity/Assets/_IEC/Image/Theme/Flower/OBJ_LOCK_FLOWER.png,OK,
 3,unity/Assets/_IEC/Image/Theme/Flower/OBJ_ORDER_EMPTY_FLOWER.png,OK,
 3,unity/Assets/_IEC/Image/Theme/Flower/OBJ_ROPE_LINE_FLOWER.png,OK,
-3,unity/Assets/_IEC/Image/Theme/Winter/BG_BOARD_WINTER.png,WARN,file nguồn 841x1870 nhỏ hơn bản xuất: đã phóng to hoặc kéo giãn
+3,unity/Assets/_IEC/Image/Theme/Winter/BG_BOARD_WINTER.png,OK,
 3,unity/Assets/_IEC/Image/Theme/Winter/CONTAINER_WINTER_0.png,OK,
 3,unity/Assets/_IEC/Image/Theme/Winter/CONTAINER_WINTER_1.png,OK,
 3,unity/Assets/_IEC/Image/Theme/Winter/CONTAINER_WINTER_2.png,OK,

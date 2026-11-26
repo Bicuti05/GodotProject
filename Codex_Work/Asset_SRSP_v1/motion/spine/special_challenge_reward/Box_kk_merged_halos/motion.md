@@ -1,5 +1,5 @@
-# Box_kk_merged_halos
+# Quầng sáng phần thưởng
 
-Bring in the reward halo behind the icon. Scale from 82% to 106% in 260 ms, settle at 100%, then pulse the opacity before fading after the reward is taken.
+Đặt quầng sáng sau biểu tượng. Phóng từ 82% lên 106% trong 260 ms rồi về 100%. Cho độ sáng nhấp nhẹ, sau đó làm mờ khi người chơi nhận phần thưởng.
 
-Assemble and animate the independent Sweet Rope PNGs in the destination project.
+Ráp và tạo chuyển động từ các lớp PNG Sweet Rope riêng trong dự án đích.

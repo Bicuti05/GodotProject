@@ -1,5 +1,5 @@
-# effect_like
+# Cử chỉ thích
 
-Scale the thumb from 85% to 108% over 140 ms before settling at 100%. Send two stars upward and fade all parts over 220 ms.
+Phóng ngón cái từ 85% lên 108% trong 140 ms rồi về 100%. Cho hai sao bay lên, sau đó làm mờ tất cả các lớp trong 220 ms.
 
-Assemble and animate the independent Sweet Rope PNGs in the destination project.
+Ráp và tạo chuyển động từ các lớp PNG Sweet Rope riêng trong dự án đích.
