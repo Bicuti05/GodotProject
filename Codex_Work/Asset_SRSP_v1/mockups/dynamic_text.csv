@@ -49,7 +49,7 @@
 03_gameplay/gameplay_last_step,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_last_step,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_last_step,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_last_step,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_last_step,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_last_step,Quota progress,10/12,540,513,35,mm,#75431f,,0,42
 03_gameplay/gameplay_last_step,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,65
 03_gameplay/gameplay_last_step,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,68
@@ -62,7 +62,7 @@
 03_gameplay/gameplay_level12_locked,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_level12_locked,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_level12_locked,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_level12_locked,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_level12_locked,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_level12_locked,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 03_gameplay/gameplay_level12_locked,Unlock delivery count,2,409,1129,33,mm,#fff2d0,#713b24,3,52
 03_gameplay/gameplay_level12_locked,Unlock delivery count,2,540,1129,33,mm,#fff2d0,#713b24,3,62
@@ -78,7 +78,7 @@
 03_gameplay/gameplay_level15_hard,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 03_gameplay/gameplay_level15_hard,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 03_gameplay/gameplay_level15_hard,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-03_gameplay/gameplay_level15_hard,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+03_gameplay/gameplay_level15_hard,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 03_gameplay/gameplay_level15_hard,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 03_gameplay/gameplay_level15_hard,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 03_gameplay/gameplay_level15_hard,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
@@ -91,7 +91,7 @@
 03_gameplay/gameplay_level1_start,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_level1_start,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_level1_start,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_level1_start,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_level1_start,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_level1_start,Quota progress,0/3,540,513,35,mm,#75431f,,0,23
 03_gameplay/gameplay_level1_start,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,45
 03_gameplay/gameplay_level1_start,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,48
@@ -104,7 +104,7 @@
 03_gameplay/gameplay_level3_start,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_level3_start,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_level3_start,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_level3_start,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_level3_start,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_level3_start,Quota progress,0/11,540,513,35,mm,#75431f,,0,31
 03_gameplay/gameplay_level3_start,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,72
 03_gameplay/gameplay_level3_start,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,75
@@ -118,7 +118,7 @@
 03_gameplay/gameplay_level40_hard,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 03_gameplay/gameplay_level40_hard,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 03_gameplay/gameplay_level40_hard,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-03_gameplay/gameplay_level40_hard,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+03_gameplay/gameplay_level40_hard,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 03_gameplay/gameplay_level40_hard,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 03_gameplay/gameplay_level40_hard,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,83
 03_gameplay/gameplay_level40_hard,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,86
@@ -131,7 +131,7 @@
 03_gameplay/gameplay_level7_hidden,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_level7_hidden,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_level7_hidden,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_level7_hidden,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_level7_hidden,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_level7_hidden,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 03_gameplay/gameplay_level7_hidden,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,77
 03_gameplay/gameplay_level7_hidden,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,80
@@ -144,7 +144,7 @@
 03_gameplay/gameplay_sunlight_ice_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_sunlight_ice_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_sunlight_ice_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_sunlight_ice_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_sunlight_ice_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_sunlight_ice_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 03_gameplay/gameplay_sunlight_ice_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,90
 03_gameplay/gameplay_sunlight_ice_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,93
@@ -157,7 +157,7 @@
 03_gameplay/gameplay_sunlight_ice_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_sunlight_ice_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_sunlight_ice_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_sunlight_ice_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_sunlight_ice_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_sunlight_ice_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 03_gameplay/gameplay_sunlight_ice_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,93
 03_gameplay/gameplay_sunlight_ice_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,96
@@ -170,7 +170,7 @@
 03_gameplay/gameplay_sunlight_ice_3,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_sunlight_ice_3,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_sunlight_ice_3,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_sunlight_ice_3,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_sunlight_ice_3,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_sunlight_ice_3,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 03_gameplay/gameplay_sunlight_ice_3,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,92
 03_gameplay/gameplay_sunlight_ice_3,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,95
@@ -184,7 +184,7 @@
 03_gameplay/gameplay_super_hard,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 03_gameplay/gameplay_super_hard,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 03_gameplay/gameplay_super_hard,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-03_gameplay/gameplay_super_hard,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+03_gameplay/gameplay_super_hard,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 03_gameplay/gameplay_super_hard,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 03_gameplay/gameplay_super_hard,Unlock delivery count,2,409,1202,33,mm,#fff2d0,#713b24,3,58
 03_gameplay/gameplay_super_hard,Unlock delivery count,2,540,1202,33,mm,#fff2d0,#713b24,3,69
@@ -199,7 +199,7 @@
 03_gameplay/gameplay_test_8_columns,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_test_8_columns,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_test_8_columns,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_test_8_columns,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_test_8_columns,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_test_8_columns,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 03_gameplay/gameplay_test_8_columns,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,92
 03_gameplay/gameplay_test_8_columns,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,95
@@ -212,7 +212,7 @@
 03_gameplay/gameplay_test_challenge,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_test_challenge,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_test_challenge,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_test_challenge,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_test_challenge,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_test_challenge,Quota progress,0/3,540,513,35,mm,#75431f,,0,23
 03_gameplay/gameplay_test_challenge,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,45
 03_gameplay/gameplay_test_challenge,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,48
@@ -226,7 +226,7 @@
 03_gameplay/gameplay_test_golden_pig,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_test_golden_pig,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_test_golden_pig,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_test_golden_pig,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_test_golden_pig,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_test_golden_pig,Quota progress,0/3,540,513,35,mm,#75431f,,0,23
 03_gameplay/gameplay_test_golden_pig,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,45
 03_gameplay/gameplay_test_golden_pig,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,48
@@ -239,7 +239,7 @@
 03_gameplay/gameplay_test_long_rope,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 03_gameplay/gameplay_test_long_rope,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 03_gameplay/gameplay_test_long_rope,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-03_gameplay/gameplay_test_long_rope,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+03_gameplay/gameplay_test_long_rope,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 03_gameplay/gameplay_test_long_rope,Quota progress,0/3,540,513,35,mm,#75431f,,0,23
 03_gameplay/gameplay_test_long_rope,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,63
 03_gameplay/gameplay_test_long_rope,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,66
@@ -253,7 +253,7 @@
 03_gameplay/helper_extra_rope,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 03_gameplay/helper_extra_rope,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 03_gameplay/helper_extra_rope,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-03_gameplay/helper_extra_rope,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+03_gameplay/helper_extra_rope,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 03_gameplay/helper_extra_rope,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 03_gameplay/helper_extra_rope,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,80
 03_gameplay/helper_extra_rope,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,83
@@ -267,7 +267,7 @@
 03_gameplay/helper_fill_container_after,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 03_gameplay/helper_fill_container_after,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 03_gameplay/helper_fill_container_after,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-03_gameplay/helper_fill_container_after,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+03_gameplay/helper_fill_container_after,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 03_gameplay/helper_fill_container_after,Quota progress,1/12,540,513,35,mm,#75431f,,0,34
 03_gameplay/helper_fill_container_after,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,75
 03_gameplay/helper_fill_container_after,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,78
@@ -281,7 +281,7 @@
 03_gameplay/helper_fill_container_motion,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 03_gameplay/helper_fill_container_motion,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 03_gameplay/helper_fill_container_motion,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-03_gameplay/helper_fill_container_motion,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+03_gameplay/helper_fill_container_motion,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 03_gameplay/helper_fill_container_motion,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 03_gameplay/helper_fill_container_motion,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 03_gameplay/helper_fill_container_motion,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
@@ -295,7 +295,7 @@
 03_gameplay/helper_hint,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 03_gameplay/helper_hint,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 03_gameplay/helper_hint,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-03_gameplay/helper_hint,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+03_gameplay/helper_hint,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 03_gameplay/helper_hint,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 03_gameplay/helper_hint,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 03_gameplay/helper_hint,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
@@ -309,7 +309,7 @@
 04_popup/dead_no_moves_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 04_popup/dead_no_moves_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 04_popup/dead_no_moves_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-04_popup/dead_no_moves_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+04_popup/dead_no_moves_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 04_popup/dead_no_moves_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 04_popup/dead_no_moves_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,76
 04_popup/dead_no_moves_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,79
@@ -325,7 +325,7 @@
 04_popup/dead_no_moves_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 04_popup/dead_no_moves_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 04_popup/dead_no_moves_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-04_popup/dead_no_moves_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+04_popup/dead_no_moves_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 04_popup/dead_no_moves_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 04_popup/dead_no_moves_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,75
 04_popup/dead_no_moves_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,78
@@ -388,7 +388,7 @@
 04_popup/dialog_rank_introduction,dynamic_text,Orchard 1,540,760,62,mm,#fff4db,#80532e,6,12
 04_popup/dialog_rank_introduction,dynamic_text,0/25,540,1620,38,mm,#693b21,,0,39
 04_popup/dialog_rank_introduction,dynamic_text,Level 17,540,1976,56,mm,#fffdef,#6b501f,2,41
-04_popup/dialog_rank_introduction,banner title,Fruit Challenge,540,318,52,mm,#fff8da,#773f25,5,44
+04_popup/dialog_rank_introduction,banner title,Fruit Challenge,540,328,52,mm,#fff8da,#773f25,5,44
 04_popup/dialog_rank_introduction,dynamic_text,Collect Golden Apples,565,622,52,mm,#fff4db,#4e3926,4,46
 04_popup/dialog_rank_introduction,dynamic_text,1,105,956,46,mm,#693b21,,0,48
 04_popup/dialog_rank_introduction,dynamic_text,Ryan,307,958,45,lm,#693b21,,0,51
@@ -419,7 +419,7 @@
 04_popup/dialog_rank_season_win,dynamic_text,Orchard 1,540,760,62,mm,#fff4db,#80532e,6,12
 04_popup/dialog_rank_season_win,dynamic_text,0/25,540,1620,38,mm,#693b21,,0,39
 04_popup/dialog_rank_season_win,dynamic_text,Level 17,540,1976,56,mm,#fffdef,#6b501f,2,41
-04_popup/dialog_rank_season_win,banner title,You win!,540,1511,64,mm,#fff8da,#773f25,5,98
+04_popup/dialog_rank_season_win,banner title,You win!,540,1521,64,mm,#fff8da,#773f25,5,98
 04_popup/dialog_rank_season_win,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,100
 04_popup/dialog_reset_confirm,dynamic_text,330,855,98,35,mm,#693b21,,0,7
 04_popup/dialog_reset_confirm,dynamic_text,Rank,115,318,36,mm,#fffdef,#6b501f,2,9
@@ -453,7 +453,7 @@
 04_popup/dialog_special_challenge_reward,dynamic_text,Orchard 1,540,760,62,mm,#fff4db,#80532e,6,12
 04_popup/dialog_special_challenge_reward,dynamic_text,0/25,540,1620,38,mm,#693b21,,0,39
 04_popup/dialog_special_challenge_reward,dynamic_text,Level 17,540,1976,56,mm,#fffdef,#6b501f,2,41
-04_popup/dialog_special_challenge_reward,banner title,Reward Unlock!,540,519,64,mm,#fff8da,#773f25,5,80
+04_popup/dialog_special_challenge_reward,banner title,Reward Unlock!,540,529,64,mm,#fff8da,#773f25,5,80
 04_popup/dialog_special_challenge_reward,dynamic_text,Claim ×2,540,1527,52,mm,#fffdef,#6b501f,2,83
 04_popup/dialog_special_challenge_reward,dynamic_text,Claim,540,1671,50,mm,#754324,,0,85
 04_popup/dialog_special_challenge_reward,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,87
@@ -473,14 +473,14 @@
 04_popup/finish_result,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/finish_result,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/finish_result,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/finish_result,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/finish_result,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/finish_result,Quota progress,10/12,540,513,35,mm,#75431f,,0,42
 04_popup/finish_result,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,75
 04_popup/finish_result,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,78
 04_popup/finish_result,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,81
 04_popup/finish_result,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,84
 04_popup/finish_result,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,87
-04_popup/finish_result,banner title,Unstoppable!,540,522,64,mm,#fff8da,#773f25,5,128
+04_popup/finish_result,banner title,Unstoppable!,540,532,64,mm,#fff8da,#773f25,5,128
 04_popup/finish_result,dynamic_text,Time,238,1312,43,mm,#693b21,,0,136
 04_popup/finish_result,dynamic_text,00:35,238,1391,47,mm,#693b21,,0,137
 04_popup/finish_result,dynamic_text,Moves,540,1312,43,mm,#693b21,,0,139
@@ -494,14 +494,14 @@
 04_popup/finish_result_fantastic,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/finish_result_fantastic,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/finish_result_fantastic,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/finish_result_fantastic,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/finish_result_fantastic,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/finish_result_fantastic,Quota progress,10/12,540,513,35,mm,#75431f,,0,42
 04_popup/finish_result_fantastic,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,75
 04_popup/finish_result_fantastic,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,78
 04_popup/finish_result_fantastic,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,81
 04_popup/finish_result_fantastic,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,84
 04_popup/finish_result_fantastic,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,87
-04_popup/finish_result_fantastic,banner title,Fantastic!,540,522,64,mm,#fff8da,#773f25,5,128
+04_popup/finish_result_fantastic,banner title,Fantastic!,540,532,64,mm,#fff8da,#773f25,5,128
 04_popup/finish_result_fantastic,dynamic_text,Time,238,1312,43,mm,#693b21,,0,136
 04_popup/finish_result_fantastic,dynamic_text,00:35,238,1391,47,mm,#693b21,,0,137
 04_popup/finish_result_fantastic,dynamic_text,Moves,540,1312,43,mm,#693b21,,0,139
@@ -515,7 +515,7 @@
 04_popup/helper_unlock_hint,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/helper_unlock_hint,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/helper_unlock_hint,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/helper_unlock_hint,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/helper_unlock_hint,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/helper_unlock_hint,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 04_popup/helper_unlock_hint,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,63
 04_popup/helper_unlock_hint,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,66
@@ -530,7 +530,7 @@
 04_popup/helper_unlock_rope,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/helper_unlock_rope,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/helper_unlock_rope,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/helper_unlock_rope,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/helper_unlock_rope,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/helper_unlock_rope,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 04_popup/helper_unlock_rope,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,63
 04_popup/helper_unlock_rope,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,66
@@ -545,7 +545,7 @@
 04_popup/helper_unlock_undo,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/helper_unlock_undo,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/helper_unlock_undo,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/helper_unlock_undo,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/helper_unlock_undo,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/helper_unlock_undo,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 04_popup/helper_unlock_undo,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,63
 04_popup/helper_unlock_undo,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,66
@@ -555,7 +555,7 @@
 04_popup/helper_unlock_undo,dynamic_text,UNDO,540,610,89,mm,#ffe569,#8f5126,6,77
 04_popup/helper_unlock_undo,dynamic_text,Undo the last move,540,1340,48,mm,#fff6dd,#5b3828,4,79
 04_popup/helper_unlock_undo,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,82
-04_popup/rank_finish_climb,banner title,Leaderboard,540,168,64,mm,#fff8da,#773f25,5,3
+04_popup/rank_finish_climb,banner title,Leaderboard,539,178,64,mm,#fff8da,#773f25,5,3
 04_popup/rank_finish_climb,dynamic_text,Amazing! You climbed 8 places,540,348,43,mm,#fff3d2,#624325,6,4
 04_popup/rank_finish_climb,dynamic_text,Finn,189,689,43,mm,#693b21,,0,8
 04_popup/rank_finish_climb,dynamic_text,6,228,971,40,mm,#693b21,,0,11
@@ -583,7 +583,7 @@
 04_popup/rank_finish_climb,dynamic_text,54,919,1940,39,mm,#693b21,,0,71
 04_popup/rank_finish_climb,dynamic_text,Continue,540,2151,53,mm,#fffdef,#6b501f,2,73
 04_popup/rank_finish_climb,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,75
-04_popup/rank_finish_continue,banner title,Leaderboard,540,168,64,mm,#fff8da,#773f25,5,3
+04_popup/rank_finish_continue,banner title,Leaderboard,539,178,64,mm,#fff8da,#773f25,5,3
 04_popup/rank_finish_continue,dynamic_text,Collect more Golden Apples,540,348,43,mm,#fff3d2,#624325,6,4
 04_popup/rank_finish_continue,dynamic_text,Finn,189,689,43,mm,#693b21,,0,8
 04_popup/rank_finish_continue,dynamic_text,6,228,971,40,mm,#693b21,,0,11
@@ -616,14 +616,14 @@
 04_popup/rank_finish_enter,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/rank_finish_enter,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/rank_finish_enter,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/rank_finish_enter,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/rank_finish_enter,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/rank_finish_enter,Quota progress,6/12,540,513,35,mm,#75431f,,0,38
 04_popup/rank_finish_enter,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,77
 04_popup/rank_finish_enter,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,80
 04_popup/rank_finish_enter,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,83
 04_popup/rank_finish_enter,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,86
 04_popup/rank_finish_enter,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,89
-04_popup/rank_finish_enter,banner title,Leaderboard,540,168,64,mm,#fff8da,#773f25,5,92
+04_popup/rank_finish_enter,banner title,Leaderboard,539,178,64,mm,#fff8da,#773f25,5,92
 04_popup/rank_finish_enter,dynamic_text,Finn,189,689,43,mm,#693b21,,0,96
 04_popup/rank_finish_enter,dynamic_text,6,228,971,40,mm,#693b21,,0,99
 04_popup/rank_finish_enter,dynamic_text,2,189,1060,41,mm,#693b21,,0,101
@@ -654,42 +654,42 @@
 04_popup/streak_12,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/streak_12,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/streak_12,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/streak_12,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/streak_12,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/streak_12,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 04_popup/streak_12,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,65
 04_popup/streak_12,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,68
 04_popup/streak_12,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,71
 04_popup/streak_12,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,74
 04_popup/streak_12,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,77
-04_popup/streak_12,banner title,12 Streak!,540,1318,64,mm,#fff8da,#773f25,5,102
+04_popup/streak_12,banner title,12 Streak!,540,1328,64,mm,#fff8da,#773f25,5,102
 04_popup/streak_12,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,104
 04_popup/streak_3,Header/LevelBlock/LevelLabel,Level 8,540,101,52,mm,#744322,,0,5
 04_popup/streak_3,Header/CoinHud/CoinLabel,330,972,102,42,mm,#75431f,,0,8
 04_popup/streak_3,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/streak_3,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/streak_3,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/streak_3,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/streak_3,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/streak_3,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 04_popup/streak_3,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,65
 04_popup/streak_3,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,68
 04_popup/streak_3,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,71
 04_popup/streak_3,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,74
 04_popup/streak_3,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,77
-04_popup/streak_3,banner title,3 Streak!,540,1318,64,mm,#fff8da,#773f25,5,102
+04_popup/streak_3,banner title,3 Streak!,540,1328,64,mm,#fff8da,#773f25,5,102
 04_popup/streak_3,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,104
 04_popup/streak_7,Header/LevelBlock/LevelLabel,Level 8,540,101,52,mm,#744322,,0,5
 04_popup/streak_7,Header/CoinHud/CoinLabel,330,972,102,42,mm,#75431f,,0,8
 04_popup/streak_7,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 04_popup/streak_7,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 04_popup/streak_7,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-04_popup/streak_7,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+04_popup/streak_7,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 04_popup/streak_7,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 04_popup/streak_7,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,65
 04_popup/streak_7,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,68
 04_popup/streak_7,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,71
 04_popup/streak_7,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,74
 04_popup/streak_7,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,77
-04_popup/streak_7,banner title,7 Streak!,540,1318,64,mm,#fff8da,#773f25,5,102
+04_popup/streak_7,banner title,7 Streak!,540,1328,64,mm,#fff8da,#773f25,5,102
 04_popup/streak_7,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,104
 04_popup/win_motion_01,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 04_popup/win_motion_01,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -697,7 +697,7 @@
 04_popup/win_motion_01,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 04_popup/win_motion_01,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 04_popup/win_motion_01,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-04_popup/win_motion_01,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+04_popup/win_motion_01,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 04_popup/win_motion_01,Quota progress,11/12,540,513,35,mm,#75431f,,0,44
 04_popup/win_motion_01,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,65
 04_popup/win_motion_01,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,68
@@ -711,7 +711,7 @@
 04_popup/win_motion_02,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 04_popup/win_motion_02,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 04_popup/win_motion_02,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-04_popup/win_motion_02,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+04_popup/win_motion_02,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 04_popup/win_motion_02,Quota progress,11/12,540,513,35,mm,#75431f,,0,44
 04_popup/win_motion_02,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,65
 04_popup/win_motion_02,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,68
@@ -725,14 +725,14 @@
 05_banner/banner_bonus_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_bonus_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_bonus_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_bonus_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_bonus_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_bonus_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_bonus_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_bonus_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_bonus_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_bonus_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_bonus_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_bonus_1,banner title,Bonus Level,540,1175,64,mm,#fff8da,#773f25,5,91
+05_banner/banner_bonus_1,banner title,Bonus Level,540,1185,64,mm,#fff8da,#773f25,5,91
 05_banner/banner_bonus_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,93
 05_banner/banner_bonus_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_bonus_2,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -740,14 +740,14 @@
 05_banner/banner_bonus_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_bonus_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_bonus_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_bonus_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_bonus_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_bonus_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_bonus_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_bonus_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_bonus_2,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_bonus_2,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_bonus_2,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_bonus_2,banner title,Bonus Level,540,1164,64,mm,#fff8da,#773f25,5,90
+05_banner/banner_bonus_2,banner title,Bonus Level,540,1174,64,mm,#fff8da,#773f25,5,90
 05_banner/banner_bonus_2,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,92
 05_banner/banner_challenge_1,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_challenge_1,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -755,14 +755,14 @@
 05_banner/banner_challenge_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_challenge_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_challenge_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_challenge_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_challenge_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_challenge_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_challenge_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_challenge_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_challenge_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_challenge_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_challenge_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_challenge_1,banner title,Challenge!,540,651,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_challenge_1,banner title,Challenge!,540,661,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_challenge_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,90
 05_banner/banner_challenge_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_challenge_2,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -770,7 +770,7 @@
 05_banner/banner_challenge_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_challenge_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_challenge_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_challenge_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_challenge_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_challenge_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_challenge_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_challenge_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
@@ -784,14 +784,14 @@
 05_banner/banner_combo_fullscreen_fx_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_combo_fullscreen_fx_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_combo_fullscreen_fx_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_combo_fullscreen_fx_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_combo_fullscreen_fx_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_combo_fullscreen_fx_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_combo_fullscreen_fx_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_combo_fullscreen_fx_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_combo_fullscreen_fx_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_combo_fullscreen_fx_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_combo_fullscreen_fx_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_combo_fullscreen_fx_1,banner title,Nice!,540,651,64,mm,#fff8da,#773f25,5,126
+05_banner/banner_combo_fullscreen_fx_1,banner title,Nice!,540,661,64,mm,#fff8da,#773f25,5,126
 05_banner/banner_combo_fullscreen_fx_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,128
 05_banner/banner_combo_fullscreen_fx_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_combo_fullscreen_fx_2,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -799,14 +799,14 @@
 05_banner/banner_combo_fullscreen_fx_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_combo_fullscreen_fx_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_combo_fullscreen_fx_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_combo_fullscreen_fx_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_combo_fullscreen_fx_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_combo_fullscreen_fx_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_combo_fullscreen_fx_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_combo_fullscreen_fx_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_combo_fullscreen_fx_2,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_combo_fullscreen_fx_2,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_combo_fullscreen_fx_2,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_combo_fullscreen_fx_2,banner title,Great!,540,622,64,mm,#fff8da,#773f25,5,137
+05_banner/banner_combo_fullscreen_fx_2,banner title,Great!,540,632,64,mm,#fff8da,#773f25,5,137
 05_banner/banner_combo_fullscreen_fx_2,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,139
 05_banner/banner_combo_preview_1,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_combo_preview_1,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -814,14 +814,14 @@
 05_banner/banner_combo_preview_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_combo_preview_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_combo_preview_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_combo_preview_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_combo_preview_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_combo_preview_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_combo_preview_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_combo_preview_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_combo_preview_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_combo_preview_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_combo_preview_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_combo_preview_1,banner title,Nice!,540,651,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_combo_preview_1,banner title,Nice!,540,661,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_combo_preview_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,90
 05_banner/banner_combo_preview_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_combo_preview_2,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -829,14 +829,14 @@
 05_banner/banner_combo_preview_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_combo_preview_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_combo_preview_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_combo_preview_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_combo_preview_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_combo_preview_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_combo_preview_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_combo_preview_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_combo_preview_2,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_combo_preview_2,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_combo_preview_2,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_combo_preview_2,banner title,Great!,540,622,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_combo_preview_2,banner title,Great!,540,632,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_combo_preview_2,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,90
 05_banner/banner_good_luck_1,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_good_luck_1,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -844,14 +844,14 @@
 05_banner/banner_good_luck_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_good_luck_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_good_luck_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_good_luck_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_good_luck_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_good_luck_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_good_luck_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_good_luck_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_good_luck_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_good_luck_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_good_luck_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_good_luck_1,banner title,Good Luck!,540,651,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_good_luck_1,banner title,Good Luck!,540,661,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_good_luck_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,90
 05_banner/banner_good_luck_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_good_luck_2,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -859,7 +859,7 @@
 05_banner/banner_good_luck_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_good_luck_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_good_luck_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_good_luck_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_good_luck_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_good_luck_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_good_luck_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_good_luck_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
@@ -873,14 +873,14 @@
 05_banner/banner_hard_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_hard_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_hard_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_hard_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_hard_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_hard_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_hard_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_hard_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_hard_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_hard_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_hard_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_hard_1,banner title,Hard,540,1081,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_hard_1,banner title,Hard,540,1091,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_hard_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,90
 05_banner/banner_hard_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_hard_2,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -888,14 +888,14 @@
 05_banner/banner_hard_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_hard_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_hard_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_hard_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_hard_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_hard_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_hard_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_hard_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_hard_2,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_hard_2,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_hard_2,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_hard_2,banner title,Hard,540,1039,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_hard_2,banner title,Hard,540,1049,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_hard_2,dynamic_text,Take your time. You can do it!,540,1175,33,mm,#693b21,,0,90
 05_banner/banner_hard_2,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,92
 05_banner/banner_smart_move_1,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
@@ -904,14 +904,14 @@
 05_banner/banner_smart_move_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_smart_move_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_smart_move_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_smart_move_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_smart_move_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_smart_move_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_smart_move_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_smart_move_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_smart_move_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_smart_move_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_smart_move_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_smart_move_1,banner title,Smart Move!,540,651,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_smart_move_1,banner title,Smart Move!,540,661,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_smart_move_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,90
 05_banner/banner_smart_move_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_smart_move_2,Header/LevelBlock/HardBadge label,Hard,540,185,34,mm,#9c4261,,0,6
@@ -919,7 +919,7 @@
 05_banner/banner_smart_move_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_smart_move_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_smart_move_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_smart_move_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_smart_move_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_smart_move_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_smart_move_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_smart_move_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
@@ -933,14 +933,14 @@
 05_banner/banner_streak_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_streak_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_streak_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_streak_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_streak_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_streak_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_streak_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_streak_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_streak_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_streak_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_streak_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_streak_1,banner title,10 Streak!,540,1353,64,mm,#fff8da,#773f25,5,113
+05_banner/banner_streak_1,banner title,10 Streak!,540,1363,64,mm,#fff8da,#773f25,5,113
 05_banner/banner_streak_1,dynamic_text,Keep your streak growing!,540,1489,33,mm,#693b21,,0,115
 05_banner/banner_streak_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,117
 05_banner/banner_streak_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
@@ -949,14 +949,14 @@
 05_banner/banner_streak_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_streak_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_streak_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_streak_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_streak_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_streak_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_streak_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_streak_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_streak_2,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_streak_2,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_streak_2,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_streak_2,banner title,10 Streak!,540,1353,64,mm,#fff8da,#773f25,5,113
+05_banner/banner_streak_2,banner title,10 Streak!,540,1363,64,mm,#fff8da,#773f25,5,113
 05_banner/banner_streak_2,dynamic_text,Keep your streak growing!,540,1489,33,mm,#693b21,,0,115
 05_banner/banner_streak_2,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,117
 05_banner/banner_streak_trophy_1,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
@@ -965,7 +965,7 @@
 05_banner/banner_streak_trophy_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_streak_trophy_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_streak_trophy_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_streak_trophy_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_streak_trophy_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_streak_trophy_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_streak_trophy_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_streak_trophy_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
@@ -979,7 +979,7 @@
 05_banner/banner_streak_trophy_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_streak_trophy_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_streak_trophy_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_streak_trophy_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_streak_trophy_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_streak_trophy_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_streak_trophy_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_streak_trophy_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
@@ -993,14 +993,14 @@
 05_banner/banner_super_hard_1,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_super_hard_1,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_super_hard_1,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_super_hard_1,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_super_hard_1,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_super_hard_1,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_super_hard_1,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_super_hard_1,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_super_hard_1,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_super_hard_1,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_super_hard_1,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_super_hard_1,banner title,Super Hard,540,1081,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_super_hard_1,banner title,Super Hard,540,1091,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_super_hard_1,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,90
 05_banner/banner_super_hard_2,Header/LevelBlock/LevelLabel,Level 15,540,101,52,mm,#744322,,0,5
 05_banner/banner_super_hard_2,Header/LevelBlock/HardBadge label,Super Hard,540,185,34,mm,#9c4261,,0,6
@@ -1008,14 +1008,14 @@
 05_banner/banner_super_hard_2,IQ milestone,40,421,266,30,mm,#784b2e,,0,13
 05_banner/banner_super_hard_2,IQ milestone,90,609,266,30,mm,#784b2e,,0,15
 05_banner/banner_super_hard_2,IQ milestone,180,805,266,30,mm,#784b2e,,0,17
-05_banner/banner_super_hard_2,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,19
+05_banner/banner_super_hard_2,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,19
 05_banner/banner_super_hard_2,Quota progress,0/12,540,513,35,mm,#75431f,,0,33
 05_banner/banner_super_hard_2,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,74
 05_banner/banner_super_hard_2,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,77
 05_banner/banner_super_hard_2,dynamic_text,Rope,540,2072,29,mm,#693b21,,0,80
 05_banner/banner_super_hard_2,dynamic_text,Fill,745,2072,29,mm,#693b21,,0,83
 05_banner/banner_super_hard_2,dynamic_text,Restart,950,2072,29,mm,#693b21,,0,86
-05_banner/banner_super_hard_2,banner title,Super Hard,540,1039,64,mm,#fff8da,#773f25,5,88
+05_banner/banner_super_hard_2,banner title,Super Hard,540,1049,64,mm,#fff8da,#773f25,5,88
 05_banner/banner_super_hard_2,dynamic_text,Take your time. You can do it!,540,1175,33,mm,#693b21,,0,90
 05_banner/banner_super_hard_2,preview label,MOCKUP,95,2285,21,mm,#693b21,,0,92
 05_banner/guide_hidden,Header/LevelBlock/LevelLabel,Level 7,540,101,52,mm,#744322,,0,5
@@ -1023,7 +1023,7 @@
 05_banner/guide_hidden,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 05_banner/guide_hidden,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 05_banner/guide_hidden,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-05_banner/guide_hidden,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+05_banner/guide_hidden,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 05_banner/guide_hidden,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 05_banner/guide_hidden,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,77
 05_banner/guide_hidden,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,80
@@ -1038,7 +1038,7 @@
 05_banner/guide_locked_rope,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 05_banner/guide_locked_rope,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 05_banner/guide_locked_rope,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-05_banner/guide_locked_rope,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+05_banner/guide_locked_rope,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 05_banner/guide_locked_rope,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 05_banner/guide_locked_rope,Unlock delivery count,2,409,1202,33,mm,#fff2d0,#713b24,3,57
 05_banner/guide_locked_rope,Unlock delivery count,2,540,1202,33,mm,#fff2d0,#713b24,3,68
@@ -1058,7 +1058,7 @@
 05_banner/guide_sunlight_ice,IQ milestone,40,421,266,30,mm,#784b2e,,0,12
 05_banner/guide_sunlight_ice,IQ milestone,90,609,266,30,mm,#784b2e,,0,14
 05_banner/guide_sunlight_ice,IQ milestone,180,805,266,30,mm,#784b2e,,0,16
-05_banner/guide_sunlight_ice,IQ badge label,IQ,284,263,27,mm,#fff9df,#32608a,2,18
+05_banner/guide_sunlight_ice,IQ badge label,IQ,223,318,27,mm,#fff9df,#32608a,2,18
 05_banner/guide_sunlight_ice,Quota progress,0/12,540,513,35,mm,#75431f,,0,32
 05_banner/guide_sunlight_ice,dynamic_text,Undo,130,2072,29,mm,#693b21,,0,81
 05_banner/guide_sunlight_ice,dynamic_text,Hint,335,2072,29,mm,#693b21,,0,84
