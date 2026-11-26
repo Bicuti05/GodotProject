@@ -5,7 +5,7 @@ Mockup 1080 × 2340, dựng ngoài engine. Ref sếp đưa dùng để đối ch
 ## File mới
 
 - `sprout.png`, `soil.png` và `canopy.png` là các lớp rời để ráp với Container. Mầm chỉ đặt trên chậu có loại, Free Rope dùng chậu trống.
-- `delivered_tree_0…9.png` là các hình cây đã Deliver, ghép bằng chậu và Item tương ứng Type ID. Chúng dành cho Order đã giao. Container đầy quả trong manifest vẫn là loại asset riêng.
+- `delivered_tree_0…9.png` là 10 sprite cây đã Deliver, tái tạo theo mẫu được duyệt và xuất theo Type ID. Xem [sheet cây Order](delivered_trees_sheet.png). Ảnh Level 27 là bản dựng tham chiếu trước khi thay bộ cây. Chúng dành cho Order đã giao. Container đầy quả trong manifest vẫn là loại asset riêng.
 - `assets.csv` và `layers.csv` lần lượt ghi kích thước nguồn/xuất và từng lớp dùng trong preview. Source PNG có cùng đường dẫn bên dưới `source/`.
 - 7 PNG thuộc manifest chính: nút thắt Rope, 3 hạt Deliver đổi màu được, trail và glow cho Hint/đặt hợp lệ. Xem `../report_main_scene_ref.csv`.
 
