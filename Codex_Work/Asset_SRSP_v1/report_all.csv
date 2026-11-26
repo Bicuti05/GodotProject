@@ -299,8 +299,8 @@
 1,unity/Assets/_IEC/Image/Result/BOARD_LOSE.png,OK,
 1,unity/Assets/_IEC/Image/Result/DIS_LOSE_TITLE.png,OK,
 1,unity/Assets/_IEC/Image/Result/OBJ_LOSE.png,OK,
-1,unity/Assets/_IEC/Image/Store/TEXT_LOGO.png,FAIL,chưa có file
-1,unity/Assets/_IEC/Image/Store/TEXT_LOGO_LINE.png,FAIL,chưa có file
+1,unity/Assets/_IEC/Image/Store/TEXT_LOGO.png,OK,
+1,unity/Assets/_IEC/Image/Store/TEXT_LOGO_LINE.png,OK,
 1,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_0.png,OK,
 1,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_2.png,OK,
 1,unity/Assets/_IEC/Image/Theme/Fruit/CONTAINER_FRUIT_3.png,OK,
@@ -361,7 +361,7 @@
 2,godot_dropin/assets/app/app_icon_fg.png,OK,
 2,godot_dropin/assets/app/app_icon_main.png,OK,
 2,godot_dropin/assets/app/app_icon_mono.png,OK,
-2,godot_dropin/assets/app/boot_logo.png,FAIL,chưa có file
+2,godot_dropin/assets/app/boot_logo.png,WARN,"vùng hình 100% x 73% bản cũ (pivot, va chạm có thể lệch)"
 2,godot_dropin/assets/app/launch_bg.png,OK,
 2,godot_dropin/assets/sprites/avatar_select_frame_selected.png,OK,
 2,godot_dropin/assets/sprites/avatar_select_name_bg.png,FAIL,chưa có file
@@ -457,7 +457,7 @@
 2,godot_dropin/assets/sprites/common_rank_ranks_online_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_ranks_reward_tooltip_bg.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/common_rank_salute.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/common_rank_shadow.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/common_rank_shadow.png,OK,
 2,godot_dropin/assets/sprites/common_rank_trophy_amethyst.png,OK,
 2,godot_dropin/assets/sprites/common_rank_trophy_amethyst_mask.png,OK,
 2,godot_dropin/assets/sprites/common_rank_trophy_bronze.png,OK,
@@ -552,12 +552,12 @@
 2,godot_dropin/assets/sprites/game_iq_track.png,OK,
 2,godot_dropin/assets/sprites/game_nav_settings.png,OK,
 2,godot_dropin/assets/sprites/game_special_challenge_chest.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/game_special_challenge_chest_shadow.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/game_special_challenge_chest_shadow.png,OK,
 2,godot_dropin/assets/sprites/game_special_challenge_foliage.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_special_challenge_garden.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_special_challenge_glow.png,OK,
 2,godot_dropin/assets/sprites/game_special_challenge_header_chest.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/game_special_challenge_title_shadow.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/game_special_challenge_title_shadow.png,OK,
 2,godot_dropin/assets/sprites/game_super_hard_fire.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_unlock_fill_pot.png,FAIL,chưa có file
 2,godot_dropin/assets/sprites/game_unlock_glow_core.png,FAIL,chưa có file
@@ -664,7 +664,7 @@
 2,godot_dropin/assets/sprites/special_challenge_reward_rope_figma.png,OK,
 2,godot_dropin/assets/sprites/special_challenge_reward_sparkle.png,OK,
 2,godot_dropin/assets/sprites/splash_butterfly_static.png,FAIL,chưa có file
-2,godot_dropin/assets/sprites/splash_logo.png,FAIL,chưa có file
+2,godot_dropin/assets/sprites/splash_logo.png,OK,
 2,godot_dropin/assets/sprites/splash_optimization/background.png,OK,
 2,godot_dropin/assets/sprites/splash_optimization/progress_fill.png,OK,
 2,godot_dropin/assets/sprites/splash_optimization/progress_track.png,OK,
@@ -976,7 +976,7 @@
 3,godot_dropin/assets/spine/effect_coin_clover_preview/projected/pose-11.png,OK,
 3,godot_dropin/assets/spine/special_challenge_reward/reward_ad_icon.png,FAIL,chưa có file
 3,godot_dropin/assets/spine/special_challenge_reward/reward_unlock_title.png,FAIL,chưa có file
-3,godot_dropin/assets/sprites/christmas_theme/game/bell.png,FAIL,chưa có file
+3,godot_dropin/assets/sprites/christmas_theme/game/bell.png,OK,
 3,godot_dropin/assets/sprites/christmas_theme/game/candy.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/game/gift.png,OK,
 3,godot_dropin/assets/sprites/christmas_theme/game/hat.png,FAIL,chưa có file
@@ -985,14 +985,14 @@
 3,godot_dropin/assets/sprites/christmas_theme/splash/progress_bar.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/splash/progress_fill.png,FAIL,chưa có file
 3,godot_dropin/assets/sprites/christmas_theme/splash/progress_icon.png,OK,
-3,godot_dropin/assets/sprites/christmas_theme/splash/snowflake.png,FAIL,chưa có file
+3,godot_dropin/assets/sprites/christmas_theme/splash/snowflake.png,OK,
 3,motion/spine/banner_hard/small_popup_no_text/,FAIL,thiếu motion.md; thiếu lớp arrow_inner; thiếu lớp arrow_outer; thiếu lớp backlight; thiếu lớp badge_blur; thiếu lớp badge_border; thiếu lớp badge_face; thiếu lớp body_panel
 3,motion/spine/banner_super_hard/small_popup_no_text_purple/,FAIL,thiếu motion.md; thiếu lớp arrow_inner; thiếu lớp arrow_outer; thiếu lớp backlight; thiếu lớp badge_blur; thiếu lớp badge_border; thiếu lớp badge_face; thiếu lớp body_panel
 3,motion/spine/bonus_hammer/hammer/,FAIL,thiếu motion.md; thiếu lớp images/Impact_0; thiếu lớp images/Impact_1; thiếu lớp images/Impact_2; thiếu lớp images/Impact_3; thiếu lớp images/Impact_4; thiếu lớp images/Impact_5; thiếu lớp images/Impact_6
 3,motion/spine/combo/Combo_title03/,FAIL,thiếu motion.md; thiếu lớp amazing_base_glow_lo; thiếu lớp amazing_flower_1; thiếu lớp amazing_flower_1_glow_lo; thiếu lớp amazing_flower_1_shadow; thiếu lớp amazing_flower_1s; thiếu lớp amazing_flower_1s_glow_lo; thiếu lớp amazing_flower_1s_shadow
 3,motion/spine/combo_fullscreen/Combo_confetti5/,FAIL,thiếu motion.md; thiếu lớp amazing_flower_1; thiếu lớp amazing_flower_1_shadow; thiếu lớp amazing_flower_1s; thiếu lớp amazing_flower_1s_shadow; thiếu lớp amazing_flower_2; thiếu lớp amazing_flower_2_shadow; thiếu lớp amazing_text
 3,motion/spine/combo_timing2/Combo_timing2_complete_base/,FAIL,thiếu motion.md; thiếu lớp amazing_base_glow_lo; thiếu lớp amazing_flower_1; thiếu lớp amazing_flower_1_glow_lo; thiếu lớp amazing_flower_1_shadow; thiếu lớp amazing_flower_1s; thiếu lớp amazing_flower_1s_glow_lo; thiếu lớp amazing_flower_1s_shadow
-3,motion/spine/daily_checkin/coin/effect_coin_clover/,FAIL,thiếu motion.md; thiếu lớp image_jinbi_00000; thiếu lớp image_jinbi_00001; thiếu lớp image_jinbi_00002; thiếu lớp image_jinbi_00003; thiếu lớp image_jinbi_00004; thiếu lớp image_jinbi_00005; thiếu lớp image_jinbi_00006
+3,motion/spine/daily_checkin/coin/effect_coin_clover/,OK,
 3,motion/spine/daily_checkin/gift/gift_box/,OK,
 3,motion/spine/daily_checkin/party/Celebrate/,FAIL,thiếu motion.md; thiếu lớp figma_confetti_blue_ribbon; thiếu lớp figma_confetti_blue_triangle; thiếu lớp figma_confetti_cyan_paper; thiếu lớp figma_confetti_green_ribbon; thiếu lớp figma_confetti_green_triangle; thiếu lớp figma_confetti_purple_paper; thiếu lớp figma_confetti_red_paper
 3,motion/spine/daily_checkin/party/celebration/,FAIL,thiếu motion.md; thiếu lớp figma_confetti_blue_ribbon; thiếu lớp figma_confetti_blue_triangle; thiếu lớp figma_confetti_cyan_paper; thiếu lớp figma_confetti_green_ribbon; thiếu lớp figma_confetti_green_triangle; thiếu lớp figma_confetti_purple_paper; thiếu lớp figma_confetti_red_paper
@@ -1004,16 +1004,16 @@
 3,motion/spine/effect_butterfly_green/effect_butterfly_green/,FAIL,thiếu motion.md; thiếu lớp butterfly_green_00000; thiếu lớp butterfly_green_00001; thiếu lớp butterfly_green_00002; thiếu lớp butterfly_green_00003; thiếu lớp butterfly_green_00004; thiếu lớp butterfly_green_00005; thiếu lớp butterfly_green_00006
 3,motion/spine/effect_butterfly_oringe/effect_butterfly_oringe/,FAIL,thiếu motion.md; thiếu lớp butterfly_oringe_00000; thiếu lớp butterfly_oringe_00001; thiếu lớp butterfly_oringe_00002; thiếu lớp butterfly_oringe_00003; thiếu lớp butterfly_oringe_00004; thiếu lớp butterfly_oringe_00005; thiếu lớp butterfly_oringe_00006
 3,motion/spine/effect_butterfly_red/effect_butterfly_red/,FAIL,thiếu motion.md; thiếu lớp butterfly_red_00000; thiếu lớp butterfly_red_00001; thiếu lớp butterfly_red_00002; thiếu lớp butterfly_red_00003; thiếu lớp butterfly_red_00004; thiếu lớp butterfly_red_00005; thiếu lớp butterfly_red_00006
-3,motion/spine/effect_coin/effect_coin/,FAIL,thiếu motion.md; thiếu lớp image_jinbi_00000; thiếu lớp image_jinbi_00001; thiếu lớp image_jinbi_00002; thiếu lớp image_jinbi_00003; thiếu lớp image_jinbi_00004; thiếu lớp image_jinbi_00005; thiếu lớp image_jinbi_00006
-3,motion/spine/effect_coin_clover/effect_coin_clover/,FAIL,thiếu motion.md; thiếu lớp image_jinbi_00000; thiếu lớp image_jinbi_00001; thiếu lớp image_jinbi_00002; thiếu lớp image_jinbi_00003; thiếu lớp image_jinbi_00004; thiếu lớp image_jinbi_00005; thiếu lớp image_jinbi_00006
+3,motion/spine/effect_coin/effect_coin/,OK,
+3,motion/spine/effect_coin_clover/effect_coin_clover/,OK,
 3,motion/spine/effect_difficult_level_001/effect_difficult_level_001/,FAIL,thiếu motion.md; thiếu lớp image_Base_plate; thiếu lớp image_face; thiếu lớp image_hard_Base_plate; thiếu lớp image_hard_title; thiếu lớp image_hat; thiếu lớp image_left_hand; thiếu lớp image_magnifier
 3,motion/spine/effect_flower_unlock/effect_flower_unlock/,FAIL,thiếu motion.md; thiếu lớp ef_point_011; thiếu lớp ef_point_012; thiếu lớp ef_point_01202; thiếu lớp ef_point_01203; thiếu lớp flower01; thiếu lớp y02; thiếu lớp y0202
 3,motion/spine/effect_flowerpot_big/effect_flowerpot_big/,FAIL,thiếu motion.md; thiếu lớp gp_bouquet_blue; thiếu lớp gp_bouquet_cyan; thiếu lớp gp_bouquet_green; thiếu lớp gp_bouquet_lightblue; thiếu lớp gp_bouquet_lightpurple; thiếu lớp gp_bouquet_orange; thiếu lớp gp_bouquet_pink
-3,motion/spine/effect_game_logo/effect_game_logo/,FAIL,thiếu motion.md; thiếu lớp image_flower_mix_00000; thiếu lớp image_flower_mix_00001; thiếu lớp image_flower_mix_00002; thiếu lớp image_flower_mix_00003; thiếu lớp image_flower_mix_00004; thiếu lớp image_flower_mix_00005; thiếu lớp image_flower_mix_00006
-3,motion/spine/effect_good_luck/effect_good_luck/,FAIL,thiếu motion.md; thiếu lớp flower_large_glow; thiếu lớp flower_small_glow; thiếu lớp original_backplate; thiếu lớp particle_pink; thiếu lớp text
+3,motion/spine/effect_game_logo/effect_game_logo/,OK,
+3,motion/spine/effect_good_luck/effect_good_luck/,OK,
 3,motion/spine/effect_hard_super_hard/hard_super_hard/,FAIL,thiếu motion.md; thiếu lớp board_hard; thiếu lớp board_super; thiếu lớp body; thiếu lớp flower_l; thiếu lớp flower_l_m; thiếu lớp flower_r; thiếu lớp flower_s
 3,motion/spine/effect_like/effect_like/,OK,
-3,motion/spine/effect_smart_move/effect_smart_move/,FAIL,thiếu motion.md; thiếu lớp common_element_colorful_star_2; thiếu lớp et_point_40303; thiếu lớp new/gp_text_smart_move
+3,motion/spine/effect_smart_move/effect_smart_move/,OK,
 3,motion/spine/effect_splash_birdie01/effect_splash_birdie01/,FAIL,thiếu motion.md; thiếu lớp bird_00006; thiếu lớp bird_00007; thiếu lớp bird_00008; thiếu lớp bird_00009; thiếu lớp bird_00010; thiếu lớp bird_00011; thiếu lớp bird_00012
 3,motion/spine/effect_win_streak/effect_win_streak/,FAIL,thiếu motion.md; thiếu lớp dp1_1; thiếu lớp dp1_2; thiếu lớp dp1_3; thiếu lớp dp1_4; thiếu lớp dp2_1; thiếu lớp dp2_2; thiếu lớp dp2_3
 3,motion/spine/empty_col_feedback/empty_col_feedback/,FAIL,thiếu motion.md; thiếu lớp 1; thiếu lớp 1_1; thiếu lớp 1_2; thiếu lớp 1_3; thiếu lớp 2; thiếu lớp 2_1; thiếu lớp 2_2
@@ -1029,7 +1029,7 @@
 3,motion/spine/rank_encourage/ranking_titles/,FAIL,thiếu motion.md; thiếu lớp amazing; thiếu lớp amazing_glow; thiếu lớp awesome; thiếu lớp awesome_glow; thiếu lớp bravo; thiếu lớp bravo_glow; thiếu lớp et_point_amazing
 3,motion/spine/rank_new_season/rank_new_season/,FAIL,thiếu motion.md; thiếu lớp flower_blue; thiếu lớp flower_pink; thiếu lớp flower_yellow; thiếu lớp glow_new; thiếu lớp leaf_blue_middle; thiếu lớp leaf_blue_upper; thiếu lớp leaf_left_lower
 3,motion/spine/special_challenge_reward/Box_kk_merged/,FAIL,thiếu motion.md; thiếu lớp reward_halo; thiếu lớp reward_halo_coin; thiếu lớp box_closed_front; thiếu lớp garden_chest; thiếu lớp chest_rays; thiếu lớp reward_button_blue; thiếu lớp reward_button_gray
-3,motion/spine/special_challenge_reward/Box_kk_merged_flags/,FAIL,thiếu motion.md; thiếu lớp celebration_flags_left; thiếu lớp celebration_flags_right
+3,motion/spine/special_challenge_reward/Box_kk_merged_flags/,OK,
 3,motion/spine/special_challenge_reward/Box_kk_merged_halos/,OK,
 3,motion/spine/special_challenge_reward/Box_kk_merged_vine/,OK,
 3,unity/Assets/_IEC/Image/Streak/Anim/Gift_BlueGold_Spine42/Gift_BlueGold.png,OK,

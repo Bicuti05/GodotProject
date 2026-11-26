@@ -8,12 +8,12 @@
 
 ## C — Asset còn thiếu
 
-- Giao thêm 111 dòng từ danh sách 294 dòng chưa làm đầu đợt. Có nền Home, Rank, Daily Check-in, ảnh Store, sprite UI, hiệu ứng, bộ PNG tách lớp và atlas.
-- Còn **183 dòng chưa làm** trong manifest.
-  - P1, ảnh hoặc vector — 122.
-  - P2, ảnh hoặc vector — 24.
-  - P2, bộ lớp và motion — 37.
-- 5 dòng không làm được đang chờ PNG logo trong suốt đã chốt.
+- Giao thêm 122 dòng từ danh sách 294 dòng chưa làm đầu đợt. Có nền Home, Rank, Daily Check-in, ảnh Store, sprite UI, hiệu ứng, bộ PNG tách lớp và atlas.
+- Còn **172 dòng chưa làm** trong manifest.
+  - P1, ảnh hoặc vector — 119.
+  - P2, ảnh hoặc vector — 22.
+  - P2, bộ lớp và motion — 31.
+- 0 dòng không làm được đang chờ PNG logo trong suốt đã chốt.
 
 ## D — Mockup
 
@@ -22,5 +22,5 @@
 
 ## E — Checker
 
-- Toàn manifest có **880 OK, 44 WARN, 188 FAIL**. Có 183 FAIL ở dòng chưa có asset và 5 FAIL ở các dòng chờ logo.
+- Toàn manifest có **895 OK, 45 WARN, 172 FAIL**. Có 172 FAIL ở dòng chưa có asset và 0 FAIL ở các dòng chờ logo.
 - report_all.csv giữ nguyên kết quả của checker. warn_disposition.csv ghi từng cảnh báo cùng cách xử lý hoặc điểm cần kiểm tra.
