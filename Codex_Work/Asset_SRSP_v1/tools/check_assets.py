@@ -89,16 +89,31 @@ def check_row(r, out, source, atlases):
     return fails, warns
 
 
-def run(manifest, out, source, batch=None, report=None, only=None):
+def fill_fail(path, min_w, min_h):
+    """the visible picture must cover at least this share of the canvas (a shrunken bar has the right px but is broken)"""
+    with Image.open(path) as im: box = im.convert('RGBA').getchannel('A').point(lambda v: 255 if v > 16 else 0).getbbox()
+    size = Image.open(path).size
+    w, h = ((box[2] - box[0]) / size[0], (box[3] - box[1]) / size[1]) if box else (0, 0)
+    return f'hình chỉ phủ {w:.0%} x {h:.0%} khung, cần ít nhất {min_w:.0%} x {min_h:.0%}' if w < min_w or h < min_h else None
+
+
+def run(manifest, out, source, batch=None, report=None, only=None, fill=None):
     atlases = json.load(open(os.path.join(os.path.dirname(manifest), 'atlas_regions.json'), encoding='utf-8'))
     rows = [r for r in csv.DictReader(open(manifest, encoding='utf-8-sig')) if r['action'] != 'skip' and (batch is None or r['batch'] == str(batch)) and (not only or any(r['output_path'] == o or r['output_path'].endswith('/' + o) for o in only))]
     if only:
         for o in only:
             n = sum(r['output_path'] == o or r['output_path'].endswith('/' + o) for r in rows)
             if n != 1: raise SystemExit(f'"{o}" khớp {n} file trong manifest, cần đúng 1')
+    need = {}
+    if fill: need = {x['output_path']: (float(x['min_w']), float(x['min_h'])) for x in csv.DictReader(open(fill, encoding='utf-8-sig')) if x.get('min_w')}
     result = []
     for r in rows:
-        try: f, w = check_row(r, out, source, atlases)
+        try:
+            f, w = check_row(r, out, source, atlases)
+            target = os.path.join(out, r['output_path'])
+            if r['output_path'] in need and os.path.isfile(target):
+                msg = fill_fail(target, *need[r['output_path']])
+                if msg: f = f + [msg]
         except Exception as e: f, w = [f'không đọc được: {e}'], []
         result.append(dict(batch=r['batch'], output_path=r['output_path'], result='FAIL' if f else 'WARN' if w else 'OK', detail='; '.join(f + w)))
     if report:
@@ -124,6 +139,9 @@ def selftest():
         got = {r['output_path'][:-4]: r['result'] for r in run(f'{d}/m.csv', f'{d}/out', f'{d}/src')}
         assert [r['output_path'] for r in run(f'{d}/m.csv', f'{d}/out', f'{d}/src', only=['ok.png'])] == ['ok.png']
     assert got == dict(ok='OK', small='FAIL', copy='FAIL', tint='WARN', gone='FAIL', soft='WARN'), got
+    with tempfile.TemporaryDirectory() as d:
+        im = Image.new('RGBA', (100, 40), (0, 0, 0, 0)); ImageDraw.Draw(im).rectangle([25, 0, 74, 39], fill=(1, 2, 3, 255)); im.save(f'{d}/bar.png')
+        assert fill_fail(f'{d}/bar.png', 0.9, 0.9) and not fill_fail(f'{d}/bar.png', 0.5, 0.9)
     print('selftest ok')
 
 
@@ -132,11 +150,12 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--manifest', default=os.path.join(HERE, 'asset_manifest.csv')); ap.add_argument('--out'); ap.add_argument('--source'); ap.add_argument('--batch', type=int)
     ap.add_argument('--report', default='report.csv'); ap.add_argument('--selftest', action='store_true')
-    ap.add_argument('--only', help='tên file cách nhau bằng dấu phẩy, để kiểm một phase')
+    ap.add_argument('--only', help='tên file cách nhau bằng dấu phẩy, để kiểm một phần')
+    ap.add_argument('--fill', help='CSV có cột output_path, min_w, min_h: hình phải phủ khung ít nhất chừng đó')
     a = ap.parse_args()
     if a.selftest: selftest(); sys.exit()
     if not a.out or not a.source: ap.error('cần --out và --source (thư mục gốc GodotProject, để kiểm trùng ảnh gốc)')
-    res = run(a.manifest, a.out, a.source, a.batch, a.report, a.only.split(',') if a.only else None)
+    res = run(a.manifest, a.out, a.source, a.batch, a.report, a.only.split(',') if a.only else None, a.fill)
     n = {k: sum(r['result'] == k for r in res) for k in ('OK', 'WARN', 'FAIL')}
     print(n, '| báo cáo:', a.report)
     sys.exit(1 if n['FAIL'] or not res else 0)

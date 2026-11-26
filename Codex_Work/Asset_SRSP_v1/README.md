@@ -1,65 +1,91 @@
-# Sweet Rope – giao một lần: sửa hết và làm hết
+# Sweet Rope – đợt 3: sửa lỗi và làm nốt, một lần chạy
 
-Đọc file này trước. **Không còn chia phase, không dừng chờ duyệt.** Làm liên tục đến khi xong toàn bộ: phần A, B, C, D.
+Đọc file này trước. **Không chia phase, không dừng chờ duyệt.** Làm liên tục: phần B (sửa), C (làm nốt), D (mockup), E (tự kiểm).
 
-File này đúng hơn mọi tài liệu cũ. Các câu sau trong `tools/PROMPT.md` **không còn áp dụng**: dừng ở mỗi đợt (mục 0.4 và mục 8), chỉ commit khi được yêu cầu và hỏi trước khi đẩy (mục 10), thư mục đầu ra cũ. Đầu ra là `Codex_Work/Asset_SRSP_v1/`. Style, pixel và bản quyền trong PROMPT vẫn giữ.
+File này đúng hơn mọi tài liệu cũ. Các câu trong `tools/PROMPT.md` về dừng ở mỗi đợt, chỉ commit khi được yêu cầu, hỏi trước khi đẩy và thư mục đầu ra cũ **không còn áp dụng**. Đầu ra là `Codex_Work/Asset_SRSP_v1/`. Style, pixel và bản quyền trong PROMPT vẫn giữ.
+
+Đã đạt, **không vẽ lại** nếu không có trong `fix_list2.csv`: mật ong, ô Order, chậu, quả, Item và chậu của theme Flower và Winter, avatar, art cũ của team đã vẽ lại.
+
+**Nền đổi style** (mục A bên dưới): đọc trước khi vẽ bất kỳ nền nào.
+
+## A. Style nền (mới, áp dụng cho cả nền đã vẽ và nền chưa vẽ)
+
+Nền hiện tại **quá tả thực** so với game puzzle trên điện thoại. Đổi sang hai kiểu:
+
+**A1. Màn chơi: phẳng.** Mọi nền nằm sau Item.
+
+- Gần một màu, chuyển sắc rất nhẹ, nhạt hơn Item rõ rệt.
+- Chỉ vài họa tiết mờ, đơn giản ở mép trên và chân màn. Vùng từ hàng Level đến hàng Helper **trơn**.
+- Không đường chân trời, không cây to, không mặt trời, không phong cảnh.
+- Tông theo theme: Fruit kem ấm, Flower hồng hoặc xanh rất nhạt, Winter xanh băng nhạt.
+- Tham chiếu độ nhạt: `tools/unity_current/Image/Streak/BG_STREAK.png` và `Rank/BG_CHALL.png`.
+
+**A2. Home, Shop, Splash, icon app: cartoon đơn giản.**
+
+- Hình khối lớn, ít chi tiết, màu tươi và sạch, mỗi vật một màu chính với một đến hai sắc độ bóng mềm.
+- Không vân cỏ, đá, gỗ. Không từng ngọn cỏ, viên sỏi. Không ánh sáng kiểu điện ảnh, không làm mờ xa gần như ảnh chụp.
+- Vùng sau logo, bảng giữa màn và nút Play thoáng.
+- Tham chiếu độ đơn giản: `tools/unity_current/Image/Rank/BG_UPPER2.png` (art của team).
+- Chung bảng màu với nút và khung UI.
+- `BG_HOME_SKY`, `BG_HOME_HILL`, `BG_HOME_GROUND` là **ba lớp thật**: trời chỉ có trời và mây; đồi chỉ có đồi, nền trên trong hoặc khớp mép; đất chỉ có tiền cảnh.
+
+Không đưa ảnh Sort Streak vào công cụ sinh ảnh.
 
 ## Cách chạy
 
-1. Thứ tự: **A (sửa lỗi) → B (làm phần thiếu) → C (mockup) → D (tự kiểm, báo cáo)**.
-2. Xong mỗi nhóm thì cập nhật `status` trong `asset_manifest.csv`, commit và push, rồi làm nhóm kế tiếp ngay. Commit chỉ trong `Codex_Work/Asset_SRSP_v1/`.
-3. Nếu phiên bị ngắt vì hết giới hạn: lần chạy sau đọc `status` và `fix_list.csv`, làm tiếp từ mục chưa xong, không làm lại mục đã xong.
-4. Không dừng để hỏi. Chỗ chưa rõ thì chọn phương án mặc định, ghi vào `questions.md`, làm tiếp.
-5. Không commit `tools/unity_current/` và `tools/SR_Art Task.xlsx` (repo đang công khai): thêm hai đường dẫn này vào `.git/info/exclude`.
+1. Làm **nhóm B2 (nền) đầu tiên**, commit và push ngay để team xem sớm, rồi làm tiếp không chờ.
+2. Xong mỗi nhóm thì cập nhật `status` trong `asset_manifest.csv`, commit, push, rồi làm tiếp. Commit chỉ trong `Codex_Work/Asset_SRSP_v1/`.
+3. Nếu bị ngắt: lần sau đọc `status` và `fix_list2.csv`, làm tiếp mục chưa xong.
+4. Không dừng để hỏi. Chỗ chưa rõ thì chọn mặc định, ghi vào `questions.md`.
+5. Không commit `tools/unity_current/` và `tools/SR_Art Task.xlsx` (repo đang công khai): giữ trong `.git/info/exclude`.
 
-## Chất lượng: áp dụng cho mọi file
-
-- Hình minh họa phải do **công cụ sinh ảnh** vẽ, cùng style khối 3D bóng với chậu, quả, icon và mèo đã nộp. Code chỉ dùng để tách nền, cắt, ghép, thu nhỏ và kiểm.
-- **Không nộp hình khối phẳng vẽ bằng PIL/SVG thay cho tranh.** Chỉ quầng sáng và gradient mờ mới được dựng bằng code.
-- Sửa quy tắc cũ về ảnh nguồn: với ảnh có một cạnh trên 1536 px, được phóng bằng **super-resolution** nếu công cụ sinh ảnh không đủ px (ghi vào báo cáo). Vẫn cấm kéo lệch tỉ lệ và nhòe mép để lấp chỗ trống.
-- File nào không vẽ đạt thì để `status` = `không làm được` kèm lý do. Không nộp hình tạm rồi ghi là xong.
-
-## A. Sửa lỗi (danh sách file: `fix_list.csv`)
-
-Các file này đã nộp nhưng **chưa đạt**, dù `check_assets.py` không báo FAIL.
+## B. Sửa lỗi (`fix_list2.csv`)
 
 | Nhóm | Lỗi | Đạt khi |
 |---|---|---|
-| A1 Mật ong | Đọc ra tấm gỗ, không ra mật. Đáy như giấy rách. | Mật hổ phách lỏng, bóng: đỉnh đọng dày tràn mép tròn, giọt đáy tròn mập, đốm bóng. Đục, không thấy item. Ghép TOP + BODY + BOTTOM liền mạch ở **mọi** chiều cao dây 3–8 Item (mỗi Item 125 px), kể cả khi BODY bị cắt giữa chừng. |
-| A2 Dây Godot | Ba đoạn không khớp: `mid` ở x 21–38 (đỏ 24–41), cuối `top` ở x 23–33, đầu `bottom` ở x 28–41. | Cả 11 bộ: thân của `top`, `mid`, `bottom` cùng nằm ở **x 25–35** trên khung rộng 60 px (như file gốc), cùng vân xoắn. Nút được rộng hơn thân. Ghép thử không thấy gãy. |
-| A3 Ô Order trống | Xô xám phẳng, khác dáng chậu. | Đúng dáng Container, cùng khối bóng, màu xám mờ, đọc ra là chỗ chờ giao. |
-| A4 Cỡ chậu | `CONTAINER_FRUIT_1` có chậu rộng 74% khung, các chậu khác 85%. | Cùng tỉ lệ, cùng đường đáy với 9 chậu còn lại. |
-| A5 Nền | Gradient, đồi và lá phẳng, gần như trống. | Tranh vẽ cùng style `BG_STAGE_001`; vùng giữa vẫn thoáng để đặt Item và nút. |
-| A6 Nút, khung, thanh | Chữ nhật gradient phẳng, khác hẳn `BUTTON_GREEN_NORMAL`. | Cùng viền, vát khối và đốm bóng với `BUTTON_GREEN_NORMAL`. Ba trạng thái Normal, Pressed, Locked phân biệt rõ. Giữ 9-slice. |
-| A7 Hiệu ứng, trang trí | Đa giác và sao phẳng; bốn file glow trùng y nhau; khói gần như không thấy. | Mỗi file đúng chức năng trong `what_to_draw`, khung hình liên tiếp thấy được chuyển động, không trùng nhau trừ khi manifest ghi `same_pixels_as`. |
-| A8 Art vẽ lại | Đổi dáng so với art team: mũi tên `x1/x8/x10` thành chữ nhật; `BOARD_DATE` bị in sẵn 7 ô; đuôi `BOARD_REWARD` rời; `BOARD_TOP` đổi cấu trúc; nút Quit tròn thành vuông; tia sáng quá mờ; chữ mất độ cong và quầng; nền mất họa tiết. | Đặt chồng lên bản trong `tools/unity_current/`: cùng đường viền ngoài, cùng vị trí chữ và ô nội dung. Chỉ đổi chất liệu và chủ đề. |
+| B1 Hình bị thu trong khung | Đúng px nhưng hình bị thu nhỏ vào giữa: thanh đầy chỉ còn nửa bề ngang, chữ tràn khỏi banner, thanh IQ rời mảnh. | Phần hình phủ khung **ít nhất bằng `min_w` × `min_h`** trong CSV (script kiểm, thiếu là FAIL). Thanh và nút phải chạm gần hết bề ngang; giữ góc, kéo phần giữa kiểu 9-slice, không kéo méo góc. |
+| B1g Godot lệch vùng hình | Vùng hình lệch hơn 25% so với bản cũ, điểm chạm và pivot sẽ sai. | Trong 75–125% của `content_bbox`. Giữ lệch thì ghi lý do cụ thể vào `warn_disposition.csv`. |
+| B2a Nền màn chơi | Quá tả thực, phong cảnh nằm sau Item. | Theo mục A1. |
+| B2b Nền Home, Shop, Splash, icon | Quá tả thực, nhiều chất liệu; lớp trời chứa cả cảnh. | Theo mục A2. |
+| B4 Dây Godot | Thân hẹp hơn yêu cầu (x 26–34), vân phẳng hơn hai nút, mối nối thấy vệt đậm, nút đuôi có quầng xám. | Cả 11 bộ: thân `top`, `mid`, `bottom` đúng **x 25–35** (đo cột đầu và cuối có alpha > 128) trên khung rộng 60; cùng vân xoắn khối như nút; ghép `mid` lặp 3 lần không thấy mối nối; không quầng xám. |
+| B5 Ảnh nguồn nhỏ | File nguồn trong `source/` nhỏ hơn bản xuất, trong khi cạnh dài không quá 1536 px. | Nguồn rộng và cao **ít nhất bằng** bản xuất, vẽ lại bằng công cụ sinh ảnh, không phóng to. |
+| B6 Lẻ | `x10`, `x10_w` thiếu viền dây mà `x1`, `x8` có. `ef_point_003` là hình tròn trơn trùng 91% ảnh gốc. | Bốn kiểu mũi tên cùng viền. `ef_point_003` vẽ khác (mép mềm hoặc hạt sáng riêng), đúng chức năng. |
 
-## B. Làm toàn bộ phần còn thiếu
+## C. Làm nốt phần còn thiếu
 
-Mọi dòng có `action` khác `skip` và `status` = `chưa làm` (số dòng lấy theo `status` mới nhất).
+Nền còn thiếu (ví dụ `common_homepage_bg`, `rank_header_bg`, `daily_first_win_checkin_*`, `STORE_FEATURE`) vẽ theo mục A.
 
-1. P0.
-2. P1.
-3. P2 ảnh Godot và Unity. Theme Flower và Winter: dùng tên hoa và hoa văn bánh đang ghi trong manifest làm mặc định, ghi vào `questions.md`.
-4. P2 `layers`: mỗi vùng trong `atlas_regions.json` một PNG đúng px, kèm `motion.md`. Không dùng lại skeleton hay animation của Sort Streak.
-5. P2 `atlas`: các atlas Unity của team, đúng từng ô.
+Mọi dòng `action` khác `skip` và `status` = `chưa làm`, theo thứ tự:
 
-## C. Mockup (làm sau A và B)
+1. P1 Godot.
+2. P2 ảnh (Godot, Unity).
+3. P2 `layers`: mỗi vùng trong `atlas_regions.json` một PNG đúng px, kèm `motion.md`. Không dùng lại skeleton hay animation của Sort Streak.
+4. P2 `atlas`: atlas Unity của team còn thiếu, đúng từng ô.
 
-- Dựng lại `MOCK_BOARD_*`, `MOCK_UI_*` và đủ 81 mockup bằng asset đã sửa.
-- Chữ không đè lên vùng tranh rối (ví dụ "Orchard 1" ở Home). Ô Order trống phải nhìn ra chậu.
-- Logo: tiếp tục để tạm cho đến khi có file PNG gốc.
+Các dòng chờ logo PNG trong suốt giữ `không làm được`.
 
-## D. Tự kiểm và báo cáo cuối
+Chất lượng như phần đã đạt: hình do công cụ sinh ảnh vẽ, cùng style khối bóng; không nộp hình phẳng vẽ bằng PIL hay SVG (trừ quầng sáng, gradient mờ). File không vẽ đạt thì ghi `không làm được` kèm lý do.
+
+## D. Mockup
+
+Dựng lại đủ 81 mockup và các ảnh `MOCK_*` sau B và C. Sửa các chỗ còn tạm:
+
+- Cúp ở `streak_*`, `banner_streak*`, `dialog_rank_*`, `rank_page`: dùng cúp mèo đã vẽ, bỏ cúp phẳng màu cam.
+- Giỏ ở `finish_result*`: vẽ cùng style, bỏ hình gạch ngang.
+- Nền `daily_checkin_*`: có hình theo mục A2, bỏ gradient trơn.
+- `home_bonus_level`, `home_scene2`: nửa dưới đang trống.
+- Thanh IQ ráp liền: huy hiệu, rãnh, phần đầy và vạch mốc khớp nhau; huy hiệu có chữ IQ.
+- Chữ nằm trọn trong banner; nút ở `home_super_hard` nhìn ra nút bấm.
+
+## E. Tự kiểm và báo cáo
 
 ```bash
-python Codex_Work/Asset_SRSP_v1/tools/check_assets.py --manifest Codex_Work/Asset_SRSP_v1/asset_manifest.csv --out Codex_Work/Asset_SRSP_v1 --source . --report Codex_Work/Asset_SRSP_v1/report_all.csv
+python Codex_Work/Asset_SRSP_v1/tools/check_assets.py --manifest Codex_Work/Asset_SRSP_v1/asset_manifest.csv --out Codex_Work/Asset_SRSP_v1 --source . --fill Codex_Work/Asset_SRSP_v1/fix_list2.csv --report Codex_Work/Asset_SRSP_v1/report_all.csv
 ```
 
 - Không còn `FAIL`, trừ các dòng `không làm được`. Mỗi `WARN` ghi lý do.
-- Kiểm thêm điều script không kiểm: x của thân dây (A2); mật ghép ở 3–8 Item; tỉ lệ 10 chậu; art vẽ lại đặt chồng lên bản cũ.
-- Contact sheet trên nền sáng, nền tối, ảnh xám, ở cỡ chơi thật, cho từng nhóm. **Mở ra xem** trước khi ghi `chờ duyệt`.
-- `final_report.md`: số dòng đã xong, chưa xong, không làm được kèm lý do; việc dev phải làm.
+- Script không chấm được: nền rối, mối nối dây, ráp HUD, chữ tràn. **Mở mockup và contact sheet ra xem** trước khi ghi `chờ duyệt`.
+- Cập nhật `final_report.md`: đã xong, chưa xong, không làm được kèm lý do.
 
 ## Theme xác nhận
 
