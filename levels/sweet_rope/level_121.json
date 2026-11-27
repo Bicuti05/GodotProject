@@ -1,0 +1,74 @@
+{
+  "id": 121,
+  "capacity": 5,
+  "targetCups": 8,
+  "initial": [
+    {
+      "column": "2|2,2,2,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|8,3,3,3,3",
+      "columnType": "unlock",
+      "columnInfo": {
+        "condition": "collect_count",
+        "count": 2
+      }
+    },
+    {
+      "column": "-|0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,0,3,8,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|8,8,0,8",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "6|6,6,6,6,6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|2,2,2,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|8,8,0,8,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,5,5,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 24000029,
+  "note": "Chapter 5 · Normal"
+}

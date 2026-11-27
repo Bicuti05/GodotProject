@@ -1,0 +1,46 @@
+{
+  "id": 10,
+  "capacity": 4,
+  "targetCups": 5,
+  "initial": [
+    {
+      "column": "4|5,4,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,5,5,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|4",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "4|4,4,4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|3,3,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,0,0,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 32000300,
+  "note": "Chapter 1 · Hard"
+}

@@ -1,0 +1,69 @@
+{
+  "id": 25,
+  "capacity": 4,
+  "targetCups": 6,
+  "initial": [
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|7,8,2,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|1,3,7,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|1,7,7,1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|8,2,8",
+      "columnType": "unlock",
+      "columnInfo": {
+        "condition": "collect_count",
+        "count": 1
+      }
+    }
+  ],
+  "incoming": [
+    {
+      "column": "7|7,2,7,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|3,3,3,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 57000017,
+  "note": "Chapter 1 · Hard"
+}

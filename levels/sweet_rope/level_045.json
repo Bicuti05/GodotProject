@@ -1,0 +1,59 @@
+{
+  "id": 45,
+  "capacity": 4,
+  "targetCups": 5,
+  "initial": [
+    {
+      "column": "5|4,2,i5,1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|1,5,1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|0,0,1,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|5,4,0,0",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|4,2,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 45000315,
+  "note": "Chapter 2 · Hard",
+  "sunlight": {
+    "typeId": 0
+  }
+}

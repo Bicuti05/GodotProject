@@ -1,0 +1,128 @@
+{
+  "id": 134,
+  "capacity": 4,
+  "targetCups": 12,
+  "initial": [
+    {
+      "column": "1|5,7,1,1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "9|0,6,8,9",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|3,9,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|6,6,4,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|8,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|7,3,8,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,0,9,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,1,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,4,4,6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|2,0,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|1",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "5|5,5,9,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|8,4,4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 99000626,
+  "note": "Chapter 6 · Normal",
+  "layoutRows": 2,
+  "layoutColumns": 5
+}

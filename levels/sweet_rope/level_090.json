@@ -1,0 +1,83 @@
+{
+  "id": 90,
+  "capacity": 3,
+  "targetCups": 7,
+  "initial": [
+    {
+      "column": "3|2,2,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|6,6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|8,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|0,8,3",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "2|2,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|3,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,0,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 64000017,
+  "note": "Chapter 4 · Hard",
+  "columnCaps": {
+    "initial": [
+      3,
+      3,
+      2,
+      3,
+      3
+    ],
+    "incoming": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  }
+}

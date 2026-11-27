@@ -1,0 +1,89 @@
+{
+  "id": 63,
+  "capacity": 5,
+  "targetCups": 7,
+  "initial": [
+    {
+      "column": "0|0,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|2,2,2,2,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,1,4,3,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|4,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|4,3,2,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "0|0,1,0,0,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|3,4,4,4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 66000015,
+  "note": "Chapter 3 · Normal",
+  "columnCaps": {
+    "initial": [
+      2,
+      5,
+      5,
+      2,
+      5,
+      5
+    ],
+    "incoming": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  }
+}

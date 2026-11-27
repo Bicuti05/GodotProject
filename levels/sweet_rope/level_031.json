@@ -1,0 +1,56 @@
+{
+  "id": 31,
+  "capacity": 4,
+  "targetCups": 6,
+  "initial": [
+    {
+      "column": "3|8,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|7,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|1,8,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|3,7,7,7",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "3|3,3,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,5,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|1,1,8,1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 10000017,
+  "note": "Chapter 2 · Normal"
+}

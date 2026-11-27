@@ -1,0 +1,69 @@
+{
+  "id": 22,
+  "capacity": 3,
+  "targetCups": 7,
+  "initial": [
+    {
+      "column": "1|7,4,1",
+      "columnType": "unlock",
+      "columnInfo": {
+        "condition": "collect_count",
+        "count": 1
+      }
+    },
+    {
+      "column": "4|0,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,1,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|4,7,4",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "1|1,1,1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,0,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 21000020,
+  "note": "Chapter 1 · Normal"
+}

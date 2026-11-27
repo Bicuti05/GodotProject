@@ -1,0 +1,61 @@
+{
+  "id": 180,
+  "capacity": 5,
+  "targetCups": 6,
+  "initial": [
+    {
+      "column": "3|2,3,3,3,1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|5,2,2,1,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|1,1,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|1,3,2,3,5",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "8|8,8,8,8,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|2,2,2,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "seed": 75000011,
+  "note": "Chapter 8 · Hard"
+}
