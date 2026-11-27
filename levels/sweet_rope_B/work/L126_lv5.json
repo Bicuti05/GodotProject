@@ -1,0 +1,107 @@
+{
+  "id": 126,
+  "capacity": 4,
+  "targetCups": 13,
+  "initial": [
+    {
+      "column": "-|9",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|5,3,2,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|3,5,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|8,8,8,8",
+      "columnType": "unlock",
+      "columnInfo": {
+        "condition": "collect_count",
+        "count": 2
+      }
+    },
+    {
+      "column": "4|4,4,4,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,5,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "9|6,9,9",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "2|2,2,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "9|9,9,5,9",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|3,2,9,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|9,6,6,6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,0,0,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|7,7,7,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,4,0,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ]
+}

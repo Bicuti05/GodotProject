@@ -1,0 +1,112 @@
+{
+  "id": 121,
+  "capacity": 4,
+  "targetCups": 14,
+  "initial": [
+    {
+      "column": "-|3,6,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|3,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,0,0,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|6,6,6",
+      "columnType": "unlock",
+      "columnInfo": {
+        "condition": "collect_count",
+        "count": 3
+      }
+    },
+    {
+      "column": "7|7,7,1,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|7,6,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|2,5,2,2",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ],
+  "incoming": [
+    {
+      "column": "8|8,8,8,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|1,1,?1,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,5,2,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,4,4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|6,6,6,6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,4,4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|6,7,6,6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|6,6,6,6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
+      "columnType": "default",
+      "columnInfo": {}
+    }
+  ]
+}
