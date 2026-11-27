@@ -1,0 +1,25 @@
+﻿level,ok,frame_errors,solvable,aim_fast,score_fast,off_by,target_curve,notes,full_default,full_candidate,full_delta_vs_default,target_delta_vs_default,csharp_replay,moves,claude_status,claude_review,candidate_source
+2,True,,True,13.35,12.94,-0.41,4.9,,12.86,13.14,0.29,0.0,Replayed,22,ĐẠT,review-be667996795942ef832ff09c25c1a9d5,đã duyệt
+3,True,,True,7.42,6.6,-0.82,6.6,,7.37,7.79,0.43,0.0,Replayed,34,ĐẠT,review-76df399f0fba4804891b9ad7bd04727d,prior-trial
+4,True,,True,9.79,8.2,-1.59,8.0,,8.95,8.57,-0.37,0.0,Replayed,48,ĐẠT,review-76df399f0fba4804891b9ad7bd04727d,prior-trial
+5,True,,True,8.79,10.77,1.98,6.6,,12.42,12.01,-0.41,0.0,Replayed,63,ĐẠT,review-a7d52e5c988540df83fa1d77da2f9b71,prior-trial
+6,True,,True,8.99,8.07,-0.92,7.96,,11.29,11.08,-0.21,-0.54,Replayed,49,ĐẠT,review-76df399f0fba4804891b9ad7bd04727d,prior-trial
+7,True,,True,14.51,12.42,-2.09,8.88,,12.53,16.94,4.41,0.18,Replayed,65,CẦN KIỂM THÊM,review-ebc3ef6e30714db18c9a1c4eb8a35d28,review-revision
+8,True,,True,12.17,13.57,1.4,9.3,,8.14,15.06,6.92,5.4,Replayed,43,ĐẠT,review-92779132fb6347d28a1582c4181b59f9,prior-trial
+9,True,,True,11.74,10.59,-1.15,9.3,,13.9,10.7,-3.21,-3.6,Replayed,57,ĐẠT,review-76df399f0fba4804891b9ad7bd04727d,prior-trial
+10,True,,True,22.65,24.41,1.76,13.92,,28.46,23.5,-4.96,-6.68,Replayed,55,ĐẠT,review-92779132fb6347d28a1582c4181b59f9,new
+11,True,,True,5.91,6.52,0.61,7.74,,16.4,9.52,-6.88,-11.26,Replayed,43,CẦN KIỂM THÊM,review-ebc3ef6e30714db18c9a1c4eb8a35d28,claude-suggestion
+12,True,,True,5.63,7.62,1.99,8.6,,15.86,9.1,-6.75,-11.2,Replayed,41,ĐẠT,review-ebc3ef6e30714db18c9a1c4eb8a35d28,claude-suggestion
+13,True,,True,9.33,10.7,1.37,8.42,Bonus,17.9,16.55,-1.35,-8.88,Replayed,47,CẦN KIỂM THÊM,review-ebc3ef6e30714db18c9a1c4eb8a35d28,review-revision
+14,True,,True,13.21,10.93,-2.28,14.7,,16.25,10.56,-5.69,-6.8,Replayed,51,ĐẠT,review-ebc3ef6e30714db18c9a1c4eb8a35d28,prior-trial
+15,True,,True,33.06,31.18,-1.88,19.83,,25.49,30.39,4.9,5.73,Replayed,64,ĐẠT,review-e8c30ce4b86049baab1594d6351ea30b,prior-trial
+16,True,,True,11.93,13.06,1.13,7.71,,10.18,16.68,6.5,2.01,Replayed,80,CẦN KIỂM THÊM,review-ebc3ef6e30714db18c9a1c4eb8a35d28,claude-suggestion
+17,True,,True,,,,15.06,Challenge_thay_luc_chay,,,,,Replayed,59,ĐẠT,review-e8c30ce4b86049baab1594d6351ea30b,default
+18,True,,True,15.62,16.13,0.51,16.0,,16.78,18.57,1.79,-0.9,Replayed,69,CẦN KIỂM THÊM,review-ebc3ef6e30714db18c9a1c4eb8a35d28,prior-trial
+19,True,,True,20.22,20.77,0.55,19.28,,17.18,17.89,0.71,0.98,Replayed,48,ĐẠT,review-e8c30ce4b86049baab1594d6351ea30b,new
+20,True,,True,31.28,30.19,-1.09,25.75,,25.84,30.98,5.14,4.65,Replayed,63,ĐẠT,review-b64e12cc90404be5a2b682558dd85850,focused-search
+21,False,,True,1.87,4.21,2.34,7.31,,13.4,8.95,-4.45,-11.39,Replayed,47,CẦN SỬA,review-ebc3ef6e30714db18c9a1c4eb8a35d28,review-revision
+22,True,,True,17.45,17.38,-0.07,17.57,,16.92,19.08,2.16,-0.33,Replayed,70,CẦN KIỂM THÊM,review-e8c30ce4b86049baab1594d6351ea30b,prior-trial
+23,True,,True,21.87,20.64,-1.23,16.44,Bonus,14.0,20.13,6.12,6.04,Replayed,82,CẦN KIỂM THÊM,review-ebc3ef6e30714db18c9a1c4eb8a35d28,prior-trial
+24,True,,True,21.02,19.89,-1.13,22.52,,18.5,22.97,4.47,2.62,Replayed,77,ĐẠT,review-ebc3ef6e30714db18c9a1c4eb8a35d28,review-revision
+25,True,,True,30.5,29.27,-1.23,31.67,,28.96,28.36,-0.6,-0.03,Replayed,65,ĐẠT,review-e8c30ce4b86049baab1594d6351ea30b,prior-trial

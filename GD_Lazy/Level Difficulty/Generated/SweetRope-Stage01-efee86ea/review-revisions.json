@@ -1,0 +1,32 @@
+{
+  "3": {
+    "status": "revised",
+    "source": "prior-trial",
+    "old_full_delta": 13.61,
+    "new_full_delta": 0.43,
+    "goal_delta": 0.0,
+    "from_error": 13.61,
+    "to_error": 0.43,
+    "off_by": -0.82
+  },
+  "4": {
+    "status": "revised",
+    "source": "prior-trial",
+    "old_full_delta": 5.49,
+    "new_full_delta": -0.37,
+    "goal_delta": 0.0,
+    "from_error": 5.49,
+    "to_error": 0.37,
+    "off_by": -1.59
+  },
+  "6": {
+    "status": "revised",
+    "source": "prior-trial",
+    "old_full_delta": 3.03,
+    "new_full_delta": -0.21,
+    "goal_delta": -0.54,
+    "from_error": 3.57,
+    "to_error": 0.33,
+    "off_by": -0.92
+  }
+}

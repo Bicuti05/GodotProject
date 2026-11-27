@@ -1,0 +1,55 @@
+{
+  "ranges": {
+    "capacity": [
+      4,
+      6
+    ],
+    "orders": [
+      10,
+      14
+    ],
+    "types": [
+      8,
+      10
+    ],
+    "free": [
+      1,
+      3
+    ],
+    "hidden": [
+      0,
+      20
+    ]
+  },
+  "slope": {
+    "free": -0.05333630307884384,
+    "types": 0.57942939765453,
+    "hidden": 0.22616142392327163,
+    "capacity": 11.417158688755315,
+    "orders": 2.1593189166217344
+  },
+  "paired_mean": {
+    "free": -0.05333630307884384,
+    "types": -0.57942939765453,
+    "hidden": 0.22616142392327163
+  },
+  "paired_se": {
+    "free": 0.056685711270659654,
+    "types": 0.10588432480956186,
+    "hidden": 0.011750532909372596
+  },
+  "regression": {
+    "capacity": 11.417158688755315,
+    "orders": 2.1593189166217344,
+    "types": 0.2593007791798342,
+    "free": 2.1140410879035345,
+    "hidden": 0.032382306892593235
+  },
+  "source": {
+    "free": "paired edit",
+    "types": "paired edit",
+    "hidden": "paired edit",
+    "capacity": "regression",
+    "orders": "regression"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "113": {
+    "level": 113,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 39,
+    "status": "retained"
+  },
+  "114": {
+    "level": 114,
+    "candidates": 1,
+    "attempts_without_path": 0,
+    "seconds": 41,
+    "source": "compact",
+    "aim": 0.72,
+    "fast": 13.91,
+    "off_by": 13.19,
+    "change": 0.3,
+    "status": "off-target"
+  },
+  "132": {
+    "level": 132,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 41,
+    "status": "retained"
+  },
+  "124": {
+    "level": 124,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 42,
+    "status": "retained"
+  },
+  "116": {
+    "level": 116,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 43,
+    "status": "retained"
+  },
+  "133": {
+    "level": 133,
+    "candidates": 1,
+    "attempts_without_path": 0,
+    "seconds": 44,
+    "source": "compact",
+    "aim": 0.58,
+    "fast": 10.57,
+    "off_by": 9.99,
+    "change": 0.32,
+    "status": "off-target"
+  },
+  "131": {
+    "level": 131,
+    "candidates": 1,
+    "attempts_without_path": 0,
+    "seconds": 44,
+    "source": "compact",
+    "aim": 7.51,
+    "fast": 12.46,
+    "off_by": 4.95,
+    "change": 0.3077,
+    "status": "off-target"
+  },
+  "118": {
+    "level": 118,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 44,
+    "status": "retained"
+  },
+  "121": {
+    "level": 121,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 45,
+    "status": "retained"
+  },
+  "146": {
+    "level": 146,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 45,
+    "status": "retained"
+  },
+  "182": {
+    "level": 182,
+    "candidates": 2,
+    "attempts_without_path": 0,
+    "seconds": 16,
+    "source": "compact",
+    "aim": 13.23,
+    "fast": 14.18,
+    "off_by": 0.95,
+    "change": 0.3091,
+    "status": "pass"
+  },
+  "163": {
+    "level": 163,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 19,
+    "status": "retained"
+  },
+  "152": {
+    "level": 152,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 23,
+    "status": "retained"
+  },
+  "158": {
+    "level": 158,
+    "candidates": 3,
+    "attempts_without_path": 0,
+    "seconds": 22,
+    "source": "compact",
+    "aim": 2.24,
+    "fast": 14.85,
+    "off_by": 12.61,
+    "change": 0.3,
+    "status": "off-target"
+  },
+  "178": {
+    "level": 178,
+    "candidates": 1,
+    "attempts_without_path": 0,
+    "seconds": 20,
+    "source": "compact",
+    "aim": 9.86,
+    "fast": 9.22,
+    "off_by": -0.64,
+    "change": 0.3231,
+    "status": "pass"
+  },
+  "162": {
+    "level": 162,
+    "candidates": 1,
+    "attempts_without_path": 0,
+    "seconds": 22,
+    "source": "compact",
+    "aim": 15.45,
+    "fast": 15.61,
+    "off_by": 0.16,
+    "change": 0.2909,
+    "status": "pass"
+  },
+  "165": {
+    "level": 165,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 21,
+    "status": "retained"
+  },
+  "183": {
+    "level": 183,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 19,
+    "status": "retained"
+  },
+  "172": {
+    "level": 172,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 22,
+    "status": "retained"
+  },
+  "188": {
+    "level": 188,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 22,
+    "status": "retained"
+  },
+  "192": {
+    "level": 192,
+    "candidates": 0,
+    "attempts_without_path": 0,
+    "seconds": 15,
+    "status": "retained"
+  }
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "level": 3,
+    "status": "pass",
+    "aim": 7.42,
+    "fast": 6.6,
+    "off_by": -0.82,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 34
+  },
+  {
+    "level": 4,
+    "status": "pass",
+    "aim": 9.79,
+    "fast": 8.2,
+    "off_by": -1.59,
+    "source": "prior-trial",
+    "candidates": 50,
+    "moves": 48
+  },
+  {
+    "level": 5,
+    "status": "pass",
+    "aim": 8.79,
+    "fast": 10.77,
+    "off_by": 1.98,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 63
+  },
+  {
+    "level": 6,
+    "status": "pass",
+    "aim": 8.99,
+    "fast": 8.07,
+    "off_by": -0.92,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 49
+  },
+  {
+    "level": 7,
+    "status": "pass",
+    "aim": 14.51,
+    "fast": 12.42,
+    "off_by": -2.09,
+    "source": "review-revision",
+    "candidates": 33,
+    "moves": 65
+  },
+  {
+    "level": 8,
+    "status": "pass",
+    "aim": 12.17,
+    "fast": 13.57,
+    "off_by": 1.4,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 43
+  },
+  {
+    "level": 9,
+    "status": "pass",
+    "aim": 11.74,
+    "fast": 10.59,
+    "off_by": -1.15,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 57
+  },
+  {
+    "level": 10,
+    "status": "pass",
+    "aim": 22.65,
+    "fast": 24.41,
+    "off_by": 1.75,
+    "source": "new",
+    "candidates": 48,
+    "moves": 55
+  },
+  {
+    "level": 11,
+    "status": "pass",
+    "aim": 5.91,
+    "fast": 6.52,
+    "off_by": 0.61,
+    "source": "claude-suggestion",
+    "candidates": 50,
+    "moves": 43
+  },
+  {
+    "level": 12,
+    "status": "pass",
+    "aim": 5.63,
+    "fast": 7.62,
+    "off_by": 1.99,
+    "source": "claude-suggestion",
+    "candidates": 87,
+    "moves": 41
+  },
+  {
+    "level": 13,
+    "status": "pass",
+    "aim": 9.33,
+    "fast": 10.7,
+    "off_by": 1.37,
+    "source": "review-revision",
+    "candidates": 48,
+    "moves": 47
+  },
+  {
+    "level": 14,
+    "status": "pass",
+    "aim": 13.21,
+    "fast": 10.93,
+    "off_by": -2.28,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 51
+  },
+  {
+    "level": 15,
+    "status": "pass",
+    "aim": 33.06,
+    "fast": 31.18,
+    "off_by": -1.88,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 64
+  },
+  {
+    "level": 16,
+    "status": "pass",
+    "aim": 11.93,
+    "fast": 13.06,
+    "off_by": 1.13,
+    "source": "claude-suggestion",
+    "candidates": 83,
+    "moves": 80
+  },
+  {
+    "level": 17,
+    "status": "keep-default"
+  },
+  {
+    "level": 18,
+    "status": "pass",
+    "aim": 15.62,
+    "fast": 16.13,
+    "off_by": 0.51,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 69
+  },
+  {
+    "level": 19,
+    "status": "pass",
+    "aim": 20.22,
+    "fast": 20.77,
+    "off_by": 0.55,
+    "source": "new",
+    "candidates": 15,
+    "moves": 48
+  },
+  {
+    "level": 20,
+    "status": "pass",
+    "aim": 31.28,
+    "fast": 30.19,
+    "off_by": -1.09,
+    "source": "focused-search",
+    "candidates": 68,
+    "moves": 75
+  },
+  {
+    "level": 21,
+    "status": "off-target",
+    "aim": 1.87,
+    "fast": 4.21,
+    "off_by": 2.34,
+    "source": "review-revision",
+    "candidates": 51,
+    "moves": 47
+  },
+  {
+    "level": 22,
+    "status": "pass",
+    "aim": 17.45,
+    "fast": 17.38,
+    "off_by": -0.07,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 70
+  },
+  {
+    "level": 23,
+    "status": "pass",
+    "aim": 21.87,
+    "fast": 20.64,
+    "off_by": -1.23,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 82
+  },
+  {
+    "level": 24,
+    "status": "pass",
+    "aim": 21.02,
+    "fast": 19.89,
+    "off_by": -1.13,
+    "source": "review-revision",
+    "candidates": 15,
+    "moves": 77
+  },
+  {
+    "level": 25,
+    "status": "pass",
+    "aim": 30.5,
+    "fast": 29.27,
+    "off_by": -1.23,
+    "source": "prior-trial",
+    "candidates": 15,
+    "moves": 65
+  }
+]

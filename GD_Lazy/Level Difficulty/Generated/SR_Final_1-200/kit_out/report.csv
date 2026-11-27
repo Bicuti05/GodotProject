@@ -1,0 +1,201 @@
+﻿level,ok,frame_errors,solvable,aim_fast,score_fast,off_by,target_curve,notes
+1,True,,True,,,,0.0,Level1_giu_nguyen
+2,True,,True,13.35,12.94,-0.41,4.9,
+3,True,,True,7.42,9.02,1.6,6.6,
+4,False,,True,9.79,7.46,-2.33,8.0,
+5,False,,True,8.79,12.47,3.68,6.6,
+6,True,,True,8.99,9.71,0.72,7.96,
+7,False,,True,14.51,12.19,-2.32,8.88,
+8,True,,True,12.17,13.69,1.52,9.3,
+9,True,,True,11.74,10.59,-1.15,9.3,
+10,False,,True,22.65,25.37,2.72,13.92,
+11,False,,True,5.91,10.14,4.23,7.74,
+12,False,,True,5.63,10.5,4.87,8.6,
+13,False,,True,9.33,12.92,3.59,8.42,Bonus
+14,True,,True,13.21,10.93,-2.28,14.7,
+15,True,,True,33.06,31.18,-1.88,19.83,
+16,False,,True,11.93,18.83,6.9,7.71,
+17,True,,True,15.36,16.58,1.22,15.06,Challenge_thay_luc_chay
+18,True,,True,15.62,16.13,0.51,16.0,
+19,False,,True,20.22,17.8,-2.42,19.28,
+20,True,,True,31.28,30.19,-1.09,25.75,
+21,False,,True,1.87,5.73,3.86,7.31,
+22,True,,True,17.45,17.38,-0.07,17.57,
+23,True,,True,21.87,20.47,-1.4,16.44,Bonus
+24,True,,True,21.02,20.62,-0.4,22.52,
+25,True,,True,30.5,28.49,-2.01,31.67,
+26,False,,True,3.02,12.85,9.83,6.5,
+27,False,,True,5.19,12.63,7.44,12.1,Challenge_thay_luc_chay
+28,True,,True,19.49,18.98,-0.51,14.61,
+29,True,,True,12.47,13.06,0.59,12.46,
+30,False,,True,25.36,28.23,2.87,25.89,Endless_thay_luc_chay
+31,True,,True,11.17,10.31,-0.86,13.57,
+32,False,,True,10.09,14.79,4.7,6.89,
+33,True,,True,19.94,21.11,1.17,16.86,Bonus
+34,True,,True,13.0,14.33,1.33,13.28,
+35,False,,True,25.48,28.08,2.6,29.84,
+36,True,,True,16.52,17.81,1.29,14.2,
+37,True,,True,16.66,15.75,-0.91,14.82,Challenge_thay_luc_chay
+38,True,,True,12.51,12.36,-0.15,13.55,
+39,True,,True,13.36,15.19,1.83,14.29,
+40,True,,True,28.19,26.16,-2.03,23.3,Endless_thay_luc_chay
+41,False,,True,2.2,4.92,2.72,3.88,
+42,True,,True,18.48,18.94,0.46,18.45,ice_01_ghi_de
+43,True,,True,13.91,14.21,0.3,17.51,Bonus ice_01_ghi_de
+44,True,,True,21.79,20.77,-1.02,7.28,
+45,False,,True,19.01,22.12,3.11,31.8,ice_01_ghi_de
+46,True,,True,22.49,20.95,-1.54,15.95,
+47,True,,True,18.68,18.55,-0.13,13.45,Challenge_thay_luc_chay ice_01_ghi_de
+48,False,,True,9.14,20.68,11.54,16.35,
+49,False,,True,0.78,13.27,12.49,11.12,ice_01_ghi_de
+50,False,,True,38.17,35.09,-3.08,34.88,Endless_thay_luc_chay
+51,True,,True,11.29,9.14,-2.15,3.91,
+52,False,,True,0.0,21.1,21.1,10.63,
+53,False,,True,5.0,14.78,9.78,4.94,Bonus ice_01_ghi_de
+54,False,,True,6.34,11.27,4.93,7.31,
+55,True,,True,12.36,13.37,1.01,25.67,
+56,True,,True,21.39,19.81,-1.58,17.72,
+57,False,,True,25.03,21.53,-3.5,14.99,Challenge_thay_luc_chay
+58,True,,True,5.71,6.46,0.75,17.24,
+59,False,,True,10.2,13.44,3.24,7.31,
+60,True,,True,23.51,24.15,0.64,29.29,Endless_thay_luc_chay ice_01_ghi_de
+61,True,,True,14.08,13.8,-0.28,13.21,
+62,True,,True,16.41,18.19,1.78,11.91,ice_01_ghi_de
+63,True,,True,12.7,13.17,0.47,13.1,Bonus
+64,True,,True,11.78,12.97,1.19,13.41,
+65,True,,True,22.56,24.43,1.87,23.24,
+66,True,,True,15.11,17.23,2.12,16.86,
+67,False,,True,5.17,14.42,9.25,4.41,Challenge_thay_luc_chay
+68,True,,True,15.5,14.27,-1.23,17.14,
+69,True,,True,10.55,12.18,1.63,16.92,ice_01_ghi_de
+70,True,,True,21.86,21.17,-0.69,31.92,Endless_thay_luc_chay
+71,True,,True,11.82,10.77,-1.05,16.99,
+72,False,,True,9.24,14.26,5.02,11.12,
+73,True,,True,13.75,11.88,-1.87,17.25,Bonus
+74,False,,True,15.9,18.28,2.38,20.92,
+75,False,,True,34.53,32.2,-2.33,34.85,ice_01_ghi_de
+76,True,,True,13.39,14.59,1.2,16.81,
+77,True,,True,17.05,19.22,2.17,17.33,Challenge_thay_luc_chay
+78,True,,True,15.64,16.19,0.55,15.8,
+79,False,,True,5.43,11.91,6.48,12.74,
+80,True,,True,24.88,25.67,0.79,26.1,Endless_thay_luc_chay ice_01_ghi_de
+81,True,,True,8.01,9.05,1.04,8.0,
+82,True,,True,12.68,13.26,0.58,4.43,
+83,True,,True,10.73,11.14,0.41,11.26,Bonus
+84,False,,True,4.08,11.37,7.29,18.68,ice_01_ghi_de
+85,True,,True,26.65,27.91,1.26,29.19,
+86,False,,True,4.3,8.8,4.5,10.47,
+87,False,,True,7.21,13.75,6.54,10.05,Challenge_thay_luc_chay ice_01_ghi_de
+88,False,,True,4.49,12.1,7.61,4.76,
+89,False,,True,0.0,11.92,11.92,7.33,
+90,True,,True,7.14,8.41,1.27,23.32,Endless_thay_luc_chay
+91,True,,True,19.86,18.82,-1.04,12.45,
+92,False,,True,4.08,15.7,11.62,5.69,
+93,True,,True,22.48,21.08,-1.4,18.61,Bonus
+94,False,,True,0.0,11.59,11.59,7.33,ice_01_ghi_de
+95,True,,True,31.71,32.94,1.23,31.86,
+96,True,,True,21.13,20.41,-0.72,14.23,
+97,False,,True,1.16,13.7,12.54,6.13,Challenge_thay_luc_chay
+98,False,,True,11.54,9.0,-2.54,11.49,ice_01_ghi_de
+99,False,,True,7.07,14.35,7.28,16.87,
+100,True,,True,32.81,32.13,-0.68,33.33,Endless_thay_luc_chay
+101,True,,True,15.4,16.29,0.89,7.45,
+102,False,,True,10.83,16.07,5.24,9.89,
+103,True,,True,4.37,5.51,1.14,11.43,Bonus
+104,True,,True,14.49,14.08,-0.41,13.0,
+105,True,,True,31.37,30.27,-1.1,26.95,
+106,False,,True,4.28,8.78,4.5,9.18,
+107,True,,True,10.96,11.13,0.17,4.45,Challenge_thay_luc_chay
+108,True,,True,11.42,12.44,1.02,12.03,
+109,True,,True,16.65,16.52,-0.13,22.15,ice_01_ghi_de
+110,True,,True,,,,30.61,Endless_thay_luc_chay
+111,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,10.22,
+112,True,,True,23.29,22.76,-0.53,19.55,
+113,False,,True,3.5,15.51,12.01,4.45,Bonus ice_01_ghi_de
+114,False,,True,0.72,13.91,13.19,8.22,
+115,True,,True,21.13,21.09,-0.04,23.96,
+116,False,,True,8.01,11.91,3.9,8.25,
+117,True,,True,,,,8.12,Challenge_thay_luc_chay ice_01_ghi_de
+118,True,,True,9.0,10.66,1.66,18.08,
+119,False,,True,0.24,16.09,15.85,9.12,
+120,True,,True,,,,31.31,Endless_thay_luc_chay
+121,False,,True,4.89,7.53,2.64,3.95,
+122,True,,True,14.4,15.31,0.91,15.12,
+123,False,,True,1.95,10.3,8.35,7.1,Bonus
+124,False,,True,0.0,11.04,11.04,7.35,
+125,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,36.78,
+126,True,,True,13.29,15.35,2.06,12.31,ice_01_ghi_de
+127,True,,True,,,,8.16,Challenge_thay_luc_chay
+128,True,,True,8.48,10.41,1.93,7.86,
+129,True,,True,21.82,21.15,-0.67,17.09,
+130,True,,True,,,,27.5,Endless_thay_luc_chay
+131,False,,True,7.51,12.46,4.95,6.75,
+132,False,,True,10.7,16.68,5.98,13.46,
+133,False,,True,0.58,10.57,9.99,6.52,Bonus
+134,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,12.32,
+135,True,,True,32.32,32.5,0.18,32.24,ice_01_ghi_de
+136,False,,True,7.8,12.28,4.48,8.18,
+137,True,,True,,,,17.36,Challenge_thay_luc_chay ice_01_ghi_de
+138,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,20.28,
+139,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,20.36,
+140,True,,True,,,,28.6,Endless_thay_luc_chay
+141,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,13.81,
+142,False,,True,5.17,17.86,12.69,8.99,ice_01_ghi_de
+143,False,,True,0.0,21.08,21.08,7.56,Bonus
+144,False,,True,31.0,13.54,-17.46,18.83,
+145,True,,True,19.79,19.57,-0.22,36.19,
+146,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,8.68,ice_01_ghi_de
+147,True,,True,,,,10.25,Challenge_thay_luc_chay
+148,True,,True,11.15,11.43,0.28,16.84,
+149,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,21.92,
+150,True,,True,,,,37.96,Endless_thay_luc_chay
+151,True,,True,19.3,19.27,-0.03,16.93,
+152,False,,True,3.05,15.68,12.63,8.51,
+153,True,,True,15.4,17.58,2.18,13.67,Bonus
+154,True,,True,23.13,21.44,-1.69,23.28,
+155,True,,True,30.86,30.63,-0.23,29.42,ice_01_ghi_de
+156,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,12.39,
+157,True,,True,,,,8.11,Challenge_thay_luc_chay
+158,False,,True,2.24,14.85,12.61,7.07,
+159,True,,True,13.69,13.24,-0.45,15.66,ice_01_ghi_de
+160,True,,True,,,,32.41,Endless_thay_luc_chay
+161,True,,True,16.22,18.01,1.79,11.43,ice_01_ghi_de
+162,True,,True,15.45,15.61,0.16,20.16,
+163,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,8.21,Bonus
+164,True,,True,11.84,12.79,0.95,12.36,
+165,True,,True,28.0,30.23,2.23,26.32,
+166,True,,True,14.68,15.08,0.4,20.3,
+167,True,,True,,,,18.55,Challenge_thay_luc_chay ice_01_ghi_de
+168,True,,True,11.37,12.7,1.33,15.14,
+169,True,,True,21.23,21.66,0.43,21.24,
+170,True,,True,,,,34.37,Endless_thay_luc_chay
+171,True,,True,9.12,10.81,1.69,12.73,
+172,False,,True,0.02,15.78,15.76,6.77,
+173,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,20.18,Bonus
+174,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,12.87,ice_01_ghi_de
+175,True,,True,36.84,34.56,-2.28,39.09,
+176,True,,True,19.3,19.39,0.09,20.08,
+177,True,,True,,,,13.05,Challenge_thay_luc_chay
+178,True,,True,9.86,9.22,-0.64,17.62,ice_01_ghi_de
+179,False,,True,25.06,15.06,-10.0,23.04,
+180,True,,True,,,,28.52,Endless_thay_luc_chay
+181,True,,True,15.74,16.25,0.51,14.16,
+182,True,,True,13.23,14.18,0.95,20.89,
+183,False,,True,11.23,17.5,6.27,20.14,Bonus ice_01_ghi_de
+184,True,,True,21.48,21.69,0.21,21.97,
+185,True,,True,29.67,28.49,-1.18,33.42,
+186,False,,True,6.46,12.88,6.42,7.85,
+187,True,,True,,,,11.46,Challenge_thay_luc_chay
+188,False,,True,0.0,10.24,10.24,8.13,
+189,True,,True,15.57,16.37,0.8,11.77,
+190,True,,True,,,,28.52,Endless_thay_luc_chay
+191,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,18.57,
+192,False,,True,11.68,14.46,2.78,20.25,
+193,False,,True,3.8,12.06,8.26,8.04,Bonus
+194,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,16.89,
+195,False,,True,37.31,29.59,-7.72,37.0,ice_01_ghi_de
+196,True,,True,18.14,18.64,0.5,17.94,
+197,True,,True,,,,15.89,Challenge_thay_luc_chay
+198,True,,True,19.67,19.48,-0.19,20.89,
+199,False,"mới đổi 0% vị trí quả, cần ít nhất 25%",False,,,,16.89,
+200,True,,True,,,,38.53,Endless_thay_luc_chay ice_01_ghi_de

@@ -1,0 +1,195 @@
+{
+  "141": {
+    "level": 141,
+    "candidates": 25,
+    "attempts_without_path": 0,
+    "seconds": 31,
+    "status": "retained"
+  },
+  "131": {
+    "level": 131,
+    "candidates": 23,
+    "attempts_without_path": 0,
+    "seconds": 45,
+    "source": "refined",
+    "aim": 7.51,
+    "fast": 12.67,
+    "off_by": 5.16,
+    "change": 0.4615,
+    "status": "off-target"
+  },
+  "136": {
+    "level": 136,
+    "candidates": 26,
+    "attempts_without_path": 0,
+    "seconds": 50,
+    "source": "refined",
+    "aim": 7.8,
+    "fast": 12.28,
+    "off_by": 4.48,
+    "change": 0.3542,
+    "status": "off-target"
+  },
+  "146": {
+    "level": 146,
+    "candidates": 24,
+    "attempts_without_path": 0,
+    "seconds": 51,
+    "source": "refined",
+    "aim": 6.97,
+    "fast": 10.13,
+    "off_by": 3.16,
+    "change": 0.4821,
+    "status": "off-target"
+  },
+  "116": {
+    "level": 116,
+    "candidates": 26,
+    "attempts_without_path": 0,
+    "seconds": 51,
+    "source": "refined",
+    "aim": 8.01,
+    "fast": 11.91,
+    "off_by": 3.9,
+    "change": 0.5192,
+    "status": "off-target"
+  },
+  "132": {
+    "level": 132,
+    "candidates": 25,
+    "attempts_without_path": 1,
+    "seconds": 55,
+    "status": "retained"
+  },
+  "121": {
+    "level": 121,
+    "candidates": 22,
+    "attempts_without_path": 0,
+    "seconds": 58,
+    "source": "refined",
+    "aim": 4.89,
+    "fast": 7.53,
+    "off_by": 2.64,
+    "change": 0.5357,
+    "status": "off-target"
+  },
+  "174": {
+    "level": 174,
+    "candidates": 26,
+    "attempts_without_path": 0,
+    "seconds": 17,
+    "source": "refined",
+    "aim": 13.13,
+    "fast": 17.36,
+    "off_by": 4.23,
+    "change": 0.5,
+    "status": "off-target"
+  },
+  "163": {
+    "level": 163,
+    "candidates": 26,
+    "attempts_without_path": 0,
+    "seconds": 42,
+    "source": "refined",
+    "aim": 11.83,
+    "fast": 16.95,
+    "off_by": 5.12,
+    "change": 0.7091,
+    "status": "off-target"
+  },
+  "139": {
+    "level": 139,
+    "candidates": 25,
+    "attempts_without_path": 9,
+    "seconds": 77,
+    "status": "retained"
+  },
+  "182": {
+    "level": 182,
+    "candidates": 25,
+    "attempts_without_path": 0,
+    "seconds": 27,
+    "source": "refined",
+    "aim": 13.23,
+    "fast": 15.23,
+    "off_by": 2.0,
+    "change": 0.5273,
+    "status": "pass"
+  },
+  "191": {
+    "level": 191,
+    "candidates": 24,
+    "attempts_without_path": 0,
+    "seconds": 20,
+    "source": "refined",
+    "aim": 17.92,
+    "fast": 16.38,
+    "off_by": -1.54,
+    "change": 0.3846,
+    "status": "pass"
+  },
+  "186": {
+    "level": 186,
+    "candidates": 21,
+    "attempts_without_path": 0,
+    "seconds": 26,
+    "source": "refined",
+    "aim": 6.46,
+    "fast": 12.88,
+    "off_by": 6.42,
+    "change": 0.3654,
+    "status": "off-target"
+  },
+  "183": {
+    "level": 183,
+    "candidates": 25,
+    "attempts_without_path": 0,
+    "seconds": 32,
+    "source": "refined",
+    "aim": 11.23,
+    "fast": 17.5,
+    "off_by": 6.27,
+    "change": 0.65,
+    "status": "off-target"
+  },
+  "144": {
+    "level": 144,
+    "candidates": 24,
+    "attempts_without_path": 9,
+    "seconds": 86,
+    "status": "retained"
+  },
+  "125": {
+    "level": 125,
+    "candidates": 25,
+    "attempts_without_path": 9,
+    "seconds": 90,
+    "status": "retained"
+  },
+  "192": {
+    "level": 192,
+    "candidates": 25,
+    "attempts_without_path": 0,
+    "seconds": 30,
+    "source": "refined",
+    "aim": 11.68,
+    "fast": 14.46,
+    "off_by": 2.78,
+    "change": 0.7167,
+    "status": "off-target"
+  },
+  "179": {
+    "level": 179,
+    "candidates": 22,
+    "attempts_without_path": 9,
+    "seconds": 51,
+    "status": "retained"
+  },
+  "195": {
+    "level": 195,
+    "candidates": 25,
+    "attempts_without_path": 9,
+    "seconds": 48,
+    "status": "retained"
+  }
+}

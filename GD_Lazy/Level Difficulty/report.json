@@ -1,0 +1,205 @@
+{
+ "default": {
+  "n": 5125,
+  "score_min": 0.0,
+  "score_max": 54.2,
+  "r2": 0.815,
+  "mae": 2.31,
+  "p90": 5.51,
+  "mae_hard": 2.36,
+  "mae_normal": 2.29,
+  "within3": 0.755,
+  "label_acc": 0.95,
+  "base": -12.63,
+  "phase": {
+   "early": [
+    12.9,
+    5.6,
+    29.3
+   ],
+   "mid": [
+    8.9,
+    2.1,
+    19.2
+   ],
+   "end": [
+    7.4,
+    1.9,
+    18.5
+   ]
+  },
+  "sun_spearman": 0.305,
+  "sun_mean_by_tier": [
+   12.4,
+   13.3,
+   15.3,
+   16.1,
+   15.6
+  ]
+ },
+ "lv2": {
+  "n": 5118,
+  "score_min": 0.0,
+  "score_max": 63.6,
+  "r2": 0.636,
+  "mae": 4.43,
+  "p90": 10.59,
+  "mae_hard": 5.04,
+  "mae_normal": 4.28,
+  "within3": 0.499,
+  "label_acc": 0.771,
+  "base": -22.87,
+  "phase": {
+   "early": [
+    20.7,
+    6.1,
+    40.7
+   ],
+   "mid": [
+    14.7,
+    3.2,
+    24.6
+   ],
+   "end": [
+    12.9,
+    2.8,
+    26.8
+   ]
+  },
+  "sun_spearman": 0.359,
+  "sun_mean_by_tier": [
+   25.8,
+   28.7,
+   30.5,
+   33.6,
+   32.8
+  ]
+ },
+ "lv3": {
+  "n": 5114,
+  "score_min": 18.3,
+  "score_max": 70.4,
+  "r2": 0.651,
+  "mae": 5.0,
+  "p90": 11.52,
+  "mae_hard": 5.31,
+  "mae_normal": 4.92,
+  "within3": 0.44,
+  "label_acc": 0.745,
+  "base": -0.74,
+  "phase": {
+   "early": [
+    18.1,
+    7.4,
+    39.1
+   ],
+   "mid": [
+    14.0,
+    3.0,
+    28.8
+   ],
+   "end": [
+    10.0,
+    2.9,
+    22.0
+   ]
+  },
+  "sun_spearman": 0.279,
+  "sun_mean_by_tier": [
+   33.3,
+   34.7,
+   37.2,
+   39.2,
+   37.6
+  ]
+ },
+ "lv4": {
+  "n": 5110,
+  "score_min": 20.4,
+  "score_max": 89.1,
+  "r2": 0.623,
+  "mae": 7.03,
+  "p90": 15.97,
+  "mae_hard": 6.64,
+  "mae_normal": 7.13,
+  "within3": 0.325,
+  "label_acc": 0.655,
+  "base": -10.16,
+  "phase": {
+   "early": [
+    24.7,
+    9.7,
+    53.0
+   ],
+   "mid": [
+    19.6,
+    4.8,
+    46.7
+   ],
+   "end": [
+    18.2,
+    4.0,
+    33.4
+   ]
+  },
+  "sun_spearman": 0.464,
+  "sun_mean_by_tier": [
+   40.8,
+   42.9,
+   45.8,
+   50.1,
+   51.1
+  ]
+ },
+ "lv5": {
+  "n": 5110,
+  "score_min": 35.5,
+  "score_max": 100.0,
+  "r2": 0.556,
+  "mae": 7.11,
+  "p90": 15.83,
+  "mae_hard": 4.89,
+  "mae_normal": 7.66,
+  "within3": 0.314,
+  "label_acc": 0.654,
+  "base": -2.66,
+  "phase": {
+   "early": [
+    25.9,
+    8.1,
+    47.7
+   ],
+   "mid": [
+    21.4,
+    4.9,
+    38.7
+   ],
+   "end": [
+    22.6,
+    4.0,
+    40.3
+   ]
+  },
+  "sun_spearman": 0.349,
+  "sun_mean_by_tier": [
+   45.9,
+   48.7,
+   50.9,
+   53.2,
+   55.6
+  ]
+ },
+ "stuck_causes_default": {
+  "no_empty_rope": 0.14,
+  "locked_left": 0.142,
+  "ice_left": 0.0,
+  "root_blocked": 0.009
+ },
+ "bot_default": {
+  "win": 0.047,
+  "progress": 0.164,
+  "stuck_early": 0.808,
+  "stuck_mid": 0.717,
+  "stuck_end": 0.512
+ }
+}

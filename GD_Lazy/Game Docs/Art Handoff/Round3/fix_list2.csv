@@ -1,0 +1,138 @@
+﻿group,output_path,width,height,min_w,min_h,note
+B1,unity/Assets/_IEC/Image/Banner/DIS_BANNER_HARD.png,1080,400,0.92,0.8,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_GREEN.png,600,50,0.97,0.85,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_RED.png,600,50,0.97,0.85,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_YELLOW.png,600,50,0.97,0.85,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/HUD/BOARD_IQ_TRACK.png,526,61,0.96,0.85,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Helper/BOARD_DEAD_TOAST.png,800,180,0.95,0.85,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Home/BOARD_HEX_COVER.png,980,860,0.88,0.88,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Home/BOARD_HEX_FRAME.png,980,860,0.93,0.93,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_BLUE_NORMAL.png,792,216,0.95,0.82,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_BLUE_PRESSED.png,792,216,0.95,0.82,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_HARD.png,792,216,0.95,0.82,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_ORANGE_NORMAL.png,792,216,0.95,0.82,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_ORANGE_PRESSED.png,792,216,0.95,0.82,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Rank/BOARD_REWARD1.png,146,187,0.9,0.93,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Special/DIS_FLAGS.png,900,220,0.96,0.65,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Streak/BOARD_DATE.png,990,206,0.96,0.95,hình bị thu trong khung
+B1,unity/Assets/_IEC/Image/Win/DIS_WIN_TEXT.png,489,120,0.93,0.85,hình bị thu trong khung
+B1g,godot_dropin/assets/sprites/juice_sort/flower_teal.png,200,200,,,vùng hình 68% x 99% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/flowering_shrubs.png,217,1010,,,vùng hình 100% x 51% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/group_halo/bell_rank_collectible_halo.png,194,194,,,vùng hình 59% x 61% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/group_halo/elk_rank_collectible_halo.png,194,194,,,vùng hình 62% x 58% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/group_halo/gingerbread_rank_collectible_halo.png,194,194,,,vùng hình 58% x 64% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/group_halo/snow_rank_collectible_halo.png,194,194,,,vùng hình 62% x 61% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/group_halo/tree_rank_collectible_halo.png,194,194,,,vùng hình 57% x 62% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/rank_collectible/ribbon_bottom.png,60,102,,,vùng hình 162% x 105% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/rank_collectible/tree.png,200,200,,,vùng hình 100% x 72% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_side_gold_1.png,401,386,,,vùng hình 59% x 100% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/streak_banner/lv3_side_gold_2.png,401,386,,,vùng hình 59% x 100% bản cũ
+B1g,godot_dropin/assets/sprites/juice_sort/sunlight_collector_body.png,199,198,,,vùng hình 99% x 72% bản cũ
+B1g,godot_dropin/assets/sprites/prop_btn_hint.png,216,216,,,vùng hình 68% x 66% bản cũ
+B1g,godot_dropin/assets/sprites/prop_btn_rope.png,216,216,,,vùng hình 81% x 67% bản cũ
+B1g,godot_dropin/assets/sprites/prop_btn_undo.png,216,216,,,vùng hình 74% x 76% bản cũ
+B1g,unity/Assets/_IEC/Image/Rank/GIFT_SPECIAL_OPEN.png,125,89,,,vùng hình 60% x 100% bản cũ
+B1g,unity/Assets/_IEC/Image/Streak/OBJ_CROWN.png,95,57,,,vùng hình 68% x 100% bản cũ
+B1g,godot_dropin/assets/effect/rank_collect_trail/et_trail_002.png,128,128,,,vùng hình 99% x 71% bản cũ
+B2a,unity/Assets/_IEC/Image/Theme/Fruit/BG_BOARD_FRUIT.png,1080,2340,,,style A1: phẳng
+B2a,unity/Assets/_IEC/Image/Theme/Flower/BG_BOARD_FLOWER.png,1080,2340,,,style A1: phẳng
+B2a,unity/Assets/_IEC/Image/Theme/Winter/BG_BOARD_WINTER.png,1080,2340,,,style A1: phẳng
+B2a,godot_dropin/assets/sprites/juice_sort/gamepage_bg_leaf_shadow.webp,718,1536,,,style A1: phẳng
+B2b,unity/Assets/_IEC/Image/Home/BG_HOME_SKY.png,1080,2340,,,style A2: cartoon đơn giản
+B2b,unity/Assets/_IEC/Image/Home/BG_HOME_HILL.png,1080,900,,,style A2: cartoon đơn giản
+B2b,unity/Assets/_IEC/Image/Home/BG_HOME_GROUND.png,1080,600,,,style A2: cartoon đơn giản
+B2b,unity/Assets/_IEC/Image/Shop/BG_SHOP.png,1080,2340,,,style A2: cartoon đơn giản
+B2b,unity/Assets/_IEC/Image/Store/BG_SPLASH.png,1080,2340,,,style A2: cartoon đơn giản
+B2b,godot_dropin/assets/sprites/splash_optimization/background.png,1080,2344,,,style A2: cartoon đơn giản
+B2b,godot_dropin/assets/app/launch_bg.png,1080,1920,,,style A2: cartoon đơn giản
+B2b,godot_dropin/assets/app/app_icon_bg.png,432,432,,,style A2: cartoon đơn giản
+B2b,godot_dropin/assets/app/app_icon.png,1024,1024,,,style A2: cartoon đơn giản
+B4,godot_dropin/assets/sprites/juice_sort/rope_red_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_red_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_red_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_blue_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_blue_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_blue_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_cyan_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_cyan_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_cyan_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_green_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_green_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_green_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_lavender_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_lavender_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_lavender_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_orange_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_orange_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_orange_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_pink_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_pink_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_pink_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_purple_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_purple_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_purple_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_teal_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_teal_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_teal_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_yellow_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_yellow_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_yellow_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_park_top.png,60,121,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_park_mid.png,60,88,,,"thân x 25-35, cùng vân, không vệt nối"
+B4,godot_dropin/assets/sprites/juice_sort/rope_park_bottom.png,60,102,,,"thân x 25-35, cùng vân, không vệt nối"
+B5,godot_dropin/assets/sprites/juice_sort/group_halo/bell_rank_collectible_halo.png,194,194,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/group_halo/gingerbread_rank_collectible_halo.png,194,194,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/group_halo/tree_rank_collectible_halo.png,194,194,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_bell.png,540,540,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_elk.png,540,540,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_empty.png,540,540,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_gingerbread.png,540,540,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_snow.png,540,540,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/rank_collectible/gift_tree.png,540,540,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/juice_sort/streak/cloud_figma.png,816,482,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/HUD/BOARD_IQ_FILL.png,505,32,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/HUD/BOARD_IQ_GROOVE.png,505,32,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/HUD/BOARD_IQ_TRACK.png,526,61,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Home/BOARD_HEX_COVER.png,980,860,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Home/BOARD_HEX_FRAME.png,980,860,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_BLUE_NORMAL.png,792,216,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_BLUE_PRESSED.png,792,216,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_ORANGE_NORMAL.png,792,216,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_ORANGE_PRESSED.png,792,216,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Mechanic/EFF_HONEY_FLOW_1.png,160,256,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Result/BOARD_LOSE.png,975,1200,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_CARD.png,780,200,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_LARGE.png,975,561,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/UIKit/BOARD_PANEL_SMALL.png,640,400,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/UIKit/BUTTON_GREEN_LOCKED.png,520,134,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/UIKit/BUTTON_GREEN_PRESSED.png,520,134,,,ảnh nguồn nhỏ hơn bản xuất
+B5,godot_dropin/assets/sprites/prop_btn_bg.png,408,456,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Streak/BOARD_DATE.png,990,206,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Banner/DIS_BANNER_HARD.png,1080,400,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Bonus/EFF_PIG_SHARD.png,256,256,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Bonus/EFF_PIG_SMOKE.png,512,512,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Helper/BOARD_DEAD_TOAST.png,800,180,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Home/BUTTON_PLAY_HARD.png,792,216,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Mechanic/EFF_ICE_MELT_1.png,256,256,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Mechanic/EFF_ICE_MELT_3.png,256,256,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_GENIUS.png,900,110,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_GOLD.png,900,110,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Result/BOARD_WIN_ROW_IQ.png,900,110,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Shop/BOARD_PACK.png,951,183,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Shop/BOARD_PACK_HIGHLIGHT.png,951,183,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Store/BOARD_LOADING_FILL.png,700,60,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Store/BOARD_LOADING_FRAME.png,700,60,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/UIKit/BOARD_GUIDE.png,900,200,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/UIKit/DIS_RIBBON_TITLE.png,732,122,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Banner/DIS_BANNER_CHALLENGE.png,800,200,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_1.png,512,512,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Banner/OBJ_STREAK_BADGE_2.png,512,512,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Endless/BOARD_ENDLESS_RESULT.png,975,900,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_BAR.png,600,50,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_GREEN.png,600,50,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_RED.png,600,50,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Endless/BOARD_TIMER_FILL_YELLOW.png,600,50,,,ảnh nguồn nhỏ hơn bản xuất
+B5,unity/Assets/_IEC/Image/Special/DIS_FLAGS.png,900,220,,,ảnh nguồn nhỏ hơn bản xuất
+B6,unity/Assets/_IEC/Image/Rank/x10.png,144,99,,,"thêm viền dây như x1, x8"
+B6,unity/Assets/_IEC/Image/Rank/x10_w.png,144,99,,,"thêm viền dây như x1, x8"
+B6,godot_dropin/assets/effect/texture/point/ef_point_003.png,256,256,,,đang trùng 91% ảnh gốc

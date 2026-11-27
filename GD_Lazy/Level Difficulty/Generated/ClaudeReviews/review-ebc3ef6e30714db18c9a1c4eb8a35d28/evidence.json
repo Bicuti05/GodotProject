@@ -1,0 +1,9738 @@
+[
+  {
+    "check": {
+      "level": 7,
+      "target_curve": "8.88",
+      "notes": "",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 14.51,
+      "score_fast": 12.42,
+      "off_by": -2.09,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 8.7,
+      "full_estimate": {
+        "score": 16.93549503840164,
+        "bot_win": 0.0,
+        "player_win": 0.33999999999999997
+      },
+      "full_default": {
+        "score": 12.52578267726027,
+        "bot_win": 0.0,
+        "player_win": 0.7916666666666667
+      },
+      "full_delta_from_default": 4.41,
+      "target_delta_from_default": 0.18,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 7,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 11,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": []
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "items": [
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 4
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 8
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 7,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 11,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": []
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "items": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 1
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "refill": [
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 8
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        6,
+        3,
+        5
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        6,
+        1,
+        4
+      ],
+      [
+        6,
+        0,
+        4
+      ],
+      [
+        0,
+        1,
+        6
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        2
+      ],
+      [
+        6,
+        0,
+        2
+      ],
+      [
+        4,
+        3,
+        6
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        6,
+        0,
+        4
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        6,
+        4,
+        0
+      ],
+      [
+        6,
+        3,
+        0
+      ],
+      [
+        5,
+        3,
+        3
+      ],
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        1,
+        4,
+        3
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        1,
+        3,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        6,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        6
+      ],
+      [
+        4,
+        3,
+        5
+      ],
+      [
+        5,
+        4,
+        4
+      ],
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        5,
+        0,
+        3
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        1,
+        0,
+        6
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        6,
+        4,
+        1
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        3,
+        2
+      ],
+      [
+        2,
+        4,
+        3
+      ],
+      [
+        2,
+        2,
+        5
+      ],
+      [
+        2,
+        1,
+        6
+      ],
+      [
+        3,
+        4,
+        6
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        5,
+        2,
+        3
+      ],
+      [
+        2,
+        0,
+        5
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        3,
+        1,
+        4
+      ],
+      [
+        3,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 11,
+      "target_curve": "7.74",
+      "notes": "",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 5.91,
+      "score_fast": 6.52,
+      "off_by": 0.61,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 19.0,
+      "full_estimate": {
+        "score": 9.520721403230166,
+        "bot_win": 0.05,
+        "player_win": 0.6216666666666667
+      },
+      "full_default": {
+        "score": 16.402397776016393,
+        "bot_win": 0.0,
+        "player_win": 0.7
+      },
+      "full_delta_from_default": -6.88,
+      "target_delta_from_default": -11.26,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 11,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 10,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "items": [
+            {
+              "type": 8
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "count": 1
+          },
+          "items": []
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 0
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 5
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 11,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 10,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "items": [
+            {
+              "type": 8
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "count": 1
+          },
+          "items": []
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 8
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        3,
+        4,
+        1
+      ],
+      [
+        2,
+        0,
+        4
+      ],
+      [
+        1,
+        4,
+        5
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        3,
+        2
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        4,
+        3,
+        0
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        0,
+        3,
+        3
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        0,
+        3
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        4,
+        1,
+        2
+      ],
+      [
+        2,
+        4,
+        3
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        4
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 12,
+      "target_curve": "8.6",
+      "notes": "",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 5.63,
+      "score_fast": 7.62,
+      "off_by": 1.99,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 19.8,
+      "full_estimate": {
+        "score": 9.101429324661988,
+        "bot_win": 0.05,
+        "player_win": 0.7458333333333333
+      },
+      "full_default": {
+        "score": 15.856096712049396,
+        "bot_win": 0.0,
+        "player_win": 0.6583333333333333
+      },
+      "full_delta_from_default": -6.75,
+      "target_delta_from_default": -11.2,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 12,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 4,
+          "items": [
+            {
+              "type": 7
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 6
+          },
+          "items": [
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 4,
+          "container": {
+            "type": 1
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 4,
+          "container": {
+            "type": 5
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 6,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 8
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 2
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 8
+          },
+          "items": [
+            {
+              "type": 8
+            },
+            {
+              "type": 6
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 5
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 5
+          },
+          "refill": [
+            {
+              "type": 5
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 4,
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 12,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 4,
+          "items": [
+            {
+              "type": 7
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 6
+          },
+          "items": [
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 4,
+          "container": {
+            "type": 1
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 4,
+          "container": {
+            "type": 5
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 6,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 2
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 8
+          },
+          "items": [
+            {
+              "type": 8
+            },
+            {
+              "type": 6
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 5
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 5
+          },
+          "refill": [
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 7
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 4,
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        6,
+        1,
+        1
+      ],
+      [
+        4,
+        1,
+        6
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        3,
+        3,
+        6
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        4,
+        1,
+        3
+      ],
+      [
+        4,
+        0,
+        6
+      ],
+      [
+        3,
+        0,
+        4
+      ],
+      [
+        6,
+        0,
+        3
+      ],
+      [
+        4,
+        0,
+        6
+      ],
+      [
+        6,
+        2,
+        4
+      ],
+      [
+        0,
+        0,
+        6
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        6,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        5
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        1,
+        3,
+        6
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        3,
+        3
+      ],
+      [
+        4,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        4
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        5,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        2,
+        1,
+        5
+      ],
+      [
+        2,
+        0,
+        6
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 13,
+      "target_curve": "8.42",
+      "notes": "Bonus",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 9.33,
+      "score_fast": 10.7,
+      "off_by": 1.37,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 17.3,
+      "full_estimate": {
+        "score": 16.55142304273127,
+        "bot_win": 0.0,
+        "player_win": 0.29833333333333334
+      },
+      "full_default": {
+        "score": 17.898198553893362,
+        "bot_win": 0.075,
+        "player_win": 0.7383333333333334
+      },
+      "full_delta_from_default": -1.35,
+      "target_delta_from_default": -8.88,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 13,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 1,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 1,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 13,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 1,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 6,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 3
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 5
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 6
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        4,
+        2,
+        1
+      ],
+      [
+        4,
+        1,
+        3
+      ],
+      [
+        5,
+        1,
+        4
+      ],
+      [
+        4,
+        2,
+        5
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        1,
+        1,
+        5
+      ],
+      [
+        5,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        4,
+        2
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        0,
+        4,
+        1
+      ],
+      [
+        3,
+        4,
+        0
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        5,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        4,
+        1,
+        2
+      ],
+      [
+        2,
+        4,
+        1
+      ],
+      [
+        2,
+        3,
+        3
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        5,
+        2,
+        1
+      ],
+      [
+        3,
+        2,
+        5
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        5,
+        4,
+        3
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        5,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        4,
+        3,
+        5
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 14,
+      "target_curve": "14.7",
+      "notes": "",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 13.21,
+      "score_fast": 10.93,
+      "off_by": -2.28,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 21.5,
+      "full_estimate": {
+        "score": 10.559382921163508,
+        "bot_win": 0.025,
+        "player_win": 0.8333333333333334
+      },
+      "full_default": {
+        "score": 16.246774279687145,
+        "bot_win": 0.05,
+        "player_win": 0.7633333333333334
+      },
+      "full_delta_from_default": -5.69,
+      "target_delta_from_default": -6.8,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 14,
+      "difficultyType": "Normal",
+      "difficulty": 2,
+      "orderCount": 11,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 3
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "items": []
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 5,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 7
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 14,
+      "difficultyType": "Normal",
+      "difficulty": 2,
+      "orderCount": 11,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 3
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "items": []
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 5,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 7
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        5,
+        2,
+        4
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        6,
+        0,
+        5
+      ],
+      [
+        4,
+        2,
+        6
+      ],
+      [
+        4,
+        0,
+        6
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        6,
+        1,
+        4
+      ],
+      [
+        5,
+        2,
+        1
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        1,
+        3,
+        0
+      ],
+      [
+        3,
+        2,
+        6
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        6,
+        2,
+        3
+      ],
+      [
+        1,
+        1,
+        3
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        4,
+        1,
+        6
+      ],
+      [
+        6,
+        1,
+        4
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        6,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        6
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        6,
+        2,
+        1
+      ],
+      [
+        5,
+        2,
+        6
+      ],
+      [
+        6,
+        2,
+        5
+      ],
+      [
+        1,
+        0,
+        6
+      ],
+      [
+        5,
+        4,
+        4
+      ],
+      [
+        4,
+        3,
+        1
+      ],
+      [
+        6,
+        3,
+        4
+      ],
+      [
+        6,
+        1,
+        1
+      ],
+      [
+        0,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        3,
+        4,
+        6
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        3,
+        1,
+        2
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        5,
+        0,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        3,
+        0,
+        4
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 16,
+      "target_curve": "7.71",
+      "notes": "",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 11.93,
+      "score_fast": 13.06,
+      "off_by": 1.13,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 5.7,
+      "full_estimate": {
+        "score": 16.68068325746291,
+        "bot_win": 0.0,
+        "player_win": 0.1
+      },
+      "full_default": {
+        "score": 10.17980598117423,
+        "bot_win": 0.05,
+        "player_win": 0.7791666666666667
+      },
+      "full_delta_from_default": 6.5,
+      "target_delta_from_default": 2.01,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 16,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 13,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 3,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 6
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "items": [
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 5
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 16,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 13,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 7
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "items": [
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 3,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 6
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "items": [
+            {
+              "type": 8
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "items": [
+            {
+              "type": 6
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        6,
+        4,
+        1
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        4,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        4,
+        2,
+        3
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        4,
+        6
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        6,
+        1,
+        1
+      ],
+      [
+        6,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        6
+      ],
+      [
+        6,
+        1,
+        2
+      ],
+      [
+        6,
+        0,
+        1
+      ],
+      [
+        2,
+        3,
+        6
+      ],
+      [
+        2,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        2
+      ],
+      [
+        1,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        6,
+        3,
+        1
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        4,
+        4,
+        0
+      ],
+      [
+        6,
+        2,
+        3
+      ],
+      [
+        3,
+        3,
+        6
+      ],
+      [
+        4,
+        2,
+        3
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        6,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        6,
+        4,
+        3
+      ],
+      [
+        4,
+        4,
+        6
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        6,
+        1,
+        4
+      ],
+      [
+        4,
+        1,
+        6
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        0,
+        4,
+        6
+      ],
+      [
+        6,
+        3,
+        4
+      ],
+      [
+        2,
+        0,
+        4
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        3,
+        4,
+        4
+      ],
+      [
+        6,
+        2,
+        3
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        1,
+        3
+      ],
+      [
+        3,
+        2,
+        6
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        6,
+        1,
+        3
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        6,
+        3,
+        4
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        5,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        5,
+        0,
+        6
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 18,
+      "target_curve": "16.0",
+      "notes": "",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 15.62,
+      "score_fast": 16.13,
+      "off_by": 0.51,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 16.9,
+      "full_estimate": {
+        "score": 18.568299321411814,
+        "bot_win": 0.0,
+        "player_win": 0.18333333333333332
+      },
+      "full_default": {
+        "score": 16.78203870090902,
+        "bot_win": 0.05,
+        "player_win": 0.8416666666666666
+      },
+      "full_delta_from_default": 1.79,
+      "target_delta_from_default": -0.9,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 18,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 0,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "items": []
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 8
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 8
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 18,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 5,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "items": []
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        2,
+        4,
+        4
+      ],
+      [
+        5,
+        0,
+        4
+      ],
+      [
+        4,
+        3,
+        5
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        2,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        4,
+        2
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        2,
+        0,
+        5
+      ],
+      [
+        5,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        4,
+        3
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        3
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        2,
+        3
+      ],
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        1,
+        4,
+        3
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        0,
+        3,
+        5
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        3,
+        2,
+        5
+      ],
+      [
+        5,
+        4,
+        4
+      ],
+      [
+        5,
+        3,
+        3
+      ],
+      [
+        0,
+        4,
+        5
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        5,
+        2,
+        0
+      ],
+      [
+        5,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        5,
+        1,
+        0
+      ],
+      [
+        0,
+        4,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        4,
+        4,
+        1
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        4
+      ],
+      [
+        4,
+        4,
+        2
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        4,
+        3,
+        5
+      ],
+      [
+        4,
+        2,
+        3
+      ],
+      [
+        4,
+        1,
+        5
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        1
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 21,
+      "target_curve": "7.31",
+      "notes": "",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 1.87,
+      "score_fast": 4.21,
+      "off_by": 2.34,
+      "ok": false,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 18.7,
+      "full_estimate": {
+        "score": 8.946183149696267,
+        "bot_win": 0.0,
+        "player_win": 0.7216666666666667
+      },
+      "full_default": {
+        "score": 13.398553999858102,
+        "bot_win": 0.075,
+        "player_win": 0.8375
+      },
+      "full_delta_from_default": -4.45,
+      "target_delta_from_default": -11.39,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 21,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 4,
+          "items": [
+            {
+              "type": 7
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 2
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 4,
+          "container": {
+            "type": 1
+          },
+          "seal": {
+            "rule": "AnyDelivery",
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 2
+          },
+          "items": [
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 5
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 8
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 8
+          },
+          "refill": [
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 4,
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 21,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 4,
+          "items": [
+            {
+              "type": 7
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 2
+          },
+          "items": [
+            {
+              "type": 2
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 4,
+          "container": {
+            "type": 1
+          },
+          "seal": {
+            "rule": "AnyDelivery",
+            "count": 2
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 2
+          },
+          "items": [
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 4,
+          "container": {
+            "type": 5
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 2
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 8
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 8
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 6
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 4,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 4,
+          "refill": [
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        5,
+        0,
+        6
+      ],
+      [
+        4,
+        0,
+        5
+      ],
+      [
+        5,
+        2,
+        4
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        2,
+        6
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        6,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        2,
+        3,
+        3
+      ],
+      [
+        1,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        6,
+        2,
+        5
+      ],
+      [
+        5,
+        3,
+        6
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        2,
+        6
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        3,
+        2,
+        4
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        0,
+        1,
+        5
+      ],
+      [
+        6,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        6
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        6,
+        0,
+        5
+      ],
+      [
+        0,
+        0,
+        6
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        6,
+        3,
+        1
+      ],
+      [
+        6,
+        1,
+        5
+      ],
+      [
+        0,
+        1,
+        6
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        4
+      ],
+      [
+        0,
+        0,
+        3
+      ],
+      [
+        6,
+        3,
+        4
+      ],
+      [
+        6,
+        0,
+        2
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 23,
+      "target_curve": "16.44",
+      "notes": "Bonus",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 21.87,
+      "score_fast": 20.64,
+      "off_by": -1.23,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 10.4,
+      "full_estimate": {
+        "score": 20.126423428235128,
+        "bot_win": 0.0,
+        "player_win": 0.07666666666666666
+      },
+      "full_default": {
+        "score": 14.004484101597544,
+        "bot_win": 0.0,
+        "player_win": 0.6958333333333333
+      },
+      "full_delta_from_default": 6.12,
+      "target_delta_from_default": 6.04,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 23,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 11,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": []
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "seal": {
+            "rule": "AnyDelivery",
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 8,
+              "state": "Hidden"
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "refill": [
+            {
+              "type": 8
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 23,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 11,
+      "ropes": [
+        {
+          "kind": "Free",
+          "capacity": 5,
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 8
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 8
+          },
+          "items": [
+            {
+              "type": 8
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": []
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "items": [
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 8
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "seal": {
+            "rule": "AnyDelivery",
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 3
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            }
+          ]
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 7,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        5,
+        1,
+        3
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        4,
+        3,
+        0
+      ],
+      [
+        3,
+        3,
+        5
+      ],
+      [
+        4,
+        1,
+        3
+      ],
+      [
+        2,
+        1,
+        4
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        4,
+        0,
+        2
+      ],
+      [
+        5,
+        0,
+        4
+      ],
+      [
+        2,
+        3,
+        5
+      ],
+      [
+        4,
+        1,
+        5
+      ],
+      [
+        5,
+        1,
+        4
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        3
+      ],
+      [
+        0,
+        4,
+        3
+      ],
+      [
+        0,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        3
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        4,
+        2,
+        0
+      ],
+      [
+        5,
+        3,
+        0
+      ],
+      [
+        2,
+        4,
+        3
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        2,
+        4
+      ],
+      [
+        1,
+        0,
+        6
+      ],
+      [
+        6,
+        0,
+        1
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        6,
+        1,
+        3
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        6
+      ],
+      [
+        4,
+        3,
+        2
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        6,
+        0,
+        3
+      ],
+      [
+        0,
+        1,
+        6
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        2,
+        4,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        3,
+        4,
+        6
+      ],
+      [
+        6,
+        0,
+        2
+      ],
+      [
+        2,
+        2,
+        6
+      ],
+      [
+        2,
+        1,
+        5
+      ],
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        1,
+        2,
+        5
+      ],
+      [
+        3,
+        2,
+        1
+      ],
+      [
+        3,
+        0,
+        6
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        6,
+        2,
+        0
+      ],
+      [
+        3,
+        2,
+        6
+      ],
+      [
+        6,
+        1,
+        3
+      ],
+      [
+        6,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        6
+      ],
+      [
+        5,
+        1,
+        0
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        6,
+        4,
+        0
+      ],
+      [
+        1,
+        3,
+        2
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        4,
+        4,
+        2
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        1,
+        4,
+        3
+      ],
+      [
+        0,
+        1,
+        3
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        4,
+        0,
+        6
+      ],
+      [
+        0,
+        3,
+        4
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        4
+      ],
+      [
+        4,
+        0,
+        5
+      ]
+    ]
+  },
+  {
+    "check": {
+      "level": 24,
+      "target_curve": "22.52",
+      "notes": "",
+      "frame_errors": "",
+      "solvable": true,
+      "aim_fast": 21.02,
+      "score_fast": 19.89,
+      "off_by": -1.13,
+      "ok": true,
+      "must_keep_default": false,
+      "matches_default": false,
+      "real_default": 19.9,
+      "full_estimate": {
+        "score": 22.968852779708747,
+        "bot_win": 0.0,
+        "player_win": 0.22999999999999998
+      },
+      "full_default": {
+        "score": 18.501062812258954,
+        "bot_win": 0.35,
+        "player_win": 0.7458333333333333
+      },
+      "full_delta_from_default": 4.47,
+      "target_delta_from_default": 2.62,
+      "level_designer": {
+        "errors": [],
+        "warnings": [],
+        "win": true
+      },
+      "level_designer_method": "replay"
+    },
+    "level": {
+      "levelIndex": 24,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "seal": {
+            "rule": "AnyDelivery",
+            "count": 2
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 0,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 5
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": []
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 3
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 7
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 7
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 7
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 2,
+              "state": "Hidden"
+            },
+            {
+              "type": 6,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "default": {
+      "levelIndex": 24,
+      "difficultyType": "Normal",
+      "difficulty": 1,
+      "orderCount": 12,
+      "ropes": [
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "seal": {
+            "rule": "AnyDelivery",
+            "count": 2
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 0,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Locked",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "seal": {
+            "rule": "TypedDelivery",
+            "type": 4,
+            "count": 1
+          },
+          "items": [
+            {
+              "type": 0
+            },
+            {
+              "type": 5
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "items": [
+            {
+              "type": 1
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 5
+            }
+          ]
+        },
+        {
+          "kind": "Normal",
+          "capacity": 5,
+          "container": {
+            "type": 5
+          },
+          "items": []
+        }
+      ],
+      "reserveQueue": [
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 4
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 5,
+              "state": "Hidden"
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 1
+          },
+          "refill": [
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 4,
+              "state": "Hidden"
+            },
+            {
+              "type": 1
+            },
+            {
+              "type": 4
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 7
+          },
+          "refill": [
+            {
+              "type": 4
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 1,
+              "state": "Hidden"
+            },
+            {
+              "type": 4
+            },
+            {
+              "type": 1
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 3
+          },
+          "refill": [
+            {
+              "type": 7
+            },
+            {
+              "type": 3,
+              "state": "Hidden"
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 0
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 3
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 6
+          },
+          "refill": [
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 0
+            },
+            {
+              "type": 7
+            },
+            {
+              "type": 3
+            }
+          ]
+        },
+        {
+          "mode": "Container",
+          "capacity": 5,
+          "container": {
+            "type": 2
+          },
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            }
+          ]
+        },
+        {
+          "mode": "Free",
+          "capacity": 5,
+          "refill": [
+            {
+              "type": 2
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 6
+            },
+            {
+              "type": 2
+            },
+            {
+              "type": 2
+            }
+          ]
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        },
+        {
+          "mode": "Remove"
+        }
+      ]
+    },
+    "path": [
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        2,
+        2,
+        5
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        5,
+        4,
+        1
+      ],
+      [
+        5,
+        3,
+        1
+      ],
+      [
+        5,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        4,
+        3,
+        2
+      ],
+      [
+        1,
+        4,
+        4
+      ],
+      [
+        5,
+        1,
+        1
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        5,
+        4,
+        2
+      ],
+      [
+        4,
+        1,
+        1
+      ],
+      [
+        5,
+        3,
+        4
+      ],
+      [
+        5,
+        2,
+        4
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        3,
+        3,
+        0
+      ],
+      [
+        3,
+        2,
+        0
+      ],
+      [
+        3,
+        1,
+        5
+      ],
+      [
+        4,
+        4,
+        2
+      ],
+      [
+        4,
+        3,
+        5
+      ],
+      [
+        3,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        4
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        0,
+        3,
+        3
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        4
+      ],
+      [
+        2,
+        0,
+        5
+      ],
+      [
+        5,
+        0,
+        2
+      ],
+      [
+        1,
+        0,
+        5
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        1,
+        4,
+        2
+      ],
+      [
+        3,
+        3,
+        2
+      ],
+      [
+        0,
+        4,
+        1
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        3,
+        1
+      ],
+      [
+        0,
+        3,
+        1
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        4,
+        3,
+        3
+      ],
+      [
+        4,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        4
+      ],
+      [
+        1,
+        3,
+        4
+      ],
+      [
+        1,
+        2,
+        2
+      ],
+      [
+        0,
+        4,
+        3
+      ],
+      [
+        4,
+        4,
+        3
+      ],
+      [
+        3,
+        4,
+        2
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        5,
+        0,
+        1
+      ],
+      [
+        4,
+        2,
+        5
+      ],
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        3,
+        0,
+        5
+      ],
+      [
+        1,
+        0,
+        3
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        1,
+        3,
+        3
+      ],
+      [
+        0,
+        4,
+        4
+      ],
+      [
+        0,
+        3,
+        3
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        5
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        2,
+        4
+      ],
+      [
+        0,
+        0,
+        2
+      ],
+      [
+        2,
+        3,
+        0
+      ],
+      [
+        2,
+        1,
+        3
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ]
+  }
+]
