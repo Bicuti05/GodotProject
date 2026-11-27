@@ -13,3 +13,9 @@ Sweet Rope thử nghiệm A/B hai cách phát level. Mỗi bản có thư mục 
 - **Challenge** (17, 27…) và **Endless** (30, 40…): trong file vẫn là level thường, vì game chưa có cơ chế thay thế.
 - Trong bản B, cùng một level có thể nằm ở cùng số màn của nhiều bộ (giống Sort Streak). Một level không được dùng lại ở hai số màn khác nhau.
 - Thư mục `sweet_rope_B/work/` (AI sinh level) và `sweet_rope_B/reports/` (kết quả kiểm) là thư mục làm việc, **không** giao cho dev.
+
+## Kiểm tra và bàn giao
+
+- `checks/`: kết quả kiểm bản A và bộ SR_Final_1-200, kiểm chứng độ tin cậy của cách chấm, đề xuất tận dụng 400 level cũ (chưa duyệt), script kiểm.
+- `sweet_rope_B/reports/`: kết quả kiểm từng lượt của bản B.
+- `HANDOFF_chat_moi.md`: prompt bàn giao để tiếp tục ở chat khác.

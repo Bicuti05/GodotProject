@@ -1,0 +1,59 @@
+{
+ "capacity": 4.0,
+ "id": 2,
+ "incoming": [
+  {
+   "column": "x|",
+   "columnInfo": {},
+   "columnType": "default"
+  },
+  {
+   "column": "x|",
+   "columnInfo": {},
+   "columnType": "default"
+  },
+  {
+   "column": "x|",
+   "columnInfo": {},
+   "columnType": "default"
+  },
+  {
+   "column": "x|",
+   "columnInfo": {},
+   "columnType": "default"
+  }
+ ],
+ "initial": [
+  {
+   "column": "-|",
+   "columnInfo": {},
+   "columnType": "default"
+  },
+  {
+   "column": "3|3,3,8,3",
+   "columnInfo": {},
+   "columnType": "default"
+  },
+  {
+   "column": "0|6,0,0,0",
+   "columnInfo": {},
+   "columnType": "default"
+  },
+  {
+   "column": "6|6,6,0,4",
+   "columnInfo": {},
+   "columnType": "default"
+  },
+  {
+   "column": "4|6,4,4,4",
+   "columnInfo": {},
+   "columnType": "default"
+  },
+  {
+   "column": "8|8,8,8,3",
+   "columnInfo": {},
+   "columnType": "default"
+  }
+ ],
+ "targetCups": 5.0
+}
