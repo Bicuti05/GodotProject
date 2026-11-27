@@ -7,7 +7,8 @@ Hai AI cùng làm trên branch `New_Level`. Đọc file này trước khi làm t
 - **Màn 2–25:** đã kiểm, chọn bản và chép vào `final/`. Báo cáo ở `reports/2026-11-27_kiem_man_2-25.md`. Còn 11 nhóm lệch > 10 cần sinh lại.
 - **Màn 26–50:** đã kiểm 701 phương án của AI sinh level và chép bản chọn vào `final/`. Báo cáo ở `reports/2026-11-27_kiem_man_26-50.md`: 83 nhóm, sai số trung bình 6,4, 17 nhóm lệch > 10 cần sinh lại.
 - **Màn 196–200 (lô thử):** đã sinh, kiểm và chép vào `final/`. Báo cáo ở `reports/2026-11-27_kiem_man_196-200.md`.
-- **Màn 51–195:** AI kiểm đang sinh **từ trên xuống** (195 → 51), mỗi lô 25 màn. Lô nào xong sẽ có một commit "Generate and check set B levels a-b (top-down batch)" và một file `reports/*_kiem_man_a-b.md`. Xem `git log` để biết đã tới màn nào.
+- **Màn 146–195:** đã sinh, kiểm, chép `final/` (`reports/2026-11-27_kiem_man_171-195.md`: sai số 8,6, 33 nhóm >10, 1 nhóm thiếu (174 lv5); `..._146-170.md`: 9,8, 43 nhóm >10, 1 nhóm thiếu (155 lv5)).
+- **Màn 51–145:** AI kiểm đang sinh **từ trên xuống** (195 → 51), mỗi lô 25 màn. Lô nào xong sẽ có một commit "Generate and check set B levels a-b (top-down batch)" và một file `reports/*_kiem_man_a-b.md`. Xem `git log` để biết đã tới màn nào.
 
 ## 2. Luật mới (người dùng chốt)
 
