@@ -1,0 +1,118 @@
+{
+  "capacity": 4.0,
+  "id": 36.0,
+  "incoming": [
+    {
+      "column": "7|7,7,7,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|3,3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,6,6,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "-|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,6,6,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|3,3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "8|8,?8,8,8",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "1|?1,1,1,1",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|?0,0,0,0",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "5|5,5,5,5",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    }
+  ],
+  "initial": [
+    {
+      "column": "-|0",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "4|4,4,4",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|4,8,0,1",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "5|5,2,5,0",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "1|8,1,1,1",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "8|2,8,5,8",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "2|2,0,2,5",
+      "columnInfo": {
+        "condition": "collect_type",
+        "count": 1.0,
+        "typeId": 1.0
+      },
+      "columnType": "unlock"
+    }
+  ],
+  "targetCups": 15.0
+}
