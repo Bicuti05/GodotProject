@@ -27,7 +27,7 @@ Tương đồng là trọng số chung giữa hai bố cục chia cho tổng tr�
 
 ## Kiểm lại
 
-    python3 levels/sweet_rope/tools/verify.py --godot /path/to/Godot_4.6.1 --jobs 4
+    python3 levels/sweet_rope_A/tools/verify.py --godot /path/to/Godot_4.6.1 --jobs 4
 
 Lệnh dùng bản sao tạm của các script engine trong repo để chạy `validate()`, solver với `node_cap=4000`, `state_cap=20000`, 30 lượt chơi ngẫu nhiên và kiểm tương đồng. Lời giải tại các màn ra mắt được chạy lại bằng luật thật để kiểm việc hiện quả ẩn, mở khóa và tan băng.
 
