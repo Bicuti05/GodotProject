@@ -27,8 +27,11 @@ def godot(script, inp, outp, shards=4, to=7200):
 
 def knobs(t, k, n, rng):
     # độ khó tăng theo mix và giảm khi short lớn; trải đều quanh tâm ước lượng
-    c = 0.04 + 0.22 * min(t, 85) / 85
-    mix = max(0.0, min(0.32, c + (k / max(1, n - 1) - 0.5) * 0.16 + rng.uniform(-0.02, 0.02)))
+    # hiệu chỉnh từ lô thử 196-200: mix 0.05->2, 0.10->35, 0.15->57, 0.20->77, 0.25->92 điểm
+    X = [0, 2, 35, 57, 77, 92, 100]; Y = [0.03, 0.05, 0.10, 0.15, 0.20, 0.25, 0.27]
+    tt = min(max(t, 0), 100); i = next(j for j in range(1, len(X)) if tt <= X[j])
+    c = Y[i-1] + (Y[i] - Y[i-1]) * (tt - X[i-1]) / (X[i] - X[i-1])
+    mix = max(0.0, min(0.30, c + (k / max(1, n - 1) - 0.5) * 0.06 + rng.uniform(-0.01, 0.01)))
     short = 3 if t < 15 else 2 if t < 35 else rng.choice([1, 2])
     return mix, short
 
