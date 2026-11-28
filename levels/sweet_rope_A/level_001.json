@@ -4,22 +4,22 @@
   "targetCups": 3,
   "initial": [
     {
-      "column": "4|4,2,4",
+      "column": "-|3,2,3",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "2|4,7",
+      "column": "1|1,2,3",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "-|7",
+      "column": "2|2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "7|2,7,2",
+      "column": "3|1,1",
       "columnType": "default",
       "columnInfo": {}
     }
@@ -35,7 +35,5 @@
       "columnType": "default",
       "columnInfo": {}
     }
-  ],
-  "seed": 1000001,
-  "note": "Chapter 1 · Normal"
+  ]
 }

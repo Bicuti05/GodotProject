@@ -31,7 +31,7 @@ Theo chặng 25 màn (mục tiêu → đo):
 
 | Màn | A | default | lv2 | lv3 | lv4 | lv5 |
 |---|---|---|---|---|---|---|
-| 1–25 | 11.1 → 10.3 | 14.6 → 11.9 | 18.6 → 17.5 | 25.7 → 24.6 | 30.8 → 30.0 | 35.5 → 33.9 |
+| 1–25 | 11.1 → 10.2 | 14.6 → 11.9 | 18.6 → 17.5 | 25.7 → 24.6 | 30.8 → 30.0 | 35.5 → 33.9 |
 | 26–50 | 19.9 → 19.9 | 20.6 → 20.5 | 27.9 → 27.6 | 44.2 → 43.8 | 55.3 → 54.3 | 62.6 → 56.8 |
 | 51–75 | 20.2 → 19.8 | 21.0 → 20.9 | 27.2 → 27.0 | 40.3 → 40.2 | 51.7 → 48.8 | 61.6 → 55.4 |
 | 76–100 | 21.0 → 20.5 | 22.6 → 22.4 | 25.5 → 25.7 | 42.1 → 41.9 | 54.4 → 50.8 | 62.4 → 55.5 |
@@ -186,7 +186,7 @@ Mỗi bộ một hình: độ khó mục tiêu (cam, nét đứt) và đo thực
 
 - `SweetRope_A/Levels/pack_001.json` (màn 1–125), `pack_002.json` (126–200); `SweetRope_B/<bộ>/Levels/pack_001.json`, `pack_002.json`.
 - `difficultyType` Hard ở màn 5, 10, …; `difficulty` 1–6 suy từ điểm mục tiêu theo ngưỡng của Sort Streak (< 20,5 → 1; < 38 → 2; < 55 → 3; < 70 → 4; < 85 → 5; còn lại 6).
-- Màn 1 bản B là chỗ giữ (màn 1 bản A); dev thay bằng level hướng dẫn. `pack_002` chỉ tới màn 200: khi nhập giữ màn 201–250 cũ.
+- Màn 1 của bản A và cả 5 bộ bản B là cùng một level hướng dẫn (sức chứa 3, 3 cốc, 4 dây). `pack_002` chỉ tới màn 200: khi nhập giữ màn 201–250 cũ.
 - Bonus, Challenge, Endless không ghi vào file level (theo luật đã chốt); Challenge và Endless hiện là level thường.
 
 ## Phụ lục: file số liệu

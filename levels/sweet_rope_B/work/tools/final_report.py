@@ -63,7 +63,7 @@ for b in ['A', 'default', 'lv2', 'lv3', 'lv4', 'lv5']:
 L += ['', '## 10. Gói Unity', '',
       '- `SweetRope_A/Levels/pack_001.json` (màn 1–125), `pack_002.json` (126–200); `SweetRope_B/<bộ>/Levels/pack_001.json`, `pack_002.json`.',
       '- `difficultyType` Hard ở màn 5, 10, …; `difficulty` 1–6 suy từ điểm mục tiêu theo ngưỡng của Sort Streak (< 20,5 → 1; < 38 → 2; < 55 → 3; < 70 → 4; < 85 → 5; còn lại 6).',
-      '- Màn 1 bản B là chỗ giữ (màn 1 bản A); dev thay bằng level hướng dẫn. `pack_002` chỉ tới màn 200: khi nhập giữ màn 201–250 cũ.',
+      '- Màn 1 của bản A và cả 5 bộ bản B là cùng một level hướng dẫn (sức chứa 3, 3 cốc, 4 dây). `pack_002` chỉ tới màn 200: khi nhập giữ màn 201–250 cũ.',
       '- Bonus, Challenge, Endless không ghi vào file level (theo luật đã chốt); Challenge và Endless hiện là level thường.', '',
       '## Phụ lục: file số liệu', '',
       f'- Chi tiết từng màn: `{os.path.basename(P)}_chi_tiet.csv`; bonus tiềm năng: `{os.path.basename(P)}_bonus_tiem_nang.csv`; '

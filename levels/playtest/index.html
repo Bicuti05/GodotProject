@@ -159,7 +159,6 @@
     if (e.t != null) add('Mục tiêu ' + (Math.round(e.t * 10) / 10).toLocaleString('vi-VN') + ' điểm');
     if (e.level.difficultyType === 'Hard') add('Hard', true);
     if (e.tag && TAGS[e.tag] && e.tag !== 'Hard') add(TAGS[e.tag], e.tag === 'bonus');
-    if (st.mode === 'B' && e.n === 1) add('Chỗ giữ: dev thay bằng level hướng dẫn');
     const won = store.get('sr-won-' + key());
     if (won) add('Đã thắng');
   }

@@ -2,7 +2,7 @@
 """Đóng gói bản A và bản B sang định dạng Unity sweetrope.levelpack/1 (giống thư mục Levels của LevelDesigner).
 Kết quả: levels/package/SweetRope_A/Levels/pack_001.json (màn 1-125), pack_002.json (126-200)
          levels/package/SweetRope_B/<bộ>/Levels/pack_001.json, pack_002.json  (bộ: default, lv2..lv5)
-Màn 1 bản B: dùng màn 1 của bản A làm chỗ giữ (dev thay bằng level hướng dẫn cố định).
+Màn 1 bản B: level hướng dẫn chung (giống màn 1 bản A), lấy từ final/<bộ>/level_001.json.
 Kiểm lại toàn bộ bằng LevelDesigner (core.js validateLevel) rồi nén zip."""
 import json, csv, os, sys, subprocess, shutil, zipfile
 sys.path.insert(0, os.path.dirname(__file__))
@@ -28,7 +28,7 @@ for n in range(1, 201):
     check.append({'uid': f'A|{n}', 'level': A[n]})
 write(A, f'{OUT}/SweetRope_A/Levels')
 for b in ['default', 'lv2', 'lv3', 'lv4', 'lv5']:
-    L = {1: A[1]}
+    L = {1: J.convert(json.load(open(f'levels/sweet_rope_B/final/{b}/level_001.json')), 1, 'Normal', 0)}
     for n in range(2, 201):
         r = tb[(b, n)]
         L[n] = J.convert(json.load(open(f'levels/sweet_rope_B/final/{b}/level_{n:03d}.json')), (n - 1) % 25 + 1, r['loai'], r['muc_tieu'])
