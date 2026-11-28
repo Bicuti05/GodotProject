@@ -4,44 +4,59 @@
   "targetCups": 12,
   "initial": [
     {
-      "column": "-|8,2",
+      "column": "-|8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "0|1,0,0,0,9",
+      "column": "5|?5,5,5,0,5",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "8|8,8,8,8",
+      "column": "6|6,6,6,?6,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "4|?4,4,4,?4,4",
+      "column": "0|0,0,5,0,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "2|2,2,2,7",
+      "column": "8|2,8,8,8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "1|9,7,1,1,1",
+      "column": "2|2,2,8,0,2",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "1|?1,0,1,1,1",
+      "column": "3|9,3,4,3,3",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "7|2,7,9,3,7",
+      "column": "9|9,4,4,?9,9",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|1,?1,1,1,1",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,4,4,1,9",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|4,?1,1,1,1",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -51,27 +66,12 @@
       "columnInfo": {}
     },
     {
-      "column": "3|7,3,3,3,1",
+      "column": "9|9,9,?3,9,9",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "4|6,4,4,3,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "6|6,6,4,6,6",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "9|9,9,0,1,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "1|1,?1,1,?1,1",
+      "column": "4|9,3,4,4,4",
       "columnType": "default",
       "columnInfo": {}
     },

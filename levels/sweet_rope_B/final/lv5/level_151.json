@@ -4,27 +4,22 @@
   "targetCups": 12,
   "initial": [
     {
-      "column": "-|0",
+      "column": "-|1,7",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|5,5,5,5",
+      "column": "1|1,1,1",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "4|4,4,4,8",
+      "column": "7|9,7,7,0",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "3|3,3,3,3",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "6|7,6,6,0",
+      "column": "6|6,6,6,8",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -34,34 +29,19 @@
       "columnInfo": {}
     },
     {
-      "column": "2|2,2,4,2",
+      "column": "9|9,7,9,9",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|8,3,3,3",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "8|8,8,8,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "9|9,4,9,9",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "7|7,7,7,7",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "7|6,7,7,7",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "0|0,6,0,0",
+      "column": "3|3,4,3,3",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -71,7 +51,27 @@
       "columnInfo": {}
     },
     {
-      "column": "4|9,2,4,4",
+      "column": "2|2,2,2,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|2,3,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "0|0,0,0,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,3,4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|8,6,3,0",
       "columnType": "default",
       "columnInfo": {}
     },

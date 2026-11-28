@@ -4,44 +4,49 @@
   "targetCups": 10,
   "initial": [
     {
-      "column": "-|5,4,1",
+      "column": "-|7,8,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|5,5,5,5",
+      "column": "6|6,6,7,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "3|3,0,9,3,3",
+      "column": "8|?8,8,8,9",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "3|3,3,3,3,3",
+      "column": "0|0,8,0,0,0",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "4|4,4,4,0",
+      "column": "7|7,7,6,7",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "1|1,1,1,1",
+      "column": "9|9,9,9,0,9",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "9|9,9,9,9,3",
+      "column": "5|1,5,5,2,5",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "0|0,3,8,0,0",
+      "column": "1|1,1,5,1,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|7,4,7,7,7",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -51,17 +56,12 @@
       "columnInfo": {}
     },
     {
-      "column": "8|4,8,8,8,8",
+      "column": "2|2,2,2,5,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|6,6,6,6,6",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "2|2,2,2,2,2",
+      "column": "4|4,4,4,1,4",
       "columnType": "default",
       "columnInfo": {}
     },

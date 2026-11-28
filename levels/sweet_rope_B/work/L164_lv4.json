@@ -4,49 +4,39 @@
   "targetCups": 10,
   "initial": [
     {
-      "column": "-|8,7",
+      "column": "-|4,0",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "8|8,?8,8,8",
+      "column": "4|4,?6,0,4",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "3|3,3,3,5,3",
+      "column": "0|0,0,4,0",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "7|7,7,7,7",
+      "column": "6|6,6,4,6,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|6,6,?6,0,6",
+      "column": "8|8,8,8,2,8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "0|0,6,0,0,0",
+      "column": "2|2,?2,2,2,5",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "9|1,9,?9,9,9",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "1|1,1,1,1,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "4|4,4,4,4,9",
+      "column": "3|3,5,3,3,3",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -56,12 +46,22 @@
       "columnInfo": {}
     },
     {
-      "column": "5|5,5,3,5,5",
+      "column": "4|4,7,4,4,4",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|5,?5,5,5,5",
+      "column": "5|8,5,3,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|?7,7,7,4,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|1,1,1,?1,1",
       "columnType": "default",
       "columnInfo": {}
     },
