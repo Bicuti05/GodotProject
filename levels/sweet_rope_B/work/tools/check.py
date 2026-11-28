@@ -8,7 +8,7 @@ R = 'levels/sweet_rope_B'
 items = json.load(open(INP))
 val = {x['uid']: x for f in glob.glob(VG) for x in json.load(open(f))}
 sc = {r['uid']: r for r in csv.DictReader(open(SC))}
-tg = [r for r in csv.DictReader(open(f'{R}/docs/targets_B.csv', encoding='utf-8-sig')) if A <= int(r['slot']) <= B]
+tg = [r for r in csv.DictReader(open(os.environ.get('TARGETS', f'{R}/docs/targets_B.csv'), encoding='utf-8-sig')) if A <= int(r['slot']) <= B]
 
 
 def stat(raw):
@@ -57,9 +57,12 @@ for r in tg:
     row = dict(man=r['slot'], nhom=r['group'], muc_tieu=t, so_phuong_an=len(by.get(base, [])))
     if best:
         x, d, st, sol, lw = best
-        for b in r['group'].split('+'):
+        raw = dict(x['raw']); raw['id'] = int(r['slot'])
+        if os.environ.get('FINAL_A'):
+            json.dump(raw, open(f'{os.environ["FINAL_A"]}/level_{int(r["slot"]):03d}.json', 'w'), indent=2)
+        else:
+          for b in r['group'].split('+'):
             os.makedirs(f'{R}/final/{b}', exist_ok=True)
-            raw = dict(x['raw']); raw['id'] = int(r['slot'])
             json.dump(raw, open(f'{R}/final/{b}/level_{int(r["slot"]):03d}.json', 'w'), indent=2)
         row.update(chon=x['uid'], la_ban_chinh_thuc=x['uid'].endswith('_OFF'), diem_do_lai=d, lech=round(d - t, 1),
                    diem_ban_chinh_thuc=off, giai_duoc=sol if sol == 'WINNABLE' else 'WINNABLE (bot thang)', lw=lw,

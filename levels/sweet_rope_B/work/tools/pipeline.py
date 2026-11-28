@@ -9,10 +9,11 @@ Ghi: work/L*.json (bản tốt nhất), work/candidates/<file> (mọi ứng viê
 import json, csv, os, random, subprocess, sys, glob, math
 sys.path.insert(0, os.path.dirname(__file__))
 import gen
-R = 'levels/sweet_rope_B'; W = f'{R}/work'
+R = 'levels/sweet_rope_B'; W = os.environ.get('WORK', f'{R}/work')
+TGT = os.environ.get('TARGETS', f'{R}/docs/targets_B.csv')
 A, B, N, T = int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]), sys.argv[4]
 os.makedirs(T, exist_ok=True)
-tg = [r for r in csv.DictReader(open(f'{R}/docs/targets_B.csv', encoding='utf-8-sig')) if A <= int(r['slot']) <= B]
+tg = [r for r in csv.DictReader(open(TGT, encoding='utf-8-sig')) if A <= int(r['slot']) <= B]
 # lô đặt lại (sinh lại) nếu có file REDO
 redo = os.environ.get('REDO')
 if redo: tg = [r for r in tg if r['file'] in set(redo.split(','))]
