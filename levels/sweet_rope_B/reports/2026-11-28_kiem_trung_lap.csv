@@ -1,0 +1,881 @@
+uid,sim_max,nearest
+A/level_001,1.0,A_cu/level_001
+A/level_002,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14937
+A/level_003,0.526,A_cu/level_053
+A/level_004,0.484,A_cu/level_186
+A/level_005,0.45,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_006,0.486,LevelDesigner/Variants/ab_09.json#6346
+A/level_007,0.471,A_cu/level_020
+A/level_008,0.491,A_cu/level_053
+A/level_009,0.392,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-e8c30ce4b86049baab1594d6351ea30b/core_input.json#6828
+A/level_010,0.506,LevelDesigner/Variants/ab_10.json#6216
+A/level_011,0.516,A_cu/level_156
+A/level_012,0.484,A_cu/level_157
+A/level_013,0.473,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+A/level_014,0.548,A_cu/level_156
+A/level_015,0.506,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+A/level_016,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_017,0.45,A_cu/level_190
+A/level_018,0.438,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_019,0.484,A_cu/level_131
+A/level_020,0.667,LevelDesigner/Variants/ab_10.json#6216
+A/level_021,0.448,A_cu/level_191
+A/level_022,0.407,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_023,0.486,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_024,0.4,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_025,0.653,LevelDesigner/Variants/ab_10.json#6216
+A/level_026,0.516,A_cu/level_053
+A/level_027,0.411,A_cu/level_190
+A/level_028,0.473,LevelDesigner/Variants/ab_09.json#6358
+A/level_029,0.438,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+A/level_030,0.608,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+A/level_031,0.468,A_cu/level_053
+A/level_032,0.471,A_cu/level_156
+A/level_033,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_034,0.541,LevelDesigner/Variants/ab_09.json#6346
+A/level_035,0.597,LevelDesigner/Variants/ab_10.json#6216
+A/level_036,0.463,A_cu/level_157
+A/level_037,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_038,0.435,A_cu/level_186
+A/level_039,0.425,A_cu/level_190
+A/level_040,0.481,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+A/level_041,0.484,A_cu/level_053
+A/level_042,0.568,LevelDesigner/Variants/ab_09.json#6358
+A/level_043,0.473,A_cu/level_190
+A/level_044,0.466,A_cu/level_190
+A/level_045,0.479,A_cu/level_190
+A/level_046,0.433,A_cu/level_157
+A/level_047,0.468,A_cu/level_156
+A/level_048,0.475,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_049,0.493,A_cu/level_190
+A/level_050,0.592,LevelDesigner/Variants/ab_10.json#6216
+A/level_051,0.468,A_cu/level_157
+A/level_052,0.581,LevelDesigner/Variants/ab_09.json#6358
+A/level_053,0.5,A_cu/level_156
+A/level_054,0.514,LevelDesigner/Variants/ab_09.json#6346
+A/level_055,0.516,A_cu/level_020
+A/level_056,0.491,A_cu/level_191
+A/level_057,0.554,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_058,0.473,LevelDesigner/Variants/ab_09.json#6358
+A/level_059,0.484,A_cu/level_024
+A/level_060,0.648,LevelDesigner/Variants/ab_10.json#6216
+A/level_061,0.435,A_cu/level_157
+A/level_062,0.507,A_cu/level_190
+A/level_063,0.5,A_cu/level_156
+A/level_064,0.484,A_cu/level_156
+A/level_065,0.528,A_cu/level_108
+A/level_066,0.452,A_cu/level_097
+A/level_067,0.459,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_068,0.581,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_069,0.527,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_070,0.5,A_cu/level_156
+A/level_071,0.484,A_cu/level_053
+A/level_072,0.514,LevelDesigner/Variants/ab_09.json#6346
+A/level_073,0.484,A_cu/level_020
+A/level_074,0.516,A_cu/level_186
+A/level_075,0.722,LevelDesigner/Variants/ab_10.json#6216
+A/level_076,0.544,A_cu/level_053
+A/level_077,0.438,A_cu/level_190
+A/level_078,0.527,LevelDesigner/Variants/ab_09.json#6346
+A/level_079,0.482,LevelDesigner/Variants/ab_22.json#6291
+A/level_080,0.542,LevelDesigner/Variants/ab_10.json#6216
+A/level_081,0.475,A_cu/level_157
+A/level_082,0.452,A_cu/level_190
+A/level_083,0.581,A_cu/level_020
+A/level_084,0.429,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8083
+A/level_085,0.532,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+A/level_086,0.351,LevelDesigner/pack_007.json#3292
+A/level_087,0.541,LevelDesigner/Variants/ab_09.json#6358
+A/level_088,0.5,A_cu/level_186
+A/level_089,0.532,A_cu/level_156
+A/level_090,0.532,A_cu/level_156
+A/level_091,0.5,A_cu/level_053
+A/level_092,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+A/level_093,0.438,A_cu/level_190
+A/level_094,0.514,LevelDesigner/Variants/ab_09.json#6358
+A/level_095,0.611,LevelDesigner/Variants/ab_10.json#6216
+A/level_096,0.403,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14953
+A/level_097,0.419,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+A/level_098,0.452,A_cu/level_190
+A/level_099,0.452,A_cu/level_190
+A/level_100,0.542,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+A/level_101,0.448,A_cu/level_053
+A/level_102,0.554,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_103,0.452,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14946
+A/level_104,0.486,LevelDesigner/Variants/ab_09.json#6358
+A/level_105,0.597,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+A/level_106,0.452,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14953
+A/level_107,0.459,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+A/level_108,0.486,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_109,0.527,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_110,0.468,LevelDesigner/Variants/ab_10.json#6216
+A/level_111,0.403,A_cu/level_131
+A/level_112,0.595,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_113,0.5,A_cu/level_156
+A/level_114,0.568,LevelDesigner/Variants/ab_09.json#6358
+A/level_115,0.532,A_cu/level_156
+A/level_116,0.448,A_cu/level_053
+A/level_117,0.486,LevelDesigner/Variants/ab_09.json#6358
+A/level_118,0.456,A_cu/level_156
+A/level_119,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_120,0.514,LevelDesigner/Variants/ab_10.json#6216
+A/level_121,0.417,A_cu/level_053
+A/level_122,0.473,LevelDesigner/Variants/ab_09.json#6358
+A/level_123,0.554,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+A/level_124,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+A/level_125,0.516,A_cu/level_156
+A/level_126,0.478,A_cu/level_191
+A/level_127,0.484,A_cu/level_156
+A/level_128,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_129,0.484,A_cu/level_156
+A/level_130,0.512,LevelDesigner/Variants/ab_10.json#6216
+A/level_131,0.433,A_cu/level_191
+A/level_132,0.486,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_133,0.532,A_cu/level_156
+A/level_134,0.548,A_cu/level_020
+A/level_135,0.488,A_cu/level_038
+A/level_136,0.5,A_cu/level_053
+A/level_137,0.5,LevelDesigner/Variants/ab_09.json#6358
+A/level_138,0.516,A_cu/level_020
+A/level_139,0.532,A_cu/level_156
+A/level_140,0.639,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+A/level_141,0.468,A_cu/level_097
+A/level_142,0.541,LevelDesigner/Variants/ab_09.json#6358
+A/level_143,0.527,A_cu/level_156
+A/level_144,0.435,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14950
+A/level_145,0.435,A_cu/level_156
+A/level_146,0.403,A_cu/level_157
+A/level_147,0.397,LevelDesigner/Variants/ab_22.json#6295
+A/level_148,0.456,A_cu/level_156
+A/level_149,0.493,A_cu/level_190
+A/level_150,0.569,LevelDesigner/Variants/ab_10.json#6216
+A/level_151,0.395,A_cu/level_098
+A/level_152,0.405,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-e8c30ce4b86049baab1594d6351ea30b/evidence.json#6838
+A/level_153,0.532,A_cu/level_156
+A/level_154,0.516,LevelDesigner/Variants/ab_22.json#6295
+A/level_155,0.625,LevelDesigner/Variants/ab_10.json#6216
+A/level_156,0.403,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8069
+A/level_157,0.438,A_cu/level_190
+A/level_158,0.484,A_cu/level_156
+A/level_159,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_160,0.43,A_cu/level_038
+A/level_161,0.516,A_cu/level_167
+A/level_162,0.459,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+A/level_163,0.5,A_cu/level_020
+A/level_164,0.541,LevelDesigner/Variants/ab_09.json#6358
+A/level_165,0.653,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+A/level_166,0.403,A_cu/level_099
+A/level_167,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_168,0.541,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+A/level_169,0.554,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_170,0.569,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+A/level_171,0.532,A_cu/level_157
+A/level_172,0.459,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+A/level_173,0.419,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_174,0.468,A_cu/level_156
+A/level_175,0.468,A_cu/level_038
+A/level_176,0.435,A_cu/level_167
+A/level_177,0.541,LevelDesigner/Variants/ab_09.json#6358
+A/level_178,0.525,LevelDesigner/Variants/ab_09.json#6358
+A/level_179,0.484,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8086
+A/level_180,0.542,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+A/level_181,0.375,A_cu/level_124
+A/level_182,0.486,LevelDesigner/Variants/ab_09.json#6358
+A/level_183,0.527,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_184,0.516,LevelDesigner/Variants/ab_21.json#6334
+A/level_185,0.514,A_cu/level_038
+A/level_186,0.463,A_cu/level_131
+A/level_187,0.635,LevelDesigner/Variants/ab_09.json#6358
+A/level_188,0.5,A_cu/level_020
+A/level_189,0.479,A_cu/level_190
+A/level_190,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+A/level_191,0.433,A_cu/level_157
+A/level_192,0.568,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+A/level_193,0.534,A_cu/level_190
+A/level_194,0.435,A_cu/level_086
+A/level_195,0.512,LevelDesigner/Variants/ab_10.json#6216
+A/level_196,0.419,A_cu/level_157
+A/level_197,0.419,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+A/level_198,0.516,A_cu/level_156
+A/level_199,0.5,A_cu/level_156
+A/level_200,0.611,LevelDesigner/Variants/ab_10.json#6216
+B/L002_default+lv2+lv3+lv4+lv5,0.576,LevelDesigner/Variants/ab_21.json#6325
+B/L003_default+lv2+lv3+lv4+lv5,0.526,A_cu/level_053
+B/L004_default+lv2+lv3+lv4+lv5,0.484,A_cu/level_156
+B/L005_default+lv2+lv3+lv4+lv5,0.493,A_cu/level_156
+B/L006_default,0.464,LevelDesigner/Variants/ab_21.json#6330
+B/L006_lv2+lv3+lv4+lv5,0.476,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14926
+B/L007_default,0.5,LevelDesigner/Variants/ab_09.json#6358
+B/L007_lv2+lv3+lv4+lv5,0.5,A_cu/level_190
+B/L008_default,0.579,LevelDesigner/Variants/ab_21.json#6337
+B/L008_lv2,0.468,A_cu/level_053
+B/L008_lv3+lv4+lv5,0.452,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14952
+B/L009_default,0.532,A_cu/level_156
+B/L009_lv2+lv3+lv4+lv5,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L010_default+lv2+lv3+lv4+lv5,0.732,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L011_default+lv2,0.525,A_cu/level_156
+B/L011_lv3+lv4+lv5,0.492,A_cu/level_156
+B/L012_default+lv2+lv3+lv4+lv5,0.452,A_cu/level_157
+B/L013_default,0.324,GD_Lazy/Level Difficulty/Generated/SweetRope-Stage02/Levels/pack_001.json#20384
+B/L013_lv2,0.507,A_cu/level_186
+B/L013_lv3+lv4+lv5,0.5,LevelDesigner/Variants/ab_09.json#6358
+B/L014_default+lv2+lv3,0.515,A_cu/level_156
+B/L014_lv4+lv5,0.459,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L015_default,0.625,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L015_lv2,0.662,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L015_lv3+lv4+lv5,0.704,LevelDesigner/Variants/ab_10.json#6216
+B/L016_default+lv2,0.494,A_cu/level_190
+B/L016_lv3+lv4,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L016_lv5,0.474,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8066
+B/L017_default+lv2,0.494,A_cu/level_156
+B/L017_lv3+lv4,0.459,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L017_lv5,0.487,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L018_default,0.506,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L018_lv2,0.452,A_cu/level_190
+B/L018_lv3+lv4+lv5,0.473,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L019_default+lv2+lv3,0.548,A_cu/level_053
+B/L019_lv4,0.418,A_cu/level_157
+B/L019_lv5,0.49,A_cu/level_131
+B/L020_default+lv2,0.625,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L020_lv3+lv4,0.583,LevelDesigner/Variants/ab_10.json#6216
+B/L020_lv5,0.563,LevelDesigner/Variants/ab_10.json#6216
+B/L021_default+lv2+lv3,0.468,A_cu/level_157
+B/L021_lv4+lv5,0.482,A_cu/level_053
+B/L022_default+lv2,0.544,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L022_lv3,0.424,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L022_lv4+lv5,0.485,A_cu/level_197
+B/L023_default,0.507,A_cu/level_190
+B/L023_lv2+lv3,0.537,A_cu/level_186
+B/L023_lv4+lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L024_default+lv2,0.493,A_cu/level_190
+B/L024_lv3+lv4+lv5,0.466,A_cu/level_190
+B/L025_default+lv2,0.603,LevelDesigner/Variants/ab_10.json#6216
+B/L025_lv3,0.564,LevelDesigner/Variants/ab_10.json#6216
+B/L025_lv4,0.62,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L025_lv5,0.563,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L026_default+lv2,0.5,LevelDesigner/Variants/ab_21.json#6337
+B/L026_lv3+lv4+lv5,0.5,A_cu/level_053
+B/L027_default+lv2+lv3,0.432,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L027_lv4+lv5,0.464,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_11.json#7852
+B/L028_default+lv2,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L028_lv3,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L028_lv4+lv5,0.446,LevelDesigner/Variants/ab_09.json#6358
+B/L029_default,0.512,LevelDesigner/Variants/ab_09.json#6358
+B/L029_lv2+lv3,0.419,A_cu/level_156
+B/L029_lv4+lv5,0.446,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L030_default,0.588,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L030_lv2,0.667,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L030_lv3+lv4,0.569,LevelDesigner/Variants/ab_10.json#6216
+B/L030_lv5,0.456,LevelDesigner/Variants/ab_10.json#6216
+B/L031_default,0.529,A_cu/level_131
+B/L031_lv2,0.614,A_cu/level_053
+B/L031_lv3,0.403,A_cu/level_131
+B/L031_lv4+lv5,0.452,A_cu/level_131
+B/L032_default,0.473,LevelDesigner/Variants/ab_09.json#6358
+B/L032_lv2+lv3+lv4,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L032_lv5,0.473,LevelDesigner/Variants/ab_09.json#6358
+B/L033_default+lv2,0.525,A_cu/level_156
+B/L033_lv3,0.388,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8066
+B/L033_lv4,0.514,LevelDesigner/Variants/ab_09.json#6358
+B/L033_lv5,0.443,A_cu/level_156
+B/L034_default+lv2,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L034_lv3+lv4,0.506,LevelDesigner/Variants/ab_09.json#6346
+B/L034_lv5,0.382,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8066
+B/L035_default+lv2,0.569,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L035_lv3+lv4+lv5,0.507,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L036_default,0.409,A_cu/level_077
+B/L036_lv2,0.338,A_cu/level_167
+B/L036_lv3+lv4+lv5,0.479,LevelDesigner/Variants/ab_21.json#6337
+B/L037_default+lv2,0.5,A_cu/level_186
+B/L037_lv3,0.473,LevelDesigner/Variants/ab_09.json#6346
+B/L037_lv4,0.478,A_cu/level_186
+B/L037_lv5,0.473,LevelDesigner/Variants/ab_09.json#6358
+B/L038_default,0.435,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8066
+B/L038_lv2,0.49,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8059
+B/L038_lv3,0.493,A_cu/level_190
+B/L038_lv4,0.5,A_cu/level_186
+B/L038_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L039_default+lv2,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L039_lv3,0.475,A_cu/level_186
+B/L039_lv4+lv5,0.541,A_cu/level_190
+B/L040_default,0.592,LevelDesigner/Variants/ab_10.json#6216
+B/L040_lv2,0.563,LevelDesigner/Variants/ab_10.json#6216
+B/L040_lv3+lv4,0.5,A_cu/level_026
+B/L040_lv5,0.507,LevelDesigner/Variants/ab_10.json#6216
+B/L041_default+lv2,0.478,A_cu/level_053
+B/L041_lv3+lv4+lv5,0.484,A_cu/level_053
+B/L042_default+lv2,0.482,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8086
+B/L042_lv3+lv4+lv5,0.474,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14950
+B/L043_default,0.466,A_cu/level_190
+B/L043_lv2+lv3,0.473,LevelDesigner/Variants/ab_09.json#6346
+B/L043_lv4,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L043_lv5,0.403,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/pack_041.json#13228
+B/L044_default,0.492,A_cu/level_156
+B/L044_lv2+lv3,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L044_lv4+lv5,0.514,LevelDesigner/Variants/ab_09.json#6358
+B/L045_default,0.552,A_cu/level_156
+B/L045_lv2,0.5,LevelDesigner/Variants/ab_09.json#6358
+B/L045_lv3,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L045_lv4+lv5,0.419,A_cu/level_186
+B/L046_default+lv2,0.459,A_cu/level_097
+B/L046_lv3,0.403,A_cu/level_157
+B/L046_lv4,0.421,A_cu/level_098
+B/L046_lv5,0.435,assets/game/juice_fallback_levels.json#70
+B/L047_default,0.387,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14926
+B/L047_lv2,0.425,A_cu/level_190
+B/L047_lv3,0.387,A_cu/level_156
+B/L047_lv4,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L047_lv5,0.452,A_cu/level_186
+B/L048_default+lv2,0.446,LevelDesigner/Variants/ab_09.json#6346
+B/L048_lv3+lv4,0.378,assets/game/juice_fallback_levels.json#52
+B/L048_lv5,0.475,A_cu/level_020
+B/L049_default+lv2,0.41,A_cu/level_156
+B/L049_lv3,0.446,LevelDesigner/Variants/ab_09.json#6358
+B/L049_lv4+lv5,0.463,A_cu/level_186
+B/L050_default,0.577,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L050_lv2,0.634,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L050_lv3,0.535,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L050_lv4+lv5,0.431,A_cu/level_038
+B/L051_default+lv2,0.544,A_cu/level_053
+B/L051_lv3,0.448,A_cu/level_053
+B/L051_lv4+lv5,0.388,A_cu/level_157
+B/L052_default,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L052_lv2+lv4,0.514,LevelDesigner/Variants/ab_09.json#6346
+B/L052_lv3,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L052_lv5,0.473,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L053_default+lv2,0.525,A_cu/level_156
+B/L053_lv3,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L053_lv4+lv5,0.405,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L054_default,0.541,A_cu/level_186
+B/L054_lv2,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L054_lv3,0.475,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L054_lv4+lv5,0.443,A_cu/level_186
+B/L055_default,0.557,A_cu/level_156
+B/L055_lv2,0.448,A_cu/level_156
+B/L055_lv3,0.393,assets/game/juice_sunlight_levels.json#519
+B/L055_lv4+lv5,0.459,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L056_default+lv2,0.443,A_cu/level_157
+B/L056_lv3+lv4+lv5,0.452,A_cu/level_053
+B/L057_default+lv2,0.508,A_cu/level_156
+B/L057_lv3,0.452,A_cu/level_190
+B/L057_lv4,0.425,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L057_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L058_default+lv2+lv3,0.441,A_cu/level_156
+B/L058_lv4,0.426,A_cu/level_156
+B/L058_lv5,0.475,A_cu/level_156
+B/L059_default,0.508,A_cu/level_020
+B/L059_lv2,0.568,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L059_lv3,0.493,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/pack_039.json#12988
+B/L059_lv4+lv5,0.446,A_cu/level_190
+B/L060_default,0.625,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L060_lv2,0.43,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L060_lv3,0.465,LevelDesigner/Variants/ab_10.json#6216
+B/L060_lv4+lv5,0.389,A_cu/level_038
+B/L061_default+lv2,0.468,A_cu/level_157
+B/L061_lv3+lv4,0.557,LevelDesigner/Variants/ab_21.json#6337
+B/L061_lv5,0.424,A_cu/level_099
+B/L062_default,0.508,A_cu/level_186
+B/L062_lv2,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L062_lv3,0.436,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14923
+B/L062_lv4+lv5,0.446,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L063_default,0.589,A_cu/level_190
+B/L063_lv2,0.485,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8062
+B/L063_lv3+lv4,0.5,A_cu/level_156
+B/L063_lv5,0.338,LevelDesigner/pack_003.json#5028
+B/L064_default,0.656,A_cu/level_186
+B/L064_lv2,0.411,A_cu/level_194
+B/L064_lv3,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L064_lv4,0.493,A_cu/level_190
+B/L064_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L065_default,0.569,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L065_lv2,0.662,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L065_lv3,0.563,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L065_lv4+lv5,0.549,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L066_default,0.444,A_cu/level_053
+B/L066_lv2,0.394,A_cu/level_053
+B/L066_lv3+lv4+lv5,0.474,A_cu/level_047
+B/L067_default+lv2+lv3,0.595,LevelDesigner/Variants/ab_09.json#6358
+B/L067_lv4,0.466,A_cu/level_190
+B/L067_lv5,0.468,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L068_default,0.57,LevelDesigner/Variants/ab_09.json#6358
+B/L068_lv2,0.522,A_cu/level_156
+B/L068_lv3+lv4,0.508,A_cu/level_020
+B/L068_lv5,0.351,A_cu/level_190
+B/L069_default+lv2+lv3,0.507,A_cu/level_190
+B/L069_lv4,0.473,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L069_lv5,0.514,LevelDesigner/Variants/ab_09.json#6358
+B/L070_default,0.516,A_cu/level_156
+B/L070_lv2,0.397,A_cu/level_190
+B/L070_lv3,0.532,A_cu/level_020
+B/L070_lv4+lv5,0.403,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/pack_024.json#11083
+B/L071_default+lv2,0.5,A_cu/level_157
+B/L071_lv3+lv4,0.452,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14953
+B/L071_lv5,0.516,A_cu/level_053
+B/L072_default+lv2,0.5,LevelDesigner/Variants/ab_09.json#6358
+B/L072_lv3+lv4,0.466,A_cu/level_190
+B/L072_lv5,0.473,A_cu/level_190
+B/L073_default+lv2,0.516,A_cu/level_156
+B/L073_lv3,0.473,A_cu/level_190
+B/L073_lv4+lv5,0.463,LevelDesigner/Variants/ab_09.json#6358
+B/L074_default+lv2,0.484,A_cu/level_156
+B/L074_lv3,0.405,A_cu/level_190
+B/L074_lv4,0.468,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14922
+B/L074_lv5,0.432,A_cu/level_190
+B/L075_default,0.528,LevelDesigner/Variants/ab_10.json#6216
+B/L075_lv2,0.477,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L075_lv3+lv4,0.583,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L075_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L076_default+lv2,0.5,A_cu/level_047
+B/L076_lv3,0.452,A_cu/level_131
+B/L076_lv4+lv5,0.418,A_cu/level_099
+B/L077_default,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L077_lv2,0.456,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8090
+B/L077_lv3+lv4,0.432,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L077_lv5,0.486,LevelDesigner/Variants/ab_09.json#6346
+B/L078_default,0.568,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L078_lv2,0.412,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L078_lv3,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L078_lv4,0.459,LevelDesigner/Variants/ab_09.json#6346
+B/L078_lv5,0.432,A_cu/level_190
+B/L079_default+lv2+lv3+lv4,0.452,A_cu/level_156
+B/L079_lv5,0.412,A_cu/level_156
+B/L080_default,0.597,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L080_lv2,0.514,A_cu/level_038
+B/L080_lv3,0.583,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L080_lv4,0.528,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L080_lv5,0.344,A_cu/level_038
+B/L081_default+lv2,0.5,A_cu/level_157
+B/L081_lv3+lv4+lv5,0.435,A_cu/level_157
+B/L082_default+lv2,0.516,A_cu/level_156
+B/L082_lv3,0.441,A_cu/level_020
+B/L082_lv4+lv5,0.419,LevelDesigner/Variants/ab_09.json#6358
+B/L083_default+lv2,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L083_lv3+lv4+lv5,0.554,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L084_default+lv2+lv3,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L084_lv4,0.484,A_cu/level_156
+B/L084_lv5,0.459,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L085_default,0.506,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L085_lv2,0.542,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L085_lv3,0.519,LevelDesigner/Variants/ab_10.json#6216
+B/L085_lv4+lv5,0.583,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L086_default+lv2,0.472,A_cu/level_053
+B/L086_lv3+lv4,0.5,A_cu/level_097
+B/L086_lv5,0.435,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8090
+B/L087_default+lv2,0.441,LevelDesigner/Variants/ab_21.json#6334
+B/L087_lv3,0.463,A_cu/level_190
+B/L087_lv4+lv5,0.446,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L088_default+lv2,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L088_lv3+lv4,0.527,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L088_lv5,0.548,A_cu/level_020
+B/L089_default+lv2,0.484,A_cu/level_186
+B/L089_lv3,0.365,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-e8c30ce4b86049baab1594d6351ea30b/core_input.json#6828
+B/L089_lv4,0.473,LevelDesigner/Variants/ab_09.json#6358
+B/L089_lv5,0.5,A_cu/level_190
+B/L090_default,0.468,A_cu/level_156
+B/L090_lv2,0.548,A_cu/level_156
+B/L090_lv3,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L090_lv4,0.351,A_cu/level_190
+B/L090_lv5,0.473,LevelDesigner/Variants/ab_09.json#6358
+B/L091_default,0.484,A_cu/level_157
+B/L091_lv2,0.532,A_cu/level_053
+B/L091_lv3+lv4+lv5,0.448,A_cu/level_157
+B/L092_default+lv2+lv3,0.405,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-e8c30ce4b86049baab1594d6351ea30b/core_input.json#6828
+B/L092_lv4,0.432,LevelDesigner/Variants/ab_09.json#6358
+B/L092_lv5,0.473,A_cu/level_190
+B/L093_default+lv2,0.45,LevelDesigner/Variants/ab_09.json#6358
+B/L093_lv3+lv4,0.459,LevelDesigner/Variants/ab_09.json#6358
+B/L093_lv5,0.446,LevelDesigner/Variants/ab_09.json#6346
+B/L094_default+lv2+lv3,0.468,A_cu/level_156
+B/L094_lv4,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L094_lv5,0.527,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L095_default,0.528,LevelDesigner/Variants/ab_10.json#6216
+B/L095_lv2,0.472,A_cu/level_038
+B/L095_lv3,0.481,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L095_lv4,0.569,LevelDesigner/Variants/ab_10.json#6216
+B/L095_lv5,0.395,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L096_default+lv2,0.5,A_cu/level_053
+B/L096_lv3+lv4,0.548,A_cu/level_053
+B/L096_lv5,0.455,A_cu/level_099
+B/L097_default+lv2,0.473,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L097_lv3,0.432,LevelDesigner/Variants/ab_09.json#6346
+B/L097_lv4,0.473,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L097_lv5,0.432,LevelDesigner/Variants/ab_09.json#6358
+B/L098_default,0.527,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L098_lv2+lv3,0.456,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8086
+B/L098_lv4+lv5,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L099_default+lv2,0.468,A_cu/level_156
+B/L099_lv3,0.426,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14926
+B/L099_lv4,0.403,LevelDesigner/Variants/ab_21.json#6334
+B/L099_lv5,0.405,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-92779132fb6347d28a1582c4181b59f9/evidence.json#6791
+B/L100_default,0.597,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L100_lv2+lv3,0.456,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L100_lv4+lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L101_default,0.463,A_cu/level_167
+B/L101_lv2,0.403,A_cu/level_167
+B/L101_lv3+lv4+lv5,0.433,A_cu/level_131
+B/L102_default+lv2,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L102_lv3,0.459,A_cu/level_190
+B/L102_lv4+lv5,0.487,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L103_default+lv2,0.532,A_cu/level_186
+B/L103_lv3,0.473,LevelDesigner/Variants/ab_09.json#6346
+B/L103_lv4+lv5,0.435,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14950
+B/L104_default+lv2,0.595,LevelDesigner/Variants/ab_09.json#6346
+B/L104_lv3,0.446,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L104_lv4,0.432,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-92779132fb6347d28a1582c4181b59f9/core_input.json#6785
+B/L104_lv5,0.446,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L105_default+lv2,0.611,LevelDesigner/Variants/ab_10.json#6216
+B/L105_lv3,0.376,LevelDesigner/Variants/ab_10.json#6216
+B/L105_lv4,0.556,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L105_lv5,0.418,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L106_default,0.468,A_cu/level_131
+B/L106_lv2,0.516,A_cu/level_131
+B/L106_lv3+lv4,0.468,A_cu/level_131
+B/L106_lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L107_default,0.548,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8090
+B/L107_lv2+lv4,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L107_lv3+lv5,0.554,LevelDesigner/Variants/ab_09.json#6358
+B/L108_default+lv2,0.527,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L108_lv3,0.527,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L108_lv4+lv5,0.527,LevelDesigner/Variants/ab_09.json#6358
+B/L109_default+lv2+lv3,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L109_lv4,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L109_lv5,0.432,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L110_default,0.557,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L110_lv2+lv3,0.453,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L110_lv4+lv5,0.384,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L111_default,0.532,A_cu/level_157
+B/L111_lv2,0.484,A_cu/level_157
+B/L111_lv3+lv4+lv5,0.403,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/pack_010.json#9366
+B/L112_default+lv2,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L112_lv3,0.459,A_cu/level_190
+B/L112_lv4,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L112_lv5,0.459,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L113_default+lv2+lv3,0.548,A_cu/level_156
+B/L113_lv4+lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L114_default+lv2+lv4,0.419,LevelDesigner/Variants/ab_22.json#6291
+B/L114_lv3,0.5,A_cu/level_186
+B/L114_lv5,0.438,A_cu/level_190
+B/L115_default,0.419,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8059
+B/L115_lv2,0.532,A_cu/level_156
+B/L115_lv3,0.473,LevelDesigner/Variants/ab_09.json#6346
+B/L115_lv4,0.484,A_cu/level_156
+B/L115_lv5,0.487,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L116_default,0.478,A_cu/level_191
+B/L116_lv2,0.389,LevelDesigner/Variants/ab_22.json#6298
+B/L116_lv3+lv4,0.433,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8068
+B/L116_lv5,0.432,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L117_default,0.5,A_cu/level_190
+B/L117_lv2,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L117_lv3,0.541,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L117_lv4+lv5,0.432,LevelDesigner/Variants/ab_09.json#6346
+B/L118_default+lv2+lv3,0.527,LevelDesigner/Variants/ab_09.json#6358
+B/L118_lv4+lv5,0.527,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L119_default+lv2+lv3,0.473,A_cu/level_156
+B/L119_lv4,0.486,A_cu/level_190
+B/L119_lv5,0.338,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-e8c30ce4b86049baab1594d6351ea30b/core_input.json#6828
+B/L120_default+lv2,0.514,LevelDesigner/Variants/ab_10.json#6216
+B/L120_lv3,0.556,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L120_lv4+lv5,0.542,LevelDesigner/Variants/ab_10.json#6216
+B/L121_default+lv2,0.444,A_cu/level_157
+B/L121_lv3,0.435,A_cu/level_097
+B/L121_lv4+lv5,0.522,A_cu/level_178
+B/L122_default+lv2+lv3+lv4,0.5,LevelDesigner/Variants/ab_09.json#6358
+B/L122_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L123_default+lv2,0.529,A_cu/level_156
+B/L123_lv3+lv4+lv5,0.479,A_cu/level_190
+B/L124_default+lv2,0.452,A_cu/level_156
+B/L124_lv3,0.473,LevelDesigner/Variants/ab_09.json#6358
+B/L124_lv4,0.459,LevelDesigner/Variants/ab_09.json#6358
+B/L124_lv5,0.473,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L125_default,0.532,LevelDesigner/Variants/ab_21.json#6330
+B/L125_lv2,0.516,A_cu/level_156
+B/L125_lv3,0.473,A_cu/level_190
+B/L125_lv4+lv5,0.432,A_cu/level_190
+B/L126_default,0.478,A_cu/level_178
+B/L126_lv2,0.448,A_cu/level_131
+B/L126_lv3+lv4,0.5,A_cu/level_156
+B/L126_lv5,0.418,A_cu/level_168
+B/L127_default+lv2,0.532,A_cu/level_186
+B/L127_lv3+lv4,0.5,LevelDesigner/Variants/ab_09.json#6346
+B/L127_lv5,0.459,LevelDesigner/Variants/ab_09.json#6358
+B/L128_default,0.515,A_cu/level_020
+B/L128_lv2+lv3,0.473,A_cu/level_020
+B/L128_lv4+lv5,0.392,LevelDesigner/Variants/ab_09.json#6346
+B/L129_default+lv2,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L129_lv3+lv4+lv5,0.452,LevelDesigner/Variants/ab_21.json#6330
+B/L130_default,0.465,LevelDesigner/Variants/ab_10.json#6216
+B/L130_lv2,0.597,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L130_lv3,0.569,LevelDesigner/Variants/ab_10.json#6216
+B/L130_lv4,0.481,LevelDesigner/Variants/ab_10.json#6216
+B/L130_lv5,0.544,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L131_default,0.448,GD_Lazy/Level Difficulty/Handoff_LevelGen/kit/start_levels/pack_001.json#20954
+B/L131_lv2,0.468,A_cu/level_157
+B/L131_lv3+lv4,0.478,A_cu/level_157
+B/L131_lv5,0.403,A_cu/level_099
+B/L132_default+lv2,0.5,LevelDesigner/Variants/ab_09.json#6358
+B/L132_lv3+lv4,0.466,A_cu/level_190
+B/L132_lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L133_default+lv2,0.484,A_cu/level_156
+B/L133_lv3,0.425,A_cu/level_190
+B/L133_lv4+lv5,0.486,LevelDesigner/Variants/ab_09.json#6358
+B/L134_default+lv2,0.532,A_cu/level_156
+B/L134_lv3+lv4,0.527,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L134_lv5,0.446,LevelDesigner/Variants/ab_09.json#6358
+B/L135_default,0.523,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L135_lv2,0.569,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L135_lv3,0.407,LevelDesigner/Variants/ab_10.json#6216
+B/L135_lv4,0.556,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L136_default,0.516,A_cu/level_053
+B/L136_lv2,0.478,A_cu/level_178
+B/L136_lv3+lv4,0.466,A_cu/level_190
+B/L136_lv5,0.403,A_cu/level_157
+B/L137_default+lv2+lv3,0.473,A_cu/level_190
+B/L137_lv4+lv5,0.595,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L138_default+lv2,0.532,A_cu/level_156
+B/L138_lv3+lv4+lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L139_default+lv2,0.435,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8090
+B/L139_lv3,0.484,A_cu/level_024
+B/L139_lv4,0.486,LevelDesigner/Variants/ab_09.json#6358
+B/L139_lv5,0.473,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L140_default,0.583,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L140_lv2,0.597,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L140_lv3,0.528,A_cu/level_038
+B/L140_lv4,0.43,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L140_lv5,0.444,A_cu/level_038
+B/L141_default,0.435,A_cu/level_157
+B/L141_lv2,0.448,A_cu/level_191
+B/L141_lv3+lv4+lv5,0.433,A_cu/level_099
+B/L142_default+lv2,0.459,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L142_lv3,0.459,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L142_lv4,0.392,A_cu/level_190
+B/L142_lv5,0.473,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L143_default+lv2+lv3,0.514,LevelDesigner/Variants/ab_09.json#6358
+B/L143_lv4+lv5,0.484,A_cu/level_156
+B/L144_default+lv2,0.541,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L144_lv3,0.419,A_cu/level_156
+B/L144_lv4,0.378,GD_Lazy/Level Difficulty/Generated/SweetRope-Stage02/Levels/pack_001.json#20384
+B/L144_lv5,0.473,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L145_default,0.5,A_cu/level_156
+B/L145_lv2,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L145_lv3,0.438,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L145_lv4,0.432,A_cu/level_190
+B/L145_lv5,0.463,A_cu/level_190
+B/L146_default,0.486,A_cu/level_157
+B/L146_lv2,0.5,A_cu/level_053
+B/L146_lv3+lv4,0.388,GD_Lazy/Level Difficulty/Generated/SR_LevelGen_Part2/_review/zip/Levels/pack_001.json#13331
+B/L146_lv5,0.458,A_cu/level_053
+B/L147_default+lv2+lv3,0.466,A_cu/level_190
+B/L147_lv4+lv5,0.466,A_cu/level_190
+B/L148_default+lv2,0.479,A_cu/level_190
+B/L148_lv3,0.473,A_cu/level_190
+B/L148_lv4+lv5,0.581,A_cu/level_020
+B/L149_default+lv2,0.435,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8066
+B/L149_lv3,0.419,A_cu/level_156
+B/L149_lv4,0.55,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L149_lv5,0.446,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L150_default,0.528,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L150_lv2,0.558,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L150_lv3,0.542,LevelDesigner/Variants/ab_10.json#6216
+B/L150_lv4+lv5,0.443,A_cu/level_038
+B/L151_default,0.361,A_cu/level_157
+B/L151_lv2,0.468,A_cu/level_131
+B/L151_lv3+lv4,0.448,A_cu/level_178
+B/L151_lv5,0.5,A_cu/level_053
+B/L152_default+lv2,0.486,LevelDesigner/Variants/ab_09.json#6358
+B/L152_lv3,0.459,LevelDesigner/Variants/ab_09.json#6346
+B/L152_lv4,0.438,A_cu/level_190
+B/L152_lv5,0.468,A_cu/level_156
+B/L153_default,0.5,A_cu/level_156
+B/L153_lv2,0.516,A_cu/level_156
+B/L153_lv3,0.5,A_cu/level_020
+B/L153_lv4,0.484,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14946
+B/L153_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L154_default+lv2,0.5,A_cu/level_156
+B/L154_lv3,0.534,A_cu/level_190
+B/L154_lv4,0.459,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-e8c30ce4b86049baab1594d6351ea30b/core_input.json#6828
+B/L154_lv5,0.486,A_cu/level_190
+B/L155_default,0.5,A_cu/level_108
+B/L155_lv2,0.593,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L155_lv3,0.556,LevelDesigner/Variants/ab_10.json#6216
+B/L155_lv4,0.506,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L156_default,0.516,A_cu/level_157
+B/L156_lv2,0.435,A_cu/level_055
+B/L156_lv3+lv4+lv5,0.375,A_cu/level_131
+B/L157_default+lv2+lv3,0.5,A_cu/level_156
+B/L157_lv4,0.456,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14926
+B/L157_lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L158_default,0.548,A_cu/level_020
+B/L158_lv2,0.565,A_cu/level_156
+B/L158_lv3,0.471,A_cu/level_020
+B/L158_lv4,0.446,LevelDesigner/Variants/ab_09.json#6358
+B/L158_lv5,0.479,A_cu/level_190
+B/L159_default+lv2,0.484,A_cu/level_156
+B/L159_lv3+lv4,0.507,A_cu/level_190
+B/L159_lv5,0.435,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8066
+B/L160_default,0.395,LevelDesigner/Variants/ab_10.json#6216
+B/L160_lv2,0.5,A_cu/level_038
+B/L160_lv3,0.556,LevelDesigner/Variants/ab_10.json#6216
+B/L160_lv4,0.556,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L160_lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L161_default,0.468,A_cu/level_053
+B/L161_lv2,0.419,A_cu/level_131
+B/L161_lv3+lv4,0.418,A_cu/level_157
+B/L161_lv5,0.403,A_cu/level_157
+B/L162_default+lv2,0.382,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14950
+B/L162_lv3,0.5,LevelDesigner/Variants/ab_09.json#6358
+B/L162_lv4,0.473,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L162_lv5,0.419,LevelDesigner/Variants/ab_09.json#6346
+B/L163_default,0.534,A_cu/level_190
+B/L163_lv2,0.452,LevelDesigner/Variants/ab_21.json#6330
+B/L163_lv3,0.565,A_cu/level_020
+B/L163_lv4,0.468,A_cu/level_156
+B/L163_lv5,0.392,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-e8c30ce4b86049baab1594d6351ea30b/core_input.json#6828
+B/L164_default+lv2,0.484,A_cu/level_020
+B/L164_lv3,0.452,LevelDesigner/Variants/ab_21.json#6334
+B/L164_lv4,0.484,A_cu/level_156
+B/L164_lv5,0.473,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L165_default,0.597,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L165_lv2,0.611,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L165_lv3,0.472,A_cu/level_038
+B/L165_lv4,0.5,LevelDesigner/Variants/ab_10.json#6216
+B/L165_lv5,0.597,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L166_default,0.448,A_cu/level_053
+B/L166_lv2,0.435,A_cu/level_131
+B/L166_lv3+lv4+lv5,0.484,A_cu/level_156
+B/L167_default+lv2+lv3+lv4,0.412,A_cu/level_156
+B/L167_lv5,0.459,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L168_default,0.516,A_cu/level_156
+B/L168_lv2,0.452,A_cu/level_156
+B/L168_lv3,0.468,A_cu/level_156
+B/L168_lv4,0.516,A_cu/level_156
+B/L168_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L169_default+lv2,0.484,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8086
+B/L169_lv3,0.521,A_cu/level_190
+B/L169_lv4,0.486,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L169_lv5,0.446,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L170_default,0.597,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L170_lv2,0.556,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L170_lv3,0.384,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L170_lv4,0.528,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L170_lv5,0.458,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L171_default,0.516,A_cu/level_131
+B/L171_lv2,0.403,A_cu/level_131
+B/L171_lv3+lv4+lv5,0.375,assets/game/juice_fallback_levels.json#23
+B/L172_default+lv2,0.459,A_cu/level_190
+B/L172_lv3+lv5,0.382,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14926
+B/L172_lv4,0.459,A_cu/level_190
+B/L173_default,0.5,A_cu/level_020
+B/L173_lv2,0.5,A_cu/level_190
+B/L173_lv3,0.527,LevelDesigner/Variants/ab_09.json#6358
+B/L173_lv4,0.532,A_cu/level_156
+B/L173_lv5,0.5,A_cu/level_156
+B/L174_default+lv2,0.5,A_cu/level_020
+B/L174_lv3,0.468,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14950
+B/L174_lv4,0.412,A_cu/level_156
+B/L175_default,0.544,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L175_lv2,0.569,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L175_lv3,0.597,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L175_lv4,0.569,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L175_lv5,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L176_default,0.452,A_cu/level_157
+B/L176_lv2,0.388,A_cu/level_191
+B/L176_lv3+lv4+lv5,0.468,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8093
+B/L177_default+lv2+lv3,0.527,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L177_lv4,0.459,LevelDesigner/Variants/ab_09.json#6346
+B/L177_lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L178_default,0.4,GD_Lazy/Level Difficulty/Generated/ClaudeReviews/review-e8c30ce4b86049baab1594d6351ea30b/core_input.json#6828
+B/L178_lv2,0.459,LevelDesigner/Variants/ab_09.json#6358
+B/L178_lv3,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L178_lv4,0.435,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_21.json#8064
+B/L178_lv5,0.438,A_cu/level_190
+B/L179_default+lv2,0.527,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L179_lv3,0.459,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L179_lv4,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L179_lv5,0.378,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L180_default+lv2,0.486,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L180_lv3,0.514,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L180_lv4,0.569,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L180_lv5,0.514,LevelDesigner/Variants/ab_10.json#6216
+B/L181_default,0.431,A_cu/level_053
+B/L181_lv2,0.448,A_cu/level_053
+B/L181_lv3+lv4,0.448,A_cu/level_053
+B/L181_lv5,0.448,A_cu/level_157
+B/L182_default+lv2,0.473,LevelDesigner/Variants/ab_09.json#6346
+B/L182_lv3,0.5,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L182_lv4+lv5,0.459,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L183_default,0.541,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L183_lv2,0.484,A_cu/level_020
+B/L183_lv3,0.565,A_cu/level_020
+B/L183_lv4,0.532,A_cu/level_156
+B/L183_lv5,0.446,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L184_default+lv2,0.452,A_cu/level_156
+B/L184_lv3,0.5,LevelDesigner/Variants/ab_21.json#6334
+B/L184_lv4,0.568,LevelDesigner/Variants/ab_09.json#6358
+B/L184_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L185_default,0.569,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L185_lv2,0.494,LevelDesigner/Variants/ab_10.json#6216
+B/L185_lv3,0.625,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L185_lv4+lv5,0.494,A_cu/level_038
+B/L186_default+lv2,0.433,A_cu/level_178
+B/L186_lv3,0.468,A_cu/level_097
+B/L186_lv4+lv5,0.433,A_cu/level_099
+B/L187_default+lv2+lv3,0.432,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L187_lv4,0.473,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L187_lv5,0.432,LevelDesigner/Variants/ab_09.json#6358
+B/L188_default,0.532,A_cu/level_156
+B/L188_lv2,0.532,A_cu/level_156
+B/L188_lv3,0.484,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14922
+B/L188_lv4,0.484,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14922
+B/L188_lv5,0.514,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/L189_default+lv2,0.5,LevelDesigner/Variants/ab_09.json#6358
+B/L189_lv3,0.554,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L189_lv4,0.486,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L189_lv5,0.473,LevelDesigner/Variants/ab_09.json#6346
+B/L190_default,0.667,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L190_lv2,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L190_lv3,0.481,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L190_lv4+lv5,0.569,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L191_default,0.463,A_cu/level_167
+B/L191_lv2,0.522,A_cu/level_053
+B/L191_lv3,0.448,A_cu/level_053
+B/L191_lv4+lv5,0.448,A_cu/level_053
+B/L192_default+lv2,0.432,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7834
+B/L192_lv3+lv4,0.459,A_cu/level_190
+B/L192_lv5,0.527,LevelDesigner/Variants/ab_09.json#6358
+B/L193_default,0.493,A_cu/level_190
+B/L193_lv2,0.532,A_cu/level_156
+B/L193_lv3,0.5,A_cu/level_156
+B/L193_lv4,0.459,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14694
+B/L193_lv5,0.452,A_cu/level_156
+B/L194_default+lv2,0.468,LevelDesigner/Variants/ab_22.json#6291
+B/L194_lv3,0.514,LevelDesigner/Variants/ab_09.json#6346
+B/L194_lv4,0.446,A_cu/level_190
+B/L194_lv5,0.419,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14946
+B/L195_default,0.465,LevelDesigner/Variants/ab_10.json#6216
+B/L195_lv2,0.611,LevelDesigner/Variants/ab_10.json#6216
+B/L195_lv3,0.569,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L195_lv4,0.398,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L195_lv5,0.486,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L196_default+lv2,0.484,A_cu/level_053
+B/L196_lv3,0.358,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_22.json#8093
+B/L196_lv4+lv5,0.468,A_cu/level_097
+B/L197_default+lv2+lv3,0.466,A_cu/level_190
+B/L197_lv4,0.473,LevelDesigner/Variants/ab_09.json#6358
+B/L197_lv5,0.432,A_cu/level_190
+B/L198_default,0.484,A_cu/level_156
+B/L198_lv2,0.419,LevelDesigner/Variants/ab_09.json#6346
+B/L198_lv3,0.516,A_cu/level_156
+B/L198_lv4,0.405,LevelDesigner/Variants/ab_09.json#6358
+B/L198_lv5,0.486,LevelDesigner/Variants/ab_09.json#6358
+B/L199_default+lv2,0.484,LevelDesigner/Variants/ab_22.json#6295
+B/L199_lv3,0.435,A_cu/level_156
+B/L199_lv4,0.514,LevelDesigner/Variants/ab_09.json#6358
+B/L199_lv5,0.419,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/L200_default,0.569,LevelDesigner/Variants/ab_10.json#6216
+B/L200_lv2,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L200_lv3,0.569,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#7848
+B/L200_lv4,0.547,LevelDesigner/Variants/ab_10.json#6216
+B/L200_lv5,0.472,LevelDesigner/Variants/ab_10.json#6216
+B/L135_lv5,0.506,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
+B/L155_lv5,0.542,LevelDesigner/Variants/ab_10.json#6216
+B/L174_lv5,0.4,A_cu/level_190

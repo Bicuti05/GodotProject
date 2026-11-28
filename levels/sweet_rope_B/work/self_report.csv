@@ -425,7 +425,7 @@ slot,group,file,valid,solvable,lw,diem_lw,muc_tieu,lech
 135,lv2,L135_lv2.json,true,WINNABLE,0.05,69.31,48.3,21.01
 135,lv3,L135_lv3.json,true,WINNABLE,0.0,93.84,59.3,34.54
 135,lv4,L135_lv4.json,true,WINNABLE,0.1,57.61,78.5,-20.89
-135,lv5,L135_lv5.json,true,UNKNOWN,0.0,93.84,86.5,7.34
+135,lv5,L135_lv5.json,true,WINNABLE,0.0125,81.64,86.5,-4.86
 136,default,L136_default.json,true,WINNABLE,0.4292,27.95,18.7,9.25
 136,lv2,L136_lv2.json,true,WINNABLE,0.8458,6.13,22.9,-16.77
 136,lv3+lv4,L136_lv3+lv4.json,true,WINNABLE,0.1708,48.34,40.9,7.44
@@ -574,7 +574,7 @@ slot,group,file,valid,solvable,lw,diem_lw,muc_tieu,lech
 174,default+lv2,L174_default+lv2.json,true,WINNABLE,0.8875,6.13,12.4,-6.27
 174,lv3,L174_lv3.json,true,WINNABLE,0.2667,38.17,26.4,11.77
 174,lv4,L174_lv4.json,true,WINNABLE,0.1125,57.61,60.3,-2.69
-174,lv5,L174_lv5.json,true,UNKNOWN,0.0,93.84,84.8,9.04
+174,lv5,L174_lv5.json,true,WINNABLE,0.0042,86.22,84.8,1.42
 175,default,L175_default.json,true,WINNABLE,0.2542,38.17,34.7,3.47
 175,lv2,L175_lv2.json,true,WINNABLE,0.3083,36.84,38.4,-1.56
 175,lv3,L175_lv3.json,true,WINNABLE,0.0875,64.62,66.05,-1.43
