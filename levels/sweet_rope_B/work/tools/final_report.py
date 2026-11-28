@@ -14,18 +14,17 @@ self1 = [x for x in dup if x['uid'].endswith('level_001') and x['nearest'] == 'A
 dup = [x for x in dup if x not in self1]  # màn 1 bản A giữ nguyên từ bản cũ, chỉ trùng với chính nó
 top = sorted(dup, key=lambda x: -float(x['sim_max']))
 n80 = sum(float(x['sim_max']) > 0.8 for x in dup)
-thay = [x for x in ref if x['thay'] == 'True']
-e0 = [abs(float(x['lech_cu'])) for x in ref]
-e1 = [abs(float(x['lech_moi'])) if x['thay'] == 'True' else abs(float(x['lech_cu'])) for x in ref]
+e1 = [abs(float(x['lech'])) for x in ref if x['lech'] != '']
 L = [f'# Báo cáo Sweet Rope: bản A và bản B ({datetime.date.today():%d/%m/%Y})', '',
      'Báo cáo chung duy nhất cho toàn bộ level đã sinh. Bản A: 200 màn, một bộ cho mọi người chơi, mục tiêu theo đường độ khó riêng. '
      'Bản B: 5 bộ (`default`, `lv2`–`lv5`) × 199 màn (màn 1 dùng level hướng dẫn), mục tiêu bằng `summaryScore` của Sort Streak cùng màn cùng bộ; '
      'các bộ có cùng điểm ở cùng màn dùng chung một level (680 level).', '',
      '**Cách đo:** điểm "thực tế" là điểm bot (`tools/score.py`, cột `diem_lw`), sai số khoảng ±9 mỗi level; màn trên 70 điểm bị chấm thấp khoảng 18.', '',
      '## 0. Tóm tắt', '',
+     f'- Mọi level theo luật Sort Streak: không dây nào đầy sẵn đúng màu chậu (lúc mở và khi vào từ hàng chờ), tối đa 3 hoa thường cùng màu liền nhau (hoa ẩn không tính).',
      f'- Tất cả level đúng sức chứa của Sort Streak cùng màn cùng bộ (bản A theo bộ `default`), ≤ 14 cốc, ≤ 7 dây, giải được (solver Godot hoặc bot thắng).',
-     f'- Đã sửa các màn lệch > 10 điểm: {len(ref)} mục ({sum(x["ban"] == "A" for x in ref)} màn A, {sum(x["ban"] == "B" for x in ref)} nhóm B); '
-     f'thay {len(thay)}; sai số TB của nhóm này {sum(e0) / len(e0):.1f} → {sum(e1) / len(e1):.1f}; còn {sum(v > 10 for v in e1)} mục lệch > 10.',
+     f'- Sinh lại {len(ref)} level vi phạm luật Sort Streak ({sum(x["ban"] == "A" for x in ref)} màn A, {sum(x["ban"] == "B" for x in ref)} nhóm B); '
+     f'sai số TB của nhóm này {sum(e1) / len(e1):.1f}, {sum(v > 10 for v in e1)} mục lệch > 10.',
      f'- Trùng lặp với {des.get("originals", "")} level có sẵn trong project: {n80} level giống > 80% (giống nhất {top[0]["sim_max"]}).',
      f'- Luật LevelDesigner (`validateLevel`, bản port C#): {des["total"]} level, {des["errors"]} lỗi, {des["warnings"]} cảnh báo.',
      '- Gói Unity `sweetrope.levelpack/1`: `levels/package/SweetRope_A.zip`, `levels/package/SweetRope_B.zip`.', '']
@@ -41,20 +40,17 @@ L += ['', '## 7. Luật LevelDesigner và sửa cấu trúc', '',
       f'- Kiểm bằng `validateLevel` của LevelDesigner (`levels/sweet_rope_B/work/tools/designer/core.js`): {des["total"]} level, {des["errors"]} lỗi, {des["warnings"]} cảnh báo.',
       '- Đã sửa: 2 level có 15 cốc (Unity tối đa 14): bản A màn 86 và bản B màn 36 `lv2`, sinh lại; thêm luật ≤ 14 cốc vào bộ kiểm.',
       '- Không giải lại bằng `BoardSolver` của Unity (theo yêu cầu); tính giải được đã chứng minh khi sinh.', '',
-      '## 8. Sửa các màn lệch > 10 điểm', '',
-      'Mỗi màn sinh 32 ứng viên quanh mức `mix` hiệu chỉnh theo sức chứa, chấm nhanh 20 bản (2 bot × 30 ván), chấm đầy đủ 4 bản gần nhất, '
-      'chỉ thay khi bản mới gần mục tiêu hơn.', '',
-      '| Bản | Số mục | Được thay | Sai số TB trước | Sai số TB sau | Còn > 10 |', '|---|---|---|---|---|---|']
+      '## 8. Sinh lại theo luật Sort Streak', '',
+      'Level cũ có dây đầy sẵn đúng màu chậu (giao cốc ngay khi vào màn) và chuỗi 4–6 hoa cùng màu liền nhau; Sort Streak không có màn nào như vậy. '
+      'Mỗi level lỗi được sinh lại 16–48 ứng viên đúng luật (đổi hoa chỉ trong bàn chơi hoặc trong hàng chờ), chấm nhanh, chấm đầy đủ 3–4 bản gần mục tiêu nhất, chọn bản gần nhất mà bot thắng được.', '',
+      '| Bản | Số level sinh lại | Sai số TB | Lệch ≤ 5 | Lệch > 10 |', '|---|---|---|---|---|']
 for b in ['A', 'B']:
-    X = [x for x in ref if x['ban'] == b]
-    if not X: continue
-    a0 = [abs(float(x['lech_cu'])) for x in X]
-    a1 = [abs(float(x['lech_moi'])) if x['thay'] == 'True' else abs(float(x['lech_cu'])) for x in X]
-    L.append(f'| {b} | {len(X)} | {sum(x["thay"] == "True" for x in X)} | {sum(a0) / len(a0):.1f} | {sum(a1) / len(a1):.1f} | {sum(v > 10 for v in a1)} |')
+    X = [abs(float(x['lech'])) for x in ref if x['ban'] == b and x['lech'] != '']
+    if X: L.append(f'| {b} | {len(X)} | {sum(X) / len(X):.1f} | {sum(v <= 5 for v in X)} | {sum(v > 10 for v in X)} |')
 cb = list(csv.DictReader(open('levels/sweet_rope_B/reports/choi_bua_man_2-10.csv')))
-L += ['', '## 8b. Chơi bừa ở màn đầu (bot chọn nước ngẫu nhiên, 120 ván mỗi màn)', '',
+L += ['', '## 8b. Chơi bừa ở màn đầu (bot chỉ nhìn một nước: đi nước có lợi nhất trước mắt, đôi khi đi bừa; 120 ván mỗi màn)', '',
       'Yêu cầu cho bản A: màn 2–5 chơi bừa thắng 100%; màn 6–9 chỉ thua 1–2 lần và thua lúc gần cuối; từ màn 10 giữ nguyên. '
-      'Bản B: áp cùng yêu cầu cho màn 2–5 (cả 5 bộ) và màn 6–9 bộ `default` (điểm vẫn sát mục tiêu thấp). Màn 6–9 của lv2–lv5 giữ độ khó mục tiêu Sort Streak (15–37 điểm) nên chơi bừa thua nhiều hơn; chi tiết `sua_man_2-9_choi_bua.csv`. Màn 10 giữ nguyên.', '',
+      'Áp cho bản A màn 2–9, bản B màn 2–5 (cả 5 bộ) và màn 6–9 bộ `default`. Màn 6–9 của lv2–lv5 giữ độ khó mục tiêu Sort Streak. Từ màn 10 giữ nguyên.', '',
       '| Bản | Màn | Nhóm | Thắng khi chơi bừa | % cốc đã xong khi thua |', '|---|---|---|---|---|']
 L += [f"| {x['ban']} | {x['man']} | {x['nhom']} | {x['thang_choi_bua_pct']}% | {x['pct_coc_xong_khi_thua'] + '%' if x['pct_coc_xong_khi_thua'] else '–'} |" for x in cb]
 L += ['', '## 9. Biểu đồ theo màn (không làm trơn)', '',
@@ -68,6 +64,6 @@ L += ['', '## 10. Gói Unity', '',
       '- Bonus, Challenge, Endless không ghi vào file level (theo luật đã chốt); Challenge và Endless hiện là level thường.', '',
       '## Phụ lục: file số liệu', '',
       f'- Chi tiết từng màn: `{os.path.basename(P)}_chi_tiet.csv`; bonus tiềm năng: `{os.path.basename(P)}_bonus_tiem_nang.csv`; '
-      'chơi bừa: `choi_bua_man_2-10.csv`; trùng lặp: `kiem_trung_lap.csv`; sửa màn lệch: `sua_man_lech.csv` (cùng thư mục `levels/sweet_rope_B/reports/`).']
+      'chơi bừa: `choi_bua_man_2-10.csv`; trùng lặp: `kiem_trung_lap.csv`; sinh lại theo luật: `sua_luat_chuoi_mau.csv` (cùng thư mục `levels/sweet_rope_B/reports/`).']
 open('levels/BAO_CAO_SweetRope_AB.md', 'w').write('\n'.join(L) + '\n')
 print('wrote levels/BAO_CAO_SweetRope_AB.md')

@@ -6,9 +6,10 @@ Báo cáo chung duy nhất cho toàn bộ level đã sinh. Bản A: 200 màn, m�
 
 ## 0. Tóm tắt
 
+- Mọi level theo luật Sort Streak: không dây nào đầy sẵn đúng màu chậu (lúc mở và khi vào từ hàng chờ), tối đa 3 hoa thường cùng màu liền nhau (hoa ẩn không tính).
 - Tất cả level đúng sức chứa của Sort Streak cùng màn cùng bộ (bản A theo bộ `default`), ≤ 14 cốc, ≤ 7 dây, giải được (solver Godot hoặc bot thắng).
-- Đã sửa các màn lệch > 10 điểm: 230 mục (30 màn A, 200 nhóm B); thay 223; sai số TB của nhóm này 16.0 → 3.7; còn 16 mục lệch > 10.
-- Trùng lặp với 21 325 level có sẵn trong project: 0 level giống > 80% (giống nhất 0.732).
+- Sinh lại 875 level vi phạm luật Sort Streak (199 màn A, 676 nhóm B); sai số TB của nhóm này 7.2, 192 mục lệch > 10.
+- Trùng lặp với 21 325 level có sẵn trong project: 0 level giống > 80% (giống nhất 0.667).
 - Luật LevelDesigner (`validateLevel`, bản port C#): 1195 level, 0 lỗi, 0 cảnh báo.
 - Gói Unity `sweetrope.levelpack/1`: `levels/package/SweetRope_A.zip`, `levels/package/SweetRope_B.zip`.
 
@@ -16,25 +17,25 @@ Báo cáo chung duy nhất cho toàn bộ level đã sinh. Bản A: 200 màn, m�
 
 | Bộ | Số màn | Mục tiêu TB | Đo TB | Lệch TB (có dấu) | Sai số TB | ≤ 5 | 5–10 | > 10 |
 |---|---|---|---|---|---|---|---|---|
-| A | 200 | 21.2 | 20.1 | -1.1 | 4.2 | 127 | 72 | 1 |
-| default | 199 | 21.1 | 20.2 | -0.9 | 4.5 | 116 | 78 | 5 |
-| lv2 | 199 | 26.7 | 25.7 | -0.9 | 4.2 | 123 | 74 | 2 |
-| lv3 | 199 | 39.9 | 40.4 | +0.5 | 4.2 | 125 | 70 | 4 |
-| lv4 | 199 | 51.2 | 51.7 | +0.6 | 4.3 | 123 | 71 | 5 |
-| lv5 | 199 | 59.6 | 60.5 | +0.9 | 4.4 | 123 | 70 | 6 |
+| A | 200 | 21.2 | 23.7 | +2.5 | 6.8 | 119 | 47 | 34 |
+| default | 199 | 21.1 | 23.5 | +2.4 | 7.3 | 109 | 48 | 42 |
+| lv2 | 199 | 26.7 | 28.3 | +1.6 | 7.0 | 99 | 55 | 45 |
+| lv3 | 199 | 39.9 | 40.7 | +0.8 | 6.8 | 99 | 61 | 39 |
+| lv4 | 199 | 51.2 | 50.4 | -0.7 | 6.8 | 103 | 53 | 43 |
+| lv5 | 199 | 59.6 | 56.6 | -3.0 | 7.6 | 107 | 38 | 54 |
 
 Theo chặng 25 màn (mục tiêu → đo):
 
 | Màn | A | default | lv2 | lv3 | lv4 | lv5 |
 |---|---|---|---|---|---|---|
-| 1–25 | 11.1 → 8.7 | 14.6 → 12.0 | 18.6 → 17.6 | 25.7 → 25.4 | 30.8 → 30.5 | 35.5 → 35.5 |
-| 26–50 | 19.9 → 18.5 | 20.6 → 19.8 | 27.9 → 27.3 | 44.2 → 44.9 | 55.3 → 54.8 | 62.6 → 61.2 |
-| 51–75 | 20.2 → 18.7 | 21.0 → 21.0 | 27.2 → 26.8 | 40.3 → 41.2 | 51.7 → 52.4 | 61.6 → 63.0 |
-| 76–100 | 21.0 → 19.9 | 22.6 → 21.9 | 25.5 → 23.8 | 42.1 → 42.1 | 54.4 → 56.4 | 62.4 → 64.0 |
-| 101–125 | 22.3 → 21.8 | 22.2 → 22.9 | 29.4 → 29.4 | 41.9 → 42.6 | 52.4 → 52.8 | 61.0 → 61.6 |
-| 126–150 | 23.0 → 23.7 | 21.3 → 19.7 | 27.5 → 26.8 | 41.5 → 41.1 | 54.4 → 55.2 | 62.5 → 64.4 |
-| 151–175 | 25.4 → 23.4 | 22.0 → 21.1 | 28.5 → 26.6 | 42.7 → 43.2 | 54.4 → 54.8 | 65.9 → 66.4 |
-| 176–200 | 26.4 → 26.2 | 24.6 → 23.1 | 28.5 → 27.3 | 40.3 → 41.9 | 55.0 → 56.1 | 64.6 → 67.2 |
+| 1–25 | 11.1 → 19.8 | 14.6 → 17.4 | 18.6 → 20.2 | 25.7 → 29.1 | 30.8 → 31.8 | 35.5 → 34.5 |
+| 26–50 | 19.9 → 23.3 | 20.6 → 22.5 | 27.9 → 30.3 | 44.2 → 43.1 | 55.3 → 55.1 | 62.6 → 61.8 |
+| 51–75 | 20.2 → 20.4 | 21.0 → 21.4 | 27.2 → 27.2 | 40.3 → 38.7 | 51.7 → 50.5 | 61.6 → 61.0 |
+| 76–100 | 21.0 → 26.3 | 22.6 → 25.6 | 25.5 → 27.0 | 42.1 → 40.2 | 54.4 → 51.3 | 62.4 → 54.1 |
+| 101–125 | 22.3 → 24.9 | 22.2 → 22.8 | 29.4 → 31.0 | 41.9 → 43.2 | 52.4 → 49.7 | 61.0 → 59.4 |
+| 126–150 | 23.0 → 23.1 | 21.3 → 25.7 | 27.5 → 33.6 | 41.5 → 45.4 | 54.4 → 52.3 | 62.5 → 59.4 |
+| 151–175 | 25.4 → 26.2 | 22.0 → 22.9 | 28.5 → 30.4 | 42.7 → 44.3 | 54.4 → 56.3 | 65.9 → 61.2 |
+| 176–200 | 26.4 → 25.8 | 24.6 → 29.7 | 28.5 → 26.3 | 40.3 → 41.2 | 55.0 → 55.7 | 64.6 → 60.6 |
 
 ## 2. Bot: tỉ lệ thắng và số bước khi thắng (playtime)
 
@@ -42,36 +43,36 @@ Bốn cấu hình bot greedy có nhiễu, mỗi cấu hình 2 seed × 30 ván. P
 
 | Bộ | Thắng eps0.3 | Thắng eps0.45 | Thắng eps0.6 | Thắng softmaxT4 | Thắng TB | Số bước TB | Playtime ước lượng |
 |---|---|---|---|---|---|---|---|
-| A | 58% | 60% | 60% | 58% | 59% | 41 | 2.1 phút |
-| default | 58% | 59% | 58% | 59% | 59% | 41 | 2.0 phút |
-| lv2 | 49% | 50% | 50% | 50% | 50% | 43 | 2.2 phút |
-| lv3 | 26% | 29% | 31% | 31% | 29% | 51 | 2.5 phút |
-| lv4 | 17% | 20% | 22% | 20% | 20% | 52 | 2.6 phút |
-| lv5 | 13% | 14% | 15% | 13% | 14% | 54 | 2.7 phút |
+| A | 56% | 53% | 49% | 54% | 53% | 64 | 3.2 phút |
+| default | 58% | 55% | 49% | 54% | 54% | 65 | 3.2 phút |
+| lv2 | 50% | 47% | 42% | 47% | 46% | 66 | 3.3 phút |
+| lv3 | 31% | 30% | 28% | 29% | 29% | 71 | 3.5 phút |
+| lv4 | 21% | 20% | 20% | 21% | 21% | 70 | 3.5 phút |
+| lv5 | 16% | 16% | 16% | 16% | 16% | 70 | 3.5 phút |
 
 Theo chặng (thắng TB % / số bước TB):
 
 | Màn | A | default | lv2 | lv3 | lv4 | lv5 |
 |---|---|---|---|---|---|---|
-| 1–25 | 81% / 39 | 74% / 34 | 64% / 41 | 51% / 45 | 45% / 42 | 40% / 44 |
-| 26–50 | 63% / 41 | 59% / 43 | 46% / 45 | 23% / 55 | 15% / 58 | 10% / 57 |
-| 51–75 | 61% / 43 | 58% / 42 | 48% / 47 | 26% / 52 | 18% / 56 | 10% / 67 |
-| 76–100 | 59% / 43 | 56% / 45 | 53% / 43 | 26% / 54 | 15% / 58 | 10% / 55 |
-| 101–125 | 55% / 44 | 54% / 42 | 42% / 45 | 27% / 51 | 18% / 48 | 12% / 53 |
-| 126–150 | 52% / 43 | 59% / 41 | 49% / 41 | 27% / 52 | 16% / 49 | 10% / 50 |
-| 151–175 | 53% / 38 | 56% / 40 | 49% / 44 | 26% / 50 | 15% / 50 | 10% / 51 |
-| 176–200 | 47% / 38 | 53% / 37 | 46% / 40 | 27% / 47 | 16% / 55 | 9% / 53 |
+| 1–25 | 63% / 61 | 67% / 63 | 60% / 64 | 47% / 64 | 42% / 67 | 40% / 64 |
+| 26–50 | 54% / 62 | 55% / 60 | 43% / 65 | 24% / 71 | 15% / 70 | 11% / 69 |
+| 51–75 | 58% / 65 | 57% / 66 | 49% / 65 | 31% / 78 | 19% / 74 | 12% / 75 |
+| 76–100 | 50% / 64 | 49% / 65 | 47% / 64 | 29% / 73 | 19% / 71 | 16% / 71 |
+| 101–125 | 51% / 64 | 55% / 70 | 41% / 69 | 27% / 70 | 20% / 66 | 14% / 66 |
+| 126–150 | 54% / 62 | 51% / 63 | 40% / 70 | 24% / 74 | 19% / 70 | 12% / 73 |
+| 151–175 | 48% / 66 | 53% / 67 | 43% / 64 | 25% / 71 | 14% / 72 | 11% / 71 |
+| 176–200 | 48% / 64 | 46% / 65 | 48% / 65 | 29% / 66 | 16% / 67 | 12% / 68 |
 
 ## 3. Bố cục: level mới so với Sort Streak cùng màn, cùng bộ (TB mới / TB Sort Streak, % màn khớp đúng)
 
 | Bộ | Sức chứa | Số dây đầu | Số cốc | Số màu | Hoa ẩn | Dây khóa | Độ dài hàng chờ |
 |---|---|---|---|---|---|---|---|
-| A | 5.0 / 5.0 (100%) | 6.4 / 6.4 (99%) | 11.1 / 11.1 (87%) | 8.8 / 8.8 (99%) | 1.8 / 1.9 (80%) | 0.2 / 0.5 (76%) | 10.1 / 10.1 (87%) |
-| default | 5.0 / 5.0 (100%) | 6.4 / 6.4 (98%) | 11.1 / 11.1 (89%) | 8.8 / 8.8 (100%) | 1.9 / 1.9 (61%) | 0.2 / 0.5 (78%) | 10.1 / 10.1 (89%) |
-| lv2 | 5.0 / 5.0 (100%) | 6.5 / 6.4 (98%) | 11.1 / 11.1 (89%) | 8.8 / 8.8 (100%) | 2.1 / 2.0 (66%) | 0.2 / 0.5 (76%) | 10.1 / 10.1 (89%) |
-| lv3 | 5.0 / 5.0 (100%) | 6.4 / 6.4 (99%) | 11.2 / 11.3 (91%) | 8.9 / 8.9 (100%) | 2.6 / 2.6 (58%) | 0.2 / 0.5 (76%) | 10.2 / 10.3 (91%) |
-| lv4 | 5.0 / 5.0 (100%) | 6.4 / 6.4 (99%) | 11.3 / 11.3 (91%) | 8.9 / 8.9 (100%) | 2.7 / 2.6 (55%) | 0.2 / 0.6 (74%) | 10.3 / 10.3 (91%) |
-| lv5 | 5.0 / 5.0 (100%) | 6.4 / 6.4 (99%) | 11.3 / 11.5 (88%) | 8.9 / 8.9 (100%) | 2.7 / 2.7 (58%) | 0.2 / 0.6 (73%) | 10.3 / 10.5 (88%) |
+| A | 5.0 / 5.0 (100%) | 6.4 / 6.4 (98%) | 11.1 / 11.1 (99%) | 8.8 / 8.8 (99%) | 1.9 / 1.9 (44%) | 0.1 / 0.5 (76%) | 10.1 / 10.1 (99%) |
+| default | 5.0 / 5.0 (100%) | 6.4 / 6.4 (98%) | 11.1 / 11.1 (99%) | 8.8 / 8.8 (99%) | 1.9 / 1.9 (50%) | 0.1 / 0.5 (73%) | 10.1 / 10.1 (99%) |
+| lv2 | 5.0 / 5.0 (100%) | 6.4 / 6.4 (99%) | 11.1 / 11.1 (99%) | 8.9 / 8.8 (99%) | 2.1 / 2.0 (47%) | 0.1 / 0.5 (72%) | 10.1 / 10.1 (99%) |
+| lv3 | 5.0 / 5.0 (100%) | 6.4 / 6.4 (99%) | 11.3 / 11.3 (99%) | 8.9 / 8.9 (99%) | 2.7 / 2.6 (46%) | 0.1 / 0.5 (72%) | 10.3 / 10.3 (99%) |
+| lv4 | 5.0 / 5.0 (100%) | 6.4 / 6.4 (99%) | 11.4 / 11.3 (99%) | 8.9 / 8.9 (99%) | 2.8 / 2.6 (37%) | 0.1 / 0.6 (71%) | 10.4 / 10.3 (99%) |
+| lv5 | 5.0 / 5.0 (100%) | 6.4 / 6.4 (99%) | 11.5 / 11.5 (99%) | 8.9 / 8.9 (99%) | 2.8 / 2.7 (40%) | 0.1 / 0.6 (68%) | 10.5 / 10.5 (99%) |
 
 ## 4. Bonus
 
@@ -102,15 +103,15 @@ So mỗi level mới với mọi level có sẵn: GD_Lazy (branch main), LevelDe
 
 - Màn 1 bản A (level hướng dẫn giữ nguyên từ bản cũ) không tính, vì chỉ trùng với chính nó; so với Sort Streak giống 0,39.
 
-- Giống > 80%: **0** level. Giống > 70%: 3 level.
+- Giống > 80%: **0** level. Giống > 70%: 0 level.
 
 | Level | Giống nhất | Level gần nhất |
 |---|---|---|
-| B/B|10|default+lv2+lv3+lv4+lv5 | 0.732 | GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#1470 |
-| A/level_075 | 0.722 | LevelDesigner/Variants/ab_10.json#6216 |
-| B/B|15|lv3+lv4+lv5 | 0.704 | LevelDesigner/Variants/ab_10.json#6216 |
-| A/level_020 | 0.667 | LevelDesigner/Variants/ab_10.json#6216 |
-| B/B|30|lv2 | 0.667 | GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#1470 |
+| B/B|100|lv4+lv5 | 0.667 | GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#1470 |
+| B/B|140|default | 0.667 | GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#784 |
+| B/B|60|lv2 | 0.611 | GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_10.json#784 |
+| B/B|190|lv4+lv5 | 0.611 | LevelDesigner/Variants/ab_10.json#6216 |
+| B/B|25|default+lv2 | 0.597 | GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#1470 |
 
 ## 7. Luật LevelDesigner và sửa cấu trúc
 
@@ -118,43 +119,37 @@ So mỗi level mới với mọi level có sẵn: GD_Lazy (branch main), LevelDe
 - Đã sửa: 2 level có 15 cốc (Unity tối đa 14): bản A màn 86 và bản B màn 36 `lv2`, sinh lại; thêm luật ≤ 14 cốc vào bộ kiểm.
 - Không giải lại bằng `BoardSolver` của Unity (theo yêu cầu); tính giải được đã chứng minh khi sinh.
 
-## 8. Sửa các màn lệch > 10 điểm
+## 8. Sinh lại theo luật Sort Streak
 
-Mỗi màn sinh 32 ứng viên quanh mức `mix` hiệu chỉnh theo sức chứa, chấm nhanh 20 bản (2 bot × 30 ván), chấm đầy đủ 4 bản gần nhất, chỉ thay khi bản mới gần mục tiêu hơn.
+Level cũ có dây đầy sẵn đúng màu chậu (giao cốc ngay khi vào màn) và chuỗi 4–6 hoa cùng màu liền nhau; Sort Streak không có màn nào như vậy. Mỗi level lỗi được sinh lại 16–48 ứng viên đúng luật (đổi hoa chỉ trong bàn chơi hoặc trong hàng chờ), chấm nhanh, chấm đầy đủ 3–4 bản gần mục tiêu nhất, chọn bản gần nhất mà bot thắng được.
 
-| Bản | Số mục | Được thay | Sai số TB trước | Sai số TB sau | Còn > 10 |
-|---|---|---|---|---|---|
-| A | 30 | 29 | 14.2 | 3.7 | 1 |
-| B | 200 | 194 | 16.3 | 3.7 | 15 |
+| Bản | Số level sinh lại | Sai số TB | Lệch ≤ 5 | Lệch > 10 |
+|---|---|---|---|---|
+| A | 199 | 6.8 | 118 | 34 |
+| B | 676 | 7.3 | 344 | 158 |
 
-## 8b. Chơi bừa ở màn đầu (bot chọn nước ngẫu nhiên, 120 ván mỗi màn)
+## 8b. Chơi bừa ở màn đầu (bot chỉ nhìn một nước: đi nước có lợi nhất trước mắt, đôi khi đi bừa; 120 ván mỗi màn)
 
-Yêu cầu cho bản A: màn 2–5 chơi bừa thắng 100%; màn 6–9 chỉ thua 1–2 lần và thua lúc gần cuối; từ màn 10 giữ nguyên. Bản B: áp cùng yêu cầu cho màn 2–5 (cả 5 bộ) và màn 6–9 bộ `default` (điểm vẫn sát mục tiêu thấp). Màn 6–9 của lv2–lv5 giữ độ khó mục tiêu Sort Streak (15–37 điểm) nên chơi bừa thua nhiều hơn; chi tiết `sua_man_2-9_choi_bua.csv`. Màn 10 giữ nguyên.
+Yêu cầu cho bản A: màn 2–5 chơi bừa thắng 100%; màn 6–9 chỉ thua 1–2 lần và thua lúc gần cuối; từ màn 10 giữ nguyên. Áp cho bản A màn 2–9, bản B màn 2–5 (cả 5 bộ) và màn 6–9 bộ `default`. Màn 6–9 của lv2–lv5 giữ độ khó mục tiêu Sort Streak. Từ màn 10 giữ nguyên.
 
 | Bản | Màn | Nhóm | Thắng khi chơi bừa | % cốc đã xong khi thua |
 |---|---|---|---|---|
-| A | 2 | A | 100% | – |
-| A | 3 | A | 100% | – |
-| A | 4 | A | 100% | – |
-| A | 5 | A | 100% | – |
-| A | 6 | A | 99% | 90% |
-| A | 7 | A | 99% | 91% |
-| A | 8 | A | 100% | – |
-| A | 9 | A | 98% | 92% |
-| B | 2 | default+lv2+lv3+lv4+lv5 | 100% | – |
-| B | 3 | default+lv2+lv3+lv4+lv5 | 100% | – |
-| B | 4 | default+lv2+lv3+lv4+lv5 | 100% | – |
-| B | 5 | default+lv2+lv3+lv4+lv5 | 100% | – |
-| B | 6 | default | 99% | 90% |
-| B | 6 | lv2+lv3+lv4+lv5 | 100% | – |
-| B | 7 | default | 100% | – |
-| B | 7 | lv2+lv3+lv4+lv5 | 88% | 24% |
-| B | 8 | default | 100% | – |
-| B | 8 | lv2 | 8% | 0% |
-| B | 8 | lv3+lv4+lv5 | 23% | 19% |
-| B | 9 | default | 100% | – |
-| B | 9 | lv2+lv3+lv4+lv5 | 54% | 0% |
-| B | 10 | default+lv2+lv3+lv4+lv5 | 52% | 5% |
+| A | 2 | A | 100.0% | – |
+| A | 3 | A | 100.0% | – |
+| A | 4 | A | 100.0% | – |
+| A | 5 | A | 100.0% | – |
+| A | 6 | A | 100.0% | – |
+| A | 7 | A | 100.0% | – |
+| A | 8 | A | 100.0% | – |
+| A | 9 | A | 100.0% | – |
+| B | 2 | default+lv2+lv3+lv4+lv5 | 100.0% | – |
+| B | 3 | default+lv2+lv3+lv4+lv5 | 100.0% | – |
+| B | 4 | default+lv2+lv3+lv4+lv5 | 100.0% | – |
+| B | 5 | default+lv2+lv3+lv4+lv5 | 100.0% | – |
+| B | 6 | default | 100.0% | – |
+| B | 7 | default | 100.0% | – |
+| B | 8 | default | 100.0% | – |
+| B | 9 | default | 99.2% | 92% |
 
 ## 9. Biểu đồ theo màn (không làm trơn)
 
@@ -193,4 +188,4 @@ Mỗi bộ một hình: độ khó mục tiêu (cam, nét đứt) và đo thực
 
 ## Phụ lục: file số liệu
 
-- Chi tiết từng màn: `bao_cao_AB_chi_tiet.csv`; bonus tiềm năng: `bao_cao_AB_bonus_tiem_nang.csv`; chơi bừa: `choi_bua_man_2-10.csv`; trùng lặp: `kiem_trung_lap.csv`; sửa màn lệch: `sua_man_lech.csv` (cùng thư mục `levels/sweet_rope_B/reports/`).
+- Chi tiết từng màn: `bao_cao_AB_chi_tiet.csv`; bonus tiềm năng: `bao_cao_AB_bonus_tiem_nang.csv`; chơi bừa: `choi_bua_man_2-10.csv`; trùng lặp: `kiem_trung_lap.csv`; sinh lại theo luật: `sua_luat_chuoi_mau.csv` (cùng thư mục `levels/sweet_rope_B/reports/`).
