@@ -54,7 +54,7 @@ for b in ['A', 'B']:
 cb = list(csv.DictReader(open('levels/sweet_rope_B/reports/choi_bua_man_2-10.csv')))
 L += ['', '## 8b. Chơi bừa ở màn đầu (bot chọn nước ngẫu nhiên, 120 ván mỗi màn)', '',
       'Yêu cầu cho bản A: màn 2–5 chơi bừa thắng 100%; màn 6–9 chỉ thua 1–2 lần và thua lúc gần cuối; từ màn 10 giữ nguyên. '
-      'Bản B: áp cùng yêu cầu cho màn 2–9 cả 5 bộ (theo yêu cầu, chấp nhận hạ điểm dưới mục tiêu: màn 6–9 của lv2–lv5 thấp hơn mục tiêu 15–30 điểm; chi tiết `sua_man_2-9_choi_bua.csv`); màn 10 giữ nguyên.', '',
+      'Bản B: áp cùng yêu cầu cho màn 2–5 (cả 5 bộ) và màn 6–9 bộ `default` (điểm vẫn sát mục tiêu thấp). Màn 6–9 của lv2–lv5 giữ độ khó mục tiêu Sort Streak (15–37 điểm) nên chơi bừa thua nhiều hơn; chi tiết `sua_man_2-9_choi_bua.csv`. Màn 10 giữ nguyên.', '',
       '| Bản | Màn | Nhóm | Thắng khi chơi bừa | % cốc đã xong khi thua |', '|---|---|---|---|---|']
 L += [f"| {x['ban']} | {x['man']} | {x['nhom']} | {x['thang_choi_bua_pct']}% | {x['pct_coc_xong_khi_thua'] + '%' if x['pct_coc_xong_khi_thua'] else '–'} |" for x in cb]
 L += ['', '## 9. Biểu đồ theo màn (không làm trơn)', '',
