@@ -9,3 +9,10 @@
 - Đã sinh 14 ứng viên mỗi nhóm. Sáu nhóm có ít lựa chọn nhận thêm 12 ứng viên mỗi nhóm. Các cấu hình khác nhau thử thay đổi lượng hoa đầu màn, độ xáo đầu dây và độ phụ thuộc giữa các hàng chờ.
 - Tất cả phương án lưu được đã qua `JuiceLevel.validate()` và có lời giải trên Godot 4.6.1. `lw_screen` là tỷ lệ thắng của 30 ván epsilon-greedy 0,45, seed 11. Chỉ những phương án có trường `lw` đã được đo đủ bốn cấu hình × hai seed × 30 ván. `self_report.csv` dùng phép đo đầy đủ.
 - Lượt tinh chỉnh đã sinh thêm 14 ứng viên cho mỗi nhóm trong năm nhóm lệch nhất ở lần đo đầu. Báo cáo giữ phương án gần mục tiêu nhất trong những ứng viên đã đo đủ.
+
+## Lấp lô màn 51–70 và bổ sung theo báo cáo 2–50
+
+- Lô này dùng `diem_lw` từ `tools/score.py`. Điểm của bản đề xuất ở màn 2–50 cũng được quy đổi lại từ `lw` đã đo. Các giá trị mang tên `diem_tu_uoc_luong` trong ứng viên cũ là số liệu theo cách chấm ở thời điểm tạo.
+- Màn 51–70 có đủ 72 nhóm, gồm 7 nhóm Bonus. Ứng viên được lưu kèm bản đề xuất để bên kiểm có thể đo lại. `lw_screen` là số đo sàng lọc và `lw` là số đo đầy đủ.
+- Lượt sửa theo báo cáo kiểm 2–50 thêm phương án cho 28 nhóm lệch hơn 10 điểm. Thay 24 bản đề xuất khi điểm tự đo mới gần mục tiêu hơn cả bản đề xuất hiện tại và điểm của phương án bên kiểm đã chọn.
+- Riêng L065_lv4+lv5, lượt thử khóa đưa độ lệch tự đo từ −41,97 xuống +8,39. L058_lv4 và L064_lv2 vẫn lệch trên 20 điểm, chờ bên kiểm đo lại.

@@ -1,0 +1,104 @@
+{
+  "capacity": 4.0,
+  "id": 61.0,
+  "incoming": [
+    {
+      "column": "8|8,8,8,8",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "4|4,4,?4,4",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|?3,3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "4|4,4,4,4",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|3,3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "7|7,7,7,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|0,0,0,0",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    }
+  ],
+  "initial": [
+    {
+      "column": "-|2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "9|0,1,0,2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|9,7,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "2|9,2,0,2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "7|9,1,9,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "1|1,0,6,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,7,1,7",
+      "columnInfo": {},
+      "columnType": "default"
+    }
+  ],
+  "targetCups": 13.0
+}
