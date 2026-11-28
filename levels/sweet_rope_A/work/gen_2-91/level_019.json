@@ -1,6 +1,6 @@
 {
-  "capacity": 4.0,
-  "id": 19.0,
+  "capacity": 4,
+  "id": 19,
   "incoming": [
     {
       "column": "6|6,6,6,6",
@@ -95,5 +95,5 @@
       "columnType": "default"
     }
   ],
-  "targetCups": 12.0
+  "targetCups": 12
 }

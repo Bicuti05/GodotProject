@@ -1,19 +1,9 @@
 {
-  "capacity": 5.0,
-  "id": 17.0,
+  "capacity": 5,
+  "id": 17,
   "incoming": [
     {
-      "column": "4|4,4,4,4,4",
-      "columnInfo": {},
-      "columnType": "default"
-    },
-    {
-      "column": "6|6,6,6,6,6",
-      "columnInfo": {},
-      "columnType": "default"
-    },
-    {
-      "column": "2|7,2,1,2,2",
+      "column": "3|5,3,3,3,3",
       "columnInfo": {},
       "columnType": "default"
     },
@@ -28,17 +18,27 @@
       "columnType": "default"
     },
     {
+      "column": "7|7,7,7,9,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
       "column": "0|0,0,0,0,0",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "8|8,8,8,8,0",
+      "column": "0|2,0,0,0,0",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "1|2,1,1,1,1",
+      "column": "5|5,3,5,5,5",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,6,6,6,6",
       "columnInfo": {},
       "columnType": "default"
     },
@@ -65,40 +65,40 @@
   ],
   "initial": [
     {
-      "column": "-|3,2,2,8",
+      "column": "-|7,8,2,0",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "0|9,0,0,0,0",
+      "column": "9|9,9,9,9",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "3|3,3,3,3",
+      "column": "8|8,8,2,8",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "7|7,7,2,8",
+      "column": "2|2,0,2,2,2",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "2|2,2,7,2",
+      "column": "5|5,5,5,5,5",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "8|8,8,8,8",
+      "column": "2|2,2,2,8",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "9|9,9,9,7,9",
+      "column": "0|0,0,0,0",
       "columnInfo": {},
       "columnType": "default"
     }
   ],
-  "targetCups": 13.0
+  "targetCups": 13
 }

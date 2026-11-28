@@ -1,6 +1,6 @@
 {
-  "capacity": 5.0,
-  "id": 14.0,
+  "capacity": 5,
+  "id": 14,
   "incoming": [
     {
       "column": "9|9,9,9,?9,9",
@@ -68,8 +68,8 @@
       "column": "2|2,1,2,2,2",
       "columnInfo": {
         "condition": "collect_type",
-        "count": 1.0,
-        "typeId": 6.0
+        "count": 1,
+        "typeId": 6
       },
       "columnType": "unlock"
     },
@@ -89,5 +89,5 @@
       "columnType": "default"
     }
   ],
-  "targetCups": 10.0
+  "targetCups": 10
 }
