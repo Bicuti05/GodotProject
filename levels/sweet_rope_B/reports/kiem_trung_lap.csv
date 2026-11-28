@@ -199,19 +199,19 @@ A/level_197,0.419,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Varia
 A/level_198,0.516,A_cu/level_156
 A/level_199,0.5,A_cu/level_156
 A/level_200,0.569,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
-B/B|2|default+lv2+lv3+lv4+lv5,0.576,LevelDesigner/Variants/ab_21.json#6325
-B/B|3|default+lv2+lv3+lv4+lv5,0.526,A_cu/level_053
-B/B|4|default+lv2+lv3+lv4+lv5,0.484,A_cu/level_156
-B/B|5|default+lv2+lv3+lv4+lv5,0.493,A_cu/level_156
-B/B|6|default,0.464,LevelDesigner/Variants/ab_21.json#6330
-B/B|6|lv2+lv3+lv4+lv5,0.476,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_21.json#14926
-B/B|7|default,0.5,LevelDesigner/Variants/ab_09.json#6358
-B/B|7|lv2+lv3+lv4+lv5,0.5,A_cu/level_190
-B/B|8|default,0.579,LevelDesigner/Variants/ab_21.json#6337
-B/B|8|lv2,0.468,A_cu/level_053
-B/B|8|lv3+lv4+lv5,0.452,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_22.json#14952
-B/B|9|default,0.532,A_cu/level_156
-B/B|9|lv2+lv3+lv4+lv5,0.5,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/B|2|default+lv2+lv3+lv4+lv5,0.465,A_cu/level_171
+B/B|3|default+lv2+lv3+lv4+lv5,0.526,A_cu/level_047
+B/B|4|default+lv2+lv3+lv4+lv5,0.516,A_cu/level_156
+B/B|5|default+lv2+lv3+lv4+lv5,0.541,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/B|6|default,0.476,A_cu/level_156
+B/B|6|lv2+lv3+lv4+lv5,0.521,A_cu/level_190
+B/B|7|default,0.529,A_cu/level_156
+B/B|7|lv2+lv3+lv4+lv5,0.554,GD_Lazy/Level Difficulty/Generated/SR_Final_1-200/Levels/Variants/ab_09.json#7846
+B/B|8|default,0.509,A_cu/level_053
+B/B|8|lv2,0.484,A_cu/level_131
+B/B|8|lv3+lv4+lv5,0.468,A_cu/level_157
+B/B|9|default,0.527,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_09.json#14706
+B/B|9|lv2+lv3+lv4+lv5,0.587,LevelDesigner/Variants/ab_09.json#6358
 B/B|10|default+lv2+lv3+lv4+lv5,0.732,GD_Lazy/Level Difficulty/Generated/SR_trial_S1-3/Levels/Variants/ab_10.json#14708
 B/B|11|default+lv2,0.525,A_cu/level_156
 B/B|11|lv3+lv4+lv5,0.492,A_cu/level_156
