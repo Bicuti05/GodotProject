@@ -1,54 +1,102 @@
 {
+  "capacity": 5,
   "id": 23,
-  "capacity": 4,
-  "targetCups": 4,
-  "initial": [
-    {
-      "column": "5|5,2,8,2",
-      "columnType": "unlock",
-      "columnInfo": {
-        "condition": "collect_count",
-        "count": 1
-      }
-    },
-    {
-      "column": "8|5,2,5",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "1|1,1,1,8",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "-|5",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "2|1,8,2,8",
-      "columnType": "default",
-      "columnInfo": {}
-    }
-  ],
   "incoming": [
     {
-      "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "column": "3|3,3,3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "1|1,1,1,1,1",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "4|2,4,4,4,4",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "-|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|2,0,4,0,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,0,6,6,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "5|5,5,9,5,5",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
     }
   ],
-  "seed": 51000001,
-  "note": "Chapter 1 · Normal"
+  "initial": [
+    {
+      "column": "-|9,9,7,2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "9|9,9,9,9",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "9|9,5,9,9",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "7|7,7,7,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,6,0,6,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "4|4,4,4,4,4",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "2|6,2,2,0",
+      "columnInfo": {
+        "condition": "collect_count",
+        "count": 2
+      },
+      "columnType": "unlock"
+    }
+  ],
+  "targetCups": 12
 }

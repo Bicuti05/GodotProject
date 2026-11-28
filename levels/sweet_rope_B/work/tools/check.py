@@ -47,6 +47,7 @@ for x in items:
 rows = []
 for r in tg:
     base = r['file'][:-5]; t = float(r['muc_tieu']); best = None; off = None
+    if base not in by: continue
     for x in by.get(base, []):
         if x['uid'] not in sc: continue
         p, st, sol, lw = problems(x['raw'], r, x['uid'])

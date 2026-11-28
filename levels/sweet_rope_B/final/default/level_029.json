@@ -3,27 +3,7 @@
   "id": 29,
   "incoming": [
     {
-      "column": "-|",
-      "columnInfo": {},
-      "columnType": "default"
-    },
-    {
-      "column": "1|1,1,1,1,1",
-      "columnInfo": {},
-      "columnType": "default"
-    },
-    {
-      "column": "8|8,8,8,8,2",
-      "columnInfo": {},
-      "columnType": "default"
-    },
-    {
-      "column": "0|0,0,0,0,0",
-      "columnInfo": {},
-      "columnType": "default"
-    },
-    {
-      "column": "6|6,6,4,6,6",
+      "column": "6|6,6,6,6,6",
       "columnInfo": {},
       "columnType": "default"
     },
@@ -33,7 +13,32 @@
       "columnType": "default"
     },
     {
-      "column": "6|6,6,6,6,6",
+      "column": "7|7,7,7,?7,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "2|2,2,2,2,2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "-|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|4,3,3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "1|1,1,1,1,1",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "1|1,7,1,1,1",
       "columnInfo": {},
       "columnType": "default"
     },
@@ -60,40 +65,44 @@
   ],
   "initial": [
     {
-      "column": "-|",
+      "column": "-|5,4,7",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "2|8,2,2,4,7",
+      "column": "5|5,5,5,5",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "9|9,9,9,3,9",
+      "column": "4|4,4,4,4",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "4|4,4,2,6,4",
+      "column": "4|4,4,3,4,4",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "7|7,2,7,7,7",
+      "column": "8|8,8,8,8,7",
+      "columnInfo": {
+        "condition": "collect_type",
+        "count": 1.0,
+        "typeId": 5.0
+      },
+      "columnType": "unlock"
+    },
+    {
+      "column": "7|1,7,7,7,7",
       "columnInfo": {},
       "columnType": "default"
     },
     {
-      "column": "6|6,6,6,6,6",
-      "columnInfo": {},
-      "columnType": "default"
-    },
-    {
-      "column": "3|3,3,?3,9,3",
+      "column": "7|7,7,7,8",
       "columnInfo": {},
       "columnType": "default"
     }
   ],
-  "targetCups": 12.0
+  "targetCups": 13.0
 }

@@ -1,41 +1,89 @@
 {
+  "capacity": 5,
   "id": 70,
-  "capacity": 6,
-  "targetCups": 4,
-  "initial": [
-    {
-      "column": "7|?3,7,?3,?3,3,7",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "3|?7,3,?7,7,7",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "-|7",
-      "columnType": "default",
-      "columnInfo": {}
-    }
-  ],
   "incoming": [
     {
-      "column": "7|7,7,3,7,7,7",
-      "columnType": "default",
-      "columnInfo": {}
+      "column": "5|5,2,7,5,7",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
-      "column": "7|7,7,7,7,7,7",
-      "columnType": "default",
-      "columnInfo": {}
+      "column": "-|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|3,3,3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "7|7,8,7,0,5",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "8|8,7,8,0,8",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
     }
   ],
-  "seed": 67000006,
-  "note": "Chapter 3 · Hard"
+  "initial": [
+    {
+      "column": "-|6,2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,6,6,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "2|?9,2,5,2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "9|9,0,2,9,9",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|3,3,3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|5,0,8,0,9",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "4|4,4,4,4,4",
+      "columnInfo": {},
+      "columnType": "default"
+    }
+  ],
+  "targetCups": 10
 }

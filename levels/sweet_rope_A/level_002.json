@@ -1,61 +1,74 @@
 {
-  "id": 2,
   "capacity": 4,
-  "targetCups": 5,
-  "initial": [
-    {
-      "column": "4|1,7,8,6",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "6|6,4,1,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "1|4,7,7,1",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "-|",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "8|8,8,6,8",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "7|4,1,7,6",
-      "columnType": "default",
-      "columnInfo": {}
-    }
-  ],
+  "id": 2,
   "incoming": [
     {
+      "column": "9|9,9,9,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|0,6,0,0",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
       "column": "-|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "1|1,1,1,1",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
     }
   ],
-  "seed": 34000303,
-  "note": "Chapter 1 · Normal"
+  "initial": [
+    {
+      "column": "-|8,6,4,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "8|8,8,8",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "7|7,7,7,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,0,6",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "4|4,4,4",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|3,9,3",
+      "columnInfo": {},
+      "columnType": "default"
+    }
+  ],
+  "targetCups": 8
 }

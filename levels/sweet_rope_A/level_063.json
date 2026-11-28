@@ -1,89 +1,97 @@
 {
-  "id": 63,
   "capacity": 5,
-  "targetCups": 7,
-  "initial": [
-    {
-      "column": "0|0,0",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "2|2,2,2,2,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "4|4,1,4,3,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "1|4,0",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "-|",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "3|4,3,2,3,3",
-      "columnType": "default",
-      "columnInfo": {}
-    }
-  ],
+  "id": 63,
   "incoming": [
     {
-      "column": "0|0,1,0,0,0",
-      "columnType": "default",
-      "columnInfo": {}
+      "column": "5|5,8,5,5,5",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
-      "column": "4|3,4,4,4,4",
-      "columnType": "default",
-      "columnInfo": {}
+      "column": "3|3,3,?3,3,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|?6,6,6,6,6",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "-|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "9|9,9,9,9,8",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "8|8,8,5,?8,8",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
     }
   ],
-  "seed": 66000015,
-  "note": "Chapter 3 · Normal",
-  "columnCaps": {
-    "initial": [
-      2,
-      5,
-      5,
-      2,
-      5,
-      5
-    ],
-    "incoming": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
-    ]
-  }
+  "initial": [
+    {
+      "column": "-|0",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "7|7,9,0,7,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "9|9,9,9,7,9",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "8|9,8,8,?8,8",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|0,0,?7,0",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "1|1,1,1,1,1",
+      "columnInfo": {
+        "condition": "collect_count",
+        "count": 1
+      },
+      "columnType": "unlock"
+    },
+    {
+      "column": "2|2,2,2,2,2",
+      "columnInfo": {},
+      "columnType": "default"
+    }
+  ],
+  "targetCups": 11
 }

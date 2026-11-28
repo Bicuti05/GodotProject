@@ -1,56 +1,89 @@
 {
-  "id": 67,
   "capacity": 5,
-  "targetCups": 5,
-  "initial": [
-    {
-      "column": "5|4,7,5,3",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "-|7,7",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "4|4,4,5,5,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "7|5,7,7,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "3|3,3,3,3,3",
-      "columnType": "default",
-      "columnInfo": {}
-    }
-  ],
+  "id": 67,
   "incoming": [
     {
-      "column": "3|3,5,3,3,3",
-      "columnType": "default",
-      "columnInfo": {}
+      "column": "5|5,5,3,5,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|3,3,3,3,5",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "-|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "2|4,2,3,2,2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "8|8,8,8,8,8",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "9|9,9,9,9,9",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "5|6,5,5,5,5",
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
     },
     {
       "column": "x|",
-      "columnType": "default",
-      "columnInfo": {}
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "x|",
+      "columnInfo": {},
+      "columnType": "default"
     }
   ],
-  "seed": 69000008,
-  "note": "Chapter 3 · Normal"
+  "initial": [
+    {
+      "column": "-|7,3",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "0|0,0,4,0,0",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "7|7,7,7,7",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "4|4,4,0,2,4",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "3|3,3,5,2",
+      "columnInfo": {},
+      "columnType": "default"
+    },
+    {
+      "column": "6|6,6,5,6,6",
+      "columnInfo": {},
+      "columnType": "default"
+    }
+  ],
+  "targetCups": 11
 }
