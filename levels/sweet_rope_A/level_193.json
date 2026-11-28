@@ -1,72 +1,72 @@
 {
   "id": 193,
-  "capacity": 4,
+  "capacity": 5,
   "targetCups": 11,
   "initial": [
     {
-      "column": "4|1",
+      "column": "-|8,0",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|4,3",
+      "column": "7|6,7,7,7,7",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "9|9,6,9,6",
+      "column": "8|8,8,8,8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "2|1,9",
+      "column": "2|2,2,2,6,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "-|4",
+      "column": "3|3,7,3,3,3",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|5,5,5,7",
+      "column": "1|1,1,1,1,1",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "3|2,2",
+      "column": "0|0,0,0,0",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "7|7,7,9,7",
+      "column": "4|4,4,9,4,4",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "7|7,7,7,7",
+      "column": "2|2,2,2,2,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "2|2,2,2,5",
+      "column": "6|6,6,6,9,3",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "1|3,2,1,1",
+      "column": "9|9,2,4,9,9",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|5,5,5,5",
+      "column": "-|",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "x|",
+      "column": "8|8,8,8,8,8",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -90,30 +90,5 @@
       "columnType": "default",
       "columnInfo": {}
     }
-  ],
-  "seed": 68000000,
-  "note": "Chapter 8 · Normal",
-  "columnCaps": {
-    "initial": [
-      2,
-      2,
-      4,
-      2,
-      4,
-      4,
-      2
-    ],
-    "incoming": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
-    ]
-  }
+  ]
 }
