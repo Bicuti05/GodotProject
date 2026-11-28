@@ -1,0 +1,298 @@
+<title>Sweet Rope Playtest</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+  /* Bố cục: một cột hẹp như màn hình điện thoại; thanh điều khiển trên, bàn chơi giữa, nút hỗ trợ dưới. */
+  :root {
+    --bg: #eef4f8; --panel: #ffffff; --ink: #1d2b36; --ink-2: #5b6b78; --line: #d6e1ea;
+    --accent: #d94a72; --accent-ink: #ffffff; --rope: #b89a74; --slot: #e3ebf1; --ok: #1f9d55; --bad: #c2364b;
+    --font-display: "Baloo 2", "Trebuchet MS", system-ui, sans-serif;
+    --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --bg: #0f1a22; --panel: #172631; --ink: #e8f0f5; --ink-2: #9db0be; --line: #2a3d4b;
+    --accent: #f06b90; --accent-ink: #1b0f14; --rope: #8c7457; --slot: #223543; --ok: #4cc983; --bad: #ff7a8c; color-scheme: dark } }
+  :root[data-theme="dark"] {
+    --bg: #0f1a22; --panel: #172631; --ink: #e8f0f5; --ink-2: #9db0be; --line: #2a3d4b;
+    --accent: #f06b90; --accent-ink: #1b0f14; --rope: #8c7457; --slot: #223543; --ok: #4cc983; --bad: #ff7a8c; color-scheme: dark }
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; }
+  .app { max-width: 720px; margin: 0 auto; display: grid; gap: 12px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 14px 24px; }
+  h1 { font-family: var(--font-display); font-weight: 800; font-size: 26px; margin: 0; line-height: 1.1; }
+  h1 small { font-family: var(--font-body); font-weight: 600; font-size: 13px; color: var(--ink-2); display: block; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .seg { display: inline-flex; background: var(--panel); border: 1px solid var(--line); border-radius: 999px; padding: 3px; }
+  .seg button { border: 0; background: transparent; color: var(--ink-2); font: 700 14px var(--font-body); padding: 7px 16px; border-radius: 999px; cursor: pointer; }
+  .seg button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+  #set { flex: 0 1 auto; max-width: 180px; }
+  select, input[type=number] { font: 600 14px var(--font-body); color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 7px 10px; }
+  input[type=number] { width: 72px; }
+  .btn { font: 700 14px var(--font-body); color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 9px 14px; cursor: pointer; min-height: 40px; }
+  .btn:disabled { opacity: .45; cursor: default; }
+  .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+  button:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { font-size: 12px; font-weight: 700; padding: 3px 9px; border-radius: 999px; background: var(--panel); border: 1px solid var(--line); color: var(--ink-2); }
+  .chip.hot { background: var(--accent); color: var(--accent-ink); border-color: transparent; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .stat { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 8px 10px; display: grid; gap: 2px; min-width: 0; }
+  .stat span { font-size: 11px; color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; font-weight: 700; }
+  .stat b { font-family: var(--font-display); font-size: 20px; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .board { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: 14px 8px 12px; overflow: hidden; }
+  .ropes { display: flex; justify-content: center; align-items: flex-start; gap: var(--gap, 8px); }
+  .rope { display: grid; justify-items: center; gap: 0; cursor: pointer; width: var(--col); border-radius: 12px; padding-bottom: 6px; position: relative; -webkit-tap-highlight-color: transparent; }
+  .rope.target { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+  .rope.removed { opacity: .25; cursor: default; }
+  .pot { width: calc(var(--col) * .92); height: calc(var(--col) * .62); border-radius: 8px 8px 14px 14px; display: grid; place-items: center; font: 800 13px var(--font-display); position: relative; }
+  .pot.free { background: transparent; border: 2px dashed var(--ink-2); color: var(--ink-2); font-size: 10px; overflow: hidden; }
+  .stem { width: 3px; height: 8px; background: var(--rope); }
+  .slots { display: grid; gap: 4px; justify-items: center; position: relative; }
+  .slots::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; transform: translateX(-50%); background: var(--rope); border-radius: 2px; }
+  .it { width: var(--it); height: var(--it); border-radius: 50%; display: grid; place-items: center; font: 800 12px var(--font-display); position: relative; z-index: 1; box-shadow: inset 0 -3px 0 rgba(0,0,0,.18); }
+  .it.empty { background: var(--slot); box-shadow: none; transform: scale(.55); }
+  .it.hidden { background: repeating-linear-gradient(45deg, #7d8a94, #7d8a94 4px, #95a2ac 4px, #95a2ac 8px) !important; color: #fff !important; }
+  .it.sel { outline: 3px solid var(--ink); outline-offset: 1px; }
+  .lock { position: absolute; inset: 0; background: color-mix(in srgb, var(--bg) 55%, transparent); border-radius: 12px; display: grid; align-content: start; justify-items: center; padding-top: calc(var(--col) * .7); z-index: 2; pointer-events: none; }
+  .lock em { font-style: normal; font: 800 11px var(--font-body); background: var(--ink); color: var(--bg); border-radius: 8px; padding: 2px 6px; display: inline-flex; gap: 4px; align-items: center; white-space: nowrap; }
+  .lock i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .tools { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .toast { position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); background: var(--ink); color: var(--bg); font-weight: 700; font-size: 13px; padding: 6px 12px; border-radius: 10px; white-space: nowrap; z-index: 5; }
+  .over { position: absolute; inset: 0; background: color-mix(in srgb, var(--panel) 88%, transparent); display: grid; place-content: center; text-align: center; gap: 10px; z-index: 6; padding: 16px; }
+  .over h2 { font-family: var(--font-display); font-size: 30px; margin: 0; }
+  .over.win h2 { color: var(--ok); } .over.lose h2 { color: var(--bad); }
+  .note { font-size: 12px; color: var(--ink-2); line-height: 1.5; }
+  .loading { padding: 40px; text-align: center; color: var(--ink-2); }
+  @media (max-width: 440px) { .stats { gap: 6px; } .stat { padding: 6px 8px; } .stat b { font-size: 17px; } .stat span { font-size: 10px; } h1 { font-size: 22px; } .tools .btn { padding: 8px 6px; font-size: 13px; } }
+  @media (prefers-reduced-motion: no-preference) { .it { transition: transform .12s ease; } .rope:active .it.sel { transform: translateY(-2px); } }
+</style>
+
+<div class="app">
+  <header class="row" style="justify-content: space-between">
+    <h1>Sweet Rope Playtest <small>Chơi thử level mới, đúng luật của game</small></h1>
+    <div class="seg" role="group" aria-label="Chọn bản">
+      <button id="mode-a" aria-pressed="true">Bản A</button>
+      <button id="mode-b" aria-pressed="false">Bản B</button>
+    </div>
+  </header>
+
+  <div class="row">
+    <select id="set" aria-label="Bộ level bản B" hidden>
+      <option value="default">default (mới, mức 1)</option>
+      <option value="lv2">lv2</option><option value="lv3">lv3</option><option value="lv4">lv4</option><option value="lv5">lv5</option>
+    </select>
+    <button class="btn" id="prev" aria-label="Màn trước">◀</button>
+    <label for="lvl" class="note">Màn</label>
+    <input type="number" id="lvl" min="1" max="200" value="1" inputmode="numeric">
+    <button class="btn" id="next" aria-label="Màn sau">▶</button>
+    <div class="chips" id="chips"></div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><span>Cốc</span><b id="s-cups">–</b></div>
+    <div class="stat"><span>Hàng chờ</span><b id="s-queue">–</b></div>
+    <div class="stat"><span>Nước đi</span><b id="s-moves">0</b></div>
+    <div class="stat"><span>Thời gian</span><b id="s-time">0:00</b></div>
+  </div>
+
+  <div class="board" id="board"><div class="loading">Đang tải level…</div></div>
+
+  <div class="tools">
+    <button class="btn" id="undo">Hoàn tác</button>
+    <button class="btn" id="restart">Chơi lại</button>
+    <button class="btn" id="hint">Gợi ý</button>
+    <button class="btn" id="extra">+1 dây</button>
+  </div>
+
+  <p class="note">Chạm một bông hoa để chọn nó cùng các bông bên dưới, rồi chạm dây muốn thả vào. Chậu đầy đúng một màu sẽ thành cốc. Ô sọc xám là hoa ẩn: lộ ra khi thành bông cuối dây. Dây có ổ khóa mở khi giao đủ số cốc ghi trên nhãn. Mỗi level có link riêng (#a-12, #b-lv3-12) để gửi thẳng cho người khác.</p>
+</div>
+
+<script src="core.js"></script>
+<script>
+(function () {
+  const C = window.SweetRopeCore;
+  const COLORS = ['#7B1E3A', '#E53935', '#FB8C00', '#FDD835', '#9CCC65', '#2E9E4F', '#1E88E5', '#8E44AD', '#D81B60', '#F8BBD0'];
+  const DARK_TEXT = new Set([3, 4, 9]);
+  const TAGS = { Hard: 'Hard', bonus: 'Bonus', challenge: 'Challenge', endless: 'Endless', huong_dan: 'Hướng dẫn' };
+  const $ = (id) => document.getElementById(id);
+  const store = { get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }, set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+
+  const data = { A: null, B: null };
+  const st = { mode: 'A', set: 'default', n: 1, entry: null, s: null, hist: [], sel: null, moves: 0, t0: 0, timer: 0, done: false, extra: false };
+
+  async function load(mode) {
+    if (data[mode]) return data[mode];
+    const r = await fetch(mode === 'A' ? 'levels_A.json' : 'levels_B.json');
+    data[mode] = await r.json();
+    return data[mode];
+  }
+  const list = () => (st.mode === 'A' ? data.A : data.B[st.set]);
+
+  function fmtTime(ms) { const s = Math.floor(ms / 1000); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); }
+  function tick() { if (!st.done) $('s-time').textContent = fmtTime(Date.now() - st.t0); }
+
+  async function open(mode, set, n) {
+    st.mode = mode; st.set = set || st.set;
+    $('mode-a').setAttribute('aria-pressed', mode === 'A'); $('mode-b').setAttribute('aria-pressed', mode === 'B');
+    $('set').hidden = mode !== 'B'; $('set').value = st.set;
+    $('board').innerHTML = '<div class="loading">Đang tải level…</div>';
+    await load(mode);
+    const L = list();
+    st.n = Math.max(1, Math.min(L.length, n || 1));
+    st.entry = L.find((e) => e.n === st.n) || L[0];
+    $('lvl').value = st.n; $('lvl').max = L.length;
+    store.set('sr-last', JSON.stringify({ mode, set: st.set, n: st.n }));
+    const h = mode === 'A' ? 'a-' + st.n : 'b-' + st.set + '-' + st.n;
+    if (location.hash !== '#' + h) history.replaceState(null, '', '#' + h);
+    restart();
+  }
+
+  function restart() {
+    st.s = C.fromLevel(st.entry.level); st.hist = []; st.sel = null; st.moves = 0; st.done = false; st.extra = false;
+    st.t0 = Date.now(); clearInterval(st.timer); st.timer = setInterval(tick, 500); tick();
+    renderChips(); render();
+  }
+
+  function renderChips() {
+    const e = st.entry, c = $('chips'); c.replaceChildren();
+    const add = (txt, hot) => { const s = document.createElement('span'); s.className = 'chip' + (hot ? ' hot' : ''); s.textContent = txt; c.append(s); };
+    if (e.t != null) add('Mục tiêu ' + (Math.round(e.t * 10) / 10).toLocaleString('vi-VN') + ' điểm');
+    if (e.level.difficultyType === 'Hard') add('Hard', true);
+    if (e.tag && TAGS[e.tag] && e.tag !== 'Hard') add(TAGS[e.tag], e.tag === 'bonus');
+    if (st.mode === 'B' && e.n === 1) add('Chỗ giữ: dev thay bằng level hướng dẫn');
+    const won = store.get('sr-won-' + key());
+    if (won) add('Đã thắng');
+  }
+  const key = () => (st.mode === 'A' ? 'A-' : 'B-' + st.set + '-') + st.n;
+
+  function hasMove(s) {
+    for (let a = 0; a < s.ropes.length; a++) for (let j = 0; j < s.ropes[a].items.length; j++) for (let b = 0; b < s.ropes.length; b++)
+      if (a !== b && C.move(C.clone(s), a, j, b).success) return true;
+    return false;
+  }
+
+  function render() {
+    const s = st.s, board = $('board');
+    const ropes = s.ropes, n = ropes.length;
+    const cap = Math.max(...ropes.map((r) => r.capacity));
+    const W = board.clientWidth - 16, gap = n > 6 ? 5 : 8;
+    const col = Math.max(34, Math.min(70, Math.floor((W - gap * (n - 1)) / n)));
+    const it = Math.floor(col * 0.72);
+    board.style.setProperty('--col', col + 'px'); board.style.setProperty('--it', it + 'px'); board.style.setProperty('--gap', gap + 'px');
+    const wrap = document.createElement('div'); wrap.className = 'ropes';
+    ropes.forEach((r, ri) => {
+      const el = document.createElement('div'); el.className = 'rope' + (r.removed ? ' removed' : '') + (st.sel && st.sel.rope !== ri && !r.removed ? ' target' : '');
+      el.setAttribute('role', 'button'); el.setAttribute('aria-label', 'Dây ' + (ri + 1));
+      const pot = document.createElement('div'); pot.className = 'pot' + (r.containerType < 0 ? ' free' : '');
+      if (r.containerType >= 0) { pot.style.background = COLORS[r.containerType]; pot.style.color = DARK_TEXT.has(r.containerType) ? '#1d2b36' : '#fff'; pot.textContent = r.containerType; }
+      else pot.textContent = 'Trắng';
+      const stem = document.createElement('div'); stem.className = 'stem';
+      const slots = document.createElement('div'); slots.className = 'slots';
+      for (let k = 0; k < cap; k++) {
+        const d = document.createElement('div');
+        const item = r.items[k];
+        if (k >= r.capacity) { d.className = 'it empty'; d.style.visibility = 'hidden'; }
+        else if (!item) d.className = 'it empty';
+        else {
+          d.className = 'it' + (item.state === 'Hidden' ? ' hidden' : '') + (st.sel && st.sel.rope === ri && k >= st.sel.j ? ' sel' : '');
+          if (item.state !== 'Hidden') { d.style.background = COLORS[item.type]; d.style.color = DARK_TEXT.has(item.type) ? '#1d2b36' : '#fff'; d.textContent = item.type; }
+          else d.textContent = '?';
+          d.dataset.j = k;
+        }
+        slots.append(d);
+      }
+      el.append(pot, stem, slots);
+      if (r.seal) {
+        const lk = document.createElement('div'); lk.className = 'lock'; const em = document.createElement('em');
+        if ((r.seal.rule || 'AnyDelivery') === 'TypedDelivery') { const dot = document.createElement('i'); dot.style.background = COLORS[r.seal.type || 0]; em.append('Khóa ', dot, ' ×' + r.seal.count); }
+        else em.textContent = 'Khóa: ' + r.seal.count + ' cốc';
+        lk.append(em); el.append(lk);
+      }
+      el.addEventListener('click', (ev) => onTap(ri, ev));
+      wrap.append(el);
+    });
+    board.replaceChildren(wrap);
+    const left = Math.max(0, s.reserve.length - C.delivered(s));
+    $('s-cups').textContent = C.delivered(s) + '/' + s.orderCount;
+    $('s-queue').textContent = s.reserve.slice(C.delivered(s)).filter((e) => e.mode !== 'Remove').length;
+    $('s-moves').textContent = st.moves;
+    $('undo').disabled = !st.hist.length; $('extra').disabled = st.extra;
+    if (C.isWin(s)) return finish(true);
+    if (!hasMove(s)) return finish(false);
+  }
+
+  function finish(win) {
+    st.done = true; clearInterval(st.timer);
+    if (win) store.set('sr-won-' + key(), '1');
+    const o = document.createElement('div'); o.className = 'over ' + (win ? 'win' : 'lose');
+    const h = document.createElement('h2'); h.textContent = win ? 'Thắng!' : 'Hết nước đi';
+    const p = document.createElement('p'); p.textContent = st.moves + ' nước, ' + fmtTime(Date.now() - st.t0) + (win ? '' : '. Hoàn tác để thử lại từ bước trước.');
+    const row = document.createElement('div'); row.className = 'row'; row.style.justifyContent = 'center';
+    const b1 = document.createElement('button'); b1.className = 'btn'; b1.textContent = win ? 'Chơi lại' : 'Hoàn tác';
+    b1.onclick = win ? restart : undo;
+    const b2 = document.createElement('button'); b2.className = 'btn primary'; b2.textContent = win ? 'Màn tiếp' : 'Chơi lại';
+    b2.onclick = win ? () => open(st.mode, st.set, st.n + 1) : restart;
+    row.append(b1, b2); o.append(h, p, row); $('board').append(o);
+  }
+
+  const REASON = { Mismatch: 'Khác màu, không nối được', Full: 'Dây đã đầy', Locked: 'Dây đang khóa', Hidden: 'Hoa ẩn chưa kéo được', Invalid: 'Không đi được nước này' };
+  function toast(msg) {
+    const t = document.createElement('div'); t.className = 'toast'; t.textContent = msg; $('board').append(t);
+    setTimeout(() => t.remove(), 1300);
+  }
+
+  function onTap(ri, ev) {
+    if (st.done) return;
+    const r = st.s.ropes[ri]; if (r.removed) return;
+    const jEl = ev.target.closest('[data-j]');
+    if (!st.sel) {
+      if (!r.items.length) return;
+      let j = jEl ? +jEl.dataset.j : r.items.length - 1;
+      st.sel = { rope: ri, j }; render(); return;
+    }
+    if (st.sel.rope === ri) {
+      if (jEl && +jEl.dataset.j !== st.sel.j) { st.sel = { rope: ri, j: +jEl.dataset.j }; } else st.sel = null;
+      render(); return;
+    }
+    const before = C.clone(st.s);
+    const res = C.move(st.s, st.sel.rope, st.sel.j, ri);
+    if (!res.success) { st.s = before; st.sel = null; render(); toast(REASON[res.reason] || 'Không đi được'); return; }
+    st.hist.push(before); st.moves++; st.sel = null; render();
+  }
+
+  function undo() { if (!st.hist.length) return; st.s = st.hist.pop(); st.moves = Math.max(0, st.moves - 1); st.done = false; st.sel = null;
+    clearInterval(st.timer); st.timer = setInterval(tick, 500); render(); }
+
+  $('undo').onclick = undo;
+  $('restart').onclick = restart;
+  $('extra').onclick = () => { if (st.extra || st.done) return; const cap = Math.max(...st.s.ropes.map((r) => r.capacity));
+    st.hist.push(C.clone(st.s)); if (C.addExtraRope(st.s, cap) >= 0) { st.extra = true; render(); toast('Đã thêm 1 dây trống'); } };
+  $('hint').onclick = () => {
+    if (st.done) return; $('hint').disabled = true; toast('Đang tìm nước đi…');
+    setTimeout(() => {
+      const r = C.solve(C.clone(st.s), 20000); $('hint').disabled = false;
+      if (r.status === 'Solved' && r.moves.length) { const m = r.moves[0]; st.sel = { rope: m.src, j: m.j }; render(); toast('Gợi ý: kéo từ dây ' + (m.src + 1) + ' sang dây ' + (m.dst + 1)); }
+      else toast('Không tìm được đường thắng từ đây');
+    }, 30);
+  };
+  $('mode-a').onclick = () => open('A', st.set, st.mode === 'A' ? st.n : 1);
+  $('mode-b').onclick = () => open('B', st.set, st.mode === 'B' ? st.n : 1);
+  $('set').onchange = () => open('B', $('set').value, st.n);
+  $('prev').onclick = () => open(st.mode, st.set, st.n - 1);
+  $('next').onclick = () => open(st.mode, st.set, st.n + 1);
+  $('lvl').onchange = () => open(st.mode, st.set, +$('lvl').value || 1);
+  window.addEventListener('resize', () => { if (st.s && !st.done) render(); });
+
+  function fromHash() {
+    const h = location.hash.slice(1);
+    let m = /^a-(\d+)$/.exec(h); if (m) return ['A', null, +m[1]];
+    m = /^b-(default|lv[2-5])-(\d+)$/.exec(h); if (m) return ['B', m[1], +m[2]];
+    return null;
+  }
+  window.addEventListener('hashchange', () => { const r = fromHash(); if (r) open(...r); });
+  let start = fromHash();
+  if (!start) { try { const l = JSON.parse(store.get('sr-last') || 'null'); if (l) start = [l.mode, l.set, l.n]; } catch (e) {} }
+  if (!start) start = ['A', 'default', 2];
+  open(...start);
+})();
+</script>
