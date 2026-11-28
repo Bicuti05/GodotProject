@@ -42,7 +42,37 @@ def targets():
     return L
 
 
-if cmd == 'gen':
+if cmd == 'regen':
+    # sinh lại mọi level lỗi bằng gen.py + repair (đổi trong cùng vùng), K ứng viên mỗi level
+    import gen
+    K = int(sys.argv[3]); items = []; plan = []
+    tb = {r['file']: r for r in csv.DictReader(open(f'{R}/docs/targets_B.csv', encoding='utf-8-sig'))}
+    ta = {int(r['slot']): r for r in csv.DictReader(open('levels/sweet_rope_A/work/targets_A.csv', encoding='utf-8-sig'))}
+    for p in targets():
+        raw = json.load(open(p['path']))
+        if RP.violations(raw) == 0: continue
+        plan.append(p); s = p['slot']; t = p['t']
+        fr = ta[s] if p['ban'] == 'A' else tb[p['file']]
+        cap = int(fr['khung_sort_streak_cap']); cups = max(8, min(14, int(fr['khung_tgt']))); cols = int(fr['khung_cols'])
+        nt = max(8, min(10, int(fr['khung_types_all'])))
+        hid0 = int(fr['khung_hidden']) if s >= 6 else 0
+        bonus = s >= 13 and (s - 13) % 10 == 0
+        lo, hi = (0.0, 0.05) if t < 20 or p['easy'] else (0.0, 0.10) if t < 50 else (0.03, 0.15)
+        for k in range(K):
+            rng = random.Random(f"{p['key']}|regen|{k}")
+            mix = rng.uniform(lo, hi); short = rng.choice([2, 3]) if t < 35 else rng.choice([1, 2])
+            ee = rng.choice([0, 0, 1]) if p['easy'] else 0
+            hid = 0 if p['easy'] and s < 6 else (rng.choice([0, 1]) if p['easy'] else max(0, hid0 + rng.randint(-1, 1)))
+            lock = None
+            if int(fr['khung_locks']) > 0 and s >= 11 and rng.random() < 0.6:
+                cond = 'collect_count' if s >= 21 and rng.random() < 0.6 else 'collect_type'
+                lock = (cond, rng.randint(1, 3 if cond == 'collect_count' else 2))
+            raw0 = gen.make_level(s, cap, cups, cols, nt, mix, short, hid, lock, rng, extra_empty=ee, types_pref=rng.sample(range(10), nt), need_single=bonus)
+            new = RP.repair(raw0, rng)
+            if new and RP.violations(new) == 0: items.append({'uid': f"{p['key']}#{k}", 'raw': new})
+    json.dump(plan, open(f'{T}/plan.json', 'w')); json.dump(items, open(f'{T}/gen.json', 'w'))
+    print('plan', len(plan), 'variants', len(items))
+elif cmd == 'gen':
     K = int(sys.argv[3]); items = []; plan = []
     for p in targets():
         raw = json.load(open(p['path']))
@@ -54,7 +84,7 @@ if cmd == 'gen':
     json.dump(plan, open(f'{T}/plan.json', 'w')); json.dump(items, open(f'{T}/gen.json', 'w'))
     print('plan', len(plan), 'variants', len(items))
 elif cmd == 'screen':
-    godot('greedy_screen.gd', f'{T}/gen.json', f'{T}/sc'); print('screened', len(score(f'{T}/sc_*.json')))
+    godot(os.environ.get('SCREEN', 'greedy_screen.gd'), f'{T}/gen.json', f'{T}/sc'); print('screened', len(score(f'{T}/sc_*.json')))
 elif cmd == 'full':
     M = int(sys.argv[3]); plan = {p['key']: p for p in json.load(open(f'{T}/plan.json'))}; sc = score(f'{T}/sc_*.json')
     items = {x['uid']: x for x in json.load(open(f'{T}/gen.json'))}; by = {}
@@ -65,7 +95,7 @@ elif cmd == 'full':
     ge = score(f'{T}/ge_*.json')
     nowin = [x for x in sel if x['uid'] in ge and float(ge[x['uid']]['lw']) <= 0]
     json.dump(nowin, open(f'{T}/solve_in.json', 'w'))
-    if nowin: godot('validate_big.gd', f'{T}/solve_in.json', f'{T}/v')
+    if nowin and not os.environ.get('NOSOLVE'): godot('validate_big.gd', f'{T}/solve_in.json', f'{T}/v')
     print('full', len(ge), 'need solver', len(nowin))
 elif cmd == 'random':
     plan = {p['key']: p for p in json.load(open(f'{T}/plan.json'))}
@@ -98,7 +128,7 @@ elif cmd == 'apply':
                 cands.append(((0 if w >= need else 1), -w if w < need else 0, abs(d - p['t']), u, d, w)); continue
             if u not in ge: continue
             lw = float(ge[u]['lw']); d = float(ge[u]['diem_lw'])
-            if lw <= 0 and v.get(u, {}).get('solvable') != 'WINNABLE': continue
+            if lw <= 0 and float(sc.get(u, {'lw': 0})['lw']) <= 0 and v.get(u, {}).get('solvable') != 'WINNABLE': continue
             cands.append((0, 0, abs(d - p['t']), u, d, None))
         if not cands:
             rows.append(dict(ban=p['ban'], man=p['slot'], nhom=p.get('group', 'A'), muc_tieu=p['t'], diem_moi='', lech='', choi_bua='', ket_qua='KHONG SUA DUOC')); continue
