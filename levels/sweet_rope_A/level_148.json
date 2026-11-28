@@ -1,60 +1,77 @@
 {
   "id": 148,
-  "capacity": 4,
-  "targetCups": 8,
+  "capacity": 5,
+  "targetCups": 11,
   "initial": [
     {
-      "column": "8|8,7,8,5",
+      "column": "-|6,7",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "-|6",
+      "column": "2|5,4,2,2,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "-|6,6",
+      "column": "8|8,?8,?8,8,8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|5,6,8",
+      "column": "6|6,?6,6,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "7|6",
+      "column": "9|9,9,9,9,9",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|6,5,5,7",
-      "columnType": "unlock",
-      "columnInfo": {
-        "condition": "collect_count",
-        "count": 1
-      }
+      "column": "7|7,7,7,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|3,?3,3,3,3",
+      "columnType": "default",
+      "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "1|1,1",
+      "column": "6|?6,6,6,?6,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|5,7",
+      "column": "-|",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|6,6",
+      "column": "1|1,1,1,1,4",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|6,8,6,5",
+      "column": "5|5,?5,2,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,1,2,4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,5,5,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -73,26 +90,5 @@
       "columnType": "default",
       "columnInfo": {}
     }
-  ],
-  "seed": 149001007,
-  "note": "Chapter 6 · Normal",
-  "columnCaps": {
-    "initial": [
-      4,
-      4,
-      4,
-      4,
-      3,
-      4
-    ],
-    "incoming": [
-      2,
-      2,
-      2,
-      4,
-      4,
-      4,
-      4
-    ]
-  }
+  ]
 }
