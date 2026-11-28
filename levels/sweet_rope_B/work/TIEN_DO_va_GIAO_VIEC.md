@@ -11,6 +11,11 @@ Hai AI cùng làm trên branch `New_Level`. Đọc file này trước khi làm t
 - **Màn 71–145:** đã sinh, kiểm, chép `final/` (báo cáo `..._121-145` sai số 8,3/25 nhóm >10/1 thiếu; `..._96-120` 10,3/38; `..._71-95` 8,7/29).
 - **CÒN THIẾU: màn 51–70** (chưa sinh). Tiếp theo: chạy `loop.sh 70 51 20 10`, rồi sinh lại các nhóm lệch > 10 và các nhóm thiếu (155 lv5, 174 lv5, 1 nhóm trong 121-145 — xem dòng trống `chon` trong csv báo cáo).
 
+## 1b. Bản A (mới)
+
+- Người dùng chốt sinh lại bản A theo khung `default` Sort Streak (sức chứa bằng đúng), mục tiêu là đường riêng của A. **AI sinh level làm màn 2–91**, AI kiểm làm 92–200. Chi tiết: `levels/sweet_rope_A/work/GIAO_VIEC_A.md`.
+- Bản B màn 51–70 và 28 nhóm sửa ở 2–50 (commit c70a838) chờ AI kiểm chấm lại.
+
 ## 2. Luật mới (người dùng chốt)
 
 - **Sức chứa (`capacity`) phải bằng đúng** `khung_sort_streak_cap` của Sort Streak ở cùng màn, cùng bộ. `check.py` loại mọi phương án sai sức chứa.
