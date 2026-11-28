@@ -1,0 +1,14 @@
+man,nhom,muc_tieu,diem_cu,choi_bua_cu_pct,diem_moi,lech_moi,choi_bua_moi_pct,pct_coc_xong_khi_thua,uid
+2,default+lv2+lv3+lv4+lv5,4.9,8.54,68,0.0,-4.9,100.0,,L002_default+lv2+lv3+lv4+lv5#01
+3,default+lv2+lv3+lv4+lv5,6.6,0.0,100,0.0,-6.6,100.0,,L003_default+lv2+lv3+lv4+lv5#01
+4,default+lv2+lv3+lv4+lv5,8,7.09,68,0.0,-8.0,100.0,,L004_default+lv2+lv3+lv4+lv5#01
+5,default+lv2+lv3+lv4+lv5,6.6,6.13,68,0.0,-6.6,100.0,,L005_default+lv2+lv3+lv4+lv5#01
+6,default,8.5,8.54,54,0.0,-8.5,99.2,90,L006_default#01
+6,lv2+lv3+lv4+lv5,14.6,8.54,100,0.0,-14.6,100.0,,L006_lv2+lv3+lv4+lv5#00
+7,default,8.7,5.67,100,0.67,-8.0,100.0,,L007_default#43
+7,lv2+lv3+lv4+lv5,20.5,27.95,88,3.35,-17.1,99.2,83,L007_lv2+lv3+lv4+lv5#45
+8,default,3.9,0.0,100,2.18,-1.7,100.0,,L008_default#75
+8,lv2,24.1,25.89,8,0.17,-23.9,100.0,,L008_lv2#04
+8,lv3+lv4+lv5,36.5,38.37,23,6.13,-30.4,100.0,,L008_lv3+lv4+lv5#13
+9,default,12.9,13.35,78,2.85,-10.1,100.0,,L009_default#44
+9,lv2+lv3+lv4+lv5,22.7,24.21,54,6.13,-16.6,98.3,92,L009_lv2+lv3+lv4+lv5#60
