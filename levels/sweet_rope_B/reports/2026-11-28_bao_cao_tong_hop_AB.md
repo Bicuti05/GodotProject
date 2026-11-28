@@ -80,3 +80,31 @@ Chi tiết màn ngoài vị trí bonus nhưng đủ điều kiện (màu chỉ c
 | lv3 | 0 | 40 | 19 | 19 | 18 |
 | lv4 | 0 | 40 | 19 | 19 | 18 |
 | lv5 | 0 | 40 | 19 | 19 | 18 |
+
+## 6. Biểu đồ theo màn (không làm trơn)
+
+Mỗi bộ một hình 3 phần: độ khó mục tiêu (đứt, cam) và đo thực tế (liền, xanh); tỉ lệ thắng TB của 4 bot; playtime ước lượng (số bước TB khi thắng × 3 giây). Số liệu từng màn: `2026-11-28_bao_cao_tong_hop_AB_chi_tiet.csv`.
+
+### Bản A
+
+![A](bieu_do/A.png)
+
+### Bản B – default
+
+![default](bieu_do/default.png)
+
+### Bản B – lv2
+
+![lv2](bieu_do/lv2.png)
+
+### Bản B – lv3
+
+![lv3](bieu_do/lv3.png)
+
+### Bản B – lv4
+
+![lv4](bieu_do/lv4.png)
+
+### Bản B – lv5
+
+![lv5](bieu_do/lv5.png)
