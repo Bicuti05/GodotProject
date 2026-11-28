@@ -38,6 +38,7 @@ def problems(raw, r, uid):
     if s >= 13 and (s - 13) % 10 == 0 and not st['one_pot']: p.append('thieu_bonus')
     if s >= 3 and not 8 <= st['types'] <= 10: p.append('so_mau')
     if st['cap'] != int(r['khung_sort_streak_cap']): p.append('suc_chua_khac_SS')
+    if int(raw['targetCups']) > 14 or len(raw['initial']) > 7: p.append('vuot_gioi_han_Unity')  # LevelDesigner: orderCount ≤ 14
     return p, st, sol, lw
 
 

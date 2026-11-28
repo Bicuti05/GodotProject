@@ -16,8 +16,12 @@ def items(s):
 
 
 def diff_bucket(score):
+    # ngưỡng suy từ Sort Streak (pack_001/002 màn 1-200 so với summaryScore): 1 < 20,5 ≤ 2 < 38 ≤ 3 < 55 ≤ 4 < 70 ≤ 5 < 85 ≤ 6
     if score is None: return 1
-    return max(1, min(6, 1 + int(float(score) // 17)))
+    s = float(score)
+    for i, th in enumerate([20.5, 38, 55, 70, 85]):
+        if s < th: return i + 1
+    return 6
 
 
 def convert(raw, level_index, difficulty_type='Normal', score=None):

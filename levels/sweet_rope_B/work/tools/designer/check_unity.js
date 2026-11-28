@@ -5,7 +5,7 @@ const fs = require('fs'); const core = require('./core.js').SweetRopeCore;
 const [inp, outp, b] = process.argv.slice(2); const budget = +(b || core.DEFAULT_NODE_BUDGET);
 const res = JSON.parse(fs.readFileSync(inp, 'utf8')).map(x => {
   const rep = core.validateLevel(x.level, false); const o = { uid: x.uid, errors: rep.errors, warnings: rep.warnings };
-  if (!rep.errors.length) {
+  if (!rep.errors.length && budget > 0) {
     const st = core.fromLevel(x.level); const s = core.solve(st, budget); o.status = s.status; o.nodes = s.nodes; o.moves = s.moves.length;
     if (s.status !== 'Solved') { const e = core.solveWithExtraRope(st, budget); o.extra = e.status; }
   }

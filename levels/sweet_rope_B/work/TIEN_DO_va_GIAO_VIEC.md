@@ -11,6 +11,12 @@ Hai AI cùng làm trên branch `New_Level`. Đọc file này trước khi làm t
 - **Màn 71–145:** đã sinh, kiểm, chép `final/` (báo cáo `..._121-145` sai số 8,3/25 nhóm >10/1 thiếu; `..._96-120` 10,3/38; `..._71-95` 8,7/29).
 - **CÒN THIẾU: màn 51–70** (chưa sinh). Tiếp theo: chạy `loop.sh 70 51 20 10`, rồi sinh lại các nhóm lệch > 10 và các nhóm thiếu (155 lv5, 174 lv5, 1 nhóm trong 121-145 — xem dòng trống `chon` trong csv báo cáo).
 
+## 0. TRẠNG THÁI 28/11: XONG
+
+- Bản A 200 màn (`levels/sweet_rope_A/level_###.json`) và bản B 680 nhóm (`final/`) đã đủ, đúng sức chứa Sort Streak, ≤ 14 cốc, qua luật LevelDesigner, không trùng > 80% với level có sẵn (`reports/2026-11-28_kiem_trung_lap.csv`).
+- Báo cáo tổng hợp: `reports/2026-11-28_bao_cao_tong_hop_AB.md`. Gói Unity: `levels/package/`.
+- Việc có thể làm tiếp: sinh lại các nhóm lệch > 10 trong `reports/2026-11-28_bao_cao_tong_hop_AB_chi_tiet.csv`, rồi chạy lại `package.py`.
+
 ## 1b. Bản A (mới)
 
 - Người dùng chốt sinh lại bản A theo khung `default` Sort Streak (sức chứa bằng đúng), mục tiêu là đường riêng của A. **AI sinh level làm màn 2–91**, AI kiểm làm 92–200. Chi tiết: `levels/sweet_rope_A/work/GIAO_VIEC_A.md`.
