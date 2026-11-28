@@ -42,17 +42,19 @@ rows.append(dict(ban='A', bo='A', slot=1, uid='A|001', t=TAm[1], loai='Normal', 
 for r in TA:
     rows.append(dict(ban='A', bo='A', slot=int(r['slot']), uid=f"A|{int(r['slot']):03d}", t=float(r['muc_tieu']),
                      loai=r['loai'], db=r['dac_biet'], k=r))
+EFF = lambda t: t if t <= 70 else max(55.0, t - 18)  # bot chấm thấp ~18 ở vùng trên 70
 for x in rows:
+    x['tb'] = EFF(x['t'])
     x['d'] = float(sc[x['uid']]['diem_lw']); x['lw'] = float(sc[x['uid']]['lw']); x['w'], x['s'] = bot(x['uid']); x['st'] = stat(lv[x['uid']])
 # chi tiết
 with open(OUT + '_chi_tiet.csv', 'w', newline='') as f:
     w = csv.writer(f)
-    w.writerow(['ban', 'bo', 'man', 'loai', 'dac_biet', 'muc_tieu', 'diem_do', 'lech', 'lw'] + [f'win_{c}' for c in CFG] + [f'buoc_{c}' for c in CFG] +
+    w.writerow(['ban', 'bo', 'man', 'loai', 'dac_biet', 'muc_tieu', 'muc_tieu_bot', 'diem_do', 'lech', 'lw'] + [f'win_{c}' for c in CFG] + [f'buoc_{c}' for c in CFG] +
                ['cap', 'cap_SS', 'so_day', 'so_day_SS', 'so_coc', 'so_coc_SS', 'so_mau', 'so_mau_SS', 'hoa_an', 'hoa_an_SS', 'khoa', 'khoa_SS', 'mau_1_chau'])
     for x in rows:
         k = x['k'] or {}
         g = lambda a: k.get(a, '')
-        w.writerow([x['ban'], x['bo'], x['slot'], x['loai'], x['db'], x['t'], x['d'], round(x['d'] - x['t'], 1), x['lw']] +
+        w.writerow([x['ban'], x['bo'], x['slot'], x['loai'], x['db'], x['t'], round(x['tb'], 1), x['d'], round(x['d'] - x['tb'], 1), x['lw']] +
                    [round(v, 3) for v in x['w']] + [round(v, 1) if v else '' for v in x['s']] +
                    [x['st']['cap'], g('khung_sort_streak_cap'), x['st']['cols'], g('khung_cols'), x['st']['tgt'], g('khung_tgt'),
                     x['st']['types'], g('khung_types_all'), x['st']['hidden'], g('khung_hidden'), x['st']['locks'], g('khung_locks'),
@@ -61,10 +63,11 @@ L = []
 P = lambda v: f'{v:.1f}'
 sets = ['A', 'default', 'lv2', 'lv3', 'lv4', 'lv5']
 L.append('## 1. Độ khó dự kiến (mục tiêu) và thực tế (đo bằng bot, `diem_lw`)\n')
+L.append('Lệch tính so với mục tiêu quy về thang bot: bằng mục tiêu nếu ≤ 70; trên 70 thì lấy mục tiêu − 18 (không dưới 55), vì bot chấm thấp khoảng 18 điểm ở vùng này.\n')
 L.append('| Bộ | Số màn | Mục tiêu TB | Đo TB | Lệch TB (có dấu) | Sai số TB | ≤ 5 | 5–10 | > 10 |')
 L.append('|---|---|---|---|---|---|---|---|---|')
 for s in sets:
-    X = [x for x in rows if x['bo'] == s]; e = [x['d'] - x['t'] for x in X]
+    X = [x for x in rows if x['bo'] == s]; e = [x['d'] - x['tb'] for x in X]
     L.append(f"| {s} | {len(X)} | {P(st.mean(x['t'] for x in X))} | {P(st.mean(x['d'] for x in X))} | {st.mean(e):+.1f} | {P(st.mean(map(abs, e)))} | "
              f"{sum(abs(v) <= 5 for v in e)} | {sum(5 < abs(v) <= 10 for v in e)} | {sum(abs(v) > 10 for v in e)} |")
 L.append('\nTheo chặng 25 màn (mục tiêu → đo):\n')

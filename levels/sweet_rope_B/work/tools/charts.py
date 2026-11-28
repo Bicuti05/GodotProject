@@ -26,7 +26,7 @@ def style(ax, ylabel):
 for bo in ['A', 'default', 'lv2', 'lv3', 'lv4', 'lv5']:
     X = sorted([r for r in rows if r['bo'] == bo], key=lambda r: int(r['man']))
     m = [int(r['man']) for r in X]
-    t = [float(r['muc_tieu']) for r in X]; d = [float(r['diem_do']) for r in X]
+    t = [float(r['muc_tieu_bot']) for r in X]; d = [float(r['diem_do']) for r in X]
     w = [sum(float(r[f'win_{c}']) for c in CFG) / 4 * 100 for r in X]
     pt = []
     for r in X:
@@ -36,7 +36,7 @@ for bo in ['A', 'default', 'lv2', 'lv3', 'lv4', 'lv5']:
     ten = 'Bản A' if bo == 'A' else f'Bản B – bộ {bo}'
     fig.suptitle(f'{ten}: độ khó, tỉ lệ thắng và playtime theo màn', x=0.06, ha='left', fontsize=13, color=TEXT, fontweight='bold')
     ax = axs[0]
-    ax.plot(m, t, color=ORANGE, linewidth=2, linestyle=(0, (4, 2)), label='Mục tiêu (dự kiến)')
+    ax.plot(m, t, color=ORANGE, linewidth=2, linestyle=(0, (4, 2)), label='Mục tiêu quy về thang bot')
     ax.plot(m, d, color=BLUE, linewidth=2, label='Đo thực tế (bot, diem_lw)')
     ax.set_ylim(0, 100); style(ax, 'Điểm độ khó (0–100)')
     ax.legend(loc='upper left', frameon=False, ncol=2, labelcolor=TEXT)

@@ -15,6 +15,7 @@ dup = [x for x in dup if x not in self1]  # màn 1 bản A giữ nguyên từ b�
 top = sorted(dup, key=lambda x: -float(x['sim_max']))
 n80 = sum(float(x['sim_max']) > 0.8 for x in dup)
 e1 = [abs(float(x['lech'])) for x in ref if x['lech'] != '']
+pp = list(csv.DictReader(open('levels/sweet_rope_B/reports/phan_phoi_kho_level.csv')))
 L = [f'# Báo cáo Sweet Rope: bản A và bản B ({datetime.date.today():%d/%m/%Y})', '',
      'Báo cáo chung duy nhất cho toàn bộ level đã sinh. Bản A: 200 màn, một bộ cho mọi người chơi, mục tiêu theo đường độ khó riêng. '
      'Bản B: 5 bộ (`default`, `lv2`–`lv5`) × 199 màn (màn 1 dùng level hướng dẫn), mục tiêu bằng `summaryScore` của Sort Streak cùng màn cùng bộ; '
@@ -24,7 +25,9 @@ L = [f'# Báo cáo Sweet Rope: bản A và bản B ({datetime.date.today():%d/%m
      f'- Mọi level theo luật Sort Streak: không dây nào đầy sẵn đúng màu chậu (lúc mở và khi vào từ hàng chờ), tối đa 3 hoa thường cùng màu liền nhau (hoa ẩn không tính).',
      f'- Tất cả level đúng sức chứa của Sort Streak cùng màn cùng bộ (bản A theo bộ `default`), ≤ 14 cốc, ≤ 7 dây, giải được (solver Godot hoặc bot thắng).',
      f'- Sinh lại {len(ref)} level vi phạm luật Sort Streak ({sum(x["ban"] == "A" for x in ref)} màn A, {sum(x["ban"] == "B" for x in ref)} nhóm B); '
-     f'sai số TB của nhóm này {sum(e1) / len(e1):.1f}, {sum(v > 10 for v in e1)} mục lệch > 10.',
+     f'các bản sinh lại này cùng mọi ứng viên đã chấm tạo thành kho level cho bước phân phối dưới đây.',
+     f'- Phân phối kho level đã chấm (mỗi level dùng một lần) vào {len(pp)} ô màn 10–200 bản A và mọi nhóm bản B trừ màn đầu đã chốt dễ: '
+     f'{sum(x["dat"] == "True" for x in pp)} ô đạt ±5 so với mục tiêu quy về thang bot, sai số TB {sum(abs(float(x["lech"])) for x in pp) / len(pp):.1f}.',
      f'- Trùng lặp với {des.get("originals", "")} level có sẵn trong project: {n80} level giống > 80% (giống nhất {top[0]["sim_max"]}).',
      f'- Luật LevelDesigner (`validateLevel`, bản port C#): {des["total"]} level, {des["errors"]} lỗi, {des["warnings"]} cảnh báo.',
      '- Gói Unity `sweetrope.levelpack/1`: `levels/package/SweetRope_A.zip`, `levels/package/SweetRope_B.zip`.', '']
@@ -64,6 +67,6 @@ L += ['', '## 10. Gói Unity', '',
       '- Bonus, Challenge, Endless không ghi vào file level (theo luật đã chốt); Challenge và Endless hiện là level thường.', '',
       '## Phụ lục: file số liệu', '',
       f'- Chi tiết từng màn: `{os.path.basename(P)}_chi_tiet.csv`; bonus tiềm năng: `{os.path.basename(P)}_bonus_tiem_nang.csv`; '
-      'chơi bừa: `choi_bua_man_2-10.csv`; trùng lặp: `kiem_trung_lap.csv`; sinh lại theo luật: `sua_luat_chuoi_mau.csv` (cùng thư mục `levels/sweet_rope_B/reports/`).']
+      'phân phối kho level: `phan_phoi_kho_level.csv`; chơi bừa: `choi_bua_man_2-10.csv`; trùng lặp: `kiem_trung_lap.csv`; sinh lại theo luật: `sua_luat_chuoi_mau.csv` (cùng thư mục `levels/sweet_rope_B/reports/`).']
 open('levels/BAO_CAO_SweetRope_AB.md', 'w').write('\n'.join(L) + '\n')
 print('wrote levels/BAO_CAO_SweetRope_AB.md')
