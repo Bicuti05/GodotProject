@@ -1,57 +1,77 @@
 {
   "id": 119,
-  "capacity": 3,
-  "targetCups": 7,
+  "capacity": 5,
+  "targetCups": 12,
   "initial": [
     {
-      "column": "5|5,5,1",
+      "column": "-|8,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "0|3,0,0",
+      "column": "4|4,4,4,4,4",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "-|1",
+      "column": "9|9,6,9,9,9",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "2|2,2,6",
+      "column": "8|5,8,8,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "1|5,0",
+      "column": "6|6,6,9,8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|6,6,3",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "3|3,1,2",
+      "column": "0|0,0,0,0,3",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "1|1,1,1",
+      "column": "0|0,0,?0,0,0",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "x|",
+      "column": "2|2,2,2,2,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "x|",
+      "column": "5|5,5,5,?5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|1,3,3,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "5|5,8,5,5,5",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "3|0,3,3,3,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|3,1,1,1,1",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -70,7 +90,5 @@
       "columnType": "default",
       "columnInfo": {}
     }
-  ],
-  "seed": 55000014,
-  "note": "Chapter 5 · Normal"
+  ]
 }

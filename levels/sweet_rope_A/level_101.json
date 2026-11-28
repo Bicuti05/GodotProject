@@ -1,57 +1,87 @@
 {
   "id": 101,
-  "capacity": 5,
-  "targetCups": 9,
+  "capacity": 4,
+  "targetCups": 13,
   "initial": [
     {
-      "column": "5|5,5,5,5,5",
+      "column": "-|3,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "3|3,3,2,6",
+      "column": "3|3,8,3",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "1|1,1,1,1,1",
+      "column": "9|9,9,9,9",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "2|3,6,2,2,2",
+      "column": "0|0,0,0,0",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "-|5",
+      "column": "3|3,3,3,2",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|2,2,2,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "2|2,2,2",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "1|1,1,1,1,1",
+      "column": "2|2,2,2,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|3,6,2,6,6",
+      "column": "5|5,5,5,5",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "3|3,3,3,3,3",
+      "column": "5|?5,7,5,5",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|3,5,5,5,5",
+      "column": "4|4,?4,4,4",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|5,5,5,5,5",
+      "column": "8|8,8,3,6",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "-|",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|6,6,6,8",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|7,5,7,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "x|",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -70,7 +100,5 @@
       "columnType": "default",
       "columnInfo": {}
     }
-  ],
-  "seed": 56000010,
-  "note": "Chapter 5 · Normal"
+  ]
 }
