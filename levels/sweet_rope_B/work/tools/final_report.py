@@ -10,6 +10,8 @@ body = open(P + '.md').read()
 dup = list(csv.DictReader(open(DUP)))
 des = json.load(open(DES))
 ref = list(csv.DictReader(open(REF)))
+self1 = [x for x in dup if x['uid'].endswith('level_001') and x['nearest'] == 'A_cu/level_001']
+dup = [x for x in dup if x not in self1]  # màn 1 bản A giữ nguyên từ bản cũ, chỉ trùng với chính nó
 top = sorted(dup, key=lambda x: -float(x['sim_max']))
 n80 = sum(float(x['sim_max']) > 0.8 for x in dup)
 thay = [x for x in ref if x['thay'] == 'True']
@@ -31,6 +33,7 @@ L.append(body)
 L += ['', '## 6. Kiểm trùng lặp', '',
       'So mỗi level mới với mọi level có sẵn: GD_Lazy (branch main), LevelDesigner/Levels (pack, variant, challenge), `assets/builtin`, `assets/game`, bản A cũ. '
       'Độ giống = tỉ lệ vị trí (chậu + hoa) trùng nhau sau khi đổi tên màu tối ưu. Level mới không so với nhau.', '',
+      '- Màn 1 bản A (level hướng dẫn giữ nguyên từ bản cũ) không tính, vì chỉ trùng với chính nó; so với Sort Streak giống 0,39.', '',
       f'- Giống > 80%: **{n80}** level. Giống > 70%: {sum(float(x["sim_max"]) > 0.7 for x in dup)} level.', '',
       '| Level | Giống nhất | Level gần nhất |', '|---|---|---|']
 L += [f'| {x["uid"]} | {x["sim_max"]} | {x["nearest"][:80]} |' for x in top[:5]]
@@ -48,6 +51,12 @@ for b in ['A', 'B']:
     a0 = [abs(float(x['lech_cu'])) for x in X]
     a1 = [abs(float(x['lech_moi'])) if x['thay'] == 'True' else abs(float(x['lech_cu'])) for x in X]
     L.append(f'| {b} | {len(X)} | {sum(x["thay"] == "True" for x in X)} | {sum(a0) / len(a0):.1f} | {sum(a1) / len(a1):.1f} | {sum(v > 10 for v in a1)} |')
+cb = list(csv.DictReader(open('levels/sweet_rope_B/reports/choi_bua_man_2-10.csv')))
+L += ['', '## 8b. Chơi bừa ở màn đầu (bot chọn nước ngẫu nhiên, 120 ván mỗi màn)', '',
+      'Yêu cầu cho bản A: màn 2–5 chơi bừa thắng 100%; màn 6–9 chỉ thua 1–2 lần và thua lúc gần cuối; từ màn 10 giữ nguyên. '
+      'Bản B chỉ đo để tham khảo (chưa áp yêu cầu).', '',
+      '| Bản | Màn | Nhóm | Thắng khi chơi bừa | % cốc đã xong khi thua |', '|---|---|---|---|---|']
+L += [f"| {x['ban']} | {x['man']} | {x['nhom']} | {x['thang_choi_bua_pct']}% | {x['pct_coc_xong_khi_thua'] + '%' if x['pct_coc_xong_khi_thua'] else '–'} |" for x in cb]
 L += ['', '## 9. Biểu đồ theo màn (không làm trơn)', '',
       'Mỗi bộ một hình: độ khó mục tiêu (cam, nét đứt) và đo thực tế (xanh); tỉ lệ thắng TB của 4 bot; playtime ước lượng (số bước TB khi thắng × 3 giây).']
 for b in ['A', 'default', 'lv2', 'lv3', 'lv4', 'lv5']:
@@ -59,6 +68,6 @@ L += ['', '## 10. Gói Unity', '',
       '- Bonus, Challenge, Endless không ghi vào file level (theo luật đã chốt); Challenge và Endless hiện là level thường.', '',
       '## Phụ lục: file số liệu', '',
       f'- Chi tiết từng màn: `{os.path.basename(P)}_chi_tiet.csv`; bonus tiềm năng: `{os.path.basename(P)}_bonus_tiem_nang.csv`; '
-      'trùng lặp: `kiem_trung_lap.csv`; sửa màn lệch: `sua_man_lech.csv` (cùng thư mục `levels/sweet_rope_B/reports/`).']
+      'chơi bừa: `choi_bua_man_2-10.csv`; trùng lặp: `kiem_trung_lap.csv`; sửa màn lệch: `sua_man_lech.csv` (cùng thư mục `levels/sweet_rope_B/reports/`).']
 open('levels/BAO_CAO_SweetRope_AB.md', 'w').write('\n'.join(L) + '\n')
 print('wrote levels/BAO_CAO_SweetRope_AB.md')

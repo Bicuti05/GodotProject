@@ -4,54 +4,39 @@
   "targetCups": 12,
   "initial": [
     {
-      "column": "-|6,9",
+      "column": "-|7,8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "6|6,6,?6,8",
+      "column": "7|7,9,?1,7",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "5|5,5,5,5,5",
+      "column": "3|3,?3,3,3,3",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "3|4,3,3,3,3",
+      "column": "8|8,8,8,7,8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "1|1,1,?1,1,1",
+      "column": "3|3,?3,3,3",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "9|9,9,9,9",
+      "column": "2|2,2,2,2,2",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "4|7,4,4,4,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "7|3,7,8,7,5",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "7|7,7,7,7,7",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "8|5,8,8,8,8",
+      "column": "5|5,5,6,7,5",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -61,17 +46,32 @@
       "columnInfo": {}
     },
     {
-      "column": "5|?8,7,5,5,5",
+      "column": "6|6,6,5,5,6",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "0|0,0,0,0,0",
+      "column": "2|2,9,2,2,2",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "8|8,?7,?8,8,6",
+      "column": "9|9,9,9,9,9",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,4,4,?4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "9|9,9,?2,9,3",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "1|1,1,1,1,6",
       "columnType": "default",
       "columnInfo": {}
     },

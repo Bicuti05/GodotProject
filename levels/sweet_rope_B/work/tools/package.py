@@ -8,7 +8,7 @@ import json, csv, os, sys, subprocess, shutil, zipfile
 sys.path.insert(0, os.path.dirname(__file__))
 import juice_to_unity as J
 OUT = 'levels/package'
-shutil.rmtree(OUT, ignore_errors=True)
+for d in ('SweetRope_A', 'SweetRope_B'): shutil.rmtree(f'{OUT}/{d}', ignore_errors=True)
 ta = {int(r['man']): float(r['diem_muc_tieu']) for r in csv.DictReader(open('levels/sweet_rope_A/report.csv', encoding='utf-8-sig'))}
 tb = {}
 for r in csv.DictReader(open('levels/sweet_rope_B/docs/targets_B.csv', encoding='utf-8-sig')):

@@ -4,59 +4,39 @@
   "targetCups": 12,
   "initial": [
     {
-      "column": "-|7",
+      "column": "-|8,5",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "9|4,9,9,?9,9,9",
+      "column": "1|1,1,1,1,1,1",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "8|8,7,8,8,?8,8",
+      "column": "9|6,9,9,9,9",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "4|3,2,4,4,4,4",
+      "column": "5|?5,5,5,6,5",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "7|7,7,?7,7,2",
+      "column": "9|9,9,9,3,9,9",
       "columnType": "default",
       "columnInfo": {}
     },
     {
-      "column": "2|2,2,2,2,2,2",
+      "column": "3|3,6,3,3,?3,3",
       "columnType": "default",
       "columnInfo": {}
     }
   ],
   "incoming": [
     {
-      "column": "6|6,6,6,6,6,6",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "7|7,4,8,7,7,7",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "1|1,1,2,1,1,1",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "2|2,4,1,2,7,4",
-      "columnType": "default",
-      "columnInfo": {}
-    },
-    {
-      "column": "4|4,4,4,4,2,9",
+      "column": "6|6,6,6,6,6,9",
       "columnType": "default",
       "columnInfo": {}
     },
@@ -66,12 +46,32 @@
       "columnInfo": {}
     },
     {
-      "column": "3|3,3,3,3,7,3",
+      "column": "7|7,7,7,7,5,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "6|7,6,6,6,6,7",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "4|4,4,4,4,4,4",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "8|8,9,8,8,8,8",
       "columnType": "default",
       "columnInfo": {}
     },
     {
       "column": "0|0,0,0,0,0,0",
+      "columnType": "default",
+      "columnInfo": {}
+    },
+    {
+      "column": "7|7,7,?7,?7,9,7",
       "columnType": "default",
       "columnInfo": {}
     },
